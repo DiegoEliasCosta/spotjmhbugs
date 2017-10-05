@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindbugsPlugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="findbugsplugin.xsd"
+	pluginid="de.heidelberg.pvs.diego.performance-tests-checker">
+
+	<Detector class="de.heidelberg.pvs.diego.MyDetector" reports="MY_BUG"
+		speed="fast" />
+	<Detector class="de.heidelberg.pvs.diego.VoidBenchmarkDetector"
+		reports="JMH_VOID_BENCHMARK" speed="fast" />
+
+	<BugPattern type="MY_BUG" category="CORRECTNESS" />
+	
+	<BugPattern type="JMH_VOID_BENCHMARK" category="CORRECTNESS" />
+</FindbugsPlugin>
