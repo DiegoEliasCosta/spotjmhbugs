@@ -1,10 +1,11 @@
-package de.heidelberg.pvs.diego;
+package de.heidelberg.pvs.diego.detectors;
 
 import org.apache.bcel.classfile.Method;
 import org.apache.bcel.generic.Type;
 
 import edu.umd.cs.findbugs.BugInstance;
 import edu.umd.cs.findbugs.BugReporter;
+import edu.umd.cs.findbugs.ba.ClassContext;
 
 public class VoidBenchmarkDetector extends BenchmarkDetector {
 
@@ -15,7 +16,7 @@ public class VoidBenchmarkDetector extends BenchmarkDetector {
 	}
 
 	@Override
-	protected void analyzeBenchmark(Method method) {
+	protected void analyzeBenchmark(Method method, ClassContext classContext) {
 
 		Type returnType = method.getReturnType();
 
@@ -32,5 +33,6 @@ public class VoidBenchmarkDetector extends BenchmarkDetector {
 	public void sawOpcode(int seen) {
 		// TODO Check how to proceed with this op code
 	}
+
 
 }
