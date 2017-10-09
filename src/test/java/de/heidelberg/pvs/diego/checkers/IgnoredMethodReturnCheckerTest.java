@@ -20,6 +20,17 @@ public class IgnoredMethodReturnCheckerTest {
 	public SpotBugsRule spotbugs = new SpotBugsRule();
 
 	@Test
+	public void testIgnoreMethodReturnCheckerWithJMHSample_08() throws Exception {
+		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.jmh".replace('.', '/'),
+				"JMHSample_08_DeadCode.class");
+		BugCollection bugCollection = spotbugs.performAnalysis(path);
+
+		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_METHOD_RETURN").build();
+		assertThat(bugCollection, containsExactly(bugTypeMatcher, 1));
+	}
+	
+
+	@Test
 	public void testIgnoreMethodReturnCheckerWithJMHSample_09() throws Exception {
 		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.jmh".replace('.', '/'),
 				"JMHSample_09_Blackholes.class");
@@ -28,16 +39,16 @@ public class IgnoredMethodReturnCheckerTest {
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_METHOD_RETURN").build();
 		assertThat(bugCollection, containsExactly(bugTypeMatcher, 1));
 	}
-
-
+	
+	
 	@Test
-	public void testIgnoreMethodReturnCheckerWithJMHSample_08() throws Exception {
+	public void testIgnoreMethodReturnCheckerWithJMHSample_10() throws Exception {
 		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.jmh".replace('.', '/'),
-				"JMHSample_08_DeadCode.class");
+				"JMHSample_10_ConstantFold.class");
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_METHOD_RETURN").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 1));
+		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
 	}
 	
 	
@@ -52,6 +63,17 @@ public class IgnoredMethodReturnCheckerTest {
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_METHOD_RETURN").build();
 		assertThat(bugCollection, containsExactly(bugTypeMatcher, 2));
+	}
+	
+	@Test
+	public void testIgnoreMethodReturnCheckerWithExample() throws Exception {
+		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.examples".replace('.', '/'),
+				"IgnoreMethodReturnExample.class");
+		
+		BugCollection bugCollection = spotbugs.performAnalysis(path);
+
+		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_METHOD_RETURN").build();
+		assertThat(bugCollection, containsExactly(bugTypeMatcher, 1));
 	}
 	
 }
