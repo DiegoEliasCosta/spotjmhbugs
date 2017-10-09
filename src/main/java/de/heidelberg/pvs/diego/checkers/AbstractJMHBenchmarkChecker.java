@@ -1,7 +1,9 @@
-package de.heidelberg.pvs.diego.detectors;
+package de.heidelberg.pvs.diego.checkers;
 
+import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 
 import org.apache.bcel.classfile.AnnotationEntry;
 import org.apache.bcel.classfile.Method;
@@ -10,36 +12,30 @@ import edu.umd.cs.findbugs.BugReporter;
 import edu.umd.cs.findbugs.ba.ClassContext;
 import edu.umd.cs.findbugs.bcel.OpcodeStackDetector;
 
-public abstract class BenchmarkDetector extends OpcodeStackDetector {
+public abstract class AbstractJMHBenchmarkChecker extends OpcodeStackDetector {
 
 	private static final String JMH_BENCHMARK_ANNOTATION = "Lorg/openjdk/jmh/annotations/Benchmark;";
+	
 	protected final BugReporter bugReporter;
+	protected Set<Method> targetBenchmarkMethods = new HashSet<>();
 
-	public BenchmarkDetector(BugReporter bugReporter) {
+	public AbstractJMHBenchmarkChecker(BugReporter bugReporter) {
 		this.bugReporter = bugReporter;
 	}
 
-	/**
-	 * Main method for analyzing the benchmark code. This method is only called
-	 * when a method with a @Benchmark annotation is encountered.
-	 * 
-	 * @param method
-	 */
-	protected abstract void analyzeBenchmark(Method method, ClassContext classContext);
-	
 	@Override
 	public void visitClassContext(ClassContext classContext) {
-		
+
 		List<Method> methods = classContext.getMethodsInCallOrder();
-		
-		for(Method method : methods) {
-			
-			if(isMethodBenchmark(method)) {
-				analyzeBenchmark(method, classContext);
+
+		for (Method method : methods) {
+
+			if (isMethodBenchmark(method)) {
+				targetBenchmarkMethods.add(method);
 			}
-			
+
 		}
-		
+
 		super.visitClassContext(classContext);
 	}
 
@@ -54,5 +50,30 @@ public abstract class BenchmarkDetector extends OpcodeStackDetector {
 		return false;
 
 	}
+
+	@Override
+	public void sawOpcode(int seen) {
+
+		if (visitingMethod()) {
+
+			Method currentVisitingMethod = getMethod();
+
+			// Checks whether the method is one of the benchmarks
+			if (targetBenchmarkMethods.contains(currentVisitingMethod)) {
+				
+				analyzeBenchmarkMethodOpCode(seen);
+				
+			}
+
+		}
+
+	}
+
+	/**
+	 * 
+	 * 
+	 * @param seen
+	 */
+	protected abstract void analyzeBenchmarkMethodOpCode(int seen);
 
 }

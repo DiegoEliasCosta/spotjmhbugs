@@ -3,15 +3,15 @@
 	xsi:noNamespaceSchemaLocation="findbugsplugin.xsd"
 	pluginid="de.heidelberg.pvs.diego.performance-tests-checker">
 
-	<Detector class="de.heidelberg.pvs.diego.detectors.MyDetector" reports="MY_BUG"
+	<Detector class="de.heidelberg.pvs.diego.checkers.MyDetector" reports="MY_BUG"
 		speed="fast" />
 	<!-- <Detector class="de.heidelberg.pvs.diego.VoidBenchmarkDetector"
 		reports="JMH_VOID_BENCHMARK" speed="fast" /> -->
 
-	<Detector class="de.heidelberg.pvs.diego.detectors.DeadCodeOptimizationDetector"
-		reports="MY_BUG" speed="fast" />
+	<Detector class="de.heidelberg.pvs.diego.checkers.IgnoredMethodReturnChecker"
+		reports="JMH_IGNORED_METHOD_RETURN" speed="fast" />
 
 	<BugPattern type="MY_BUG" category="CORRECTNESS" />
 
-	<BugPattern type="JMH_VOID_BENCHMARK" category="CORRECTNESS" />
+	<BugPattern type="JMH_IGNORED_METHOD_RETURN" category="CORRECTNESS" />
 </FindbugsPlugin>

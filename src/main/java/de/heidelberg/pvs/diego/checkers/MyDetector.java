@@ -1,4 +1,4 @@
-package de.heidelberg.pvs.diego.detectors;
+package de.heidelberg.pvs.diego.checkers;
 
 import org.apache.bcel.Const;
 

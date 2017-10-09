@@ -1,4 +1,4 @@
-package de.heidelberg.pvs.diego.detectors;
+package de.heidelberg.pvs.diego.checkers;
 
 import static edu.umd.cs.findbugs.test.SpotBugsRule.containsExactly;
 import static org.junit.Assert.assertThat;

@@ -7,19 +7,13 @@
 		<Details>This plugin provides original detectors</Details>
 	</Plugin>
 
-	<Detector class="de.heidelberg.pvs.diego.detectors.MyDetector">
+	<Detector class="de.heidelberg.pvs.diego.checkers.MyDetector">
 		<Details>
 			Original detector to detect MY_BUG bug pattern.
 		</Details>
 	</Detector>
 
-	<Detector class="de.heidelberg.pvs.diego.detectors.VoidBenchmarkDetector">
-		<Details>
-			Original detector to detect MY_BUG bug pattern.
-		</Details>
-	</Detector>
-	
-	<Detector class="de.heidelberg.pvs.diego.detectors.DeadCodeOptimizationDetector">
+	<Detector class="de.heidelberg.pvs.diego.checkers.IgnoredMethodReturnChecker">
 		<Details>
 			Original detector to detect MY_BUG bug pattern.
 		</Details>
@@ -38,8 +32,9 @@
 		</Details>
 	</BugPattern>
 	
-	<BugPattern type="JMH_VOID_BENCHMARK">
-		<ShortDescription>Explain bug pattern shortly.</ShortDescription>
+	<!--  -->
+	<BugPattern type="JMH_IGNORED_METHOD_RETURN">
+		<ShortDescription>Non-void method calls should have their returns consumed by a Blackhole.</ShortDescription>
 		<LongDescription>
 			Explain existing problem in code, and how developer should improve their
 			implementation.
