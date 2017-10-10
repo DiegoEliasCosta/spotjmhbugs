@@ -6,19 +6,28 @@ import java.util.Set;
 
 import org.apache.bcel.classfile.AnnotationEntry;
 
+import edu.umd.cs.findbugs.BugReporter;
 import edu.umd.cs.findbugs.ba.ClassContext;
 import edu.umd.cs.findbugs.bcel.OpcodeStackDetector;
 
 /**
- * Abstract class for @State object analysis 
+ * Abstract class for @State object analysis.
  * 
  * @author diego.costa
  *
  */
 public abstract class AbstractJMHStateClassChecker extends OpcodeStackDetector {
 
-	Set<ClassContext> targetStateClasses = new HashSet<>();
+	private Set<ClassContext> targetStateClasses = new HashSet<ClassContext>();
+	protected final BugReporter bugReporter;
 	
+	public AbstractJMHStateClassChecker(BugReporter bugReporter) {
+		this.bugReporter = bugReporter;
+	}
+	
+	/**
+	 * This method is overridden to filter the future analysis only to JMH @State classes
+	 */
 	@Override
 	public void visitClassContext(ClassContext classContext) {
 		
@@ -36,12 +45,23 @@ public abstract class AbstractJMHStateClassChecker extends OpcodeStackDetector {
 		AnnotationEntry[] annotationEntries = classContext.getJavaClass().getAnnotationEntries();
 		
 		for(AnnotationEntry annotation : annotationEntries) {
-			if(Objects.equals(annotation, "Lorg/openjdk/jmh/annotations/State;")) {
+			
+			String type = annotation.getAnnotationType();
+			
+			if(Objects.equals(type, "Lorg/openjdk/jmh/annotations/State;")) {
 				return true;
 			}
 		}
 
 		return false;
+	}
+
+	/**
+	 * Overriding the beforeOpCode to allow the analysis of TOP byte code segments
+	 */
+	@Override
+	public boolean beforeOpcode(int seen) {
+		return true;
 	}
 
 	@Override
@@ -51,9 +71,17 @@ public abstract class AbstractJMHStateClassChecker extends OpcodeStackDetector {
 		
 		// Only analyzes @State classes  
 		if(targetStateClasses.contains(currentClassContext)) {
-			
+			analyzeStateClassOpCode(seen);
 		}
-
+	}
+	
+	/**
+	 * Returns true whether we are currently visiting a @State class 
+	 * 
+	 * @return
+	 */
+	public boolean isTargetStateClass() {
+		return this.targetStateClasses.contains(getClassContext());
 	}
 	
 	/**
@@ -63,5 +91,7 @@ public abstract class AbstractJMHStateClassChecker extends OpcodeStackDetector {
 	 * @param seen
 	 */
 	protected abstract void analyzeStateClassOpCode(int seen);
+
+	
 
 }

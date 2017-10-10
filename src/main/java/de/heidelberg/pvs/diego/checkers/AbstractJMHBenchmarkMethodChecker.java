@@ -23,7 +23,7 @@ public abstract class AbstractJMHBenchmarkMethodChecker extends OpcodeStackDetec
 	private static final String JMH_BENCHMARK_ANNOTATION = "Lorg/openjdk/jmh/annotations/Benchmark;";
 
 	protected final BugReporter bugReporter;
-	protected Set<Method> targetBenchmarkMethods = new HashSet<>();
+	protected Set<Method> targetBenchmarkMethods = new HashSet<Method>();
 
 	public AbstractJMHBenchmarkMethodChecker(BugReporter bugReporter) {
 		this.bugReporter = bugReporter;
