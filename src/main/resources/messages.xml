@@ -16,47 +16,29 @@
 
 	<Detector class="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector">
 		<Details>
-			Detector of ignored method returns in a JMH benchmark.
+			Detector of the JMH_IGNORED_METHOD_RETURN bug pattern.
 		</Details>
 	</Detector>
 
 	<Detector class="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector">
 		<Details>
-			Detector of final @State fields in a JMH benchmark.
+			Detector of the JMH_STATE_FINAL_FIELD bug pattern.
 		</Details>
 	</Detector>
 
 	<Detector class="de.heidelberg.pvs.diego.detectors.LoopInsideBenchmarkDetector">
 		<Details>
-			Detector of loops inside the benchmark.
+			Detector of the JMH_LOOP_INSIDE_BENCHMARK inside the benchmark bug pattern.
 		</Details>
 	</Detector>
 
 
-	<!-- MESSAGES -->
-	<BugPattern type="MY_BUG">
-		<ShortDescription>Explain bug pattern shortly.</ShortDescription>
-		<LongDescription>
-			Explain existing problem in code, and how developer
-			should improve their
-			implementation.
-		</LongDescription>
-		<Details>
-<![CDATA[
-<p>Explain existing problem in code, and how developer should improve their implementation.</p>
-]]>
-		</Details>
-	</BugPattern>
-
 
 	<BugPattern type="JMH_IGNORED_METHOD_RETURN">
-		<ShortDescription>Non-void method calls should have their returns
-			consumed by a Blackhole.
-		</ShortDescription>
+		<ShortDescription>Method return not used or consumed by a Blackhole.</ShortDescription>
 		<LongDescription>
-			Explain existing problem in code, and how developer
-			should improve their
-			implementation.
+			Each non-void method call should have its return either used in the benchmark
+			or consumed by a Blackhole to avoid dead-code optimization.
 		</LongDescription>
 		<Details>
 <![CDATA[
@@ -70,14 +52,10 @@
 		</ShortDescription>
 		<LongDescription>
 			Final fields pose a threat to benchmark measurements
-			as it gives the compiler
-			the possibility of applying the
-			constant-folding.
-			If JVM realizes the result of the computation is the
-			same no matter what,
-			it can cleverly optimize it. In the case of a JMH benchmark, that means
-			it can move the
-			computation outside of the internal JMH loop.
+			as it gives the compiler the possibility of applying the
+			constant-folding. If JVM realizes the result of the computation is the
+			same no matter what, it can cleverly optimize it. In the case of a JMH benchmark, that means
+			it can move the computation outside of the internal JMH loop.
 		</LongDescription>
 		<Details>
 <![CDATA[
@@ -91,11 +69,10 @@
 		<ShortDescription>Avoid the usage of loops in the JMH benchmark
 			function.</ShortDescription>
 		<LongDescription>
-			Looping is done in the hope of minimizing the
-			overhead of calling the
+			Looping is done in the hope of minimizing the overhead of calling the
 			test method, by doing the operations inside the loop instead of inside
-			the method call. Don't buy this argument; you will see there is more
-			magic happening when we allow optimizers to merge the loop
+			the method call. This is a dangerous setting for a micro-benchmark. 
+			The compiler can automagically apply some optimizations to merge the loop
 			iterations.
 		</LongDescription>
 		<Details>

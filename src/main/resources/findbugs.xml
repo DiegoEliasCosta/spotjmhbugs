@@ -3,9 +3,6 @@
 	xsi:noNamespaceSchemaLocation="findbugsplugin.xsd"
 	pluginid="de.heidelberg.pvs.diego.performance-tests-checker">
 
-	<Detector class="de.heidelberg.pvs.diego.detectors.MyDetector"
-		reports="MY_BUG" speed="fast" />
-
 	<Detector class="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector"
 		reports="JMH_IGNORED_METHOD_RETURN" speed="fast" />
 
@@ -14,9 +11,6 @@
 		
 	<Detector class="de.heidelberg.pvs.diego.detectors.LoopInsideBenchmarkDetector"
 		reports="JMH_LOOP_INSIDE_BENCHMARK" speed="fast" />
-
-	<!-- Example BUG -->
-	<BugPattern type="MY_BUG" category="CORRECTNESS" />
 
 	<!-- JMH CORRECNESS BUGS -->
 	<BugPattern type="JMH_IGNORED_METHOD_RETURN" category="CORRECTNESS" />
