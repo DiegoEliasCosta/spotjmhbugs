@@ -12,14 +12,20 @@ import edu.umd.cs.findbugs.BugReporter;
 import edu.umd.cs.findbugs.ba.ClassContext;
 import edu.umd.cs.findbugs.bcel.OpcodeStackDetector;
 
-public abstract class AbstractJMHBenchmarkChecker extends OpcodeStackDetector {
+/**
+ * Abstract class for JMH benchmark method analysis
+ * 
+ * @author diego.costa
+ *
+ */
+public abstract class AbstractJMHBenchmarkMethodChecker extends OpcodeStackDetector {
 
 	private static final String JMH_BENCHMARK_ANNOTATION = "Lorg/openjdk/jmh/annotations/Benchmark;";
-	
+
 	protected final BugReporter bugReporter;
 	protected Set<Method> targetBenchmarkMethods = new HashSet<>();
 
-	public AbstractJMHBenchmarkChecker(BugReporter bugReporter) {
+	public AbstractJMHBenchmarkMethodChecker(BugReporter bugReporter) {
 		this.bugReporter = bugReporter;
 	}
 
@@ -30,6 +36,7 @@ public abstract class AbstractJMHBenchmarkChecker extends OpcodeStackDetector {
 
 		for (Method method : methods) {
 
+			// Target methods that are declared with the @Benchmark annotation
 			if (isMethodBenchmark(method)) {
 				targetBenchmarkMethods.add(method);
 			}
@@ -54,23 +61,21 @@ public abstract class AbstractJMHBenchmarkChecker extends OpcodeStackDetector {
 	@Override
 	public void sawOpcode(int seen) {
 
+		// Before getMethod() we make sure that we are visiting a method at the moment
 		if (visitingMethod()) {
 
 			Method currentVisitingMethod = getMethod();
 
-			// Checks whether the method is one of the benchmarks
+			// Checks whether the method is a benchmark method
 			if (targetBenchmarkMethods.contains(currentVisitingMethod)) {
-				
 				analyzeBenchmarkMethodOpCode(seen);
-				
 			}
-
 		}
-
 	}
 
 	/**
-	 * 
+	 * Main method to be implemented on each checker analyzing @Benchmark
+	 * methods. This method will be called once per each byte code instruction.
 	 * 
 	 * @param seen
 	 */

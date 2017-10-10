@@ -7,7 +7,13 @@ import org.apache.bcel.Const;
 import edu.umd.cs.findbugs.BugInstance;
 import edu.umd.cs.findbugs.BugReporter;
 
-public class IgnoredMethodReturnChecker extends AbstractJMHBenchmarkChecker {
+/**
+ * Checker for identifying methods call with ignored return values on JMH benchmarks.
+ * 
+ * @author diego.costa
+ *
+ */
+public class IgnoredMethodReturnChecker extends AbstractJMHBenchmarkMethodChecker {
 
 	private static final String JMH_IGNORED_METHOD_RETURN = "JMH_IGNORED_METHOD_RETURN";
 
