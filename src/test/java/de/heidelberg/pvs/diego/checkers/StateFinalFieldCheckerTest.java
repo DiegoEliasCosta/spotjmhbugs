@@ -49,5 +49,20 @@ public class StateFinalFieldCheckerTest {
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_STATE_FINAL_FIELD").build();
 		assertThat(bugCollection, containsExactly(bugTypeMatcher, 3));
 	}
+	
+	
+	@Test
+	public void testOnStateInnerClassExample() throws Exception {
+		Path outerClassPath = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.examples".replace('.', '/'),
+				"StateInnerClassExample.class");
+		Path innerClassPath = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.examples".replace('.', '/'),
+				"StateInnerClassExample$MyState.class");
+		
+		
+		BugCollection bugCollection = spotbugs.performAnalysis(outerClassPath, innerClassPath);
+
+		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_STATE_FINAL_FIELD").build();
+		assertThat(bugCollection, containsExactly(bugTypeMatcher, 2));
+	}
 
 }
