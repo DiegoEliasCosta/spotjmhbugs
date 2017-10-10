@@ -11,10 +11,21 @@
 
 	<Detector class="de.heidelberg.pvs.diego.checkers.StateFinalFieldChecker"
 		reports="JMH_STATE_FINAL_FIELD" speed="fast" />
+		
+	<Detector class="de.heidelberg.pvs.diego.checkers.LoopInsideBenchmarkChecker"
+		reports="JMH_LOOP_INSIDE_BENCHMARK" speed="fast" />
 
+	<!-- Example BUG -->
 	<BugPattern type="MY_BUG" category="CORRECTNESS" />
 
+	<!-- JMH CORRECNESS BUGS -->
 	<BugPattern type="JMH_IGNORED_METHOD_RETURN" category="CORRECTNESS" />
 	<BugPattern type="JMH_STATE_FINAL_FIELD" category="CORRECTNESS" />
+	
+	
+	<!-- JMH BEST PRACTICES BUGS -->
+	<BugPattern type="JMH_LOOP_INSIDE_BENCHMARK" category="BEST_PRACTICES" />
+	
+	
 
 </FindbugsPlugin>
