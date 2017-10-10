@@ -8,25 +8,25 @@
 	</Plugin>
 
 	<!-- DETECTORS -->
-	<Detector class="de.heidelberg.pvs.diego.checkers.MyDetector">
+	<Detector class="de.heidelberg.pvs.diego.detectors.MyDetector">
 		<Details>
 			Original detector to detect MY_BUG bug pattern.
 		</Details>
 	</Detector>
 
-	<Detector class="de.heidelberg.pvs.diego.checkers.IgnoredMethodReturnChecker">
+	<Detector class="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector">
 		<Details>
 			Detector of ignored method returns in a JMH benchmark.
 		</Details>
 	</Detector>
 
-	<Detector class="de.heidelberg.pvs.diego.checkers.StateFinalFieldChecker">
+	<Detector class="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector">
 		<Details>
 			Detector of final @State fields in a JMH benchmark.
 		</Details>
 	</Detector>
 
-	<Detector class="de.heidelberg.pvs.diego.checkers.LoopInsideBenchmarkChecker">
+	<Detector class="de.heidelberg.pvs.diego.detectors.LoopInsideBenchmarkDetector">
 		<Details>
 			Detector of loops inside the benchmark.
 		</Details>
