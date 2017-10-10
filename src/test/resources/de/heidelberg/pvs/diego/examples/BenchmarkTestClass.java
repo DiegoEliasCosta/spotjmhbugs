@@ -1,4 +1,4 @@
-package de.heidelberg.pvs.diego.checkers;
+package de.heidelberg.pvs.diego.examples;
 
 import org.openjdk.jmh.annotations.Benchmark;
 

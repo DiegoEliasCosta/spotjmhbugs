@@ -1,4 +1,4 @@
-package de.heidelberg.pvs.diego.checkers;
+package de.heidelberg.pvs.diego.detectors;
 
 import java.util.HashSet;
 import java.util.List;
@@ -18,14 +18,14 @@ import edu.umd.cs.findbugs.bcel.OpcodeStackDetector;
  * @author diego.costa
  *
  */
-public abstract class AbstractJMHBenchmarkMethodChecker extends OpcodeStackDetector {
+public abstract class AbstractJMHBenchmarkMethodDetector extends OpcodeStackDetector {
 
 	private static final String JMH_BENCHMARK_ANNOTATION = "Lorg/openjdk/jmh/annotations/Benchmark;";
 
 	protected final BugReporter bugReporter;
 	protected Set<Method> targetBenchmarkMethods = new HashSet<Method>();
 
-	public AbstractJMHBenchmarkMethodChecker(BugReporter bugReporter) {
+	public AbstractJMHBenchmarkMethodDetector(BugReporter bugReporter) {
 		this.bugReporter = bugReporter;
 	}
 

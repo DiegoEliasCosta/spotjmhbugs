@@ -14,7 +14,7 @@ import edu.umd.cs.findbugs.test.SpotBugsRule;
 import edu.umd.cs.findbugs.test.matcher.BugInstanceMatcher;
 import edu.umd.cs.findbugs.test.matcher.BugInstanceMatcherBuilder;
 
-public class LoopInsideBenchmarkCheckerTest {
+public class LoopInsideBenchmarkDetectorTest {
 	
 	@Rule
 	public SpotBugsRule spotbugs = new SpotBugsRule();

@@ -1,4 +1,4 @@
-package de.heidelberg.pvs.diego.checkers;
+package de.heidelberg.pvs.diego.detectors;
 
 import java.util.HashSet;
 import java.util.Objects;
@@ -16,12 +16,12 @@ import edu.umd.cs.findbugs.bcel.OpcodeStackDetector;
  * @author diego.costa
  *
  */
-public abstract class AbstractJMHStateClassChecker extends OpcodeStackDetector {
+public abstract class AbstractJMHStateClassDetector extends OpcodeStackDetector {
 
 	private Set<ClassContext> targetStateClasses = new HashSet<ClassContext>();
 	protected final BugReporter bugReporter;
 	
-	public AbstractJMHStateClassChecker(BugReporter bugReporter) {
+	public AbstractJMHStateClassDetector(BugReporter bugReporter) {
 		this.bugReporter = bugReporter;
 	}
 	

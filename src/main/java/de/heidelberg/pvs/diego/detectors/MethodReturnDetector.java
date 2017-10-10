@@ -16,7 +16,7 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-package de.heidelberg.pvs.diego.checkers;
+package de.heidelberg.pvs.diego.detectors;
 
 import java.util.BitSet;
 
@@ -53,7 +53,7 @@ import edu.umd.cs.findbugs.visitclass.PreorderVisitor;
  *
  * @author David Hovemeyer
  */
-public class MethodReturnCheck extends OpcodeStackDetector implements UseAnnotationDatabase {
+public class MethodReturnDetector extends OpcodeStackDetector implements UseAnnotationDatabase {
     private static final boolean DEBUG = SystemProperties.getBoolean("mrc.debug");
 
     private static final int SCAN = 0;
@@ -84,7 +84,7 @@ public class MethodReturnCheck extends OpcodeStackDetector implements UseAnnotat
 
     private boolean sawExcludedNSECall;
 
-    public MethodReturnCheck(BugReporter bugReporter) {
+    public MethodReturnDetector(BugReporter bugReporter) {
         this.bugAccumulator = new BugAccumulator(bugReporter);
         this.noSideEffectMethods = Global.getAnalysisCache().getDatabase(NoSideEffectMethodsDatabase.class);
     }

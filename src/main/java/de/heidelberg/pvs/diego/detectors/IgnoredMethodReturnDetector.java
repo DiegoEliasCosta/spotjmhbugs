@@ -1,4 +1,4 @@
-package de.heidelberg.pvs.diego.checkers;
+package de.heidelberg.pvs.diego.detectors;
 
 import java.util.BitSet;
 
@@ -13,7 +13,7 @@ import edu.umd.cs.findbugs.BugReporter;
  * @author diego.costa
  *
  */
-public class IgnoredMethodReturnChecker extends AbstractJMHBenchmarkMethodChecker {
+public class IgnoredMethodReturnDetector extends AbstractJMHBenchmarkMethodDetector {
 
 	private static final String JMH_IGNORED_METHOD_RETURN = "JMH_IGNORED_METHOD_RETURN";
 
@@ -28,7 +28,7 @@ public class IgnoredMethodReturnChecker extends AbstractJMHBenchmarkMethodChecke
 		INVOKE_OPCODE_SET.set(Const.INVOKEVIRTUAL);
 	}
 
-	public IgnoredMethodReturnChecker(BugReporter bugReporter) {
+	public IgnoredMethodReturnDetector(BugReporter bugReporter) {
 		super(bugReporter);
 	}
 

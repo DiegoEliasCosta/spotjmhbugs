@@ -1,15 +1,15 @@
-package de.heidelberg.pvs.diego.checkers;
+package de.heidelberg.pvs.diego.detectors;
 
 import org.apache.bcel.classfile.Field;
 
 import edu.umd.cs.findbugs.BugInstance;
 import edu.umd.cs.findbugs.BugReporter;
 
-public class StateFinalFieldChecker extends AbstractJMHStateClassChecker {
+public class StateFinalFieldDetector extends AbstractJMHStateClassDetector {
 
 	private static final String JMH_STATE_FINAL_FIELD = "JMH_STATE_FINAL_FIELD";
 
-	public StateFinalFieldChecker(BugReporter bugReporter) {
+	public StateFinalFieldDetector(BugReporter bugReporter) {
 		super(bugReporter);
 	}
 

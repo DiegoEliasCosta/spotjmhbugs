@@ -1,15 +1,15 @@
-package de.heidelberg.pvs.diego.checkers;
+package de.heidelberg.pvs.diego.detectors;
 
 import org.apache.bcel.Const;
 
 import edu.umd.cs.findbugs.BugInstance;
 import edu.umd.cs.findbugs.BugReporter;
 
-public class LoopInsideBenchmarkChecker extends AbstractJMHBenchmarkMethodChecker {
+public class LoopInsideBenchmarkDetector extends AbstractJMHBenchmarkMethodDetector {
 
 	private static final String JMH_LOOP_INSIDE_BENCHMARK = "JMH_LOOP_INSIDE_BENCHMARK";
 
-	public LoopInsideBenchmarkChecker(BugReporter bugReporter) {
+	public LoopInsideBenchmarkDetector(BugReporter bugReporter) {
 		super(bugReporter);
 	}
 
