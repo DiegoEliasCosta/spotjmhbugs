@@ -22,9 +22,9 @@ public class StateFinalFieldDetector extends AbstractJMHStateClassDetector {
 			// RULE: Fields on @State object should not be declared final
 			if (obj.isFinal() && !obj.isSynthetic()) {
 				
-				
 				BugInstance bugInstance = new BugInstance(this, JMH_STATE_FINAL_FIELD, NORMAL_PRIORITY).addField(this)
-						.addClass(this);
+						.addClass(this)
+						.addSourceLine(this);
 
 				super.bugReporter.reportBug(bugInstance);
 			}
