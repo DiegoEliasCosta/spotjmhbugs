@@ -2,6 +2,7 @@ package de.heidelberg.pvs.diego.detectors;
 
 import org.apache.bcel.classfile.Field;
 
+import edu.umd.cs.findbugs.BugAnnotation;
 import edu.umd.cs.findbugs.BugInstance;
 import edu.umd.cs.findbugs.BugReporter;
 
@@ -22,9 +23,9 @@ public class StateFinalFieldDetector extends AbstractJMHStateClassDetector {
 			// RULE: Fields on @State object should not be declared final
 			if (obj.isFinal() && !obj.isSynthetic()) {
 				
-				BugInstance bugInstance = new BugInstance(this, JMH_STATE_FINAL_FIELD, NORMAL_PRIORITY).addField(this)
-						.addClass(this)
-						.addSourceLine(this);
+				BugInstance bugInstance = new BugInstance(this, JMH_STATE_FINAL_FIELD, NORMAL_PRIORITY)
+						.addClass(this) 
+						.addField(this);
 
 				super.bugReporter.reportBug(bugInstance);
 			}
