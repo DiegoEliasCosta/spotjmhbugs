@@ -18,6 +18,7 @@ import edu.umd.cs.findbugs.bcel.OpcodeStackDetector;
  */
 public abstract class AbstractJMHStateClassDetector extends OpcodeStackDetector {
 
+	private static final String JMH_STATE_ANNOTATION = "Lorg/openjdk/jmh/annotations/State;";
 	private Set<ClassContext> targetStateClasses = new HashSet<ClassContext>();
 	protected final BugReporter bugReporter;
 	
@@ -48,7 +49,7 @@ public abstract class AbstractJMHStateClassDetector extends OpcodeStackDetector 
 			
 			String type = annotation.getAnnotationType();
 			
-			if(Objects.equals(type, "Lorg/openjdk/jmh/annotations/State;")) {
+			if(Objects.equals(type, JMH_STATE_ANNOTATION)) {
 				return true;
 			}
 		}

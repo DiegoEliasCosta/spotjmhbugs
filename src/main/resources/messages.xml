@@ -27,6 +27,14 @@
 			benchmark bug pattern.
 		</Details>
 	</Detector>
+	
+	<Detector
+		class="de.heidelberg.pvs.diego.detectors.UnforkedBenchmarkDetector">
+		<Details>
+			Detector of the JMH_UNFORKED_BENCHMARK inside the
+			benchmark bug pattern.
+		</Details>
+	</Detector>
 
 
 
@@ -64,6 +72,22 @@ it can move the computation outside of the internal JMH loop.</p>
 <p>Looping is done in the hope of minimizing the overhead of calling the test method, by doing the operations inside
 the loop instead of inside the method call. This is a dangerous setting for a micro-benchmark.
 The compiler can automagically apply some optimizations to merge the loop iterations.</p>
+]]>
+		</Details>
+	</BugPattern>
+
+
+<BugPattern type="JMH_UNFORKED_BENCHMARK">
+		<ShortDescription>Benchmark configured with zero forks.</ShortDescription>
+		<LongDescription>Benchmark configured with zero forks in {1}.</LongDescription>
+		<Details>
+<![CDATA[
+<p>
+JVMs are notoriously good at profile-guided optimizations. This is bad
+for benchmarks, because different tests can mix their profiles together,
+and then render the "uniformly bad" code for every test. Forking (running
+in a separate process) each test can help to evade this issue.
+</p>
 ]]>
 		</Details>
 	</BugPattern>
