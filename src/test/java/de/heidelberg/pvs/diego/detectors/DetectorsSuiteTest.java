@@ -8,7 +8,8 @@ import org.junit.runners.Suite;
 @Suite.SuiteClasses({
    IgnoredMethodReturnDetectorTest.class,
    LoopInsideBenchmarkDetectorTest.class,
-   StateFinalFieldDetectorTest.class
+   StateFinalFieldDetectorTest.class,
+   NotForkedBenchmarkDetectorTest.class
 })
 
 public class DetectorsSuiteTest {

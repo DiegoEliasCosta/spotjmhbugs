@@ -2,7 +2,6 @@ package de.heidelberg.pvs.diego.detectors;
 
 import org.apache.bcel.classfile.Field;
 
-import edu.umd.cs.findbugs.BugAnnotation;
 import edu.umd.cs.findbugs.BugInstance;
 import edu.umd.cs.findbugs.BugReporter;
 

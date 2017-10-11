@@ -5,12 +5,12 @@ import java.util.Objects;
 import org.apache.bcel.classfile.AnnotationEntry;
 import org.apache.bcel.classfile.ElementValue;
 import org.apache.bcel.classfile.ElementValuePair;
+import org.apache.bcel.classfile.JavaClass;
 import org.apache.bcel.classfile.Method;
 
 import edu.umd.cs.findbugs.BugInstance;
 import edu.umd.cs.findbugs.BugReporter;
 import edu.umd.cs.findbugs.BytecodeScanningDetector;
-import edu.umd.cs.findbugs.ba.ClassContext;
 
 /**
  * Detector of badly configured benchmarks with fork = 0
@@ -18,28 +18,28 @@ import edu.umd.cs.findbugs.ba.ClassContext;
  * @author diego.costa
  *
  */
-public class UnforkedBenchmarkDetector extends BytecodeScanningDetector {
+public class NotForkedBenchmarkDetector extends BytecodeScanningDetector {
 
-	private static final String JMH_UNFORKED_BENCHMARK = "JMH_UNFORKED_BENCHMARK";
+	private static final String JMH_NOTFORKED_BENCHMARK = "JMH_NOTFORKED_BENCHMARK";
 	protected final BugReporter bugReporter;
 
-	public UnforkedBenchmarkDetector(BugReporter bugReporter) {
+	public NotForkedBenchmarkDetector(BugReporter bugReporter) {
 		this.bugReporter = bugReporter;
 	}
 
 	@Override
-	public void visitClassContext(ClassContext classContext) {
-
-		AnnotationEntry[] annotationEntries = classContext.getJavaClass().getAnnotationEntries();
+	public void visitJavaClass(JavaClass javaClass) {
+		
+		AnnotationEntry[] annotationEntries = javaClass.getAnnotationEntries();
 
 		for (AnnotationEntry annotation : annotationEntries) {
 
 			if (isForkAnnotation(annotation)) {
-				validateForkValue(annotation);
+				validateForkValue(annotation, javaClass);
 			}
 		}
 
-		super.visitClassContext(classContext);
+		super.visitJavaClass(javaClass);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class UnforkedBenchmarkDetector extends BytecodeScanningDetector {
 		for (AnnotationEntry annotation : annotationEntries) {
 
 			if (isForkAnnotation(annotation)) {
-				validateForkValue(annotation);
+				validateForkValue(annotation, getThisClass());
 			}
 		}
 		super.visitMethod(obj);
@@ -61,7 +61,7 @@ public class UnforkedBenchmarkDetector extends BytecodeScanningDetector {
 		return Objects.equals(annotationType, "Lorg/openjdk/jmh/annotations/Fork;");
 	}
 
-	private void validateForkValue(AnnotationEntry annotation) {
+	private void validateForkValue(AnnotationEntry annotation, JavaClass javaClass) {
 
 		ElementValuePair[] elementValuePairs = annotation.getElementValuePairs();
 
@@ -76,8 +76,13 @@ public class UnforkedBenchmarkDetector extends BytecodeScanningDetector {
 				 */
 				if (Objects.equals(value.stringifyValue(), "0")) {
 
-					BugInstance bugInstance = new BugInstance(this, JMH_UNFORKED_BENCHMARK, NORMAL_PRIORITY)
-							.addClass(this).addSourceLine(this);
+					BugInstance bugInstance = new BugInstance(this, JMH_NOTFORKED_BENCHMARK, NORMAL_PRIORITY);
+					
+					if(visitingMethod()) {
+						bugInstance.addClassAndMethod(this).addSourceLine(this);
+					} else {
+						bugInstance.addClass(javaClass);
+					}
 
 					bugReporter.reportBug(bugInstance);
 				}

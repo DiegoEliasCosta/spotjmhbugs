@@ -29,7 +29,7 @@
 	</Detector>
 	
 	<Detector
-		class="de.heidelberg.pvs.diego.detectors.UnforkedBenchmarkDetector">
+		class="de.heidelberg.pvs.diego.detectors.NotForkedBenchmarkDetector">
 		<Details>
 			Detector of the JMH_UNFORKED_BENCHMARK inside the
 			benchmark bug pattern.
@@ -51,7 +51,7 @@ by a Blackhole to avoid	dead-code optimization.</p>
 
 	<BugPattern type="JMH_STATE_FINAL_FIELD">
 		<ShortDescription>JMH State field declared final.</ShortDescription>
-		<LongDescription>JMH State {2} declared final in {1}</LongDescription>
+		<LongDescription>State field declared final in {1}</LongDescription>
 		<Details>
 <![CDATA[
 <p>Final fields pose a threat to benchmark measurements
@@ -77,7 +77,7 @@ The compiler can automagically apply some optimizations to merge the loop iterat
 	</BugPattern>
 
 
-<BugPattern type="JMH_UNFORKED_BENCHMARK">
+<BugPattern type="JMH_NOTFORKED_BENCHMARK">
 		<ShortDescription>Benchmark configured with zero forks.</ShortDescription>
 		<LongDescription>Benchmark configured with zero forks in {1}.</LongDescription>
 		<Details>
