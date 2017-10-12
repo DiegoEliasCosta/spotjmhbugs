@@ -5,6 +5,12 @@ import org.apache.bcel.classfile.Field;
 import edu.umd.cs.findbugs.BugInstance;
 import edu.umd.cs.findbugs.BugReporter;
 
+/**
+ * Detector that identifies final variables defined in a JMH @State class
+ * 
+ * @author diego.costa
+ *
+ */
 public class StateFinalFieldDetector extends AbstractJMHStateClassDetector {
 
 	private static final String JMH_STATE_FINAL_FIELD = "JMH_STATE_FINAL_FIELD";

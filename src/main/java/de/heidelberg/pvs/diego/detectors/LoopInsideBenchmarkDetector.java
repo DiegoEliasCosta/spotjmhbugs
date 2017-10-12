@@ -5,6 +5,12 @@ import org.apache.bcel.Const;
 import edu.umd.cs.findbugs.BugInstance;
 import edu.umd.cs.findbugs.BugReporter;
 
+/**
+ * Detector that identified a loop definition in the @Benchmark method
+ * 
+ * @author diego.costa
+ *
+ */
 public class LoopInsideBenchmarkDetector extends AbstractJMHBenchmarkMethodDetector {
 
 	private static final String JMH_LOOP_INSIDE_BENCHMARK = "JMH_LOOP_INSIDE_BENCHMARK";
