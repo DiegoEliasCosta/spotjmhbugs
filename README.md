@@ -17,10 +17,18 @@ Maven
 
 ### Building
 
-You can use Maven to generate the jar file necessary for deployment:
+You can use Maven to generate the jar file necessary for deployment.
+
+First compile the source of the project  
 
 ```
-mvn clean package
+mvn compile
+```
+
+And simply pack the compiled code into the jar format. This jar will then be used to integrate our rules to SpotBugs program. 
+
+```
+mvn package
 ```
 
 
