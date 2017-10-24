@@ -40,10 +40,5 @@ public class StateFinalFieldDetector extends AbstractJMHStateClassDetector {
 		super.visitField(obj);
 	}
 
-	@Override
-	protected void analyzeStateClassOpCode(int seen) {
-		// We cannot use the opcode stack to analyze field variables.
-		// For this analysis this needs to be ignored
-	}
 
 }

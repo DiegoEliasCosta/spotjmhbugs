@@ -29,7 +29,7 @@ public class LoopInsideBenchmarkDetector extends AbstractJMHBenchmarkMethodDetec
 		 * used for loops in general but can also appear on some error handling
 		 * mechanisms. So far, I have not fully understood SpotBugs way of
 		 * dealing with loops but should update this method as soon as I find a
-		 * more reliable way of identifying loops.
+		 * more reliable way of identifying those.
 		 * 
 		 * A good link for more info on the subject
 		 * https://stackoverflow.com/questions/6792305/identify-loops-in-java-byte-code

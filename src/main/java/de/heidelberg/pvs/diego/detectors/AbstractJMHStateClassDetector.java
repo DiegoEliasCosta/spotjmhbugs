@@ -1,14 +1,17 @@
 package de.heidelberg.pvs.diego.detectors;
 
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
-import org.apache.bcel.classfile.AnnotationEntry;
-
 import edu.umd.cs.findbugs.BugReporter;
+import edu.umd.cs.findbugs.BytecodeScanningDetector;
 import edu.umd.cs.findbugs.ba.ClassContext;
-import edu.umd.cs.findbugs.bcel.OpcodeStackDetector;
+import edu.umd.cs.findbugs.ba.XClass;
+import edu.umd.cs.findbugs.classfile.CheckedAnalysisException;
+import edu.umd.cs.findbugs.classfile.ClassDescriptor;
+import edu.umd.cs.findbugs.classfile.analysis.AnnotationValue;
 
 /**
  * Abstract class for @State object analysis.
@@ -16,9 +19,9 @@ import edu.umd.cs.findbugs.bcel.OpcodeStackDetector;
  * @author diego.costa
  *
  */
-public abstract class AbstractJMHStateClassDetector extends OpcodeStackDetector {
+public abstract class AbstractJMHStateClassDetector extends BytecodeScanningDetector {
 
-	private static final String JMH_STATE_ANNOTATION = "Lorg/openjdk/jmh/annotations/State;";
+	private static final String JMH_STATE_ANNOTATION = "org/openjdk/jmh/annotations/State";
 	private Set<ClassContext> targetStateClasses = new HashSet<ClassContext>();
 	protected final BugReporter bugReporter;
 	
@@ -32,7 +35,7 @@ public abstract class AbstractJMHStateClassDetector extends OpcodeStackDetector 
 	@Override
 	public void visitClassContext(ClassContext classContext) {
 		
-		if(isStateClass(classContext)) {
+		if(isStateClass(classContext.getXClass())) {
 			targetStateClasses.add(classContext);
 		}
 		
@@ -40,17 +43,30 @@ public abstract class AbstractJMHStateClassDetector extends OpcodeStackDetector 
 		super.visitClassContext(classContext);
 	}
 
-	private boolean isStateClass(ClassContext classContext) {
+	private boolean isStateClass(XClass xClass) {
 
 		// Get annotations
-		AnnotationEntry[] annotationEntries = classContext.getJavaClass().getAnnotationEntries();
+		Collection<AnnotationValue> annotationEntries = xClass.getAnnotations();
 		
-		for(AnnotationEntry annotation : annotationEntries) {
+		for(AnnotationValue annotation : annotationEntries) {
 			
-			String type = annotation.getAnnotationType();
+			String type = annotation.getAnnotationClass().getClassName();
 			
 			if(Objects.equals(type, JMH_STATE_ANNOTATION)) {
 				return true;
+			}
+		}
+		
+		// Check super class
+		ClassDescriptor superclassDescriptor = xClass.getSuperclassDescriptor();
+		
+		if(superclassDescriptor != null) {
+			try {
+				// Recursive call to the super class 
+				isStateClass(superclassDescriptor.getXClass());
+			} catch (CheckedAnalysisException e) {
+				// FIXME: Handle this exception without stopping the analysis
+				e.printStackTrace();
 			}
 		}
 
@@ -65,17 +81,6 @@ public abstract class AbstractJMHStateClassDetector extends OpcodeStackDetector 
 		return true;
 	}
 
-	@Override
-	public void sawOpcode(int seen) {
-		
-		ClassContext currentClassContext = getClassContext();
-		
-		// Only analyzes @State classes  
-		if(targetStateClasses.contains(currentClassContext)) {
-			analyzeStateClassOpCode(seen);
-		}
-	}
-	
 	/**
 	 * Returns true whether we are currently visiting a @State class 
 	 * 
@@ -84,15 +89,6 @@ public abstract class AbstractJMHStateClassDetector extends OpcodeStackDetector 
 	public boolean isTargetStateClass() {
 		return this.targetStateClasses.contains(getClassContext());
 	}
-	
-	/**
-	 * Main method to be implemented on each checker analyzing @State classes. 
-	 * This method will be called once per each byte code instruction.
-	 * 
-	 * @param seen
-	 */
-	protected abstract void analyzeStateClassOpCode(int seen);
-
 	
 
 }

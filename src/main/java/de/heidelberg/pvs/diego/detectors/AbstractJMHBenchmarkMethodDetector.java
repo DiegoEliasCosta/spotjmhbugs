@@ -1,16 +1,19 @@
 package de.heidelberg.pvs.diego.detectors;
 
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
-import org.apache.bcel.classfile.AnnotationEntry;
 import org.apache.bcel.classfile.Method;
 
 import edu.umd.cs.findbugs.BugReporter;
 import edu.umd.cs.findbugs.ba.ClassContext;
+import edu.umd.cs.findbugs.ba.XClass;
+import edu.umd.cs.findbugs.ba.XMethod;
 import edu.umd.cs.findbugs.bcel.OpcodeStackDetector;
+import edu.umd.cs.findbugs.classfile.analysis.AnnotationValue;
 
 /**
  * Abstract class for JMH benchmark method analysis
@@ -20,21 +23,24 @@ import edu.umd.cs.findbugs.bcel.OpcodeStackDetector;
  */
 public abstract class AbstractJMHBenchmarkMethodDetector extends OpcodeStackDetector {
 
-	private static final String JMH_BENCHMARK_ANNOTATION = "Lorg/openjdk/jmh/annotations/Benchmark;";
+	private static final String JMH_BENCHMARK_ANNOTATION = "org/openjdk/jmh/annotations/Benchmark";
 
 	protected final BugReporter bugReporter;
-	protected Set<Method> targetBenchmarkMethods = new HashSet<Method>();
+	protected Set<XMethod> targetBenchmarkMethods = new HashSet<XMethod>();
 
 	public AbstractJMHBenchmarkMethodDetector(BugReporter bugReporter) {
 		this.bugReporter = bugReporter;
 	}
+	
 
 	@Override
 	public void visitClassContext(ClassContext classContext) {
+		
+		XClass xClass = classContext.getXClass();
 
-		List<Method> methods = classContext.getMethodsInCallOrder();
+		List<? extends XMethod> methods = xClass.getXMethods();
 
-		for (Method method : methods) {
+		for (XMethod method : methods) {
 
 			// Target methods that are declared with the @Benchmark annotation
 			if (isMethodBenchmark(method)) {
@@ -46,11 +52,14 @@ public abstract class AbstractJMHBenchmarkMethodDetector extends OpcodeStackDete
 		super.visitClassContext(classContext);
 	}
 
-	private boolean isMethodBenchmark(Method method) {
-		AnnotationEntry[] annotationEntries = method.getAnnotationEntries();
+	private boolean isMethodBenchmark(XMethod method) {
+		Collection<AnnotationValue> annotationEntries = method.getAnnotations();
 
-		for (AnnotationEntry annotation : annotationEntries) {
-			if (Objects.equals(annotation.getAnnotationType(), JMH_BENCHMARK_ANNOTATION)) {
+		for (AnnotationValue annotation : annotationEntries) {
+			
+			String annotationType = annotation.getAnnotationClass().getClassName();
+			
+			if (Objects.equals(annotationType, JMH_BENCHMARK_ANNOTATION)) {
 				return true;
 			}
 		}
@@ -64,7 +73,7 @@ public abstract class AbstractJMHBenchmarkMethodDetector extends OpcodeStackDete
 		// Before getMethod() we make sure that we are visiting a method at the moment
 		if (visitingMethod()) {
 
-			Method currentVisitingMethod = getMethod();
+			XMethod currentVisitingMethod = getXMethod();
 
 			// Checks whether the method is a benchmark method
 			if (targetBenchmarkMethods.contains(currentVisitingMethod)) {
