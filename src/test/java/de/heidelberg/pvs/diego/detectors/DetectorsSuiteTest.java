@@ -9,7 +9,8 @@ import org.junit.runners.Suite;
    IgnoredMethodReturnDetectorTest.class,
    LoopInsideBenchmarkDetectorTest.class,
    StateFinalFieldDetectorTest.class,
-   NotForkedBenchmarkDetectorTest.class
+   NotForkedBenchmarkDetectorTest.class,
+   FixtureWithInvocationScopeDetectionTest.class
 })
 
 public class DetectorsSuiteTest {

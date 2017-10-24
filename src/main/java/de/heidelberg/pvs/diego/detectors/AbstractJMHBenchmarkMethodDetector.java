@@ -6,8 +6,6 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
-import org.apache.bcel.classfile.Method;
-
 import edu.umd.cs.findbugs.BugReporter;
 import edu.umd.cs.findbugs.ba.ClassContext;
 import edu.umd.cs.findbugs.ba.XClass;
@@ -41,7 +39,7 @@ public abstract class AbstractJMHBenchmarkMethodDetector extends OpcodeStackDete
 		List<? extends XMethod> methods = xClass.getXMethods();
 
 		for (XMethod method : methods) {
-
+			
 			// Target methods that are declared with the @Benchmark annotation
 			if (isMethodBenchmark(method)) {
 				targetBenchmarkMethods.add(method);

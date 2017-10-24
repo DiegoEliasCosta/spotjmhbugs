@@ -14,6 +14,9 @@
 		
 	<Detector class="de.heidelberg.pvs.diego.detectors.NotForkedBenchmarkDetector"
 		reports="JMH_NOTFORKED_BENCHMARK" speed="fast" />
+		
+	<Detector class="de.heidelberg.pvs.diego.detectors.FixtureWithInvocationScopeDetector"
+		reports="JMH_FIXTURE_USING_INVOCATION_SCOPE" speed="fast" />
 
 	<!-- JMH CORRECNESS BUGS -->
 	<BugPattern type="JMH_IGNORED_METHOD_RETURN" category="CORRECTNESS" />
@@ -23,6 +26,7 @@
 	<!-- JMH BEST PRACTICES BUGS -->
 	<BugPattern type="JMH_LOOP_INSIDE_BENCHMARK" category="BEST_PRACTICES" />
 	<BugPattern type="JMH_NOTFORKED_BENCHMARK" category="BEST_PRACTICES" />
+	<BugPattern type="JMH_FIXTURE_USING_INVOCATION_SCOPE" category="BEST_PRACTICES" />
 	
 	
 

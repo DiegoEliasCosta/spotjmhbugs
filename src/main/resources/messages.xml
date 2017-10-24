@@ -35,6 +35,15 @@
 			benchmark bug pattern.
 		</Details>
 	</Detector>
+	
+	<Detector
+		class="de.heidelberg.pvs.diego.detectors.FixtureWithInvocationScopeDetector">
+		<Details>
+			Detector of the JMH_FIXTURE_USING_INVOCATION_SCOPE inside the
+			benchmark bug pattern.
+		</Details>
+	</Detector>
+	
 
 
 
@@ -91,6 +100,23 @@ in a separate process) each test can help to evade this issue.
 ]]>
 		</Details>
 	</BugPattern>
+	
+	
+	<BugPattern type="JMH_FIXTURE_USING_INVOCATION_SCOPE">
+		<ShortDescription>Fixture methods configured with Invocation scope. </ShortDescription>
+		<LongDescription>Fixture methods configured with Invocation scope in {1}.</LongDescription>
+		<Details>
+<![CDATA[
+<p>
+This level is only usable for benchmarks taking more than a millisecond
+per single Benchmark method invocation. It is a good idea to validate
+the impact for your case on ad-hoc basis as well.
+</p>
+]]>
+		</Details>
+	</BugPattern>
+
+
 
 
 </MessageCollection>

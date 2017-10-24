@@ -63,7 +63,7 @@ public abstract class AbstractJMHStateClassDetector extends BytecodeScanningDete
 		if(superclassDescriptor != null) {
 			try {
 				// Recursive call to the super class 
-				isStateClass(superclassDescriptor.getXClass());
+				return isStateClass(superclassDescriptor.getXClass());
 			} catch (CheckedAnalysisException e) {
 				// FIXME: Handle this exception without stopping the analysis
 				e.printStackTrace();
