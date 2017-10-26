@@ -60,7 +60,7 @@ public class FixtureWithInvocationScopeDetector extends AbstractJMHStateClassDet
 				// Benchmarks
 				if (Objects.equals(stringifiedValue, LEVEL_INVOCATION)) {
 
-					BugInstance bug = new BugInstance(JMH_FIXTURE_USING_INVOCATION_SCOPE, NORMAL_PRIORITY)
+					BugInstance bug = new BugInstance(this, JMH_FIXTURE_USING_INVOCATION_SCOPE, NORMAL_PRIORITY)
 							.addClassAndMethod(this).addSourceLine(this);
 
 					super.bugReporter.reportBug(bug);

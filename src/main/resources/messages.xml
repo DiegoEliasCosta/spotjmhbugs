@@ -44,8 +44,14 @@
 		</Details>
 	</Detector>
 	
-
-
+	<Detector
+		class="de.heidelberg.pvs.diego.detectors.SingleShotBenchmarkDetector">
+		<Details>
+			Detector of the JMH_BENCHMARKMODE_SINGLESHOT inside the
+			benchmark bug pattern.
+		</Details>
+	</Detector>
+	
 
 	<BugPattern type="JMH_IGNORED_METHOD_RETURN">
 		<ShortDescription>Method return not used or consumed by a Blackhole.</ShortDescription>
@@ -115,8 +121,29 @@ the impact for your case on ad-hoc basis as well.
 ]]>
 		</Details>
 	</BugPattern>
+	
+	
+	<BugPattern type="JMH_BENCHMARKMODE_SINGLESHOT">
+		<ShortDescription>Benchmark configured as a SingleShot. </ShortDescription>
+		<LongDescription>Benchmark configured as a SingleShot in {1}.</LongDescription>
+		<Details>
+<![CDATA[
+<p>
+This mode is useful to estimate the "cold" performance when you don't want to hide the warmup invocations, or
+if you want to see the progress from call to call, or you want to record every single sample. This mode is
+work-based, and will run only for a single invocation of {@link Benchmark} method.
 
+Caveats for this mode include:
+<ul>
+	<li>More warmup/measurement iterations are generally required.</li>
+    <li>Timers overhead might be significant if benchmarks are small; switch to {@link #SampleTime} mode if
+    that is a problem.</li>
+</ul>
+</p>
+]]>
+		</Details>
+	</BugPattern>
 
-
+JMH_BENCHMARKMODE_SINGLESHOT
 
 </MessageCollection>
