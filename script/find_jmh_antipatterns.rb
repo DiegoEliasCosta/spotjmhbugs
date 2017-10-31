@@ -2,6 +2,7 @@ require_relative 'csv.rb'
 require 'optparse'
 require 'nokogiri'
 require 'find'
+require 'fileutils'
 require 'pry'
 
 class JMHSpotBugsAutomater
@@ -13,9 +14,10 @@ class JMHSpotBugsAutomater
   TMP_XML_FILE = "tmp.xml"
   JMH_JAR_PATTERNS = ["jmh", "benchmark", "perf", "bench"]
 
-  def initialize(outfile, tmp_dir, debug,  no_build = false)
+  def initialize(outfile, tmp_dir, cache_dir, debug, no_build = false)
     @debug = debug
     @tmp_dir = tmp_dir
+    @cache_dir = cache_dir
     @outfile = outfile
     @skipbuild = no_build
     @result = CSV.new
@@ -130,7 +132,7 @@ class JMHSpotBugsAutomater
           bugs[bug[:type]] = 1
         end
       end
-      File.delete(TMP_XML_FILE)
+      FileUtils.mv(TMP_XML_FILE, "#{@cache_dir}/#{project}.xml")
       transpose_to_csv(bugs, project)
     end
 
@@ -152,6 +154,10 @@ def parse_cmd
 
     opts.on("-t", "--tmp TMPDIR", "What tmp dir should we use to clone projects to?") do |t|
       options[:tmp_dir] = t || "tmp"
+    end
+
+    opts.on("-r", "--result-cache CACHE", "Set this flag to skip cloning and building") do |r|
+      options[:result_cache] = r || "results"
     end
 
     opts.on("-d", "--debug DEBUGFILE", "What file should we write debug info to?") do |d|
@@ -179,8 +185,11 @@ File.open(options[:debug], "w") do |debug|
   if !Dir.exists?(options[:tmp_dir])
     Dir.mkdir options[:tmp_dir]
   end
+  if !Dir.exists?(options[:result_cache])
+    Dir.mkdir options[:result_cache]
+  end
 
-  jmh = JMHSpotBugsAutomater.new(options[:output_file], options[:tmp_dir], debug, options[:no_build])
+  jmh = JMHSpotBugsAutomater.new(options[:output_file], options[:tmp_dir], options[:result_cache], debug, options[:no_build])
   csv = CSV.parse(f, header = true, separator = ",")
   projects_to_consider = csv.reject{|l| l['forked'] == "TRUE" || l['stars'].to_i < 2 }
   projects_to_consider.each{|project| jmh.analyze_project(project) }

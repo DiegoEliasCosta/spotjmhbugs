@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1509416791000" analysisTimestamp="1509416793289" release="">
+  <Project projectName="">
+    <Jar>tmp/reactive-streams-commons</Jar>
+  </Project>
+  <Errors errors="0" missingClasses="4">
+    <MissingClass>org.reactivestreams.Processor</MissingClass>
+    <MissingClass>org.reactivestreams.Publisher</MissingClass>
+    <MissingClass>org.reactivestreams.Subscriber</MissingClass>
+    <MissingClass>org.reactivestreams.Subscription</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 31 Oct 2017 03:26:31 +0100" total_classes="550" referenced_classes="774" total_bugs="0" total_size="28734" num_packages="11" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="38.18" clock_seconds="11.79" peak_mbytes="954.39" alloc_mbytes="3641.00" gc_seconds="0.26">
+    <PackageStats package="org.gradle.cli" total_bugs="0" total_types="24" total_size="545">
+      <ClassStats class="org.gradle.cli.AbstractCommandLineConverter" sourceFile="AbstractCommandLineConverter.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.gradle.cli.AbstractPropertiesCommandLineConverter" sourceFile="AbstractPropertiesCommandLineConverter.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineArgumentException" sourceFile="CommandLineArgumentException.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineConverter" sourceFile="CommandLineConverter.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineOption" sourceFile="CommandLineOption.java" interface="false" size="63" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser" sourceFile="CommandLineParser.java" interface="false" size="138" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$1" sourceFile="CommandLineParser.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$AfterFirstSubCommand" sourceFile="CommandLineParser.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$AfterOptions" sourceFile="CommandLineParser.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$BeforeFirstSubCommand" sourceFile="CommandLineParser.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$CaseInsensitiveStringComparator" sourceFile="CommandLineParser.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$KnownOptionParserState" sourceFile="CommandLineParser.java" interface="false" size="45" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$MissingOptionArgState" sourceFile="CommandLineParser.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$OptionAwareParserState" sourceFile="CommandLineParser.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$OptionComparator" sourceFile="CommandLineParser.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$OptionParserState" sourceFile="CommandLineParser.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$OptionString" sourceFile="CommandLineParser.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$OptionStringComparator" sourceFile="CommandLineParser.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$ParserState" sourceFile="CommandLineParser.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$UnknownOptionParserState" sourceFile="CommandLineParser.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="org.gradle.cli.ParsedCommandLine" sourceFile="ParsedCommandLine.java" interface="false" size="64" bugs="0"/>
+      <ClassStats class="org.gradle.cli.ParsedCommandLineOption" sourceFile="ParsedCommandLineOption.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.gradle.cli.ProjectPropertiesCommandLineConverter" sourceFile="ProjectPropertiesCommandLineConverter.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.gradle.cli.SystemPropertiesCommandLineConverter" sourceFile="SystemPropertiesCommandLineConverter.java" interface="false" size="9" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.gradle.wrapper" total_bugs="0" total_types="16" total_size="587">
+      <ClassStats class="org.gradle.wrapper.BootstrapMainStarter" sourceFile="BootstrapMainStarter.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.Download" sourceFile="Download.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.Download$1" sourceFile="Download.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.Download$SystemPropertiesProxyAuthenticator" sourceFile="Download.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.ExclusiveFileAccessManager" sourceFile="ExclusiveFileAccessManager.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.GradleUserHomeLookup" sourceFile="GradleUserHomeLookup.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.GradleWrapperMain" sourceFile="GradleWrapperMain.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.IDownload" sourceFile="IDownload.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.Install" sourceFile="Install.java" interface="false" size="128" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.Install$1" sourceFile="Install.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.Logger" sourceFile="Logger.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.PathAssembler" sourceFile="PathAssembler.java" interface="false" size="45" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.PathAssembler$LocalDistribution" sourceFile="PathAssembler.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.SystemPropertiesHandler" sourceFile="SystemPropertiesHandler.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.WrapperConfiguration" sourceFile="WrapperConfiguration.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.WrapperExecutor" sourceFile="WrapperExecutor.java" interface="false" size="83" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="rsc.documentation" total_bugs="0" total_types="6" total_size="78">
+      <ClassStats class="rsc.documentation.BackpressureMode" sourceFile="BackpressureMode.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="rsc.documentation.BackpressureSupport" sourceFile="BackpressureSupport.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="rsc.documentation.FusionMode" sourceFile="FusionMode.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="rsc.documentation.FusionSupport" sourceFile="FusionSupport.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="rsc.documentation.Operator" sourceFile="Operator.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="rsc.documentation.OperatorType" sourceFile="OperatorType.java" interface="false" size="27" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="rsc.flow" total_bugs="0" total_types="12" total_size="83">
+      <ClassStats class="rsc.flow.Disposable" sourceFile="Disposable.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="rsc.flow.Fuseable" sourceFile="Fuseable.java" interface="true" size="6" bugs="0"/>
+      <ClassStats class="rsc.flow.Fuseable$ConditionalSubscriber" sourceFile="Fuseable.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="rsc.flow.Fuseable$QueueSubscription" sourceFile="Fuseable.java" interface="true" size="30" bugs="0"/>
+      <ClassStats class="rsc.flow.Fuseable$ScalarCallable" sourceFile="Fuseable.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="rsc.flow.Fuseable$SynchronousSubscription" sourceFile="Fuseable.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="rsc.flow.Loopback" sourceFile="Loopback.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="rsc.flow.MultiProducer" sourceFile="MultiProducer.java" interface="true" size="6" bugs="0"/>
+      <ClassStats class="rsc.flow.MultiReceiver" sourceFile="MultiReceiver.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="rsc.flow.Producer" sourceFile="Producer.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="rsc.flow.Receiver" sourceFile="Receiver.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="rsc.flow.Trackable" sourceFile="Trackable.java" interface="true" size="19" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="rsc.parallel" total_bugs="0" total_types="61" total_size="3462">
+      <ClassStats class="rsc.parallel.OrderedItem" sourceFile="OrderedItem.java" interface="true" size="6" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelCollect" sourceFile="ParallelCollect.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelCollect$ParallelCollectSubscriber" sourceFile="ParallelCollect.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelFlatMap" sourceFile="ParallelFlatMap.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelGroup" sourceFile="ParallelGroup.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelGroup$ParallelInnerGroup" sourceFile="ParallelGroup.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelOrderedBase" sourceFile="ParallelOrderedBase.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelOrderedBase$RemoveOrderedSubscriber" sourceFile="ParallelOrderedBase.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelOrderedConcatMap" sourceFile="ParallelOrderedConcatMap.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelOrderedConcatMap$1" sourceFile="ParallelOrderedConcatMap.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelOrderedConcatMap$ParallelConcatMapDelayed" sourceFile="ParallelOrderedConcatMap.java" interface="false" size="184" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelOrderedConcatMap$ParallelConcatMapImmediate" sourceFile="ParallelOrderedConcatMap.java" interface="false" size="189" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelOrderedConcatMap$ParallelConcatMapInner" sourceFile="ParallelOrderedConcatMap.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelOrderedConcatMap$ParallelConcatMapSupport" sourceFile="ParallelOrderedConcatMap.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelOrderedConcatMap$WeakScalarSubscription" sourceFile="ParallelOrderedConcatMap.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelOrderedFilter" sourceFile="ParallelOrderedFilter.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelOrderedFilter$ParallelFilterSubscriber" sourceFile="ParallelOrderedFilter.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelOrderedJoin" sourceFile="ParallelOrderedJoin.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelOrderedJoin$JoinInnerSubscriber" sourceFile="ParallelOrderedJoin.java" interface="false" size="58" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelOrderedJoin$JoinSubscription" sourceFile="ParallelOrderedJoin.java" interface="false" size="121" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelOrderedMap" sourceFile="ParallelOrderedMap.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelOrderedMap$ParallelMapSubscriber" sourceFile="ParallelOrderedMap.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelOrderedPeek" sourceFile="ParallelOrderedPeek.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelOrderedPeek$ParallelPeekSubscriber" sourceFile="ParallelOrderedPeek.java" interface="false" size="93" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelOrderedRunOn" sourceFile="ParallelOrderedRunOn.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelOrderedSource" sourceFile="ParallelOrderedSource.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelOrderedSource$ParallelDispatcher" sourceFile="ParallelOrderedSource.java" interface="false" size="212" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelOrderedSource$ParallelDispatcher$1" sourceFile="ParallelOrderedSource.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelPublisher" sourceFile="ParallelPublisher.java" interface="false" size="409" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelReduce" sourceFile="ParallelReduce.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelReduce$ParallelReduceSubscriber" sourceFile="ParallelReduce.java" interface="false" size="52" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelReduceFull" sourceFile="ParallelReduceFull.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelReduceFull$ParallelReduceFullInnerSubscriber" sourceFile="ParallelReduceFull.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelReduceFull$ParallelReduceFullMainSubscriber" sourceFile="ParallelReduceFull.java" interface="false" size="73" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelReduceFull$SlotPair" sourceFile="ParallelReduceFull.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelSortedJoin" sourceFile="ParallelSortedJoin.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelSortedJoin$SortedJoinInnerSubscriber" sourceFile="ParallelSortedJoin.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelSortedJoin$SortedJoinSubscription" sourceFile="ParallelSortedJoin.java" interface="false" size="135" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelStreamCollect" sourceFile="ParallelStreamCollect.java" interface="false" size="45" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelStreamCollect$ParallelStreamCollectSubscriber" sourceFile="ParallelStreamCollect.java" interface="false" size="57" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelToOrdered" sourceFile="ParallelToOrdered.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelToOrdered$GlobalOrderingSubscriber" sourceFile="ParallelToOrdered.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelToOrdered$LocalOrderingSubscriber" sourceFile="ParallelToOrdered.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelToUnordered" sourceFile="ParallelToUnordered.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelUnorderedConcatMap" sourceFile="ParallelUnorderedConcatMap.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelUnorderedFilter" sourceFile="ParallelUnorderedFilter.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelUnorderedFilter$ParallelFilterSubscriber" sourceFile="ParallelUnorderedFilter.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelUnorderedFrom" sourceFile="ParallelUnorderedFrom.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelUnorderedJoin" sourceFile="ParallelUnorderedJoin.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelUnorderedJoin$JoinInnerSubscriber" sourceFile="ParallelUnorderedJoin.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelUnorderedJoin$JoinSubscription" sourceFile="ParallelUnorderedJoin.java" interface="false" size="151" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelUnorderedMap" sourceFile="ParallelUnorderedMap.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelUnorderedMap$ParallelMapSubscriber" sourceFile="ParallelUnorderedMap.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelUnorderedPeek" sourceFile="ParallelUnorderedPeek.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelUnorderedPeek$ParallelPeekSubscriber" sourceFile="ParallelUnorderedPeek.java" interface="false" size="91" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelUnorderedRunOn" sourceFile="ParallelUnorderedRunOn.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelUnorderedRunOn$RunOnSubscriber" sourceFile="ParallelUnorderedRunOn.java" interface="false" size="134" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelUnorderedSource" sourceFile="ParallelUnorderedSource.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelUnorderedSource$ParallelDispatcher" sourceFile="ParallelUnorderedSource.java" interface="false" size="221" bugs="0"/>
+      <ClassStats class="rsc.parallel.ParallelUnorderedSource$ParallelDispatcher$1" sourceFile="ParallelUnorderedSource.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="rsc.parallel.PrimaryOrderedItem" sourceFile="PrimaryOrderedItem.java" interface="false" size="26" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="rsc.processor" total_bugs="0" total_types="11" total_size="1000">
+      <ClassStats class="rsc.processor.AsyncProcessor" sourceFile="AsyncProcessor.java" interface="false" size="82" bugs="0"/>
+      <ClassStats class="rsc.processor.AsyncProcessor$AsyncSubscription" sourceFile="AsyncProcessor.java" interface="false" size="76" bugs="0"/>
+      <ClassStats class="rsc.processor.DirectProcessor" sourceFile="DirectProcessor.java" interface="false" size="114" bugs="0"/>
+      <ClassStats class="rsc.processor.DirectProcessor$DirectProcessorSubscription" sourceFile="DirectProcessor.java" interface="false" size="53" bugs="0"/>
+      <ClassStats class="rsc.processor.ReplayProcessor" sourceFile="ReplayProcessor.java" interface="false" size="103" bugs="0"/>
+      <ClassStats class="rsc.processor.ReplayProcessor$BoundedBuffer" sourceFile="ReplayProcessor.java" interface="false" size="138" bugs="0"/>
+      <ClassStats class="rsc.processor.ReplayProcessor$BoundedBuffer$Node" sourceFile="ReplayProcessor.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="rsc.processor.ReplayProcessor$Buffer" sourceFile="ReplayProcessor.java" interface="true" size="11" bugs="0"/>
+      <ClassStats class="rsc.processor.ReplayProcessor$ReplaySubscription" sourceFile="ReplayProcessor.java" interface="false" size="66" bugs="0"/>
+      <ClassStats class="rsc.processor.ReplayProcessor$UnboundedBuffer" sourceFile="ReplayProcessor.java" interface="false" size="148" bugs="0"/>
+      <ClassStats class="rsc.processor.UnicastProcessor" sourceFile="UnicastProcessor.java" interface="false" size="202" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="rsc.publisher" total_bugs="0" total_types="317" total_size="18246">
+      <ClassStats class="rsc.publisher.BlockingFuture" sourceFile="BlockingFuture.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="rsc.publisher.BlockingFuture$BlockingCompletableFutureSubscriber" sourceFile="BlockingFuture.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="rsc.publisher.BlockingFuture$BlockingFutureSubscriber" sourceFile="BlockingFuture.java" interface="false" size="52" bugs="0"/>
+      <ClassStats class="rsc.publisher.BlockingIterable" sourceFile="BlockingIterable.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="rsc.publisher.BlockingIterable$SubscriberIterator" sourceFile="BlockingIterable.java" interface="false" size="97" bugs="0"/>
+      <ClassStats class="rsc.publisher.ConnectablePublisher" sourceFile="ConnectablePublisher.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="rsc.publisher.ConnectablePublisherAutoConnect" sourceFile="ConnectablePublisherAutoConnect.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="rsc.publisher.ConnectablePublisherOnAssembly" sourceFile="ConnectablePublisherOnAssembly.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="rsc.publisher.ConnectablePublisherProcess" sourceFile="ConnectablePublisherProcess.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="rsc.publisher.ConnectablePublisherProcess$State" sourceFile="ConnectablePublisherProcess.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="rsc.publisher.ConnectablePublisherProcess$StateFuseable" sourceFile="ConnectablePublisherProcess.java" interface="false" size="59" bugs="0"/>
+      <ClassStats class="rsc.publisher.ConnectablePublisherProcess$StateNormal" sourceFile="ConnectablePublisherProcess.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="rsc.publisher.ConnectablePublisherPublish" sourceFile="ConnectablePublisherPublish.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="rsc.publisher.ConnectablePublisherPublish$InnerSubscription" sourceFile="ConnectablePublisherPublish.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="rsc.publisher.ConnectablePublisherPublish$State" sourceFile="ConnectablePublisherPublish.java" interface="false" size="255" bugs="0"/>
+      <ClassStats class="rsc.publisher.ConnectablePublisherRefCount" sourceFile="ConnectablePublisherRefCount.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="rsc.publisher.ConnectablePublisherRefCount$State" sourceFile="ConnectablePublisherRefCount.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="rsc.publisher.ConnectablePublisherRefCount$State$InnerSubscriber" sourceFile="ConnectablePublisherRefCount.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="rsc.publisher.GroupedPublisher" sourceFile="GroupedPublisher.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherAccumulate" sourceFile="PublisherAccumulate.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherAccumulate$PublisherAccumulateSubscriber" sourceFile="PublisherAccumulate.java" interface="false" size="67" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherAggregate" sourceFile="PublisherAggregate.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherAggregate$PublisherAggregateSubscriber" sourceFile="PublisherAggregate.java" interface="false" size="58" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherAll" sourceFile="PublisherAll.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherAll$PublisherAllSubscriber" sourceFile="PublisherAll.java" interface="false" size="53" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherAmb" sourceFile="PublisherAmb.java" interface="false" size="73" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherAmb$PublisherAmbCoordinator" sourceFile="PublisherAmb.java" interface="false" size="62" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherAmb$PublisherAmbSubscriber" sourceFile="PublisherAmb.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherAny" sourceFile="PublisherAny.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherAny$PublisherAnySubscriber" sourceFile="PublisherAny.java" interface="false" size="53" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherArray" sourceFile="PublisherArray.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherArray$ArrayConditionalSubscription" sourceFile="PublisherArray.java" interface="false" size="98" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherArray$ArraySubscription" sourceFile="PublisherArray.java" interface="false" size="97" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherAwaitOnSubscribe" sourceFile="PublisherAwaitOnSubscribe.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherAwaitOnSubscribe$PublisherPostOnSubscribeSubscriber" sourceFile="PublisherAwaitOnSubscribe.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherBuffer" sourceFile="PublisherBuffer.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherBuffer$PublisherBufferExactSubscriber" sourceFile="PublisherBuffer.java" interface="false" size="81" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherBuffer$PublisherBufferOverlappingSubscriber" sourceFile="PublisherBuffer.java" interface="false" size="116" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherBuffer$PublisherBufferSkipSubscriber" sourceFile="PublisherBuffer.java" interface="false" size="97" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherBufferBoundary" sourceFile="PublisherBufferBoundary.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherBufferBoundary$PublisherBufferBoundaryMain" sourceFile="PublisherBufferBoundary.java" interface="false" size="103" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherBufferBoundary$PublisherBufferBoundaryOther" sourceFile="PublisherBufferBoundary.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherBufferBoundaryAndSize" sourceFile="PublisherBufferBoundaryAndSize.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherBufferBoundaryAndSize$PublisherBufferBoundaryAndSizeMain" sourceFile="PublisherBufferBoundaryAndSize.java" interface="false" size="183" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherBufferBoundaryAndSize$PublisherBufferBoundaryAndSizeOther" sourceFile="PublisherBufferBoundaryAndSize.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherBufferStartEnd" sourceFile="PublisherBufferStartEnd.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherBufferStartEnd$BufferStartEndEnder" sourceFile="PublisherBufferStartEnd.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherBufferStartEnd$BufferStartEndMainSubscriber" sourceFile="PublisherBufferStartEnd.java" interface="false" size="243" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherBufferStartEnd$BufferStartEndStarter" sourceFile="PublisherBufferStartEnd.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherCallable" sourceFile="PublisherCallable.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherCallableOnAssembly" sourceFile="PublisherCallableOnAssembly.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherCallableSubscribeOn" sourceFile="PublisherCallableSubscribeOn.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherCallableSubscribeOn$CallableSubscribeOnSubscription" sourceFile="PublisherCallableSubscribeOn.java" interface="false" size="130" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherCharSequence" sourceFile="PublisherCharSequence.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherCharSequence$CharSequenceSubscription" sourceFile="PublisherCharSequence.java" interface="false" size="78" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherCollect" sourceFile="PublisherCollect.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherCollect$PublisherCollectSubscriber" sourceFile="PublisherCollect.java" interface="false" size="53" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherCombineLatest" sourceFile="PublisherCombineLatest.java" interface="false" size="85" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherCombineLatest$1" sourceFile="PublisherCombineLatest.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherCombineLatest$PublisherCombineLatestCoordinator" sourceFile="PublisherCombineLatest.java" interface="false" size="209" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherCombineLatest$PublisherCombineLatestInner" sourceFile="PublisherCombineLatest.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherCombineLatest$SourceAndArray" sourceFile="PublisherCombineLatest.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherCompletableFuture" sourceFile="PublisherCompletableFuture.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherConcatArray" sourceFile="PublisherConcatArray.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherConcatArray$PublisherConcatArrayDelayErrorSubscriber" sourceFile="PublisherConcatArray.java" interface="false" size="52" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherConcatArray$PublisherConcatArraySubscriber" sourceFile="PublisherConcatArray.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherConcatIterable" sourceFile="PublisherConcatIterable.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherConcatIterable$PublisherConcatIterableSubscriber" sourceFile="PublisherConcatIterable.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherConcatMap" sourceFile="PublisherConcatMap.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherConcatMap$1" sourceFile="PublisherConcatMap.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherConcatMap$ErrorMode" sourceFile="PublisherConcatMap.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherConcatMap$PublisherConcatMapDelayed" sourceFile="PublisherConcatMap.java" interface="false" size="180" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherConcatMap$PublisherConcatMapImmediate" sourceFile="PublisherConcatMap.java" interface="false" size="185" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherConcatMap$PublisherConcatMapInner" sourceFile="PublisherConcatMap.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherConcatMap$PublisherConcatMapSupport" sourceFile="PublisherConcatMap.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherConcatMap$WeakScalarSubscription" sourceFile="PublisherConcatMap.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherCount" sourceFile="PublisherCount.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherCount$PublisherCountSubscriber" sourceFile="PublisherCount.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherDefaultIfEmpty" sourceFile="PublisherDefaultIfEmpty.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherDefaultIfEmpty$PublisherDefaultIfEmptySubscriber" sourceFile="PublisherDefaultIfEmpty.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherDefer" sourceFile="PublisherDefer.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherDelaySubscription" sourceFile="PublisherDelaySubscription.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherDelaySubscription$PublisherDelaySubscriptionOtherSubscriber" sourceFile="PublisherDelaySubscription.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherDelaySubscription$PublisherDelaySubscriptionOtherSubscriber$PublisherDelaySubscriptionMainSubscriber" sourceFile="PublisherDelaySubscription.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherDetach" sourceFile="PublisherDetach.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherDetach$PublisherDetachSubscriber" sourceFile="PublisherDetach.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherDistinct" sourceFile="PublisherDistinct.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherDistinct$PublisherDistinctConditionalSubscriber" sourceFile="PublisherDistinct.java" interface="false" size="89" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherDistinct$PublisherDistinctSubscriber" sourceFile="PublisherDistinct.java" interface="false" size="73" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherDistinctFuseable" sourceFile="PublisherDistinctFuseable.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherDistinctFuseable$PublisherDistinctFuseableSubscriber" sourceFile="PublisherDistinctFuseable.java" interface="false" size="105" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherDistinctUntilChanged" sourceFile="PublisherDistinctUntilChanged.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherDistinctUntilChanged$PublisherDistinctUntilChangedConditionalSubscriber" sourceFile="PublisherDistinctUntilChanged.java" interface="false" size="67" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherDistinctUntilChanged$PublisherDistinctUntilChangedSubscriber" sourceFile="PublisherDistinctUntilChanged.java" interface="false" size="68" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherDrop" sourceFile="PublisherDrop.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherDrop$PublisherDropSubscriber" sourceFile="PublisherDrop.java" interface="false" size="71" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherElementAt" sourceFile="PublisherElementAt.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherElementAt$PublisherElementAtSubscriber" sourceFile="PublisherElementAt.java" interface="false" size="68" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherEmpty" sourceFile="PublisherEmpty.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherError" sourceFile="PublisherError.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherError$PublisherErrorSubscription" sourceFile="PublisherError.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherFilter" sourceFile="PublisherFilter.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherFilter$FilterConditionalSubscriber" sourceFile="PublisherFilter.java" interface="false" size="73" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherFilter$FilterSubscriber" sourceFile="PublisherFilter.java" interface="false" size="75" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherFilterFuseable" sourceFile="PublisherFilterFuseable.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherFilterFuseable$FilterFuseableConditionalSubscriber" sourceFile="PublisherFilterFuseable.java" interface="false" size="111" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherFilterFuseable$FilterFuseableSubscriber" sourceFile="PublisherFilterFuseable.java" interface="false" size="112" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherFlatMap" sourceFile="PublisherFlatMap.java" interface="false" size="65" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherFlatMap$PublisherFlatMapInner" sourceFile="PublisherFlatMap.java" interface="false" size="85" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherFlatMap$PublisherFlatMapMain" sourceFile="PublisherFlatMap.java" interface="false" size="460" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherFlattenIterable" sourceFile="PublisherFlattenIterable.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherFlattenIterable$FlattenIterableSubscriber" sourceFile="PublisherFlattenIterable.java" interface="false" size="321" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherFuture" sourceFile="PublisherFuture.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherGenerate" sourceFile="PublisherGenerate.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherGenerate$GenerateSubscription" sourceFile="PublisherGenerate.java" interface="false" size="173" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherGroupBy" sourceFile="PublisherGroupBy.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherGroupBy$PublisherGroupByMain" sourceFile="PublisherGroupBy.java" interface="false" size="240" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherGroupBy$UnicastGroupedPublisher" sourceFile="PublisherGroupBy.java" interface="false" size="213" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherGroupJoin" sourceFile="PublisherGroupJoin.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherGroupJoin$GroupJoinSubscription" sourceFile="PublisherGroupJoin.java" interface="false" size="228" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherGroupJoin$JoinSupport" sourceFile="PublisherGroupJoin.java" interface="true" size="6" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherGroupJoin$LeftRightEndSubscriber" sourceFile="PublisherGroupJoin.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherGroupJoin$LeftRightSubscriber" sourceFile="PublisherGroupJoin.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherHasElements" sourceFile="PublisherHasElements.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherHasElements$PublisherHasElementsSubscriber" sourceFile="PublisherHasElements.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherHide" sourceFile="PublisherHide.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherHide$PublisherHideSubscriber" sourceFile="PublisherHide.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherIgnoreElements" sourceFile="PublisherIgnoreElements.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherIgnoreElements$PublisherIgnoreElementsSubscriber" sourceFile="PublisherIgnoreElements.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherInterval" sourceFile="PublisherInterval.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherInterval$PublisherIntervalRunnable" sourceFile="PublisherInterval.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherIterable" sourceFile="PublisherIterable.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherIterable$IterableSubscription" sourceFile="PublisherIterable.java" interface="false" size="133" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherIterable$IterableSubscriptionConditional" sourceFile="PublisherIterable.java" interface="false" size="132" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherJoin" sourceFile="PublisherJoin.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherJoin$GroupJoinSubscription" sourceFile="PublisherJoin.java" interface="false" size="248" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherJust" sourceFile="PublisherJust.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherLatest" sourceFile="PublisherLatest.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherLatest$PublisherLatestSubscriber" sourceFile="PublisherLatest.java" interface="false" size="111" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherLift" sourceFile="PublisherLift.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherMap" sourceFile="PublisherMap.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherMap$MapConditionalSubscriber" sourceFile="PublisherMap.java" interface="false" size="79" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherMap$MapSubscriber" sourceFile="PublisherMap.java" interface="false" size="62" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherMapFuseable" sourceFile="PublisherMapFuseable.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherMapFuseable$MapFuseableConditionalSubscriber" sourceFile="PublisherMapFuseable.java" interface="false" size="111" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherMapFuseable$MapFuseableSubscriber" sourceFile="PublisherMapFuseable.java" interface="false" size="88" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherMaxInt" sourceFile="PublisherMaxInt.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherMaxInt$MaxIntSubscriber" sourceFile="PublisherMaxInt.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherMerge" sourceFile="PublisherMerge.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherMinInt" sourceFile="PublisherMinInt.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherMinInt$MinIntSubscriber" sourceFile="PublisherMinInt.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherNever" sourceFile="PublisherNever.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherNext" sourceFile="PublisherNext.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherNext$PublisherNextSubscriber" sourceFile="PublisherNext.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherObserveOn" sourceFile="PublisherObserveOn.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherObserveOn$PublisherObserveOnConditionalSubscriber" sourceFile="PublisherObserveOn.java" interface="false" size="304" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherObserveOn$PublisherObserveOnSubscriber" sourceFile="PublisherObserveOn.java" interface="false" size="302" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherOnAssembly" sourceFile="PublisherOnAssembly.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherOnAssembly$OnAssemblyConditionalSubscriber" sourceFile="PublisherOnAssembly.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherOnAssembly$OnAssemblyException" sourceFile="PublisherOnAssembly.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherOnAssembly$OnAssemblySubscriber" sourceFile="PublisherOnAssembly.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherPeek" sourceFile="PublisherPeek.java" interface="false" size="42" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherPeek$PublisherPeekSubscriber" sourceFile="PublisherPeek.java" interface="false" size="103" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherPeekFuseable" sourceFile="PublisherPeekFuseable.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherPeekFuseable$PublisherPeekConditionalSubscriber" sourceFile="PublisherPeekFuseable.java" interface="false" size="116" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherPeekFuseable$PublisherPeekFuseableConditionalSubscriber" sourceFile="PublisherPeekFuseable.java" interface="false" size="149" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherPeekFuseable$PublisherPeekFuseableSubscriber" sourceFile="PublisherPeekFuseable.java" interface="false" size="132" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherPeekHelper" sourceFile="PublisherPeekHelper.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherPublish" sourceFile="PublisherPublish.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherPublish$CancelFuseableMulticaster" sourceFile="PublisherPublish.java" interface="false" size="42" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherPublish$CancelMulticaster" sourceFile="PublisherPublish.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherPublish$PublishClientSubscription" sourceFile="PublisherPublish.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherPublish$PublisherPublishMulticaster" sourceFile="PublisherPublish.java" interface="false" size="301" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherRange" sourceFile="PublisherRange.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherRange$RangeSubscription" sourceFile="PublisherRange.java" interface="false" size="87" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherRange$RangeSubscriptionConditional" sourceFile="PublisherRange.java" interface="false" size="89" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherReduce" sourceFile="PublisherReduce.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherReduce$PublisherReduceSubscriber" sourceFile="PublisherReduce.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherRepeat" sourceFile="PublisherRepeat.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherRepeat$PublisherRepeatSubscriber" sourceFile="PublisherRepeat.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherRepeatPredicate" sourceFile="PublisherRepeatPredicate.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherRepeatPredicate$PublisherRepeatPredicateSubscriber" sourceFile="PublisherRepeatPredicate.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherRepeatWhen" sourceFile="PublisherRepeatWhen.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherRepeatWhen$PublisherRepeatWhenMainSubscriber" sourceFile="PublisherRepeatWhen.java" interface="false" size="66" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherRepeatWhen$PublisherRepeatWhenOtherSubscriber" sourceFile="PublisherRepeatWhen.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherResume" sourceFile="PublisherResume.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherResume$PublisherResumeSubscriber" sourceFile="PublisherResume.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherRetry" sourceFile="PublisherRetry.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherRetry$PublisherRetrySubscriber" sourceFile="PublisherRetry.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherRetryPredicate" sourceFile="PublisherRetryPredicate.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherRetryPredicate$PublisherRetryPredicateSubscriber" sourceFile="PublisherRetryPredicate.java" interface="false" size="45" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherRetryWhen" sourceFile="PublisherRetryWhen.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherRetryWhen$PublisherRetryWhenMainSubscriber" sourceFile="PublisherRetryWhen.java" interface="false" size="63" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherRetryWhen$PublisherRetryWhenOtherSubscriber" sourceFile="PublisherRetryWhen.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSample" sourceFile="PublisherSample.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSample$PublisherSampleMainSubscriber" sourceFile="PublisherSample.java" interface="false" size="77" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSample$PublisherSampleOtherSubscriber" sourceFile="PublisherSample.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherScan" sourceFile="PublisherScan.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherScan$PublisherScanSubscriber" sourceFile="PublisherScan.java" interface="false" size="99" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSingle" sourceFile="PublisherSingle.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSingle$1" sourceFile="PublisherSingle.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSingle$PublisherSingleSubscriber" sourceFile="PublisherSingle.java" interface="false" size="74" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSkip" sourceFile="PublisherSkip.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSkip$PublisherSkipSubscriber" sourceFile="PublisherSkip.java" interface="false" size="49" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSkipLast" sourceFile="PublisherSkipLast.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSkipLast$PublisherSkipLastSubscriber" sourceFile="PublisherSkipLast.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSkipUntil" sourceFile="PublisherSkipUntil.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSkipUntil$PublisherSkipUntilMainSubscriber" sourceFile="PublisherSkipUntil.java" interface="false" size="67" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSkipUntil$PublisherSkipUntilOtherSubscriber" sourceFile="PublisherSkipUntil.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSkipWhile" sourceFile="PublisherSkipWhile.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSkipWhile$PublisherSkipWhileConditionalSubscriber" sourceFile="PublisherSkipWhile.java" interface="false" size="82" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSkipWhile$PublisherSkipWhileSubscriber" sourceFile="PublisherSkipWhile.java" interface="false" size="84" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSource" sourceFile="PublisherSource.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherStream" sourceFile="PublisherStream.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherStreamCollector" sourceFile="PublisherStreamCollector.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherStreamCollector$PublisherStreamCollectorSubscriber" sourceFile="PublisherStreamCollector.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSubscribeOn" sourceFile="PublisherSubscribeOn.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSubscribeOn$PublisherSubscribeOnClassic" sourceFile="PublisherSubscribeOn.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSubscribeOn$PublisherSubscribeOnPipeline" sourceFile="PublisherSubscribeOn.java" interface="false" size="70" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSubscribeOn$RequestTask" sourceFile="PublisherSubscribeOn.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSubscribeOn$SourceSubscribeTask" sourceFile="PublisherSubscribeOn.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSubscribeOnValue" sourceFile="PublisherSubscribeOnValue.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSubscribeOnValue$ScheduledEmpty" sourceFile="PublisherSubscribeOnValue.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSubscribeOnValue$ScheduledScalar" sourceFile="PublisherSubscribeOnValue.java" interface="false" size="77" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSumInt" sourceFile="PublisherSumInt.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSumInt$SumIntSubscriber" sourceFile="PublisherSumInt.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSumLong" sourceFile="PublisherSumLong.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSumLong$SumLongSubscriber" sourceFile="PublisherSumLong.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSwitchIfEmpty" sourceFile="PublisherSwitchIfEmpty.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSwitchIfEmpty$PublisherSwitchIfEmptySubscriber" sourceFile="PublisherSwitchIfEmpty.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSwitchMap" sourceFile="PublisherSwitchMap.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSwitchMap$PublisherSwitchMapInner" sourceFile="PublisherSwitchMap.java" interface="false" size="73" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherSwitchMap$PublisherSwitchMapMain" sourceFile="PublisherSwitchMap.java" interface="false" size="186" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTake" sourceFile="PublisherTake.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTake$PublisherTakeConditionalSubscriber" sourceFile="PublisherTake.java" interface="false" size="94" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTake$PublisherTakeFuseableSubscriber" sourceFile="PublisherTake.java" interface="false" size="115" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTake$PublisherTakeSubscriber" sourceFile="PublisherTake.java" interface="false" size="78" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTakeFuseable" sourceFile="PublisherTakeFuseable.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTakeLast" sourceFile="PublisherTakeLast.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTakeLast$PublisherTakeLastManySubscriber" sourceFile="PublisherTakeLast.java" interface="false" size="55" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTakeLast$PublisherTakeLastZeroSubscriber" sourceFile="PublisherTakeLast.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTakeLastOne" sourceFile="PublisherTakeLastOne.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTakeLastOne$PublisherTakeLastOneSubscriber" sourceFile="PublisherTakeLastOne.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTakeUntil" sourceFile="PublisherTakeUntil.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTakeUntil$PublisherTakeUntilMainSubscriber" sourceFile="PublisherTakeUntil.java" interface="false" size="69" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTakeUntil$PublisherTakeUntilOtherSubscriber" sourceFile="PublisherTakeUntil.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTakeUntilPredicate" sourceFile="PublisherTakeUntilPredicate.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTakeUntilPredicate$PublisherTakeUntilPredicateSubscriber" sourceFile="PublisherTakeUntilPredicate.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTakeWhile" sourceFile="PublisherTakeWhile.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTakeWhile$PublisherTakeWhileSubscriber" sourceFile="PublisherTakeWhile.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherThrottleFirst" sourceFile="PublisherThrottleFirst.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherThrottleFirst$PublisherThrottleFirstMain" sourceFile="PublisherThrottleFirst.java" interface="false" size="94" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherThrottleFirst$PublisherThrottleFirstOther" sourceFile="PublisherThrottleFirst.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherThrottleTimeout" sourceFile="PublisherThrottleTimeout.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherThrottleTimeout$PublisherThrottleTimeoutMain" sourceFile="PublisherThrottleTimeout.java" interface="false" size="143" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherThrottleTimeout$PublisherThrottleTimeoutOther" sourceFile="PublisherThrottleTimeout.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTimeout" sourceFile="PublisherTimeout.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTimeout$CancelledIndexedCancellable" sourceFile="PublisherTimeout.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTimeout$IndexedCancellable" sourceFile="PublisherTimeout.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTimeout$PublisherTimeoutMainSubscriber" sourceFile="PublisherTimeout.java" interface="false" size="115" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTimeout$PublisherTimeoutOtherSubscriber" sourceFile="PublisherTimeout.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTimeout$PublisherTimeoutTimeoutSubscriber" sourceFile="PublisherTimeout.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTimer" sourceFile="PublisherTimer.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherTimer$PublisherTimerRunnable" sourceFile="PublisherTimer.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherUsing" sourceFile="PublisherUsing.java" interface="false" size="49" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherUsing$PublisherUsingConditionalSubscriber" sourceFile="PublisherUsing.java" interface="false" size="77" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherUsing$PublisherUsingFuseableSubscriber" sourceFile="PublisherUsing.java" interface="false" size="83" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherUsing$PublisherUsingSubscriber" sourceFile="PublisherUsing.java" interface="false" size="75" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindow" sourceFile="PublisherWindow.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindow$WindowExactSubscriber" sourceFile="PublisherWindow.java" interface="false" size="108" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindow$WindowOverlapSubscriber" sourceFile="PublisherWindow.java" interface="false" size="199" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindow$WindowSkipSubscriber" sourceFile="PublisherWindow.java" interface="false" size="122" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindowBatch" sourceFile="PublisherWindowBatch.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindowBatch$PublisherWindowBatchMain" sourceFile="PublisherWindowBatch.java" interface="false" size="201" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindowBatch$PublisherWindowBatchMain$PublisherWindowBatchOther" sourceFile="PublisherWindowBatch.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindowBatch$PublisherWindowBatchMain$WindowBoundary" sourceFile="PublisherWindowBatch.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindowBeginEnd" sourceFile="PublisherWindowBeginEnd.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindowBeginEnd$PublisherWindowInner" sourceFile="PublisherWindowBeginEnd.java" interface="false" size="100" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindowBeginEnd$TerminatedSubscriber" sourceFile="PublisherWindowBeginEnd.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindowBeginEnd$WindowBeginEndBegin" sourceFile="PublisherWindowBeginEnd.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindowBeginEnd$WindowBeginEndMainSubscriber" sourceFile="PublisherWindowBeginEnd.java" interface="false" size="250" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindowBoundary" sourceFile="PublisherWindowBoundary.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindowBoundary$PublisherWindowBoundaryMain" sourceFile="PublisherWindowBoundary.java" interface="false" size="174" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindowBoundary$PublisherWindowBoundaryOther" sourceFile="PublisherWindowBoundary.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindowBoundaryAndSize" sourceFile="PublisherWindowBoundaryAndSize.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindowBoundaryAndSize$PublisherWindowBoundaryMain" sourceFile="PublisherWindowBoundaryAndSize.java" interface="false" size="182" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindowBoundaryAndSize$PublisherWindowBoundaryOther" sourceFile="PublisherWindowBoundaryAndSize.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindowBoundaryAndSizeNonEmpty" sourceFile="PublisherWindowBoundaryAndSizeNonEmpty.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindowBoundaryAndSizeNonEmpty$PublisherWindowBoundaryMain" sourceFile="PublisherWindowBoundaryAndSizeNonEmpty.java" interface="false" size="172" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindowBoundaryAndSizeNonEmpty$PublisherWindowBoundaryOther" sourceFile="PublisherWindowBoundaryAndSizeNonEmpty.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindowStartEnd" sourceFile="PublisherWindowStartEnd.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindowStartEnd$NewWindow" sourceFile="PublisherWindowStartEnd.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindowStartEnd$WindowStartEndEnder" sourceFile="PublisherWindowStartEnd.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindowStartEnd$WindowStartEndMainSubscriber" sourceFile="PublisherWindowStartEnd.java" interface="false" size="217" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWindowStartEnd$WindowStartEndStarter" sourceFile="PublisherWindowStartEnd.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWithLatestFrom" sourceFile="PublisherWithLatestFrom.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWithLatestFrom$PublisherWithLatestFromOtherSubscriber" sourceFile="PublisherWithLatestFrom.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherWithLatestFrom$PublisherWithLatestFromSubscriber" sourceFile="PublisherWithLatestFrom.java" interface="false" size="103" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherZip" sourceFile="PublisherZip.java" interface="false" size="151" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherZip$PairwiseZipper" sourceFile="PublisherZip.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherZip$PublisherZipCoordinator" sourceFile="PublisherZip.java" interface="false" size="181" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherZip$PublisherZipInner" sourceFile="PublisherZip.java" interface="false" size="101" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherZip$PublisherZipSingleCoordinator" sourceFile="PublisherZip.java" interface="false" size="72" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherZip$PublisherZipSingleSubscriber" sourceFile="PublisherZip.java" interface="false" size="55" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherZipIterable" sourceFile="PublisherZipIterable.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="rsc.publisher.PublisherZipIterable$PublisherZipSubscriber" sourceFile="PublisherZipIterable.java" interface="false" size="83" bugs="0"/>
+      <ClassStats class="rsc.publisher.Px" sourceFile="Px.java" interface="false" size="530" bugs="0"/>
+      <ClassStats class="rsc.publisher.Px$1" sourceFile="Px.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="rsc.publisher.Px$2" sourceFile="Px.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="rsc.publisher.Px$3" sourceFile="Px.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="rsc.publisher.Px$4" sourceFile="Px.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="rsc.publisher.Px$5" sourceFile="Px.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="rsc.publisher.Px$6" sourceFile="Px.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="rsc.publisher.PxFuseableWrapper" sourceFile="PxFuseableWrapper.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="rsc.publisher.PxWrapper" sourceFile="PxWrapper.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="rsc.publisher.SynchronousSink" sourceFile="SynchronousSink.java" interface="true" size="18" bugs="0"/>
+      <ClassStats class="rsc.publisher.SynchronousSink$Emission" sourceFile="SynchronousSink.java" interface="false" size="20" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="rsc.scheduler" total_bugs="0" total_types="56" total_size="2288">
+      <ClassStats class="rsc.scheduler.CachedScheduler" sourceFile="CachedScheduler.java" interface="false" size="129" bugs="0"/>
+      <ClassStats class="rsc.scheduler.CachedScheduler$CachedWorker" sourceFile="CachedScheduler.java" interface="false" size="53" bugs="0"/>
+      <ClassStats class="rsc.scheduler.CachedScheduler$CachedWorker$CachedTask" sourceFile="CachedScheduler.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="rsc.scheduler.CachedScheduler$ExecutorServiceExpiry" sourceFile="CachedScheduler.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="rsc.scheduler.CompositeTimedWorker" sourceFile="CompositeTimedWorker.java" interface="false" size="87" bugs="0"/>
+      <ClassStats class="rsc.scheduler.CompositeTimedWorker$PeriodicTask" sourceFile="CompositeTimedWorker.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="rsc.scheduler.CompositeTimedWorker$SingleTask" sourceFile="CompositeTimedWorker.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="rsc.scheduler.CompositeTimedWorker$TimedTask" sourceFile="CompositeTimedWorker.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ConsumerFactoryScheduler" sourceFile="ConsumerFactoryScheduler.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ConsumerFactoryScheduler$ConsumerFactoryWorker" sourceFile="ConsumerFactoryScheduler.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ExecutorScheduler" sourceFile="ExecutorScheduler.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ExecutorScheduler$ExecutorPlainRunnable" sourceFile="ExecutorScheduler.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ExecutorScheduler$ExecutorSchedulerTrampolineWorker" sourceFile="ExecutorScheduler.java" interface="false" size="64" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ExecutorScheduler$ExecutorSchedulerWorker" sourceFile="ExecutorScheduler.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ExecutorScheduler$ExecutorTrackedRunnable" sourceFile="ExecutorScheduler.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ExecutorScheduler$WorkerDelete" sourceFile="ExecutorScheduler.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ExecutorServiceScheduler" sourceFile="ExecutorServiceScheduler.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ExecutorServiceScheduler$1" sourceFile="ExecutorServiceScheduler.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ExecutorServiceScheduler$ExecutorServiceWorker" sourceFile="ExecutorServiceScheduler.java" interface="false" size="45" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ExecutorServiceScheduler$ScheduledRunnable" sourceFile="ExecutorServiceScheduler.java" interface="false" size="65" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ExecutorTimedScheduler" sourceFile="ExecutorTimedScheduler.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ExecutorTimedScheduler$ExecutorTimedWorker" sourceFile="ExecutorTimedScheduler.java" interface="false" size="106" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ExecutorTimedScheduler$ExecutorTimedWorker$AbstractTimedTask" sourceFile="ExecutorTimedScheduler.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ExecutorTimedScheduler$ExecutorTimedWorker$ScheduledTask" sourceFile="ExecutorTimedScheduler.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ExecutorTimedScheduler$ExecutorTimedWorker$TimedPeriodicTask" sourceFile="ExecutorTimedScheduler.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ExecutorTimedScheduler$ExecutorTimedWorker$TimedPeriodicTask$InnerRunner" sourceFile="ExecutorTimedScheduler.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ExecutorTimedScheduler$ExecutorTimedWorker$TimedScheduledTask" sourceFile="ExecutorTimedScheduler.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ForkJoinScheduler" sourceFile="ForkJoinScheduler.java" interface="false" size="74" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ForkJoinScheduler$ParallelWorker" sourceFile="ForkJoinScheduler.java" interface="false" size="60" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ForkJoinScheduler$ParallelWorker$ParallelWorkerTask" sourceFile="ForkJoinScheduler.java" interface="false" size="58" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ImmediateScheduler" sourceFile="ImmediateScheduler.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ImmediateScheduler$ImmediateSchedulerWorker" sourceFile="ImmediateScheduler.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ParallelScheduler" sourceFile="ParallelScheduler.java" interface="false" size="119" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ParallelScheduler$ParallelWorker" sourceFile="ParallelScheduler.java" interface="false" size="60" bugs="0"/>
+      <ClassStats class="rsc.scheduler.ParallelScheduler$ParallelWorker$ParallelWorkerTask" sourceFile="ParallelScheduler.java" interface="false" size="58" bugs="0"/>
+      <ClassStats class="rsc.scheduler.Scheduler" sourceFile="Scheduler.java" interface="true" size="10" bugs="0"/>
+      <ClassStats class="rsc.scheduler.Scheduler$1" sourceFile="Scheduler.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="rsc.scheduler.Scheduler$Worker" sourceFile="Scheduler.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="rsc.scheduler.SingleScheduler" sourceFile="SingleScheduler.java" interface="false" size="79" bugs="0"/>
+      <ClassStats class="rsc.scheduler.SingleScheduler$SingleWorker" sourceFile="SingleScheduler.java" interface="false" size="60" bugs="0"/>
+      <ClassStats class="rsc.scheduler.SingleScheduler$SingleWorker$SingleWorkerTask" sourceFile="SingleScheduler.java" interface="false" size="60" bugs="0"/>
+      <ClassStats class="rsc.scheduler.SingleScheduler2" sourceFile="SingleScheduler2.java" interface="false" size="77" bugs="0"/>
+      <ClassStats class="rsc.scheduler.SingleScheduler2$SingleWorker" sourceFile="SingleScheduler2.java" interface="false" size="60" bugs="0"/>
+      <ClassStats class="rsc.scheduler.SingleScheduler2$SingleWorker$SingleWorkerTask" sourceFile="SingleScheduler2.java" interface="false" size="60" bugs="0"/>
+      <ClassStats class="rsc.scheduler.SingleThreadedExecutor" sourceFile="SingleThreadedExecutor.java" interface="false" size="53" bugs="0"/>
+      <ClassStats class="rsc.scheduler.SingleThreadedExecutor$Task" sourceFile="SingleThreadedExecutor.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="rsc.scheduler.SingleTimedScheduler" sourceFile="SingleTimedScheduler.java" interface="false" size="68" bugs="0"/>
+      <ClassStats class="rsc.scheduler.SingleTimedScheduler$CancelFuture" sourceFile="SingleTimedScheduler.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="rsc.scheduler.SingleTimedScheduler$SingleTimedSchedulerWorker" sourceFile="SingleTimedScheduler.java" interface="false" size="79" bugs="0"/>
+      <ClassStats class="rsc.scheduler.SingleTimedScheduler$TimedPeriodicScheduledRunnable" sourceFile="SingleTimedScheduler.java" interface="false" size="70" bugs="0"/>
+      <ClassStats class="rsc.scheduler.SingleTimedScheduler$TimedPeriodicScheduledRunnable$1" sourceFile="SingleTimedScheduler.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="rsc.scheduler.SingleTimedScheduler$TimedScheduledRunnable" sourceFile="SingleTimedScheduler.java" interface="false" size="73" bugs="0"/>
+      <ClassStats class="rsc.scheduler.SingleTimedScheduler$TimedScheduledRunnable$1" sourceFile="SingleTimedScheduler.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="rsc.scheduler.TimedScheduler" sourceFile="TimedScheduler.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="rsc.scheduler.TimedScheduler$TimedWorker" sourceFile="TimedScheduler.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="rsc.scheduler.WorkerScheduler" sourceFile="WorkerScheduler.java" interface="false" size="16" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="rsc.subscriber" total_bugs="0" total_types="25" total_size="1190">
+      <ClassStats class="rsc.subscriber.BasicConditionalSubscriber" sourceFile="BasicConditionalSubscriber.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="rsc.subscriber.BasicFuseableConditionalSubscriber" sourceFile="BasicFuseableConditionalSubscriber.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="rsc.subscriber.BasicFuseableSubscriber" sourceFile="BasicFuseableSubscriber.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="rsc.subscriber.BasicSubscriber" sourceFile="BasicSubscriber.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="rsc.subscriber.BlockingFirstSubscriber" sourceFile="BlockingFirstSubscriber.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="rsc.subscriber.BlockingLastSubscriber" sourceFile="BlockingLastSubscriber.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="rsc.subscriber.BlockingSingleSubscriber" sourceFile="BlockingSingleSubscriber.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="rsc.subscriber.DeferredScalarSubscriber" sourceFile="DeferredScalarSubscriber.java" interface="false" size="110" bugs="0"/>
+      <ClassStats class="rsc.subscriber.DeferredSubscription" sourceFile="DeferredSubscription.java" interface="false" size="83" bugs="0"/>
+      <ClassStats class="rsc.subscriber.DeferredSubscriptionSubscriber" sourceFile="DeferredSubscriptionSubscriber.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="rsc.subscriber.DropAllSubscriber" sourceFile="DropAllSubscriber.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="rsc.subscriber.EmptyAsyncSubscriber" sourceFile="EmptyAsyncSubscriber.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="rsc.subscriber.EmptySubscriber" sourceFile="EmptySubscriber.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="rsc.subscriber.IntReducer" sourceFile="IntReducer.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="rsc.subscriber.LambdaSubscriber" sourceFile="LambdaSubscriber.java" interface="false" size="53" bugs="0"/>
+      <ClassStats class="rsc.subscriber.LongReducer" sourceFile="LongReducer.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="rsc.subscriber.MultiSubscriptionSubscriber" sourceFile="MultiSubscriptionSubscriber.java" interface="false" size="193" bugs="0"/>
+      <ClassStats class="rsc.subscriber.PeekLastSubscriber" sourceFile="PeekLastSubscriber.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="rsc.subscriber.ScalarSubscription" sourceFile="ScalarSubscription.java" interface="false" size="45" bugs="0"/>
+      <ClassStats class="rsc.subscriber.SerializedSubscriber" sourceFile="SerializedSubscriber.java" interface="false" size="139" bugs="0"/>
+      <ClassStats class="rsc.subscriber.SerializedSubscriber$LinkedArrayNode" sourceFile="SerializedSubscriber.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="rsc.subscriber.SubscriptionHelper" sourceFile="SubscriptionHelper.java" interface="false" size="87" bugs="0"/>
+      <ClassStats class="rsc.subscriber.SubscriptionHelper$CancelledSubscription" sourceFile="SubscriptionHelper.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="rsc.subscriber.SubscriptionHelper$EmptySubscription" sourceFile="SubscriptionHelper.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="rsc.subscriber.SuppressFuseableSubscriber" sourceFile="SuppressFuseableSubscriber.java" interface="false" size="37" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="rsc.test" total_bugs="0" total_types="1" total_size="379">
+      <ClassStats class="rsc.test.TestSubscriber" sourceFile="TestSubscriber.java" interface="false" size="379" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="rsc.util" total_bugs="0" total_types="21" total_size="876">
+      <ClassStats class="rsc.util.BackpressureHelper" sourceFile="BackpressureHelper.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="rsc.util.DrainHelper" sourceFile="DrainHelper.java" interface="false" size="105" bugs="0"/>
+      <ClassStats class="rsc.util.ExceptionHelper" sourceFile="ExceptionHelper.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="rsc.util.ExceptionHelper$DownstreamException" sourceFile="ExceptionHelper.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="rsc.util.ExceptionHelper$ReactiveException" sourceFile="ExceptionHelper.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="rsc.util.ExceptionHelper$UpstreamException" sourceFile="ExceptionHelper.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="rsc.util.FunctionHelper" sourceFile="FunctionHelper.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="rsc.util.FunctionHelper$1" sourceFile="FunctionHelper.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="rsc.util.OpenHashSet" sourceFile="OpenHashSet.java" interface="false" size="127" bugs="0"/>
+      <ClassStats class="rsc.util.PowerOf2" sourceFile="PowerOf2.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="rsc.util.SpscArrayQueue" sourceFile="SpscArrayQueue.java" interface="false" size="62" bugs="0"/>
+      <ClassStats class="rsc.util.SpscArrayQueueCold" sourceFile="SpscArrayQueue.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="rsc.util.SpscArrayQueueConsumer" sourceFile="SpscArrayQueue.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="rsc.util.SpscArrayQueueP1" sourceFile="SpscArrayQueue.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="rsc.util.SpscArrayQueueP2" sourceFile="SpscArrayQueue.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="rsc.util.SpscArrayQueueP3" sourceFile="SpscArrayQueue.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="rsc.util.SpscArrayQueueProducer" sourceFile="SpscArrayQueue.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="rsc.util.SpscFreeListTracker" sourceFile="SpscFreeListTracker.java" interface="false" size="94" bugs="0"/>
+      <ClassStats class="rsc.util.SpscLinkedArrayQueue" sourceFile="SpscLinkedArrayQueue.java" interface="false" size="104" bugs="0"/>
+      <ClassStats class="rsc.util.SpscSetTracker" sourceFile="SpscSetTracker.java" interface="false" size="125" bugs="0"/>
+      <ClassStats class="rsc.util.UnsignalledExceptions" sourceFile="UnsignalledExceptions.java" interface="false" size="35" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="646" invocations="4317" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="10889" standardDeviationMicrosecondsPerInvocation="350"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="644" invocations="4367" avgMicrosecondsPerInvocation="147" maxMicrosecondsPerInvocation="9948" standardDeviationMicrosecondsPerInvocation="434"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="625" invocations="4499" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="39376" standardDeviationMicrosecondsPerInvocation="751"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="518" invocations="4339" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="6293" standardDeviationMicrosecondsPerInvocation="321"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="517" invocations="4408" avgMicrosecondsPerInvocation="117" maxMicrosecondsPerInvocation="11142" standardDeviationMicrosecondsPerInvocation="321"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="403" invocations="1687" avgMicrosecondsPerInvocation="238" maxMicrosecondsPerInvocation="7666" standardDeviationMicrosecondsPerInvocation="450"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="394" invocations="1684" avgMicrosecondsPerInvocation="234" maxMicrosecondsPerInvocation="17862" standardDeviationMicrosecondsPerInvocation="711"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="391" invocations="3357" avgMicrosecondsPerInvocation="116" maxMicrosecondsPerInvocation="5180" standardDeviationMicrosecondsPerInvocation="275"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="377" invocations="4367" avgMicrosecondsPerInvocation="86" maxMicrosecondsPerInvocation="23166" standardDeviationMicrosecondsPerInvocation="424"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="286" invocations="5287" avgMicrosecondsPerInvocation="54" maxMicrosecondsPerInvocation="4268" standardDeviationMicrosecondsPerInvocation="154"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="284" invocations="774" avgMicrosecondsPerInvocation="367" maxMicrosecondsPerInvocation="8051" standardDeviationMicrosecondsPerInvocation="844"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="271" invocations="774" avgMicrosecondsPerInvocation="351" maxMicrosecondsPerInvocation="8329" standardDeviationMicrosecondsPerInvocation="701"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="160" invocations="4463" avgMicrosecondsPerInvocation="35" maxMicrosecondsPerInvocation="31417" standardDeviationMicrosecondsPerInvocation="486"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="147" invocations="4367" avgMicrosecondsPerInvocation="33" maxMicrosecondsPerInvocation="2181" standardDeviationMicrosecondsPerInvocation="93"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="141" invocations="73801" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="2457" standardDeviationMicrosecondsPerInvocation="14"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="130" invocations="550" avgMicrosecondsPerInvocation="237" maxMicrosecondsPerInvocation="3071" standardDeviationMicrosecondsPerInvocation="347"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="128" invocations="550" avgMicrosecondsPerInvocation="233" maxMicrosecondsPerInvocation="2406" standardDeviationMicrosecondsPerInvocation="331"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="124" invocations="550" avgMicrosecondsPerInvocation="226" maxMicrosecondsPerInvocation="4606" standardDeviationMicrosecondsPerInvocation="371"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="123" invocations="550" avgMicrosecondsPerInvocation="224" maxMicrosecondsPerInvocation="2432" standardDeviationMicrosecondsPerInvocation="259"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="122" invocations="845" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="28873" standardDeviationMicrosecondsPerInvocation="1080"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="110" invocations="774" avgMicrosecondsPerInvocation="143" maxMicrosecondsPerInvocation="3046" standardDeviationMicrosecondsPerInvocation="262"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="106" invocations="774" avgMicrosecondsPerInvocation="137" maxMicrosecondsPerInvocation="2998" standardDeviationMicrosecondsPerInvocation="286"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="105" invocations="1596" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="24411" standardDeviationMicrosecondsPerInvocation="679"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="104" invocations="550" avgMicrosecondsPerInvocation="190" maxMicrosecondsPerInvocation="8727" standardDeviationMicrosecondsPerInvocation="512"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="100" invocations="4317" avgMicrosecondsPerInvocation="23" maxMicrosecondsPerInvocation="1978" standardDeviationMicrosecondsPerInvocation="58"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="93" invocations="4463" avgMicrosecondsPerInvocation="20" maxMicrosecondsPerInvocation="3330" standardDeviationMicrosecondsPerInvocation="95"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="92" invocations="550" avgMicrosecondsPerInvocation="168" maxMicrosecondsPerInvocation="50508" standardDeviationMicrosecondsPerInvocation="2213"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="90" invocations="550" avgMicrosecondsPerInvocation="165" maxMicrosecondsPerInvocation="37265" standardDeviationMicrosecondsPerInvocation="1588"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="86" invocations="774" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="2815" standardDeviationMicrosecondsPerInvocation="221"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="85" invocations="4097" avgMicrosecondsPerInvocation="20" maxMicrosecondsPerInvocation="1054" standardDeviationMicrosecondsPerInvocation="50"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="77" invocations="550" avgMicrosecondsPerInvocation="140" maxMicrosecondsPerInvocation="3319" standardDeviationMicrosecondsPerInvocation="289"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUnrelatedTypesInGenericContainer" totalMilliseconds="76" invocations="550" avgMicrosecondsPerInvocation="138" maxMicrosecondsPerInvocation="36064" standardDeviationMicrosecondsPerInvocation="1537"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="75" invocations="69422" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="643" standardDeviationMicrosecondsPerInvocation="3"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="75" invocations="550" avgMicrosecondsPerInvocation="136" maxMicrosecondsPerInvocation="3157" standardDeviationMicrosecondsPerInvocation="252"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="71" invocations="550" avgMicrosecondsPerInvocation="130" maxMicrosecondsPerInvocation="6866" standardDeviationMicrosecondsPerInvocation="330"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="71" invocations="550" avgMicrosecondsPerInvocation="130" maxMicrosecondsPerInvocation="3303" standardDeviationMicrosecondsPerInvocation="213"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="70" invocations="550" avgMicrosecondsPerInvocation="127" maxMicrosecondsPerInvocation="2140" standardDeviationMicrosecondsPerInvocation="173"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="68" invocations="774" avgMicrosecondsPerInvocation="88" maxMicrosecondsPerInvocation="4703" standardDeviationMicrosecondsPerInvocation="304"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="64" invocations="550" avgMicrosecondsPerInvocation="116" maxMicrosecondsPerInvocation="2515" standardDeviationMicrosecondsPerInvocation="187"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="63" invocations="550" avgMicrosecondsPerInvocation="115" maxMicrosecondsPerInvocation="1483" standardDeviationMicrosecondsPerInvocation="144"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="62" invocations="550" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="4862" standardDeviationMicrosecondsPerInvocation="251"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="61" invocations="550" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="1841" standardDeviationMicrosecondsPerInvocation="158"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
