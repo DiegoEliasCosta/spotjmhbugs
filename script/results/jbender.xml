@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1509416845000" analysisTimestamp="1509416846617" release="">
+  <Project projectName="">
+    <Jar>tmp/jbender</Jar>
+  </Project>
+  <Errors errors="0" missingClasses="26">
+    <MissingClass>co.paralleluniverse.common.util.Exceptions</MissingClass>
+    <MissingClass>co.paralleluniverse.fibers.DefaultFiberScheduler</MissingClass>
+    <MissingClass>co.paralleluniverse.fibers.Fiber</MissingClass>
+    <MissingClass>co.paralleluniverse.fibers.SuspendExecution</MissingClass>
+    <MissingClass>co.paralleluniverse.fibers.httpclient.FiberHttpClient</MissingClass>
+    <MissingClass>co.paralleluniverse.strands.Strand</MissingClass>
+    <MissingClass>co.paralleluniverse.strands.StrandFactory</MissingClass>
+    <MissingClass>co.paralleluniverse.strands.channels.Channel</MissingClass>
+    <MissingClass>co.paralleluniverse.strands.channels.Channels</MissingClass>
+    <MissingClass>co.paralleluniverse.strands.channels.Channels$OverflowPolicy</MissingClass>
+    <MissingClass>co.paralleluniverse.strands.channels.ReceivePort</MissingClass>
+    <MissingClass>co.paralleluniverse.strands.channels.SendPort</MissingClass>
+    <MissingClass>co.paralleluniverse.strands.concurrent.Semaphore</MissingClass>
+    <MissingClass>com.google.common.base.MoreObjects</MissingClass>
+    <MissingClass>com.google.common.base.MoreObjects$ToStringHelper</MissingClass>
+    <MissingClass>org.HdrHistogram.Histogram</MissingClass>
+    <MissingClass>org.apache.http.client.config.RequestConfig</MissingClass>
+    <MissingClass>org.apache.http.client.config.RequestConfig$Builder</MissingClass>
+    <MissingClass>org.apache.http.client.methods.HttpRequestBase</MissingClass>
+    <MissingClass>org.apache.http.impl.nio.client.HttpAsyncClientBuilder</MissingClass>
+    <MissingClass>org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager</MissingClass>
+    <MissingClass>org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor</MissingClass>
+    <MissingClass>org.apache.http.impl.nio.reactor.IOReactorConfig</MissingClass>
+    <MissingClass>org.apache.http.impl.nio.reactor.IOReactorConfig$Builder</MissingClass>
+    <MissingClass>org.slf4j.Logger</MissingClass>
+    <MissingClass>org.slf4j.LoggerFactory</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 31 Oct 2017 03:27:25 +0100" total_classes="58" referenced_classes="176" total_bugs="0" total_size="1506" num_packages="9" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="11.49" clock_seconds="3.37" peak_mbytes="309.88" alloc_mbytes="3641.00" gc_seconds="0.04">
+    <PackageStats package="com.pinterest.jbender" total_bugs="0" total_types="2" total_size="123">
+      <ClassStats class="com.pinterest.jbender.JBender" sourceFile="JBender.java" interface="false" size="113" bugs="0"/>
+      <ClassStats class="com.pinterest.jbender.JBender$RequestExecOutcome" sourceFile="JBender.java" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.pinterest.jbender.events" total_bugs="0" total_types="1" total_size="31">
+      <ClassStats class="com.pinterest.jbender.events.TimingEvent" sourceFile="TimingEvent.java" interface="false" size="31" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.pinterest.jbender.events.recording" total_bugs="0" total_types="3" total_size="51">
+      <ClassStats class="com.pinterest.jbender.events.recording.HdrHistogramRecorder" sourceFile="HdrHistogramRecorder.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="com.pinterest.jbender.events.recording.LoggingRecorder" sourceFile="LoggingRecorder.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.pinterest.jbender.events.recording.Recorder" sourceFile="Recorder.java" interface="true" size="17" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.pinterest.jbender.executors" total_bugs="0" total_types="4" total_size="23">
+      <ClassStats class="com.pinterest.jbender.executors.NoopRequestExecutor" sourceFile="NoopRequestExecutor.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.pinterest.jbender.executors.RequestExecutor" sourceFile="RequestExecutor.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.pinterest.jbender.executors.SleepyRequestExecutor" sourceFile="SleepyRequestExecutor.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.pinterest.jbender.executors.Validator" sourceFile="Validator.java" interface="true" size="2" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.pinterest.jbender.executors.http" total_bugs="0" total_types="1" total_size="47">
+      <ClassStats class="com.pinterest.jbender.executors.http.FiberApacheHttpClientRequestExecutor" sourceFile="FiberApacheHttpClientRequestExecutor.java" interface="false" size="47" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.pinterest.jbender.intervals" total_bugs="0" total_types="3" total_size="20">
+      <ClassStats class="com.pinterest.jbender.intervals.ConstantIntervalGenerator" sourceFile="ConstantIntervalGenerator.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.pinterest.jbender.intervals.ExponentialIntervalGenerator" sourceFile="ExponentialIntervalGenerator.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.pinterest.jbender.intervals.IntervalGenerator" sourceFile="IntervalGenerator.java" interface="true" size="2" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.pinterest.jbender.util" total_bugs="0" total_types="4" total_size="80">
+      <ClassStats class="com.pinterest.jbender.util.ConnectionPool" sourceFile="ConnectionPool.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="com.pinterest.jbender.util.ConnectionPool$SuspendableSupplierWithIO" sourceFile="ConnectionPool.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.pinterest.jbender.util.ListReceivePort" sourceFile="ListReceivePort.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="com.pinterest.jbender.util.WaitGroup" sourceFile="WaitGroup.java" interface="false" size="21" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.gradle.cli" total_bugs="0" total_types="24" total_size="545">
+      <ClassStats class="org.gradle.cli.AbstractCommandLineConverter" sourceFile="AbstractCommandLineConverter.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.gradle.cli.AbstractPropertiesCommandLineConverter" sourceFile="AbstractPropertiesCommandLineConverter.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineArgumentException" sourceFile="CommandLineArgumentException.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineConverter" sourceFile="CommandLineConverter.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineOption" sourceFile="CommandLineOption.java" interface="false" size="63" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser" sourceFile="CommandLineParser.java" interface="false" size="138" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$1" sourceFile="CommandLineParser.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$AfterFirstSubCommand" sourceFile="CommandLineParser.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$AfterOptions" sourceFile="CommandLineParser.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$BeforeFirstSubCommand" sourceFile="CommandLineParser.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$CaseInsensitiveStringComparator" sourceFile="CommandLineParser.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$KnownOptionParserState" sourceFile="CommandLineParser.java" interface="false" size="45" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$MissingOptionArgState" sourceFile="CommandLineParser.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$OptionAwareParserState" sourceFile="CommandLineParser.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$OptionComparator" sourceFile="CommandLineParser.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$OptionParserState" sourceFile="CommandLineParser.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$OptionString" sourceFile="CommandLineParser.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$OptionStringComparator" sourceFile="CommandLineParser.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$ParserState" sourceFile="CommandLineParser.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$UnknownOptionParserState" sourceFile="CommandLineParser.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="org.gradle.cli.ParsedCommandLine" sourceFile="ParsedCommandLine.java" interface="false" size="64" bugs="0"/>
+      <ClassStats class="org.gradle.cli.ParsedCommandLineOption" sourceFile="ParsedCommandLineOption.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.gradle.cli.ProjectPropertiesCommandLineConverter" sourceFile="ProjectPropertiesCommandLineConverter.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.gradle.cli.SystemPropertiesCommandLineConverter" sourceFile="SystemPropertiesCommandLineConverter.java" interface="false" size="9" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.gradle.wrapper" total_bugs="0" total_types="16" total_size="586">
+      <ClassStats class="org.gradle.wrapper.BootstrapMainStarter" sourceFile="BootstrapMainStarter.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.Download" sourceFile="Download.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.Download$1" sourceFile="Download.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.Download$SystemPropertiesProxyAuthenticator" sourceFile="Download.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.ExclusiveFileAccessManager" sourceFile="ExclusiveFileAccessManager.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.GradleUserHomeLookup" sourceFile="GradleUserHomeLookup.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.GradleWrapperMain" sourceFile="GradleWrapperMain.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.IDownload" sourceFile="IDownload.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.Install" sourceFile="Install.java" interface="false" size="128" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.Install$1" sourceFile="Install.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.Logger" sourceFile="Logger.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.PathAssembler" sourceFile="PathAssembler.java" interface="false" size="45" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.PathAssembler$LocalDistribution" sourceFile="PathAssembler.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.SystemPropertiesHandler" sourceFile="SystemPropertiesHandler.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.WrapperConfiguration" sourceFile="WrapperConfiguration.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.WrapperExecutor" sourceFile="WrapperExecutor.java" interface="false" size="83" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="335" invocations="996" avgMicrosecondsPerInvocation="337" maxMicrosecondsPerInvocation="20127" standardDeviationMicrosecondsPerInvocation="1085"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="159" invocations="176" avgMicrosecondsPerInvocation="909" maxMicrosecondsPerInvocation="9350" standardDeviationMicrosecondsPerInvocation="1586"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="149" invocations="999" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="5464" standardDeviationMicrosecondsPerInvocation="206"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="130" invocations="272" avgMicrosecondsPerInvocation="478" maxMicrosecondsPerInvocation="9804" standardDeviationMicrosecondsPerInvocation="1136"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="128" invocations="176" avgMicrosecondsPerInvocation="728" maxMicrosecondsPerInvocation="6201" standardDeviationMicrosecondsPerInvocation="1164"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="116" invocations="277" avgMicrosecondsPerInvocation="420" maxMicrosecondsPerInvocation="11627" standardDeviationMicrosecondsPerInvocation="1116"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="114" invocations="264" avgMicrosecondsPerInvocation="433" maxMicrosecondsPerInvocation="6814" standardDeviationMicrosecondsPerInvocation="875"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="109" invocations="277" avgMicrosecondsPerInvocation="396" maxMicrosecondsPerInvocation="11518" standardDeviationMicrosecondsPerInvocation="1201"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="107" invocations="744" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="2572" standardDeviationMicrosecondsPerInvocation="214"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="107" invocations="271" avgMicrosecondsPerInvocation="396" maxMicrosecondsPerInvocation="8557" standardDeviationMicrosecondsPerInvocation="996"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="80" invocations="272" avgMicrosecondsPerInvocation="294" maxMicrosecondsPerInvocation="10549" standardDeviationMicrosecondsPerInvocation="715"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="68" invocations="224" avgMicrosecondsPerInvocation="307" maxMicrosecondsPerInvocation="6311" standardDeviationMicrosecondsPerInvocation="699"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="63" invocations="176" avgMicrosecondsPerInvocation="358" maxMicrosecondsPerInvocation="7879" standardDeviationMicrosecondsPerInvocation="794"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="53" invocations="911" avgMicrosecondsPerInvocation="58" maxMicrosecondsPerInvocation="1492" standardDeviationMicrosecondsPerInvocation="123"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="49" invocations="248" avgMicrosecondsPerInvocation="199" maxMicrosecondsPerInvocation="11904" standardDeviationMicrosecondsPerInvocation="795"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="49" invocations="291" avgMicrosecondsPerInvocation="169" maxMicrosecondsPerInvocation="24795" standardDeviationMicrosecondsPerInvocation="1448"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="43" invocations="176" avgMicrosecondsPerInvocation="247" maxMicrosecondsPerInvocation="8385" standardDeviationMicrosecondsPerInvocation="789"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="39" invocations="176" avgMicrosecondsPerInvocation="222" maxMicrosecondsPerInvocation="1885" standardDeviationMicrosecondsPerInvocation="353"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="38" invocations="58" avgMicrosecondsPerInvocation="656" maxMicrosecondsPerInvocation="10140" standardDeviationMicrosecondsPerInvocation="1835"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="36" invocations="176" avgMicrosecondsPerInvocation="207" maxMicrosecondsPerInvocation="2440" standardDeviationMicrosecondsPerInvocation="302"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="31" invocations="64" avgMicrosecondsPerInvocation="497" maxMicrosecondsPerInvocation="3875" standardDeviationMicrosecondsPerInvocation="865"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="31" invocations="176" avgMicrosecondsPerInvocation="176" maxMicrosecondsPerInvocation="6034" standardDeviationMicrosecondsPerInvocation="723"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="30" invocations="176" avgMicrosecondsPerInvocation="170" maxMicrosecondsPerInvocation="4044" standardDeviationMicrosecondsPerInvocation="428"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="29" invocations="176" avgMicrosecondsPerInvocation="169" maxMicrosecondsPerInvocation="1775" standardDeviationMicrosecondsPerInvocation="308"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="28" invocations="272" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="1997" standardDeviationMicrosecondsPerInvocation="221"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="28" invocations="176" avgMicrosecondsPerInvocation="159" maxMicrosecondsPerInvocation="5635" standardDeviationMicrosecondsPerInvocation="491"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="25" invocations="58" avgMicrosecondsPerInvocation="436" maxMicrosecondsPerInvocation="10014" standardDeviationMicrosecondsPerInvocation="1345"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="24" invocations="4589" avgMicrosecondsPerInvocation="5" maxMicrosecondsPerInvocation="709" standardDeviationMicrosecondsPerInvocation="20"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUnsatisfiedObligation" totalMilliseconds="22" invocations="58" avgMicrosecondsPerInvocation="392" maxMicrosecondsPerInvocation="4492" standardDeviationMicrosecondsPerInvocation="782"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
