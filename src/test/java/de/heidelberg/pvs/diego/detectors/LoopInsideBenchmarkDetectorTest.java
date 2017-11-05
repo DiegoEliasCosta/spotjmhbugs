@@ -38,5 +38,15 @@ public class LoopInsideBenchmarkDetectorTest {
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_LOOP_INSIDE_BENCHMARK").build();
 		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
 	}
+	
+	@Test
+	public void testOnLog4JLoopInsideBenchmark() throws Exception {
+		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.examples".replace('.', '/'),
+				"LoopInsideBenchmark.class");
+		BugCollection bugCollection = spotbugs.performAnalysis(path);
+
+		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_LOOP_INSIDE_BENCHMARK").build();
+		assertThat(bugCollection, containsExactly(bugTypeMatcher, 1));
+	}
 
 }

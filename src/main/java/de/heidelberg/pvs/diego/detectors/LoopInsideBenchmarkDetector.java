@@ -38,7 +38,7 @@ public class LoopInsideBenchmarkDetector extends AbstractJMHBenchmarkMethodDetec
 		case Const.GOTO_W:
 		case Const.GOTO:
 
-			BugInstance bugInstance = new BugInstance(this, JMH_LOOP_INSIDE_BENCHMARK, LOW_PRIORITY)
+			BugInstance bugInstance = new BugInstance(this, JMH_LOOP_INSIDE_BENCHMARK, NORMAL_PRIORITY)
 					.addClassAndMethod(this).addSourceLine(this);
 
 			super.bugReporter.reportBug(bugInstance);
