@@ -10,7 +10,8 @@ import org.junit.runners.Suite;
    LoopInsideBenchmarkDetectorTest.class,
    StateFinalFieldDetectorTest.class,
    NotForkedBenchmarkDetectorTest.class,
-   FixtureWithInvocationScopeDetectionTest.class
+   FixtureWithInvocationScopeDetectionTest.class,
+   SingleShotBenchmarkDetectorTest.class,
 })
 
 public class DetectorsSuiteTest {

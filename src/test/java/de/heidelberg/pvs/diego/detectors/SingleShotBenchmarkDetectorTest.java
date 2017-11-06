@@ -28,6 +28,17 @@ public class SingleShotBenchmarkDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_BENCHMARKMODE_SINGLESHOT").build();
+		assertThat(bugCollection, containsExactly(bugTypeMatcher, 2));
+	}
+	
+	@Test
+	public void testSingleShotDetectorWithSingleShotBenchmarkClassExample() throws Exception {
+		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.examples".replace('.', '/'),
+				"SingleShotBenchmarkClassExample.class");
+		
+		BugCollection bugCollection = spotbugs.performAnalysis(path);
+
+		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_BENCHMARKMODE_SINGLESHOT").build();
 		assertThat(bugCollection, containsExactly(bugTypeMatcher, 1));
 	}
 

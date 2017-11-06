@@ -3,14 +3,14 @@ package de.heidelberg.pvs.diego.detectors;
 import java.util.Objects;
 
 import org.apache.bcel.classfile.AnnotationEntry;
+import org.apache.bcel.classfile.Annotations;
 import org.apache.bcel.classfile.ElementValue;
 import org.apache.bcel.classfile.ElementValuePair;
-import org.apache.bcel.classfile.JavaClass;
-import org.apache.bcel.classfile.Method;
 
 import edu.umd.cs.findbugs.BugInstance;
 import edu.umd.cs.findbugs.BugReporter;
 import edu.umd.cs.findbugs.BytecodeScanningDetector;
+import edu.umd.cs.findbugs.SourceLineAnnotation;
 
 /**
  * Detector of badly configured benchmarks with fork = 0
@@ -28,32 +28,17 @@ public class NotForkedBenchmarkDetector extends BytecodeScanningDetector {
 	}
 
 	@Override
-	public void visitJavaClass(JavaClass javaClass) {
-		
-		AnnotationEntry[] annotationEntries = javaClass.getAnnotationEntries();
+	public void visitAnnotation(Annotations annotations) {
 
+		AnnotationEntry[] annotationEntries = annotations.getAnnotationEntries();
 		for (AnnotationEntry annotation : annotationEntries) {
 
 			if (isForkAnnotation(annotation)) {
-				validateForkValue(annotation, javaClass);
+				validateForkValue(annotation);
 			}
 		}
 
-		super.visitJavaClass(javaClass);
-	}
-
-	@Override
-	public void visitMethod(Method obj) {
-		
-		AnnotationEntry[] annotationEntries = obj.getAnnotationEntries();
-
-		for (AnnotationEntry annotation : annotationEntries) {
-
-			if (isForkAnnotation(annotation)) {
-				validateForkValue(annotation, getThisClass());
-			}
-		}
-		super.visitMethod(obj);
+		super.visitAnnotation(annotations);
 	}
 
 	private boolean isForkAnnotation(AnnotationEntry annotation) {
@@ -61,7 +46,7 @@ public class NotForkedBenchmarkDetector extends BytecodeScanningDetector {
 		return Objects.equals(annotationType, "Lorg/openjdk/jmh/annotations/Fork;");
 	}
 
-	private void validateForkValue(AnnotationEntry annotation, JavaClass javaClass) {
+	private void validateForkValue(AnnotationEntry annotation) {
 
 		ElementValuePair[] elementValuePairs = annotation.getElementValuePairs();
 
@@ -76,21 +61,27 @@ public class NotForkedBenchmarkDetector extends BytecodeScanningDetector {
 				 */
 				if (Objects.equals(value.stringifyValue(), "0")) {
 
-					BugInstance bugInstance = new BugInstance(this, JMH_NOTFORKED_BENCHMARK, NORMAL_PRIORITY);
-					
-					if(visitingMethod()) {
-						bugInstance.addClassAndMethod(this).addSourceLine(this);
-					} else {
-						bugInstance.addClass(javaClass);
-					}
-
-					bugReporter.reportBug(bugInstance);
+					reportBug();
 				}
 
 			}
 
 		}
 
+	}
+	
+	private void reportBug() {
+		
+		BugInstance bug = new BugInstance(this, JMH_NOTFORKED_BENCHMARK, NORMAL_PRIORITY);
+
+		if(visitingMethod()) {
+			bug.addClassAndMethod(this).addSourceLine(this);
+		} else {
+			// Workaround for not being able to add the source line
+			bug.addClass(this.getClassDescriptor());
+		}
+		
+		bugReporter.reportBug(bug);
 	}
 
 }
