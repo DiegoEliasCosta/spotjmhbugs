@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1509422881000" analysisTimestamp="1509422883082" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1510254352000" analysisTimestamp="1510254353895" release="">
   <Project projectName="">
     <Jar>tmp/benchmarks</Jar>
   </Project>
@@ -12,6 +12,24 @@
       <SourceLine classname="org.lmdbjava.bench.Chronicle" start="58" end="66" startBytecode="0" endBytecode="234" sourcefile="Chronicle.java" sourcepath="org/lmdbjava/bench/Chronicle.java"/>
     </Method>
     <SourceLine classname="org.lmdbjava.bench.Chronicle" start="62" end="62" startBytecode="58" endBytecode="58" sourcefile="Chronicle.java" sourcepath="org/lmdbjava/bench/Chronicle.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.Chronicle">
+      <SourceLine classname="org.lmdbjava.bench.Chronicle" start="53" end="71" sourcefile="Chronicle.java" sourcepath="org/lmdbjava/bench/Chronicle.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.Chronicle" name="readKey" signature="(Lorg/lmdbjava/bench/Chronicle$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.Chronicle" start="58" end="66" startBytecode="0" endBytecode="234" sourcefile="Chronicle.java" sourcepath="org/lmdbjava/bench/Chronicle.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.Chronicle" start="58" end="58" startBytecode="98" endBytecode="98" sourcefile="Chronicle.java" sourcepath="org/lmdbjava/bench/Chronicle.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.Chronicle">
+      <SourceLine classname="org.lmdbjava.bench.Chronicle" start="53" end="71" sourcefile="Chronicle.java" sourcepath="org/lmdbjava/bench/Chronicle.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.Chronicle" name="readKey" signature="(Lorg/lmdbjava/bench/Chronicle$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.Chronicle" start="58" end="66" startBytecode="0" endBytecode="234" sourcefile="Chronicle.java" sourcepath="org/lmdbjava/bench/Chronicle.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.Chronicle" start="60" end="60" startBytecode="44" endBytecode="44" sourcefile="Chronicle.java" sourcepath="org/lmdbjava/bench/Chronicle.java"/>
   </BugInstance>
   <BugInstance type="JMH_FIXTURE_USING_INVOCATION_SCOPE" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.lmdbjava.bench.Chronicle$Writer">
@@ -132,6 +150,96 @@
     </Method>
     <SourceLine classname="org.lmdbjava.bench.LevelDb" start="112" end="112" startBytecode="82" endBytecode="82" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
   </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LevelDb">
+      <SourceLine classname="org.lmdbjava.bench.LevelDb" start="61" end="124" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LevelDb" name="readCrc" signature="(Lorg/lmdbjava/bench/LevelDb$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LevelDb" start="65" end="74" startBytecode="0" endBytecode="449" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LevelDb" start="67" end="67" startBytecode="84" endBytecode="84" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LevelDb">
+      <SourceLine classname="org.lmdbjava.bench.LevelDb" start="61" end="124" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LevelDb" name="readCrc" signature="(Lorg/lmdbjava/bench/LevelDb$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LevelDb" start="65" end="74" startBytecode="0" endBytecode="449" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LevelDb" start="72" end="72" startBytecode="102" endBytecode="102" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LevelDb">
+      <SourceLine classname="org.lmdbjava.bench.LevelDb" start="61" end="124" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LevelDb" name="readKey" signature="(Lorg/lmdbjava/bench/LevelDb$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LevelDb" start="78" end="86" startBytecode="0" endBytecode="225" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LevelDb" start="78" end="78" startBytecode="89" endBytecode="89" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LevelDb">
+      <SourceLine classname="org.lmdbjava.bench.LevelDb" start="61" end="124" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LevelDb" name="readKey" signature="(Lorg/lmdbjava/bench/LevelDb$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LevelDb" start="78" end="86" startBytecode="0" endBytecode="225" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LevelDb" start="80" end="80" startBytecode="44" endBytecode="44" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LevelDb">
+      <SourceLine classname="org.lmdbjava.bench.LevelDb" start="61" end="124" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LevelDb" name="readRev" signature="(Lorg/lmdbjava/bench/LevelDb$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LevelDb" start="90" end="96" startBytecode="0" endBytecode="396" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LevelDb" start="91" end="91" startBytecode="54" endBytecode="54" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LevelDb">
+      <SourceLine classname="org.lmdbjava.bench.LevelDb" start="61" end="124" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LevelDb" name="readRev" signature="(Lorg/lmdbjava/bench/LevelDb$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LevelDb" start="90" end="96" startBytecode="0" endBytecode="396" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LevelDb" start="95" end="95" startBytecode="72" endBytecode="72" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LevelDb">
+      <SourceLine classname="org.lmdbjava.bench.LevelDb" start="61" end="124" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LevelDb" name="readSeq" signature="(Lorg/lmdbjava/bench/LevelDb$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LevelDb" start="100" end="106" startBytecode="0" endBytecode="396" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LevelDb" start="101" end="101" startBytecode="54" endBytecode="54" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LevelDb">
+      <SourceLine classname="org.lmdbjava.bench.LevelDb" start="61" end="124" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LevelDb" name="readSeq" signature="(Lorg/lmdbjava/bench/LevelDb$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LevelDb" start="100" end="106" startBytecode="0" endBytecode="396" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LevelDb" start="105" end="105" startBytecode="72" endBytecode="72" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LevelDb">
+      <SourceLine classname="org.lmdbjava.bench.LevelDb" start="61" end="124" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LevelDb" name="readXxh64" signature="(Lorg/lmdbjava/bench/LevelDb$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LevelDb" start="110" end="119" startBytecode="0" endBytecode="468" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LevelDb" start="112" end="112" startBytecode="88" endBytecode="88" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LevelDb">
+      <SourceLine classname="org.lmdbjava.bench.LevelDb" start="61" end="124" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LevelDb" name="readXxh64" signature="(Lorg/lmdbjava/bench/LevelDb$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LevelDb" start="110" end="119" startBytecode="0" endBytecode="468" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LevelDb" start="117" end="117" startBytecode="108" endBytecode="108" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
+  </BugInstance>
   <BugInstance type="JMH_FIXTURE_USING_INVOCATION_SCOPE" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.lmdbjava.bench.LevelDb$Writer">
       <SourceLine classname="org.lmdbjava.bench.LevelDb$Writer" start="213" end="228" sourcefile="LevelDb.java" sourcepath="org/lmdbjava/bench/LevelDb.java"/>
@@ -158,6 +266,24 @@
       <SourceLine classname="org.lmdbjava.bench.LmdbJavaAgrona" start="85" end="94" startBytecode="0" endBytecode="236" sourcefile="LmdbJavaAgrona.java" sourcepath="org/lmdbjava/bench/LmdbJavaAgrona.java"/>
     </Method>
     <SourceLine classname="org.lmdbjava.bench.LmdbJavaAgrona" start="89" end="89" startBytecode="58" endBytecode="58" sourcefile="LmdbJavaAgrona.java" sourcepath="org/lmdbjava/bench/LmdbJavaAgrona.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LmdbJavaAgrona">
+      <SourceLine classname="org.lmdbjava.bench.LmdbJavaAgrona" start="68" end="126" sourcefile="LmdbJavaAgrona.java" sourcepath="org/lmdbjava/bench/LmdbJavaAgrona.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LmdbJavaAgrona" name="readKey" signature="(Lorg/lmdbjava/bench/LmdbJavaAgrona$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LmdbJavaAgrona" start="85" end="94" startBytecode="0" endBytecode="236" sourcefile="LmdbJavaAgrona.java" sourcepath="org/lmdbjava/bench/LmdbJavaAgrona.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LmdbJavaAgrona" start="85" end="85" startBytecode="96" endBytecode="96" sourcefile="LmdbJavaAgrona.java" sourcepath="org/lmdbjava/bench/LmdbJavaAgrona.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LmdbJavaAgrona">
+      <SourceLine classname="org.lmdbjava.bench.LmdbJavaAgrona" start="68" end="126" sourcefile="LmdbJavaAgrona.java" sourcepath="org/lmdbjava/bench/LmdbJavaAgrona.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LmdbJavaAgrona" name="readKey" signature="(Lorg/lmdbjava/bench/LmdbJavaAgrona$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LmdbJavaAgrona" start="85" end="94" startBytecode="0" endBytecode="236" sourcefile="LmdbJavaAgrona.java" sourcepath="org/lmdbjava/bench/LmdbJavaAgrona.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LmdbJavaAgrona" start="87" end="87" startBytecode="44" endBytecode="44" sourcefile="LmdbJavaAgrona.java" sourcepath="org/lmdbjava/bench/LmdbJavaAgrona.java"/>
   </BugInstance>
   <BugInstance type="JMH_FIXTURE_USING_INVOCATION_SCOPE" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.lmdbjava.bench.LmdbJavaAgrona$Writer">
@@ -203,6 +329,24 @@
       <SourceLine classname="org.lmdbjava.bench.LmdbJavaByteBuffer" start="79" end="90" startBytecode="0" endBytecode="277" sourcefile="LmdbJavaByteBuffer.java" sourcepath="org/lmdbjava/bench/LmdbJavaByteBuffer.java"/>
     </Method>
     <SourceLine classname="org.lmdbjava.bench.LmdbJavaByteBuffer" start="85" end="85" startBytecode="83" endBytecode="83" sourcefile="LmdbJavaByteBuffer.java" sourcepath="org/lmdbjava/bench/LmdbJavaByteBuffer.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LmdbJavaByteBuffer">
+      <SourceLine classname="org.lmdbjava.bench.LmdbJavaByteBuffer" start="64" end="122" sourcefile="LmdbJavaByteBuffer.java" sourcepath="org/lmdbjava/bench/LmdbJavaByteBuffer.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LmdbJavaByteBuffer" name="readKey" signature="(Lorg/lmdbjava/bench/LmdbJavaByteBuffer$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LmdbJavaByteBuffer" start="79" end="90" startBytecode="0" endBytecode="277" sourcefile="LmdbJavaByteBuffer.java" sourcepath="org/lmdbjava/bench/LmdbJavaByteBuffer.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LmdbJavaByteBuffer" start="79" end="79" startBytecode="119" endBytecode="119" sourcefile="LmdbJavaByteBuffer.java" sourcepath="org/lmdbjava/bench/LmdbJavaByteBuffer.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LmdbJavaByteBuffer">
+      <SourceLine classname="org.lmdbjava.bench.LmdbJavaByteBuffer" start="64" end="122" sourcefile="LmdbJavaByteBuffer.java" sourcepath="org/lmdbjava/bench/LmdbJavaByteBuffer.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LmdbJavaByteBuffer" name="readKey" signature="(Lorg/lmdbjava/bench/LmdbJavaByteBuffer$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LmdbJavaByteBuffer" start="79" end="90" startBytecode="0" endBytecode="277" sourcefile="LmdbJavaByteBuffer.java" sourcepath="org/lmdbjava/bench/LmdbJavaByteBuffer.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LmdbJavaByteBuffer" start="82" end="82" startBytecode="53" endBytecode="53" sourcefile="LmdbJavaByteBuffer.java" sourcepath="org/lmdbjava/bench/LmdbJavaByteBuffer.java"/>
   </BugInstance>
   <BugInstance type="JMH_FIXTURE_USING_INVOCATION_SCOPE" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.lmdbjava.bench.LmdbJavaByteBuffer$Writer">
@@ -258,6 +402,24 @@
     </Method>
     <SourceLine classname="org.lmdbjava.bench.LmdbJni" start="88" end="88" startBytecode="68" endBytecode="68" sourcefile="LmdbJni.java" sourcepath="org/lmdbjava/bench/LmdbJni.java"/>
   </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LmdbJni">
+      <SourceLine classname="org.lmdbjava.bench.LmdbJni" start="65" end="124" sourcefile="LmdbJni.java" sourcepath="org/lmdbjava/bench/LmdbJni.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LmdbJni" name="readKey" signature="(Lorg/lmdbjava/bench/LmdbJni$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LmdbJni" start="82" end="92" startBytecode="0" endBytecode="241" sourcefile="LmdbJni.java" sourcepath="org/lmdbjava/bench/LmdbJni.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LmdbJni" start="82" end="82" startBytecode="97" endBytecode="97" sourcefile="LmdbJni.java" sourcepath="org/lmdbjava/bench/LmdbJni.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LmdbJni">
+      <SourceLine classname="org.lmdbjava.bench.LmdbJni" start="65" end="124" sourcefile="LmdbJni.java" sourcepath="org/lmdbjava/bench/LmdbJni.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LmdbJni" name="readKey" signature="(Lorg/lmdbjava/bench/LmdbJni$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LmdbJni" start="82" end="92" startBytecode="0" endBytecode="241" sourcefile="LmdbJni.java" sourcepath="org/lmdbjava/bench/LmdbJni.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LmdbJni" start="84" end="84" startBytecode="42" endBytecode="42" sourcefile="LmdbJni.java" sourcepath="org/lmdbjava/bench/LmdbJni.java"/>
+  </BugInstance>
   <BugInstance type="JMH_FIXTURE_USING_INVOCATION_SCOPE" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.lmdbjava.bench.LmdbJni$Writer">
       <SourceLine classname="org.lmdbjava.bench.LmdbJni$Writer" start="254" end="272" sourcefile="LmdbJni.java" sourcepath="org/lmdbjava/bench/LmdbJni.java"/>
@@ -312,6 +474,105 @@
     </Method>
     <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="119" end="119" startBytecode="123" endBytecode="123" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
   </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LmdbLwjgl">
+      <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="85" end="175" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LmdbLwjgl" name="readCrc" signature="(Lorg/lmdbjava/bench/LmdbLwjgl$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="89" end="102" startBytecode="0" endBytecode="497" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="98" end="98" startBytecode="87" endBytecode="87" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LmdbLwjgl">
+      <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="85" end="175" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LmdbLwjgl" name="readCrc" signature="(Lorg/lmdbjava/bench/LmdbLwjgl$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="89" end="102" startBytecode="0" endBytecode="497" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="101" end="101" startBytecode="114" endBytecode="114" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LmdbLwjgl">
+      <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="85" end="175" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LmdbLwjgl" name="readKey" signature="(Lorg/lmdbjava/bench/LmdbLwjgl$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="106" end="122" startBytecode="0" endBytecode="549" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="110" end="110" startBytecode="130" endBytecode="130" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LmdbLwjgl">
+      <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="85" end="175" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LmdbLwjgl" name="readKey" signature="(Lorg/lmdbjava/bench/LmdbLwjgl$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="106" end="122" startBytecode="0" endBytecode="549" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="113" end="113" startBytecode="76" endBytecode="76" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LmdbLwjgl">
+      <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="85" end="175" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LmdbLwjgl" name="readKey" signature="(Lorg/lmdbjava/bench/LmdbLwjgl$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="106" end="122" startBytecode="0" endBytecode="549" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="121" end="121" startBytecode="146" endBytecode="146" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LmdbLwjgl">
+      <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="85" end="175" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LmdbLwjgl" name="readRev" signature="(Lorg/lmdbjava/bench/LmdbLwjgl$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="126" end="137" startBytecode="0" endBytecode="434" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="133" end="133" startBytecode="66" endBytecode="66" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LmdbLwjgl">
+      <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="85" end="175" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LmdbLwjgl" name="readRev" signature="(Lorg/lmdbjava/bench/LmdbLwjgl$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="126" end="137" startBytecode="0" endBytecode="434" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="135" end="135" startBytecode="82" endBytecode="82" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LmdbLwjgl">
+      <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="85" end="175" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LmdbLwjgl" name="readSeq" signature="(Lorg/lmdbjava/bench/LmdbLwjgl$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="141" end="151" startBytecode="0" endBytecode="433" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="148" end="148" startBytecode="65" endBytecode="65" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LmdbLwjgl">
+      <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="85" end="175" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LmdbLwjgl" name="readSeq" signature="(Lorg/lmdbjava/bench/LmdbLwjgl$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="141" end="151" startBytecode="0" endBytecode="433" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="150" end="150" startBytecode="81" endBytecode="81" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LmdbLwjgl">
+      <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="85" end="175" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LmdbLwjgl" name="readXxh64" signature="(Lorg/lmdbjava/bench/LmdbLwjgl$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="155" end="170" startBytecode="0" endBytecode="509" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="166" end="166" startBytecode="91" endBytecode="91" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.LmdbLwjgl">
+      <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="85" end="175" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.LmdbLwjgl" name="readXxh64" signature="(Lorg/lmdbjava/bench/LmdbLwjgl$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="155" end="170" startBytecode="0" endBytecode="509" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl" start="169" end="169" startBytecode="113" endBytecode="113" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
+  </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.lmdbjava.bench.LmdbLwjgl$CommonLmdbLwjgl">
       <SourceLine classname="org.lmdbjava.bench.LmdbLwjgl$CommonLmdbLwjgl" start="179" end="304" sourcefile="LmdbLwjgl.java" sourcepath="org/lmdbjava/bench/LmdbLwjgl.java"/>
@@ -347,6 +608,60 @@
     </Method>
     <SourceLine classname="org.lmdbjava.bench.MapDb" start="78" end="78" startBytecode="58" endBytecode="58" sourcefile="MapDb.java" sourcepath="org/lmdbjava/bench/MapDb.java"/>
   </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.MapDb">
+      <SourceLine classname="org.lmdbjava.bench.MapDb" start="58" end="118" sourcefile="MapDb.java" sourcepath="org/lmdbjava/bench/MapDb.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.MapDb" name="readCrc" signature="(Lorg/lmdbjava/bench/MapDb$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.MapDb" start="62" end="70" startBytecode="0" endBytecode="240" sourcefile="MapDb.java" sourcepath="org/lmdbjava/bench/MapDb.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.MapDb" start="68" end="68" startBytecode="69" endBytecode="69" sourcefile="MapDb.java" sourcepath="org/lmdbjava/bench/MapDb.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.MapDb">
+      <SourceLine classname="org.lmdbjava.bench.MapDb" start="58" end="118" sourcefile="MapDb.java" sourcepath="org/lmdbjava/bench/MapDb.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.MapDb" name="readKey" signature="(Lorg/lmdbjava/bench/MapDb$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.MapDb" start="74" end="82" startBytecode="0" endBytecode="223" sourcefile="MapDb.java" sourcepath="org/lmdbjava/bench/MapDb.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.MapDb" start="74" end="74" startBytecode="87" endBytecode="87" sourcefile="MapDb.java" sourcepath="org/lmdbjava/bench/MapDb.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.MapDb">
+      <SourceLine classname="org.lmdbjava.bench.MapDb" start="58" end="118" sourcefile="MapDb.java" sourcepath="org/lmdbjava/bench/MapDb.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.MapDb" name="readKey" signature="(Lorg/lmdbjava/bench/MapDb$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.MapDb" start="74" end="82" startBytecode="0" endBytecode="223" sourcefile="MapDb.java" sourcepath="org/lmdbjava/bench/MapDb.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.MapDb" start="76" end="76" startBytecode="44" endBytecode="44" sourcefile="MapDb.java" sourcepath="org/lmdbjava/bench/MapDb.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.MapDb">
+      <SourceLine classname="org.lmdbjava.bench.MapDb" start="58" end="118" sourcefile="MapDb.java" sourcepath="org/lmdbjava/bench/MapDb.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.MapDb" name="readRev" signature="(Lorg/lmdbjava/bench/MapDb$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.MapDb" start="86" end="92" startBytecode="0" endBytecode="191" sourcefile="MapDb.java" sourcepath="org/lmdbjava/bench/MapDb.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.MapDb" start="91" end="91" startBytecode="39" endBytecode="39" sourcefile="MapDb.java" sourcepath="org/lmdbjava/bench/MapDb.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.MapDb">
+      <SourceLine classname="org.lmdbjava.bench.MapDb" start="58" end="118" sourcefile="MapDb.java" sourcepath="org/lmdbjava/bench/MapDb.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.MapDb" name="readSeq" signature="(Lorg/lmdbjava/bench/MapDb$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.MapDb" start="96" end="101" startBytecode="0" endBytecode="187" sourcefile="MapDb.java" sourcepath="org/lmdbjava/bench/MapDb.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.MapDb" start="100" end="100" startBytecode="39" endBytecode="39" sourcefile="MapDb.java" sourcepath="org/lmdbjava/bench/MapDb.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.MapDb">
+      <SourceLine classname="org.lmdbjava.bench.MapDb" start="58" end="118" sourcefile="MapDb.java" sourcepath="org/lmdbjava/bench/MapDb.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.MapDb" name="readXxh64" signature="(Lorg/lmdbjava/bench/MapDb$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.MapDb" start="105" end="113" startBytecode="0" endBytecode="247" sourcefile="MapDb.java" sourcepath="org/lmdbjava/bench/MapDb.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.MapDb" start="111" end="111" startBytecode="71" endBytecode="71" sourcefile="MapDb.java" sourcepath="org/lmdbjava/bench/MapDb.java"/>
+  </BugInstance>
   <BugInstance type="JMH_FIXTURE_USING_INVOCATION_SCOPE" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.lmdbjava.bench.MapDb$Writer">
       <SourceLine classname="org.lmdbjava.bench.MapDb$Writer" start="201" end="213" sourcefile="MapDb.java" sourcepath="org/lmdbjava/bench/MapDb.java"/>
@@ -373,6 +688,60 @@
       <SourceLine classname="org.lmdbjava.bench.MvStore" start="73" end="81" startBytecode="0" endBytecode="230" sourcefile="MvStore.java" sourcepath="org/lmdbjava/bench/MvStore.java"/>
     </Method>
     <SourceLine classname="org.lmdbjava.bench.MvStore" start="77" end="77" startBytecode="58" endBytecode="58" sourcefile="MvStore.java" sourcepath="org/lmdbjava/bench/MvStore.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.MvStore">
+      <SourceLine classname="org.lmdbjava.bench.MvStore" start="56" end="116" sourcefile="MvStore.java" sourcepath="org/lmdbjava/bench/MvStore.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.MvStore" name="readCrc" signature="(Lorg/lmdbjava/bench/MvStore$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.MvStore" start="60" end="69" startBytecode="0" endBytecode="243" sourcefile="MvStore.java" sourcepath="org/lmdbjava/bench/MvStore.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.MvStore" start="67" end="67" startBytecode="68" endBytecode="68" sourcefile="MvStore.java" sourcepath="org/lmdbjava/bench/MvStore.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.MvStore">
+      <SourceLine classname="org.lmdbjava.bench.MvStore" start="56" end="116" sourcefile="MvStore.java" sourcepath="org/lmdbjava/bench/MvStore.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.MvStore" name="readKey" signature="(Lorg/lmdbjava/bench/MvStore$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.MvStore" start="73" end="81" startBytecode="0" endBytecode="230" sourcefile="MvStore.java" sourcepath="org/lmdbjava/bench/MvStore.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.MvStore" start="73" end="73" startBytecode="94" endBytecode="94" sourcefile="MvStore.java" sourcepath="org/lmdbjava/bench/MvStore.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.MvStore">
+      <SourceLine classname="org.lmdbjava.bench.MvStore" start="56" end="116" sourcefile="MvStore.java" sourcepath="org/lmdbjava/bench/MvStore.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.MvStore" name="readKey" signature="(Lorg/lmdbjava/bench/MvStore$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.MvStore" start="73" end="81" startBytecode="0" endBytecode="230" sourcefile="MvStore.java" sourcepath="org/lmdbjava/bench/MvStore.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.MvStore" start="75" end="75" startBytecode="44" endBytecode="44" sourcefile="MvStore.java" sourcepath="org/lmdbjava/bench/MvStore.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.MvStore">
+      <SourceLine classname="org.lmdbjava.bench.MvStore" start="56" end="116" sourcefile="MvStore.java" sourcepath="org/lmdbjava/bench/MvStore.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.MvStore" name="readRev" signature="(Lorg/lmdbjava/bench/MvStore$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.MvStore" start="85" end="89" startBytecode="0" endBytecode="162" sourcefile="MvStore.java" sourcepath="org/lmdbjava/bench/MvStore.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.MvStore" start="85" end="85" startBytecode="46" endBytecode="46" sourcefile="MvStore.java" sourcepath="org/lmdbjava/bench/MvStore.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.MvStore">
+      <SourceLine classname="org.lmdbjava.bench.MvStore" start="56" end="116" sourcefile="MvStore.java" sourcepath="org/lmdbjava/bench/MvStore.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.MvStore" name="readSeq" signature="(Lorg/lmdbjava/bench/MvStore$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.MvStore" start="93" end="98" startBytecode="0" endBytecode="180" sourcefile="MvStore.java" sourcepath="org/lmdbjava/bench/MvStore.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.MvStore" start="97" end="97" startBytecode="42" endBytecode="42" sourcefile="MvStore.java" sourcepath="org/lmdbjava/bench/MvStore.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.MvStore">
+      <SourceLine classname="org.lmdbjava.bench.MvStore" start="56" end="116" sourcefile="MvStore.java" sourcepath="org/lmdbjava/bench/MvStore.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.MvStore" name="readXxh64" signature="(Lorg/lmdbjava/bench/MvStore$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.MvStore" start="102" end="111" startBytecode="0" endBytecode="250" sourcefile="MvStore.java" sourcepath="org/lmdbjava/bench/MvStore.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.MvStore" start="109" end="109" startBytecode="70" endBytecode="70" sourcefile="MvStore.java" sourcepath="org/lmdbjava/bench/MvStore.java"/>
   </BugInstance>
   <BugInstance type="JMH_FIXTURE_USING_INVOCATION_SCOPE" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.lmdbjava.bench.MvStore$Writer">
@@ -401,6 +770,60 @@
     </Method>
     <SourceLine classname="org.lmdbjava.bench.RocksDb" start="83" end="83" startBytecode="58" endBytecode="58" sourcefile="RocksDb.java" sourcepath="org/lmdbjava/bench/RocksDb.java"/>
   </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.RocksDb">
+      <SourceLine classname="org.lmdbjava.bench.RocksDb" start="61" end="125" sourcefile="RocksDb.java" sourcepath="org/lmdbjava/bench/RocksDb.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.RocksDb" name="readCrc" signature="(Lorg/lmdbjava/bench/RocksDb$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.RocksDb" start="65" end="74" startBytecode="0" endBytecode="185" sourcefile="RocksDb.java" sourcepath="org/lmdbjava/bench/RocksDb.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.RocksDb" start="71" end="71" startBytecode="52" endBytecode="52" sourcefile="RocksDb.java" sourcepath="org/lmdbjava/bench/RocksDb.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.RocksDb">
+      <SourceLine classname="org.lmdbjava.bench.RocksDb" start="61" end="125" sourcefile="RocksDb.java" sourcepath="org/lmdbjava/bench/RocksDb.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.RocksDb" name="readKey" signature="(Lorg/lmdbjava/bench/RocksDb$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.RocksDb" start="79" end="87" startBytecode="0" endBytecode="232" sourcefile="RocksDb.java" sourcepath="org/lmdbjava/bench/RocksDb.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.RocksDb" start="79" end="79" startBytecode="96" endBytecode="96" sourcefile="RocksDb.java" sourcepath="org/lmdbjava/bench/RocksDb.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.RocksDb">
+      <SourceLine classname="org.lmdbjava.bench.RocksDb" start="61" end="125" sourcefile="RocksDb.java" sourcepath="org/lmdbjava/bench/RocksDb.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.RocksDb" name="readKey" signature="(Lorg/lmdbjava/bench/RocksDb$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.RocksDb" start="79" end="87" startBytecode="0" endBytecode="232" sourcefile="RocksDb.java" sourcepath="org/lmdbjava/bench/RocksDb.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.RocksDb" start="81" end="81" startBytecode="44" endBytecode="44" sourcefile="RocksDb.java" sourcepath="org/lmdbjava/bench/RocksDb.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.RocksDb">
+      <SourceLine classname="org.lmdbjava.bench.RocksDb" start="61" end="125" sourcefile="RocksDb.java" sourcepath="org/lmdbjava/bench/RocksDb.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.RocksDb" name="readRev" signature="(Lorg/lmdbjava/bench/RocksDb$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.RocksDb" start="91" end="97" startBytecode="0" endBytecode="141" sourcefile="RocksDb.java" sourcepath="org/lmdbjava/bench/RocksDb.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.RocksDb" start="95" end="95" startBytecode="31" endBytecode="31" sourcefile="RocksDb.java" sourcepath="org/lmdbjava/bench/RocksDb.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.RocksDb">
+      <SourceLine classname="org.lmdbjava.bench.RocksDb" start="61" end="125" sourcefile="RocksDb.java" sourcepath="org/lmdbjava/bench/RocksDb.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.RocksDb" name="readSeq" signature="(Lorg/lmdbjava/bench/RocksDb$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.RocksDb" start="101" end="107" startBytecode="0" endBytecode="141" sourcefile="RocksDb.java" sourcepath="org/lmdbjava/bench/RocksDb.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.RocksDb" start="105" end="105" startBytecode="31" endBytecode="31" sourcefile="RocksDb.java" sourcepath="org/lmdbjava/bench/RocksDb.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.RocksDb">
+      <SourceLine classname="org.lmdbjava.bench.RocksDb" start="61" end="125" sourcefile="RocksDb.java" sourcepath="org/lmdbjava/bench/RocksDb.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.RocksDb" name="readXxh64" signature="(Lorg/lmdbjava/bench/RocksDb$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.RocksDb" start="111" end="120" startBytecode="0" endBytecode="195" sourcefile="RocksDb.java" sourcepath="org/lmdbjava/bench/RocksDb.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.RocksDb" start="117" end="117" startBytecode="57" endBytecode="57" sourcefile="RocksDb.java" sourcepath="org/lmdbjava/bench/RocksDb.java"/>
+  </BugInstance>
   <BugInstance type="JMH_FIXTURE_USING_INVOCATION_SCOPE" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.lmdbjava.bench.RocksDb$Writer">
       <SourceLine classname="org.lmdbjava.bench.RocksDb$Writer" start="228" end="243" sourcefile="RocksDb.java" sourcepath="org/lmdbjava/bench/RocksDb.java"/>
@@ -427,6 +850,87 @@
       <SourceLine classname="org.lmdbjava.bench.Xodus" start="94" end="100" startBytecode="0" endBytecode="354" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
     </Method>
     <SourceLine classname="org.lmdbjava.bench.Xodus" start="95" end="95" startBytecode="18" endBytecode="18" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.Xodus">
+      <SourceLine classname="org.lmdbjava.bench.Xodus" start="61" end="127" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.Xodus" name="readCrc" signature="(Lorg/lmdbjava/bench/Xodus$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.Xodus" start="65" end="73" startBytecode="0" endBytecode="408" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.Xodus" start="69" end="69" startBytecode="79" endBytecode="79" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.Xodus">
+      <SourceLine classname="org.lmdbjava.bench.Xodus" start="61" end="127" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.Xodus" name="readCrc" signature="(Lorg/lmdbjava/bench/Xodus$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.Xodus" start="65" end="73" startBytecode="0" endBytecode="408" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.Xodus" start="71" end="71" startBytecode="97" endBytecode="97" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.Xodus">
+      <SourceLine classname="org.lmdbjava.bench.Xodus" start="61" end="127" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.Xodus" name="readKey" signature="(Lorg/lmdbjava/bench/Xodus$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.Xodus" start="77" end="90" startBytecode="0" endBytecode="276" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.Xodus" start="77" end="77" startBytecode="114" endBytecode="114" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.Xodus">
+      <SourceLine classname="org.lmdbjava.bench.Xodus" start="61" end="127" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.Xodus" name="readKey" signature="(Lorg/lmdbjava/bench/Xodus$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.Xodus" start="77" end="90" startBytecode="0" endBytecode="276" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.Xodus" start="83" end="83" startBytecode="68" endBytecode="68" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.Xodus">
+      <SourceLine classname="org.lmdbjava.bench.Xodus" start="61" end="127" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.Xodus" name="readRev" signature="(Lorg/lmdbjava/bench/Xodus$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.Xodus" start="94" end="100" startBytecode="0" endBytecode="354" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.Xodus" start="99" end="99" startBytecode="63" endBytecode="63" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.Xodus">
+      <SourceLine classname="org.lmdbjava.bench.Xodus" start="61" end="127" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.Xodus" name="readSeq" signature="(Lorg/lmdbjava/bench/Xodus$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.Xodus" start="104" end="109" startBytecode="0" endBytecode="347" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.Xodus" start="106" end="106" startBytecode="41" endBytecode="41" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.Xodus">
+      <SourceLine classname="org.lmdbjava.bench.Xodus" start="61" end="127" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.Xodus" name="readSeq" signature="(Lorg/lmdbjava/bench/Xodus$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.Xodus" start="104" end="109" startBytecode="0" endBytecode="347" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.Xodus" start="108" end="108" startBytecode="59" endBytecode="59" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.Xodus">
+      <SourceLine classname="org.lmdbjava.bench.Xodus" start="61" end="127" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.Xodus" name="readXxh64" signature="(Lorg/lmdbjava/bench/Xodus$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.Xodus" start="113" end="122" startBytecode="0" endBytecode="430" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.Xodus" start="118" end="118" startBytecode="82" endBytecode="82" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.lmdbjava.bench.Xodus">
+      <SourceLine classname="org.lmdbjava.bench.Xodus" start="61" end="127" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+    </Class>
+    <Method classname="org.lmdbjava.bench.Xodus" name="readXxh64" signature="(Lorg/lmdbjava/bench/Xodus$Reader;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.lmdbjava.bench.Xodus" start="113" end="122" startBytecode="0" endBytecode="430" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
+    </Method>
+    <SourceLine classname="org.lmdbjava.bench.Xodus" start="120" end="120" startBytecode="102" endBytecode="102" sourcefile="Xodus.java" sourcepath="org/lmdbjava/bench/Xodus.java"/>
   </BugInstance>
   <BugInstance type="JMH_FIXTURE_USING_INVOCATION_SCOPE" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.lmdbjava.bench.Xodus$Writer">
@@ -1509,7 +2013,7 @@
     <MissingClass>shaded.org.codehaus.plexus.configuration.xml.XmlPlexusConfiguration</MissingClass>
     <MissingClass>shaded.org.codehaus.plexus.logging.AbstractLogEnabled</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Tue, 31 Oct 2017 05:08:01 +0100" total_classes="17862" referenced_classes="19030" total_bugs="170" total_size="857014" num_packages="731" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="493.85" clock_seconds="223.41" peak_mbytes="2245.79" alloc_mbytes="3641.00" gc_seconds="12.73" priority_2="170">
+  <FindBugsSummary timestamp="Thu, 9 Nov 2017 20:05:52 +0100" total_classes="17862" referenced_classes="19030" total_bugs="278" total_size="857014" num_packages="731" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="509.10" clock_seconds="230.49" peak_mbytes="2169.70" alloc_mbytes="3641.00" gc_seconds="13.60" priority_2="278">
     <PackageStats package="com.google.common.annotations" total_bugs="0" total_types="4" total_size="7">
       <ClassStats class="com.google.common.annotations.Beta" sourceFile="Beta.java" interface="true" size="1" bugs="0"/>
       <ClassStats class="com.google.common.annotations.GwtCompatible" sourceFile="GwtCompatible.java" interface="true" size="3" bugs="0"/>
@@ -17265,46 +17769,46 @@
       <ClassStats class="org.lmdbjava.TxnFlags" sourceFile="TxnFlags.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="org.lmdbjava.UnsafeAccess" sourceFile="UnsafeAccess.java" interface="false" size="19" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.lmdbjava.bench" total_bugs="50" total_types="43" total_size="1310" priority_2="50">
-      <ClassStats class="org.lmdbjava.bench.Chronicle" sourceFile="Chronicle.java" interface="false" size="13" bugs="1" priority_2="1"/>
+    <PackageStats package="org.lmdbjava.bench" total_bugs="158" total_types="43" total_size="1310" priority_2="158">
+      <ClassStats class="org.lmdbjava.bench.Chronicle" sourceFile="Chronicle.java" interface="false" size="13" bugs="3" priority_2="3"/>
       <ClassStats class="org.lmdbjava.bench.Chronicle$CommonChroncileMap" sourceFile="Chronicle.java" interface="false" size="39" bugs="0"/>
       <ClassStats class="org.lmdbjava.bench.Chronicle$Reader" sourceFile="Chronicle.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="org.lmdbjava.bench.Chronicle$Writer" sourceFile="Chronicle.java" interface="false" size="9" bugs="2" priority_2="2"/>
       <ClassStats class="org.lmdbjava.bench.Common" sourceFile="Common.java" interface="false" size="88" bugs="6" priority_2="6"/>
       <ClassStats class="org.lmdbjava.bench.CommonLmdbJava" sourceFile="CommonLmdbJava.java" interface="false" size="43" bugs="1" priority_2="1"/>
-      <ClassStats class="org.lmdbjava.bench.LevelDb" sourceFile="LevelDb.java" interface="false" size="47" bugs="5" priority_2="5"/>
+      <ClassStats class="org.lmdbjava.bench.LevelDb" sourceFile="LevelDb.java" interface="false" size="47" bugs="31" priority_2="31"/>
       <ClassStats class="org.lmdbjava.bench.LevelDb$CommonLevelDb" sourceFile="LevelDb.java" interface="false" size="45" bugs="0"/>
       <ClassStats class="org.lmdbjava.bench.LevelDb$Reader" sourceFile="LevelDb.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="org.lmdbjava.bench.LevelDb$Writer" sourceFile="LevelDb.java" interface="false" size="10" bugs="2" priority_2="2"/>
-      <ClassStats class="org.lmdbjava.bench.LmdbJavaAgrona" sourceFile="LmdbJavaAgrona.java" interface="false" size="42" bugs="1" priority_2="1"/>
+      <ClassStats class="org.lmdbjava.bench.LmdbJavaAgrona" sourceFile="LmdbJavaAgrona.java" interface="false" size="42" bugs="3" priority_2="3"/>
       <ClassStats class="org.lmdbjava.bench.LmdbJavaAgrona$LmdbJava" sourceFile="LmdbJavaAgrona.java" interface="false" size="38" bugs="0"/>
       <ClassStats class="org.lmdbjava.bench.LmdbJavaAgrona$Reader" sourceFile="LmdbJavaAgrona.java" interface="false" size="21" bugs="0"/>
       <ClassStats class="org.lmdbjava.bench.LmdbJavaAgrona$Writer" sourceFile="LmdbJavaAgrona.java" interface="false" size="11" bugs="2" priority_2="2"/>
-      <ClassStats class="org.lmdbjava.bench.LmdbJavaByteBuffer" sourceFile="LmdbJavaByteBuffer.java" interface="false" size="42" bugs="3" priority_2="3"/>
+      <ClassStats class="org.lmdbjava.bench.LmdbJavaByteBuffer" sourceFile="LmdbJavaByteBuffer.java" interface="false" size="42" bugs="5" priority_2="5"/>
       <ClassStats class="org.lmdbjava.bench.LmdbJavaByteBuffer$LmdbJava" sourceFile="LmdbJavaByteBuffer.java" interface="false" size="36" bugs="0"/>
       <ClassStats class="org.lmdbjava.bench.LmdbJavaByteBuffer$Reader" sourceFile="LmdbJavaByteBuffer.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="org.lmdbjava.bench.LmdbJavaByteBuffer$Writer" sourceFile="LmdbJavaByteBuffer.java" interface="false" size="11" bugs="2" priority_2="2"/>
-      <ClassStats class="org.lmdbjava.bench.LmdbJni" sourceFile="LmdbJni.java" interface="false" size="43" bugs="4" priority_2="4"/>
+      <ClassStats class="org.lmdbjava.bench.LmdbJni" sourceFile="LmdbJni.java" interface="false" size="43" bugs="6" priority_2="6"/>
       <ClassStats class="org.lmdbjava.bench.LmdbJni$CommonLmdbJni" sourceFile="LmdbJni.java" interface="false" size="60" bugs="0"/>
       <ClassStats class="org.lmdbjava.bench.LmdbJni$Reader" sourceFile="LmdbJni.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="org.lmdbjava.bench.LmdbJni$Writer" sourceFile="LmdbJni.java" interface="false" size="10" bugs="2" priority_2="2"/>
-      <ClassStats class="org.lmdbjava.bench.LmdbLwjgl" sourceFile="LmdbLwjgl.java" interface="false" size="66" bugs="4" priority_2="4"/>
+      <ClassStats class="org.lmdbjava.bench.LmdbLwjgl" sourceFile="LmdbLwjgl.java" interface="false" size="66" bugs="35" priority_2="35"/>
       <ClassStats class="org.lmdbjava.bench.LmdbLwjgl$CommonLmdbLwjgl" sourceFile="LmdbLwjgl.java" interface="false" size="80" bugs="1" priority_2="1"/>
       <ClassStats class="org.lmdbjava.bench.LmdbLwjgl$Reader" sourceFile="LmdbLwjgl.java" interface="false" size="21" bugs="0"/>
       <ClassStats class="org.lmdbjava.bench.LmdbLwjgl$Writer" sourceFile="LmdbLwjgl.java" interface="false" size="10" bugs="2" priority_2="2"/>
-      <ClassStats class="org.lmdbjava.bench.MapDb" sourceFile="MapDb.java" interface="false" size="48" bugs="1" priority_2="1"/>
+      <ClassStats class="org.lmdbjava.bench.MapDb" sourceFile="MapDb.java" interface="false" size="48" bugs="7" priority_2="7"/>
       <ClassStats class="org.lmdbjava.bench.MapDb$CommonMapDb" sourceFile="MapDb.java" interface="false" size="41" bugs="0"/>
       <ClassStats class="org.lmdbjava.bench.MapDb$Reader" sourceFile="MapDb.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="org.lmdbjava.bench.MapDb$Writer" sourceFile="MapDb.java" interface="false" size="9" bugs="2" priority_2="2"/>
-      <ClassStats class="org.lmdbjava.bench.MvStore" sourceFile="MvStore.java" interface="false" size="47" bugs="1" priority_2="1"/>
+      <ClassStats class="org.lmdbjava.bench.MvStore" sourceFile="MvStore.java" interface="false" size="47" bugs="7" priority_2="7"/>
       <ClassStats class="org.lmdbjava.bench.MvStore$CommonMvStore" sourceFile="MvStore.java" interface="false" size="39" bugs="0"/>
       <ClassStats class="org.lmdbjava.bench.MvStore$Reader" sourceFile="MvStore.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="org.lmdbjava.bench.MvStore$Writer" sourceFile="MvStore.java" interface="false" size="9" bugs="2" priority_2="2"/>
-      <ClassStats class="org.lmdbjava.bench.RocksDb" sourceFile="RocksDb.java" interface="false" size="47" bugs="1" priority_2="1"/>
+      <ClassStats class="org.lmdbjava.bench.RocksDb" sourceFile="RocksDb.java" interface="false" size="47" bugs="7" priority_2="7"/>
       <ClassStats class="org.lmdbjava.bench.RocksDb$CommonRocksDb" sourceFile="RocksDb.java" interface="false" size="54" bugs="0"/>
       <ClassStats class="org.lmdbjava.bench.RocksDb$Reader" sourceFile="RocksDb.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="org.lmdbjava.bench.RocksDb$Writer" sourceFile="RocksDb.java" interface="false" size="10" bugs="2" priority_2="2"/>
-      <ClassStats class="org.lmdbjava.bench.Xodus" sourceFile="Xodus.java" interface="false" size="49" bugs="1" priority_2="1"/>
+      <ClassStats class="org.lmdbjava.bench.Xodus" sourceFile="Xodus.java" interface="false" size="49" bugs="26" priority_2="26"/>
       <ClassStats class="org.lmdbjava.bench.Xodus$CommonXodus" sourceFile="Xodus.java" interface="false" size="50" bugs="0"/>
       <ClassStats class="org.lmdbjava.bench.Xodus$RandomBytesIterator" sourceFile="Xodus.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="org.lmdbjava.bench.Xodus$Reader" sourceFile="Xodus.java" interface="false" size="13" bugs="0"/>
@@ -20835,49 +21339,50 @@
       <ClassStats class="software.chronicle.enterprise.internals.impl.NativeAffinity" sourceFile="NativeAffinity.java" interface="false" size="37" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="19388" invocations="183820" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="914874" standardDeviationMicrosecondsPerInvocation="2222"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="17401" invocations="156504" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="1413281" standardDeviationMicrosecondsPerInvocation="3653"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="12580" invocations="177194" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="93219" standardDeviationMicrosecondsPerInvocation="685"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="11276" invocations="186078" avgMicrosecondsPerInvocation="60" maxMicrosecondsPerInvocation="62536" standardDeviationMicrosecondsPerInvocation="357"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="10520" invocations="193951" avgMicrosecondsPerInvocation="54" maxMicrosecondsPerInvocation="93131" standardDeviationMicrosecondsPerInvocation="514"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="8982" invocations="155923" avgMicrosecondsPerInvocation="57" maxMicrosecondsPerInvocation="839759" standardDeviationMicrosecondsPerInvocation="2173"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="6029" invocations="182935" avgMicrosecondsPerInvocation="32" maxMicrosecondsPerInvocation="75318" standardDeviationMicrosecondsPerInvocation="303"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="4945" invocations="11413370" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="4549" standardDeviationMicrosecondsPerInvocation="3"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="4628" invocations="92914" avgMicrosecondsPerInvocation="49" maxMicrosecondsPerInvocation="67837" standardDeviationMicrosecondsPerInvocation="235"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="4040" invocations="19030" avgMicrosecondsPerInvocation="212" maxMicrosecondsPerInvocation="636409" standardDeviationMicrosecondsPerInvocation="4703"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="3866" invocations="83571" avgMicrosecondsPerInvocation="46" maxMicrosecondsPerInvocation="1071941" standardDeviationMicrosecondsPerInvocation="3746"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="3855" invocations="196092" avgMicrosecondsPerInvocation="19" maxMicrosecondsPerInvocation="102098" standardDeviationMicrosecondsPerInvocation="253"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="3368" invocations="22539" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="400767" standardDeviationMicrosecondsPerInvocation="2828"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="3104" invocations="17859" avgMicrosecondsPerInvocation="173" maxMicrosecondsPerInvocation="97744" standardDeviationMicrosecondsPerInvocation="1208"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="2961" invocations="179307" avgMicrosecondsPerInvocation="16" maxMicrosecondsPerInvocation="97614" standardDeviationMicrosecondsPerInvocation="278"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="2689" invocations="17859" avgMicrosecondsPerInvocation="150" maxMicrosecondsPerInvocation="78959" standardDeviationMicrosecondsPerInvocation="708"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="2646" invocations="19030" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="102808" standardDeviationMicrosecondsPerInvocation="839"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="2461" invocations="17859" avgMicrosecondsPerInvocation="137" maxMicrosecondsPerInvocation="88298" standardDeviationMicrosecondsPerInvocation="1109"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="2049" invocations="17859" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="103783" standardDeviationMicrosecondsPerInvocation="840"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="1844" invocations="156504" avgMicrosecondsPerInvocation="11" maxMicrosecondsPerInvocation="76569" standardDeviationMicrosecondsPerInvocation="230"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="1685" invocations="201909" avgMicrosecondsPerInvocation="8" maxMicrosecondsPerInvocation="29808" standardDeviationMicrosecondsPerInvocation="70"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="1661" invocations="151721" avgMicrosecondsPerInvocation="10" maxMicrosecondsPerInvocation="73361" standardDeviationMicrosecondsPerInvocation="191"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="1633" invocations="17859" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="114003" standardDeviationMicrosecondsPerInvocation="968"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="1594" invocations="17859" avgMicrosecondsPerInvocation="89" maxMicrosecondsPerInvocation="97179" standardDeviationMicrosecondsPerInvocation="834"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="1586" invocations="17859" avgMicrosecondsPerInvocation="88" maxMicrosecondsPerInvocation="75508" standardDeviationMicrosecondsPerInvocation="781"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="1536" invocations="17859" avgMicrosecondsPerInvocation="86" maxMicrosecondsPerInvocation="7462" standardDeviationMicrosecondsPerInvocation="212"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="1508" invocations="17859" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="14142" standardDeviationMicrosecondsPerInvocation="247"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="1492" invocations="17859" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="66881" standardDeviationMicrosecondsPerInvocation="541"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="1452" invocations="17859" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="9665" standardDeviationMicrosecondsPerInvocation="205"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="1437" invocations="17859" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="10474" standardDeviationMicrosecondsPerInvocation="219"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="1419" invocations="17859" avgMicrosecondsPerInvocation="79" maxMicrosecondsPerInvocation="63286" standardDeviationMicrosecondsPerInvocation="519"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="1365" invocations="17859" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="73164" standardDeviationMicrosecondsPerInvocation="581"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="1354" invocations="7787" avgMicrosecondsPerInvocation="173" maxMicrosecondsPerInvocation="66008" standardDeviationMicrosecondsPerInvocation="851"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="1301" invocations="17859" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="10397" standardDeviationMicrosecondsPerInvocation="192"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.LoopInsideBenchmarkDetector" totalMilliseconds="1276" invocations="17859" avgMicrosecondsPerInvocation="71" maxMicrosecondsPerInvocation="72727" standardDeviationMicrosecondsPerInvocation="774"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="1266" invocations="17859" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="9011" standardDeviationMicrosecondsPerInvocation="194"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="1257" invocations="17859" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="10595" standardDeviationMicrosecondsPerInvocation="207"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="1254" invocations="17859" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="10136" standardDeviationMicrosecondsPerInvocation="197"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="1246" invocations="17859" avgMicrosecondsPerInvocation="69" maxMicrosecondsPerInvocation="2972" standardDeviationMicrosecondsPerInvocation="147"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="1236" invocations="17859" avgMicrosecondsPerInvocation="69" maxMicrosecondsPerInvocation="99012" standardDeviationMicrosecondsPerInvocation="763"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadForLoop" totalMilliseconds="1233" invocations="17859" avgMicrosecondsPerInvocation="69" maxMicrosecondsPerInvocation="99061" standardDeviationMicrosecondsPerInvocation="761"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SynchronizationOnSharedBuiltinConstant" totalMilliseconds="1204" invocations="17859" avgMicrosecondsPerInvocation="67" maxMicrosecondsPerInvocation="69372" standardDeviationMicrosecondsPerInvocation="735"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SynchronizingOnContentsOfFieldToProtectField" totalMilliseconds="1186" invocations="17859" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="93774" standardDeviationMicrosecondsPerInvocation="721"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="19358" invocations="183820" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="872981" standardDeviationMicrosecondsPerInvocation="2149"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="15695" invocations="156504" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="99443" standardDeviationMicrosecondsPerInvocation="669"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="12442" invocations="177194" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="80020" standardDeviationMicrosecondsPerInvocation="596"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="11258" invocations="186078" avgMicrosecondsPerInvocation="60" maxMicrosecondsPerInvocation="62978" standardDeviationMicrosecondsPerInvocation="325"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="10836" invocations="193951" avgMicrosecondsPerInvocation="55" maxMicrosecondsPerInvocation="103145" standardDeviationMicrosecondsPerInvocation="627"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="9510" invocations="155923" avgMicrosecondsPerInvocation="60" maxMicrosecondsPerInvocation="1063714" standardDeviationMicrosecondsPerInvocation="2743"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="6050" invocations="182935" avgMicrosecondsPerInvocation="33" maxMicrosecondsPerInvocation="107836" standardDeviationMicrosecondsPerInvocation="281"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="5497" invocations="92914" avgMicrosecondsPerInvocation="59" maxMicrosecondsPerInvocation="101576" standardDeviationMicrosecondsPerInvocation="411"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="4957" invocations="11413370" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="93244" standardDeviationMicrosecondsPerInvocation="27"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="3967" invocations="196092" avgMicrosecondsPerInvocation="20" maxMicrosecondsPerInvocation="76989" standardDeviationMicrosecondsPerInvocation="188"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="3639" invocations="22539" avgMicrosecondsPerInvocation="161" maxMicrosecondsPerInvocation="548731" standardDeviationMicrosecondsPerInvocation="3796"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="3505" invocations="19030" avgMicrosecondsPerInvocation="184" maxMicrosecondsPerInvocation="30905" standardDeviationMicrosecondsPerInvocation="696"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="3193" invocations="179307" avgMicrosecondsPerInvocation="17" maxMicrosecondsPerInvocation="88640" standardDeviationMicrosecondsPerInvocation="317"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="3166" invocations="17859" avgMicrosecondsPerInvocation="177" maxMicrosecondsPerInvocation="89915" standardDeviationMicrosecondsPerInvocation="1152"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="2836" invocations="17859" avgMicrosecondsPerInvocation="158" maxMicrosecondsPerInvocation="82715" standardDeviationMicrosecondsPerInvocation="960"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="2791" invocations="19030" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="107966" standardDeviationMicrosecondsPerInvocation="908"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="2729" invocations="83571" avgMicrosecondsPerInvocation="32" maxMicrosecondsPerInvocation="98232" standardDeviationMicrosecondsPerInvocation="508"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindFloatEquality" totalMilliseconds="2620" invocations="17859" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="1272723" standardDeviationMicrosecondsPerInvocation="9567"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="2289" invocations="17859" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="10036" standardDeviationMicrosecondsPerInvocation="317"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="2008" invocations="17859" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="16745" standardDeviationMicrosecondsPerInvocation="340"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="1875" invocations="17859" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="127899" standardDeviationMicrosecondsPerInvocation="1297"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="1814" invocations="19030" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="847045" standardDeviationMicrosecondsPerInvocation="6185"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="1764" invocations="17859" avgMicrosecondsPerInvocation="98" maxMicrosecondsPerInvocation="103730" standardDeviationMicrosecondsPerInvocation="1118"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="1757" invocations="201909" avgMicrosecondsPerInvocation="8" maxMicrosecondsPerInvocation="29356" standardDeviationMicrosecondsPerInvocation="75"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="1754" invocations="17859" avgMicrosecondsPerInvocation="98" maxMicrosecondsPerInvocation="96017" standardDeviationMicrosecondsPerInvocation="891"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="1727" invocations="156504" avgMicrosecondsPerInvocation="11" maxMicrosecondsPerInvocation="4346" standardDeviationMicrosecondsPerInvocation="30"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="1665" invocations="151721" avgMicrosecondsPerInvocation="10" maxMicrosecondsPerInvocation="74938" standardDeviationMicrosecondsPerInvocation="196"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="1619" invocations="17859" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="86857" standardDeviationMicrosecondsPerInvocation="784"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="1544" invocations="17859" avgMicrosecondsPerInvocation="86" maxMicrosecondsPerInvocation="14732" standardDeviationMicrosecondsPerInvocation="284"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="1538" invocations="17859" avgMicrosecondsPerInvocation="86" maxMicrosecondsPerInvocation="17607" standardDeviationMicrosecondsPerInvocation="277"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="1531" invocations="17859" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="70838" standardDeviationMicrosecondsPerInvocation="593"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="1523" invocations="17859" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="12680" standardDeviationMicrosecondsPerInvocation="252"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="1513" invocations="17859" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="9981" standardDeviationMicrosecondsPerInvocation="249"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="1487" invocations="17859" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="90666" standardDeviationMicrosecondsPerInvocation="943"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="1463" invocations="17859" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="96110" standardDeviationMicrosecondsPerInvocation="750"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="1451" invocations="17859" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="90803" standardDeviationMicrosecondsPerInvocation="846"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="1424" invocations="17859" avgMicrosecondsPerInvocation="79" maxMicrosecondsPerInvocation="69943" standardDeviationMicrosecondsPerInvocation="572"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SynchronizingOnContentsOfFieldToProtectField" totalMilliseconds="1397" invocations="17859" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="102460" standardDeviationMicrosecondsPerInvocation="1057"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="1396" invocations="17859" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="93121" standardDeviationMicrosecondsPerInvocation="973"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="1363" invocations="7787" avgMicrosecondsPerInvocation="175" maxMicrosecondsPerInvocation="82250" standardDeviationMicrosecondsPerInvocation="1037"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="1346" invocations="17859" avgMicrosecondsPerInvocation="75" maxMicrosecondsPerInvocation="7859" standardDeviationMicrosecondsPerInvocation="211"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteRecursiveLoop" totalMilliseconds="1327" invocations="17859" avgMicrosecondsPerInvocation="74" maxMicrosecondsPerInvocation="90978" standardDeviationMicrosecondsPerInvocation="862"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="1293" invocations="17859" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="10781" standardDeviationMicrosecondsPerInvocation="177"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.LoopInsideBenchmarkDetector" totalMilliseconds="1284" invocations="17859" avgMicrosecondsPerInvocation="71" maxMicrosecondsPerInvocation="122874" standardDeviationMicrosecondsPerInvocation="938"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

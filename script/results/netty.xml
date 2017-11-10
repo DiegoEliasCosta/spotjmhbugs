@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1509396109000" analysisTimestamp="1509396112043" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1510080617000" analysisTimestamp="1510080619835" release="">
   <Project projectName="">
     <Jar>tmp/netty</Jar>
   </Project>
@@ -30,6 +30,15 @@
       <SourceLine classname="io.netty.buffer.ByteBufNoCleanerChangeCapacityBenchmark" start="38" end="44" startBytecode="0" endBytecode="141" sourcefile="ByteBufNoCleanerChangeCapacityBenchmark.java" sourcepath="io/netty/buffer/ByteBufNoCleanerChangeCapacityBenchmark.java"/>
     </Method>
     <SourceLine classname="io.netty.buffer.ByteBufNoCleanerChangeCapacityBenchmark" start="42" end="42" startBytecode="27" endBytecode="27" sourcefile="ByteBufNoCleanerChangeCapacityBenchmark.java" sourcepath="io/netty/buffer/ByteBufNoCleanerChangeCapacityBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.buffer.ByteBufNoCleanerChangeCapacityBenchmark">
+      <SourceLine classname="io.netty.buffer.ByteBufNoCleanerChangeCapacityBenchmark" start="30" end="44" sourcefile="ByteBufNoCleanerChangeCapacityBenchmark.java" sourcepath="io/netty/buffer/ByteBufNoCleanerChangeCapacityBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.buffer.ByteBufNoCleanerChangeCapacityBenchmark" name="capacityChange" signature="()Z" isStatic="false">
+      <SourceLine classname="io.netty.buffer.ByteBufNoCleanerChangeCapacityBenchmark" start="38" end="44" startBytecode="0" endBytecode="141" sourcefile="ByteBufNoCleanerChangeCapacityBenchmark.java" sourcepath="io/netty/buffer/ByteBufNoCleanerChangeCapacityBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.buffer.ByteBufNoCleanerChangeCapacityBenchmark" start="41" end="41" startBytecode="38" endBytecode="38" sourcefile="ByteBufNoCleanerChangeCapacityBenchmark.java" sourcepath="io/netty/buffer/ByteBufNoCleanerChangeCapacityBenchmark.java"/>
   </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="io.netty.buffer.ByteBufNoCleanerChangeCapacityBenchmark">
@@ -470,6 +479,24 @@
       <SourceLine classname="io.netty.handler.codec.http2.HpackEncoderBenchmark" start="106" end="110" startBytecode="0" endBytecode="115" sourcefile="HpackEncoderBenchmark.java" sourcepath="io/netty/handler/codec/http2/HpackEncoderBenchmark.java"/>
     </Method>
     <SourceLine classname="io.netty.handler.codec.http2.HpackEncoderBenchmark" start="107" end="107" startBytecode="8" endBytecode="8" sourcefile="HpackEncoderBenchmark.java" sourcepath="io/netty/handler/codec/http2/HpackEncoderBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.handler.codec.http2.HpackUtilBenchmark">
+      <SourceLine classname="io.netty.handler.codec.http2.HpackUtilBenchmark" start="40" end="111" sourcefile="HpackUtilBenchmark.java" sourcepath="io/netty/handler/codec/http2/HpackUtilBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.handler.codec.http2.HpackUtilBenchmark" name="newEquals" signature="()I" isStatic="false">
+      <SourceLine classname="io.netty.handler.codec.http2.HpackUtilBenchmark" start="65" end="72" startBytecode="0" endBytecode="168" sourcefile="HpackUtilBenchmark.java" sourcepath="io/netty/handler/codec/http2/HpackUtilBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.handler.codec.http2.HpackUtilBenchmark" start="66" end="66" startBytecode="51" endBytecode="51" sourcefile="HpackUtilBenchmark.java" sourcepath="io/netty/handler/codec/http2/HpackUtilBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.handler.codec.http2.HpackUtilBenchmark">
+      <SourceLine classname="io.netty.handler.codec.http2.HpackUtilBenchmark" start="40" end="111" sourcefile="HpackUtilBenchmark.java" sourcepath="io/netty/handler/codec/http2/HpackUtilBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.handler.codec.http2.HpackUtilBenchmark" name="oldEquals" signature="()I" isStatic="false">
+      <SourceLine classname="io.netty.handler.codec.http2.HpackUtilBenchmark" start="53" end="60" startBytecode="0" endBytecode="168" sourcefile="HpackUtilBenchmark.java" sourcepath="io/netty/handler/codec/http2/HpackUtilBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.handler.codec.http2.HpackUtilBenchmark" start="54" end="54" startBytecode="51" endBytecode="51" sourcefile="HpackUtilBenchmark.java" sourcepath="io/netty/handler/codec/http2/HpackUtilBenchmark.java"/>
   </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="io.netty.handler.codec.http2.generated.HpackDecoderBenchmark_jmhType_B2">
@@ -1182,6 +1209,33 @@
     </Method>
     <SourceLine classname="io.netty.microbench.buffer.PooledByteBufAllocatorAlignBenchmark" start="125" end="125" startBytecode="62" endBytecode="62" sourcefile="PooledByteBufAllocatorAlignBenchmark.java" sourcepath="io/netty/microbench/buffer/PooledByteBufAllocatorAlignBenchmark.java"/>
   </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbench.buffer.PooledByteBufAllocatorAlignBenchmark">
+      <SourceLine classname="io.netty.microbench.buffer.PooledByteBufAllocatorAlignBenchmark" start="41" end="151" sourcefile="PooledByteBufAllocatorAlignBenchmark.java" sourcepath="io/netty/microbench/buffer/PooledByteBufAllocatorAlignBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbench.buffer.PooledByteBufAllocatorAlignBenchmark" name="read" signature="()V" isStatic="false">
+      <SourceLine classname="io.netty.microbench.buffer.PooledByteBufAllocatorAlignBenchmark" start="143" end="151" startBytecode="0" endBytecode="206" sourcefile="PooledByteBufAllocatorAlignBenchmark.java" sourcepath="io/netty/microbench/buffer/PooledByteBufAllocatorAlignBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbench.buffer.PooledByteBufAllocatorAlignBenchmark" start="147" end="147" startBytecode="53" endBytecode="53" sourcefile="PooledByteBufAllocatorAlignBenchmark.java" sourcepath="io/netty/microbench/buffer/PooledByteBufAllocatorAlignBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbench.buffer.PooledByteBufAllocatorAlignBenchmark">
+      <SourceLine classname="io.netty.microbench.buffer.PooledByteBufAllocatorAlignBenchmark" start="41" end="151" sourcefile="PooledByteBufAllocatorAlignBenchmark.java" sourcepath="io/netty/microbench/buffer/PooledByteBufAllocatorAlignBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbench.buffer.PooledByteBufAllocatorAlignBenchmark" name="write" signature="()V" isStatic="false">
+      <SourceLine classname="io.netty.microbench.buffer.PooledByteBufAllocatorAlignBenchmark" start="131" end="139" startBytecode="0" endBytecode="206" sourcefile="PooledByteBufAllocatorAlignBenchmark.java" sourcepath="io/netty/microbench/buffer/PooledByteBufAllocatorAlignBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbench.buffer.PooledByteBufAllocatorAlignBenchmark" start="135" end="135" startBytecode="53" endBytecode="53" sourcefile="PooledByteBufAllocatorAlignBenchmark.java" sourcepath="io/netty/microbench/buffer/PooledByteBufAllocatorAlignBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbench.buffer.PooledByteBufAllocatorAlignBenchmark">
+      <SourceLine classname="io.netty.microbench.buffer.PooledByteBufAllocatorAlignBenchmark" start="41" end="151" sourcefile="PooledByteBufAllocatorAlignBenchmark.java" sourcepath="io/netty/microbench/buffer/PooledByteBufAllocatorAlignBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbench.buffer.PooledByteBufAllocatorAlignBenchmark" name="writeRead" signature="()V" isStatic="false">
+      <SourceLine classname="io.netty.microbench.buffer.PooledByteBufAllocatorAlignBenchmark" start="118" end="127" startBytecode="0" endBytecode="226" sourcefile="PooledByteBufAllocatorAlignBenchmark.java" sourcepath="io/netty/microbench/buffer/PooledByteBufAllocatorAlignBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbench.buffer.PooledByteBufAllocatorAlignBenchmark" start="122" end="122" startBytecode="69" endBytecode="69" sourcefile="PooledByteBufAllocatorAlignBenchmark.java" sourcepath="io/netty/microbench/buffer/PooledByteBufAllocatorAlignBenchmark.java"/>
+  </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="io.netty.microbench.buffer.PooledByteBufAllocatorAlignBenchmark">
       <SourceLine classname="io.netty.microbench.buffer.PooledByteBufAllocatorAlignBenchmark" start="41" end="151" sourcefile="PooledByteBufAllocatorAlignBenchmark.java" sourcepath="io/netty/microbench/buffer/PooledByteBufAllocatorAlignBenchmark.java"/>
@@ -1688,6 +1742,24 @@
       <SourceLine classname="io.netty.microbench.buffer.generated.SwappedByteBufBenchmark_jmhType_B2" sourcefile="SwappedByteBufBenchmark_jmhType_B2.java" sourcepath="io/netty/microbench/buffer/generated/SwappedByteBufBenchmark_jmhType_B2.java"/>
     </Field>
   </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbench.concurrent.FastThreadLocalFastPathBenchmark">
+      <SourceLine classname="io.netty.microbench.concurrent.FastThreadLocalFastPathBenchmark" start="31" end="73" sourcefile="FastThreadLocalFastPathBenchmark.java" sourcepath="io/netty/microbench/concurrent/FastThreadLocalFastPathBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbench.concurrent.FastThreadLocalFastPathBenchmark" name="fastThreadLocal" signature="()I" isStatic="false">
+      <SourceLine classname="io.netty.microbench.concurrent.FastThreadLocalFastPathBenchmark" start="69" end="73" startBytecode="0" endBytecode="168" sourcefile="FastThreadLocalFastPathBenchmark.java" sourcepath="io/netty/microbench/concurrent/FastThreadLocalFastPathBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbench.concurrent.FastThreadLocalFastPathBenchmark" start="70" end="70" startBytecode="41" endBytecode="41" sourcefile="FastThreadLocalFastPathBenchmark.java" sourcepath="io/netty/microbench/concurrent/FastThreadLocalFastPathBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbench.concurrent.FastThreadLocalFastPathBenchmark">
+      <SourceLine classname="io.netty.microbench.concurrent.FastThreadLocalFastPathBenchmark" start="31" end="73" sourcefile="FastThreadLocalFastPathBenchmark.java" sourcepath="io/netty/microbench/concurrent/FastThreadLocalFastPathBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbench.concurrent.FastThreadLocalFastPathBenchmark" name="jdkThreadLocalGet" signature="()I" isStatic="false">
+      <SourceLine classname="io.netty.microbench.concurrent.FastThreadLocalFastPathBenchmark" start="60" end="64" startBytecode="0" endBytecode="168" sourcefile="FastThreadLocalFastPathBenchmark.java" sourcepath="io/netty/microbench/concurrent/FastThreadLocalFastPathBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbench.concurrent.FastThreadLocalFastPathBenchmark" start="61" end="61" startBytecode="41" endBytecode="41" sourcefile="FastThreadLocalFastPathBenchmark.java" sourcepath="io/netty/microbench/concurrent/FastThreadLocalFastPathBenchmark.java"/>
+  </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="io.netty.microbench.concurrent.FastThreadLocalFastPathBenchmark">
       <SourceLine classname="io.netty.microbench.concurrent.FastThreadLocalFastPathBenchmark" start="31" end="73" sourcefile="FastThreadLocalFastPathBenchmark.java" sourcepath="io/netty/microbench/concurrent/FastThreadLocalFastPathBenchmark.java"/>
@@ -1711,6 +1783,24 @@
     <Field classname="io.netty.microbench.concurrent.FastThreadLocalFastPathBenchmark" name="rand" signature="Ljava/util/Random;" isStatic="true">
       <SourceLine classname="io.netty.microbench.concurrent.FastThreadLocalFastPathBenchmark" sourcefile="FastThreadLocalFastPathBenchmark.java" sourcepath="io/netty/microbench/concurrent/FastThreadLocalFastPathBenchmark.java"/>
     </Field>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbench.concurrent.FastThreadLocalSlowPathBenchmark">
+      <SourceLine classname="io.netty.microbench.concurrent.FastThreadLocalSlowPathBenchmark" start="33" end="77" sourcefile="FastThreadLocalSlowPathBenchmark.java" sourcepath="io/netty/microbench/concurrent/FastThreadLocalSlowPathBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbench.concurrent.FastThreadLocalSlowPathBenchmark" name="fastThreadLocal" signature="()I" isStatic="false">
+      <SourceLine classname="io.netty.microbench.concurrent.FastThreadLocalSlowPathBenchmark" start="73" end="77" startBytecode="0" endBytecode="168" sourcefile="FastThreadLocalSlowPathBenchmark.java" sourcepath="io/netty/microbench/concurrent/FastThreadLocalSlowPathBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbench.concurrent.FastThreadLocalSlowPathBenchmark" start="74" end="74" startBytecode="41" endBytecode="41" sourcefile="FastThreadLocalSlowPathBenchmark.java" sourcepath="io/netty/microbench/concurrent/FastThreadLocalSlowPathBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbench.concurrent.FastThreadLocalSlowPathBenchmark">
+      <SourceLine classname="io.netty.microbench.concurrent.FastThreadLocalSlowPathBenchmark" start="33" end="77" sourcefile="FastThreadLocalSlowPathBenchmark.java" sourcepath="io/netty/microbench/concurrent/FastThreadLocalSlowPathBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbench.concurrent.FastThreadLocalSlowPathBenchmark" name="jdkThreadLocalGet" signature="()I" isStatic="false">
+      <SourceLine classname="io.netty.microbench.concurrent.FastThreadLocalSlowPathBenchmark" start="64" end="68" startBytecode="0" endBytecode="168" sourcefile="FastThreadLocalSlowPathBenchmark.java" sourcepath="io/netty/microbench/concurrent/FastThreadLocalSlowPathBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbench.concurrent.FastThreadLocalSlowPathBenchmark" start="65" end="65" startBytecode="41" endBytecode="41" sourcefile="FastThreadLocalSlowPathBenchmark.java" sourcepath="io/netty/microbench/concurrent/FastThreadLocalSlowPathBenchmark.java"/>
   </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="io.netty.microbench.concurrent.FastThreadLocalSlowPathBenchmark">
@@ -2085,6 +2175,78 @@
     </Method>
     <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="134" end="134" startBytecode="33" endBytecode="33" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
   </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbench.headers.HeadersBenchmark">
+      <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="51" end="210" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbench.headers.HeadersBenchmark" name="http2Get" signature="(Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="159" end="162" startBytecode="0" endBytecode="135" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="159" end="159" startBytecode="39" endBytecode="39" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbench.headers.HeadersBenchmark">
+      <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="51" end="210" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbench.headers.HeadersBenchmark" name="http2Iterate" signature="(Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="177" end="180" startBytecode="0" endBytecode="144" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="179" end="179" startBytecode="32" endBytecode="32" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbench.headers.HeadersBenchmark">
+      <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="51" end="210" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbench.headers.HeadersBenchmark" name="http2Put" signature="()Lio/netty/handler/codec/http2/DefaultHttp2Headers;" isStatic="false">
+      <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="167" end="171" startBytecode="0" endBytecode="140" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="168" end="168" startBytecode="40" endBytecode="40" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbench.headers.HeadersBenchmark">
+      <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="51" end="210" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbench.headers.HeadersBenchmark" name="http2Remove" signature="(Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="151" end="154" startBytecode="0" endBytecode="135" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="151" end="151" startBytecode="39" endBytecode="39" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbench.headers.HeadersBenchmark">
+      <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="51" end="210" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbench.headers.HeadersBenchmark" name="httpGet" signature="(Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="124" end="127" startBytecode="0" endBytecode="135" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="124" end="124" startBytecode="39" endBytecode="39" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbench.headers.HeadersBenchmark">
+      <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="51" end="210" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbench.headers.HeadersBenchmark" name="httpIterate" signature="(Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="142" end="146" startBytecode="0" endBytecode="137" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="144" end="144" startBytecode="27" endBytecode="27" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbench.headers.HeadersBenchmark">
+      <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="51" end="210" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbench.headers.HeadersBenchmark" name="httpPut" signature="()Lio/netty/handler/codec/http/DefaultHttpHeaders;" isStatic="false">
+      <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="132" end="136" startBytecode="0" endBytecode="140" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="133" end="133" startBytecode="40" endBytecode="40" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbench.headers.HeadersBenchmark">
+      <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="51" end="210" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbench.headers.HeadersBenchmark" name="httpRemove" signature="(Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="116" end="119" startBytecode="0" endBytecode="135" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbench.headers.HeadersBenchmark" start="116" end="116" startBytecode="39" endBytecode="39" sourcefile="HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/HeadersBenchmark.java"/>
+  </BugInstance>
   <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="io.netty.microbench.headers.ReadOnlyHttp2HeadersBenchmark">
       <SourceLine classname="io.netty.microbench.headers.ReadOnlyHttp2HeadersBenchmark" start="49" end="137" sourcefile="ReadOnlyHttp2HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/ReadOnlyHttp2HeadersBenchmark.java"/>
@@ -2156,6 +2318,33 @@
       <SourceLine classname="io.netty.microbench.headers.ReadOnlyHttp2HeadersBenchmark" start="72" end="76" startBytecode="0" endBytecode="144" sourcefile="ReadOnlyHttp2HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/ReadOnlyHttp2HeadersBenchmark.java"/>
     </Method>
     <SourceLine classname="io.netty.microbench.headers.ReadOnlyHttp2HeadersBenchmark" start="74" end="74" startBytecode="32" endBytecode="32" sourcefile="ReadOnlyHttp2HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/ReadOnlyHttp2HeadersBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbench.headers.ReadOnlyHttp2HeadersBenchmark">
+      <SourceLine classname="io.netty.microbench.headers.ReadOnlyHttp2HeadersBenchmark" start="49" end="137" sourcefile="ReadOnlyHttp2HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/ReadOnlyHttp2HeadersBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbench.headers.ReadOnlyHttp2HeadersBenchmark" name="defaultClientHeaders" signature="()I" isStatic="false">
+      <SourceLine classname="io.netty.microbench.headers.ReadOnlyHttp2HeadersBenchmark" start="88" end="96" startBytecode="0" endBytecode="208" sourcefile="ReadOnlyHttp2HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/ReadOnlyHttp2HeadersBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbench.headers.ReadOnlyHttp2HeadersBenchmark" start="89" end="89" startBytecode="41" endBytecode="41" sourcefile="ReadOnlyHttp2HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/ReadOnlyHttp2HeadersBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbench.headers.ReadOnlyHttp2HeadersBenchmark">
+      <SourceLine classname="io.netty.microbench.headers.ReadOnlyHttp2HeadersBenchmark" start="49" end="137" sourcefile="ReadOnlyHttp2HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/ReadOnlyHttp2HeadersBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbench.headers.ReadOnlyHttp2HeadersBenchmark" name="defaultServerHeaders" signature="()I" isStatic="false">
+      <SourceLine classname="io.netty.microbench.headers.ReadOnlyHttp2HeadersBenchmark" start="109" end="114" startBytecode="0" endBytecode="161" sourcefile="ReadOnlyHttp2HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/ReadOnlyHttp2HeadersBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbench.headers.ReadOnlyHttp2HeadersBenchmark" start="110" end="110" startBytecode="41" endBytecode="41" sourcefile="ReadOnlyHttp2HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/ReadOnlyHttp2HeadersBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbench.headers.ReadOnlyHttp2HeadersBenchmark">
+      <SourceLine classname="io.netty.microbench.headers.ReadOnlyHttp2HeadersBenchmark" start="49" end="137" sourcefile="ReadOnlyHttp2HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/ReadOnlyHttp2HeadersBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbench.headers.ReadOnlyHttp2HeadersBenchmark" name="defaultTrailers" signature="()I" isStatic="false">
+      <SourceLine classname="io.netty.microbench.headers.ReadOnlyHttp2HeadersBenchmark" start="72" end="76" startBytecode="0" endBytecode="144" sourcefile="ReadOnlyHttp2HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/ReadOnlyHttp2HeadersBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbench.headers.ReadOnlyHttp2HeadersBenchmark" start="73" end="73" startBytecode="41" endBytecode="41" sourcefile="ReadOnlyHttp2HeadersBenchmark.java" sourcepath="io/netty/microbench/headers/ReadOnlyHttp2HeadersBenchmark.java"/>
   </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="io.netty.microbench.headers.ReadOnlyHttp2HeadersBenchmark">
@@ -2935,6 +3124,24 @@
       <SourceLine classname="io.netty.microbench.util.ResourceLeakDetectorBenchmark" sourcefile="ResourceLeakDetectorBenchmark.java" sourcepath="io/netty/microbench/util/ResourceLeakDetectorBenchmark.java"/>
     </Field>
   </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbench.util.ResourceLeakDetectorRecordBenchmark">
+      <SourceLine classname="io.netty.microbench.util.ResourceLeakDetectorRecordBenchmark" start="27" end="84" sourcefile="ResourceLeakDetectorRecordBenchmark.java" sourcepath="io/netty/microbench/util/ResourceLeakDetectorRecordBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbench.util.ResourceLeakDetectorRecordBenchmark" name="record" signature="()Z" isStatic="false">
+      <SourceLine classname="io.netty.microbench.util.ResourceLeakDetectorRecordBenchmark" start="71" end="75" startBytecode="0" endBytecode="156" sourcefile="ResourceLeakDetectorRecordBenchmark.java" sourcepath="io/netty/microbench/util/ResourceLeakDetectorRecordBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbench.util.ResourceLeakDetectorRecordBenchmark" start="72" end="72" startBytecode="30" endBytecode="30" sourcefile="ResourceLeakDetectorRecordBenchmark.java" sourcepath="io/netty/microbench/util/ResourceLeakDetectorRecordBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbench.util.ResourceLeakDetectorRecordBenchmark">
+      <SourceLine classname="io.netty.microbench.util.ResourceLeakDetectorRecordBenchmark" start="27" end="84" sourcefile="ResourceLeakDetectorRecordBenchmark.java" sourcepath="io/netty/microbench/util/ResourceLeakDetectorRecordBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbench.util.ResourceLeakDetectorRecordBenchmark" name="recordWithHint" signature="()Z" isStatic="false">
+      <SourceLine classname="io.netty.microbench.util.ResourceLeakDetectorRecordBenchmark" start="80" end="84" startBytecode="0" endBytecode="159" sourcefile="ResourceLeakDetectorRecordBenchmark.java" sourcepath="io/netty/microbench/util/ResourceLeakDetectorRecordBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbench.util.ResourceLeakDetectorRecordBenchmark" start="81" end="81" startBytecode="33" endBytecode="33" sourcefile="ResourceLeakDetectorRecordBenchmark.java" sourcepath="io/netty/microbench/util/ResourceLeakDetectorRecordBenchmark.java"/>
+  </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="io.netty.microbench.util.ResourceLeakDetectorRecordBenchmark">
       <SourceLine classname="io.netty.microbench.util.ResourceLeakDetectorRecordBenchmark" start="27" end="84" sourcefile="ResourceLeakDetectorRecordBenchmark.java" sourcepath="io/netty/microbench/util/ResourceLeakDetectorRecordBenchmark.java"/>
@@ -3047,6 +3254,15 @@
       <SourceLine classname="io.netty.microbench.util.generated.ResourceLeakDetectorRecordBenchmark_jmhType_B2" sourcefile="ResourceLeakDetectorRecordBenchmark_jmhType_B2.java" sourcepath="io/netty/microbench/util/generated/ResourceLeakDetectorRecordBenchmark_jmhType_B2.java"/>
     </Field>
   </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbenchmark.common.AppendableCharSequenceBenchmark">
+      <SourceLine classname="io.netty.microbenchmark.common.AppendableCharSequenceBenchmark" start="32" end="86" sourcefile="AppendableCharSequenceBenchmark.java" sourcepath="io/netty/microbenchmark/common/AppendableCharSequenceBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbenchmark.common.AppendableCharSequenceBenchmark" name="appendCatchExceptionAfter" signature="()V" isStatic="false">
+      <SourceLine classname="io.netty.microbenchmark.common.AppendableCharSequenceBenchmark" start="61" end="68" startBytecode="0" endBytecode="144" sourcefile="AppendableCharSequenceBenchmark.java" sourcepath="io/netty/microbenchmark/common/AppendableCharSequenceBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbenchmark.common.AppendableCharSequenceBenchmark" start="67" end="67" startBytecode="24" endBytecode="24" sourcefile="AppendableCharSequenceBenchmark.java" sourcepath="io/netty/microbenchmark/common/AppendableCharSequenceBenchmark.java"/>
+  </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="io.netty.microbenchmark.common.AppendableCharSequenceBenchmark">
       <SourceLine classname="io.netty.microbenchmark.common.AppendableCharSequenceBenchmark" start="32" end="86" sourcefile="AppendableCharSequenceBenchmark.java" sourcepath="io/netty/microbenchmark/common/AppendableCharSequenceBenchmark.java"/>
@@ -3054,6 +3270,24 @@
     <Field classname="io.netty.microbenchmark.common.AppendableCharSequenceBenchmark" name="rand" signature="Ljava/util/Random;" isStatic="true">
       <SourceLine classname="io.netty.microbenchmark.common.AppendableCharSequenceBenchmark" sourcefile="AppendableCharSequenceBenchmark.java" sourcepath="io/netty/microbenchmark/common/AppendableCharSequenceBenchmark.java"/>
     </Field>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbenchmark.common.AsciiStringBenchmark">
+      <SourceLine classname="io.netty.microbenchmark.common.AsciiStringBenchmark" start="35" end="82" sourcefile="AsciiStringBenchmark.java" sourcepath="io/netty/microbenchmark/common/AsciiStringBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbenchmark.common.AsciiStringBenchmark" name="hashCodeBenchBytesOld" signature="()I" isStatic="false">
+      <SourceLine classname="io.netty.microbenchmark.common.AsciiStringBenchmark" start="54" end="61" startBytecode="0" endBytecode="165" sourcefile="AsciiStringBenchmark.java" sourcepath="io/netty/microbenchmark/common/AsciiStringBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbenchmark.common.AsciiStringBenchmark" start="56" end="56" startBytecode="52" endBytecode="52" sourcefile="AsciiStringBenchmark.java" sourcepath="io/netty/microbenchmark/common/AsciiStringBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbenchmark.common.AsciiStringBenchmark">
+      <SourceLine classname="io.netty.microbenchmark.common.AsciiStringBenchmark" start="35" end="82" sourcefile="AsciiStringBenchmark.java" sourcepath="io/netty/microbenchmark/common/AsciiStringBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbenchmark.common.AsciiStringBenchmark" name="hashCodeBenchCharSequenceOld" signature="()I" isStatic="false">
+      <SourceLine classname="io.netty.microbenchmark.common.AsciiStringBenchmark" start="71" end="77" startBytecode="0" endBytecode="133" sourcefile="AsciiStringBenchmark.java" sourcepath="io/netty/microbenchmark/common/AsciiStringBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbenchmark.common.AsciiStringBenchmark" start="72" end="72" startBytecode="35" endBytecode="35" sourcefile="AsciiStringBenchmark.java" sourcepath="io/netty/microbenchmark/common/AsciiStringBenchmark.java"/>
   </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="io.netty.microbenchmark.common.AsciiStringBenchmark">
@@ -3086,6 +3320,42 @@
     <Field classname="io.netty.microbenchmark.common.MathOperationsBenchmark" name="mask" signature="I" isStatic="false">
       <SourceLine classname="io.netty.microbenchmark.common.MathOperationsBenchmark" sourcefile="MathOperationsBenchmark.java" sourcepath="io/netty/microbenchmark/common/MathOperationsBenchmark.java"/>
     </Field>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbenchmark.common.NetUtilBenchmark">
+      <SourceLine classname="io.netty.microbenchmark.common.NetUtilBenchmark" start="32" end="91" sourcefile="NetUtilBenchmark.java" sourcepath="io/netty/microbenchmark/common/NetUtilBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbenchmark.common.NetUtilBenchmark" name="useGetByNameIpv4" signature="()V" isStatic="false">
+      <SourceLine classname="io.netty.microbenchmark.common.NetUtilBenchmark" start="36" end="41" startBytecode="0" endBytecode="140" sourcefile="NetUtilBenchmark.java" sourcepath="io/netty/microbenchmark/common/NetUtilBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbenchmark.common.NetUtilBenchmark" start="40" end="40" startBytecode="51" endBytecode="51" sourcefile="NetUtilBenchmark.java" sourcepath="io/netty/microbenchmark/common/NetUtilBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbenchmark.common.NetUtilBenchmark">
+      <SourceLine classname="io.netty.microbenchmark.common.NetUtilBenchmark" start="32" end="91" sourcefile="NetUtilBenchmark.java" sourcepath="io/netty/microbenchmark/common/NetUtilBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbenchmark.common.NetUtilBenchmark" name="useGetByNameIpv6" signature="()V" isStatic="false">
+      <SourceLine classname="io.netty.microbenchmark.common.NetUtilBenchmark" start="45" end="50" startBytecode="0" endBytecode="140" sourcefile="NetUtilBenchmark.java" sourcepath="io/netty/microbenchmark/common/NetUtilBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbenchmark.common.NetUtilBenchmark" start="49" end="49" startBytecode="51" endBytecode="51" sourcefile="NetUtilBenchmark.java" sourcepath="io/netty/microbenchmark/common/NetUtilBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbenchmark.common.NetUtilBenchmark">
+      <SourceLine classname="io.netty.microbenchmark.common.NetUtilBenchmark" start="32" end="91" sourcefile="NetUtilBenchmark.java" sourcepath="io/netty/microbenchmark/common/NetUtilBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbenchmark.common.NetUtilBenchmark" name="useIsValidIpv4" signature="()V" isStatic="false">
+      <SourceLine classname="io.netty.microbenchmark.common.NetUtilBenchmark" start="63" end="68" startBytecode="0" endBytecode="139" sourcefile="NetUtilBenchmark.java" sourcepath="io/netty/microbenchmark/common/NetUtilBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbenchmark.common.NetUtilBenchmark" start="67" end="67" startBytecode="50" endBytecode="50" sourcefile="NetUtilBenchmark.java" sourcepath="io/netty/microbenchmark/common/NetUtilBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.netty.microbenchmark.common.NetUtilBenchmark">
+      <SourceLine classname="io.netty.microbenchmark.common.NetUtilBenchmark" start="32" end="91" sourcefile="NetUtilBenchmark.java" sourcepath="io/netty/microbenchmark/common/NetUtilBenchmark.java"/>
+    </Class>
+    <Method classname="io.netty.microbenchmark.common.NetUtilBenchmark" name="useIsValidIpv6" signature="()V" isStatic="false">
+      <SourceLine classname="io.netty.microbenchmark.common.NetUtilBenchmark" start="54" end="59" startBytecode="0" endBytecode="139" sourcefile="NetUtilBenchmark.java" sourcepath="io/netty/microbenchmark/common/NetUtilBenchmark.java"/>
+    </Method>
+    <SourceLine classname="io.netty.microbenchmark.common.NetUtilBenchmark" start="58" end="58" startBytecode="50" endBytecode="50" sourcefile="NetUtilBenchmark.java" sourcepath="io/netty/microbenchmark/common/NetUtilBenchmark.java"/>
   </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="io.netty.microbenchmark.common.NetUtilBenchmark">
@@ -3692,7 +3962,7 @@
     <MissingClass>org.tukaani.xz.LZMA2Options</MissingClass>
     <MissingClass>org.tukaani.xz.XZOutputStream</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Mon, 30 Oct 2017 21:41:49 +0100" total_classes="4871" referenced_classes="5517" total_bugs="420" total_size="289457" num_packages="153" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="251.02" clock_seconds="86.50" peak_mbytes="1570.98" alloc_mbytes="3641.00" gc_seconds="3.29" priority_2="420">
+  <FindBugsSummary timestamp="Tue, 7 Nov 2017 18:50:17 +0000" total_classes="4871" referenced_classes="5517" total_bugs="450" total_size="289457" num_packages="153" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="237.07" clock_seconds="78.79" peak_mbytes="1645.83" alloc_mbytes="3641.00" gc_seconds="3.22" priority_2="450">
     <PackageStats package="com.sun.nio.sctp" total_bugs="0" total_types="16" total_size="167">
       <ClassStats class="com.sun.nio.sctp.AbstractNotificationHandler" sourceFile="AbstractNotificationHandler.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="com.sun.nio.sctp.Association" sourceFile="Association.java" interface="false" size="6" bugs="0"/>
@@ -3753,7 +4023,7 @@
       <ClassStats class="io.netty.bootstrap.ServerBootstrapTest$2" sourceFile="ServerBootstrapTest.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="io.netty.bootstrap.ServerBootstrapTest$3" sourceFile="ServerBootstrapTest.java" interface="false" size="7" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.netty.buffer" total_bugs="4" total_types="192" total_size="20096" priority_2="4">
+    <PackageStats package="io.netty.buffer" total_bugs="5" total_types="192" total_size="20096" priority_2="5">
       <ClassStats class="io.netty.buffer.AbstractByteBuf" sourceFile="AbstractByteBuf.java" interface="false" size="772" bugs="0"/>
       <ClassStats class="io.netty.buffer.AbstractByteBufAllocator" sourceFile="AbstractByteBufAllocator.java" interface="false" size="124" bugs="0"/>
       <ClassStats class="io.netty.buffer.AbstractByteBufAllocator$1" sourceFile="AbstractByteBufAllocator.java" interface="false" size="4" bugs="0"/>
@@ -3808,7 +4078,7 @@
       <ClassStats class="io.netty.buffer.ByteBufHolder" sourceFile="ByteBufHolder.java" interface="true" size="10" bugs="0"/>
       <ClassStats class="io.netty.buffer.ByteBufInputStream" sourceFile="ByteBufInputStream.java" interface="false" size="127" bugs="0"/>
       <ClassStats class="io.netty.buffer.ByteBufNoCleanerAllocReleaseBenchmark" sourceFile="ByteBufNoCleanerAllocReleaseBenchmark.java" interface="false" size="7" bugs="0"/>
-      <ClassStats class="io.netty.buffer.ByteBufNoCleanerChangeCapacityBenchmark" sourceFile="ByteBufNoCleanerChangeCapacityBenchmark.java" interface="false" size="11" bugs="2" priority_2="2"/>
+      <ClassStats class="io.netty.buffer.ByteBufNoCleanerChangeCapacityBenchmark" sourceFile="ByteBufNoCleanerChangeCapacityBenchmark.java" interface="false" size="11" bugs="3" priority_2="3"/>
       <ClassStats class="io.netty.buffer.ByteBufOutputStream" sourceFile="ByteBufOutputStream.java" interface="false" size="62" bugs="0"/>
       <ClassStats class="io.netty.buffer.ByteBufProcessor" sourceFile="ByteBufProcessor.java" interface="true" size="22" bugs="0"/>
       <ClassStats class="io.netty.buffer.ByteBufProcessor$1" sourceFile="ByteBufProcessor.java" interface="false" size="5" bugs="0"/>
@@ -5970,7 +6240,7 @@
       <ClassStats class="io.netty.handler.codec.http.websocketx.extensions.compression.WebSocketServerCompressionHandler" sourceFile="WebSocketServerCompressionHandler.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="io.netty.handler.codec.http.websocketx.extensions.compression.WebSocketServerCompressionHandlerTest" sourceFile="WebSocketServerCompressionHandlerTest.java" interface="false" size="109" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.netty.handler.codec.http2" total_bugs="8" total_types="486" total_size="21582" priority_2="8">
+    <PackageStats package="io.netty.handler.codec.http2" total_bugs="10" total_types="486" total_size="21582" priority_2="10">
       <ClassStats class="io.netty.handler.codec.http2.AbstractHttp2ConnectionHandlerBuilder" sourceFile="AbstractHttp2ConnectionHandlerBuilder.java" interface="false" size="168" bugs="0"/>
       <ClassStats class="io.netty.handler.codec.http2.AbstractHttp2StreamFrame" sourceFile="AbstractHttp2StreamFrame.java" interface="false" size="21" bugs="0"/>
       <ClassStats class="io.netty.handler.codec.http2.AbstractInboundHttp2ToHttpAdapterBuilder" sourceFile="AbstractInboundHttp2ToHttpAdapterBuilder.java" interface="false" size="37" bugs="0"/>
@@ -6154,7 +6424,7 @@
       <ClassStats class="io.netty.handler.codec.http2.HpackUtil" sourceFile="HpackUtil.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="io.netty.handler.codec.http2.HpackUtil$HeadersKey" sourceFile="HpackUtil.java" interface="false" size="23" bugs="0"/>
       <ClassStats class="io.netty.handler.codec.http2.HpackUtil$IndexType" sourceFile="HpackUtil.java" interface="false" size="13" bugs="0"/>
-      <ClassStats class="io.netty.handler.codec.http2.HpackUtilBenchmark" sourceFile="HpackUtilBenchmark.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="io.netty.handler.codec.http2.HpackUtilBenchmark" sourceFile="HpackUtilBenchmark.java" interface="false" size="48" bugs="2" priority_2="2"/>
       <ClassStats class="io.netty.handler.codec.http2.Http2ChannelDuplexHandler" sourceFile="Http2ChannelDuplexHandler.java" interface="false" size="30" bugs="0"/>
       <ClassStats class="io.netty.handler.codec.http2.Http2ClientUpgradeCodec" sourceFile="Http2ClientUpgradeCodec.java" interface="false" size="49" bugs="0"/>
       <ClassStats class="io.netty.handler.codec.http2.Http2ClientUpgradeCodecTest" sourceFile="Http2ClientUpgradeCodecTest.java" interface="false" size="23" bugs="0"/>
@@ -7479,13 +7749,13 @@
       <ClassStats class="io.netty.handler.traffic.TrafficCounter$1" sourceFile="TrafficCounter.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="io.netty.handler.traffic.TrafficCounter$TrafficMonitoringTask" sourceFile="TrafficCounter.java" interface="false" size="13" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.netty.microbench.buffer" total_bugs="73" total_types="8" total_size="384" priority_2="73">
+    <PackageStats package="io.netty.microbench.buffer" total_bugs="76" total_types="8" total_size="384" priority_2="76">
       <ClassStats class="io.netty.microbench.buffer.ByteBufAllocatorBenchmark" sourceFile="ByteBufAllocatorBenchmark.java" interface="false" size="66" bugs="16" priority_2="16"/>
       <ClassStats class="io.netty.microbench.buffer.ByteBufAllocatorConcurrentBenchmark" sourceFile="ByteBufAllocatorConcurrentBenchmark.java" interface="false" size="9" bugs="1" priority_2="1"/>
       <ClassStats class="io.netty.microbench.buffer.ByteBufBenchmark" sourceFile="ByteBufBenchmark.java" interface="false" size="39" bugs="6" priority_2="6"/>
       <ClassStats class="io.netty.microbench.buffer.ByteBufUtilBenchmark" sourceFile="ByteBufUtilBenchmark.java" interface="false" size="101" bugs="32" priority_2="32"/>
       <ClassStats class="io.netty.microbench.buffer.HeapByteBufBenchmark" sourceFile="HeapByteBufBenchmark.java" interface="false" size="40" bugs="0"/>
-      <ClassStats class="io.netty.microbench.buffer.PooledByteBufAllocatorAlignBenchmark" sourceFile="PooledByteBufAllocatorAlignBenchmark.java" interface="false" size="70" bugs="8" priority_2="8"/>
+      <ClassStats class="io.netty.microbench.buffer.PooledByteBufAllocatorAlignBenchmark" sourceFile="PooledByteBufAllocatorAlignBenchmark.java" interface="false" size="70" bugs="11" priority_2="11"/>
       <ClassStats class="io.netty.microbench.buffer.SlicedByteBufBenchmark" sourceFile="SlicedByteBufBenchmark.java" interface="false" size="29" bugs="4" priority_2="4"/>
       <ClassStats class="io.netty.microbench.buffer.SwappedByteBufBenchmark" sourceFile="SwappedByteBufBenchmark.java" interface="false" size="30" bugs="6" priority_2="6"/>
     </PackageStats>
@@ -7579,11 +7849,11 @@
       <ClassStats class="io.netty.microbench.channel.EmbeddedChannelWriteAccumulatingHandlerContext" sourceFile="EmbeddedChannelWriteAccumulatingHandlerContext.java" interface="false" size="47" bugs="0"/>
       <ClassStats class="io.netty.microbench.channel.EmbeddedChannelWriteReleaseHandlerContext" sourceFile="EmbeddedChannelWriteReleaseHandlerContext.java" interface="false" size="32" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.netty.microbench.concurrent" total_bugs="6" total_types="6" total_size="79" priority_2="6">
-      <ClassStats class="io.netty.microbench.concurrent.FastThreadLocalFastPathBenchmark" sourceFile="FastThreadLocalFastPathBenchmark.java" interface="false" size="25" bugs="3" priority_2="3"/>
+    <PackageStats package="io.netty.microbench.concurrent" total_bugs="10" total_types="6" total_size="79" priority_2="10">
+      <ClassStats class="io.netty.microbench.concurrent.FastThreadLocalFastPathBenchmark" sourceFile="FastThreadLocalFastPathBenchmark.java" interface="false" size="25" bugs="5" priority_2="5"/>
       <ClassStats class="io.netty.microbench.concurrent.FastThreadLocalFastPathBenchmark$1" sourceFile="FastThreadLocalFastPathBenchmark.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="io.netty.microbench.concurrent.FastThreadLocalFastPathBenchmark$2" sourceFile="FastThreadLocalFastPathBenchmark.java" interface="false" size="7" bugs="0"/>
-      <ClassStats class="io.netty.microbench.concurrent.FastThreadLocalSlowPathBenchmark" sourceFile="FastThreadLocalSlowPathBenchmark.java" interface="false" size="26" bugs="3" priority_2="3"/>
+      <ClassStats class="io.netty.microbench.concurrent.FastThreadLocalSlowPathBenchmark" sourceFile="FastThreadLocalSlowPathBenchmark.java" interface="false" size="26" bugs="5" priority_2="5"/>
       <ClassStats class="io.netty.microbench.concurrent.FastThreadLocalSlowPathBenchmark$1" sourceFile="FastThreadLocalSlowPathBenchmark.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="io.netty.microbench.concurrent.FastThreadLocalSlowPathBenchmark$2" sourceFile="FastThreadLocalSlowPathBenchmark.java" interface="false" size="7" bugs="0"/>
     </PackageStats>
@@ -7651,13 +7921,13 @@
       <ClassStats class="io.netty.microbench.handler.ssl.generated.SslHandlerEchoBenchmark_jmhType_B3" sourceFile="SslHandlerEchoBenchmark_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="io.netty.microbench.handler.ssl.generated.SslHandlerEchoBenchmark_wrapUnwrap_jmhTest" sourceFile="SslHandlerEchoBenchmark_wrapUnwrap_jmhTest.java" interface="false" size="498" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.netty.microbench.headers" total_bugs="13" total_types="6" total_size="604" priority_2="13">
+    <PackageStats package="io.netty.microbench.headers" total_bugs="24" total_types="6" total_size="604" priority_2="24">
       <ClassStats class="io.netty.microbench.headers.ExampleHeaders" sourceFile="ExampleHeaders.java" interface="false" size="107" bugs="0"/>
       <ClassStats class="io.netty.microbench.headers.ExampleHeaders$HeaderExample" sourceFile="ExampleHeaders.java" interface="false" size="21" bugs="0"/>
-      <ClassStats class="io.netty.microbench.headers.HeadersBenchmark" sourceFile="HeadersBenchmark.java" interface="false" size="102" bugs="3" priority_2="3"/>
+      <ClassStats class="io.netty.microbench.headers.HeadersBenchmark" sourceFile="HeadersBenchmark.java" interface="false" size="102" bugs="11" priority_2="11"/>
       <ClassStats class="io.netty.microbench.headers.HeadersBenchmark$1" sourceFile="HeadersBenchmark.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="io.netty.microbench.headers.HeadersBenchmark$SlowHeaders" sourceFile="HeadersBenchmark.java" interface="false" size="317" bugs="0"/>
-      <ClassStats class="io.netty.microbench.headers.ReadOnlyHttp2HeadersBenchmark" sourceFile="ReadOnlyHttp2HeadersBenchmark.java" interface="false" size="56" bugs="10" priority_2="10"/>
+      <ClassStats class="io.netty.microbench.headers.ReadOnlyHttp2HeadersBenchmark" sourceFile="ReadOnlyHttp2HeadersBenchmark.java" interface="false" size="56" bugs="13" priority_2="13"/>
     </PackageStats>
     <PackageStats package="io.netty.microbench.headers.generated" total_bugs="12" total_types="27" total_size="15048" priority_2="12">
       <ClassStats class="io.netty.microbench.headers.generated.HeadersBenchmark_http2AddAllFast_jmhTest" sourceFile="HeadersBenchmark_http2AddAllFast_jmhTest.java" interface="false" size="816" bugs="0"/>
@@ -7785,14 +8055,14 @@
       <ClassStats class="io.netty.microbench.internal.generated.UnitializedArrayBenchmark_jmhType_B2" sourceFile="UnitializedArrayBenchmark_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
       <ClassStats class="io.netty.microbench.internal.generated.UnitializedArrayBenchmark_jmhType_B3" sourceFile="UnitializedArrayBenchmark_jmhType_B3.java" interface="false" size="259" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.netty.microbench.util" total_bugs="10" total_types="9" total_size="203" priority_2="10">
+    <PackageStats package="io.netty.microbench.util" total_bugs="12" total_types="9" total_size="203" priority_2="12">
       <ClassStats class="io.netty.microbench.util.AbstractMicrobenchmark" sourceFile="AbstractMicrobenchmark.java" interface="false" size="30" bugs="2" priority_2="2"/>
       <ClassStats class="io.netty.microbench.util.AbstractMicrobenchmark$HarnessExecutor" sourceFile="AbstractMicrobenchmark.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="io.netty.microbench.util.AbstractMicrobenchmarkBase" sourceFile="AbstractMicrobenchmarkBase.java" interface="false" size="51" bugs="3" priority_2="3"/>
       <ClassStats class="io.netty.microbench.util.AbstractSharedExecutorMicrobenchmark" sourceFile="AbstractSharedExecutorMicrobenchmark.java" interface="false" size="19" bugs="2" priority_2="2"/>
       <ClassStats class="io.netty.microbench.util.AbstractSharedExecutorMicrobenchmark$DelegateHarnessExecutor" sourceFile="AbstractSharedExecutorMicrobenchmark.java" interface="false" size="40" bugs="0"/>
       <ClassStats class="io.netty.microbench.util.ResourceLeakDetectorBenchmark" sourceFile="ResourceLeakDetectorBenchmark.java" interface="false" size="12" bugs="1" priority_2="1"/>
-      <ClassStats class="io.netty.microbench.util.ResourceLeakDetectorRecordBenchmark" sourceFile="ResourceLeakDetectorRecordBenchmark.java" interface="false" size="29" bugs="2" priority_2="2"/>
+      <ClassStats class="io.netty.microbench.util.ResourceLeakDetectorRecordBenchmark" sourceFile="ResourceLeakDetectorRecordBenchmark.java" interface="false" size="29" bugs="4" priority_2="4"/>
       <ClassStats class="io.netty.microbench.util.ResourceLeakDetectorRecordBenchmark$1" sourceFile="ResourceLeakDetectorRecordBenchmark.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="io.netty.microbench.util.ResourceLeakDetectorRecordBenchmark$2" sourceFile="ResourceLeakDetectorRecordBenchmark.java" interface="false" size="10" bugs="0"/>
     </PackageStats>
@@ -7809,9 +8079,9 @@
       <ClassStats class="io.netty.microbench.util.generated.ResourceLeakDetectorRecordBenchmark_recordWithHint_jmhTest" sourceFile="ResourceLeakDetectorRecordBenchmark_recordWithHint_jmhTest.java" interface="false" size="483" bugs="0"/>
       <ClassStats class="io.netty.microbench.util.generated.ResourceLeakDetectorRecordBenchmark_record_jmhTest" sourceFile="ResourceLeakDetectorRecordBenchmark_record_jmhTest.java" interface="false" size="483" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.netty.microbenchmark.common" total_bugs="7" total_types="15" total_size="471" priority_2="7">
-      <ClassStats class="io.netty.microbenchmark.common.AppendableCharSequenceBenchmark" sourceFile="AppendableCharSequenceBenchmark.java" interface="false" size="42" bugs="1" priority_2="1"/>
-      <ClassStats class="io.netty.microbenchmark.common.AsciiStringBenchmark" sourceFile="AsciiStringBenchmark.java" interface="false" size="30" bugs="1" priority_2="1"/>
+    <PackageStats package="io.netty.microbenchmark.common" total_bugs="14" total_types="15" total_size="471" priority_2="14">
+      <ClassStats class="io.netty.microbenchmark.common.AppendableCharSequenceBenchmark" sourceFile="AppendableCharSequenceBenchmark.java" interface="false" size="42" bugs="2" priority_2="2"/>
+      <ClassStats class="io.netty.microbenchmark.common.AsciiStringBenchmark" sourceFile="AsciiStringBenchmark.java" interface="false" size="30" bugs="3" priority_2="3"/>
       <ClassStats class="io.netty.microbenchmark.common.IntObjectHashMapBenchmark" sourceFile="IntObjectHashMapBenchmark.java" interface="false" size="28" bugs="1" priority_2="1"/>
       <ClassStats class="io.netty.microbenchmark.common.IntObjectHashMapBenchmark$1" sourceFile="IntObjectHashMapBenchmark.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="io.netty.microbenchmark.common.IntObjectHashMapBenchmark$AgronaEnvironment" sourceFile="IntObjectHashMapBenchmark.java" interface="false" size="24" bugs="0"/>
@@ -7822,7 +8092,7 @@
       <ClassStats class="io.netty.microbenchmark.common.IsValidIpV4Benchmark" sourceFile="IsValidIpV4Benchmark.java" interface="false" size="33" bugs="0"/>
       <ClassStats class="io.netty.microbenchmark.common.IsValidIpV6Benchmark" sourceFile="IsValidIpV6Benchmark.java" interface="false" size="104" bugs="0"/>
       <ClassStats class="io.netty.microbenchmark.common.MathOperationsBenchmark" sourceFile="MathOperationsBenchmark.java" interface="false" size="12" bugs="2" priority_2="2"/>
-      <ClassStats class="io.netty.microbenchmark.common.NetUtilBenchmark" sourceFile="NetUtilBenchmark.java" interface="false" size="32" bugs="2" priority_2="2"/>
+      <ClassStats class="io.netty.microbenchmark.common.NetUtilBenchmark" sourceFile="NetUtilBenchmark.java" interface="false" size="32" bugs="6" priority_2="6"/>
       <ClassStats class="io.netty.microbenchmark.common.NetUtilBenchmark$1" sourceFile="NetUtilBenchmark.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="io.netty.microbenchmark.common.NetUtilBenchmark$2" sourceFile="NetUtilBenchmark.java" interface="false" size="70" bugs="0"/>
     </PackageStats>
@@ -8871,48 +9141,49 @@
       <ClassStats class="io.netty.util.internal.shaded.org.jctools.util.UnsafeRefArrayAccess" sourceFile="UnsafeRefArrayAccess.java" interface="false" size="26" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="5485" invocations="14048" avgMicrosecondsPerInvocation="390" maxMicrosecondsPerInvocation="16989" standardDeviationMicrosecondsPerInvocation="589"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="5396" invocations="31984" avgMicrosecondsPerInvocation="168" maxMicrosecondsPerInvocation="92942" standardDeviationMicrosecondsPerInvocation="792"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="5111" invocations="39923" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="93008" standardDeviationMicrosecondsPerInvocation="898"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="4862" invocations="33860" avgMicrosecondsPerInvocation="143" maxMicrosecondsPerInvocation="74560" standardDeviationMicrosecondsPerInvocation="706"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="4780" invocations="36189" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="105014" standardDeviationMicrosecondsPerInvocation="872"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="3918" invocations="37051" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="42738" standardDeviationMicrosecondsPerInvocation="379"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="3583" invocations="32468" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="702529" standardDeviationMicrosecondsPerInvocation="3907"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="2360" invocations="36196" avgMicrosecondsPerInvocation="65" maxMicrosecondsPerInvocation="26285" standardDeviationMicrosecondsPerInvocation="192"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1487" invocations="40338" avgMicrosecondsPerInvocation="36" maxMicrosecondsPerInvocation="5791" standardDeviationMicrosecondsPerInvocation="94"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1322" invocations="7292" avgMicrosecondsPerInvocation="181" maxMicrosecondsPerInvocation="37546" standardDeviationMicrosecondsPerInvocation="736"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="1165" invocations="4871" avgMicrosecondsPerInvocation="239" maxMicrosecondsPerInvocation="14350" standardDeviationMicrosecondsPerInvocation="561"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="1155" invocations="36189" avgMicrosecondsPerInvocation="31" maxMicrosecondsPerInvocation="5280" standardDeviationMicrosecondsPerInvocation="99"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1109" invocations="5517" avgMicrosecondsPerInvocation="201" maxMicrosecondsPerInvocation="17135" standardDeviationMicrosecondsPerInvocation="499"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="1092" invocations="4871" avgMicrosecondsPerInvocation="224" maxMicrosecondsPerInvocation="18543" standardDeviationMicrosecondsPerInvocation="665"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="1079" invocations="14160" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="503291" standardDeviationMicrosecondsPerInvocation="4252"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1033" invocations="5517" avgMicrosecondsPerInvocation="187" maxMicrosecondsPerInvocation="10949" standardDeviationMicrosecondsPerInvocation="448"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="1009" invocations="4871" avgMicrosecondsPerInvocation="207" maxMicrosecondsPerInvocation="76709" standardDeviationMicrosecondsPerInvocation="2200"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="959" invocations="4871" avgMicrosecondsPerInvocation="196" maxMicrosecondsPerInvocation="14755" standardDeviationMicrosecondsPerInvocation="487"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LazyInit" totalMilliseconds="902" invocations="4871" avgMicrosecondsPerInvocation="185" maxMicrosecondsPerInvocation="93155" standardDeviationMicrosecondsPerInvocation="2041"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="819" invocations="1054259" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="8555" standardDeviationMicrosecondsPerInvocation="13"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="722" invocations="30869" avgMicrosecondsPerInvocation="23" maxMicrosecondsPerInvocation="10480" standardDeviationMicrosecondsPerInvocation="109"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="719" invocations="31984" avgMicrosecondsPerInvocation="22" maxMicrosecondsPerInvocation="66835" standardDeviationMicrosecondsPerInvocation="380"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="705" invocations="4871" avgMicrosecondsPerInvocation="144" maxMicrosecondsPerInvocation="89974" standardDeviationMicrosecondsPerInvocation="1331"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="690" invocations="4871" avgMicrosecondsPerInvocation="141" maxMicrosecondsPerInvocation="17914" standardDeviationMicrosecondsPerInvocation="434"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="680" invocations="4871" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="78927" standardDeviationMicrosecondsPerInvocation="1183"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="660" invocations="38827" avgMicrosecondsPerInvocation="17" maxMicrosecondsPerInvocation="30471" standardDeviationMicrosecondsPerInvocation="203"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="643" invocations="4871" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="75310" standardDeviationMicrosecondsPerInvocation="1141"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="604" invocations="4871" avgMicrosecondsPerInvocation="124" maxMicrosecondsPerInvocation="8250" standardDeviationMicrosecondsPerInvocation="310"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="585" invocations="4871" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="69816" standardDeviationMicrosecondsPerInvocation="1035"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="561" invocations="4871" avgMicrosecondsPerInvocation="115" maxMicrosecondsPerInvocation="77059" standardDeviationMicrosecondsPerInvocation="1139"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="553" invocations="4871" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="5249" standardDeviationMicrosecondsPerInvocation="240"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="552" invocations="4871" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="7377" standardDeviationMicrosecondsPerInvocation="269"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="525" invocations="4871" avgMicrosecondsPerInvocation="107" maxMicrosecondsPerInvocation="11027" standardDeviationMicrosecondsPerInvocation="365"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="524" invocations="4871" avgMicrosecondsPerInvocation="107" maxMicrosecondsPerInvocation="8746" standardDeviationMicrosecondsPerInvocation="279"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="517" invocations="4871" avgMicrosecondsPerInvocation="106" maxMicrosecondsPerInvocation="5890" standardDeviationMicrosecondsPerInvocation="256"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="516" invocations="5517" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="10844" standardDeviationMicrosecondsPerInvocation="327"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteRecursiveLoop" totalMilliseconds="515" invocations="4871" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="79525" standardDeviationMicrosecondsPerInvocation="1162"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="513" invocations="4871" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="5583" standardDeviationMicrosecondsPerInvocation="262"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="500" invocations="4871" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="7734" standardDeviationMicrosecondsPerInvocation="264"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="484" invocations="4871" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="19697" standardDeviationMicrosecondsPerInvocation="362"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="480" invocations="4871" avgMicrosecondsPerInvocation="98" maxMicrosecondsPerInvocation="6356" standardDeviationMicrosecondsPerInvocation="326"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="474" invocations="4871" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="5482" standardDeviationMicrosecondsPerInvocation="265"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="5245" invocations="31984" avgMicrosecondsPerInvocation="164" maxMicrosecondsPerInvocation="80943" standardDeviationMicrosecondsPerInvocation="1018"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="4458" invocations="37051" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="734016" standardDeviationMicrosecondsPerInvocation="3887"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="4376" invocations="39923" avgMicrosecondsPerInvocation="109" maxMicrosecondsPerInvocation="89071" standardDeviationMicrosecondsPerInvocation="674"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="4361" invocations="33860" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="69734" standardDeviationMicrosecondsPerInvocation="589"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="4320" invocations="36189" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="64665" standardDeviationMicrosecondsPerInvocation="469"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="4244" invocations="14048" avgMicrosecondsPerInvocation="302" maxMicrosecondsPerInvocation="13288" standardDeviationMicrosecondsPerInvocation="265"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="2660" invocations="32468" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="23478" standardDeviationMicrosecondsPerInvocation="266"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="2118" invocations="36196" avgMicrosecondsPerInvocation="58" maxMicrosecondsPerInvocation="13223" standardDeviationMicrosecondsPerInvocation="127"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1517" invocations="40338" avgMicrosecondsPerInvocation="37" maxMicrosecondsPerInvocation="9642" standardDeviationMicrosecondsPerInvocation="108"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1240" invocations="7292" avgMicrosecondsPerInvocation="170" maxMicrosecondsPerInvocation="46261" standardDeviationMicrosecondsPerInvocation="906"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1228" invocations="5517" avgMicrosecondsPerInvocation="222" maxMicrosecondsPerInvocation="18224" standardDeviationMicrosecondsPerInvocation="545"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1163" invocations="5517" avgMicrosecondsPerInvocation="210" maxMicrosecondsPerInvocation="10779" standardDeviationMicrosecondsPerInvocation="485"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="1083" invocations="36189" avgMicrosecondsPerInvocation="29" maxMicrosecondsPerInvocation="60155" standardDeviationMicrosecondsPerInvocation="327"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="1055" invocations="4871" avgMicrosecondsPerInvocation="216" maxMicrosecondsPerInvocation="10514" standardDeviationMicrosecondsPerInvocation="468"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="993" invocations="4871" avgMicrosecondsPerInvocation="203" maxMicrosecondsPerInvocation="13094" standardDeviationMicrosecondsPerInvocation="555"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LazyInit" totalMilliseconds="918" invocations="4871" avgMicrosecondsPerInvocation="188" maxMicrosecondsPerInvocation="93047" standardDeviationMicrosecondsPerInvocation="2199"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="876" invocations="4871" avgMicrosecondsPerInvocation="179" maxMicrosecondsPerInvocation="10305" standardDeviationMicrosecondsPerInvocation="424"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="809" invocations="4871" avgMicrosecondsPerInvocation="166" maxMicrosecondsPerInvocation="63239" standardDeviationMicrosecondsPerInvocation="1766"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="719" invocations="1054259" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="6672" standardDeviationMicrosecondsPerInvocation="6"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="685" invocations="5517" avgMicrosecondsPerInvocation="124" maxMicrosecondsPerInvocation="537089" standardDeviationMicrosecondsPerInvocation="7230"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="636" invocations="4871" avgMicrosecondsPerInvocation="130" maxMicrosecondsPerInvocation="9150" standardDeviationMicrosecondsPerInvocation="353"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="606" invocations="30869" avgMicrosecondsPerInvocation="19" maxMicrosecondsPerInvocation="6561" standardDeviationMicrosecondsPerInvocation="67"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="585" invocations="38827" avgMicrosecondsPerInvocation="15" maxMicrosecondsPerInvocation="26747" standardDeviationMicrosecondsPerInvocation="147"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="581" invocations="31984" avgMicrosecondsPerInvocation="18" maxMicrosecondsPerInvocation="1746" standardDeviationMicrosecondsPerInvocation="42"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="573" invocations="14160" avgMicrosecondsPerInvocation="40" maxMicrosecondsPerInvocation="59933" standardDeviationMicrosecondsPerInvocation="517"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="568" invocations="5517" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="10044" standardDeviationMicrosecondsPerInvocation="336"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="559" invocations="4871" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="9677" standardDeviationMicrosecondsPerInvocation="301"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="533" invocations="4871" avgMicrosecondsPerInvocation="109" maxMicrosecondsPerInvocation="4878" standardDeviationMicrosecondsPerInvocation="245"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="515" invocations="4871" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="7081" standardDeviationMicrosecondsPerInvocation="253"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="499" invocations="4871" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="5421" standardDeviationMicrosecondsPerInvocation="220"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="497" invocations="5517" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="72484" standardDeviationMicrosecondsPerInvocation="1313"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="489" invocations="4871" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="5573" standardDeviationMicrosecondsPerInvocation="258"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="483" invocations="4871" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="67597" standardDeviationMicrosecondsPerInvocation="988"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="483" invocations="4871" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="9403" standardDeviationMicrosecondsPerInvocation="240"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="458" invocations="4871" avgMicrosecondsPerInvocation="94" maxMicrosecondsPerInvocation="4805" standardDeviationMicrosecondsPerInvocation="192"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="456" invocations="4871" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="5737" standardDeviationMicrosecondsPerInvocation="224"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="455" invocations="4871" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="4650" standardDeviationMicrosecondsPerInvocation="223"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="453" invocations="4871" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="5946" standardDeviationMicrosecondsPerInvocation="221"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="448" invocations="4871" avgMicrosecondsPerInvocation="92" maxMicrosecondsPerInvocation="5037" standardDeviationMicrosecondsPerInvocation="269"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="447" invocations="38827" avgMicrosecondsPerInvocation="11" maxMicrosecondsPerInvocation="76165" standardDeviationMicrosecondsPerInvocation="390"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindFieldSelfAssignment" totalMilliseconds="446" invocations="4871" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="74295" standardDeviationMicrosecondsPerInvocation="1079"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="443" invocations="4871" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="27437" standardDeviationMicrosecondsPerInvocation="1082"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="431" invocations="4871" avgMicrosecondsPerInvocation="88" maxMicrosecondsPerInvocation="3414" standardDeviationMicrosecondsPerInvocation="205"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

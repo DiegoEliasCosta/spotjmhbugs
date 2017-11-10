@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1509401475000" analysisTimestamp="1509401477067" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1510261474000" analysisTimestamp="1510261475744" release="">
   <Project projectName="">
     <Jar>tmp/JCTools</Jar>
   </Project>
@@ -179,6 +179,24 @@
     <Field classname="org.jctools.channels.mpsc.generated.MpscProxyChannelBenchmark_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
       <SourceLine classname="org.jctools.channels.mpsc.generated.MpscProxyChannelBenchmark_jmhType_B2" sourcefile="MpscProxyChannelBenchmark_jmhType_B2.java" sourcepath="org/jctools/channels/mpsc/generated/MpscProxyChannelBenchmark_jmhType_B2.java"/>
     </Field>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.channels.spsc.QueueThroughputBaseline">
+      <SourceLine classname="org.jctools.channels.spsc.QueueThroughputBaseline" start="30" end="125" sourcefile="QueueThroughputBaseline.java" sourcepath="org/jctools/channels/spsc/QueueThroughputBaseline.java"/>
+    </Class>
+    <Method classname="org.jctools.channels.spsc.QueueThroughputBaseline" name="offer" signature="(Lorg/jctools/channels/spsc/QueueThroughputBaseline$OfferCounters;)V" isStatic="false">
+      <SourceLine classname="org.jctools.channels.spsc.QueueThroughputBaseline" start="98" end="104" startBytecode="0" endBytecode="113" sourcefile="QueueThroughputBaseline.java" sourcepath="org/jctools/channels/spsc/QueueThroughputBaseline.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.channels.spsc.QueueThroughputBaseline" start="99" end="99" startBytecode="26" endBytecode="26" sourcefile="QueueThroughputBaseline.java" sourcepath="org/jctools/channels/spsc/QueueThroughputBaseline.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.channels.spsc.QueueThroughputBaseline">
+      <SourceLine classname="org.jctools.channels.spsc.QueueThroughputBaseline" start="30" end="125" sourcefile="QueueThroughputBaseline.java" sourcepath="org/jctools/channels/spsc/QueueThroughputBaseline.java"/>
+    </Class>
+    <Method classname="org.jctools.channels.spsc.QueueThroughputBaseline" name="poll" signature="(Lorg/jctools/channels/spsc/QueueThroughputBaseline$PollCounters;Lorg/jctools/channels/spsc/QueueThroughputBaseline$ConsumerMarker;Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.jctools.channels.spsc.QueueThroughputBaseline" start="109" end="116" startBytecode="0" endBytecode="165" sourcefile="QueueThroughputBaseline.java" sourcepath="org/jctools/channels/spsc/QueueThroughputBaseline.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.channels.spsc.QueueThroughputBaseline" start="111" end="111" startBytecode="29" endBytecode="29" sourcefile="QueueThroughputBaseline.java" sourcepath="org/jctools/channels/spsc/QueueThroughputBaseline.java"/>
   </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.jctools.channels.spsc.SpscProxyChannelBenchmark">
@@ -548,6 +566,24 @@
       <SourceLine classname="org.jctools.channels.spsc.generated.SpscProxyChannelBenchmark_jmhType_B2" sourcefile="SpscProxyChannelBenchmark_jmhType_B2.java" sourcepath="org/jctools/channels/spsc/generated/SpscProxyChannelBenchmark_jmhType_B2.java"/>
     </Field>
   </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.baseline.BaselinePingPong">
+      <SourceLine classname="org.jctools.jmh.baseline.BaselinePingPong" start="25" end="43" sourcefile="BaselinePingPong.java" sourcepath="org/jctools/jmh/baseline/BaselinePingPong.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.baseline.BaselinePingPong" name="ping" signature="(Lorg/openjdk/jmh/infra/Control;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.baseline.BaselinePingPong" start="32" end="35" startBytecode="0" endBytecode="88" sourcefile="BaselinePingPong.java" sourcepath="org/jctools/jmh/baseline/BaselinePingPong.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.baseline.BaselinePingPong" start="32" end="32" startBytecode="19" endBytecode="19" sourcefile="BaselinePingPong.java" sourcepath="org/jctools/jmh/baseline/BaselinePingPong.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.baseline.BaselinePingPong">
+      <SourceLine classname="org.jctools.jmh.baseline.BaselinePingPong" start="25" end="43" sourcefile="BaselinePingPong.java" sourcepath="org/jctools/jmh/baseline/BaselinePingPong.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.baseline.BaselinePingPong" name="pong" signature="(Lorg/openjdk/jmh/infra/Control;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.baseline.BaselinePingPong" start="40" end="43" startBytecode="0" endBytecode="88" sourcefile="BaselinePingPong.java" sourcepath="org/jctools/jmh/baseline/BaselinePingPong.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.baseline.BaselinePingPong" start="40" end="40" startBytecode="19" endBytecode="19" sourcefile="BaselinePingPong.java" sourcepath="org/jctools/jmh/baseline/BaselinePingPong.java"/>
+  </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.jctools.jmh.baseline.BaselinePingPong">
       <SourceLine classname="org.jctools.jmh.baseline.BaselinePingPong" start="25" end="43" sourcefile="BaselinePingPong.java" sourcepath="org/jctools/jmh/baseline/BaselinePingPong.java"/>
@@ -573,6 +609,24 @@
       <SourceLine classname="org.jctools.jmh.baseline.ConcQOfferPoll" start="45" end="51" startBytecode="0" endBytecode="161" sourcefile="ConcQOfferPoll.java" sourcepath="org/jctools/jmh/baseline/ConcQOfferPoll.java"/>
     </Method>
     <SourceLine classname="org.jctools.jmh.baseline.ConcQOfferPoll" start="49" end="49" startBytecode="41" endBytecode="41" sourcefile="ConcQOfferPoll.java" sourcepath="org/jctools/jmh/baseline/ConcQOfferPoll.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.baseline.ConcQOfferPoll">
+      <SourceLine classname="org.jctools.jmh.baseline.ConcQOfferPoll" start="35" end="51" sourcefile="ConcQOfferPoll.java" sourcepath="org/jctools/jmh/baseline/ConcQOfferPoll.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.baseline.ConcQOfferPoll" name="offerAndPoll" signature="()V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.baseline.ConcQOfferPoll" start="45" end="51" startBytecode="0" endBytecode="161" sourcefile="ConcQOfferPoll.java" sourcepath="org/jctools/jmh/baseline/ConcQOfferPoll.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.baseline.ConcQOfferPoll" start="45" end="45" startBytecode="25" endBytecode="25" sourcefile="ConcQOfferPoll.java" sourcepath="org/jctools/jmh/baseline/ConcQOfferPoll.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.baseline.ConcQOfferPoll">
+      <SourceLine classname="org.jctools.jmh.baseline.ConcQOfferPoll" start="35" end="51" sourcefile="ConcQOfferPoll.java" sourcepath="org/jctools/jmh/baseline/ConcQOfferPoll.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.baseline.ConcQOfferPoll" name="offerAndPoll" signature="()V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.baseline.ConcQOfferPoll" start="45" end="51" startBytecode="0" endBytecode="161" sourcefile="ConcQOfferPoll.java" sourcepath="org/jctools/jmh/baseline/ConcQOfferPoll.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.baseline.ConcQOfferPoll" start="48" end="48" startBytecode="50" endBytecode="50" sourcefile="ConcQOfferPoll.java" sourcepath="org/jctools/jmh/baseline/ConcQOfferPoll.java"/>
   </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.jctools.jmh.baseline.ConcQOfferPoll">
@@ -623,6 +677,24 @@
     </Method>
     <SourceLine classname="org.jctools.jmh.baseline.QueueOfferPoll" start="52" end="52" startBytecode="19" endBytecode="19" sourcefile="QueueOfferPoll.java" sourcepath="org/jctools/jmh/baseline/QueueOfferPoll.java"/>
   </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.baseline.QueueOfferPoll">
+      <SourceLine classname="org.jctools.jmh.baseline.QueueOfferPoll" start="33" end="58" sourcefile="QueueOfferPoll.java" sourcepath="org/jctools/jmh/baseline/QueueOfferPoll.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.baseline.QueueOfferPoll" name="offerAndPollLoops" signature="()I" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.baseline.QueueOfferPoll" start="50" end="58" startBytecode="0" endBytecode="203" sourcefile="QueueOfferPoll.java" sourcepath="org/jctools/jmh/baseline/QueueOfferPoll.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.baseline.QueueOfferPoll" start="51" end="51" startBytecode="28" endBytecode="28" sourcefile="QueueOfferPoll.java" sourcepath="org/jctools/jmh/baseline/QueueOfferPoll.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.baseline.QueueOfferPoll">
+      <SourceLine classname="org.jctools.jmh.baseline.QueueOfferPoll" start="33" end="58" sourcefile="QueueOfferPoll.java" sourcepath="org/jctools/jmh/baseline/QueueOfferPoll.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.baseline.QueueOfferPoll" name="offerAndPollLoops" signature="()I" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.baseline.QueueOfferPoll" start="50" end="58" startBytecode="0" endBytecode="203" sourcefile="QueueOfferPoll.java" sourcepath="org/jctools/jmh/baseline/QueueOfferPoll.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.baseline.QueueOfferPoll" start="55" end="55" startBytecode="56" endBytecode="56" sourcefile="QueueOfferPoll.java" sourcepath="org/jctools/jmh/baseline/QueueOfferPoll.java"/>
+  </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.jctools.jmh.baseline.QueueOfferPoll">
       <SourceLine classname="org.jctools.jmh.baseline.QueueOfferPoll" start="33" end="58" sourcefile="QueueOfferPoll.java" sourcepath="org/jctools/jmh/baseline/QueueOfferPoll.java"/>
@@ -648,6 +720,15 @@
       <SourceLine classname="org.jctools.jmh.baseline.SingleThreadedOffer" start="39" end="44" startBytecode="0" endBytecode="150" sourcefile="SingleThreadedOffer.java" sourcepath="org/jctools/jmh/baseline/SingleThreadedOffer.java"/>
     </Method>
     <SourceLine classname="org.jctools.jmh.baseline.SingleThreadedOffer" start="42" end="42" startBytecode="24" endBytecode="24" sourcefile="SingleThreadedOffer.java" sourcepath="org/jctools/jmh/baseline/SingleThreadedOffer.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.baseline.SingleThreadedOffer">
+      <SourceLine classname="org.jctools.jmh.baseline.SingleThreadedOffer" start="14" end="44" sourcefile="SingleThreadedOffer.java" sourcepath="org/jctools/jmh/baseline/SingleThreadedOffer.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.baseline.SingleThreadedOffer" name="offerLoop" signature="()V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.baseline.SingleThreadedOffer" start="39" end="44" startBytecode="0" endBytecode="150" sourcefile="SingleThreadedOffer.java" sourcepath="org/jctools/jmh/baseline/SingleThreadedOffer.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.baseline.SingleThreadedOffer" start="40" end="40" startBytecode="33" endBytecode="33" sourcefile="SingleThreadedOffer.java" sourcepath="org/jctools/jmh/baseline/SingleThreadedOffer.java"/>
   </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.jctools.jmh.baseline.SingleThreadedOffer">
@@ -682,6 +763,15 @@
       <SourceLine classname="org.jctools.jmh.baseline.SingleThreadedPoll" start="42" end="47" startBytecode="0" endBytecode="147" sourcefile="SingleThreadedPoll.java" sourcepath="org/jctools/jmh/baseline/SingleThreadedPoll.java"/>
     </Method>
     <SourceLine classname="org.jctools.jmh.baseline.SingleThreadedPoll" start="45" end="45" startBytecode="21" endBytecode="21" sourcefile="SingleThreadedPoll.java" sourcepath="org/jctools/jmh/baseline/SingleThreadedPoll.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.baseline.SingleThreadedPoll">
+      <SourceLine classname="org.jctools.jmh.baseline.SingleThreadedPoll" start="14" end="47" sourcefile="SingleThreadedPoll.java" sourcepath="org/jctools/jmh/baseline/SingleThreadedPoll.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.baseline.SingleThreadedPoll" name="poll" signature="()V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.baseline.SingleThreadedPoll" start="42" end="47" startBytecode="0" endBytecode="147" sourcefile="SingleThreadedPoll.java" sourcepath="org/jctools/jmh/baseline/SingleThreadedPoll.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.baseline.SingleThreadedPoll" start="43" end="43" startBytecode="30" endBytecode="30" sourcefile="SingleThreadedPoll.java" sourcepath="org/jctools/jmh/baseline/SingleThreadedPoll.java"/>
   </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.jctools.jmh.baseline.SingleThreadedPoll">
@@ -939,6 +1029,15 @@
       <SourceLine classname="org.jctools.jmh.baseline.generated.SingleThreadedPoll_jmhType_B2" sourcefile="SingleThreadedPoll_jmhType_B2.java" sourcepath="org/jctools/jmh/baseline/generated/SingleThreadedPoll_jmhType_B2.java"/>
     </Field>
   </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.collections.SetOps">
+      <SourceLine classname="org.jctools.jmh.collections.SetOps" start="25" end="98" sourcefile="SetOps.java" sourcepath="org/jctools/jmh/collections/SetOps.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.collections.SetOps" name="sum" signature="()I" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.collections.SetOps" start="82" end="86" startBytecode="0" endBytecode="138" sourcefile="SetOps.java" sourcepath="org/jctools/jmh/collections/SetOps.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.collections.SetOps" start="85" end="85" startBytecode="38" endBytecode="38" sourcefile="SetOps.java" sourcepath="org/jctools/jmh/collections/SetOps.java"/>
+  </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.jctools.jmh.collections.generated.SetOps_jmhType_B2">
       <SourceLine classname="org.jctools.jmh.collections.generated.SetOps_jmhType_B2" start="3" end="17" sourcefile="SetOps_jmhType_B2.java" sourcepath="org/jctools/jmh/collections/generated/SetOps_jmhType_B2.java"/>
@@ -1034,6 +1133,42 @@
     <Field classname="org.jctools.jmh.counters.generated.CountersBenchmark_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
       <SourceLine classname="org.jctools.jmh.counters.generated.CountersBenchmark_jmhType_B2" sourcefile="CountersBenchmark_jmhType_B2.java" sourcepath="org/jctools/jmh/counters/generated/CountersBenchmark_jmhType_B2.java"/>
     </Field>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.latency.MpqBurstCost">
+      <SourceLine classname="org.jctools.jmh.latency.MpqBurstCost" start="29" end="106" sourcefile="MpqBurstCost.java" sourcepath="org/jctools/jmh/latency/MpqBurstCost.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.latency.MpqBurstCost" name="burstCost" signature="(Lorg/jctools/jmh/latency/MpqBurstCost$Stop;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.latency.MpqBurstCost" start="75" end="96" startBytecode="0" endBytecode="256" sourcefile="MpqBurstCost.java" sourcepath="org/jctools/jmh/latency/MpqBurstCost.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.latency.MpqBurstCost" start="79" end="79" startBytecode="48" endBytecode="48" sourcefile="MpqBurstCost.java" sourcepath="org/jctools/jmh/latency/MpqBurstCost.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.latency.MpqBurstCost">
+      <SourceLine classname="org.jctools.jmh.latency.MpqBurstCost" start="29" end="106" sourcefile="MpqBurstCost.java" sourcepath="org/jctools/jmh/latency/MpqBurstCost.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.latency.MpqBurstCost" name="burstCost" signature="(Lorg/jctools/jmh/latency/MpqBurstCost$Stop;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.latency.MpqBurstCost" start="75" end="96" startBytecode="0" endBytecode="256" sourcefile="MpqBurstCost.java" sourcepath="org/jctools/jmh/latency/MpqBurstCost.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.latency.MpqBurstCost" start="81" end="81" startBytecode="42" endBytecode="42" sourcefile="MpqBurstCost.java" sourcepath="org/jctools/jmh/latency/MpqBurstCost.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.latency.MpqBurstCost">
+      <SourceLine classname="org.jctools.jmh.latency.MpqBurstCost" start="29" end="106" sourcefile="MpqBurstCost.java" sourcepath="org/jctools/jmh/latency/MpqBurstCost.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.latency.MpqBurstCost" name="burstCost" signature="(Lorg/jctools/jmh/latency/MpqBurstCost$Stop;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.latency.MpqBurstCost" start="75" end="96" startBytecode="0" endBytecode="256" sourcefile="MpqBurstCost.java" sourcepath="org/jctools/jmh/latency/MpqBurstCost.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.latency.MpqBurstCost" start="87" end="87" startBytecode="61" endBytecode="61" sourcefile="MpqBurstCost.java" sourcepath="org/jctools/jmh/latency/MpqBurstCost.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.latency.MpqBurstCost">
+      <SourceLine classname="org.jctools.jmh.latency.MpqBurstCost" start="29" end="106" sourcefile="MpqBurstCost.java" sourcepath="org/jctools/jmh/latency/MpqBurstCost.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.latency.MpqBurstCost" name="burstCost" signature="(Lorg/jctools/jmh/latency/MpqBurstCost$Stop;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.latency.MpqBurstCost" start="75" end="96" startBytecode="0" endBytecode="256" sourcefile="MpqBurstCost.java" sourcepath="org/jctools/jmh/latency/MpqBurstCost.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.latency.MpqBurstCost" start="92" end="92" startBytecode="71" endBytecode="71" sourcefile="MpqBurstCost.java" sourcepath="org/jctools/jmh/latency/MpqBurstCost.java"/>
   </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.jctools.jmh.latency.MpqBurstCost">
@@ -1250,6 +1385,42 @@
     <Field classname="org.jctools.jmh.latency.generated.QueueBurstCost_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
       <SourceLine classname="org.jctools.jmh.latency.generated.QueueBurstCost_jmhType_B2" sourcefile="QueueBurstCost_jmhType_B2.java" sourcepath="org/jctools/jmh/latency/generated/QueueBurstCost_jmhType_B2.java"/>
     </Field>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost">
+      <SourceLine classname="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost" start="40" end="136" sourcefile="MpqRelaxedBurstCost.java" sourcepath="org/jctools/jmh/latency/spsc/MpqRelaxedBurstCost.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost" name="burstCost" signature="()V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost" start="117" end="129" startBytecode="0" endBytecode="265" sourcefile="MpqRelaxedBurstCost.java" sourcepath="org/jctools/jmh/latency/spsc/MpqRelaxedBurstCost.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost" start="122" end="122" startBytecode="53" endBytecode="53" sourcefile="MpqRelaxedBurstCost.java" sourcepath="org/jctools/jmh/latency/spsc/MpqRelaxedBurstCost.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost">
+      <SourceLine classname="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost" start="40" end="136" sourcefile="MpqRelaxedBurstCost.java" sourcepath="org/jctools/jmh/latency/spsc/MpqRelaxedBurstCost.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost" name="burstCost" signature="()V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost" start="117" end="129" startBytecode="0" endBytecode="265" sourcefile="MpqRelaxedBurstCost.java" sourcepath="org/jctools/jmh/latency/spsc/MpqRelaxedBurstCost.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost" start="123" end="123" startBytecode="47" endBytecode="47" sourcefile="MpqRelaxedBurstCost.java" sourcepath="org/jctools/jmh/latency/spsc/MpqRelaxedBurstCost.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost">
+      <SourceLine classname="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost" start="40" end="136" sourcefile="MpqRelaxedBurstCost.java" sourcepath="org/jctools/jmh/latency/spsc/MpqRelaxedBurstCost.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost" name="burstCost" signature="()V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost" start="117" end="129" startBytecode="0" endBytecode="265" sourcefile="MpqRelaxedBurstCost.java" sourcepath="org/jctools/jmh/latency/spsc/MpqRelaxedBurstCost.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost" start="126" end="126" startBytecode="66" endBytecode="66" sourcefile="MpqRelaxedBurstCost.java" sourcepath="org/jctools/jmh/latency/spsc/MpqRelaxedBurstCost.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost">
+      <SourceLine classname="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost" start="40" end="136" sourcefile="MpqRelaxedBurstCost.java" sourcepath="org/jctools/jmh/latency/spsc/MpqRelaxedBurstCost.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost" name="burstCost" signature="()V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost" start="117" end="129" startBytecode="0" endBytecode="265" sourcefile="MpqRelaxedBurstCost.java" sourcepath="org/jctools/jmh/latency/spsc/MpqRelaxedBurstCost.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost" start="128" end="128" startBytecode="76" endBytecode="76" sourcefile="MpqRelaxedBurstCost.java" sourcepath="org/jctools/jmh/latency/spsc/MpqRelaxedBurstCost.java"/>
   </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost">
@@ -1763,6 +1934,24 @@
       <SourceLine classname="org.jctools.jmh.latency.spsc.generated.RingCqBurstRoundTripWithGroups_jmhType_B2" sourcefile="RingCqBurstRoundTripWithGroups_jmhType_B2.java" sourcepath="org/jctools/jmh/latency/spsc/generated/RingCqBurstRoundTripWithGroups_jmhType_B2.java"/>
     </Field>
   </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.throughput.IntrusiveQueueThroughputBackoffNone">
+      <SourceLine classname="org.jctools.jmh.throughput.IntrusiveQueueThroughputBackoffNone" start="41" end="115" sourcefile="IntrusiveQueueThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/IntrusiveQueueThroughputBackoffNone.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.throughput.IntrusiveQueueThroughputBackoffNone" name="offer" signature="(Lorg/jctools/jmh/throughput/IntrusiveQueueThroughputBackoffNone$OfferCounters;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.throughput.IntrusiveQueueThroughputBackoffNone" start="79" end="88" startBytecode="0" endBytecode="145" sourcefile="IntrusiveQueueThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/IntrusiveQueueThroughputBackoffNone.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.throughput.IntrusiveQueueThroughputBackoffNone" start="81" end="81" startBytecode="31" endBytecode="31" sourcefile="IntrusiveQueueThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/IntrusiveQueueThroughputBackoffNone.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.throughput.IntrusiveQueueThroughputBackoffNone">
+      <SourceLine classname="org.jctools.jmh.throughput.IntrusiveQueueThroughputBackoffNone" start="41" end="115" sourcefile="IntrusiveQueueThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/IntrusiveQueueThroughputBackoffNone.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.throughput.IntrusiveQueueThroughputBackoffNone" name="poll" signature="(Lorg/jctools/jmh/throughput/IntrusiveQueueThroughputBackoffNone$PollCounters;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.throughput.IntrusiveQueueThroughputBackoffNone" start="93" end="103" startBytecode="0" endBytecode="159" sourcefile="IntrusiveQueueThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/IntrusiveQueueThroughputBackoffNone.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.throughput.IntrusiveQueueThroughputBackoffNone" start="96" end="96" startBytecode="26" endBytecode="26" sourcefile="IntrusiveQueueThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/IntrusiveQueueThroughputBackoffNone.java"/>
+  </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.jctools.jmh.throughput.IntrusiveQueueThroughputBackoffNone">
       <SourceLine classname="org.jctools.jmh.throughput.IntrusiveQueueThroughputBackoffNone" start="41" end="115" sourcefile="IntrusiveQueueThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/IntrusiveQueueThroughputBackoffNone.java"/>
@@ -1787,6 +1976,114 @@
       <SourceLine classname="org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone" sourcefile="MpqDrainFillThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqDrainFillThroughputBackoffNone.java"/>
     </Field>
   </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone">
+      <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="41" end="241" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" name="offerBothR" signature="(Lorg/jctools/jmh/throughput/MpqThroughputBackoffNone$OfferCounters;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="141" end="150" startBytecode="0" endBytecode="144" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="143" end="143" startBytecode="30" endBytecode="30" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone">
+      <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="41" end="241" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" name="offerCR" signature="(Lorg/jctools/jmh/throughput/MpqThroughputBackoffNone$OfferCounters;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="203" end="212" startBytecode="0" endBytecode="144" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="205" end="205" startBytecode="30" endBytecode="30" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone">
+      <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="41" end="241" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" name="offerNoR" signature="(Lorg/jctools/jmh/throughput/MpqThroughputBackoffNone$OfferCounters;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="110" end="119" startBytecode="0" endBytecode="144" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="112" end="112" startBytecode="30" endBytecode="30" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone">
+      <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="41" end="241" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" name="offerPR" signature="(Lorg/jctools/jmh/throughput/MpqThroughputBackoffNone$OfferCounters;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="172" end="181" startBytecode="0" endBytecode="144" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="174" end="174" startBytecode="30" endBytecode="30" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone">
+      <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="41" end="241" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" name="pollBothR" signature="(Lorg/jctools/jmh/throughput/MpqThroughputBackoffNone$PollCounters;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="155" end="167" startBytecode="0" endBytecode="188" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="158" end="158" startBytecode="31" endBytecode="31" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone">
+      <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="41" end="241" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" name="pollBothR" signature="(Lorg/jctools/jmh/throughput/MpqThroughputBackoffNone$PollCounters;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="155" end="167" startBytecode="0" endBytecode="188" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="160" end="160" startBytecode="51" endBytecode="51" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone">
+      <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="41" end="241" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" name="pollCR" signature="(Lorg/jctools/jmh/throughput/MpqThroughputBackoffNone$PollCounters;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="217" end="229" startBytecode="0" endBytecode="188" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="220" end="220" startBytecode="31" endBytecode="31" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone">
+      <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="41" end="241" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" name="pollCR" signature="(Lorg/jctools/jmh/throughput/MpqThroughputBackoffNone$PollCounters;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="217" end="229" startBytecode="0" endBytecode="188" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="222" end="222" startBytecode="51" endBytecode="51" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone">
+      <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="41" end="241" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" name="pollNoR" signature="(Lorg/jctools/jmh/throughput/MpqThroughputBackoffNone$PollCounters;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="124" end="136" startBytecode="0" endBytecode="188" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="127" end="127" startBytecode="31" endBytecode="31" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone">
+      <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="41" end="241" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" name="pollNoR" signature="(Lorg/jctools/jmh/throughput/MpqThroughputBackoffNone$PollCounters;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="124" end="136" startBytecode="0" endBytecode="188" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="129" end="129" startBytecode="51" endBytecode="51" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone">
+      <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="41" end="241" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" name="pollPR" signature="(Lorg/jctools/jmh/throughput/MpqThroughputBackoffNone$PollCounters;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="186" end="198" startBytecode="0" endBytecode="188" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="189" end="189" startBytecode="31" endBytecode="31" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone">
+      <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="41" end="241" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" name="pollPR" signature="(Lorg/jctools/jmh/throughput/MpqThroughputBackoffNone$PollCounters;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="186" end="198" startBytecode="0" endBytecode="188" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="191" end="191" startBytecode="51" endBytecode="51" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
+  </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone">
       <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" start="41" end="241" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
@@ -1810,6 +2107,33 @@
     <Field classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" name="TEST_ELEMENT" signature="Ljava/lang/Integer;" isStatic="true">
       <SourceLine classname="org.jctools.jmh.throughput.MpqThroughputBackoffNone" sourcefile="MpqThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/MpqThroughputBackoffNone.java"/>
     </Field>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.throughput.QueueThroughputBackoffNone">
+      <SourceLine classname="org.jctools.jmh.throughput.QueueThroughputBackoffNone" start="28" end="129" sourcefile="QueueThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/QueueThroughputBackoffNone.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.throughput.QueueThroughputBackoffNone" name="offer" signature="(Lorg/jctools/jmh/throughput/QueueThroughputBackoffNone$OfferCounters;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.throughput.QueueThroughputBackoffNone" start="92" end="101" startBytecode="0" endBytecode="144" sourcefile="QueueThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/QueueThroughputBackoffNone.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.throughput.QueueThroughputBackoffNone" start="94" end="94" startBytecode="30" endBytecode="30" sourcefile="QueueThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/QueueThroughputBackoffNone.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.throughput.QueueThroughputBackoffNone">
+      <SourceLine classname="org.jctools.jmh.throughput.QueueThroughputBackoffNone" start="28" end="129" sourcefile="QueueThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/QueueThroughputBackoffNone.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.throughput.QueueThroughputBackoffNone" name="poll" signature="(Lorg/jctools/jmh/throughput/QueueThroughputBackoffNone$PollCounters;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.throughput.QueueThroughputBackoffNone" start="109" end="121" startBytecode="0" endBytecode="188" sourcefile="QueueThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/QueueThroughputBackoffNone.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.throughput.QueueThroughputBackoffNone" start="112" end="112" startBytecode="31" endBytecode="31" sourcefile="QueueThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/QueueThroughputBackoffNone.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.throughput.QueueThroughputBackoffNone">
+      <SourceLine classname="org.jctools.jmh.throughput.QueueThroughputBackoffNone" start="28" end="129" sourcefile="QueueThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/QueueThroughputBackoffNone.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.throughput.QueueThroughputBackoffNone" name="poll" signature="(Lorg/jctools/jmh/throughput/QueueThroughputBackoffNone$PollCounters;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.throughput.QueueThroughputBackoffNone" start="109" end="121" startBytecode="0" endBytecode="188" sourcefile="QueueThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/QueueThroughputBackoffNone.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.throughput.QueueThroughputBackoffNone" start="114" end="114" startBytecode="51" endBytecode="51" sourcefile="QueueThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/QueueThroughputBackoffNone.java"/>
   </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.jctools.jmh.throughput.QueueThroughputBackoffNone">
@@ -1844,6 +2168,24 @@
     </Method>
     <SourceLine classname="org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone" start="144" end="144" startBytecode="48" endBytecode="48" sourcefile="ChannelThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/channels/ChannelThroughputBackoffNone.java"/>
   </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone">
+      <SourceLine classname="org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone" start="52" end="180" sourcefile="ChannelThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/channels/ChannelThroughputBackoffNone.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone" name="offer" signature="(Lorg/jctools/jmh/throughput/channels/ChannelThroughputBackoffNone$OfferCounters;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone" start="138" end="150" startBytecode="0" endBytecode="220" sourcefile="ChannelThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/channels/ChannelThroughputBackoffNone.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone" start="140" end="140" startBytecode="24" endBytecode="24" sourcefile="ChannelThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/channels/ChannelThroughputBackoffNone.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone">
+      <SourceLine classname="org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone" start="52" end="180" sourcefile="ChannelThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/channels/ChannelThroughputBackoffNone.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone" name="poll" signature="(Lorg/jctools/jmh/throughput/channels/ChannelThroughputBackoffNone$PollCounters;Lorg/jctools/jmh/throughput/channels/ChannelThroughputBackoffNone$ConsumerMarker;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone" start="155" end="163" startBytecode="0" endBytecode="142" sourcefile="ChannelThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/channels/ChannelThroughputBackoffNone.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone" start="156" end="156" startBytecode="22" endBytecode="22" sourcefile="ChannelThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/channels/ChannelThroughputBackoffNone.java"/>
+  </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone">
       <SourceLine classname="org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone" start="52" end="180" sourcefile="ChannelThroughputBackoffNone.java" sourcepath="org/jctools/jmh/throughput/channels/ChannelThroughputBackoffNone.java"/>
@@ -1877,6 +2219,33 @@
       <SourceLine classname="org.jctools.jmh.throughput.channels.SpscChannelThroughputTest" start="74" end="83" startBytecode="0" endBytecode="182" sourcefile="SpscChannelThroughputTest.java" sourcepath="org/jctools/jmh/throughput/channels/SpscChannelThroughputTest.java"/>
     </Method>
     <SourceLine classname="org.jctools.jmh.throughput.channels.SpscChannelThroughputTest" start="82" end="82" startBytecode="43" endBytecode="43" sourcefile="SpscChannelThroughputTest.java" sourcepath="org/jctools/jmh/throughput/channels/SpscChannelThroughputTest.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.throughput.channels.SpscChannelThroughputTest">
+      <SourceLine classname="org.jctools.jmh.throughput.channels.SpscChannelThroughputTest" start="42" end="117" sourcefile="SpscChannelThroughputTest.java" sourcepath="org/jctools/jmh/throughput/channels/SpscChannelThroughputTest.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.throughput.channels.SpscChannelThroughputTest" name="read" signature="(Lorg/openjdk/jmh/infra/Control;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.throughput.channels.SpscChannelThroughputTest" start="114" end="117" startBytecode="0" endBytecode="96" sourcefile="SpscChannelThroughputTest.java" sourcepath="org/jctools/jmh/throughput/channels/SpscChannelThroughputTest.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.throughput.channels.SpscChannelThroughputTest" start="115" end="115" startBytecode="23" endBytecode="23" sourcefile="SpscChannelThroughputTest.java" sourcepath="org/jctools/jmh/throughput/channels/SpscChannelThroughputTest.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.throughput.channels.SpscChannelThroughputTest">
+      <SourceLine classname="org.jctools.jmh.throughput.channels.SpscChannelThroughputTest" start="42" end="117" sourcefile="SpscChannelThroughputTest.java" sourcepath="org/jctools/jmh/throughput/channels/SpscChannelThroughputTest.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.throughput.channels.SpscChannelThroughputTest" name="readBusy" signature="(Lorg/openjdk/jmh/infra/Control;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.throughput.channels.SpscChannelThroughputTest" start="89" end="92" startBytecode="0" endBytecode="88" sourcefile="SpscChannelThroughputTest.java" sourcepath="org/jctools/jmh/throughput/channels/SpscChannelThroughputTest.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.throughput.channels.SpscChannelThroughputTest" start="89" end="89" startBytecode="19" endBytecode="19" sourcefile="SpscChannelThroughputTest.java" sourcepath="org/jctools/jmh/throughput/channels/SpscChannelThroughputTest.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.jctools.jmh.throughput.channels.SpscChannelThroughputTest">
+      <SourceLine classname="org.jctools.jmh.throughput.channels.SpscChannelThroughputTest" start="42" end="117" sourcefile="SpscChannelThroughputTest.java" sourcepath="org/jctools/jmh/throughput/channels/SpscChannelThroughputTest.java"/>
+    </Class>
+    <Method classname="org.jctools.jmh.throughput.channels.SpscChannelThroughputTest" name="write" signature="(Lorg/openjdk/jmh/infra/Control;)V" isStatic="false">
+      <SourceLine classname="org.jctools.jmh.throughput.channels.SpscChannelThroughputTest" start="98" end="108" startBytecode="0" endBytecode="194" sourcefile="SpscChannelThroughputTest.java" sourcepath="org/jctools/jmh/throughput/channels/SpscChannelThroughputTest.java"/>
+    </Method>
+    <SourceLine classname="org.jctools.jmh.throughput.channels.SpscChannelThroughputTest" start="103" end="103" startBytecode="26" endBytecode="26" sourcefile="SpscChannelThroughputTest.java" sourcepath="org/jctools/jmh/throughput/channels/SpscChannelThroughputTest.java"/>
   </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.jctools.jmh.throughput.channels.generated.ChannelThroughputBackoffNone_ConsumerMarker_jmhType_B2">
@@ -3042,7 +3411,7 @@
     <MissingClass>com.sun.source.util.Trees</MissingClass>
     <MissingClass>org.hamcrest.Matchers</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Mon, 30 Oct 2017 23:11:15 +0100" total_classes="5226" referenced_classes="5801" total_bugs="365" total_size="258419" num_packages="196" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="264.41" clock_seconds="91.43" peak_mbytes="1558.88" alloc_mbytes="3641.00" gc_seconds="3.50" priority_2="365">
+  <FindBugsSummary timestamp="Thu, 9 Nov 2017 22:04:34 +0100" total_classes="5226" referenced_classes="5801" total_bugs="406" total_size="258419" num_packages="196" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="241.74" clock_seconds="80.88" peak_mbytes="1615.44" alloc_mbytes="3641.00" gc_seconds="2.82" priority_2="406">
     <PackageStats package="com.google.common.annotations" total_bugs="0" total_types="4" total_size="7">
       <ClassStats class="com.google.common.annotations.Beta" sourceFile="Beta.java" interface="true" size="1" bugs="0"/>
       <ClassStats class="com.google.common.annotations.GwtCompatible" sourceFile="GwtCompatible.java" interface="true" size="3" bugs="0"/>
@@ -6752,8 +7121,8 @@
       <ClassStats class="org.jctools.channels.proxy.ProxyCreationTest$2" sourceFile="ProxyCreationTest.java" interface="false" size="32" bugs="0"/>
       <ClassStats class="org.jctools.channels.proxy.ProxyCreationTest$ThrowExceptionOnFullQueue" sourceFile="ProxyCreationTest.java" interface="false" size="7" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.jctools.channels.spsc" total_bugs="4" total_types="21" total_size="512" priority_2="4">
-      <ClassStats class="org.jctools.channels.spsc.QueueThroughputBaseline" sourceFile="QueueThroughputBaseline.java" interface="false" size="42" bugs="0"/>
+    <PackageStats package="org.jctools.channels.spsc" total_bugs="6" total_types="21" total_size="512" priority_2="6">
+      <ClassStats class="org.jctools.channels.spsc.QueueThroughputBaseline" sourceFile="QueueThroughputBaseline.java" interface="false" size="42" bugs="2" priority_2="2"/>
       <ClassStats class="org.jctools.channels.spsc.QueueThroughputBaseline$ConsumerMarker" sourceFile="QueueThroughputBaseline.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="org.jctools.channels.spsc.QueueThroughputBaseline$OfferCounters" sourceFile="QueueThroughputBaseline.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.jctools.channels.spsc.QueueThroughputBaseline$PollCounters" sourceFile="QueueThroughputBaseline.java" interface="false" size="8" bugs="0"/>
@@ -6842,12 +7211,12 @@
       <ClassStats class="org.jctools.handrolled.throughput.spsc.QueuePerfTest" sourceFile="QueuePerfTest.java" interface="false" size="44" bugs="0"/>
       <ClassStats class="org.jctools.handrolled.throughput.spsc.QueuePerfTest$Producer" sourceFile="QueuePerfTest.java" interface="false" size="22" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.jctools.jmh.baseline" total_bugs="18" total_types="5" total_size="97" priority_2="18">
-      <ClassStats class="org.jctools.jmh.baseline.BaselinePingPong" sourceFile="BaselinePingPong.java" interface="false" size="11" bugs="1" priority_2="1"/>
-      <ClassStats class="org.jctools.jmh.baseline.ConcQOfferPoll" sourceFile="ConcQOfferPoll.java" interface="false" size="20" bugs="7" priority_2="7"/>
-      <ClassStats class="org.jctools.jmh.baseline.QueueOfferPoll" sourceFile="QueueOfferPoll.java" interface="false" size="21" bugs="2" priority_2="2"/>
-      <ClassStats class="org.jctools.jmh.baseline.SingleThreadedOffer" sourceFile="SingleThreadedOffer.java" interface="false" size="22" bugs="4" priority_2="4"/>
-      <ClassStats class="org.jctools.jmh.baseline.SingleThreadedPoll" sourceFile="SingleThreadedPoll.java" interface="false" size="23" bugs="4" priority_2="4"/>
+    <PackageStats package="org.jctools.jmh.baseline" total_bugs="26" total_types="5" total_size="97" priority_2="26">
+      <ClassStats class="org.jctools.jmh.baseline.BaselinePingPong" sourceFile="BaselinePingPong.java" interface="false" size="11" bugs="3" priority_2="3"/>
+      <ClassStats class="org.jctools.jmh.baseline.ConcQOfferPoll" sourceFile="ConcQOfferPoll.java" interface="false" size="20" bugs="9" priority_2="9"/>
+      <ClassStats class="org.jctools.jmh.baseline.QueueOfferPoll" sourceFile="QueueOfferPoll.java" interface="false" size="21" bugs="4" priority_2="4"/>
+      <ClassStats class="org.jctools.jmh.baseline.SingleThreadedOffer" sourceFile="SingleThreadedOffer.java" interface="false" size="22" bugs="5" priority_2="5"/>
+      <ClassStats class="org.jctools.jmh.baseline.SingleThreadedPoll" sourceFile="SingleThreadedPoll.java" interface="false" size="23" bugs="5" priority_2="5"/>
     </PackageStats>
     <PackageStats package="org.jctools.jmh.baseline.generated" total_bugs="30" total_types="25" total_size="5355" priority_2="30">
       <ClassStats class="org.jctools.jmh.baseline.generated.BaselinePingPong_jmhType" sourceFile="BaselinePingPong_jmhType.java" interface="false" size="3" bugs="0"/>
@@ -6876,8 +7245,8 @@
       <ClassStats class="org.jctools.jmh.baseline.generated.SingleThreadedPoll_jmhType_B3" sourceFile="SingleThreadedPoll_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="org.jctools.jmh.baseline.generated.SingleThreadedPoll_poll_jmhTest" sourceFile="SingleThreadedPoll_poll_jmhTest.java" interface="false" size="497" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.jctools.jmh.collections" total_bugs="0" total_types="2" total_size="43">
-      <ClassStats class="org.jctools.jmh.collections.SetOps" sourceFile="SetOps.java" interface="false" size="33" bugs="0"/>
+    <PackageStats package="org.jctools.jmh.collections" total_bugs="1" total_types="2" total_size="43" priority_2="1">
+      <ClassStats class="org.jctools.jmh.collections.SetOps" sourceFile="SetOps.java" interface="false" size="33" bugs="1" priority_2="1"/>
       <ClassStats class="org.jctools.jmh.collections.SetOps$Key" sourceFile="SetOps.java" interface="false" size="10" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.jctools.jmh.collections.generated" total_bugs="6" total_types="8" total_size="2495" priority_2="6">
@@ -6908,8 +7277,8 @@
       <ClassStats class="org.jctools.jmh.counters.generated.CountersBenchmark_jmhType_B3" sourceFile="CountersBenchmark_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="org.jctools.jmh.counters.generated.CountersBenchmark_rw_jmhTest" sourceFile="CountersBenchmark_rw_jmhTest.java" interface="false" size="810" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.jctools.jmh.latency" total_bugs="3" total_types="12" total_size="213" priority_2="3">
-      <ClassStats class="org.jctools.jmh.latency.MpqBurstCost" sourceFile="MpqBurstCost.java" interface="false" size="43" bugs="1" priority_2="1"/>
+    <PackageStats package="org.jctools.jmh.latency" total_bugs="7" total_types="12" total_size="213" priority_2="7">
+      <ClassStats class="org.jctools.jmh.latency.MpqBurstCost" sourceFile="MpqBurstCost.java" interface="false" size="43" bugs="5" priority_2="5"/>
       <ClassStats class="org.jctools.jmh.latency.MpqBurstCost$AbstractEvent" sourceFile="MpqBurstCost.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.jctools.jmh.latency.MpqBurstCost$Consumer" sourceFile="MpqBurstCost.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="org.jctools.jmh.latency.MpqBurstCost$Go" sourceFile="MpqBurstCost.java" interface="false" size="5" bugs="0"/>
@@ -6942,8 +7311,8 @@
       <ClassStats class="org.jctools.jmh.latency.generated.QueueBurstCost_jmhType_B2" sourceFile="QueueBurstCost_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
       <ClassStats class="org.jctools.jmh.latency.generated.QueueBurstCost_jmhType_B3" sourceFile="QueueBurstCost_jmhType_B3.java" interface="false" size="259" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.jctools.jmh.latency.spsc" total_bugs="22" total_types="13" total_size="228" priority_2="22">
-      <ClassStats class="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost" sourceFile="MpqRelaxedBurstCost.java" interface="false" size="43" bugs="2" priority_2="2"/>
+    <PackageStats package="org.jctools.jmh.latency.spsc" total_bugs="26" total_types="13" total_size="228" priority_2="26">
+      <ClassStats class="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost" sourceFile="MpqRelaxedBurstCost.java" interface="false" size="43" bugs="6" priority_2="6"/>
       <ClassStats class="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost$AbstractEvent" sourceFile="MpqRelaxedBurstCost.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost$Consumer" sourceFile="MpqRelaxedBurstCost.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="org.jctools.jmh.latency.spsc.MpqRelaxedBurstCost$Go" sourceFile="MpqRelaxedBurstCost.java" interface="false" size="5" bugs="0"/>
@@ -6990,8 +7359,8 @@
       <ClassStats class="org.jctools.jmh.latency.spsc.generated.RingCqBurstRoundTripWithGroups_jmhType_B3" sourceFile="RingCqBurstRoundTripWithGroups_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="org.jctools.jmh.latency.spsc.generated.RingCqBurstRoundTripWithGroups_ring_jmhTest" sourceFile="RingCqBurstRoundTripWithGroups_ring_jmhTest.java" interface="false" size="844" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.jctools.jmh.throughput" total_bugs="9" total_types="17" total_size="346" priority_2="9">
-      <ClassStats class="org.jctools.jmh.throughput.IntrusiveQueueThroughputBackoffNone" sourceFile="IntrusiveQueueThroughputBackoffNone.java" interface="false" size="36" bugs="2" priority_2="2"/>
+    <PackageStats package="org.jctools.jmh.throughput" total_bugs="26" total_types="17" total_size="346" priority_2="26">
+      <ClassStats class="org.jctools.jmh.throughput.IntrusiveQueueThroughputBackoffNone" sourceFile="IntrusiveQueueThroughputBackoffNone.java" interface="false" size="36" bugs="4" priority_2="4"/>
       <ClassStats class="org.jctools.jmh.throughput.IntrusiveQueueThroughputBackoffNone$OfferCounters" sourceFile="IntrusiveQueueThroughputBackoffNone.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.jctools.jmh.throughput.IntrusiveQueueThroughputBackoffNone$PollCounters" sourceFile="IntrusiveQueueThroughputBackoffNone.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone" sourceFile="MpqDrainFillThroughputBackoffNone.java" interface="false" size="35" bugs="1" priority_2="1"/>
@@ -6999,18 +7368,18 @@
       <ClassStats class="org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone$2" sourceFile="MpqDrainFillThroughputBackoffNone.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone$OfferCounters" sourceFile="MpqDrainFillThroughputBackoffNone.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.jctools.jmh.throughput.MpqDrainFillThroughputBackoffNone$PollCounters" sourceFile="MpqDrainFillThroughputBackoffNone.java" interface="false" size="8" bugs="0"/>
-      <ClassStats class="org.jctools.jmh.throughput.MpqThroughputBackoffNone" sourceFile="MpqThroughputBackoffNone.java" interface="false" size="117" bugs="3" priority_2="3"/>
+      <ClassStats class="org.jctools.jmh.throughput.MpqThroughputBackoffNone" sourceFile="MpqThroughputBackoffNone.java" interface="false" size="117" bugs="15" priority_2="15"/>
       <ClassStats class="org.jctools.jmh.throughput.MpqThroughputBackoffNone$OfferCounters" sourceFile="MpqThroughputBackoffNone.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.jctools.jmh.throughput.MpqThroughputBackoffNone$PollCounters" sourceFile="MpqThroughputBackoffNone.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.jctools.jmh.throughput.QueueThroughputBackoffConsume" sourceFile="QueueThroughputBackoffConsume.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.jctools.jmh.throughput.QueueThroughputBackoffNano" sourceFile="QueueThroughputBackoffNano.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="org.jctools.jmh.throughput.QueueThroughputBackoffNone" sourceFile="QueueThroughputBackoffNone.java" interface="false" size="55" bugs="3" priority_2="3"/>
+      <ClassStats class="org.jctools.jmh.throughput.QueueThroughputBackoffNone" sourceFile="QueueThroughputBackoffNone.java" interface="false" size="55" bugs="6" priority_2="6"/>
       <ClassStats class="org.jctools.jmh.throughput.QueueThroughputBackoffNone$OfferCounters" sourceFile="QueueThroughputBackoffNone.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.jctools.jmh.throughput.QueueThroughputBackoffNone$PollCounters" sourceFile="QueueThroughputBackoffNone.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.jctools.jmh.throughput.QueueThroughputBackoffYield" sourceFile="QueueThroughputBackoffYield.java" interface="false" size="6" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.jctools.jmh.throughput.channels" total_bugs="5" total_types="10" total_size="162" priority_2="5">
-      <ClassStats class="org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone" sourceFile="ChannelThroughputBackoffNone.java" interface="false" size="68" bugs="3" priority_2="3"/>
+    <PackageStats package="org.jctools.jmh.throughput.channels" total_bugs="10" total_types="10" total_size="162" priority_2="10">
+      <ClassStats class="org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone" sourceFile="ChannelThroughputBackoffNone.java" interface="false" size="68" bugs="5" priority_2="5"/>
       <ClassStats class="org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone$1" sourceFile="ChannelThroughputBackoffNone.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone$2" sourceFile="ChannelThroughputBackoffNone.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone$ConsumerMarker" sourceFile="ChannelThroughputBackoffNone.java" interface="false" size="5" bugs="0"/>
@@ -7018,7 +7387,7 @@
       <ClassStats class="org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone$PollCounters" sourceFile="ChannelThroughputBackoffNone.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="org.jctools.jmh.throughput.channels.ChannelThroughputBackoffNone$Type" sourceFile="ChannelThroughputBackoffNone.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="org.jctools.jmh.throughput.channels.Ping" sourceFile="Ping.java" interface="true" size="3" bugs="0"/>
-      <ClassStats class="org.jctools.jmh.throughput.channels.SpscChannelThroughputTest" sourceFile="SpscChannelThroughputTest.java" interface="false" size="44" bugs="2" priority_2="2"/>
+      <ClassStats class="org.jctools.jmh.throughput.channels.SpscChannelThroughputTest" sourceFile="SpscChannelThroughputTest.java" interface="false" size="44" bugs="5" priority_2="5"/>
       <ClassStats class="org.jctools.jmh.throughput.channels.SpscChannelThroughputTest$1" sourceFile="SpscChannelThroughputTest.java" interface="false" size="9" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.jctools.jmh.throughput.channels.generated" total_bugs="30" total_types="23" total_size="5417" priority_2="30">
@@ -8662,48 +9031,48 @@
       <ClassStats class="sun.misc.Unsafe" sourceFile="Unsafe.java" interface="false" size="114" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="6196" invocations="33889" avgMicrosecondsPerInvocation="182" maxMicrosecondsPerInvocation="67557" standardDeviationMicrosecondsPerInvocation="855"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="5978" invocations="35060" avgMicrosecondsPerInvocation="170" maxMicrosecondsPerInvocation="74243" standardDeviationMicrosecondsPerInvocation="1093"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="5722" invocations="32668" avgMicrosecondsPerInvocation="175" maxMicrosecondsPerInvocation="95933" standardDeviationMicrosecondsPerInvocation="1350"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="5676" invocations="31398" avgMicrosecondsPerInvocation="180" maxMicrosecondsPerInvocation="47843" standardDeviationMicrosecondsPerInvocation="724"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="4565" invocations="34655" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="82498" standardDeviationMicrosecondsPerInvocation="615"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="3202" invocations="30013" avgMicrosecondsPerInvocation="106" maxMicrosecondsPerInvocation="56865" standardDeviationMicrosecondsPerInvocation="482"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="2465" invocations="39425" avgMicrosecondsPerInvocation="62" maxMicrosecondsPerInvocation="62702" standardDeviationMicrosecondsPerInvocation="431"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="2246" invocations="33893" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="63236" standardDeviationMicrosecondsPerInvocation="375"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="2211" invocations="5801" avgMicrosecondsPerInvocation="381" maxMicrosecondsPerInvocation="608785" standardDeviationMicrosecondsPerInvocation="8024"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="2108" invocations="15453" avgMicrosecondsPerInvocation="136" maxMicrosecondsPerInvocation="5299" standardDeviationMicrosecondsPerInvocation="215"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1582" invocations="5801" avgMicrosecondsPerInvocation="272" maxMicrosecondsPerInvocation="19765" standardDeviationMicrosecondsPerInvocation="843"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="1435" invocations="33889" avgMicrosecondsPerInvocation="42" maxMicrosecondsPerInvocation="97846" standardDeviationMicrosecondsPerInvocation="643"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1288" invocations="7407" avgMicrosecondsPerInvocation="174" maxMicrosecondsPerInvocation="50020" standardDeviationMicrosecondsPerInvocation="931"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="1175" invocations="5226" avgMicrosecondsPerInvocation="224" maxMicrosecondsPerInvocation="692490" standardDeviationMicrosecondsPerInvocation="9586"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="1133" invocations="5226" avgMicrosecondsPerInvocation="216" maxMicrosecondsPerInvocation="61740" standardDeviationMicrosecondsPerInvocation="1463"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="1104" invocations="5226" avgMicrosecondsPerInvocation="211" maxMicrosecondsPerInvocation="12749" standardDeviationMicrosecondsPerInvocation="722"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="1092" invocations="5226" avgMicrosecondsPerInvocation="209" maxMicrosecondsPerInvocation="22964" standardDeviationMicrosecondsPerInvocation="623"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="1082" invocations="1955925" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="3212" standardDeviationMicrosecondsPerInvocation="4"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LazyInit" totalMilliseconds="1079" invocations="5226" avgMicrosecondsPerInvocation="206" maxMicrosecondsPerInvocation="168151" standardDeviationMicrosecondsPerInvocation="3547"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="726" invocations="31398" avgMicrosecondsPerInvocation="23" maxMicrosecondsPerInvocation="80632" standardDeviationMicrosecondsPerInvocation="458"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="722" invocations="30522" avgMicrosecondsPerInvocation="23" maxMicrosecondsPerInvocation="9214" standardDeviationMicrosecondsPerInvocation="110"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="671" invocations="35944" avgMicrosecondsPerInvocation="18" maxMicrosecondsPerInvocation="30501" standardDeviationMicrosecondsPerInvocation="171"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="658" invocations="15424" avgMicrosecondsPerInvocation="42" maxMicrosecondsPerInvocation="67060" standardDeviationMicrosecondsPerInvocation="556"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="619" invocations="5226" avgMicrosecondsPerInvocation="118" maxMicrosecondsPerInvocation="5948" standardDeviationMicrosecondsPerInvocation="309"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="615" invocations="5226" avgMicrosecondsPerInvocation="117" maxMicrosecondsPerInvocation="64886" standardDeviationMicrosecondsPerInvocation="941"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="589" invocations="5226" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="87548" standardDeviationMicrosecondsPerInvocation="1551"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="576" invocations="5226" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="6959" standardDeviationMicrosecondsPerInvocation="327"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="573" invocations="5226" avgMicrosecondsPerInvocation="109" maxMicrosecondsPerInvocation="4207" standardDeviationMicrosecondsPerInvocation="309"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="557" invocations="5226" avgMicrosecondsPerInvocation="106" maxMicrosecondsPerInvocation="5565" standardDeviationMicrosecondsPerInvocation="269"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="552" invocations="5226" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="6458" standardDeviationMicrosecondsPerInvocation="267"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="537" invocations="5801" avgMicrosecondsPerInvocation="92" maxMicrosecondsPerInvocation="7173" standardDeviationMicrosecondsPerInvocation="279"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="525" invocations="5226" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="4112" standardDeviationMicrosecondsPerInvocation="206"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="522" invocations="5226" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="4590" standardDeviationMicrosecondsPerInvocation="304"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="515" invocations="5226" avgMicrosecondsPerInvocation="98" maxMicrosecondsPerInvocation="8612" standardDeviationMicrosecondsPerInvocation="313"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="513" invocations="5226" avgMicrosecondsPerInvocation="98" maxMicrosecondsPerInvocation="11671" standardDeviationMicrosecondsPerInvocation="310"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNonShortCircuit" totalMilliseconds="512" invocations="5226" avgMicrosecondsPerInvocation="98" maxMicrosecondsPerInvocation="69433" standardDeviationMicrosecondsPerInvocation="996"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="503" invocations="5226" avgMicrosecondsPerInvocation="96" maxMicrosecondsPerInvocation="6032" standardDeviationMicrosecondsPerInvocation="281"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="495" invocations="5226" avgMicrosecondsPerInvocation="94" maxMicrosecondsPerInvocation="4049" standardDeviationMicrosecondsPerInvocation="253"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="494" invocations="5226" avgMicrosecondsPerInvocation="94" maxMicrosecondsPerInvocation="5903" standardDeviationMicrosecondsPerInvocation="279"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="484" invocations="5801" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="5612" standardDeviationMicrosecondsPerInvocation="278"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="483" invocations="5226" avgMicrosecondsPerInvocation="92" maxMicrosecondsPerInvocation="4042" standardDeviationMicrosecondsPerInvocation="269"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="467" invocations="35944" avgMicrosecondsPerInvocation="13" maxMicrosecondsPerInvocation="9926" standardDeviationMicrosecondsPerInvocation="94"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="5857" invocations="35060" avgMicrosecondsPerInvocation="167" maxMicrosecondsPerInvocation="596139" standardDeviationMicrosecondsPerInvocation="3318"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="5434" invocations="33889" avgMicrosecondsPerInvocation="160" maxMicrosecondsPerInvocation="53225" standardDeviationMicrosecondsPerInvocation="691"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="5341" invocations="31398" avgMicrosecondsPerInvocation="170" maxMicrosecondsPerInvocation="74310" standardDeviationMicrosecondsPerInvocation="892"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="4876" invocations="32668" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="90531" standardDeviationMicrosecondsPerInvocation="947"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="4146" invocations="34655" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="41694" standardDeviationMicrosecondsPerInvocation="499"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="3030" invocations="30013" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="63423" standardDeviationMicrosecondsPerInvocation="611"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="2034" invocations="33893" avgMicrosecondsPerInvocation="60" maxMicrosecondsPerInvocation="10979" standardDeviationMicrosecondsPerInvocation="159"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1901" invocations="39425" avgMicrosecondsPerInvocation="48" maxMicrosecondsPerInvocation="12704" standardDeviationMicrosecondsPerInvocation="196"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1848" invocations="15453" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="38580" standardDeviationMicrosecondsPerInvocation="407"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1344" invocations="5801" avgMicrosecondsPerInvocation="231" maxMicrosecondsPerInvocation="97844" standardDeviationMicrosecondsPerInvocation="1384"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1300" invocations="5801" avgMicrosecondsPerInvocation="224" maxMicrosecondsPerInvocation="71840" standardDeviationMicrosecondsPerInvocation="1115"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="1191" invocations="33889" avgMicrosecondsPerInvocation="35" maxMicrosecondsPerInvocation="10006" standardDeviationMicrosecondsPerInvocation="170"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LazyInit" totalMilliseconds="1153" invocations="5226" avgMicrosecondsPerInvocation="220" maxMicrosecondsPerInvocation="88066" standardDeviationMicrosecondsPerInvocation="3188"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1087" invocations="7407" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="63104" standardDeviationMicrosecondsPerInvocation="944"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="1006" invocations="5226" avgMicrosecondsPerInvocation="192" maxMicrosecondsPerInvocation="592002" standardDeviationMicrosecondsPerInvocation="8191"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="985" invocations="1955925" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="9653" standardDeviationMicrosecondsPerInvocation="8"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="979" invocations="5226" avgMicrosecondsPerInvocation="187" maxMicrosecondsPerInvocation="40249" standardDeviationMicrosecondsPerInvocation="736"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="977" invocations="5226" avgMicrosecondsPerInvocation="187" maxMicrosecondsPerInvocation="13781" standardDeviationMicrosecondsPerInvocation="658"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="901" invocations="5226" avgMicrosecondsPerInvocation="172" maxMicrosecondsPerInvocation="19463" standardDeviationMicrosecondsPerInvocation="569"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="678" invocations="35944" avgMicrosecondsPerInvocation="18" maxMicrosecondsPerInvocation="35339" standardDeviationMicrosecondsPerInvocation="209"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="660" invocations="31398" avgMicrosecondsPerInvocation="21" maxMicrosecondsPerInvocation="57109" standardDeviationMicrosecondsPerInvocation="335"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="641" invocations="5226" avgMicrosecondsPerInvocation="122" maxMicrosecondsPerInvocation="24383" standardDeviationMicrosecondsPerInvocation="526"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="628" invocations="30522" avgMicrosecondsPerInvocation="20" maxMicrosecondsPerInvocation="3622" standardDeviationMicrosecondsPerInvocation="77"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="535" invocations="15424" avgMicrosecondsPerInvocation="34" maxMicrosecondsPerInvocation="11298" standardDeviationMicrosecondsPerInvocation="119"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="528" invocations="5226" avgMicrosecondsPerInvocation="101" maxMicrosecondsPerInvocation="38849" standardDeviationMicrosecondsPerInvocation="1096"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="517" invocations="5226" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="57446" standardDeviationMicrosecondsPerInvocation="834"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="509" invocations="5226" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="6761" standardDeviationMicrosecondsPerInvocation="293"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="506" invocations="5226" avgMicrosecondsPerInvocation="96" maxMicrosecondsPerInvocation="9832" standardDeviationMicrosecondsPerInvocation="264"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="503" invocations="5226" avgMicrosecondsPerInvocation="96" maxMicrosecondsPerInvocation="5074" standardDeviationMicrosecondsPerInvocation="276"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="497" invocations="5226" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="9894" standardDeviationMicrosecondsPerInvocation="267"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="496" invocations="5226" avgMicrosecondsPerInvocation="94" maxMicrosecondsPerInvocation="92219" standardDeviationMicrosecondsPerInvocation="1307"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="481" invocations="5226" avgMicrosecondsPerInvocation="92" maxMicrosecondsPerInvocation="3391" standardDeviationMicrosecondsPerInvocation="222"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="479" invocations="5226" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="4324" standardDeviationMicrosecondsPerInvocation="248"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="471" invocations="5226" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="5869" standardDeviationMicrosecondsPerInvocation="274"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="456" invocations="5226" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="8122" standardDeviationMicrosecondsPerInvocation="279"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="455" invocations="5226" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="4807" standardDeviationMicrosecondsPerInvocation="238"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="441" invocations="5226" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="8633" standardDeviationMicrosecondsPerInvocation="247"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="436" invocations="5226" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="3927" standardDeviationMicrosecondsPerInvocation="230"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="433" invocations="5226" avgMicrosecondsPerInvocation="82" maxMicrosecondsPerInvocation="13343" standardDeviationMicrosecondsPerInvocation="304"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="423" invocations="5226" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="4620" standardDeviationMicrosecondsPerInvocation="233"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="418" invocations="35944" avgMicrosecondsPerInvocation="11" maxMicrosecondsPerInvocation="8561" standardDeviationMicrosecondsPerInvocation="97"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="416" invocations="5226" avgMicrosecondsPerInvocation="79" maxMicrosecondsPerInvocation="31305" standardDeviationMicrosecondsPerInvocation="479"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

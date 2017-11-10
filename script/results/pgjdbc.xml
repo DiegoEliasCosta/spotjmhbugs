@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1509406391000" analysisTimestamp="1509406393543" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1510124983000" analysisTimestamp="1510124985840" release="">
   <Project projectName="">
     <Jar>tmp/pgjdbc</Jar>
   </Project>
+  <BugInstance type="JMH_BENCHMARKMODE_SINGLESHOT" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.postgresql.benchmark.connection.FinalizeConnection">
+      <SourceLine classname="org.postgresql.benchmark.connection.FinalizeConnection" start="57" end="90" sourcefile="FinalizeConnection.java" sourcepath="org/postgresql/benchmark/connection/FinalizeConnection.java"/>
+    </Class>
+  </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.postgresql.benchmark.connection.generated.FinalizeConnection_jmhType_B2">
       <SourceLine classname="org.postgresql.benchmark.connection.generated.FinalizeConnection_jmhType_B2" start="3" end="17" sourcefile="FinalizeConnection_jmhType_B2.java" sourcepath="org/postgresql/benchmark/connection/generated/FinalizeConnection_jmhType_B2.java"/>
@@ -451,6 +456,132 @@
     </Method>
     <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="186" end="186" startBytecode="182" endBytecode="182" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
   </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.postgresql.benchmark.statement.InsertBatch">
+      <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="49" end="237" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+    </Class>
+    <Method classname="org.postgresql.benchmark.statement.InsertBatch" name="insertBatch" signature="()[I" isStatic="false">
+      <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="117" end="139" startBytecode="0" endBytecode="354" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+    </Method>
+    <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="120" end="120" startBytecode="83" endBytecode="83" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.postgresql.benchmark.statement.InsertBatch">
+      <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="49" end="237" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+    </Class>
+    <Method classname="org.postgresql.benchmark.statement.InsertBatch" name="insertBatch" signature="()[I" isStatic="false">
+      <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="117" end="139" startBytecode="0" endBytecode="354" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+    </Method>
+    <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="128" end="128" startBytecode="95" endBytecode="95" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.postgresql.benchmark.statement.InsertBatch">
+      <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="49" end="237" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+    </Class>
+    <Method classname="org.postgresql.benchmark.statement.InsertBatch" name="insertBatch" signature="()[I" isStatic="false">
+      <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="117" end="139" startBytecode="0" endBytecode="354" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+    </Method>
+    <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="132" end="132" startBytecode="161" endBytecode="161" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.postgresql.benchmark.statement.InsertBatch">
+      <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="49" end="237" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+    </Class>
+    <Method classname="org.postgresql.benchmark.statement.InsertBatch" name="insertCopy" signature="(Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="196" end="223" startBytecode="0" endBytecode="494" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+    </Method>
+    <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="201" end="201" startBytecode="179" endBytecode="179" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.postgresql.benchmark.statement.InsertBatch">
+      <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="49" end="237" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+    </Class>
+    <Method classname="org.postgresql.benchmark.statement.InsertBatch" name="insertCopy" signature="(Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="196" end="223" startBytecode="0" endBytecode="494" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+    </Method>
+    <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="206" end="206" startBytecode="100" endBytecode="100" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.postgresql.benchmark.statement.InsertBatch">
+      <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="49" end="237" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+    </Class>
+    <Method classname="org.postgresql.benchmark.statement.InsertBatch" name="insertCopy" signature="(Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="196" end="223" startBytecode="0" endBytecode="494" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+    </Method>
+    <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="210" end="210" startBytecode="139" endBytecode="139" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.postgresql.benchmark.statement.InsertBatch">
+      <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="49" end="237" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+    </Class>
+    <Method classname="org.postgresql.benchmark.statement.InsertBatch" name="insertCopy" signature="(Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="196" end="223" startBytecode="0" endBytecode="494" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+    </Method>
+    <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="222" end="222" startBytecode="217" endBytecode="217" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.postgresql.benchmark.statement.InsertBatch">
+      <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="49" end="237" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+    </Class>
+    <Method classname="org.postgresql.benchmark.statement.InsertBatch" name="insertExecute" signature="(Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="149" end="155" startBytecode="0" endBytecode="168" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+    </Method>
+    <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="149" end="149" startBytecode="64" endBytecode="64" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.postgresql.benchmark.statement.InsertBatch">
+      <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="49" end="237" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+    </Class>
+    <Method classname="org.postgresql.benchmark.statement.InsertBatch" name="insertStruct" signature="()[I" isStatic="false">
+      <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="159" end="191" startBytecode="0" endBytecode="454" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+    </Method>
+    <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="164" end="164" startBytecode="176" endBytecode="176" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.postgresql.benchmark.statement.InsertBatch">
+      <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="49" end="237" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+    </Class>
+    <Method classname="org.postgresql.benchmark.statement.InsertBatch" name="insertStruct" signature="()[I" isStatic="false">
+      <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="159" end="191" startBytecode="0" endBytecode="454" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+    </Method>
+    <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="173" end="173" startBytecode="98" endBytecode="98" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.postgresql.benchmark.statement.InsertBatch">
+      <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="49" end="237" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+    </Class>
+    <Method classname="org.postgresql.benchmark.statement.InsertBatch" name="insertStruct" signature="()[I" isStatic="false">
+      <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="159" end="191" startBytecode="0" endBytecode="454" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+    </Method>
+    <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="177" end="177" startBytecode="137" endBytecode="137" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.postgresql.benchmark.statement.InsertBatch">
+      <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="49" end="237" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+    </Class>
+    <Method classname="org.postgresql.benchmark.statement.InsertBatch" name="insertStruct" signature="()[I" isStatic="false">
+      <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="159" end="191" startBytecode="0" endBytecode="454" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+    </Method>
+    <SourceLine classname="org.postgresql.benchmark.statement.InsertBatch" start="188" end="188" startBytecode="209" endBytecode="209" sourcefile="InsertBatch.java" sourcepath="org/postgresql/benchmark/statement/InsertBatch.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.postgresql.benchmark.statement.ParseStatement">
+      <SourceLine classname="org.postgresql.benchmark.statement.ParseStatement" start="49" end="123" sourcefile="ParseStatement.java" sourcepath="org/postgresql/benchmark/statement/ParseStatement.java"/>
+    </Class>
+    <Method classname="org.postgresql.benchmark.statement.ParseStatement" name="bindExecuteFetch" signature="(Lorg/openjdk/jmh/infra/Blackhole;)Ljava/sql/Statement;" isStatic="false">
+      <SourceLine classname="org.postgresql.benchmark.statement.ParseStatement" start="96" end="112" startBytecode="0" endBytecode="347" sourcefile="ParseStatement.java" sourcepath="org/postgresql/benchmark/statement/ParseStatement.java"/>
+    </Method>
+    <SourceLine classname="org.postgresql.benchmark.statement.ParseStatement" start="101" end="101" startBytecode="82" endBytecode="82" sourcefile="ParseStatement.java" sourcepath="org/postgresql/benchmark/statement/ParseStatement.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.postgresql.benchmark.statement.ParseStatement">
+      <SourceLine classname="org.postgresql.benchmark.statement.ParseStatement" start="49" end="123" sourcefile="ParseStatement.java" sourcepath="org/postgresql/benchmark/statement/ParseStatement.java"/>
+    </Class>
+    <Method classname="org.postgresql.benchmark.statement.ParseStatement" name="bindExecuteFetch" signature="(Lorg/openjdk/jmh/infra/Blackhole;)Ljava/sql/Statement;" isStatic="false">
+      <SourceLine classname="org.postgresql.benchmark.statement.ParseStatement" start="96" end="112" startBytecode="0" endBytecode="347" sourcefile="ParseStatement.java" sourcepath="org/postgresql/benchmark/statement/ParseStatement.java"/>
+    </Method>
+    <SourceLine classname="org.postgresql.benchmark.statement.ParseStatement" start="106" end="106" startBytecode="131" endBytecode="131" sourcefile="ParseStatement.java" sourcepath="org/postgresql/benchmark/statement/ParseStatement.java"/>
+  </BugInstance>
   <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.postgresql.benchmark.statement.ProcessBoolean">
       <SourceLine classname="org.postgresql.benchmark.statement.ProcessBoolean" start="50" end="96" sourcefile="ProcessBoolean.java" sourcepath="org/postgresql/benchmark/statement/ProcessBoolean.java"/>
@@ -459,6 +590,42 @@
       <SourceLine classname="org.postgresql.benchmark.statement.ProcessBoolean" start="82" end="87" startBytecode="0" endBytecode="125" sourcefile="ProcessBoolean.java" sourcepath="org/postgresql/benchmark/statement/ProcessBoolean.java"/>
     </Method>
     <SourceLine classname="org.postgresql.benchmark.statement.ProcessBoolean" start="83" end="83" startBytecode="12" endBytecode="12" sourcefile="ProcessBoolean.java" sourcepath="org/postgresql/benchmark/statement/ProcessBoolean.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.postgresql.benchmark.statement.ProcessBoolean">
+      <SourceLine classname="org.postgresql.benchmark.statement.ProcessBoolean" start="50" end="96" sourcefile="ProcessBoolean.java" sourcepath="org/postgresql/benchmark/statement/ProcessBoolean.java"/>
+    </Class>
+    <Method classname="org.postgresql.benchmark.statement.ProcessBoolean" name="getBoolean" signature="(Lorg/openjdk/jmh/infra/Blackhole;)V" isStatic="false">
+      <SourceLine classname="org.postgresql.benchmark.statement.ProcessBoolean" start="82" end="87" startBytecode="0" endBytecode="125" sourcefile="ProcessBoolean.java" sourcepath="org/postgresql/benchmark/statement/ProcessBoolean.java"/>
+    </Method>
+    <SourceLine classname="org.postgresql.benchmark.statement.ProcessBoolean" start="85" end="85" startBytecode="44" endBytecode="44" sourcefile="ProcessBoolean.java" sourcepath="org/postgresql/benchmark/statement/ProcessBoolean.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.postgresql.benchmark.statement.ProcessResultSet">
+      <SourceLine classname="org.postgresql.benchmark.statement.ProcessResultSet" start="49" end="229" sourcefile="ProcessResultSet.java" sourcepath="org/postgresql/benchmark/statement/ProcessResultSet.java"/>
+    </Class>
+    <Method classname="org.postgresql.benchmark.statement.ProcessResultSet" name="bindExecuteFetch" signature="(Lorg/openjdk/jmh/infra/Blackhole;)Ljava/sql/Statement;" isStatic="false">
+      <SourceLine classname="org.postgresql.benchmark.statement.ProcessResultSet" start="157" end="178" startBytecode="0" endBytecode="371" sourcefile="ProcessResultSet.java" sourcepath="org/postgresql/benchmark/statement/ProcessResultSet.java"/>
+    </Method>
+    <SourceLine classname="org.postgresql.benchmark.statement.ProcessResultSet" start="162" end="162" startBytecode="57" endBytecode="57" sourcefile="ProcessResultSet.java" sourcepath="org/postgresql/benchmark/statement/ProcessResultSet.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.postgresql.benchmark.statement.ProcessResultSet">
+      <SourceLine classname="org.postgresql.benchmark.statement.ProcessResultSet" start="49" end="229" sourcefile="ProcessResultSet.java" sourcepath="org/postgresql/benchmark/statement/ProcessResultSet.java"/>
+    </Class>
+    <Method classname="org.postgresql.benchmark.statement.ProcessResultSet" name="bindExecuteFetch" signature="(Lorg/openjdk/jmh/infra/Blackhole;)Ljava/sql/Statement;" isStatic="false">
+      <SourceLine classname="org.postgresql.benchmark.statement.ProcessResultSet" start="157" end="178" startBytecode="0" endBytecode="371" sourcefile="ProcessResultSet.java" sourcepath="org/postgresql/benchmark/statement/ProcessResultSet.java"/>
+    </Method>
+    <SourceLine classname="org.postgresql.benchmark.statement.ProcessResultSet" start="166" end="166" startBytecode="153" endBytecode="153" sourcefile="ProcessResultSet.java" sourcepath="org/postgresql/benchmark/statement/ProcessResultSet.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="org.postgresql.benchmark.statement.ProcessResultSet">
+      <SourceLine classname="org.postgresql.benchmark.statement.ProcessResultSet" start="49" end="229" sourcefile="ProcessResultSet.java" sourcepath="org/postgresql/benchmark/statement/ProcessResultSet.java"/>
+    </Class>
+    <Method classname="org.postgresql.benchmark.statement.ProcessResultSet" name="bindExecuteFetch" signature="(Lorg/openjdk/jmh/infra/Blackhole;)Ljava/sql/Statement;" isStatic="false">
+      <SourceLine classname="org.postgresql.benchmark.statement.ProcessResultSet" start="157" end="178" startBytecode="0" endBytecode="371" sourcefile="ProcessResultSet.java" sourcepath="org/postgresql/benchmark/statement/ProcessResultSet.java"/>
+    </Method>
+    <SourceLine classname="org.postgresql.benchmark.statement.ProcessResultSet" start="168" end="168" startBytecode="131" endBytecode="131" sourcefile="ProcessResultSet.java" sourcepath="org/postgresql/benchmark/statement/ProcessResultSet.java"/>
   </BugInstance>
   <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.postgresql.benchmark.statement.generated.BindBoolean_jmhType_B2">
@@ -996,28 +1163,7 @@
       <SourceLine classname="org.postgresql.benchmark.time.generated.TimestampToTime_jmhType_B2" sourcefile="TimestampToTime_jmhType_B2.java" sourcepath="org/postgresql/benchmark/time/generated/TimestampToTime_jmhType_B2.java"/>
     </Field>
   </BugInstance>
-  <Errors errors="1" missingClasses="41">
-    <Error>
-      <ErrorMessage>Exception analyzing org.postgresql.benchmark.connection.FinalizeConnection using detector de.heidelberg.pvs.diego.detectors.SingleShotBenchmarkDetector</ErrorMessage>
-      <Exception>java.lang.IllegalStateException: getMethodName called while not visiting method</Exception>
-      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.getMethodName(PreorderVisitor.java:588)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.MethodAnnotation.fromVisitedMethod(MethodAnnotation.java:125)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.BugInstance.addMethod(BugInstance.java:1398)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.BugInstance.addClassAndMethod(BugInstance.java:843)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.SingleShotBenchmarkDetector.validateBenchmarkMode(SingleShotBenchmarkDetector.java:54)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.SingleShotBenchmarkDetector.visitAnnotation(SingleShotBenchmarkDetector.java:34)</StackTrace>
-      <StackTrace>org.apache.bcel.classfile.Annotations.accept(Annotations.java:74)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:407)</StackTrace>
-      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
-    </Error>
+  <Errors errors="0" missingClasses="41">
     <MissingClass>com.sun.jna.LastErrorException</MissingClass>
     <MissingClass>com.sun.jna.Native</MissingClass>
     <MissingClass>com.sun.jna.Platform</MissingClass>
@@ -1060,7 +1206,7 @@
     <MissingClass>waffle.windows.auth.impl.WindowsCredentialsHandleImpl</MissingClass>
     <MissingClass>waffle.windows.auth.impl.WindowsSecurityContextImpl</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Tue, 31 Oct 2017 00:33:11 +0100" total_classes="1956" referenced_classes="2557" total_bugs="121" total_size="136355" num_packages="134" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="134.56" clock_seconds="43.85" peak_mbytes="1548.19" alloc_mbytes="3641.00" gc_seconds="1.30" priority_2="121">
+  <FindBugsSummary timestamp="Wed, 8 Nov 2017 07:09:43 +0000" total_classes="1956" referenced_classes="2557" total_bugs="143" total_size="136355" num_packages="134" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="157.76" clock_seconds="62.78" peak_mbytes="1557.22" alloc_mbytes="3641.00" gc_seconds="1.93" priority_2="143">
     <PackageStats package="joptsimple" total_bugs="0" total_types="33" total_size="1051">
       <ClassStats class="joptsimple.AbstractOptionSpec" sourceFile="AbstractOptionSpec.java" interface="false" size="65" bugs="0"/>
       <ClassStats class="joptsimple.AlternativeLongOptionSpec" sourceFile="AlternativeLongOptionSpec.java" interface="false" size="10" bugs="0"/>
@@ -2593,8 +2739,8 @@
       <ClassStats class="org.postgresql.PGResultSetMetaData" sourceFile="PGResultSetMetaData.java" interface="true" size="5" bugs="0"/>
       <ClassStats class="org.postgresql.PGStatement" sourceFile="PGStatement.java" interface="true" size="10" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.benchmark.connection" total_bugs="0" total_types="1" total_size="26">
-      <ClassStats class="org.postgresql.benchmark.connection.FinalizeConnection" sourceFile="FinalizeConnection.java" interface="false" size="26" bugs="0"/>
+    <PackageStats package="org.postgresql.benchmark.connection" total_bugs="1" total_types="1" total_size="26" priority_2="1">
+      <ClassStats class="org.postgresql.benchmark.connection.FinalizeConnection" sourceFile="FinalizeConnection.java" interface="false" size="26" bugs="1" priority_2="1"/>
     </PackageStats>
     <PackageStats package="org.postgresql.benchmark.connection.generated" total_bugs="6" total_types="6" total_size="1495" priority_2="6">
       <ClassStats class="org.postgresql.benchmark.connection.generated.FinalizeConnection_baseline_jmhTest" sourceFile="FinalizeConnection_baseline_jmhTest.java" interface="false" size="476" bugs="0"/>
@@ -2641,14 +2787,14 @@
     <PackageStats package="org.postgresql.benchmark.profilers" total_bugs="0" total_types="1" total_size="35">
       <ClassStats class="org.postgresql.benchmark.profilers.FlightRecorderProfiler" sourceFile="FlightRecorderProfiler.java" interface="false" size="35" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.benchmark.statement" total_bugs="24" total_types="10" total_size="459" priority_2="24">
+    <PackageStats package="org.postgresql.benchmark.statement" total_bugs="45" total_types="10" total_size="459" priority_2="45">
       <ClassStats class="org.postgresql.benchmark.statement.BindBoolean" sourceFile="BindBoolean.java" interface="false" size="32" bugs="1" priority_2="1"/>
       <ClassStats class="org.postgresql.benchmark.statement.BindTimestamp" sourceFile="BindTimestamp.java" interface="false" size="33" bugs="0"/>
       <ClassStats class="org.postgresql.benchmark.statement.FinalizeStatement" sourceFile="FinalizeStatement.java" interface="false" size="28" bugs="0"/>
-      <ClassStats class="org.postgresql.benchmark.statement.InsertBatch" sourceFile="InsertBatch.java" interface="false" size="126" bugs="22" priority_2="22"/>
-      <ClassStats class="org.postgresql.benchmark.statement.ParseStatement" sourceFile="ParseStatement.java" interface="false" size="50" bugs="0"/>
-      <ClassStats class="org.postgresql.benchmark.statement.ProcessBoolean" sourceFile="ProcessBoolean.java" interface="false" size="33" bugs="1" priority_2="1"/>
-      <ClassStats class="org.postgresql.benchmark.statement.ProcessResultSet" sourceFile="ProcessResultSet.java" interface="false" size="114" bugs="0"/>
+      <ClassStats class="org.postgresql.benchmark.statement.InsertBatch" sourceFile="InsertBatch.java" interface="false" size="126" bugs="35" priority_2="35"/>
+      <ClassStats class="org.postgresql.benchmark.statement.ParseStatement" sourceFile="ParseStatement.java" interface="false" size="50" bugs="3" priority_2="3"/>
+      <ClassStats class="org.postgresql.benchmark.statement.ProcessBoolean" sourceFile="ProcessBoolean.java" interface="false" size="33" bugs="2" priority_2="2"/>
+      <ClassStats class="org.postgresql.benchmark.statement.ProcessResultSet" sourceFile="ProcessResultSet.java" interface="false" size="114" bugs="4" priority_2="4"/>
       <ClassStats class="org.postgresql.benchmark.statement.ProcessResultSet$ColumnIndexType" sourceFile="ProcessResultSet.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.postgresql.benchmark.statement.ProcessResultSet$FieldType" sourceFile="ProcessResultSet.java" interface="false" size="21" bugs="0"/>
       <ClassStats class="org.postgresql.benchmark.statement.ProcessResultSet$GetterType" sourceFile="ProcessResultSet.java" interface="false" size="11" bugs="0"/>
@@ -3286,48 +3432,49 @@
       <ClassStats class="org.postgresql.xa.RecoveredXid" sourceFile="RecoveredXid.java" interface="false" size="53" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="3103" invocations="13992" avgMicrosecondsPerInvocation="221" maxMicrosecondsPerInvocation="89138" standardDeviationMicrosecondsPerInvocation="1101"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="2830" invocations="14240" avgMicrosecondsPerInvocation="198" maxMicrosecondsPerInvocation="61629" standardDeviationMicrosecondsPerInvocation="1108"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="2830" invocations="15099" avgMicrosecondsPerInvocation="187" maxMicrosecondsPerInvocation="60556" standardDeviationMicrosecondsPerInvocation="1061"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="2610" invocations="14575" avgMicrosecondsPerInvocation="179" maxMicrosecondsPerInvocation="25340" standardDeviationMicrosecondsPerInvocation="632"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="2124" invocations="14952" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="80846" standardDeviationMicrosecondsPerInvocation="767"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="1487" invocations="12445" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="43188" standardDeviationMicrosecondsPerInvocation="520"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="1212" invocations="14575" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="403015" standardDeviationMicrosecondsPerInvocation="3387"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1176" invocations="14590" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="9817" standardDeviationMicrosecondsPerInvocation="171"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1136" invocations="17940" avgMicrosecondsPerInvocation="63" maxMicrosecondsPerInvocation="11293" standardDeviationMicrosecondsPerInvocation="231"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="853" invocations="2557" avgMicrosecondsPerInvocation="333" maxMicrosecondsPerInvocation="61411" standardDeviationMicrosecondsPerInvocation="1832"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="803" invocations="4093" avgMicrosecondsPerInvocation="196" maxMicrosecondsPerInvocation="45293" standardDeviationMicrosecondsPerInvocation="847"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="715" invocations="2557" avgMicrosecondsPerInvocation="279" maxMicrosecondsPerInvocation="9964" standardDeviationMicrosecondsPerInvocation="660"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="631" invocations="1956" avgMicrosecondsPerInvocation="322" maxMicrosecondsPerInvocation="51491" standardDeviationMicrosecondsPerInvocation="1862"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="611" invocations="4100" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="13892" standardDeviationMicrosecondsPerInvocation="381"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="536" invocations="1956" avgMicrosecondsPerInvocation="274" maxMicrosecondsPerInvocation="16592" standardDeviationMicrosecondsPerInvocation="696"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="529" invocations="1956" avgMicrosecondsPerInvocation="270" maxMicrosecondsPerInvocation="20121" standardDeviationMicrosecondsPerInvocation="780"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="498" invocations="13741" avgMicrosecondsPerInvocation="36" maxMicrosecondsPerInvocation="59389" standardDeviationMicrosecondsPerInvocation="519"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="493" invocations="3819" avgMicrosecondsPerInvocation="129" maxMicrosecondsPerInvocation="5329" standardDeviationMicrosecondsPerInvocation="288"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="449" invocations="1956" avgMicrosecondsPerInvocation="229" maxMicrosecondsPerInvocation="6876" standardDeviationMicrosecondsPerInvocation="549"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="362" invocations="15707" avgMicrosecondsPerInvocation="23" maxMicrosecondsPerInvocation="30878" standardDeviationMicrosecondsPerInvocation="255"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="360" invocations="13992" avgMicrosecondsPerInvocation="25" maxMicrosecondsPerInvocation="1887" standardDeviationMicrosecondsPerInvocation="65"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="350" invocations="1956" avgMicrosecondsPerInvocation="179" maxMicrosecondsPerInvocation="21646" standardDeviationMicrosecondsPerInvocation="878"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="331" invocations="388840" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="1692" standardDeviationMicrosecondsPerInvocation="5"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="330" invocations="1956" avgMicrosecondsPerInvocation="169" maxMicrosecondsPerInvocation="9143" standardDeviationMicrosecondsPerInvocation="445"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="323" invocations="1593" avgMicrosecondsPerInvocation="202" maxMicrosecondsPerInvocation="6374" standardDeviationMicrosecondsPerInvocation="554"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="306" invocations="1956" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="55064" standardDeviationMicrosecondsPerInvocation="1288"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="296" invocations="1956" avgMicrosecondsPerInvocation="151" maxMicrosecondsPerInvocation="9653" standardDeviationMicrosecondsPerInvocation="416"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="293" invocations="1956" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="5060" standardDeviationMicrosecondsPerInvocation="367"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="286" invocations="1956" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="4439" standardDeviationMicrosecondsPerInvocation="348"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="280" invocations="1956" avgMicrosecondsPerInvocation="143" maxMicrosecondsPerInvocation="4954" standardDeviationMicrosecondsPerInvocation="326"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="278" invocations="1956" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="7640" standardDeviationMicrosecondsPerInvocation="394"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="277" invocations="1956" avgMicrosecondsPerInvocation="141" maxMicrosecondsPerInvocation="6401" standardDeviationMicrosecondsPerInvocation="372"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="268" invocations="1956" avgMicrosecondsPerInvocation="137" maxMicrosecondsPerInvocation="4203" standardDeviationMicrosecondsPerInvocation="290"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="266" invocations="1956" avgMicrosecondsPerInvocation="136" maxMicrosecondsPerInvocation="5068" standardDeviationMicrosecondsPerInvocation="329"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="265" invocations="1956" avgMicrosecondsPerInvocation="135" maxMicrosecondsPerInvocation="6550" standardDeviationMicrosecondsPerInvocation="351"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="261" invocations="1956" avgMicrosecondsPerInvocation="133" maxMicrosecondsPerInvocation="4839" standardDeviationMicrosecondsPerInvocation="332"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="259" invocations="1956" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="4296" standardDeviationMicrosecondsPerInvocation="311"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="247" invocations="1956" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="4320" standardDeviationMicrosecondsPerInvocation="305"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="242" invocations="1956" avgMicrosecondsPerInvocation="123" maxMicrosecondsPerInvocation="4738" standardDeviationMicrosecondsPerInvocation="316"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="239" invocations="1956" avgMicrosecondsPerInvocation="122" maxMicrosecondsPerInvocation="3764" standardDeviationMicrosecondsPerInvocation="316"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.LoopInsideBenchmarkDetector" totalMilliseconds="237" invocations="1956" avgMicrosecondsPerInvocation="121" maxMicrosecondsPerInvocation="12245" standardDeviationMicrosecondsPerInvocation="411"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNonShortCircuit" totalMilliseconds="236" invocations="1956" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="5476" standardDeviationMicrosecondsPerInvocation="333"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="4343" invocations="13992" avgMicrosecondsPerInvocation="310" maxMicrosecondsPerInvocation="449877" standardDeviationMicrosecondsPerInvocation="4009"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="3680" invocations="15099" avgMicrosecondsPerInvocation="243" maxMicrosecondsPerInvocation="114040" standardDeviationMicrosecondsPerInvocation="1718"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="3602" invocations="14240" avgMicrosecondsPerInvocation="252" maxMicrosecondsPerInvocation="152291" standardDeviationMicrosecondsPerInvocation="1904"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="3462" invocations="14575" avgMicrosecondsPerInvocation="237" maxMicrosecondsPerInvocation="73606" standardDeviationMicrosecondsPerInvocation="1173"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="2608" invocations="14952" avgMicrosecondsPerInvocation="174" maxMicrosecondsPerInvocation="49321" standardDeviationMicrosecondsPerInvocation="730"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="2170" invocations="17940" avgMicrosecondsPerInvocation="121" maxMicrosecondsPerInvocation="66771" standardDeviationMicrosecondsPerInvocation="934"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="2031" invocations="12445" avgMicrosecondsPerInvocation="163" maxMicrosecondsPerInvocation="50805" standardDeviationMicrosecondsPerInvocation="989"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1646" invocations="14590" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="31071" standardDeviationMicrosecondsPerInvocation="540"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1611" invocations="2557" avgMicrosecondsPerInvocation="630" maxMicrosecondsPerInvocation="99779" standardDeviationMicrosecondsPerInvocation="2655"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1470" invocations="4093" avgMicrosecondsPerInvocation="359" maxMicrosecondsPerInvocation="38075" standardDeviationMicrosecondsPerInvocation="1380"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1430" invocations="2557" avgMicrosecondsPerInvocation="559" maxMicrosecondsPerInvocation="22658" standardDeviationMicrosecondsPerInvocation="1520"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1060" invocations="4100" avgMicrosecondsPerInvocation="258" maxMicrosecondsPerInvocation="26842" standardDeviationMicrosecondsPerInvocation="829"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="1036" invocations="14575" avgMicrosecondsPerInvocation="71" maxMicrosecondsPerInvocation="52079" standardDeviationMicrosecondsPerInvocation="754"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="883" invocations="1956" avgMicrosecondsPerInvocation="451" maxMicrosecondsPerInvocation="536563" standardDeviationMicrosecondsPerInvocation="12133"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="823" invocations="1956" avgMicrosecondsPerInvocation="421" maxMicrosecondsPerInvocation="63323" standardDeviationMicrosecondsPerInvocation="2078"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="729" invocations="1956" avgMicrosecondsPerInvocation="372" maxMicrosecondsPerInvocation="22418" standardDeviationMicrosecondsPerInvocation="1150"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="658" invocations="1956" avgMicrosecondsPerInvocation="336" maxMicrosecondsPerInvocation="33155" standardDeviationMicrosecondsPerInvocation="1752"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="599" invocations="13741" avgMicrosecondsPerInvocation="43" maxMicrosecondsPerInvocation="48430" standardDeviationMicrosecondsPerInvocation="492"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="583" invocations="3819" avgMicrosecondsPerInvocation="152" maxMicrosecondsPerInvocation="22446" standardDeviationMicrosecondsPerInvocation="492"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="554" invocations="1956" avgMicrosecondsPerInvocation="283" maxMicrosecondsPerInvocation="132211" standardDeviationMicrosecondsPerInvocation="3141"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="547" invocations="1956" avgMicrosecondsPerInvocation="279" maxMicrosecondsPerInvocation="12844" standardDeviationMicrosecondsPerInvocation="758"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="482" invocations="1593" avgMicrosecondsPerInvocation="302" maxMicrosecondsPerInvocation="40712" standardDeviationMicrosecondsPerInvocation="1562"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="479" invocations="15707" avgMicrosecondsPerInvocation="30" maxMicrosecondsPerInvocation="37917" standardDeviationMicrosecondsPerInvocation="402"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="478" invocations="2557" avgMicrosecondsPerInvocation="186" maxMicrosecondsPerInvocation="20735" standardDeviationMicrosecondsPerInvocation="813"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="466" invocations="2557" avgMicrosecondsPerInvocation="182" maxMicrosecondsPerInvocation="27519" standardDeviationMicrosecondsPerInvocation="911"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="463" invocations="13992" avgMicrosecondsPerInvocation="33" maxMicrosecondsPerInvocation="14967" standardDeviationMicrosecondsPerInvocation="176"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="443" invocations="388840" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="20725" standardDeviationMicrosecondsPerInvocation="36"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="429" invocations="1956" avgMicrosecondsPerInvocation="219" maxMicrosecondsPerInvocation="11706" standardDeviationMicrosecondsPerInvocation="663"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="425" invocations="1956" avgMicrosecondsPerInvocation="217" maxMicrosecondsPerInvocation="27499" standardDeviationMicrosecondsPerInvocation="866"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="408" invocations="1956" avgMicrosecondsPerInvocation="209" maxMicrosecondsPerInvocation="35290" standardDeviationMicrosecondsPerInvocation="1028"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="399" invocations="1956" avgMicrosecondsPerInvocation="204" maxMicrosecondsPerInvocation="26349" standardDeviationMicrosecondsPerInvocation="839"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="395" invocations="1956" avgMicrosecondsPerInvocation="202" maxMicrosecondsPerInvocation="276971" standardDeviationMicrosecondsPerInvocation="6277"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="393" invocations="1956" avgMicrosecondsPerInvocation="201" maxMicrosecondsPerInvocation="41982" standardDeviationMicrosecondsPerInvocation="1261"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="386" invocations="2557" avgMicrosecondsPerInvocation="151" maxMicrosecondsPerInvocation="110465" standardDeviationMicrosecondsPerInvocation="2243"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="386" invocations="1956" avgMicrosecondsPerInvocation="197" maxMicrosecondsPerInvocation="12296" standardDeviationMicrosecondsPerInvocation="626"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="351" invocations="1956" avgMicrosecondsPerInvocation="179" maxMicrosecondsPerInvocation="11672" standardDeviationMicrosecondsPerInvocation="519"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="348" invocations="1956" avgMicrosecondsPerInvocation="178" maxMicrosecondsPerInvocation="9090" standardDeviationMicrosecondsPerInvocation="525"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="339" invocations="2557" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="18930" standardDeviationMicrosecondsPerInvocation="539"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="333" invocations="1956" avgMicrosecondsPerInvocation="170" maxMicrosecondsPerInvocation="15830" standardDeviationMicrosecondsPerInvocation="574"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="330" invocations="1956" avgMicrosecondsPerInvocation="169" maxMicrosecondsPerInvocation="10384" standardDeviationMicrosecondsPerInvocation="472"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="330" invocations="2557" avgMicrosecondsPerInvocation="129" maxMicrosecondsPerInvocation="32545" standardDeviationMicrosecondsPerInvocation="1048"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="328" invocations="1956" avgMicrosecondsPerInvocation="168" maxMicrosecondsPerInvocation="16153" standardDeviationMicrosecondsPerInvocation="676"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="328" invocations="1956" avgMicrosecondsPerInvocation="168" maxMicrosecondsPerInvocation="5602" standardDeviationMicrosecondsPerInvocation="465"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

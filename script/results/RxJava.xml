@@ -1,9 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1509396211000" analysisTimestamp="1509396213443" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1510152765000" analysisTimestamp="1510152768527" release="">
   <Project projectName="">
     <Jar>tmp/RxJava</Jar>
   </Project>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.reactivex.OperatorFlatMapPerf">
+      <SourceLine classname="io.reactivex.OperatorFlatMapPerf" start="28" end="77" sourcefile="OperatorFlatMapPerf.java" sourcepath="io/reactivex/OperatorFlatMapPerf.java"/>
+    </Class>
+    <Method classname="io.reactivex.OperatorFlatMapPerf" name="flatMapIntPassthruAsync" signature="(Lio/reactivex/OperatorFlatMapPerf$Input;)V" isStatic="false">
+      <SourceLine classname="io.reactivex.OperatorFlatMapPerf" start="55" end="67" startBytecode="0" endBytecode="156" sourcefile="OperatorFlatMapPerf.java" sourcepath="io/reactivex/OperatorFlatMapPerf.java"/>
+    </Method>
+    <SourceLine classname="io.reactivex.OperatorFlatMapPerf" start="63" end="63" startBytecode="44" endBytecode="44" sourcefile="OperatorFlatMapPerf.java" sourcepath="io/reactivex/OperatorFlatMapPerf.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.reactivex.OperatorMergePerf">
+      <SourceLine classname="io.reactivex.OperatorMergePerf" start="28" end="124" sourcefile="OperatorMergePerf.java" sourcepath="io/reactivex/OperatorMergePerf.java"/>
+    </Class>
+    <Method classname="io.reactivex.OperatorMergePerf" name="merge1SyncStreamOfN" signature="(Lio/reactivex/OperatorMergePerf$InputMillion;)V" isStatic="false">
+      <SourceLine classname="io.reactivex.OperatorMergePerf" start="53" end="67" startBytecode="0" endBytecode="196" sourcefile="OperatorMergePerf.java" sourcepath="io/reactivex/OperatorMergePerf.java"/>
+    </Method>
+    <SourceLine classname="io.reactivex.OperatorMergePerf" start="63" end="63" startBytecode="53" endBytecode="53" sourcefile="OperatorMergePerf.java" sourcepath="io/reactivex/OperatorMergePerf.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.reactivex.OperatorMergePerf">
+      <SourceLine classname="io.reactivex.OperatorMergePerf" start="28" end="124" sourcefile="OperatorMergePerf.java" sourcepath="io/reactivex/OperatorMergePerf.java"/>
+    </Class>
+    <Method classname="io.reactivex.OperatorMergePerf" name="mergeNAsyncStreamsOfN" signature="(Lio/reactivex/OperatorMergePerf$InputThousand;)V" isStatic="false">
+      <SourceLine classname="io.reactivex.OperatorMergePerf" start="88" end="101" startBytecode="0" endBytecode="193" sourcefile="OperatorMergePerf.java" sourcepath="io/reactivex/OperatorMergePerf.java"/>
+    </Method>
+    <SourceLine classname="io.reactivex.OperatorMergePerf" start="97" end="97" startBytecode="50" endBytecode="50" sourcefile="OperatorMergePerf.java" sourcepath="io/reactivex/OperatorMergePerf.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.reactivex.OperatorMergePerf">
+      <SourceLine classname="io.reactivex.OperatorMergePerf" start="28" end="124" sourcefile="OperatorMergePerf.java" sourcepath="io/reactivex/OperatorMergePerf.java"/>
+    </Class>
+    <Method classname="io.reactivex.OperatorMergePerf" name="mergeNSyncStreamsOf1" signature="(Lio/reactivex/OperatorMergePerf$InputForMergeN;)V" isStatic="false">
+      <SourceLine classname="io.reactivex.OperatorMergePerf" start="117" end="124" startBytecode="0" endBytecode="144" sourcefile="OperatorMergePerf.java" sourcepath="io/reactivex/OperatorMergePerf.java"/>
+    </Method>
+    <SourceLine classname="io.reactivex.OperatorMergePerf" start="120" end="120" startBytecode="36" endBytecode="36" sourcefile="OperatorMergePerf.java" sourcepath="io/reactivex/OperatorMergePerf.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.reactivex.OperatorMergePerf">
+      <SourceLine classname="io.reactivex.OperatorMergePerf" start="28" end="124" sourcefile="OperatorMergePerf.java" sourcepath="io/reactivex/OperatorMergePerf.java"/>
+    </Class>
+    <Method classname="io.reactivex.OperatorMergePerf" name="mergeNSyncStreamsOfN" signature="(Lio/reactivex/OperatorMergePerf$InputThousand;)V" isStatic="false">
+      <SourceLine classname="io.reactivex.OperatorMergePerf" start="71" end="84" startBytecode="0" endBytecode="193" sourcefile="OperatorMergePerf.java" sourcepath="io/reactivex/OperatorMergePerf.java"/>
+    </Method>
+    <SourceLine classname="io.reactivex.OperatorMergePerf" start="80" end="80" startBytecode="50" endBytecode="50" sourcefile="OperatorMergePerf.java" sourcepath="io/reactivex/OperatorMergePerf.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.reactivex.OperatorMergePerf">
+      <SourceLine classname="io.reactivex.OperatorMergePerf" start="28" end="124" sourcefile="OperatorMergePerf.java" sourcepath="io/reactivex/OperatorMergePerf.java"/>
+    </Class>
+    <Method classname="io.reactivex.OperatorMergePerf" name="mergeTwoAsyncStreamsOfN" signature="(Lio/reactivex/OperatorMergePerf$InputThousand;)V" isStatic="false">
+      <SourceLine classname="io.reactivex.OperatorMergePerf" start="105" end="113" startBytecode="0" endBytecode="192" sourcefile="OperatorMergePerf.java" sourcepath="io/reactivex/OperatorMergePerf.java"/>
+    </Method>
+    <SourceLine classname="io.reactivex.OperatorMergePerf" start="109" end="109" startBytecode="49" endBytecode="49" sourcefile="OperatorMergePerf.java" sourcepath="io/reactivex/OperatorMergePerf.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.reactivex.OperatorMergePerf">
+      <SourceLine classname="io.reactivex.OperatorMergePerf" start="28" end="124" sourcefile="OperatorMergePerf.java" sourcepath="io/reactivex/OperatorMergePerf.java"/>
+    </Class>
+    <Method classname="io.reactivex.OperatorMergePerf" name="oneStreamOfNthatMergesIn1" signature="(Lio/reactivex/OperatorMergePerf$InputMillion;)V" isStatic="false">
+      <SourceLine classname="io.reactivex.OperatorMergePerf" start="33" end="48" startBytecode="0" endBytecode="200" sourcefile="OperatorMergePerf.java" sourcepath="io/reactivex/OperatorMergePerf.java"/>
+    </Method>
+    <SourceLine classname="io.reactivex.OperatorMergePerf" start="44" end="44" startBytecode="53" endBytecode="53" sourcefile="OperatorMergePerf.java" sourcepath="io/reactivex/OperatorMergePerf.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.reactivex.PublishProcessorPerf">
+      <SourceLine classname="io.reactivex.PublishProcessorPerf" start="30" end="108" sourcefile="PublishProcessorPerf.java" sourcepath="io/reactivex/PublishProcessorPerf.java"/>
+    </Class>
+    <Method classname="io.reactivex.PublishProcessorPerf" name="bounded1k" signature="()V" isStatic="false">
+      <SourceLine classname="io.reactivex.PublishProcessorPerf" start="77" end="80" startBytecode="0" endBytecode="105" sourcefile="PublishProcessorPerf.java" sourcepath="io/reactivex/PublishProcessorPerf.java"/>
+    </Method>
+    <SourceLine classname="io.reactivex.PublishProcessorPerf" start="77" end="77" startBytecode="23" endBytecode="23" sourcefile="PublishProcessorPerf.java" sourcepath="io/reactivex/PublishProcessorPerf.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.reactivex.PublishProcessorPerf">
+      <SourceLine classname="io.reactivex.PublishProcessorPerf" start="30" end="108" sourcefile="PublishProcessorPerf.java" sourcepath="io/reactivex/PublishProcessorPerf.java"/>
+    </Class>
+    <Method classname="io.reactivex.PublishProcessorPerf" name="bounded1m" signature="()V" isStatic="false">
+      <SourceLine classname="io.reactivex.PublishProcessorPerf" start="84" end="87" startBytecode="0" endBytecode="104" sourcefile="PublishProcessorPerf.java" sourcepath="io/reactivex/PublishProcessorPerf.java"/>
+    </Method>
+    <SourceLine classname="io.reactivex.PublishProcessorPerf" start="84" end="84" startBytecode="22" endBytecode="22" sourcefile="PublishProcessorPerf.java" sourcepath="io/reactivex/PublishProcessorPerf.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.reactivex.PublishProcessorPerf">
+      <SourceLine classname="io.reactivex.PublishProcessorPerf" start="30" end="108" sourcefile="PublishProcessorPerf.java" sourcepath="io/reactivex/PublishProcessorPerf.java"/>
+    </Class>
+    <Method classname="io.reactivex.PublishProcessorPerf" name="subject1k" signature="()V" isStatic="false">
+      <SourceLine classname="io.reactivex.PublishProcessorPerf" start="98" end="101" startBytecode="0" endBytecode="105" sourcefile="PublishProcessorPerf.java" sourcepath="io/reactivex/PublishProcessorPerf.java"/>
+    </Method>
+    <SourceLine classname="io.reactivex.PublishProcessorPerf" start="98" end="98" startBytecode="23" endBytecode="23" sourcefile="PublishProcessorPerf.java" sourcepath="io/reactivex/PublishProcessorPerf.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.reactivex.PublishProcessorPerf">
+      <SourceLine classname="io.reactivex.PublishProcessorPerf" start="30" end="108" sourcefile="PublishProcessorPerf.java" sourcepath="io/reactivex/PublishProcessorPerf.java"/>
+    </Class>
+    <Method classname="io.reactivex.PublishProcessorPerf" name="subject1m" signature="()V" isStatic="false">
+      <SourceLine classname="io.reactivex.PublishProcessorPerf" start="105" end="108" startBytecode="0" endBytecode="104" sourcefile="PublishProcessorPerf.java" sourcepath="io/reactivex/PublishProcessorPerf.java"/>
+    </Method>
+    <SourceLine classname="io.reactivex.PublishProcessorPerf" start="105" end="105" startBytecode="22" endBytecode="22" sourcefile="PublishProcessorPerf.java" sourcepath="io/reactivex/PublishProcessorPerf.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.reactivex.PublishProcessorPerf">
+      <SourceLine classname="io.reactivex.PublishProcessorPerf" start="30" end="108" sourcefile="PublishProcessorPerf.java" sourcepath="io/reactivex/PublishProcessorPerf.java"/>
+    </Class>
+    <Method classname="io.reactivex.PublishProcessorPerf" name="unbounded1k" signature="()V" isStatic="false">
+      <SourceLine classname="io.reactivex.PublishProcessorPerf" start="57" end="60" startBytecode="0" endBytecode="105" sourcefile="PublishProcessorPerf.java" sourcepath="io/reactivex/PublishProcessorPerf.java"/>
+    </Method>
+    <SourceLine classname="io.reactivex.PublishProcessorPerf" start="57" end="57" startBytecode="23" endBytecode="23" sourcefile="PublishProcessorPerf.java" sourcepath="io/reactivex/PublishProcessorPerf.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="io.reactivex.PublishProcessorPerf">
+      <SourceLine classname="io.reactivex.PublishProcessorPerf" start="30" end="108" sourcefile="PublishProcessorPerf.java" sourcepath="io/reactivex/PublishProcessorPerf.java"/>
+    </Class>
+    <Method classname="io.reactivex.PublishProcessorPerf" name="unbounded1m" signature="()V" isStatic="false">
+      <SourceLine classname="io.reactivex.PublishProcessorPerf" start="64" end="67" startBytecode="0" endBytecode="104" sourcefile="PublishProcessorPerf.java" sourcepath="io/reactivex/PublishProcessorPerf.java"/>
+    </Method>
+    <SourceLine classname="io.reactivex.PublishProcessorPerf" start="64" end="64" startBytecode="22" endBytecode="22" sourcefile="PublishProcessorPerf.java" sourcepath="io/reactivex/PublishProcessorPerf.java"/>
+  </BugInstance>
   <Errors errors="0" missingClasses="21">
     <MissingClass>org.junit.Assert</MissingClass>
     <MissingClass>org.junit.rules.ExpectedException</MissingClass>
@@ -27,11 +144,11 @@
     <MissingClass>org.reactivestreams.tck.PublisherVerification</MissingClass>
     <MissingClass>org.reactivestreams.tck.TestEnvironment</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Mon, 30 Oct 2017 21:43:31 +0100" total_classes="9794" referenced_classes="10127" total_bugs="0" total_size="223141" num_packages="54" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="239.26" clock_seconds="90.25" peak_mbytes="1621.06" alloc_mbytes="3641.00" gc_seconds="3.06">
+  <FindBugsSummary timestamp="Wed, 8 Nov 2017 14:52:45 +0000" total_classes="9794" referenced_classes="10127" total_bugs="13" total_size="223141" num_packages="54" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="294.26" clock_seconds="134.44" peak_mbytes="1593.49" alloc_mbytes="3641.00" gc_seconds="4.14" priority_2="13">
     <PackageStats package="com.vladium.emma.rt" total_bugs="0" total_types="1" total_size="13">
       <ClassStats class="com.vladium.emma.rt.RT" sourceFile="RT.java" interface="false" size="13" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.reactivex" total_bugs="0" total_types="240" total_size="10561">
+    <PackageStats package="io.reactivex" total_bugs="13" total_types="240" total_size="10561" priority_2="13">
       <ClassStats class="io.reactivex.BackpressureEnumTest" sourceFile="BackpressureEnumTest.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="io.reactivex.BackpressureOverflowStrategy" sourceFile="BackpressureOverflowStrategy.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="io.reactivex.BackpressureStrategy" sourceFile="BackpressureStrategy.java" interface="false" size="17" bugs="0"/>
@@ -105,12 +222,12 @@
       <ClassStats class="io.reactivex.ObservableSource" sourceFile="ObservableSource.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="io.reactivex.ObservableTransformer" sourceFile="ObservableTransformer.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="io.reactivex.Observer" sourceFile="Observer.java" interface="true" size="5" bugs="0"/>
-      <ClassStats class="io.reactivex.OperatorFlatMapPerf" sourceFile="OperatorFlatMapPerf.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="io.reactivex.OperatorFlatMapPerf" sourceFile="OperatorFlatMapPerf.java" interface="false" size="19" bugs="1" priority_2="1"/>
       <ClassStats class="io.reactivex.OperatorFlatMapPerf$1" sourceFile="OperatorFlatMapPerf.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="io.reactivex.OperatorFlatMapPerf$2" sourceFile="OperatorFlatMapPerf.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="io.reactivex.OperatorFlatMapPerf$3" sourceFile="OperatorFlatMapPerf.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="io.reactivex.OperatorFlatMapPerf$Input" sourceFile="OperatorFlatMapPerf.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="io.reactivex.OperatorMergePerf" sourceFile="OperatorMergePerf.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="io.reactivex.OperatorMergePerf" sourceFile="OperatorMergePerf.java" interface="false" size="51" bugs="6" priority_2="6"/>
       <ClassStats class="io.reactivex.OperatorMergePerf$1" sourceFile="OperatorMergePerf.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="io.reactivex.OperatorMergePerf$2" sourceFile="OperatorMergePerf.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="io.reactivex.OperatorMergePerf$3" sourceFile="OperatorMergePerf.java" interface="false" size="8" bugs="0"/>
@@ -136,7 +253,7 @@
       <ClassStats class="io.reactivex.PerfObserver" sourceFile="PerfObserver.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="io.reactivex.PerfSubscriber" sourceFile="PerfSubscriber.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="io.reactivex.PublicFinalMethods" sourceFile="PublicFinalMethods.java" interface="false" size="25" bugs="0"/>
-      <ClassStats class="io.reactivex.PublishProcessorPerf" sourceFile="PublishProcessorPerf.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="io.reactivex.PublishProcessorPerf" sourceFile="PublishProcessorPerf.java" interface="false" size="47" bugs="6" priority_2="6"/>
       <ClassStats class="io.reactivex.RangePerf" sourceFile="RangePerf.java" interface="false" size="30" bugs="0"/>
       <ClassStats class="io.reactivex.ReducePerf" sourceFile="ReducePerf.java" interface="false" size="32" bugs="0"/>
       <ClassStats class="io.reactivex.Retry" sourceFile="Retry.java" interface="false" size="14" bugs="0"/>
@@ -9931,38 +10048,41 @@
       <ClassStats class="org.jacoco.agent.rt.internal_8ff85ea.output.TcpServerOutput$1" sourceFile="TcpServerOutput.java" interface="false" size="17" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="16684" invocations="45173" avgMicrosecondsPerInvocation="369" maxMicrosecondsPerInvocation="97985" standardDeviationMicrosecondsPerInvocation="645"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="5523" invocations="41545" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="627823" standardDeviationMicrosecondsPerInvocation="3161"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="4932" invocations="35925" avgMicrosecondsPerInvocation="137" maxMicrosecondsPerInvocation="80664" standardDeviationMicrosecondsPerInvocation="944"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="3778" invocations="40169" avgMicrosecondsPerInvocation="94" maxMicrosecondsPerInvocation="171789" standardDeviationMicrosecondsPerInvocation="1018"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="3278" invocations="41844" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="65016" standardDeviationMicrosecondsPerInvocation="394"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="3177" invocations="54118" avgMicrosecondsPerInvocation="58" maxMicrosecondsPerInvocation="61526" standardDeviationMicrosecondsPerInvocation="437"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="2501" invocations="38824" avgMicrosecondsPerInvocation="64" maxMicrosecondsPerInvocation="10733" standardDeviationMicrosecondsPerInvocation="220"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="2463" invocations="9794" avgMicrosecondsPerInvocation="251" maxMicrosecondsPerInvocation="80908" standardDeviationMicrosecondsPerInvocation="2609"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="2338" invocations="41546" avgMicrosecondsPerInvocation="56" maxMicrosecondsPerInvocation="11379" standardDeviationMicrosecondsPerInvocation="98"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="1850" invocations="9794" avgMicrosecondsPerInvocation="188" maxMicrosecondsPerInvocation="149575" standardDeviationMicrosecondsPerInvocation="2910"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="1341" invocations="81723" avgMicrosecondsPerInvocation="16" maxMicrosecondsPerInvocation="64750" standardDeviationMicrosecondsPerInvocation="233"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="1177" invocations="2120489" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="5585" standardDeviationMicrosecondsPerInvocation="5"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="1128" invocations="9794" avgMicrosecondsPerInvocation="115" maxMicrosecondsPerInvocation="67903" standardDeviationMicrosecondsPerInvocation="850"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1118" invocations="10127" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="20330" standardDeviationMicrosecondsPerInvocation="413"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="979" invocations="44020" avgMicrosecondsPerInvocation="22" maxMicrosecondsPerInvocation="8637" standardDeviationMicrosecondsPerInvocation="88"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="959" invocations="11232" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="49324" standardDeviationMicrosecondsPerInvocation="576"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="957" invocations="9794" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="7832" standardDeviationMicrosecondsPerInvocation="217"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="956" invocations="10127" avgMicrosecondsPerInvocation="94" maxMicrosecondsPerInvocation="84332" standardDeviationMicrosecondsPerInvocation="883"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="919" invocations="41545" avgMicrosecondsPerInvocation="22" maxMicrosecondsPerInvocation="70464" standardDeviationMicrosecondsPerInvocation="352"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="917" invocations="10127" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="557400" standardDeviationMicrosecondsPerInvocation="5539"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="775" invocations="9794" avgMicrosecondsPerInvocation="79" maxMicrosecondsPerInvocation="11281" standardDeviationMicrosecondsPerInvocation="244"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="742" invocations="41830" avgMicrosecondsPerInvocation="17" maxMicrosecondsPerInvocation="68464" standardDeviationMicrosecondsPerInvocation="367"/>
-      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="636" invocations="1225249" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="2696" standardDeviationMicrosecondsPerInvocation="2"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="586" invocations="36722" avgMicrosecondsPerInvocation="15" maxMicrosecondsPerInvocation="86602" standardDeviationMicrosecondsPerInvocation="552"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="573" invocations="9794" avgMicrosecondsPerInvocation="58" maxMicrosecondsPerInvocation="8025" standardDeviationMicrosecondsPerInvocation="184"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="560" invocations="9794" avgMicrosecondsPerInvocation="57" maxMicrosecondsPerInvocation="7940" standardDeviationMicrosecondsPerInvocation="194"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="552" invocations="35925" avgMicrosecondsPerInvocation="15" maxMicrosecondsPerInvocation="4256" standardDeviationMicrosecondsPerInvocation="48"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="504" invocations="9794" avgMicrosecondsPerInvocation="51" maxMicrosecondsPerInvocation="73952" standardDeviationMicrosecondsPerInvocation="759"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="496" invocations="9794" avgMicrosecondsPerInvocation="50" maxMicrosecondsPerInvocation="12233" standardDeviationMicrosecondsPerInvocation="243"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="448" invocations="10127" avgMicrosecondsPerInvocation="44" maxMicrosecondsPerInvocation="4527" standardDeviationMicrosecondsPerInvocation="197"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="440" invocations="9794" avgMicrosecondsPerInvocation="45" maxMicrosecondsPerInvocation="4775" standardDeviationMicrosecondsPerInvocation="125"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="439" invocations="9794" avgMicrosecondsPerInvocation="44" maxMicrosecondsPerInvocation="4379" standardDeviationMicrosecondsPerInvocation="153"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="20893" invocations="45173" avgMicrosecondsPerInvocation="462" maxMicrosecondsPerInvocation="51446" standardDeviationMicrosecondsPerInvocation="1009"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="7631" invocations="41545" avgMicrosecondsPerInvocation="183" maxMicrosecondsPerInvocation="99625" standardDeviationMicrosecondsPerInvocation="1170"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="7442" invocations="35925" avgMicrosecondsPerInvocation="207" maxMicrosecondsPerInvocation="128047" standardDeviationMicrosecondsPerInvocation="1334"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="5707" invocations="40169" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="300217" standardDeviationMicrosecondsPerInvocation="1652"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="5158" invocations="41844" avgMicrosecondsPerInvocation="123" maxMicrosecondsPerInvocation="86649" standardDeviationMicrosecondsPerInvocation="780"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="5096" invocations="54118" avgMicrosecondsPerInvocation="94" maxMicrosecondsPerInvocation="93391" standardDeviationMicrosecondsPerInvocation="848"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="4063" invocations="38824" avgMicrosecondsPerInvocation="104" maxMicrosecondsPerInvocation="115718" standardDeviationMicrosecondsPerInvocation="772"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="3942" invocations="9794" avgMicrosecondsPerInvocation="402" maxMicrosecondsPerInvocation="104334" standardDeviationMicrosecondsPerInvocation="4065"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="3382" invocations="41546" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="99547" standardDeviationMicrosecondsPerInvocation="542"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="2681" invocations="9794" avgMicrosecondsPerInvocation="273" maxMicrosecondsPerInvocation="193575" standardDeviationMicrosecondsPerInvocation="4133"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="2372" invocations="41545" avgMicrosecondsPerInvocation="57" maxMicrosecondsPerInvocation="1108314" standardDeviationMicrosecondsPerInvocation="5442"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="2318" invocations="81724" avgMicrosecondsPerInvocation="28" maxMicrosecondsPerInvocation="479390" standardDeviationMicrosecondsPerInvocation="1705"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="2238" invocations="9794" avgMicrosecondsPerInvocation="228" maxMicrosecondsPerInvocation="229353" standardDeviationMicrosecondsPerInvocation="3364"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="2056" invocations="9794" avgMicrosecondsPerInvocation="210" maxMicrosecondsPerInvocation="140090" standardDeviationMicrosecondsPerInvocation="2288"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="1740" invocations="2120489" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="11261" standardDeviationMicrosecondsPerInvocation="20"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1577" invocations="44020" avgMicrosecondsPerInvocation="35" maxMicrosecondsPerInvocation="58251" standardDeviationMicrosecondsPerInvocation="417"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="1550" invocations="9794" avgMicrosecondsPerInvocation="158" maxMicrosecondsPerInvocation="41087" standardDeviationMicrosecondsPerInvocation="796"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1359" invocations="10127" avgMicrosecondsPerInvocation="134" maxMicrosecondsPerInvocation="16443" standardDeviationMicrosecondsPerInvocation="433"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1237" invocations="11232" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="63262" standardDeviationMicrosecondsPerInvocation="948"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="1234" invocations="9794" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="41053" standardDeviationMicrosecondsPerInvocation="789"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1083" invocations="10127" avgMicrosecondsPerInvocation="107" maxMicrosecondsPerInvocation="8886" standardDeviationMicrosecondsPerInvocation="331"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="1046" invocations="41830" avgMicrosecondsPerInvocation="25" maxMicrosecondsPerInvocation="33131" standardDeviationMicrosecondsPerInvocation="235"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="965" invocations="1225249" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="15326" standardDeviationMicrosecondsPerInvocation="20"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="940" invocations="9794" avgMicrosecondsPerInvocation="96" maxMicrosecondsPerInvocation="83426" standardDeviationMicrosecondsPerInvocation="1085"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="863" invocations="9794" avgMicrosecondsPerInvocation="88" maxMicrosecondsPerInvocation="22589" standardDeviationMicrosecondsPerInvocation="381"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="860" invocations="9794" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="16462" standardDeviationMicrosecondsPerInvocation="366"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="830" invocations="35925" avgMicrosecondsPerInvocation="23" maxMicrosecondsPerInvocation="38502" standardDeviationMicrosecondsPerInvocation="232"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="777" invocations="9794" avgMicrosecondsPerInvocation="79" maxMicrosecondsPerInvocation="44581" standardDeviationMicrosecondsPerInvocation="571"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="736" invocations="9794" avgMicrosecondsPerInvocation="75" maxMicrosecondsPerInvocation="20965" standardDeviationMicrosecondsPerInvocation="412"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="719" invocations="9794" avgMicrosecondsPerInvocation="73" maxMicrosecondsPerInvocation="106644" standardDeviationMicrosecondsPerInvocation="1131"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="710" invocations="9794" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="13588" standardDeviationMicrosecondsPerInvocation="325"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="708" invocations="9794" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="26391" standardDeviationMicrosecondsPerInvocation="379"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="698" invocations="9794" avgMicrosecondsPerInvocation="71" maxMicrosecondsPerInvocation="63711" standardDeviationMicrosecondsPerInvocation="942"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="696" invocations="9794" avgMicrosecondsPerInvocation="71" maxMicrosecondsPerInvocation="57881" standardDeviationMicrosecondsPerInvocation="915"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="694" invocations="36722" avgMicrosecondsPerInvocation="18" maxMicrosecondsPerInvocation="18043" standardDeviationMicrosecondsPerInvocation="150"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

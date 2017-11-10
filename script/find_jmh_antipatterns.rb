@@ -13,6 +13,7 @@ class JMHSpotBugsAutomater
   SPOTBUGS_CMD = "java -jar /Users/philipp/spotbugs-3.1.0/lib/spotbugs.jar -textui -bugCategories JMH -xml -output "
   TMP_XML_FILE = "tmp.xml"
   JMH_JAR_PATTERNS = ["jmh", "benchmark", "perf", "bench"]
+  SEND_ENTER = "echo \"\n\" |"
 
   def initialize(outfile, tmp_dir, cache_dir, debug, no_build = false)
     @debug = debug
@@ -91,12 +92,12 @@ class JMHSpotBugsAutomater
     end
 
     def compile_mvn
-      system "#{MVN_CMD} install -DskipTests"
+      system "#{SEND_ENTER} #{MVN_CMD} install -DskipTests"
       $?
     end
 
     def compile_gradle
-      system "./gradlew build -x test"
+      system "#{SEND_ENTER} ./gradlew build -x test"
       $?
     end
 
@@ -142,6 +143,7 @@ end
 def parse_cmd
   options = {}
   options[:no_build] = false
+  options[:shuffle] = false
   OptionParser.new do |opts|
 
     opts.on("-i", "--input INPUTFILE", "Specify CSV file with list of projects") do |i|
@@ -156,7 +158,7 @@ def parse_cmd
       options[:tmp_dir] = t || "tmp"
     end
 
-    opts.on("-r", "--result-cache CACHE", "Set this flag to skip cloning and building") do |r|
+    opts.on("-r", "--result-cache CACHE", "Directory to write detailed bug info ") do |r|
       options[:result_cache] = r || "results"
     end
 
@@ -166,6 +168,10 @@ def parse_cmd
 
     opts.on("-nb", "--no-build", "Set this flag to skip cloning and building") do |nb|
       options[:no_build] = true
+    end
+
+    opts.on("-s", "--shuffle", "Set this flag to randomly shuffle projects before iterating over them") do |s|
+      options[:shuffle] = true
     end
 
   end.parse!
@@ -192,5 +198,6 @@ File.open(options[:debug], "w") do |debug|
   jmh = JMHSpotBugsAutomater.new(options[:output_file], options[:tmp_dir], options[:result_cache], debug, options[:no_build])
   csv = CSV.parse(f, header = true, separator = ",")
   projects_to_consider = csv.reject{|l| l['forked'] == "TRUE" || l['stars'].to_i < 2 }
+  projects_to_consider.shuffle! if options[:shuffle]
   projects_to_consider.each{|project| jmh.analyze_project(project) }
 end
