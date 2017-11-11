@@ -1,4 +1,5 @@
 require_relative 'csv.rb'
+require_relative 'jmh.rb'
 require 'optparse'
 require 'nokogiri'
 require 'find'
@@ -13,14 +14,18 @@ class JMHSpotBugsAutomater
   SPOTBUGS_CMD = "java -jar /Users/philipp/spotbugs-3.1.0/lib/spotbugs.jar -textui -bugCategories JMH -xml -output "
   TMP_XML_FILE = "tmp.xml"
   JMH_JAR_PATTERNS = ["jmh", "benchmark", "perf", "bench"]
+  JMH_DIR_PATTERNS = ["jmh", "benchmark", "perf", "bench"]
   SEND_ENTER = "echo \"\n\" |"
 
-  def initialize(outfile, tmp_dir, cache_dir, debug, no_build = false)
+  def initialize(outfile, tmp_dir, cache_dir, debug, no_build = false, count_file = nil)
     @debug = debug
     @tmp_dir = tmp_dir
     @cache_dir = cache_dir
     @outfile = outfile
     @skipbuild = no_build
+    @count_file = count_file
+    @counts = CSV.new
+    @counts.headers = ["project", "file", "count"]
     @result = CSV.new
     @result.headers = ["project", "bugtype", "count"]
   end
@@ -30,11 +35,20 @@ class JMHSpotBugsAutomater
     if !@skipbuild
       success, dir = clone_project(project['project'], @tmp_dir)
       @debug.puts "Failed to checkout project #{project['project']}" if !success
+
+      count_benchmarks(dir) if @count_file
+
       resp_code, backend = try_compile dir
       @debug.puts "Failed to compile project #{project['project']} in #{dir}. Error code was #{resp_code} and detected backend was #{backend}." if resp_code != 0
       # this is a sanity check
       found = check_for_jmh_artefact dir
-      @debug.puts "No JMHy artefact found  for #{project['project']} in #{dir}." if !found
+      if !found
+        if backend == :mvn
+          guess_and_compile_mvn_dir dir
+        elsif backend == :gradlew
+          @debug.puts "No JMHy artefact found  for #{project['project']} in #{dir}."
+        end
+      end
     else
       project_name = project['project'].split("/")[1]
       dir = "#{@tmp_dir}/#{project_name}"
@@ -51,6 +65,18 @@ class JMHSpotBugsAutomater
     end
 
     @debug.flush
+
+  end
+
+  def count_benchmarks(dir)
+
+    project = dir.split("/")[-1]
+    jmh = JMH.new(dir)
+    counts = jmh.count_benchmarks
+    results = transpose_to_csv(counts, project)
+    results.each{|line| @counts << line}
+    @debug.puts "Successfully counted benchmarks in project #{project['project']}."
+    @counts.save(@count_file)
 
   end
 
@@ -97,7 +123,7 @@ class JMHSpotBugsAutomater
     end
 
     def compile_gradle
-      system "#{SEND_ENTER} ./gradlew build -x test"
+      system "#{SEND_ENTER} ./gradlew jmhJar -x test"
       $?
     end
 
@@ -111,6 +137,18 @@ class JMHSpotBugsAutomater
         end
       end
       return found
+    end
+
+    def guess_and_compile_mvn_dir(dir)
+      JMH_DIR_PATTERNS.each do |pattern|
+        Find.find(dir) do |directory|
+          if File.directory?(directory) && directory =~ /.*#{pattern}.*$/
+            Dir.chdir(directory) do
+              compile_mvn
+            end
+          end
+        end
+      end
     end
 
     def run_jmh_analysis(dir)
@@ -174,6 +212,10 @@ def parse_cmd
       options[:shuffle] = true
     end
 
+    opts.on("-c", "--count COUNTFILE", "Also count benchmarks and report to COUNTFILE") do |cf|
+      options[:count_file] = cf
+    end
+
   end.parse!
   return options
 end
@@ -195,7 +237,13 @@ File.open(options[:debug], "w") do |debug|
     Dir.mkdir options[:result_cache]
   end
 
-  jmh = JMHSpotBugsAutomater.new(options[:output_file], options[:tmp_dir], options[:result_cache], debug, options[:no_build])
+  if options[:count_file]
+    count_file = File.open(options[:count_file], "w")
+  else
+    count_file = nil
+  end
+
+  jmh = JMHSpotBugsAutomater.new(options[:output_file], options[:tmp_dir], options[:result_cache], debug, options[:no_build], count_file)
   csv = CSV.parse(f, header = true, separator = ",")
   projects_to_consider = csv.reject{|l| l['forked'] == "TRUE" || l['stars'].to_i < 2 }
   projects_to_consider.shuffle! if options[:shuffle]
