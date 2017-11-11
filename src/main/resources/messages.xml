@@ -52,6 +52,14 @@
 		</Details>
 	</Detector>
 	
+	<Detector
+		class="de.heidelberg.pvs.diego.detectors.BenchmarkMethodDetector">
+		<Details>
+			Detector of the JMH_BENCHMARK_METHOD_FOUND inside the
+			benchmark bug pattern.
+		</Details>
+	</Detector>
+	
 
 	<BugPattern type="JMH_IGNORED_METHOD_RETURN">
 		<ShortDescription>Method return not used or consumed by a Blackhole.</ShortDescription>
@@ -143,4 +151,16 @@ Caveats for this mode include:
 ]]>
 		</Details>
 	</BugPattern>
+	
+	<BugPattern type="JMH_BENCHMARK_METHOD_FOUND">
+		<ShortDescription>JMH Benchmark method found. </ShortDescription>
+		<LongDescription>Benchmark method found in {1} - SANITY TEST.</LongDescription>
+		<Details>
+<![CDATA[
+
+
+]]>
+		</Details>
+	</BugPattern>
+	
 </MessageCollection>

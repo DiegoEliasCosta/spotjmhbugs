@@ -20,6 +20,9 @@
 		
 	<Detector class="de.heidelberg.pvs.diego.detectors.SingleShotBenchmarkDetector"
 		reports="JMH_BENCHMARKMODE_SINGLESHOT" speed="fast" />
+		
+	<Detector class="de.heidelberg.pvs.diego.detectors.BenchmarkMethodDetector"
+		reports="JMH_BENCHMARK_METHOD_FOUND" speed="fast" />
 
 	<!-- JMH CORRECNESS BUGS -->
 	<BugPattern type="JMH_IGNORED_METHOD_RETURN" category="JMH" />
@@ -30,5 +33,6 @@
 	<BugPattern type="JMH_NOTFORKED_BENCHMARK" category="JMH" />
 	<BugPattern type="JMH_FIXTURE_USING_INVOCATION_SCOPE" category="JMH" />
 	<BugPattern type="JMH_BENCHMARKMODE_SINGLESHOT" category="JMH" />
+	<BugPattern type="JMH_BENCHMARK_METHOD_FOUND" category="JMH" />
 
 </FindbugsPlugin>
