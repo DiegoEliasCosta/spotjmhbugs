@@ -36,7 +36,7 @@ class JMHSpotBugsAutomater
       success, dir = clone_project(project['project'], @tmp_dir)
       @debug.puts "Failed to checkout project #{project['project']}" if !success
 
-      count_benchmarks(dir) if @count_file
+      counted = count_benchmarks(dir) if @count_file
 
       resp_code, backend = try_compile dir
       @debug.puts "Failed to compile project #{project['project']} in #{dir}. Error code was #{resp_code} and detected backend was #{backend}." if resp_code != 0
@@ -55,13 +55,24 @@ class JMHSpotBugsAutomater
     end
 
     r = run_jmh_analysis(dir)
+
     if r != :failed
+
+      if counted > 0
+        method_found_reports = r.reject{|line| line[1] != "JMH_BENCHMARK_METHOD_FOUND" }
+        actual = (method_found_reports.size > 0) ? method_found_reports[0][2] : 0
+        @debug.puts "Warning: expected to find #{counted} benchmarks for #{project['project']}, but found #{actual}." if counted != actual
+      end
+
       r.each{|line| @result << line }
       @debug.puts "Successfully analyzed project #{project['project']}."
       @result.save(@outfile)
       @debug.puts "Successfully saved file"
+
     else
+
       @debug.puts "Failed to analyzed project #{project['project']}."
+      
     end
 
     @debug.flush
@@ -77,6 +88,7 @@ class JMHSpotBugsAutomater
     results.each{|line| @counts << line}
     @debug.puts "Successfully counted benchmarks in project #{project['project']}."
     @counts.save(@count_file)
+    return counts.inject(0){|sum,entry| sum += entry[1] }
 
   end
 
