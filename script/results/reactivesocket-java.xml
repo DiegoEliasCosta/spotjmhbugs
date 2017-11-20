@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1511132102000" analysisTimestamp="1511132104088" release="">
+  <Project projectName="">
+    <Jar>tmp/reactivesocket-java</Jar>
+  </Project>
+  <Errors errors="0" missingClasses="35">
+    <MissingClass>io.netty.buffer.ByteBuf</MissingClass>
+    <MissingClass>io.netty.buffer.ByteBufAllocator</MissingClass>
+    <MissingClass>io.netty.buffer.ByteBufUtil</MissingClass>
+    <MissingClass>io.netty.buffer.CompositeByteBuf</MissingClass>
+    <MissingClass>io.netty.buffer.PooledByteBufAllocator</MissingClass>
+    <MissingClass>io.netty.buffer.Unpooled</MissingClass>
+    <MissingClass>io.netty.util.AbstractReferenceCounted</MissingClass>
+    <MissingClass>io.netty.util.IllegalReferenceCountException</MissingClass>
+    <MissingClass>io.netty.util.Recycler</MissingClass>
+    <MissingClass>io.netty.util.Recycler$Handle</MissingClass>
+    <MissingClass>io.netty.util.ReferenceCounted</MissingClass>
+    <MissingClass>io.netty.util.collection.IntObjectHashMap</MissingClass>
+    <MissingClass>io.netty.util.internal.shaded.org.jctools.queues.atomic.MpscGrowableAtomicArrayQueue</MissingClass>
+    <MissingClass>org.reactivestreams.Publisher</MissingClass>
+    <MissingClass>org.reactivestreams.Subscriber</MissingClass>
+    <MissingClass>org.reactivestreams.Subscription</MissingClass>
+    <MissingClass>org.slf4j.Logger</MissingClass>
+    <MissingClass>org.slf4j.LoggerFactory</MissingClass>
+    <MissingClass>reactor.core.CoreSubscriber</MissingClass>
+    <MissingClass>reactor.core.Disposable</MissingClass>
+    <MissingClass>reactor.core.Exceptions</MissingClass>
+    <MissingClass>reactor.core.Fuseable</MissingClass>
+    <MissingClass>reactor.core.Fuseable$QueueSubscription</MissingClass>
+    <MissingClass>reactor.core.publisher.DirectProcessor</MissingClass>
+    <MissingClass>reactor.core.publisher.Flux</MissingClass>
+    <MissingClass>reactor.core.publisher.FluxProcessor</MissingClass>
+    <MissingClass>reactor.core.publisher.GroupedFlux</MissingClass>
+    <MissingClass>reactor.core.publisher.Mono</MissingClass>
+    <MissingClass>reactor.core.publisher.MonoProcessor</MissingClass>
+    <MissingClass>reactor.core.publisher.Operators</MissingClass>
+    <MissingClass>reactor.core.publisher.SignalType</MissingClass>
+    <MissingClass>reactor.core.publisher.SynchronousSink</MissingClass>
+    <MissingClass>reactor.core.publisher.UnicastProcessor</MissingClass>
+    <MissingClass>reactor.util.concurrent.Queues</MissingClass>
+    <MissingClass>reactor.util.context.Context</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sun, 19 Nov 2017 23:55:02 +0100" total_classes="156" referenced_classes="298" total_bugs="0" total_size="4409" num_packages="14" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="16.42" clock_seconds="4.97" peak_mbytes="329.56" alloc_mbytes="3641.00" gc_seconds="0.09">
+    <PackageStats package="io.rsocket" total_bugs="0" total_types="39" total_size="1532">
+      <ClassStats class="io.rsocket.AbstractRSocket" sourceFile="AbstractRSocket.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="io.rsocket.Availability" sourceFile="Availability.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="io.rsocket.Closeable" sourceFile="Closeable.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="io.rsocket.ConnectionSetupPayload" sourceFile="ConnectionSetupPayload.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="io.rsocket.ConnectionSetupPayload$DefaultConnectionSetupPayload" sourceFile="ConnectionSetupPayload.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="io.rsocket.DuplexConnection" sourceFile="DuplexConnection.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="io.rsocket.Frame" sourceFile="Frame.java" interface="false" size="128" bugs="0"/>
+      <ClassStats class="io.rsocket.Frame$1" sourceFile="Frame.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="io.rsocket.Frame$2" sourceFile="Frame.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="io.rsocket.Frame$Cancel" sourceFile="Frame.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="io.rsocket.Frame$Error" sourceFile="Frame.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="io.rsocket.Frame$Keepalive" sourceFile="Frame.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="io.rsocket.Frame$Lease" sourceFile="Frame.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="io.rsocket.Frame$PayloadFrame" sourceFile="Frame.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="io.rsocket.Frame$Request" sourceFile="Frame.java" interface="false" size="57" bugs="0"/>
+      <ClassStats class="io.rsocket.Frame$RequestN" sourceFile="Frame.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="io.rsocket.Frame$Setup" sourceFile="Frame.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="io.rsocket.FrameType" sourceFile="FrameType.java" interface="false" size="76" bugs="0"/>
+      <ClassStats class="io.rsocket.FrameType$Flags" sourceFile="FrameType.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="io.rsocket.Payload" sourceFile="Payload.java" interface="true" size="21" bugs="0"/>
+      <ClassStats class="io.rsocket.RSocket" sourceFile="RSocket.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="io.rsocket.RSocketClient" sourceFile="RSocketClient.java" interface="false" size="304" bugs="0"/>
+      <ClassStats class="io.rsocket.RSocketClient$1" sourceFile="RSocketClient.java" interface="false" size="76" bugs="0"/>
+      <ClassStats class="io.rsocket.RSocketClient$1$1" sourceFile="RSocketClient.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="io.rsocket.RSocketClient$2" sourceFile="RSocketClient.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="io.rsocket.RSocketFactory" sourceFile="RSocketFactory.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="io.rsocket.RSocketFactory$1" sourceFile="RSocketFactory.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="io.rsocket.RSocketFactory$ClientRSocketFactory" sourceFile="RSocketFactory.java" interface="false" size="101" bugs="0"/>
+      <ClassStats class="io.rsocket.RSocketFactory$ClientRSocketFactory$1" sourceFile="RSocketFactory.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="io.rsocket.RSocketFactory$ClientRSocketFactory$StartClient" sourceFile="RSocketFactory.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="io.rsocket.RSocketFactory$ClientTransportAcceptor" sourceFile="RSocketFactory.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="io.rsocket.RSocketFactory$ServerRSocketFactory" sourceFile="RSocketFactory.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="io.rsocket.RSocketFactory$ServerRSocketFactory$ServerStart" sourceFile="RSocketFactory.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="io.rsocket.RSocketFactory$ServerTransportAcceptor" sourceFile="RSocketFactory.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="io.rsocket.RSocketFactory$Start" sourceFile="RSocketFactory.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="io.rsocket.RSocketServer" sourceFile="RSocketServer.java" interface="false" size="271" bugs="0"/>
+      <ClassStats class="io.rsocket.RSocketServer$1" sourceFile="RSocketServer.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="io.rsocket.SocketAcceptor" sourceFile="SocketAcceptor.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="io.rsocket.StreamIdSupplier" sourceFile="StreamIdSupplier.java" interface="false" size="15" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="io.rsocket.exceptions" total_bugs="0" total_types="18" total_size="150">
+      <ClassStats class="io.rsocket.exceptions.ApplicationException" sourceFile="ApplicationException.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="io.rsocket.exceptions.CancelException" sourceFile="CancelException.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="io.rsocket.exceptions.ConnectionCloseException" sourceFile="ConnectionCloseException.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="io.rsocket.exceptions.ConnectionException" sourceFile="ConnectionException.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="io.rsocket.exceptions.Exceptions" sourceFile="Exceptions.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="io.rsocket.exceptions.InvalidRequestException" sourceFile="InvalidRequestException.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="io.rsocket.exceptions.InvalidSetupException" sourceFile="InvalidSetupException.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="io.rsocket.exceptions.NoAvailableRSocketException" sourceFile="NoAvailableRSocketException.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="io.rsocket.exceptions.RSocketException" sourceFile="RSocketException.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="io.rsocket.exceptions.RejectedException" sourceFile="RejectedException.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="io.rsocket.exceptions.RejectedResumeException" sourceFile="RejectedResumeException.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="io.rsocket.exceptions.RejectedSetupException" sourceFile="RejectedSetupException.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="io.rsocket.exceptions.Retryable" sourceFile="Retryable.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="io.rsocket.exceptions.SetupException" sourceFile="SetupException.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="io.rsocket.exceptions.TimeoutException" sourceFile="TimeoutException.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="io.rsocket.exceptions.TransportException" sourceFile="TransportException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="io.rsocket.exceptions.UnsupportedSetupException" sourceFile="UnsupportedSetupException.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="io.rsocket.exceptions.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="io.rsocket.fragmentation" total_bugs="0" total_types="6" total_size="163">
+      <ClassStats class="io.rsocket.fragmentation.FragmentationDuplexConnection" sourceFile="FragmentationDuplexConnection.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="io.rsocket.fragmentation.FrameFragmenter" sourceFile="FrameFragmenter.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="io.rsocket.fragmentation.FrameFragmenter$1" sourceFile="FrameFragmenter.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="io.rsocket.fragmentation.FrameFragmenter$FragmentGenerator" sourceFile="FrameFragmenter.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="io.rsocket.fragmentation.FrameReassembler" sourceFile="FrameReassembler.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="io.rsocket.fragmentation.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="io.rsocket.frame" total_bugs="0" total_types="10" total_size="441">
+      <ClassStats class="io.rsocket.frame.ErrorFrameFlyweight" sourceFile="ErrorFrameFlyweight.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="io.rsocket.frame.FrameHeaderFlyweight" sourceFile="FrameHeaderFlyweight.java" interface="false" size="181" bugs="0"/>
+      <ClassStats class="io.rsocket.frame.FrameHeaderFlyweight$1" sourceFile="FrameHeaderFlyweight.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="io.rsocket.frame.KeepaliveFrameFlyweight" sourceFile="KeepaliveFrameFlyweight.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="io.rsocket.frame.LeaseFrameFlyweight" sourceFile="LeaseFrameFlyweight.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="io.rsocket.frame.RequestFrameFlyweight" sourceFile="RequestFrameFlyweight.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="io.rsocket.frame.RequestNFrameFlyweight" sourceFile="RequestNFrameFlyweight.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="io.rsocket.frame.SetupFrameFlyweight" sourceFile="SetupFrameFlyweight.java" interface="false" size="93" bugs="0"/>
+      <ClassStats class="io.rsocket.frame.VersionFlyweight" sourceFile="VersionFlyweight.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="io.rsocket.frame.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="io.rsocket.internal" total_bugs="0" total_types="11" total_size="399">
+      <ClassStats class="io.rsocket.internal.ClientServerInputMultiplexer" sourceFile="ClientServerInputMultiplexer.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="io.rsocket.internal.ClientServerInputMultiplexer$1" sourceFile="ClientServerInputMultiplexer.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="io.rsocket.internal.ClientServerInputMultiplexer$InternalDuplexConnection" sourceFile="ClientServerInputMultiplexer.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="io.rsocket.internal.LimitableRequestPublisher" sourceFile="LimitableRequestPublisher.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="io.rsocket.internal.LimitableRequestPublisher$1" sourceFile="LimitableRequestPublisher.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="io.rsocket.internal.LimitableRequestPublisher$InnerSubscriber" sourceFile="LimitableRequestPublisher.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="io.rsocket.internal.LimitableRequestPublisher$InnerSubscription" sourceFile="LimitableRequestPublisher.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="io.rsocket.internal.SwitchTransform" sourceFile="SwitchTransform.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="io.rsocket.internal.SwitchTransform$SwitchTransformSubscriber" sourceFile="SwitchTransform.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="io.rsocket.internal.UnboundedProcessor" sourceFile="UnboundedProcessor.java" interface="false" size="156" bugs="0"/>
+      <ClassStats class="io.rsocket.internal.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="io.rsocket.lease" total_bugs="0" total_types="3" total_size="41">
+      <ClassStats class="io.rsocket.lease.Lease" sourceFile="Lease.java" interface="true" size="9" bugs="0"/>
+      <ClassStats class="io.rsocket.lease.LeaseImpl" sourceFile="LeaseImpl.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="io.rsocket.lease.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="io.rsocket.perfutil" total_bugs="0" total_types="1" total_size="28">
+      <ClassStats class="io.rsocket.perfutil.TestDuplexConnection" sourceFile="TestDuplexConnection.java" interface="false" size="28" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="io.rsocket.plugins" total_bugs="0" total_types="5" total_size="73">
+      <ClassStats class="io.rsocket.plugins.DuplexConnectionInterceptor" sourceFile="DuplexConnectionInterceptor.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="io.rsocket.plugins.DuplexConnectionInterceptor$Type" sourceFile="DuplexConnectionInterceptor.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="io.rsocket.plugins.PluginRegistry" sourceFile="PluginRegistry.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="io.rsocket.plugins.Plugins" sourceFile="Plugins.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="io.rsocket.plugins.RSocketInterceptor" sourceFile="RSocketInterceptor.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="io.rsocket.resume" total_bugs="0" total_types="5" total_size="113">
+      <ClassStats class="io.rsocket.resume.ResumeCache" sourceFile="ResumeCache.java" interface="false" size="63" bugs="0"/>
+      <ClassStats class="io.rsocket.resume.ResumePositionCounter" sourceFile="ResumePositionCounter.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="io.rsocket.resume.ResumeToken" sourceFile="ResumeToken.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="io.rsocket.resume.ResumeUtil" sourceFile="ResumeUtil.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="io.rsocket.resume.ResumeUtil$1" sourceFile="ResumeUtil.java" interface="false" size="4" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="io.rsocket.transport" total_bugs="0" total_types="6" total_size="12">
+      <ClassStats class="io.rsocket.transport.ClientTransport" sourceFile="ClientTransport.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="io.rsocket.transport.ServerTransport" sourceFile="ServerTransport.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="io.rsocket.transport.ServerTransport$ConnectionAcceptor" sourceFile="ServerTransport.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="io.rsocket.transport.Transport" sourceFile="Transport.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="io.rsocket.transport.TransportHeaderAware" sourceFile="TransportHeaderAware.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="io.rsocket.transport.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="io.rsocket.uri" total_bugs="0" total_types="2" total_size="46">
+      <ClassStats class="io.rsocket.uri.UriHandler" sourceFile="UriHandler.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="io.rsocket.uri.UriTransportRegistry" sourceFile="UriTransportRegistry.java" interface="false" size="39" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="io.rsocket.util" total_bugs="0" total_types="9" total_size="246">
+      <ClassStats class="io.rsocket.util.ByteBufPayload" sourceFile="ByteBufPayload.java" interface="false" size="81" bugs="0"/>
+      <ClassStats class="io.rsocket.util.ByteBufPayload$1" sourceFile="ByteBufPayload.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="io.rsocket.util.Clock" sourceFile="Clock.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="io.rsocket.util.CloseableAdapter" sourceFile="CloseableAdapter.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="io.rsocket.util.DefaultPayload" sourceFile="DefaultPayload.java" interface="false" size="66" bugs="0"/>
+      <ClassStats class="io.rsocket.util.EmptyPayload" sourceFile="EmptyPayload.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="io.rsocket.util.ExceptionUtil" sourceFile="ExceptionUtil.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="io.rsocket.util.RSocketProxy" sourceFile="RSocketProxy.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="io.rsocket.util.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.gradle.cli" total_bugs="0" total_types="24" total_size="545">
+      <ClassStats class="org.gradle.cli.AbstractCommandLineConverter" sourceFile="AbstractCommandLineConverter.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.gradle.cli.AbstractPropertiesCommandLineConverter" sourceFile="AbstractPropertiesCommandLineConverter.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineArgumentException" sourceFile="CommandLineArgumentException.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineConverter" sourceFile="CommandLineConverter.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineOption" sourceFile="CommandLineOption.java" interface="false" size="63" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser" sourceFile="CommandLineParser.java" interface="false" size="138" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$1" sourceFile="CommandLineParser.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$AfterFirstSubCommand" sourceFile="CommandLineParser.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$AfterOptions" sourceFile="CommandLineParser.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$BeforeFirstSubCommand" sourceFile="CommandLineParser.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$CaseInsensitiveStringComparator" sourceFile="CommandLineParser.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$KnownOptionParserState" sourceFile="CommandLineParser.java" interface="false" size="45" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$MissingOptionArgState" sourceFile="CommandLineParser.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$OptionAwareParserState" sourceFile="CommandLineParser.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$OptionComparator" sourceFile="CommandLineParser.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$OptionParserState" sourceFile="CommandLineParser.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$OptionString" sourceFile="CommandLineParser.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$OptionStringComparator" sourceFile="CommandLineParser.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$ParserState" sourceFile="CommandLineParser.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$UnknownOptionParserState" sourceFile="CommandLineParser.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="org.gradle.cli.ParsedCommandLine" sourceFile="ParsedCommandLine.java" interface="false" size="64" bugs="0"/>
+      <ClassStats class="org.gradle.cli.ParsedCommandLineOption" sourceFile="ParsedCommandLineOption.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.gradle.cli.ProjectPropertiesCommandLineConverter" sourceFile="ProjectPropertiesCommandLineConverter.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.gradle.cli.SystemPropertiesCommandLineConverter" sourceFile="SystemPropertiesCommandLineConverter.java" interface="false" size="9" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.gradle.wrapper" total_bugs="0" total_types="17" total_size="620">
+      <ClassStats class="org.gradle.wrapper.BootstrapMainStarter" sourceFile="BootstrapMainStarter.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.Download" sourceFile="Download.java" interface="false" size="93" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.Download$1" sourceFile="Download.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.Download$ProxyAuthenticator" sourceFile="Download.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.DownloadProgressListener" sourceFile="DownloadProgressListener.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.ExclusiveFileAccessManager" sourceFile="ExclusiveFileAccessManager.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.GradleUserHomeLookup" sourceFile="GradleUserHomeLookup.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.GradleWrapperMain" sourceFile="GradleWrapperMain.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.IDownload" sourceFile="IDownload.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.Install" sourceFile="Install.java" interface="false" size="128" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.Install$1" sourceFile="Install.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.Logger" sourceFile="Logger.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.PathAssembler" sourceFile="PathAssembler.java" interface="false" size="45" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.PathAssembler$LocalDistribution" sourceFile="PathAssembler.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.SystemPropertiesHandler" sourceFile="SystemPropertiesHandler.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.WrapperConfiguration" sourceFile="WrapperConfiguration.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.WrapperExecutor" sourceFile="WrapperExecutor.java" interface="false" size="71" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="309" invocations="1157" avgMicrosecondsPerInvocation="267" maxMicrosecondsPerInvocation="27616" standardDeviationMicrosecondsPerInvocation="984"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="253" invocations="1161" avgMicrosecondsPerInvocation="218" maxMicrosecondsPerInvocation="5411" standardDeviationMicrosecondsPerInvocation="311"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="225" invocations="894" avgMicrosecondsPerInvocation="251" maxMicrosecondsPerInvocation="9275" standardDeviationMicrosecondsPerInvocation="540"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="208" invocations="965" avgMicrosecondsPerInvocation="216" maxMicrosecondsPerInvocation="7627" standardDeviationMicrosecondsPerInvocation="502"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="194" invocations="972" avgMicrosecondsPerInvocation="200" maxMicrosecondsPerInvocation="22840" standardDeviationMicrosecondsPerInvocation="923"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="182" invocations="298" avgMicrosecondsPerInvocation="610" maxMicrosecondsPerInvocation="9400" standardDeviationMicrosecondsPerInvocation="1235"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="175" invocations="298" avgMicrosecondsPerInvocation="588" maxMicrosecondsPerInvocation="19454" standardDeviationMicrosecondsPerInvocation="1493"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="174" invocations="918" avgMicrosecondsPerInvocation="189" maxMicrosecondsPerInvocation="10784" standardDeviationMicrosecondsPerInvocation="548"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="172" invocations="969" avgMicrosecondsPerInvocation="177" maxMicrosecondsPerInvocation="11872" standardDeviationMicrosecondsPerInvocation="538"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="151" invocations="965" avgMicrosecondsPerInvocation="157" maxMicrosecondsPerInvocation="12251" standardDeviationMicrosecondsPerInvocation="460"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="142" invocations="776" avgMicrosecondsPerInvocation="183" maxMicrosecondsPerInvocation="22105" standardDeviationMicrosecondsPerInvocation="878"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="137" invocations="1488" avgMicrosecondsPerInvocation="92" maxMicrosecondsPerInvocation="2338" standardDeviationMicrosecondsPerInvocation="170"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="103" invocations="1016" avgMicrosecondsPerInvocation="101" maxMicrosecondsPerInvocation="30004" standardDeviationMicrosecondsPerInvocation="1265"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="95" invocations="156" avgMicrosecondsPerInvocation="614" maxMicrosecondsPerInvocation="20913" standardDeviationMicrosecondsPerInvocation="2336"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="63" invocations="298" avgMicrosecondsPerInvocation="213" maxMicrosecondsPerInvocation="16638" standardDeviationMicrosecondsPerInvocation="1049"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="62" invocations="298" avgMicrosecondsPerInvocation="211" maxMicrosecondsPerInvocation="3151" standardDeviationMicrosecondsPerInvocation="413"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="57" invocations="1061" avgMicrosecondsPerInvocation="53" maxMicrosecondsPerInvocation="3826" standardDeviationMicrosecondsPerInvocation="161"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="56" invocations="298" avgMicrosecondsPerInvocation="190" maxMicrosecondsPerInvocation="4352" standardDeviationMicrosecondsPerInvocation="390"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="56" invocations="384" avgMicrosecondsPerInvocation="147" maxMicrosecondsPerInvocation="12005" standardDeviationMicrosecondsPerInvocation="654"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="49" invocations="965" avgMicrosecondsPerInvocation="51" maxMicrosecondsPerInvocation="1575" standardDeviationMicrosecondsPerInvocation="117"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="45" invocations="13045" avgMicrosecondsPerInvocation="3" maxMicrosecondsPerInvocation="1362" standardDeviationMicrosecondsPerInvocation="17"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="45" invocations="298" avgMicrosecondsPerInvocation="151" maxMicrosecondsPerInvocation="2510" standardDeviationMicrosecondsPerInvocation="260"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="37" invocations="156" avgMicrosecondsPerInvocation="240" maxMicrosecondsPerInvocation="2301" standardDeviationMicrosecondsPerInvocation="362"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="37" invocations="298" avgMicrosecondsPerInvocation="125" maxMicrosecondsPerInvocation="6765" standardDeviationMicrosecondsPerInvocation="435"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="35" invocations="156" avgMicrosecondsPerInvocation="228" maxMicrosecondsPerInvocation="3087" standardDeviationMicrosecondsPerInvocation="387"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="34" invocations="298" avgMicrosecondsPerInvocation="116" maxMicrosecondsPerInvocation="9423" standardDeviationMicrosecondsPerInvocation="718"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="34" invocations="894" avgMicrosecondsPerInvocation="38" maxMicrosecondsPerInvocation="3842" standardDeviationMicrosecondsPerInvocation="148"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="34" invocations="156" avgMicrosecondsPerInvocation="218" maxMicrosecondsPerInvocation="1828" standardDeviationMicrosecondsPerInvocation="283"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="33" invocations="298" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="2383" standardDeviationMicrosecondsPerInvocation="260"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="31" invocations="156" avgMicrosecondsPerInvocation="203" maxMicrosecondsPerInvocation="1829" standardDeviationMicrosecondsPerInvocation="274"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="30" invocations="753" avgMicrosecondsPerInvocation="40" maxMicrosecondsPerInvocation="3743" standardDeviationMicrosecondsPerInvocation="153"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="29" invocations="20082" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="3241" standardDeviationMicrosecondsPerInvocation="22"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="29" invocations="156" avgMicrosecondsPerInvocation="191" maxMicrosecondsPerInvocation="5354" standardDeviationMicrosecondsPerInvocation="497"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="28" invocations="298" avgMicrosecondsPerInvocation="96" maxMicrosecondsPerInvocation="2052" standardDeviationMicrosecondsPerInvocation="198"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

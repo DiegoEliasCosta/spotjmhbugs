@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1511130166000" analysisTimestamp="1511130174583" release="">
+  <Project projectName="">
+    <Jar>tmp/Microservices</Jar>
+  </Project>
+  <Errors errors="0" missingClasses="11">
+    <MissingClass>net.openhft.chronicle.core.Jvm</MissingClass>
+    <MissingClass>net.openhft.chronicle.core.OS</MissingClass>
+    <MissingClass>net.openhft.chronicle.queue.ChronicleQueue</MissingClass>
+    <MissingClass>net.openhft.chronicle.queue.ExcerptAppender</MissingClass>
+    <MissingClass>net.openhft.chronicle.queue.ExcerptTailer</MissingClass>
+    <MissingClass>net.openhft.chronicle.queue.impl.single.SingleChronicleQueue</MissingClass>
+    <MissingClass>net.openhft.chronicle.queue.impl.single.SingleChronicleQueueBuilder</MissingClass>
+    <MissingClass>net.openhft.chronicle.queue.service.ServiceWrapperBuilder</MissingClass>
+    <MissingClass>net.openhft.chronicle.websocket.jetty.JettyWebSocketServer</MissingClass>
+    <MissingClass>net.openhft.chronicle.wire.AbstractMarshallable</MissingClass>
+    <MissingClass>net.openhft.chronicle.wire.MethodReader</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sun, 19 Nov 2017 23:22:46 +0100" total_classes="34" referenced_classes="76" total_bugs="0" total_size="437" num_packages="4" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="6.84" clock_seconds="2.06" peak_mbytes="184.77" alloc_mbytes="3641.00" gc_seconds="0.04">
+    <PackageStats package="net.openhft.samples.microservices.helloworld" total_bugs="0" total_types="7" total_size="92">
+      <ClassStats class="net.openhft.samples.microservices.helloworld.HelloReplier" sourceFile="HelloReplier.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.helloworld.HelloWorld" sourceFile="HelloWorld.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.helloworld.HelloWorldClientMain" sourceFile="HelloWorldClientMain.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.helloworld.HelloWorldDumpMain" sourceFile="HelloWorldDumpMain.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.helloworld.HelloWorldImpl" sourceFile="HelloWorldImpl.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.helloworld.HelloWorldMain" sourceFile="HelloWorldMain.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.helloworld.HelloWorldPerfMain" sourceFile="HelloWorldPerfMain.java" interface="false" size="23" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.openhft.samples.microservices.jetty" total_bugs="0" total_types="9" total_size="112">
+      <ClassStats class="net.openhft.samples.microservices.jetty.GUIGateway" sourceFile="GUIGateway.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.jetty.GUIGatewayListener" sourceFile="GUIGatewayListener.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.jetty.GatewayPublisher" sourceFile="GatewayPublisher.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.jetty.MarketData" sourceFile="MarketData.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.jetty.Order" sourceFile="Order.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.jetty.OrderStatus" sourceFile="OrderStatus.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.jetty.Side" sourceFile="Side.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.jetty.TradingServer" sourceFile="TradingServer.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.jetty.TradingServer$GUIGatewayPublisher" sourceFile="TradingServer.java" interface="false" size="30" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.openhft.samples.microservices.orders" total_bugs="0" total_types="15" total_size="205">
+      <ClassStats class="net.openhft.samples.microservices.orders.MarketDataListener" sourceFile="MarketDataListener.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.orders.Order" sourceFile="Order.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.orders.OrderIdea" sourceFile="OrderIdea.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.orders.OrderIdeaListener" sourceFile="OrderIdeaListener.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.orders.OrderListener" sourceFile="OrderListener.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.orders.OrderManager" sourceFile="OrderManager.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.orders.OrderManager$1" sourceFile="OrderManager.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.orders.OrderManagerMain" sourceFile="OrderManagerMain.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.orders.OrderManagerPerfMain" sourceFile="OrderManagerPerfMain.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.orders.Side" sourceFile="Side.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.orders.SidedMarketDataCombiner" sourceFile="SidedMarketDataCombiner.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.orders.SidedMarketDataListener" sourceFile="SidedMarketDataListener.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.orders.SidedPrice" sourceFile="SidedPrice.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.orders.TopOfBookPrice" sourceFile="TopOfBookPrice.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.orders.TopOfBookPrice$1" sourceFile="TopOfBookPrice.java" interface="false" size="4" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="net.openhft.samples.microservices.riskmonitor" total_bugs="0" total_types="3" total_size="28">
+      <ClassStats class="net.openhft.samples.microservices.riskmonitor.RiskMonitor" sourceFile="RiskMonitor.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.riskmonitor.Side" sourceFile="Side.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="net.openhft.samples.microservices.riskmonitor.TradeDetails" sourceFile="TradeDetails.java" interface="false" size="16" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="231" invocations="578" avgMicrosecondsPerInvocation="400" maxMicrosecondsPerInvocation="11979" standardDeviationMicrosecondsPerInvocation="949"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="113" invocations="581" avgMicrosecondsPerInvocation="195" maxMicrosecondsPerInvocation="1796" standardDeviationMicrosecondsPerInvocation="121"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="74" invocations="76" avgMicrosecondsPerInvocation="980" maxMicrosecondsPerInvocation="16595" standardDeviationMicrosecondsPerInvocation="2503"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="63" invocations="60" avgMicrosecondsPerInvocation="1064" maxMicrosecondsPerInvocation="11336" standardDeviationMicrosecondsPerInvocation="2148"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="60" invocations="60" avgMicrosecondsPerInvocation="1002" maxMicrosecondsPerInvocation="9918" standardDeviationMicrosecondsPerInvocation="1984"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="58" invocations="60" avgMicrosecondsPerInvocation="978" maxMicrosecondsPerInvocation="9514" standardDeviationMicrosecondsPerInvocation="1924"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="49" invocations="76" avgMicrosecondsPerInvocation="653" maxMicrosecondsPerInvocation="11277" standardDeviationMicrosecondsPerInvocation="1505"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="49" invocations="60" avgMicrosecondsPerInvocation="823" maxMicrosecondsPerInvocation="9938" standardDeviationMicrosecondsPerInvocation="1507"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="47" invocations="60" avgMicrosecondsPerInvocation="798" maxMicrosecondsPerInvocation="8303" standardDeviationMicrosecondsPerInvocation="1551"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="44" invocations="524" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="1067" standardDeviationMicrosecondsPerInvocation="149"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="43" invocations="60" avgMicrosecondsPerInvocation="722" maxMicrosecondsPerInvocation="12000" standardDeviationMicrosecondsPerInvocation="1789"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="41" invocations="191" avgMicrosecondsPerInvocation="219" maxMicrosecondsPerInvocation="3662" standardDeviationMicrosecondsPerInvocation="443"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="41" invocations="122" avgMicrosecondsPerInvocation="337" maxMicrosecondsPerInvocation="11319" standardDeviationMicrosecondsPerInvocation="1400"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="36" invocations="34" avgMicrosecondsPerInvocation="1073" maxMicrosecondsPerInvocation="24474" standardDeviationMicrosecondsPerInvocation="4155"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="35" invocations="73" avgMicrosecondsPerInvocation="480" maxMicrosecondsPerInvocation="24366" standardDeviationMicrosecondsPerInvocation="2822"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="31" invocations="55" avgMicrosecondsPerInvocation="573" maxMicrosecondsPerInvocation="6004" standardDeviationMicrosecondsPerInvocation="1126"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="28" invocations="76" avgMicrosecondsPerInvocation="378" maxMicrosecondsPerInvocation="7643" standardDeviationMicrosecondsPerInvocation="1015"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="23" invocations="34" avgMicrosecondsPerInvocation="702" maxMicrosecondsPerInvocation="5595" standardDeviationMicrosecondsPerInvocation="1428"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="23" invocations="34" avgMicrosecondsPerInvocation="698" maxMicrosecondsPerInvocation="13722" standardDeviationMicrosecondsPerInvocation="2386"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="21" invocations="76" avgMicrosecondsPerInvocation="282" maxMicrosecondsPerInvocation="4265" standardDeviationMicrosecondsPerInvocation="657"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="21" invocations="76" avgMicrosecondsPerInvocation="278" maxMicrosecondsPerInvocation="10743" standardDeviationMicrosecondsPerInvocation="1244"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="21" invocations="54" avgMicrosecondsPerInvocation="389" maxMicrosecondsPerInvocation="12264" standardDeviationMicrosecondsPerInvocation="1659"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="20" invocations="76" avgMicrosecondsPerInvocation="273" maxMicrosecondsPerInvocation="2636" standardDeviationMicrosecondsPerInvocation="482"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="20" invocations="76" avgMicrosecondsPerInvocation="270" maxMicrosecondsPerInvocation="3129" standardDeviationMicrosecondsPerInvocation="611"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="18" invocations="60" avgMicrosecondsPerInvocation="315" maxMicrosecondsPerInvocation="2814" standardDeviationMicrosecondsPerInvocation="567"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="18" invocations="16" avgMicrosecondsPerInvocation="1181" maxMicrosecondsPerInvocation="4238" standardDeviationMicrosecondsPerInvocation="1138"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantPoolGenFactory" totalMilliseconds="16" invocations="34" avgMicrosecondsPerInvocation="480" maxMicrosecondsPerInvocation="12369" standardDeviationMicrosecondsPerInvocation="2103"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="14" invocations="34" avgMicrosecondsPerInvocation="440" maxMicrosecondsPerInvocation="10098" standardDeviationMicrosecondsPerInvocation="1707"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

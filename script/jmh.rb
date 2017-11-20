@@ -3,7 +3,7 @@ require 'find'
 
 class JMH
 
-  JMH_BENCHMARK_MARKER = /@Benchmark/
+  JMH_BENCHMARK_MARKER = /@Benchmark\s/
 
   def initialize(dir)
     @dir = dir
@@ -36,7 +36,7 @@ class JMH
   def all_benchmark_files
     files = []
     Find.find(".") do |file|
-      files << file if (file =~ /.+\.java$/ && File.open(file).grep(JMH_BENCHMARK_MARKER).size > 0)
+      files << file if (file =~ /.+\.java$/ && File.file?(file) && File.open(file).grep(JMH_BENCHMARK_MARKER).size > 0)
     end
     return files
   end

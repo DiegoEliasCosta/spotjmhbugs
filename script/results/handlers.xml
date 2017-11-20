@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1511114761000" analysisTimestamp="1511114769874" release="">
+  <Project projectName="">
+    <Jar>tmp/handlers</Jar>
+  </Project>
+  <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="com.github.spriet2000.railways.tests.BenchMarks">
+      <SourceLine classname="com.github.spriet2000.railways.tests.BenchMarks" start="12" end="31" sourcefile="BenchMarks.java" sourcepath="com/github/spriet2000/railways/tests/BenchMarks.java"/>
+    </Class>
+    <Method classname="com.github.spriet2000.railways.tests.BenchMarks" name="report" signature="()V" isStatic="false">
+      <SourceLine classname="com.github.spriet2000.railways.tests.BenchMarks" start="16" end="31" startBytecode="0" endBytecode="281" sourcefile="BenchMarks.java" sourcepath="com/github/spriet2000/railways/tests/BenchMarks.java"/>
+    </Method>
+    <SourceLine classname="com.github.spriet2000.railways.tests.BenchMarks" start="16" end="16" startBytecode="0" endBytecode="0" sourcefile="BenchMarks.java" sourcepath="com/github/spriet2000/railways/tests/BenchMarks.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
+    <Class classname="com.github.spriet2000.railways.tests.BenchMarks">
+      <SourceLine classname="com.github.spriet2000.railways.tests.BenchMarks" start="12" end="31" sourcefile="BenchMarks.java" sourcepath="com/github/spriet2000/railways/tests/BenchMarks.java"/>
+    </Class>
+    <Method classname="com.github.spriet2000.railways.tests.BenchMarks" name="report" signature="()V" isStatic="false">
+      <SourceLine classname="com.github.spriet2000.railways.tests.BenchMarks" start="16" end="31" startBytecode="0" endBytecode="281" sourcefile="BenchMarks.java" sourcepath="com/github/spriet2000/railways/tests/BenchMarks.java"/>
+    </Method>
+    <SourceLine classname="com.github.spriet2000.railways.tests.BenchMarks" start="28" end="28" startBytecode="96" endBytecode="96" sourcefile="BenchMarks.java" sourcepath="com/github/spriet2000/railways/tests/BenchMarks.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="17">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.openjdk.jmh.infra.BenchmarkParams</MissingClass>
+    <MissingClass>org.openjdk.jmh.infra.Blackhole</MissingClass>
+    <MissingClass>org.openjdk.jmh.infra.IterationParams</MissingClass>
+    <MissingClass>org.openjdk.jmh.infra.ThreadParams</MissingClass>
+    <MissingClass>org.openjdk.jmh.results.AverageTimeResult</MissingClass>
+    <MissingClass>org.openjdk.jmh.results.BenchmarkTaskResult</MissingClass>
+    <MissingClass>org.openjdk.jmh.results.RawResults</MissingClass>
+    <MissingClass>org.openjdk.jmh.results.ResultRole</MissingClass>
+    <MissingClass>org.openjdk.jmh.results.SampleTimeResult</MissingClass>
+    <MissingClass>org.openjdk.jmh.results.SingleShotResult</MissingClass>
+    <MissingClass>org.openjdk.jmh.results.ThroughputResult</MissingClass>
+    <MissingClass>org.openjdk.jmh.runner.InfraControl</MissingClass>
+    <MissingClass>org.openjdk.jmh.runner.Runner</MissingClass>
+    <MissingClass>org.openjdk.jmh.runner.options.ChainedOptionsBuilder</MissingClass>
+    <MissingClass>org.openjdk.jmh.runner.options.OptionsBuilder</MissingClass>
+    <MissingClass>org.openjdk.jmh.util.SampleBuffer</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sun, 19 Nov 2017 19:06:01 +0100" total_classes="14" referenced_classes="53" total_bugs="2" total_size="1665" num_packages="4" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="6.66" clock_seconds="1.96" peak_mbytes="172.26" alloc_mbytes="3641.00" gc_seconds="0.02" priority_2="2">
+    <PackageStats package="com.github.spriet2000.railways" total_bugs="0" total_types="1" total_size="34">
+      <ClassStats class="com.github.spriet2000.railways.Handlers" sourceFile="Handlers.java" interface="false" size="34" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.github.spriet2000.railways.tests" total_bugs="2" total_types="4" total_size="92" priority_2="2">
+      <ClassStats class="com.github.spriet2000.railways.tests.BenchMarks" sourceFile="BenchMarks.java" interface="false" size="21" bugs="2" priority_2="2"/>
+      <ClassStats class="com.github.spriet2000.railways.tests.BenchMarksRunner" sourceFile="BenchMarksRunner.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.github.spriet2000.railways.tests.RailwaysTest" sourceFile="RailwaysTest.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="com.github.spriet2000.railways.tests.RailwaysTest$Station" sourceFile="RailwaysTest.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.github.spriet2000.railways.tests.generated" total_bugs="0" total_types="5" total_size="996">
+      <ClassStats class="com.github.spriet2000.railways.tests.generated.BenchMarks_jmhType" sourceFile="BenchMarks_jmhType.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="com.github.spriet2000.railways.tests.generated.BenchMarks_jmhType_B1" sourceFile="BenchMarks_jmhType_B1.java" interface="false" size="259" bugs="0"/>
+      <ClassStats class="com.github.spriet2000.railways.tests.generated.BenchMarks_jmhType_B2" sourceFile="BenchMarks_jmhType_B2.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="com.github.spriet2000.railways.tests.generated.BenchMarks_jmhType_B3" sourceFile="BenchMarks_jmhType_B3.java" interface="false" size="259" bugs="0"/>
+      <ClassStats class="com.github.spriet2000.railways.tests.generated.BenchMarks_report_jmhTest" sourceFile="BenchMarks_report_jmhTest.java" interface="false" size="453" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.openjdk.jmh.infra.generated" total_bugs="0" total_types="4" total_size="543">
+      <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmhType" sourceFile="Blackhole_jmhType.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B1" sourceFile="Blackhole_jmhType_B1.java" interface="false" size="259" bugs="0"/>
+      <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" sourceFile="Blackhole_jmhType_B2.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B3" sourceFile="Blackhole_jmhType_B3.java" interface="false" size="259" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="229" invocations="536" avgMicrosecondsPerInvocation="428" maxMicrosecondsPerInvocation="16968" standardDeviationMicrosecondsPerInvocation="1257"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="105" invocations="539" avgMicrosecondsPerInvocation="195" maxMicrosecondsPerInvocation="2031" standardDeviationMicrosecondsPerInvocation="132"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="68" invocations="53" avgMicrosecondsPerInvocation="1301" maxMicrosecondsPerInvocation="10165" standardDeviationMicrosecondsPerInvocation="2066"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="60" invocations="59" avgMicrosecondsPerInvocation="1033" maxMicrosecondsPerInvocation="7684" standardDeviationMicrosecondsPerInvocation="1794"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="59" invocations="62" avgMicrosecondsPerInvocation="967" maxMicrosecondsPerInvocation="10958" standardDeviationMicrosecondsPerInvocation="1870"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="54" invocations="59" avgMicrosecondsPerInvocation="921" maxMicrosecondsPerInvocation="7549" standardDeviationMicrosecondsPerInvocation="1668"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="52" invocations="62" avgMicrosecondsPerInvocation="851" maxMicrosecondsPerInvocation="10103" standardDeviationMicrosecondsPerInvocation="1664"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="52" invocations="195" avgMicrosecondsPerInvocation="270" maxMicrosecondsPerInvocation="3959" standardDeviationMicrosecondsPerInvocation="451"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="50" invocations="58" avgMicrosecondsPerInvocation="874" maxMicrosecondsPerInvocation="9906" standardDeviationMicrosecondsPerInvocation="1596"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="45" invocations="477" avgMicrosecondsPerInvocation="96" maxMicrosecondsPerInvocation="1133" standardDeviationMicrosecondsPerInvocation="163"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="45" invocations="14" avgMicrosecondsPerInvocation="3267" maxMicrosecondsPerInvocation="30057" standardDeviationMicrosecondsPerInvocation="8026"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="45" invocations="53" avgMicrosecondsPerInvocation="859" maxMicrosecondsPerInvocation="3988" standardDeviationMicrosecondsPerInvocation="1138"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="40" invocations="59" avgMicrosecondsPerInvocation="685" maxMicrosecondsPerInvocation="30291" standardDeviationMicrosecondsPerInvocation="3893"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="38" invocations="59" avgMicrosecondsPerInvocation="646" maxMicrosecondsPerInvocation="11377" standardDeviationMicrosecondsPerInvocation="1577"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.FixtureWithInvocationScopeDetector" totalMilliseconds="36" invocations="14" avgMicrosecondsPerInvocation="2633" maxMicrosecondsPerInvocation="34207" standardDeviationMicrosecondsPerInvocation="8761"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="31" invocations="95" avgMicrosecondsPerInvocation="333" maxMicrosecondsPerInvocation="12821" standardDeviationMicrosecondsPerInvocation="1368"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="29" invocations="48" avgMicrosecondsPerInvocation="611" maxMicrosecondsPerInvocation="3065" standardDeviationMicrosecondsPerInvocation="857"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="25" invocations="53" avgMicrosecondsPerInvocation="483" maxMicrosecondsPerInvocation="6743" standardDeviationMicrosecondsPerInvocation="1000"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="23" invocations="53" avgMicrosecondsPerInvocation="444" maxMicrosecondsPerInvocation="3612" standardDeviationMicrosecondsPerInvocation="831"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="19" invocations="53" avgMicrosecondsPerInvocation="371" maxMicrosecondsPerInvocation="3006" standardDeviationMicrosecondsPerInvocation="655"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="19" invocations="53" avgMicrosecondsPerInvocation="361" maxMicrosecondsPerInvocation="5035" standardDeviationMicrosecondsPerInvocation="810"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="17" invocations="53" avgMicrosecondsPerInvocation="335" maxMicrosecondsPerInvocation="4427" standardDeviationMicrosecondsPerInvocation="675"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="17" invocations="59" avgMicrosecondsPerInvocation="294" maxMicrosecondsPerInvocation="2500" standardDeviationMicrosecondsPerInvocation="500"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="16" invocations="14" avgMicrosecondsPerInvocation="1194" maxMicrosecondsPerInvocation="5201" standardDeviationMicrosecondsPerInvocation="1251"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="13" invocations="53" avgMicrosecondsPerInvocation="259" maxMicrosecondsPerInvocation="4215" standardDeviationMicrosecondsPerInvocation="624"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

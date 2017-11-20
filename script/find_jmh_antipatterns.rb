@@ -17,7 +17,7 @@ class JMHSpotBugsAutomater
   JMH_DIR_PATTERNS = ["jmh", "benchmark", "perf", "bench"]
   SEND_ENTER = "echo \"\n\" |"
 
-  def initialize(outfile, tmp_dir, cache_dir, debug, no_build = false, count_file = nil)
+  def initialize(outfile, tmp_dir, cache_dir, debug, no_build = false, count_file = nil, previous_results = nil)
     @debug = debug
     @tmp_dir = tmp_dir
     @cache_dir = cache_dir
@@ -26,15 +26,22 @@ class JMHSpotBugsAutomater
     @count_file = count_file
     @counts = CSV.new
     @counts.headers = ["project", "file", "count"]
-    @result = CSV.new
-    @result.headers = ["project", "bugtype", "count"]
+    if previous_results
+      @result = previous_results
+    else
+      @result = CSV.new
+      @result.headers = ["project", "bugtype", "count"]
+    end
   end
 
   def analyze_project(project)
 
     if !@skipbuild
       success, dir = clone_project(project['project'], @tmp_dir)
-      @debug.puts "Failed to checkout project #{project['project']}" if !success
+      if !success && !File.exists?(dir)
+        @debug.puts "Failed to checkout project #{project['project']}"
+        return
+      end
 
       counted = count_benchmarks(dir) if @count_file
 
@@ -72,7 +79,7 @@ class JMHSpotBugsAutomater
     else
 
       @debug.puts "Failed to analyzed project #{project['project']}."
-      
+
     end
 
     @debug.flush
@@ -194,6 +201,7 @@ def parse_cmd
   options = {}
   options[:no_build] = false
   options[:shuffle] = false
+  options[:override] = false
   OptionParser.new do |opts|
 
     opts.on("-i", "--input INPUTFILE", "Specify CSV file with list of projects") do |i|
@@ -228,6 +236,10 @@ def parse_cmd
       options[:count_file] = cf
     end
 
+    opts.on("-x", "--override", "Shall we override previous results?") do |x|
+      options[:override] = true
+    end
+
   end.parse!
   return options
 end
@@ -239,7 +251,9 @@ end
 
 options = parse_cmd
 
-File.open(options[:debug], "w") do |debug|
+mode = options[:override] ? "w" : "a"
+
+File.open(options[:debug], mode) do |debug|
 
   f = File.open(options[:input_file])
   if !Dir.exists?(options[:tmp_dir])
@@ -250,14 +264,27 @@ File.open(options[:debug], "w") do |debug|
   end
 
   if options[:count_file]
-    count_file = File.open(options[:count_file], "w")
+    count_file = File.open(options[:count_file], mode)
   else
     count_file = nil
   end
 
-  jmh = JMHSpotBugsAutomater.new(options[:output_file], options[:tmp_dir], options[:result_cache], debug, options[:no_build], count_file)
+  if File.exists?(options[:output_file]) && !options[:override]
+    previous_results = CSV.parse(File.open(options[:output_file], "r"), header = true)
+  else
+    previous_results = nil
+  end
+
+  jmh = JMHSpotBugsAutomater.new(options[:output_file], options[:tmp_dir], options[:result_cache],
+    debug, options[:no_build], count_file, previous_results)
   csv = CSV.parse(f, header = true, separator = ",")
   projects_to_consider = csv.reject{|l| l['forked'] == "TRUE" || l['stars'].to_i < 2 }
+  if previous_results
+    projects_to_consider.reject! do |l|
+      project = l['project'].split("/")[-1]
+      previous_results['project'].include? project
+    end
+  end
   projects_to_consider.shuffle! if options[:shuffle]
   projects_to_consider.each{|project| jmh.analyze_project(project) }
 end
