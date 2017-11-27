@@ -53,9 +53,9 @@ This makes it easy for users to add their own detectors alongside the ones that 
 
 3. Copy the built (see Building instructions above) `performance-tests-checker-XXX.jar` to the `plugin` folder of the SpotBugs.
 
-4. Execute the `/lib/spotbugs.jar` with the `-textui` command line to get the list of all possible line commands of SpotBugs.
+4. Execute the `$SPOTBUGS_HOME/lib/spotbugs.jar` with the `-textui` command line to get the list of all possible line commands of SpotBugs.
    
-   4.1. To make sure that you have deployed a valid plugin jar, you can run the command `java -jar /lib/spotbugs.jar -textui -showPlugins`. The performance-checker plugin should be listed in the Available plugins.  
+  1. To make sure that you have deployed a valid plugin jar, you can run the command `java -jar $SPOTBUGS_HOME/lib/spotbugs.jar -textui -showPlugins`. The performance-checker plugin should be listed in the Available plugins.  
 
 
 ## Newly Implemented Rules ##
