@@ -35,14 +35,15 @@ public class StateFinalFieldDetector extends AbstractJMHStateClassDetector {
 				Type type = obj.getType();
 				
 				
-				if(isPrimitive(type)) {
+				if(isPrimitiveOrString(type)) {
 					
 					bugInstance = new BugInstance(this, JMH_STATE_FINAL_PRIMITIVE, HIGH_PRIORITY)
 							.addClass(this)
 							.addField(this);
 					
 				} else {
-					bugInstance = new BugInstance(this, JMH_STATE_FINAL_FIELD, LOW_PRIORITY)
+					// This check does not help us a lot
+					bugInstance = new BugInstance(this, JMH_STATE_FINAL_FIELD, IGNORE_PRIORITY)
 							.addClass(this) 
 							.addField(this);
 				}
@@ -55,8 +56,10 @@ public class StateFinalFieldDetector extends AbstractJMHStateClassDetector {
 		super.visitField(obj);
 	}
 
-	private boolean isPrimitive(Type type) {
-		return type == Type.FLOAT || type == Type.DOUBLE || type == Type.INT || type == Type.CHAR || type == Type.BOOLEAN;
+	private boolean isPrimitiveOrString(Type type) {
+		return type == Type.FLOAT || type == Type.DOUBLE || type == Type.INT || type == Type.CHAR 
+				|| type == Type.BOOLEAN || type.equals(Type.STRING) || type == Type.SHORT || type == Type.BYTE 
+				|| type == Type.LONG;
 	}
 
 

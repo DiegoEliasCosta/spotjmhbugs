@@ -26,7 +26,10 @@ public class StateFinalFieldDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_STATE_FINAL_FIELD").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 1));
+		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
+		
+		BugInstanceMatcher primitiveBugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_STATE_FINAL_PRIMITIVE").build();
+		assertThat(bugCollection, containsExactly(primitiveBugTypeMatcher , 1));
 	}
 	
 	@Test
@@ -41,24 +44,16 @@ public class StateFinalFieldDetectorTest {
 	
 	
 	@Test
-	public void testOnStateMultipleFinalFieldsExample() throws Exception {
-		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.examples".replace('.', '/'),
-				"StateMultipleFinalFieldsExample.class");
-		BugCollection bugCollection = spotbugs.performAnalysis(path);
-
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_STATE_FINAL_FIELD").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 3));
-	}
-	
-	
-	@Test
 	public void testOnStatePrimitiveFinalFieldsExample() throws Exception {
 		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.examples".replace('.', '/'),
 				"StateMultipleFinalFieldsExample.class");
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
+		
+		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_STATE_FINAL_FIELD").build();
+		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
 
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_STATE_FINAL_PRIMITIVE").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 2));
+		BugInstanceMatcher primitiveBugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_STATE_FINAL_PRIMITIVE").build();
+		assertThat(bugCollection, containsExactly(primitiveBugTypeMatcher, 3));
 	}
 	
 	
@@ -73,7 +68,10 @@ public class StateFinalFieldDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(outerClassPath, innerClassPath);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_STATE_FINAL_FIELD").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 2));
+		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
+		
+		BugInstanceMatcher primitiveBugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_STATE_FINAL_PRIMITIVE").build();
+		assertThat(bugCollection, containsExactly(primitiveBugTypeMatcher, 2));
 	}
 
 }

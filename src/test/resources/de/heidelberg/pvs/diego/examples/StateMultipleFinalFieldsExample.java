@@ -11,7 +11,7 @@ public class StateMultipleFinalFieldsExample {
 	
 	public final int publicFinalVariable = 10;
 	
-	public final static String publicstaticFinalVariable = "This is a constant";
+	public final String publicstaticFinalVariable = "This is a constant";
 	
 	public int nonFinalVariable;
 
