@@ -52,6 +52,17 @@ public class StateFinalFieldDetectorTest {
 	
 	
 	@Test
+	public void testOnStatePrimitiveFinalFieldsExample() throws Exception {
+		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.examples".replace('.', '/'),
+				"StateMultipleFinalFieldsExample.class");
+		BugCollection bugCollection = spotbugs.performAnalysis(path);
+
+		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_STATE_FINAL_PRIMITIVE").build();
+		assertThat(bugCollection, containsExactly(bugTypeMatcher, 2));
+	}
+	
+	
+	@Test
 	public void testOnStateInnerClassExample() throws Exception {
 		Path outerClassPath = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.examples".replace('.', '/'),
 				"StateInnerClassExample.class");

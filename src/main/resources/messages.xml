@@ -16,7 +16,7 @@
 
 	<Detector class="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector">
 		<Details>
-			Detector of the JMH_STATE_FINAL_FIELD bug pattern.
+			Detector of the JMH_STATE_FINAL_FIELD and JMH_STATE_FINAL_PRIMITIVE bug pattern.
 		</Details>
 	</Detector>
 
@@ -85,6 +85,20 @@ it can move the computation outside of the internal JMH loop.</p>
 ]]>
 		</Details>
 	</BugPattern>
+  
+    <BugPattern type="JMH_STATE_FINAL_PRIMITIVE">
+    <ShortDescription>JMH State primitive field declared final.</ShortDescription>
+    <LongDescription>State field declared final in {1}</LongDescription>
+    <Details>
+<![CDATA[
+<p>Final primitive fields pose a threat to benchmark measurements
+as it gives the compiler the possibility of applying the
+constant-folding. If JVM realizes the result of the computation is the
+same no matter what, it can cleverly optimize it. In the case of a JMH benchmark, that means
+it can move the computation outside of the internal JMH loop.</p>
+]]>
+    </Details>
+  </BugPattern>
 
 
 	<BugPattern type="JMH_LOOP_INSIDE_BENCHMARK">

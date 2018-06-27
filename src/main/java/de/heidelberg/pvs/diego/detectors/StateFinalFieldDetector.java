@@ -1,6 +1,7 @@
 package de.heidelberg.pvs.diego.detectors;
 
 import org.apache.bcel.classfile.Field;
+import org.apache.bcel.generic.Type;
 
 import edu.umd.cs.findbugs.BugInstance;
 import edu.umd.cs.findbugs.BugReporter;
@@ -14,6 +15,7 @@ import edu.umd.cs.findbugs.BugReporter;
 public class StateFinalFieldDetector extends AbstractJMHStateClassDetector {
 
 	private static final String JMH_STATE_FINAL_FIELD = "JMH_STATE_FINAL_FIELD";
+	private static final String JMH_STATE_FINAL_PRIMITIVE = "JMH_STATE_FINAL_PRIMITIVE";
 
 	public StateFinalFieldDetector(BugReporter bugReporter) {
 		super(bugReporter);
@@ -28,16 +30,33 @@ public class StateFinalFieldDetector extends AbstractJMHStateClassDetector {
 			// RULE: Fields on @State object should not be declared final
 			if (obj.isFinal() && !obj.isSynthetic()) {
 				
-				BugInstance bugInstance = new BugInstance(this, JMH_STATE_FINAL_FIELD, NORMAL_PRIORITY)
-						.addClass(this) 
-						.addField(this);
-
+				BugInstance bugInstance;
+				
+				Type type = obj.getType();
+				
+				
+				if(isPrimitive(type)) {
+					
+					bugInstance = new BugInstance(this, JMH_STATE_FINAL_PRIMITIVE, HIGH_PRIORITY)
+							.addClass(this)
+							.addField(this);
+					
+				} else {
+					bugInstance = new BugInstance(this, JMH_STATE_FINAL_FIELD, LOW_PRIORITY)
+							.addClass(this) 
+							.addField(this);
+				}
+				
 				super.bugReporter.reportBug(bugInstance);
 			}
 
 		}
 
 		super.visitField(obj);
+	}
+
+	private boolean isPrimitive(Type type) {
+		return type == Type.FLOAT || type == Type.DOUBLE || type == Type.INT || type == Type.CHAR || type == Type.BOOLEAN;
 	}
 
 
