@@ -14,19 +14,19 @@ import edu.umd.cs.findbugs.test.SpotBugsRule;
 import edu.umd.cs.findbugs.test.matcher.BugInstanceMatcher;
 import edu.umd.cs.findbugs.test.matcher.BugInstanceMatcherBuilder;
 
-public class LoopInsideBenchmarkDetectorTest {
+public class UnsafeLoopInsideBenchmarkDetectorTest {
 	
 	@Rule
 	public SpotBugsRule spotbugs = new SpotBugsRule();
 
 	@Test
-	public void testOnSimpleBenchmarkLoopExample() throws Exception {
+	public void testOnUnsafeLoopExample() throws Exception {
 		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.examples".replace('.', '/'),
-				"SimpleBenchmarkLoopExample.class");
+				"UnsafeLoopInsideBenchmarkExample.class");
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_LOOP_INSIDE_BENCHMARK").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 2));
+		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_UNSAFELOOP_INSIDE_BENCHMARK").build();
+		assertThat(bugCollection, containsExactly(bugTypeMatcher, 4));
 	}
 	
 	@Test
@@ -35,7 +35,7 @@ public class LoopInsideBenchmarkDetectorTest {
 				"JMHSample_11_Loops.class");
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_LOOP_INSIDE_BENCHMARK").build();
+		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_UNSAFELOOP_INSIDE_BENCHMARK").build();
 		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
 	}
 	
@@ -45,8 +45,18 @@ public class LoopInsideBenchmarkDetectorTest {
 				"LoopInsideBenchmarkExample.class");
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_LOOP_INSIDE_BENCHMARK").build();
+		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_UNSAFELOOP_INSIDE_BENCHMARK").build();
 		assertThat(bugCollection, containsExactly(bugTypeMatcher, 1));
+	}
+	
+	@Test
+	public void testOnSafeLoopInsideBenchmark() throws Exception {
+		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.examples".replace('.', '/'),
+				"SafeLoopBenchmarkExample.class");
+		BugCollection bugCollection = spotbugs.performAnalysis(path);
+
+		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_UNSAFELOOP_INSIDE_BENCHMARK").build();
+		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
 	}
 
 }

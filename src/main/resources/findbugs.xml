@@ -11,6 +11,9 @@
 		
 	<Detector class="de.heidelberg.pvs.diego.detectors.LoopInsideBenchmarkDetector"
 		reports="JMH_LOOP_INSIDE_BENCHMARK" speed="fast" />
+    
+  <Detector class="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector"
+    reports="JMH_UNSAFELOOP_INSIDE_BENCHMARK" speed="fast" />
 		
 	<Detector class="de.heidelberg.pvs.diego.detectors.NotForkedBenchmarkDetector"
 		reports="JMH_NOTFORKED_BENCHMARK" speed="fast" />
@@ -31,6 +34,7 @@
 
 	<!-- JMH BEST PRACTICES BUGS -->
 	<BugPattern type="JMH_LOOP_INSIDE_BENCHMARK" category="JMH" />
+	<BugPattern type="JMH_UNSAFELOOP_INSIDE_BENCHMARK" category="JMH" />
 	<BugPattern type="JMH_NOTFORKED_BENCHMARK" category="JMH" />
 	<BugPattern type="JMH_FIXTURE_USING_INVOCATION_SCOPE" category="JMH" />
 	<BugPattern type="JMH_BENCHMARKMODE_SINGLESHOT" category="JMH" />

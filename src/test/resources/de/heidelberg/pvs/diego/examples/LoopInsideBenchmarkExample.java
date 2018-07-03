@@ -11,7 +11,7 @@ import org.openjdk.jmh.annotations.Benchmark;
  * @author diego.costa
  *
  */
-public class LoopInsideBenchmark {
+public class LoopInsideBenchmarkExample {
 	
     private final ConcurrentHashMap<String, Long> map1 = new ConcurrentHashMap<>();
 	

@@ -27,6 +27,14 @@
 			benchmark bug pattern.
 		</Details>
 	</Detector>
+  
+  <Detector
+    class="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector">
+    <Details>
+      Detector of the JMH_UNSAFELOOP_INSIDE_BENCHMARK inside the
+      benchmark bug pattern.
+    </Details>
+  </Detector>
 	
 	<Detector
 		class="de.heidelberg.pvs.diego.detectors.NotForkedBenchmarkDetector">
@@ -112,6 +120,19 @@ The compiler can automagically apply some optimizations to merge the loop iterat
 ]]>
 		</Details>
 	</BugPattern>
+  
+  
+<BugPattern type="JMH_UNSAFELOOP_INSIDE_BENCHMARK">
+    <ShortDescription>Suspicious numeric accumulation inside a loop in the JMH benchmark function.</ShortDescription>
+    <LongDescription>Accumulation inside loop in the benchmark {1}</LongDescription>
+    <Details>
+<![CDATA[
+<p>Looping is done in the hope of minimizing the overhead of calling the test method, by doing the operations inside
+the loop instead of inside the method call. This is a dangerous setting for a micro-benchmark.
+The compiler can automagically apply some optimizations to merge the loop iterations.</p>
+]]>
+    </Details>
+  </BugPattern>
 
 
 <BugPattern type="JMH_NOTFORKED_BENCHMARK">
