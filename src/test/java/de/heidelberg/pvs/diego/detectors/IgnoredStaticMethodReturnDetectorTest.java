@@ -14,8 +14,8 @@ import edu.umd.cs.findbugs.test.SpotBugsRule;
 import edu.umd.cs.findbugs.test.matcher.BugInstanceMatcher;
 import edu.umd.cs.findbugs.test.matcher.BugInstanceMatcherBuilder;
 
-public class IgnoredMethodReturnDetectorTest {
-
+public class IgnoredStaticMethodReturnDetectorTest {
+	
 	@Rule
 	public SpotBugsRule spotbugs = new SpotBugsRule();
 
@@ -25,8 +25,8 @@ public class IgnoredMethodReturnDetectorTest {
 				"JMHSample_08_DeadCode.class");
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_METHOD_RETURN").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
+		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_STATIC_METHOD_RETURN").build();
+		assertThat(bugCollection, containsExactly(bugTypeMatcher, 1));
 	}
 	
 
@@ -36,8 +36,8 @@ public class IgnoredMethodReturnDetectorTest {
 				"JMHSample_09_Blackholes.class");
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_METHOD_RETURN").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
+		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_STATIC_METHOD_RETURN").build();
+		assertThat(bugCollection, containsExactly(bugTypeMatcher, 1));
 	}
 	
 	
@@ -47,7 +47,7 @@ public class IgnoredMethodReturnDetectorTest {
 				"JMHSample_10_ConstantFold.class");
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_METHOD_RETURN").build();
+		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_STATIC_METHOD_RETURN").build();
 		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
 	}
 	
@@ -59,8 +59,8 @@ public class IgnoredMethodReturnDetectorTest {
 		
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_METHOD_RETURN").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
+		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_STATIC_METHOD_RETURN").build();
+		assertThat(bugCollection, containsExactly(bugTypeMatcher, 1));
 	}
-	
+
 }

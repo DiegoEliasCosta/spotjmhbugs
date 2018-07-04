@@ -13,21 +13,19 @@ import edu.umd.cs.findbugs.BugReporter;
  * @author diego.costa
  *
  */
-public class IgnoredMethodReturnDetector extends AbstractJMHBenchmarkMethodDetector {
+public class IgnoredStaticMethodReturnDetector extends AbstractJMHBenchmarkMethodDetector {
 
-	private static final String JMH_IGNORED_METHOD_RETURN = "JMH_IGNORED_METHOD_RETURN";
+	private static final String JMH_IGNORED_STATIC_METHOD_RETURN = "JMH_IGNORED_STATIC_METHOD_RETURN";
 
 	/**
 	 * Operation codes related to a method call
 	 */
 	private static final BitSet INVOKE_OPCODE_SET = new BitSet();
 	static {
-		INVOKE_OPCODE_SET.set(Const.INVOKEINTERFACE);
-		INVOKE_OPCODE_SET.set(Const.INVOKESPECIAL);
-		INVOKE_OPCODE_SET.set(Const.INVOKEVIRTUAL);
+		INVOKE_OPCODE_SET.set(Const.INVOKESTATIC);
 	}
 
-	public IgnoredMethodReturnDetector(BugReporter bugReporter) {
+	public IgnoredStaticMethodReturnDetector(BugReporter bugReporter) {
 		super(bugReporter);
 	}
 
@@ -45,7 +43,7 @@ public class IgnoredMethodReturnDetector extends AbstractJMHBenchmarkMethodDetec
 			if (isDiscardOperation(nextOpcode)) {
 
 				// Create the bug
-				BugInstance bugInstance = new BugInstance(this, JMH_IGNORED_METHOD_RETURN, LOW_PRIORITY)
+				BugInstance bugInstance = new BugInstance(this, JMH_IGNORED_STATIC_METHOD_RETURN, NORMAL_PRIORITY)
 						.addClassAndMethod(this).addSourceLine(this);
 
 				super.bugReporter.reportBug(bugInstance);
