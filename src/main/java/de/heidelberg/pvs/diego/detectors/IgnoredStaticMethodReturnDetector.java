@@ -8,7 +8,7 @@ import edu.umd.cs.findbugs.BugInstance;
 import edu.umd.cs.findbugs.BugReporter;
 
 /**
- * Checker for identifying methods call with ignored return values on JMH benchmarks.
+ * Checker for identifying static methods call with ignored return values on JMH benchmarks.
  * 
  * @author diego.costa
  *

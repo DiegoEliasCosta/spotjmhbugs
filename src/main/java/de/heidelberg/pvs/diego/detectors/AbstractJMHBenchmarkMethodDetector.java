@@ -50,7 +50,9 @@ public abstract class AbstractJMHBenchmarkMethodDetector extends OpcodeStackDete
 		super.visitClassContext(classContext);
 	}
 
-	private boolean isMethodBenchmark(XMethod method) {
+
+
+	protected boolean isMethodBenchmark(XMethod method) {
 		Collection<AnnotationValue> annotationEntries = method.getAnnotations();
 
 		for (AnnotationValue annotation : annotationEntries) {

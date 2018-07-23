@@ -74,6 +74,18 @@
 			benchmark bug pattern.
 		</Details>
 	</Detector>
+  
+  
+  <Detector class="de.heidelberg.pvs.diego.detectors.UnsinkedVariableDetector">
+    <Details>
+<![CDATA[
+<p>
+This detector looks for assignments to local variables that
+are never subsequently read. It is a moderately fast detector.
+</p>
+]]>
+  </Details>
+</Detector>
 	
 
 	<BugPattern type="JMH_IGNORED_METHOD_RETURN">
@@ -215,5 +227,24 @@ Caveats for this mode include:
 ]]>
 		</Details>
 	</BugPattern>
-	
+    <BugPattern type="JMH_DEAD_STORE_VARIABLE">
+    <ShortDescription>Dead store to local variable</ShortDescription>
+    <LongDescription>Dead store to {2} in {1}</LongDescription>
+    <Details>
+<![CDATA[
+<p>
+This instruction assigns a value to a local variable,
+but the value is not read or used in any subsequent instruction.
+Often, this indicates an error, because the value computed is never
+used.
+</p>
+<p>
+Note that Sun's javac compiler often generates dead stores for
+final local variables.  Because SpotBugs is a bytecode-based tool,
+there is no easy way to eliminate these false positives.
+</p>
+]]>
+    </Details>
+  </BugPattern>
+  
 </MessageCollection>
