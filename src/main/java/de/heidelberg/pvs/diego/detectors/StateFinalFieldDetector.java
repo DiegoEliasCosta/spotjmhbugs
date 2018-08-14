@@ -40,15 +40,9 @@ public class StateFinalFieldDetector extends AbstractJMHStateClassDetector {
 					bugInstance = new BugInstance(this, JMH_STATE_FINAL_PRIMITIVE, HIGH_PRIORITY)
 							.addClass(this)
 							.addField(this);
-					
-				} else {
-					// This check does not help us a lot
-					bugInstance = new BugInstance(this, JMH_STATE_FINAL_FIELD, IGNORE_PRIORITY)
-							.addClass(this) 
-							.addField(this);
-				}
-				
-				super.bugReporter.reportBug(bugInstance);
+
+					super.bugReporter.reportBug(bugInstance);
+				}	
 			}
 
 		}

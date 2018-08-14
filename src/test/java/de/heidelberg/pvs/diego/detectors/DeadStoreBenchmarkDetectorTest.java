@@ -19,7 +19,7 @@ public class DeadStoreBenchmarkDetectorTest {
 	@Rule
 	public SpotBugsRule spotbugs = new SpotBugsRule();
 
-	@Test
+//	@Test
 	public void testUnsinkedvariableWithDCE() throws Exception {
 		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.examples".replace('.', '/'),
 				"DeadCodeEliminationExample.class");

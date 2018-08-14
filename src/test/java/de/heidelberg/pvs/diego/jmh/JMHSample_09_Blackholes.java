@@ -74,7 +74,7 @@ public class JMHSample_09_Blackholes {
 
     @Benchmark
     public double measureWrong() {
-        double a = Math.log(x1);
+        Math.log(x1);
         return Math.log(x2);
     }
 

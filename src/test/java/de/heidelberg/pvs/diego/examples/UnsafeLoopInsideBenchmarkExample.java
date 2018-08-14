@@ -34,7 +34,7 @@ private final ConcurrentHashMap<String, Long> map1 = new ConcurrentHashMap<>();
 	public float anotherLoopBench() {
 		float total = 0;
         for (int i = 0; i < 100; i ++) {
-            total = i + 30; 
+            total += i + 30; 
         }
         return total;
 	}
