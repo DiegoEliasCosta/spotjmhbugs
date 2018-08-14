@@ -9,7 +9,6 @@ import org.apache.bcel.classfile.Method;
 import org.apache.bcel.generic.IINC;
 import org.apache.bcel.generic.IndexedInstruction;
 import org.apache.bcel.generic.Instruction;
-import org.apache.bcel.generic.InstructionHandle;
 import org.apache.bcel.generic.LoadInstruction;
 import org.apache.bcel.generic.MethodGen;
 import org.apache.bcel.generic.StoreInstruction;
@@ -83,7 +82,7 @@ public class DeadStoreBenchmarkDetector extends AbstractJMHBenchmarkMethodDetect
 	 * defensive programming.
 	 */
 	private static final BitSet defensiveConstantValueOpcodes = new BitSet();
-	private static final boolean DEBUG = true;
+	private static final boolean DEBUG = false;
 	static {
 		defensiveConstantValueOpcodes.set(Const.DCONST_0);
 		defensiveConstantValueOpcodes.set(Const.DCONST_1);
@@ -157,7 +156,6 @@ public class DeadStoreBenchmarkDetector extends AbstractJMHBenchmarkMethodDetect
 				if (location.getBasicBlock().isExceptionHandler()) {
 					propertySet.addProperty(DeadLocalStoreProperty.EXCEPTION_HANDLER);
 				}
-				InstructionHandle handle = location.getHandle();
 				IndexedInstruction ins = (IndexedInstruction) location.getHandle().getInstruction();
 
 				int local = ins.getIndex();
@@ -189,18 +187,22 @@ public class DeadStoreBenchmarkDetector extends AbstractJMHBenchmarkMethodDetect
 					liveStoreSourceLineSet.set(sourceLineAnnotation.getStartLine());
 				}
 
-				// TODO: Check this
-				String lvName = lvAnnotation.getName();
-				if (lvName.charAt(0) == '$' || lvName.charAt(0) == '_') {
-					propertySet.addProperty(DeadLocalStoreProperty.SYNTHETIC_NAME);
-				}
+				if(!storeLive) {
+					
+					// TODO: Check this
+					String lvName = lvAnnotation.getName();
+					if (lvName.charAt(0) == '$' || lvName.charAt(0) == '_') {
+						propertySet.addProperty(DeadLocalStoreProperty.SYNTHETIC_NAME);
+					}
 
-				propertySet.setProperty(DeadLocalStoreProperty.LOCAL_NAME, lvName);
+					propertySet.setProperty(DeadLocalStoreProperty.LOCAL_NAME, lvName);
+					
+					BugInstance bugInstance = new BugInstance(this, JMH_DEAD_STORE_VARIABLE, HIGH_PRIORITY).addClassAndMethod(methodGen,
+	                        sourceFileName).add(lvAnnotation);
+					
+					accumulator.accumulateBug(bugInstance, sourceLineAnnotation);
 				
-				BugInstance bugInstance = new BugInstance(this, JMH_DEAD_STORE_VARIABLE, HIGH_PRIORITY).addClassAndMethod(methodGen,
-                        sourceFileName).add(lvAnnotation);
-				
-				accumulator.accumulateBug(bugInstance, sourceLineAnnotation);
+				}
 			} finally {
 
 			}

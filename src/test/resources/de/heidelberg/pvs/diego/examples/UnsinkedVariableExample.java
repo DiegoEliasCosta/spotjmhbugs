@@ -4,7 +4,6 @@ import org.openjdk.jmh.annotations.Benchmark;
 
 public class UnsinkedVariableExample {
 
-
 	@Benchmark
 	public double benchmarkMethod1() {
 		double x = Math.PI;

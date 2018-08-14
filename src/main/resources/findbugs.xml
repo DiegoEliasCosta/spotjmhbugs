@@ -31,8 +31,11 @@
 		reports="JMH_BENCHMARK_METHOD_FOUND" speed="fast" />
     
   <!-- DEAD LOCAL STORE -->
-  <Detector class="de.heidelberg.pvs.diego.detectors.UnsinkedVariableDetector" speed="moderate"
-                    reports="JMH_DEAD_STORE_VARIABLE"/>
+  <Detector class="de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector" speed="moderate"
+  reports="JMH_DEAD_STORE_VARIABLE"/>
+                    
+  <Detector class="de.heidelberg.pvs.diego.detectors.UnsinkedVariableBenchmarkDetector" speed="moderate"
+  reports="JMH_UNSINKED_VARIABLE"/>
     
 
 	<!-- JMH CORRECNESS BUGS -->
@@ -49,6 +52,7 @@
 	<BugPattern type="JMH_BENCHMARKMODE_SINGLESHOT" category="JMH" />
 	<BugPattern type="JMH_BENCHMARK_METHOD_FOUND" category="JMH" />
 	<BugPattern type="JMH_DEAD_STORE_VARIABLE" category="JMH" />
+	<BugPattern type="JMH_UNSINKED_VARIABLE" category="JMH" />
   
 
 
