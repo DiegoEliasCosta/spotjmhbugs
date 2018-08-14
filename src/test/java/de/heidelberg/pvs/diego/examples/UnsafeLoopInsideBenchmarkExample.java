@@ -3,7 +3,10 @@ package de.heidelberg.pvs.diego.examples;
 import java.util.concurrent.ConcurrentHashMap;
 
 import org.openjdk.jmh.annotations.Benchmark;
+import org.openjdk.jmh.annotations.Scope;
+import org.openjdk.jmh.annotations.State;
 
+@State(value = Scope.Benchmark)
 public class UnsafeLoopInsideBenchmarkExample {
 	
 private final ConcurrentHashMap<String, Long> map1 = new ConcurrentHashMap<>();

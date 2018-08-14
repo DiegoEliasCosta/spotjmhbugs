@@ -1,8 +1,11 @@
 package de.heidelberg.pvs.diego.examples;
 
 import org.openjdk.jmh.annotations.Benchmark;
+import org.openjdk.jmh.annotations.Scope;
+import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.infra.Blackhole;
 
+@State(value = Scope.Benchmark)
 public class DeadCodeEliminationExample {
 	
 	private StringBuilder str;

@@ -3,9 +3,12 @@ package de.heidelberg.pvs.diego.examples;
 import java.util.List;
 
 import org.openjdk.jmh.annotations.Benchmark;
+import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.Setup;
+import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.infra.Blackhole;
 
+@State(value = Scope.Benchmark)
 public class SafeLoopBenchmarkExample {
 	
 	List<Integer> myList;

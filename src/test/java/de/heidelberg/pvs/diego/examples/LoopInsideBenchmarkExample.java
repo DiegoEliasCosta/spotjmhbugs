@@ -3,6 +3,9 @@ package de.heidelberg.pvs.diego.examples;
 import java.util.concurrent.ConcurrentHashMap;
 
 import org.openjdk.jmh.annotations.Benchmark;
+import org.openjdk.jmh.annotations.Level;
+import org.openjdk.jmh.annotations.Scope;
+import org.openjdk.jmh.annotations.State;
 
 /**
  * 
@@ -11,6 +14,7 @@ import org.openjdk.jmh.annotations.Benchmark;
  * @author diego.costa
  *
  */
+@State(value = Scope.Benchmark)
 public class LoopInsideBenchmarkExample {
 	
     private final ConcurrentHashMap<String, Long> map1 = new ConcurrentHashMap<>();
