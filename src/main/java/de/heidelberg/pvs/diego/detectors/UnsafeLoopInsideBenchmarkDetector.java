@@ -20,9 +20,9 @@ public class UnsafeLoopInsideBenchmarkDetector extends AbstractJMHBenchmarkMetho
 
 	private static final String JMH_UNSAFELOOP_INSIDE_BENCHMARK = "JMH_UNSAFELOOP_INSIDE_BENCHMARK";
 
-	private State checkState;
-	private Set<Integer> storeRegister;
-	
+	State checkState;
+	Set<Integer> storeRegister;
+
 	static boolean DEBUG = true;
 
 	public UnsafeLoopInsideBenchmarkDetector(BugReporter bugReporter) {
@@ -32,6 +32,7 @@ public class UnsafeLoopInsideBenchmarkDetector extends AbstractJMHBenchmarkMetho
 	@Override
 	public void visitMethod(Method obj) {
 		super.visitMethod(obj);
+
 		checkState = State.START;
 		storeRegister = new HashSet<>();
 
@@ -140,7 +141,6 @@ public class UnsafeLoopInsideBenchmarkDetector extends AbstractJMHBenchmarkMetho
 		// Register the store
 		storeRegister.add(getRegisterOperand());
 	}
-
 
 	enum State {
 		START, NUMERIC_CREATED_OUTSIDE_lOOP, NUMERIC_ON_STACK, INSIDE_LOOP, ADITION_MADE, DONE

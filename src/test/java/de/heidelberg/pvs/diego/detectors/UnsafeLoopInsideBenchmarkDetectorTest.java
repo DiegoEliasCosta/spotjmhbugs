@@ -58,5 +58,15 @@ public class UnsafeLoopInsideBenchmarkDetectorTest {
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_UNSAFELOOP_INSIDE_BENCHMARK").build();
 		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
 	}
+	
+	@Test
+	public void testOnUnsafeLoopInsideBenchmark2() throws Exception {
+		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.examples".replace('.', '/'),
+				"UnsafeLoopInsideBenchmarkExample2.class");
+		BugCollection bugCollection = spotbugs.performAnalysis(path);
+
+		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_UNSAFELOOP_INSIDE_BENCHMARK").build();
+		assertThat(bugCollection, containsExactly(bugTypeMatcher, 1));
+	}
 
 }

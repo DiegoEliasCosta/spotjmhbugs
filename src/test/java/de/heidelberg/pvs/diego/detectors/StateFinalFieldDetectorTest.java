@@ -30,6 +30,9 @@ public class StateFinalFieldDetectorTest {
 		
 		BugInstanceMatcher primitiveBugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_STATE_FINAL_PRIMITIVE").build();
 		assertThat(bugCollection, containsExactly(primitiveBugTypeMatcher , 1));
+		
+		BugInstanceMatcher staticBugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_STATE_FINAL_STATIC_PRIMITIVE").build();
+		assertThat(bugCollection, containsExactly(staticBugTypeMatcher , 0));
 	}
 	
 	@Test
@@ -71,7 +74,10 @@ public class StateFinalFieldDetectorTest {
 		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
 		
 		BugInstanceMatcher primitiveBugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_STATE_FINAL_PRIMITIVE").build();
-		assertThat(bugCollection, containsExactly(primitiveBugTypeMatcher, 2));
+		assertThat(bugCollection, containsExactly(primitiveBugTypeMatcher, 1));
+		
+		BugInstanceMatcher staticBugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_STATE_FINAL_STATIC_PRIMITIVE").build();
+		assertThat(bugCollection, containsExactly(staticBugTypeMatcher, 1));
 	}
 
 }
