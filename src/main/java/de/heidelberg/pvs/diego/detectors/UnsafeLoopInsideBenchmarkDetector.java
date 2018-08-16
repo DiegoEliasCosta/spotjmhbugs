@@ -34,7 +34,7 @@ public class UnsafeLoopInsideBenchmarkDetector extends AbstractJMHBenchmarkMetho
 
 	private boolean insideLoop;
 	
-	static boolean DEBUG = true;
+	static boolean DEBUG = false;
 
 	public UnsafeLoopInsideBenchmarkDetector(BugReporter bugReporter) {
 		super(bugReporter);
@@ -57,9 +57,6 @@ public class UnsafeLoopInsideBenchmarkDetector extends AbstractJMHBenchmarkMetho
 			e.printStackTrace();
 		}
 		
-		System.out.println("Loops found");
-		System.out.println(registeredLoop);
-
 	}
 
 	private void findLoops(CFG cfg) {
@@ -100,7 +97,6 @@ public class UnsafeLoopInsideBenchmarkDetector extends AbstractJMHBenchmarkMetho
 
 		int pc = getPC();
 		this.insideLoop = isInsideLoop(pc);
-		System.out.println(String.format("%d - %s", pc, this.insideLoop));
 		
 		switch (seen) {
 		

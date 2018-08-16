@@ -10,54 +10,30 @@ public class DeadCodeEliminationExample {
 	
 	private StringBuilder str;
 
-//	@Benchmark
-//	public void stringBuilderNotUsed() {
-//		StringBuilder str = new StringBuilder();
-//		str.append("Blah");
-//		str.append("Blah 2");
-//	}
-//	
-//	@Benchmark
-//	public void stringBuilderStoredInAField() {
-//		StringBuilder str = new StringBuilder();
-//		StringBuilder str2 = new StringBuilder(str);
-//		if(true) {
-//			StringBuilder str3 = new StringBuilder(str2);
-//			str3.append("New String");
-//		}
-//		StringBuilder str4 = new StringBuilder(str);
-//		str4.append("Str4");
-//		str.append("Blah");
-//		str.append("Blah 2");
-//		this.str = str2.append("Useless");
-//		this.str = str;
-//	}
 	
-//	@Benchmark
-//	public StringBuilder stringBuilderUsed() {
-//		StringBuilder str = new StringBuilder();
-//		str.append("Blah");
-//		str.append("Blah 2");
-//		return str;
-//	}
 
-//	@Benchmark
-//	public StringBuilder stringBuilderDead() {
-//		StringBuilder str = new StringBuilder();
-//		
-//		if(str == this.str) {
-//			return null;
-//		}
-//		return str;
-//	}
-//	
-//	@Benchmark
-//	public void stringBuilderBeingConsumed(Blackhole bh) {
-//		StringBuilder str = new StringBuilder();
-//		str.append("Blah");
-//		str.append("Blah 2");
-//		bh.consume(str);
-//	}
+	@Benchmark
+	public StringBuilder stringBuilderDead() {
+		StringBuilder str = new StringBuilder();
+		
+		if(str == this.str) {
+			return null;
+		}
+		return str;
+	}
+	
+	@Benchmark 
+	public void stringBuilderBeingConsumed(Blackhole bh) {
+		StringBuilder str = new StringBuilder();
+		str.append("Blah");
+		str.append("Blah 2");
+		bh.consume(str);
+		
+		StringBuilder str2 = new StringBuilder();
+		str2.append("Blah");
+		str2.append("Blah 2");
+		
+	}
 	
 	@Benchmark
 	public StringBuilder stringBuilderBeingUsedAndConsumed() {

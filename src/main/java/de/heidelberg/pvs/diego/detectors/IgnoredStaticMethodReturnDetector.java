@@ -41,7 +41,7 @@ public class IgnoredStaticMethodReturnDetector extends AbstractJMHBenchmarkMetho
 
 			int nextOpcode = getNextOpcode();
 			if (isDiscardOperation(nextOpcode)) {
-
+				
 				// Create the bug
 				BugInstance bugInstance = new BugInstance(this, JMH_IGNORED_STATIC_METHOD_RETURN, NORMAL_PRIORITY)
 						.addClassAndMethod(this).addSourceLine(this);
