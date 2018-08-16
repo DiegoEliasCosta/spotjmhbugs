@@ -18,7 +18,7 @@ import edu.umd.cs.findbugs.visitclass.PreorderVisitor;
 
 public class UnsinkedVariableBenchmarkDetector extends AbstractJMHBenchmarkMethodDetector {
 
-	private static final boolean DEBUG = true;
+	private static final boolean DEBUG = false;
 
 	private static final String JMH_UNSINKED_VARIABLE = "JMH_UNSINKED_VARIABLE";
 	
@@ -80,41 +80,46 @@ public class UnsinkedVariableBenchmarkDetector extends AbstractJMHBenchmarkMetho
 
 		
 		varTable = code.getLocalVariableTable();
-		monitoredVariables = new HashMap<>();
+		
+		if(varTable != null) {
+			monitoredVariables = new HashMap<>();
 
-		LocalVariable[] localVariableTable = varTable.getLocalVariableTable();
-		for (LocalVariable var : localVariableTable) {
-			// Do not analyze parameters (startPC == 0)
-			if(var.getStartPC() > 0) {
-				monitoredVariables.put(var, new VarStatus());
+			LocalVariable[] localVariableTable = varTable.getLocalVariableTable();
+			for (LocalVariable var : localVariableTable) {
+				// Do not analyze parameters (startPC == 0)
+				if(var.getStartPC() > 0) {
+					monitoredVariables.put(var, new VarStatus());
+				}
+				
+			}
+
+			// Perform the Byte-code analysis
+			super.visit(code);
+
+			// Pos analysis
+			for (VarStatus status : monitoredVariables.values()) {
+				status.resolveDependents();
 			}
 			
-		}
+			for (Entry<LocalVariable, VarStatus> el: monitoredVariables.entrySet()) {
+				
+				LocalVariable key = el.getKey();
+				VarStatus status = el.getValue();
+				
+				if(!status.isSinked()) {
+					
+					BugInstance bugInstance = new BugInstance(this, JMH_UNSINKED_VARIABLE, HIGH_PRIORITY)
+							.addClassAndMethod(getMethodDescriptor());
 
-		// Perform the Byte-code analysis
-		super.visit(code);
+					super.bugReporter.reportBug(bugInstance);
+				}
+			}
 
-		// Pos analysis
-		for (VarStatus status : monitoredVariables.values()) {
-			status.resolveDependents();
+			debugResult();
+
 		}
 		
-		for (Entry<LocalVariable, VarStatus> el: monitoredVariables.entrySet()) {
-			
-			LocalVariable key = el.getKey();
-			VarStatus status = el.getValue();
-			
-			if(!status.isSinked()) {
-				
-				BugInstance bugInstance = new BugInstance(this, JMH_UNSINKED_VARIABLE, HIGH_PRIORITY)
-						.addClassAndMethod(getMethodDescriptor());
-
-				super.bugReporter.reportBug(bugInstance);
-			}
-		}
-
-		debugResult();
-
+		
 	}
 
 	private void debugResult() {
@@ -251,9 +256,8 @@ public class UnsinkedVariableBenchmarkDetector extends AbstractJMHBenchmarkMetho
 
 		// Find the reference variable
 		LocalVariable reference = varTable.getLocalVariable(referenceOffset, getPC());
-		if (reference != null) {
-
-			VarStatus refStatus = monitoredVariables.get(reference);
+		VarStatus refStatus = monitoredVariables.get(reference);
+		if (refStatus != null) {
 
 			// Assign dependency between REF -> PARAMETERS
 			for (int index = 0; index < referenceOffset; index++) {
