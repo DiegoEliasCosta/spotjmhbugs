@@ -22,10 +22,20 @@ private final ConcurrentHashMap<String, Long> map1 = new ConcurrentHashMap<>();
 
 
 	@Benchmark
-    public long iterMap2Element() {
+    public int iterMap2Element() {
         int total = 0;
         for (final Long value : map1.values()) {
-            total = (int) (value + 10); 
+            total += (int) (value + 10); 
+        }
+        return total;
+    }
+	
+
+	@Benchmark
+    public short iterMap3Element() {
+        short total = 0;
+        for (final Long value : map1.values()) {
+            total += (short) (value + 10); 
         }
         return total;
     }

@@ -26,7 +26,7 @@ public class UnsafeLoopInsideBenchmarkDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_UNSAFELOOP_INSIDE_BENCHMARK").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 3));
+		assertThat(bugCollection, containsExactly(bugTypeMatcher, 5));
 	}
 	
 	@Test
