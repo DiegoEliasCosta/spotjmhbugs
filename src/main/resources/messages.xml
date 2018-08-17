@@ -152,7 +152,7 @@ it can move the computation outside of the internal JMH loop.</p>
   
   <BugPattern type="JMH_STATE_FINAL_STATIC_PRIMITIVE">
     <ShortDescription>JMH State primitive static field declared final.</ShortDescription>
-    <LongDescription>State field declared final in {1}</LongDescription>
+    <LongDescription>Static field declared final in {1}</LongDescription>
     <Details>
 <![CDATA[
 <p>Final primitive fields pose a threat to benchmark measurements
@@ -275,8 +275,8 @@ there is no easy way to eliminate these false positives.
   
   
     <BugPattern type="JMH_UNSINKED_VARIABLE">
-    <ShortDescription>Dead store to local variable</ShortDescription>
-    <LongDescription>Dead store to {2} in {1}</LongDescription>
+    <ShortDescription>Unsinked variable inside benchmark method</ShortDescription>
+    <LongDescription>Unsinked variable inside benchmark method {1} </LongDescription>
     <Details>
 <![CDATA[
 <p>

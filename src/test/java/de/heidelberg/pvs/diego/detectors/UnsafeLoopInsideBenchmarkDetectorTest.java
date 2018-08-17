@@ -19,15 +19,15 @@ public class UnsafeLoopInsideBenchmarkDetectorTest {
 	@Rule
 	public SpotBugsRule spotbugs = new SpotBugsRule();
 
-	@Test
-	public void testOnUnsafeLoopExample() throws Exception {
-		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.examples".replace('.', '/'),
-				"UnsafeLoopInsideBenchmarkExample.class");
-		BugCollection bugCollection = spotbugs.performAnalysis(path);
-
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_UNSAFELOOP_INSIDE_BENCHMARK").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 4));
-	}
+//	@Test
+//	public void testOnUnsafeLoopExample() throws Exception {
+//		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.examples".replace('.', '/'),
+//				"UnsafeLoopInsideBenchmarkExample.class");
+//		BugCollection bugCollection = spotbugs.performAnalysis(path);
+//
+//		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_UNSAFELOOP_INSIDE_BENCHMARK").build();
+//		assertThat(bugCollection, containsExactly(bugTypeMatcher, 4));
+//	}
 	
 	@Test
 	public void testOnJMHSample_11() throws Exception {

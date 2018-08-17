@@ -14,6 +14,7 @@ import org.apache.bcel.classfile.LocalVariableTable;
 import edu.umd.cs.findbugs.BugInstance;
 import edu.umd.cs.findbugs.BugReporter;
 import edu.umd.cs.findbugs.OpcodeStack.Item;
+import edu.umd.cs.findbugs.ba.XMethod;
 import edu.umd.cs.findbugs.visitclass.PreorderVisitor;
 
 public class UnsinkedVariableBenchmarkDetector extends AbstractJMHBenchmarkMethodDetector {
@@ -77,11 +78,12 @@ public class UnsinkedVariableBenchmarkDetector extends AbstractJMHBenchmarkMetho
 
 	@Override
 	public void visit(Code code) {
-
+		
+		XMethod xMethod = getXMethod();
 		
 		varTable = code.getLocalVariableTable();
 		
-		if(varTable != null) {
+		if(this.isMethodBenchmark(xMethod) && varTable != null) {
 			monitoredVariables = new HashMap<>();
 
 			LocalVariable[] localVariableTable = varTable.getLocalVariableTable();
