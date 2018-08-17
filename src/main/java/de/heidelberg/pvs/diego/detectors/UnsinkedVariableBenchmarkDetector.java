@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.Stack;
 
 import org.apache.bcel.Const;
 import org.apache.bcel.classfile.Code;
@@ -15,19 +16,21 @@ import edu.umd.cs.findbugs.BugInstance;
 import edu.umd.cs.findbugs.BugReporter;
 import edu.umd.cs.findbugs.OpcodeStack.Item;
 import edu.umd.cs.findbugs.ba.XMethod;
+import edu.umd.cs.findbugs.classfile.MethodDescriptor;
 import edu.umd.cs.findbugs.visitclass.PreorderVisitor;
 
 public class UnsinkedVariableBenchmarkDetector extends AbstractJMHBenchmarkMethodDetector {
 
-	private static final boolean DEBUG = false;
+	private static final boolean DEBUG = true;
 
 	private static final String JMH_UNSINKED_VARIABLE = "JMH_UNSINKED_VARIABLE";
-	
+
 	public UnsinkedVariableBenchmarkDetector(BugReporter bugReporter) {
 		super(bugReporter);
 	}
 
 	Map<LocalVariable, VarStatus> monitoredVariables;
+	Map<XMethod, LocalVariable> methodsCalledFromMonitoredVariables;
 
 	LocalVariableTable varTable;
 
@@ -39,8 +42,9 @@ public class UnsinkedVariableBenchmarkDetector extends AbstractJMHBenchmarkMetho
 		boolean sinkedIntoAField;
 		boolean sinkedFromDependents;
 		boolean sinkedByReturned;
+		boolean sinkedByComparison;
 		boolean sinkedByMethodCall;
-
+		
 		public VarStatus() {
 			super();
 			dependents = new HashSet<>();
@@ -48,13 +52,15 @@ public class UnsinkedVariableBenchmarkDetector extends AbstractJMHBenchmarkMetho
 
 		public boolean isSinked() {
 			// Add here the dependency
-			return sinkedIntoBlackhole || sinkedIntoAField || sinkedByReturned || sinkedFromDependents || sinkedByMethodCall;
+			return sinkedIntoBlackhole || sinkedIntoAField || sinkedByReturned || sinkedFromDependents
+					|| sinkedByMethodCall || sinkedByComparison;
 		}
 
 		@Override
 		public String toString() {
-			String format = String.format("blackhole: %s | field: %s | return: %s | call: %s | dependent: %s", sinkedIntoBlackhole,
-					sinkedIntoAField, sinkedByReturned, sinkedByMethodCall, sinkedFromDependents);
+			String format = String.format(
+					"blackhole: %s | field: %s | return: %s | call: %s | comp: %s | dependent: %s", sinkedIntoBlackhole,
+					sinkedIntoAField, sinkedByReturned, sinkedByMethodCall, sinkedByComparison, sinkedFromDependents);
 			return format;
 
 		}
@@ -69,6 +75,7 @@ public class UnsinkedVariableBenchmarkDetector extends AbstractJMHBenchmarkMetho
 				}
 			}
 		}
+		
 
 		public void addDependent(LocalVariable localVariable) {
 			dependents.add(localVariable);
@@ -78,21 +85,22 @@ public class UnsinkedVariableBenchmarkDetector extends AbstractJMHBenchmarkMetho
 
 	@Override
 	public void visit(Code code) {
-		
+
 		XMethod xMethod = getXMethod();
-		
+
 		varTable = code.getLocalVariableTable();
-		
-		if(this.isMethodBenchmark(xMethod) && varTable != null) {
+
+		if (this.isMethodBenchmark(xMethod) && varTable != null) {
 			monitoredVariables = new HashMap<>();
+			methodsCalledFromMonitoredVariables = new HashMap<>();
 
 			LocalVariable[] localVariableTable = varTable.getLocalVariableTable();
 			for (LocalVariable var : localVariableTable) {
 				// Do not analyze parameters (startPC == 0)
-				if(var.getStartPC() > 0) {
+				if (var.getStartPC() > 0) {
 					monitoredVariables.put(var, new VarStatus());
 				}
-				
+
 			}
 
 			// Perform the Byte-code analysis
@@ -102,14 +110,14 @@ public class UnsinkedVariableBenchmarkDetector extends AbstractJMHBenchmarkMetho
 			for (VarStatus status : monitoredVariables.values()) {
 				status.resolveDependents();
 			}
-			
-			for (Entry<LocalVariable, VarStatus> el: monitoredVariables.entrySet()) {
-				
+
+			for (Entry<LocalVariable, VarStatus> el : monitoredVariables.entrySet()) {
+
 				LocalVariable key = el.getKey();
 				VarStatus status = el.getValue();
-				
-				if(!status.isSinked()) {
-					
+
+				if (!status.isSinked()) {
+
 					BugInstance bugInstance = new BugInstance(this, JMH_UNSINKED_VARIABLE, HIGH_PRIORITY)
 							.addClassAndMethod(getMethodDescriptor());
 
@@ -120,8 +128,7 @@ public class UnsinkedVariableBenchmarkDetector extends AbstractJMHBenchmarkMetho
 			debugResult();
 
 		}
-		
-		
+
 	}
 
 	private void debugResult() {
@@ -136,7 +143,6 @@ public class UnsinkedVariableBenchmarkDetector extends AbstractJMHBenchmarkMetho
 			}
 		}
 	}
-
 
 	@Override
 	protected void analyzeBenchmarkMethodOpCode(int seen) {
@@ -217,7 +223,54 @@ public class UnsinkedVariableBenchmarkDetector extends AbstractJMHBenchmarkMetho
 			analyzeReturn();
 			break;
 
+		case Const.IF_ACMPEQ:
+		case Const.IF_ACMPNE:
+		case Const.IF_ICMPEQ:
+		case Const.IF_ICMPGE:
+		case Const.IF_ICMPGT:
+		case Const.IF_ICMPLE:
+		case Const.IF_ICMPLT:
+		case Const.IF_ICMPNE:
+		case Const.IFEQ:
+		case Const.IFGE:
+		case Const.IFGT:
+		case Const.IFLE:
+			analyzeComparison(0);
+			analyzeComparison(1);
+			break;
+
+		case Const.IFNE:
+		case Const.IFNONNULL:
+		case Const.IFNULL:
+			analyzeComparison(0);
+			break;
 		}
+
+	}
+
+	private void analyzeComparison(int index) {
+		
+		if(index <= stack.getStackDepth()) {
+			Item stackItem = stack.getStackItem(index);
+			
+			XMethod returnValueOf = stackItem.getReturnValueOf();
+			LocalVariable reference = this.methodsCalledFromMonitoredVariables.get(returnValueOf);
+			
+			LocalVariable localVariable = varTable.getLocalVariable(stackItem.getRegisterNumber(), getPC());
+
+			if (monitoredVariables.containsKey(localVariable)) {
+				VarStatus varStatus = monitoredVariables.get(localVariable);
+				varStatus.sinkedByComparison = true;
+			}
+
+			// Add dependency between Reference -> local var
+			if(monitoredVariables.containsKey(localVariable)) {
+				VarStatus varStatus = monitoredVariables.get(localVariable);
+				varStatus.addDependent(reference);
+			}
+			
+		}
+		
 
 	}
 
@@ -255,9 +308,15 @@ public class UnsinkedVariableBenchmarkDetector extends AbstractJMHBenchmarkMetho
 
 		String signature = this.getSigConstantOperand();
 		int referenceOffset = PreorderVisitor.getNumberArguments(signature);
-
+		
+		
+		XMethod xMethodOperand = getXMethodOperand();
+		
 		// Find the reference variable
 		LocalVariable reference = varTable.getLocalVariable(referenceOffset, getPC());
+		
+		
+		this.methodsCalledFromMonitoredVariables.put(xMethodOperand, reference);
 		VarStatus refStatus = monitoredVariables.get(reference);
 		if (refStatus != null) {
 

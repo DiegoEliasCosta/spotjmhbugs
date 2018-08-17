@@ -39,5 +39,15 @@ public class UnsinkedVariableBenchmarkDetectorTest {
 		assertThat(bugCollection, containsExactly(bugTypeMatcher, 1));
 	}
 	
+	@Test
+	public void testUnsinkedvariableWithFalsePsitiveExamples() throws Exception {
+		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.examples".replace('.', '/'),
+				"UnsinkedVariablesFalsePositiveExamples.class");
+		BugCollection bugCollection = spotbugs.performAnalysis(path);
+
+		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_UNSINKED_VARIABLE").build();
+		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
+	}
+	
 	
 }
