@@ -21,7 +21,7 @@ import edu.umd.cs.findbugs.visitclass.PreorderVisitor;
 
 public class UnsinkedVariableBenchmarkDetector extends AbstractJMHBenchmarkMethodDetector {
 
-	private static final boolean DEBUG = true;
+	private static final boolean DEBUG = false;
 
 	private static final String JMH_UNSINKED_VARIABLE = "JMH_UNSINKED_VARIABLE";
 
@@ -70,7 +70,9 @@ public class UnsinkedVariableBenchmarkDetector extends AbstractJMHBenchmarkMetho
 			if (this.isSinked()) {
 				for (LocalVariable local : dependents) {
 					VarStatus varStatus = monitoredVariables.get(local);
-					varStatus.sinkedFromDependents = true;
+					if(varStatus != null) {
+						varStatus.sinkedFromDependents = true;
+					}
 
 				}
 			}
@@ -250,7 +252,7 @@ public class UnsinkedVariableBenchmarkDetector extends AbstractJMHBenchmarkMetho
 
 	private void analyzeComparison(int index) {
 		
-		if(index <= stack.getStackDepth()) {
+		if(index < stack.getStackDepth()) {
 			Item stackItem = stack.getStackItem(index);
 			
 			XMethod returnValueOf = stackItem.getReturnValueOf();
