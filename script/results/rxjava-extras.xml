@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1511112159000" analysisTimestamp="1511112163953" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534796865000" analysisTimestamp="1534796867599" release="">
   <Project projectName="">
     <Jar>tmp/rxjava-extras</Jar>
   </Project>
@@ -22,7 +22,7 @@
     </Method>
     <SourceLine classname="com.github.davidmoten.rx.Benchmarks" start="70" end="70" startBytecode="35" endBytecode="35" sourcefile="Benchmarks.java" sourcepath="com/github/davidmoten/rx/Benchmarks.java"/>
   </BugInstance>
-  <Errors errors="0" missingClasses="60">
+  <Errors errors="0" missingClasses="63">
     <MissingClass>com.esotericsoftware.kryo.Kryo</MissingClass>
     <MissingClass>com.esotericsoftware.kryo.io.Input</MissingClass>
     <MissingClass>com.esotericsoftware.kryo.io.Output</MissingClass>
@@ -66,15 +66,18 @@
     <MissingClass>rx.internal.operators.BackpressureUtils</MissingClass>
     <MissingClass>rx.internal.operators.NotificationLite</MissingClass>
     <MissingClass>rx.internal.producers.ProducerArbiter</MissingClass>
+    <MissingClass>rx.internal.util.PlatformDependent</MissingClass>
     <MissingClass>rx.internal.util.RxRingBuffer</MissingClass>
     <MissingClass>rx.internal.util.UtilityFunctions</MissingClass>
     <MissingClass>rx.internal.util.atomic.SpscAtomicArrayQueue</MissingClass>
     <MissingClass>rx.internal.util.unsafe.MpscLinkedQueue</MissingClass>
+    <MissingClass>rx.internal.util.unsafe.SpmcArrayQueue</MissingClass>
     <MissingClass>rx.internal.util.unsafe.SpscArrayQueue</MissingClass>
     <MissingClass>rx.internal.util.unsafe.UnsafeAccess</MissingClass>
     <MissingClass>rx.observables.BlockingObservable</MissingClass>
     <MissingClass>rx.observables.ConnectableObservable</MissingClass>
     <MissingClass>rx.observables.SyncOnSubscribe</MissingClass>
+    <MissingClass>rx.observers.AssertableSubscriber</MissingClass>
     <MissingClass>rx.observers.Subscribers</MissingClass>
     <MissingClass>rx.observers.TestSubscriber</MissingClass>
     <MissingClass>rx.plugins.RxJavaHooks</MissingClass>
@@ -84,8 +87,8 @@
     <MissingClass>rx.subjects.Subject</MissingClass>
     <MissingClass>rx.subscriptions.Subscriptions</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Sun, 19 Nov 2017 18:22:39 +0100" total_classes="595" referenced_classes="758" total_bugs="2" total_size="11268" num_packages="11" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="27.85" clock_seconds="8.50" peak_mbytes="519.83" alloc_mbytes="3641.00" gc_seconds="0.15" priority_2="2">
-    <PackageStats package="com.github.davidmoten.rx" total_bugs="2" total_types="269" total_size="3474" priority_2="2">
+  <FindBugsSummary timestamp="Mon, 20 Aug 2018 22:27:45 +0200" total_classes="598" referenced_classes="761" total_bugs="2" total_size="11436" num_packages="11" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="30.95" clock_seconds="12.23" peak_mbytes="616.44" alloc_mbytes="3641.00" gc_seconds="0.21" priority_2="2">
+    <PackageStats package="com.github.davidmoten.rx" total_bugs="2" total_types="270" total_size="3500" priority_2="2">
       <ClassStats class="com.github.davidmoten.rx.Actions" sourceFile="Actions.java" interface="false" size="50" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.Actions$1" sourceFile="Actions.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.Actions$10" sourceFile="Actions.java" interface="false" size="8" bugs="0"/>
@@ -238,13 +241,13 @@
       <ClassStats class="com.github.davidmoten.rx.ResourceManager$CloserHolder" sourceFile="ResourceManager.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.ResourceManager$CloserHolder$1" sourceFile="ResourceManager.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.ResourceManager$ResourceManagerBuilder" sourceFile="ResourceManager.java" interface="false" size="15" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.RetryWhen" sourceFile="RetryWhen.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.RetryWhen" sourceFile="RetryWhen.java" interface="false" size="48" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.RetryWhen$1" sourceFile="RetryWhen.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.RetryWhen$2" sourceFile="RetryWhen.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.RetryWhen$3" sourceFile="RetryWhen.java" interface="false" size="21" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.RetryWhen$4" sourceFile="RetryWhen.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.RetryWhen$5" sourceFile="RetryWhen.java" interface="false" size="10" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.RetryWhen$Builder" sourceFile="RetryWhen.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.RetryWhen$Builder" sourceFile="RetryWhen.java" interface="false" size="63" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.RetryWhen$Builder$1" sourceFile="RetryWhen.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.RetryWhen$Builder$2" sourceFile="RetryWhen.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.RetryWhen$Builder$ToLongHolder" sourceFile="RetryWhen.java" interface="false" size="6" bugs="0"/>
@@ -310,42 +313,43 @@
       <ClassStats class="com.github.davidmoten.rx.Strings$Utf8Holder" sourceFile="Strings.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.StringsTest" sourceFile="StringsTest.java" interface="false" size="53" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.StringsTest$1" sourceFile="StringsTest.java" interface="false" size="7" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.Transformers" sourceFile="Transformers.java" interface="false" size="138" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.Transformers" sourceFile="Transformers.java" interface="false" size="145" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.Transformers$1" sourceFile="Transformers.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.Transformers$10" sourceFile="Transformers.java" interface="false" size="9" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.Transformers$11" sourceFile="Transformers.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.Transformers$12" sourceFile="Transformers.java" interface="false" size="8" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.Transformers$13" sourceFile="Transformers.java" interface="false" size="7" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.Transformers$14" sourceFile="Transformers.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.Transformers$10" sourceFile="Transformers.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.Transformers$11" sourceFile="Transformers.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.Transformers$12" sourceFile="Transformers.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.Transformers$13" sourceFile="Transformers.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.Transformers$14" sourceFile="Transformers.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.Transformers$15" sourceFile="Transformers.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.Transformers$16" sourceFile="Transformers.java" interface="false" size="9" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.Transformers$17" sourceFile="Transformers.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.Transformers$17" sourceFile="Transformers.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.Transformers$18" sourceFile="Transformers.java" interface="false" size="8" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.Transformers$19" sourceFile="Transformers.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.Transformers$19" sourceFile="Transformers.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.Transformers$2" sourceFile="Transformers.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.Transformers$2$1" sourceFile="Transformers.java" interface="false" size="7" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.Transformers$20" sourceFile="Transformers.java" interface="false" size="13" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.Transformers$20$1" sourceFile="Transformers.java" interface="false" size="10" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.Transformers$20$2" sourceFile="Transformers.java" interface="false" size="19" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.Transformers$21" sourceFile="Transformers.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.Transformers$20" sourceFile="Transformers.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.Transformers$21" sourceFile="Transformers.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.Transformers$21$1" sourceFile="Transformers.java" interface="false" size="10" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.Transformers$21$1$1" sourceFile="Transformers.java" interface="false" size="9" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.Transformers$22" sourceFile="Transformers.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.Transformers$21$2" sourceFile="Transformers.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.Transformers$22" sourceFile="Transformers.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.Transformers$22$1" sourceFile="Transformers.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.Transformers$22$1$1" sourceFile="Transformers.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.Transformers$23" sourceFile="Transformers.java" interface="false" size="7" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.Transformers$23$1" sourceFile="Transformers.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.Transformers$24" sourceFile="Transformers.java" interface="false" size="7" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.Transformers$25" sourceFile="Transformers.java" interface="false" size="10" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.Transformers$26" sourceFile="Transformers.java" interface="false" size="11" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.Transformers$27" sourceFile="Transformers.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.Transformers$24$1" sourceFile="Transformers.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.Transformers$25" sourceFile="Transformers.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.Transformers$26" sourceFile="Transformers.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.Transformers$27" sourceFile="Transformers.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.Transformers$28" sourceFile="Transformers.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.Transformers$3" sourceFile="Transformers.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.Transformers$4" sourceFile="Transformers.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.Transformers$5" sourceFile="Transformers.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.Transformers$5$1" sourceFile="Transformers.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.Transformers$5$2" sourceFile="Transformers.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.Transformers$6" sourceFile="Transformers.java" interface="false" size="11" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.Transformers$7" sourceFile="Transformers.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.Transformers$8" sourceFile="Transformers.java" interface="false" size="7" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.Transformers$9" sourceFile="Transformers.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.Transformers$7" sourceFile="Transformers.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.Transformers$8" sourceFile="Transformers.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.Transformers$9" sourceFile="Transformers.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.Transformers$HolderEquals" sourceFile="Transformers.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.Transformers$HolderEquals$1" sourceFile="Transformers.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.Transformers$NaturalComparatorHolder" sourceFile="Transformers.java" interface="false" size="6" bugs="0"/>
@@ -384,7 +388,7 @@
       <ClassStats class="com.github.davidmoten.rx.internal.SchedulerWithId$1$1" sourceFile="SchedulerWithId.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.internal.SchedulerWithId$1$2" sourceFile="SchedulerWithId.java" interface="false" size="9" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.github.davidmoten.rx.internal.operators" total_bugs="0" total_types="232" total_size="6154">
+    <PackageStats package="com.github.davidmoten.rx.internal.operators" total_bugs="0" total_types="233" total_size="6182">
       <ClassStats class="com.github.davidmoten.rx.internal.operators.AbstractQueueWithResources" sourceFile="AbstractQueueWithResources.java" interface="false" size="55" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.internal.operators.FileBasedSPSCQueue" sourceFile="FileBasedSPSCQueue.java" interface="false" size="125" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.internal.operators.FileBasedSPSCQueue$1" sourceFile="FileBasedSPSCQueue.java" interface="false" size="1" bugs="0"/>
@@ -532,12 +536,13 @@
       <ClassStats class="com.github.davidmoten.rx.internal.operators.OperatorWindowMinMax$1" sourceFile="OperatorWindowMinMax.java" interface="false" size="38" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.internal.operators.OperatorWindowMinMax$Metric" sourceFile="OperatorWindowMinMax.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.internal.operators.OperatorWindowMinMaxTest" sourceFile="OperatorWindowMinMaxTest.java" interface="false" size="40" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.internal.operators.OrderedMerge" sourceFile="OrderedMerge.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.internal.operators.OrderedMerge" sourceFile="OrderedMerge.java" interface="false" size="44" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.internal.operators.OrderedMerge$1" sourceFile="OrderedMerge.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.internal.operators.OrderedMerge$MergeProducer" sourceFile="OrderedMerge.java" interface="false" size="116" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.internal.operators.OrderedMerge$MergeProducer" sourceFile="OrderedMerge.java" interface="false" size="122" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.internal.operators.OrderedMerge$SourceSubscriber" sourceFile="OrderedMerge.java" interface="false" size="47" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rx.internal.operators.OrderedMergeTest" sourceFile="OrderedMergeTest.java" interface="false" size="158" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.internal.operators.OrderedMergeTest" sourceFile="OrderedMergeTest.java" interface="false" size="167" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.internal.operators.OrderedMergeTest$1" sourceFile="OrderedMergeTest.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.internal.operators.OrderedMergeTest$2" sourceFile="OrderedMergeTest.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.internal.operators.OrderedMergeTest$TestException" sourceFile="OrderedMergeTest.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.internal.operators.Permutations" sourceFile="Permutations.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.internal.operators.Permutations$1" sourceFile="Permutations.java" interface="false" size="6" bugs="0"/>
@@ -680,7 +685,7 @@
       <ClassStats class="com.github.davidmoten.rx.testing.TestingHelperUnsubscribeFromSourceTest" sourceFile="TestingHelperUnsubscribeFromSourceTest.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.testing.TestingHelperUnsubscribeFromSourceTest$1" sourceFile="TestingHelperUnsubscribeFromSourceTest.java" interface="false" size="6" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.github.davidmoten.rx.util" total_bugs="0" total_types="12" total_size="218">
+    <PackageStats package="com.github.davidmoten.rx.util" total_bugs="0" total_types="13" total_size="332">
       <ClassStats class="com.github.davidmoten.rx.util.BackpressureStrategy" sourceFile="BackpressureStrategy.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.util.BackpressureUtils" sourceFile="BackpressureUtils.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.util.MapWithIndex" sourceFile="MapWithIndex.java" interface="false" size="8" bugs="0"/>
@@ -692,6 +697,7 @@
       <ClassStats class="com.github.davidmoten.rx.util.MapWithIndex$NaturalNumbers$Holder" sourceFile="MapWithIndex.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.util.MapWithIndexTest" sourceFile="MapWithIndexTest.java" interface="false" size="32" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.util.Pair" sourceFile="Pair.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rx.util.RxRingBuffer" sourceFile="RxRingBuffer.java" interface="false" size="114" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rx.util.ZippedEntry" sourceFile="ZippedEntry.java" interface="false" size="40" bugs="0"/>
     </PackageStats>
     <PackageStats package="com.github.davidmoten.util" total_bugs="0" total_types="6" total_size="166">
@@ -703,49 +709,41 @@
       <ClassStats class="com.github.davidmoten.util.PreconditionsTest" sourceFile="PreconditionsTest.java" interface="false" size="19" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="417" invocations="1626" avgMicrosecondsPerInvocation="257" maxMicrosecondsPerInvocation="23286" standardDeviationMicrosecondsPerInvocation="999"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="374" invocations="2570" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="9902" standardDeviationMicrosecondsPerInvocation="341"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="359" invocations="2259" avgMicrosecondsPerInvocation="159" maxMicrosecondsPerInvocation="4523" standardDeviationMicrosecondsPerInvocation="299"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="349" invocations="1629" avgMicrosecondsPerInvocation="214" maxMicrosecondsPerInvocation="2565" standardDeviationMicrosecondsPerInvocation="175"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="336" invocations="2724" avgMicrosecondsPerInvocation="123" maxMicrosecondsPerInvocation="23028" standardDeviationMicrosecondsPerInvocation="597"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="323" invocations="2603" avgMicrosecondsPerInvocation="124" maxMicrosecondsPerInvocation="10655" standardDeviationMicrosecondsPerInvocation="332"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="298" invocations="2527" avgMicrosecondsPerInvocation="118" maxMicrosecondsPerInvocation="6277" standardDeviationMicrosecondsPerInvocation="255"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="288" invocations="2570" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="11621" standardDeviationMicrosecondsPerInvocation="370"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="253" invocations="2385" avgMicrosecondsPerInvocation="106" maxMicrosecondsPerInvocation="29733" standardDeviationMicrosecondsPerInvocation="633"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.FixtureWithInvocationScopeDetector" totalMilliseconds="244" invocations="595" avgMicrosecondsPerInvocation="411" maxMicrosecondsPerInvocation="157865" standardDeviationMicrosecondsPerInvocation="6691"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="194" invocations="595" avgMicrosecondsPerInvocation="326" maxMicrosecondsPerInvocation="18463" standardDeviationMicrosecondsPerInvocation="1848"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="186" invocations="758" avgMicrosecondsPerInvocation="246" maxMicrosecondsPerInvocation="14736" standardDeviationMicrosecondsPerInvocation="857"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="173" invocations="758" avgMicrosecondsPerInvocation="229" maxMicrosecondsPerInvocation="7000" standardDeviationMicrosecondsPerInvocation="543"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="148" invocations="3055" avgMicrosecondsPerInvocation="48" maxMicrosecondsPerInvocation="6101" standardDeviationMicrosecondsPerInvocation="168"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="107" invocations="595" avgMicrosecondsPerInvocation="180" maxMicrosecondsPerInvocation="8384" standardDeviationMicrosecondsPerInvocation="398"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="104" invocations="2585" avgMicrosecondsPerInvocation="40" maxMicrosecondsPerInvocation="26654" standardDeviationMicrosecondsPerInvocation="526"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="99" invocations="2570" avgMicrosecondsPerInvocation="38" maxMicrosecondsPerInvocation="2039" standardDeviationMicrosecondsPerInvocation="88"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="93" invocations="595" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="34767" standardDeviationMicrosecondsPerInvocation="1520"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="92" invocations="25526" avgMicrosecondsPerInvocation="3" maxMicrosecondsPerInvocation="4227" standardDeviationMicrosecondsPerInvocation="30"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="82" invocations="595" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="2948" standardDeviationMicrosecondsPerInvocation="272"/>
-      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="75" invocations="75459" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="1377" standardDeviationMicrosecondsPerInvocation="6"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="71" invocations="595" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="2514" standardDeviationMicrosecondsPerInvocation="233"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="69" invocations="865" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="13684" standardDeviationMicrosecondsPerInvocation="484"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="69" invocations="758" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="3072" standardDeviationMicrosecondsPerInvocation="246"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="68" invocations="1492" avgMicrosecondsPerInvocation="45" maxMicrosecondsPerInvocation="8524" standardDeviationMicrosecondsPerInvocation="248"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="68" invocations="758" avgMicrosecondsPerInvocation="89" maxMicrosecondsPerInvocation="3125" standardDeviationMicrosecondsPerInvocation="239"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="63" invocations="595" avgMicrosecondsPerInvocation="106" maxMicrosecondsPerInvocation="1521" standardDeviationMicrosecondsPerInvocation="166"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="62" invocations="758" avgMicrosecondsPerInvocation="82" maxMicrosecondsPerInvocation="2943" standardDeviationMicrosecondsPerInvocation="202"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="60" invocations="595" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="1997" standardDeviationMicrosecondsPerInvocation="172"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="59" invocations="2177" avgMicrosecondsPerInvocation="27" maxMicrosecondsPerInvocation="2127" standardDeviationMicrosecondsPerInvocation="80"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="58" invocations="595" avgMicrosecondsPerInvocation="98" maxMicrosecondsPerInvocation="3026" standardDeviationMicrosecondsPerInvocation="163"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="55" invocations="2259" avgMicrosecondsPerInvocation="24" maxMicrosecondsPerInvocation="914" standardDeviationMicrosecondsPerInvocation="39"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="53" invocations="595" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="2727" standardDeviationMicrosecondsPerInvocation="207"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="53" invocations="595" avgMicrosecondsPerInvocation="89" maxMicrosecondsPerInvocation="5078" standardDeviationMicrosecondsPerInvocation="269"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="51" invocations="595" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="5609" standardDeviationMicrosecondsPerInvocation="280"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="48" invocations="758" avgMicrosecondsPerInvocation="63" maxMicrosecondsPerInvocation="8060" standardDeviationMicrosecondsPerInvocation="394"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="47" invocations="595" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="1688" standardDeviationMicrosecondsPerInvocation="158"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="46" invocations="595" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="1639" standardDeviationMicrosecondsPerInvocation="116"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="46" invocations="2585" avgMicrosecondsPerInvocation="17" maxMicrosecondsPerInvocation="4271" standardDeviationMicrosecondsPerInvocation="135"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="45" invocations="595" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="1192" standardDeviationMicrosecondsPerInvocation="115"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="45" invocations="595" avgMicrosecondsPerInvocation="75" maxMicrosecondsPerInvocation="1739" standardDeviationMicrosecondsPerInvocation="135"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="43" invocations="595" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="2411" standardDeviationMicrosecondsPerInvocation="185"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="40" invocations="758" avgMicrosecondsPerInvocation="53" maxMicrosecondsPerInvocation="2242" standardDeviationMicrosecondsPerInvocation="138"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="1388" invocations="598" avgMicrosecondsPerInvocation="2322" maxMicrosecondsPerInvocation="255927" standardDeviationMicrosecondsPerInvocation="14671"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.FixtureWithInvocationScopeDetector" totalMilliseconds="1033" invocations="598" avgMicrosecondsPerInvocation="1727" maxMicrosecondsPerInvocation="826589" standardDeviationMicrosecondsPerInvocation="33916"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="521" invocations="2608" avgMicrosecondsPerInvocation="199" maxMicrosecondsPerInvocation="30226" standardDeviationMicrosecondsPerInvocation="1031"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="510" invocations="2295" avgMicrosecondsPerInvocation="222" maxMicrosecondsPerInvocation="50209" standardDeviationMicrosecondsPerInvocation="1181"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="482" invocations="2641" avgMicrosecondsPerInvocation="182" maxMicrosecondsPerInvocation="30775" standardDeviationMicrosecondsPerInvocation="879"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="446" invocations="2762" avgMicrosecondsPerInvocation="161" maxMicrosecondsPerInvocation="38698" standardDeviationMicrosecondsPerInvocation="1016"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="424" invocations="1633" avgMicrosecondsPerInvocation="260" maxMicrosecondsPerInvocation="23295" standardDeviationMicrosecondsPerInvocation="924"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="364" invocations="2608" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="32082" standardDeviationMicrosecondsPerInvocation="714"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="353" invocations="2565" avgMicrosecondsPerInvocation="137" maxMicrosecondsPerInvocation="21441" standardDeviationMicrosecondsPerInvocation="521"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="353" invocations="2419" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="44742" standardDeviationMicrosecondsPerInvocation="1045"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="245" invocations="1636" avgMicrosecondsPerInvocation="150" maxMicrosecondsPerInvocation="2890" standardDeviationMicrosecondsPerInvocation="147"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="216" invocations="761" avgMicrosecondsPerInvocation="285" maxMicrosecondsPerInvocation="33641" standardDeviationMicrosecondsPerInvocation="1362"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="212" invocations="761" avgMicrosecondsPerInvocation="279" maxMicrosecondsPerInvocation="23433" standardDeviationMicrosecondsPerInvocation="1118"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="186" invocations="598" avgMicrosecondsPerInvocation="312" maxMicrosecondsPerInvocation="85144" standardDeviationMicrosecondsPerInvocation="3774"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="176" invocations="3093" avgMicrosecondsPerInvocation="56" maxMicrosecondsPerInvocation="5515" standardDeviationMicrosecondsPerInvocation="176"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="147" invocations="2623" avgMicrosecondsPerInvocation="56" maxMicrosecondsPerInvocation="32515" standardDeviationMicrosecondsPerInvocation="660"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="120" invocations="598" avgMicrosecondsPerInvocation="200" maxMicrosecondsPerInvocation="30497" standardDeviationMicrosecondsPerInvocation="1306"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="111" invocations="26253" avgMicrosecondsPerInvocation="4" maxMicrosecondsPerInvocation="5058" standardDeviationMicrosecondsPerInvocation="39"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="106" invocations="598" avgMicrosecondsPerInvocation="178" maxMicrosecondsPerInvocation="1891" standardDeviationMicrosecondsPerInvocation="232"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="106" invocations="598" avgMicrosecondsPerInvocation="177" maxMicrosecondsPerInvocation="30861" standardDeviationMicrosecondsPerInvocation="1298"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="105" invocations="2608" avgMicrosecondsPerInvocation="40" maxMicrosecondsPerInvocation="3837" standardDeviationMicrosecondsPerInvocation="110"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="91" invocations="598" avgMicrosecondsPerInvocation="153" maxMicrosecondsPerInvocation="3034" standardDeviationMicrosecondsPerInvocation="280"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="91" invocations="598" avgMicrosecondsPerInvocation="152" maxMicrosecondsPerInvocation="23941" standardDeviationMicrosecondsPerInvocation="991"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="80" invocations="75837" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="2088" standardDeviationMicrosecondsPerInvocation="11"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BadSyntaxForRegularExpression" totalMilliseconds="78" invocations="598" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="41653" standardDeviationMicrosecondsPerInvocation="1705"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="78" invocations="761" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="4180" standardDeviationMicrosecondsPerInvocation="295"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUnrelatedTypesInGenericContainer" totalMilliseconds="77" invocations="598" avgMicrosecondsPerInvocation="129" maxMicrosecondsPerInvocation="36802" standardDeviationMicrosecondsPerInvocation="1523"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="77" invocations="598" avgMicrosecondsPerInvocation="129" maxMicrosecondsPerInvocation="2064" standardDeviationMicrosecondsPerInvocation="230"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="76" invocations="598" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="20770" standardDeviationMicrosecondsPerInvocation="888"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="73" invocations="872" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="13974" standardDeviationMicrosecondsPerInvocation="488"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="72" invocations="598" avgMicrosecondsPerInvocation="121" maxMicrosecondsPerInvocation="2436" standardDeviationMicrosecondsPerInvocation="229"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="71" invocations="761" avgMicrosecondsPerInvocation="94" maxMicrosecondsPerInvocation="3682" standardDeviationMicrosecondsPerInvocation="261"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="71" invocations="1495" avgMicrosecondsPerInvocation="47" maxMicrosecondsPerInvocation="2981" standardDeviationMicrosecondsPerInvocation="126"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="70" invocations="598" avgMicrosecondsPerInvocation="118" maxMicrosecondsPerInvocation="9816" standardDeviationMicrosecondsPerInvocation="462"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="65" invocations="598" avgMicrosecondsPerInvocation="108" maxMicrosecondsPerInvocation="7097" standardDeviationMicrosecondsPerInvocation="367"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1511123050000" analysisTimestamp="1511123052193" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534780155000" analysisTimestamp="1534780157036" release="">
   <Project projectName="">
     <Jar>tmp/stagemonitor</Jar>
   </Project>
@@ -390,18 +390,18 @@
     <MissingClass>net.sf.uadetector.VersionNumber</MissingClass>
     <MissingClass>net.sf.uadetector.service.UADetectorServiceFactory</MissingClass>
     <MissingClass>org.apache.commons.io.FileUtils</MissingClass>
-    <MissingClass>org.elasticsearch.action.ActionRequestBuilder</MissingClass>
+    <MissingClass>org.elasticsearch.action.ActionRequest</MissingClass>
     <MissingClass>org.elasticsearch.action.admin.cluster.health.ClusterHealthRequestBuilder</MissingClass>
     <MissingClass>org.elasticsearch.action.search.SearchRequest</MissingClass>
-    <MissingClass>org.elasticsearch.action.search.SearchRequestBuilder</MissingClass>
     <MissingClass>org.elasticsearch.action.search.SearchType</MissingClass>
     <MissingClass>org.elasticsearch.client.AdminClient</MissingClass>
     <MissingClass>org.elasticsearch.client.Client</MissingClass>
     <MissingClass>org.elasticsearch.client.ClusterAdminClient</MissingClass>
     <MissingClass>org.elasticsearch.common.settings.Settings</MissingClass>
     <MissingClass>org.elasticsearch.common.settings.Settings$Builder</MissingClass>
+    <MissingClass>org.elasticsearch.node.InternalSettingsPreparer</MissingClass>
     <MissingClass>org.elasticsearch.node.Node</MissingClass>
-    <MissingClass>org.elasticsearch.node.internal.InternalSettingsPreparer</MissingClass>
+    <MissingClass>org.elasticsearch.search.builder.SearchSourceBuilder</MissingClass>
     <MissingClass>org.hyperic.sigar.CpuInfo</MissingClass>
     <MissingClass>org.hyperic.sigar.CpuPerc</MissingClass>
     <MissingClass>org.hyperic.sigar.FileSystem</MissingClass>
@@ -443,23 +443,23 @@
     <MissingClass>org.springframework.web.method.HandlerMethod</MissingClass>
     <MissingClass>org.springframework.web.servlet.HandlerExecutionChain</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Sun, 19 Nov 2017 21:24:10 +0100" total_classes="643" referenced_classes="979" total_bugs="23" total_size="22073" num_packages="68" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="41.67" clock_seconds="14.26" peak_mbytes="778.99" alloc_mbytes="3641.00" gc_seconds="0.28" priority_2="23">
+  <FindBugsSummary timestamp="Mon, 20 Aug 2018 17:49:15 +0200" total_classes="662" referenced_classes="1000" total_bugs="23" total_size="22546" num_packages="68" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="43.69" clock_seconds="15.45" peak_mbytes="953.36" alloc_mbytes="3641.00" gc_seconds="0.31" priority_2="23">
     <PackageStats package="__redirected.org.stagemonitor.dispatcher" total_bugs="0" total_types="1" total_size="27">
       <ClassStats class="__redirected.org.stagemonitor.dispatcher.Dispatcher" sourceFile="Dispatcher.java" interface="false" size="27" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.gradle.cli" total_bugs="0" total_types="24" total_size="545">
+    <PackageStats package="org.gradle.cli" total_bugs="0" total_types="24" total_size="536">
       <ClassStats class="org.gradle.cli.AbstractCommandLineConverter" sourceFile="AbstractCommandLineConverter.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.gradle.cli.AbstractPropertiesCommandLineConverter" sourceFile="AbstractPropertiesCommandLineConverter.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="org.gradle.cli.CommandLineArgumentException" sourceFile="CommandLineArgumentException.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.gradle.cli.CommandLineConverter" sourceFile="CommandLineConverter.java" interface="true" size="4" bugs="0"/>
       <ClassStats class="org.gradle.cli.CommandLineOption" sourceFile="CommandLineOption.java" interface="false" size="63" bugs="0"/>
-      <ClassStats class="org.gradle.cli.CommandLineParser" sourceFile="CommandLineParser.java" interface="false" size="138" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser" sourceFile="CommandLineParser.java" interface="false" size="131" bugs="0"/>
       <ClassStats class="org.gradle.cli.CommandLineParser$1" sourceFile="CommandLineParser.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.gradle.cli.CommandLineParser$AfterFirstSubCommand" sourceFile="CommandLineParser.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="org.gradle.cli.CommandLineParser$AfterOptions" sourceFile="CommandLineParser.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="org.gradle.cli.CommandLineParser$BeforeFirstSubCommand" sourceFile="CommandLineParser.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="org.gradle.cli.CommandLineParser$CaseInsensitiveStringComparator" sourceFile="CommandLineParser.java" interface="false" size="10" bugs="0"/>
-      <ClassStats class="org.gradle.cli.CommandLineParser$KnownOptionParserState" sourceFile="CommandLineParser.java" interface="false" size="45" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$KnownOptionParserState" sourceFile="CommandLineParser.java" interface="false" size="43" bugs="0"/>
       <ClassStats class="org.gradle.cli.CommandLineParser$MissingOptionArgState" sourceFile="CommandLineParser.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="org.gradle.cli.CommandLineParser$OptionAwareParserState" sourceFile="CommandLineParser.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="org.gradle.cli.CommandLineParser$OptionComparator" sourceFile="CommandLineParser.java" interface="false" size="9" bugs="0"/>
@@ -498,9 +498,9 @@
       <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" sourceFile="Blackhole_jmhType_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B3" sourceFile="Blackhole_jmhType_B3.java" interface="false" size="259" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor" total_bugs="8" total_types="5" total_size="692" priority_2="8">
-      <ClassStats class="org.stagemonitor.ConfigurationOptionsMarkdownExporter" sourceFile="ConfigurationOptionsMarkdownExporter.java" interface="false" size="77" bugs="0"/>
-      <ClassStats class="org.stagemonitor.ConfigurationSourceExporter" sourceFile="ConfigurationSourceExporter.java" interface="false" size="12" bugs="0"/>
+    <PackageStats package="org.stagemonitor" total_bugs="8" total_types="5" total_size="697" priority_2="8">
+      <ClassStats class="org.stagemonitor.ConfigurationOptionsMarkdownExporter" sourceFile="ConfigurationOptionsMarkdownExporter.java" interface="false" size="79" bugs="0"/>
+      <ClassStats class="org.stagemonitor.ConfigurationSourceExporter" sourceFile="ConfigurationSourceExporter.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="org.stagemonitor.InstrumentationPerformanceTest" sourceFile="InstrumentationPerformanceTest.java" interface="false" size="41" bugs="0"/>
       <ClassStats class="org.stagemonitor.InstrumentationPerformanceTest$TestNode" sourceFile="InstrumentationPerformanceTest.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.stagemonitor.MetricNameBenchmark" sourceFile="MetricNameBenchmark.java" interface="false" size="558" bugs="8" priority_2="8"/>
@@ -556,10 +556,10 @@
       <ClassStats class="org.stagemonitor.alerting.check.Threshold$Operator$3" sourceFile="Threshold.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="org.stagemonitor.alerting.check.Threshold$Operator$4" sourceFile="Threshold.java" interface="false" size="5" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.alerting.incident" total_bugs="0" total_types="5" total_size="289">
+    <PackageStats package="org.stagemonitor.alerting.incident" total_bugs="0" total_types="5" total_size="293">
       <ClassStats class="org.stagemonitor.alerting.incident.CheckResults" sourceFile="CheckResults.java" interface="false" size="43" bugs="0"/>
       <ClassStats class="org.stagemonitor.alerting.incident.ConcurrentMapIncidentRepository" sourceFile="ConcurrentMapIncidentRepository.java" interface="false" size="25" bugs="0"/>
-      <ClassStats class="org.stagemonitor.alerting.incident.ElasticsearchIncidentRepository" sourceFile="ElasticsearchIncidentRepository.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="org.stagemonitor.alerting.incident.ElasticsearchIncidentRepository" sourceFile="ElasticsearchIncidentRepository.java" interface="false" size="42" bugs="0"/>
       <ClassStats class="org.stagemonitor.alerting.incident.Incident" sourceFile="Incident.java" interface="false" size="176" bugs="0"/>
       <ClassStats class="org.stagemonitor.alerting.incident.IncidentRepository" sourceFile="IncidentRepository.java" interface="true" size="7" bugs="0"/>
     </PackageStats>
@@ -581,8 +581,8 @@
       <ClassStats class="org.stagemonitor.benchmark.profiler.generated.VariableMethodsBenchmark_jmhType_B3" sourceFile="VariableMethodsBenchmark_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="org.stagemonitor.benchmark.profiler.generated.VariableMethodsBenchmark_testManualProfiling_jmhTest" sourceFile="VariableMethodsBenchmark_testManualProfiling_jmhTest.java" interface="false" size="512" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.configuration" total_bugs="0" total_types="14" total_size="658">
-      <ClassStats class="org.stagemonitor.configuration.ConfigurationOption" sourceFile="ConfigurationOption.java" interface="false" size="231" bugs="0"/>
+    <PackageStats package="org.stagemonitor.configuration" total_bugs="0" total_types="15" total_size="678">
+      <ClassStats class="org.stagemonitor.configuration.ConfigurationOption" sourceFile="ConfigurationOption.java" interface="false" size="242" bugs="0"/>
       <ClassStats class="org.stagemonitor.configuration.ConfigurationOption$1" sourceFile="ConfigurationOption.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.stagemonitor.configuration.ConfigurationOption$ChangeListener" sourceFile="ConfigurationOption.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="org.stagemonitor.configuration.ConfigurationOption$ChangeListener$OptionalChangeListenerAdapter" sourceFile="ConfigurationOption.java" interface="false" size="11" bugs="0"/>
@@ -592,26 +592,30 @@
       <ClassStats class="org.stagemonitor.configuration.ConfigurationOption$Validator" sourceFile="ConfigurationOption.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="org.stagemonitor.configuration.ConfigurationOption$Validator$OptionalValidatorAdapter" sourceFile="ConfigurationOption.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.stagemonitor.configuration.ConfigurationOptionProvider" sourceFile="ConfigurationOptionProvider.java" interface="false" size="21" bugs="0"/>
-      <ClassStats class="org.stagemonitor.configuration.ConfigurationRegistry" sourceFile="ConfigurationRegistry.java" interface="false" size="188" bugs="0"/>
-      <ClassStats class="org.stagemonitor.configuration.ConfigurationRegistry$1" sourceFile="ConfigurationRegistry.java" interface="false" size="9" bugs="0"/>
-      <ClassStats class="org.stagemonitor.configuration.ConfigurationRegistry$2" sourceFile="ConfigurationRegistry.java" interface="false" size="7" bugs="0"/>
-      <ClassStats class="org.stagemonitor.configuration.ConfigurationRegistry$3" sourceFile="ConfigurationRegistry.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.stagemonitor.configuration.ConfigurationRegistry" sourceFile="ConfigurationRegistry.java" interface="false" size="169" bugs="0"/>
+      <ClassStats class="org.stagemonitor.configuration.ConfigurationRegistry$1" sourceFile="ConfigurationRegistry.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.stagemonitor.configuration.ConfigurationRegistry$2" sourceFile="ConfigurationRegistry.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.stagemonitor.configuration.ConfigurationRegistry$3" sourceFile="ConfigurationRegistry.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.stagemonitor.configuration.ConfigurationRegistry$Builder" sourceFile="ConfigurationRegistry.java" interface="false" size="28" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.configuration.converter" total_bugs="0" total_types="14" total_size="281">
+    <PackageStats package="org.stagemonitor.configuration.converter" total_bugs="0" total_types="17" total_size="344">
+      <ClassStats class="org.stagemonitor.configuration.converter.AbstractCollectionValueConverter" sourceFile="AbstractCollectionValueConverter.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="org.stagemonitor.configuration.converter.AbstractValueConverter" sourceFile="AbstractValueConverter.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="org.stagemonitor.configuration.converter.BooleanValueConverter" sourceFile="BooleanValueConverter.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="org.stagemonitor.configuration.converter.ClassInstanceValueConverter" sourceFile="ClassInstanceValueConverter.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="org.stagemonitor.configuration.converter.DoubleValueConverter" sourceFile="DoubleValueConverter.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="org.stagemonitor.configuration.converter.EnumValueConverter" sourceFile="EnumValueConverter.java" interface="false" size="23" bugs="0"/>
       <ClassStats class="org.stagemonitor.configuration.converter.IntegerValueConverter" sourceFile="IntegerValueConverter.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="org.stagemonitor.configuration.converter.JsonValueConverter" sourceFile="JsonValueConverter.java" interface="false" size="18" bugs="0"/>
-      <ClassStats class="org.stagemonitor.configuration.converter.ListValueConverter" sourceFile="ListValueConverter.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="org.stagemonitor.configuration.converter.ListValueConverter" sourceFile="ListValueConverter.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="org.stagemonitor.configuration.converter.LongValueConverter" sourceFile="LongValueConverter.java" interface="false" size="16" bugs="0"/>
-      <ClassStats class="org.stagemonitor.configuration.converter.MapValueConverter" sourceFile="MapValueConverter.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="org.stagemonitor.configuration.converter.MapValueConverter" sourceFile="MapValueConverter.java" interface="false" size="55" bugs="0"/>
       <ClassStats class="org.stagemonitor.configuration.converter.OptionalValueConverter" sourceFile="OptionalValueConverter.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="org.stagemonitor.configuration.converter.RegexValueConverter" sourceFile="RegexValueConverter.java" interface="false" size="16" bugs="0"/>
-      <ClassStats class="org.stagemonitor.configuration.converter.SetValueConverter" sourceFile="SetValueConverter.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="org.stagemonitor.configuration.converter.SetValueConverter" sourceFile="SetValueConverter.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="org.stagemonitor.configuration.converter.StringValueConverter" sourceFile="StringValueConverter.java" interface="false" size="20" bugs="0"/>
-      <ClassStats class="org.stagemonitor.configuration.converter.ValueConverter" sourceFile="ValueConverter.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="org.stagemonitor.configuration.converter.UrlValueConverter" sourceFile="UrlValueConverter.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="org.stagemonitor.configuration.converter.ValueConverter" sourceFile="ValueConverter.java" interface="true" size="4" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.stagemonitor.configuration.source" total_bugs="0" total_types="6" total_size="158">
       <ClassStats class="org.stagemonitor.configuration.source.AbstractConfigurationSource" sourceFile="AbstractConfigurationSource.java" interface="false" size="11" bugs="0"/>
@@ -621,56 +625,63 @@
       <ClassStats class="org.stagemonitor.configuration.source.SimpleSource" sourceFile="SimpleSource.java" interface="false" size="28" bugs="0"/>
       <ClassStats class="org.stagemonitor.configuration.source.SystemPropertyConfigurationSource" sourceFile="SystemPropertyConfigurationSource.java" interface="false" size="12" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.core" total_bugs="0" total_types="16" total_size="1054">
-      <ClassStats class="org.stagemonitor.core.CorePlugin" sourceFile="CorePlugin.java" interface="false" size="584" bugs="0"/>
+    <PackageStats package="org.stagemonitor.core" total_bugs="0" total_types="18" total_size="1162">
+      <ClassStats class="org.stagemonitor.core.CoreElasticsearchInitializer" sourceFile="CoreElasticsearchInitializer.java" interface="false" size="57" bugs="0"/>
+      <ClassStats class="org.stagemonitor.core.CorePlugin" sourceFile="CorePlugin.java" interface="false" size="633" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.CorePlugin$1" sourceFile="CorePlugin.java" interface="false" size="7" bugs="0"/>
-      <ClassStats class="org.stagemonitor.core.CorePlugin$2" sourceFile="CorePlugin.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.stagemonitor.core.CorePlugin$2" sourceFile="CorePlugin.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.MeasurementSession" sourceFile="MeasurementSession.java" interface="false" size="55" bugs="0"/>
-      <ClassStats class="org.stagemonitor.core.Stagemonitor" sourceFile="Stagemonitor.java" interface="false" size="240" bugs="0"/>
+      <ClassStats class="org.stagemonitor.core.Stagemonitor" sourceFile="Stagemonitor.java" interface="false" size="218" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.Stagemonitor$1" sourceFile="Stagemonitor.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.Stagemonitor$2" sourceFile="Stagemonitor.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.StagemonitorConfigurationSourceInitializer" sourceFile="StagemonitorConfigurationSourceInitializer.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.StagemonitorConfigurationSourceInitializer$ConfigInitializedArguments" sourceFile="StagemonitorConfigurationSourceInitializer.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.StagemonitorConfigurationSourceInitializer$ModifyArguments" sourceFile="StagemonitorConfigurationSourceInitializer.java" interface="false" size="12" bugs="0"/>
-      <ClassStats class="org.stagemonitor.core.StagemonitorCoreConfigurationSourceInitializer" sourceFile="StagemonitorCoreConfigurationSourceInitializer.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="org.stagemonitor.core.StagemonitorCoreConfigurationSourceInitializer" sourceFile="StagemonitorCoreConfigurationSourceInitializer.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="org.stagemonitor.core.StagemonitorCoreConfigurationSourceInitializer$1" sourceFile="StagemonitorCoreConfigurationSourceInitializer.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.StagemonitorPlugin" sourceFile="StagemonitorPlugin.java" interface="false" size="36" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.StagemonitorPlugin$InitArguments" sourceFile="StagemonitorPlugin.java" interface="false" size="26" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.StagemonitorPlugin$WidgetMetricTabPluginsRegistry" sourceFile="StagemonitorPlugin.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.StagemonitorPlugin$WidgetTabPluginsRegistry" sourceFile="StagemonitorPlugin.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.StagemonitorSPI" sourceFile="StagemonitorSPI.java" interface="true" size="1" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.core.configuration" total_bugs="0" total_types="3" total_size="67">
-      <ClassStats class="org.stagemonitor.core.configuration.ElasticsearchConfigurationSource" sourceFile="ElasticsearchConfigurationSource.java" interface="false" size="40" bugs="0"/>
+    <PackageStats package="org.stagemonitor.core.configuration" total_bugs="0" total_types="6" total_size="147">
+      <ClassStats class="org.stagemonitor.core.configuration.ConfigurationLogger" sourceFile="ConfigurationLogger.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="org.stagemonitor.core.configuration.ElasticsearchConfigurationSource" sourceFile="ElasticsearchConfigurationSource.java" interface="false" size="42" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.configuration.ElasticsearchConfigurationSource$1" sourceFile="ElasticsearchConfigurationSource.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.configuration.ElasticsearchConfigurationSource$EsConfigurationDto" sourceFile="ElasticsearchConfigurationSource.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="org.stagemonitor.core.configuration.RemotePropertiesConfigurationSource" sourceFile="RemotePropertiesConfigurationSource.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="org.stagemonitor.core.configuration.RemotePropertiesConfigurationSource$1" sourceFile="RemotePropertiesConfigurationSource.java" interface="false" size="14" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.core.elasticsearch" total_bugs="0" total_types="16" total_size="510">
+    <PackageStats package="org.stagemonitor.core.elasticsearch" total_bugs="0" total_types="18" total_size="569">
+      <ClassStats class="org.stagemonitor.core.elasticsearch.AbstractElasticsearchInitializer" sourceFile="AbstractElasticsearchInitializer.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.elasticsearch.DeleteIndicesTask" sourceFile="DeleteIndicesTask.java" interface="false" size="16" bugs="0"/>
-      <ClassStats class="org.stagemonitor.core.elasticsearch.ElasticsearchClient" sourceFile="ElasticsearchClient.java" interface="false" size="231" bugs="0"/>
-      <ClassStats class="org.stagemonitor.core.elasticsearch.ElasticsearchClient$1" sourceFile="ElasticsearchClient.java" interface="false" size="8" bugs="0"/>
-      <ClassStats class="org.stagemonitor.core.elasticsearch.ElasticsearchClient$2" sourceFile="ElasticsearchClient.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="org.stagemonitor.core.elasticsearch.ElasticsearchAvailabilityObserver" sourceFile="ElasticsearchAvailabilityObserver.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="org.stagemonitor.core.elasticsearch.ElasticsearchClient" sourceFile="ElasticsearchClient.java" interface="false" size="244" bugs="0"/>
+      <ClassStats class="org.stagemonitor.core.elasticsearch.ElasticsearchClient$1" sourceFile="ElasticsearchClient.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.stagemonitor.core.elasticsearch.ElasticsearchClient$2" sourceFile="ElasticsearchClient.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.elasticsearch.ElasticsearchClient$3" sourceFile="ElasticsearchClient.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.elasticsearch.ElasticsearchClient$4" sourceFile="ElasticsearchClient.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.elasticsearch.ElasticsearchClient$5" sourceFile="ElasticsearchClient.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="org.stagemonitor.core.elasticsearch.ElasticsearchClient$6" sourceFile="ElasticsearchClient.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.elasticsearch.ElasticsearchClient$BulkErrorCountingResponseHandler" sourceFile="ElasticsearchClient.java" interface="false" size="24" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.elasticsearch.ElasticsearchClient$BulkErrorReportingResponseHandler" sourceFile="ElasticsearchClient.java" interface="false" size="58" bugs="0"/>
-      <ClassStats class="org.stagemonitor.core.elasticsearch.ElasticsearchClient$CheckEsAvailability" sourceFile="ElasticsearchClient.java" interface="false" size="19" bugs="0"/>
-      <ClassStats class="org.stagemonitor.core.elasticsearch.ElasticsearchClient$CheckEsAvailability$1" sourceFile="ElasticsearchClient.java" interface="false" size="10" bugs="0"/>
-      <ClassStats class="org.stagemonitor.core.elasticsearch.ElasticsearchClient$CheckEsAvailability$2" sourceFile="ElasticsearchClient.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.stagemonitor.core.elasticsearch.ElasticsearchClient$CheckEsAvailability" sourceFile="ElasticsearchClient.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="org.stagemonitor.core.elasticsearch.ElasticsearchClient$CheckEsAvailability$1" sourceFile="ElasticsearchClient.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.stagemonitor.core.elasticsearch.ElasticsearchClient$CheckEsAvailability$2" sourceFile="ElasticsearchClient.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="org.stagemonitor.core.elasticsearch.ElasticsearchClient$CheckEsAvailability$3" sourceFile="ElasticsearchClient.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.elasticsearch.ForceMergeIndicesTask" sourceFile="ForceMergeIndicesTask.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.elasticsearch.IndexSelector" sourceFile="IndexSelector.java" interface="false" size="42" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.elasticsearch.ShardAllocationTask" sourceFile="ShardAllocationTask.java" interface="false" size="18" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.core.grafana" total_bugs="0" total_types="3" total_size="106">
-      <ClassStats class="org.stagemonitor.core.grafana.GrafanaClient" sourceFile="GrafanaClient.java" interface="false" size="82" bugs="0"/>
+    <PackageStats package="org.stagemonitor.core.grafana" total_bugs="0" total_types="3" total_size="108">
+      <ClassStats class="org.stagemonitor.core.grafana.GrafanaClient" sourceFile="GrafanaClient.java" interface="false" size="84" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.grafana.GrafanaClient$1" sourceFile="GrafanaClient.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.grafana.GrafanaClient$2" sourceFile="GrafanaClient.java" interface="false" size="6" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.core.instrument" total_bugs="0" total_types="30" total_size="748">
+    <PackageStats package="org.stagemonitor.core.instrument" total_bugs="0" total_types="30" total_size="751">
       <ClassStats class="org.stagemonitor.core.instrument.AbstractClassPathScanner" sourceFile="AbstractClassPathScanner.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.instrument.AbstractClassPathScanner$1" sourceFile="AbstractClassPathScanner.java" interface="false" size="7" bugs="0"/>
-      <ClassStats class="org.stagemonitor.core.instrument.AgentAttacher" sourceFile="AgentAttacher.java" interface="false" size="146" bugs="0"/>
+      <ClassStats class="org.stagemonitor.core.instrument.AgentAttacher" sourceFile="AgentAttacher.java" interface="false" size="149" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.instrument.AgentAttacher$1" sourceFile="AgentAttacher.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.instrument.AgentAttacher$2" sourceFile="AgentAttacher.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.instrument.AgentAttacher$3" sourceFile="AgentAttacher.java" interface="false" size="6" bugs="0"/>
@@ -741,9 +752,9 @@
       <ClassStats class="org.stagemonitor.core.metrics.health.ImmediateResult" sourceFile="ImmediateResult.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.metrics.health.OverridableHealthCheckRegistry" sourceFile="OverridableHealthCheckRegistry.java" interface="false" size="7" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.core.metrics.metrics2" total_bugs="0" total_types="39" total_size="959">
+    <PackageStats package="org.stagemonitor.core.metrics.metrics2" total_bugs="0" total_types="39" total_size="963">
       <ClassStats class="org.stagemonitor.core.metrics.metrics2.AndMetric2Filter" sourceFile="AndMetric2Filter.java" interface="false" size="16" bugs="0"/>
-      <ClassStats class="org.stagemonitor.core.metrics.metrics2.ElasticsearchReporter" sourceFile="ElasticsearchReporter.java" interface="false" size="77" bugs="0"/>
+      <ClassStats class="org.stagemonitor.core.metrics.metrics2.ElasticsearchReporter" sourceFile="ElasticsearchReporter.java" interface="false" size="81" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.metrics.metrics2.ElasticsearchReporter$1" sourceFile="ElasticsearchReporter.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.metrics.metrics2.ElasticsearchReporter$Builder" sourceFile="ElasticsearchReporter.java" interface="false" size="27" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.metrics.metrics2.ElasticsearchReporter$MetricsOutputStreamHandler" sourceFile="ElasticsearchReporter.java" interface="false" size="23" bugs="0"/>
@@ -797,7 +808,7 @@
       <ClassStats class="org.stagemonitor.core.pool.PooledResourceMetricsRegisterer$5" sourceFile="PooledResourceMetricsRegisterer.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.pool.ThreadPoolMetrics" sourceFile="ThreadPoolMetrics.java" interface="false" size="33" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.core.util" total_bugs="0" total_types="30" total_size="608">
+    <PackageStats package="org.stagemonitor.core.util" total_bugs="0" total_types="30" total_size="632">
       <ClassStats class="org.stagemonitor.core.util.Assert" sourceFile="Assert.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.util.ClassUtils" sourceFile="ClassUtils.java" interface="false" size="33" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.util.CompletedFuture" sourceFile="CompletedFuture.java" interface="false" size="16" bugs="0"/>
@@ -808,7 +819,7 @@
       <ClassStats class="org.stagemonitor.core.util.ExecutorUtils$MyThreadPoolExecutor" sourceFile="ExecutorUtils.java" interface="false" size="24" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.util.ExecutorUtils$NamedThreadFactory" sourceFile="ExecutorUtils.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.util.GraphiteSanitizer" sourceFile="GraphiteSanitizer.java" interface="false" size="14" bugs="0"/>
-      <ClassStats class="org.stagemonitor.core.util.HttpClient" sourceFile="HttpClient.java" interface="false" size="67" bugs="0"/>
+      <ClassStats class="org.stagemonitor.core.util.HttpClient" sourceFile="HttpClient.java" interface="false" size="73" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.util.HttpClient$OutputStreamHandler" sourceFile="HttpClient.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.util.HttpClient$ResponseHandler" sourceFile="HttpClient.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.util.InetAddresses" sourceFile="InetAddresses.java" interface="false" size="109" bugs="0"/>
@@ -827,7 +838,7 @@
       <ClassStats class="org.stagemonitor.core.util.MBeanUtils$1" sourceFile="MBeanUtils.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.util.Pair" sourceFile="Pair.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.util.TimeUtils" sourceFile="TimeUtils.java" interface="false" size="11" bugs="0"/>
-      <ClassStats class="org.stagemonitor.core.util.VersionUtils" sourceFile="VersionUtils.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.stagemonitor.core.util.VersionUtils" sourceFile="VersionUtils.java" interface="false" size="30" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.stagemonitor.core.util.http" total_bugs="0" total_types="11" total_size="212">
       <ClassStats class="org.stagemonitor.core.util.http.ErrorLoggingResponseHandler" sourceFile="ErrorLoggingResponseHandler.java" interface="false" size="16" bugs="0"/>
@@ -842,12 +853,13 @@
       <ClassStats class="org.stagemonitor.core.util.http.NoopResponseHandler" sourceFile="NoopResponseHandler.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="org.stagemonitor.core.util.http.StatusCodeResponseHandler" sourceFile="StatusCodeResponseHandler.java" interface="false" size="20" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.ehcache" total_bugs="0" total_types="7" total_size="211">
+    <PackageStats package="org.stagemonitor.ehcache" total_bugs="0" total_types="8" total_size="214">
+      <ClassStats class="org.stagemonitor.ehcache.EhCacheElasticsearchInitializer" sourceFile="EhCacheElasticsearchInitializer.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.stagemonitor.ehcache.EhCacheMetricSet" sourceFile="EhCacheMetricSet.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="org.stagemonitor.ehcache.EhCacheMetricSet$1" sourceFile="EhCacheMetricSet.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.stagemonitor.ehcache.EhCacheMetricSet$2" sourceFile="EhCacheMetricSet.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.stagemonitor.ehcache.EhCacheMetricSet$3" sourceFile="EhCacheMetricSet.java" interface="false" size="9" bugs="0"/>
-      <ClassStats class="org.stagemonitor.ehcache.EhCachePlugin" sourceFile="EhCachePlugin.java" interface="false" size="65" bugs="0"/>
+      <ClassStats class="org.stagemonitor.ehcache.EhCachePlugin" sourceFile="EhCachePlugin.java" interface="false" size="62" bugs="0"/>
       <ClassStats class="org.stagemonitor.ehcache.EhCachePlugin$1" sourceFile="EhCachePlugin.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="org.stagemonitor.ehcache.StagemonitorCacheUsageListener" sourceFile="StagemonitorCacheUsageListener.java" interface="false" size="91" bugs="0"/>
     </PackageStats>
@@ -874,22 +886,25 @@
       <ClassStats class="org.stagemonitor.jdbc.StagemonitorJdbcEventListener$MetaData" sourceFile="StagemonitorJdbcEventListener.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="org.stagemonitor.jdbc.StagemonitorJdbcEventListener$MonitoredJdbcRequest" sourceFile="StagemonitorJdbcEventListener.java" interface="false" size="10" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.jvm" total_bugs="0" total_types="7" total_size="84">
+    <PackageStats package="org.stagemonitor.jvm" total_bugs="0" total_types="8" total_size="86">
       <ClassStats class="org.stagemonitor.jvm.CpuUtilisationWatch" sourceFile="CpuUtilisationWatch.java" interface="false" size="26" bugs="0"/>
       <ClassStats class="org.stagemonitor.jvm.CpuUtilisationWatch$1" sourceFile="CpuUtilisationWatch.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.stagemonitor.jvm.CpuUtilisationWatch$ProcessCpuTime" sourceFile="CpuUtilisationWatch.java" interface="true" size="2" bugs="0"/>
-      <ClassStats class="org.stagemonitor.jvm.JvmPlugin" sourceFile="JvmPlugin.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="org.stagemonitor.jvm.JvmElasticsearchInitializer" sourceFile="JvmElasticsearchInitializer.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.stagemonitor.jvm.JvmPlugin" sourceFile="JvmPlugin.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="org.stagemonitor.jvm.JvmPlugin$1" sourceFile="JvmPlugin.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.stagemonitor.jvm.JvmPlugin$2" sourceFile="JvmPlugin.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.stagemonitor.jvm.JvmPlugin$3" sourceFile="JvmPlugin.java" interface="false" size="9" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.logging" total_bugs="0" total_types="2" total_size="39">
-      <ClassStats class="org.stagemonitor.logging.LoggingPlugin" sourceFile="LoggingPlugin.java" interface="false" size="14" bugs="0"/>
+    <PackageStats package="org.stagemonitor.logging" total_bugs="0" total_types="3" total_size="41">
+      <ClassStats class="org.stagemonitor.logging.LoggingElasticsearchInitializer" sourceFile="LoggingElasticsearchInitializer.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.stagemonitor.logging.LoggingPlugin" sourceFile="LoggingPlugin.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="org.stagemonitor.logging.MeterLoggingTransformer" sourceFile="MeterLoggingTransformer.java" interface="false" size="25" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.os" total_bugs="0" total_types="3" total_size="131">
+    <PackageStats package="org.stagemonitor.os" total_bugs="0" total_types="4" total_size="133">
       <ClassStats class="org.stagemonitor.os.OsConfigurationSourceInitializer" sourceFile="OsConfigurationSourceInitializer.java" interface="false" size="20" bugs="0"/>
-      <ClassStats class="org.stagemonitor.os.OsPlugin" sourceFile="OsPlugin.java" interface="false" size="62" bugs="0"/>
+      <ClassStats class="org.stagemonitor.os.OsElasticsearchInitializer" sourceFile="OsElasticsearchInitializer.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.stagemonitor.os.OsPlugin" sourceFile="OsPlugin.java" interface="false" size="58" bugs="0"/>
       <ClassStats class="org.stagemonitor.os.SigarNativeBindingLoader" sourceFile="SigarNativeBindingLoader.java" interface="false" size="49" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.stagemonitor.os.metrics" total_bugs="0" total_types="52" total_size="458">
@@ -946,7 +961,7 @@
       <ClassStats class="org.stagemonitor.os.metrics.SwapMetricSet$5" sourceFile="SwapMetricSet.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.stagemonitor.os.metrics.SwapMetricSet$6" sourceFile="SwapMetricSet.java" interface="false" size="7" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.tracing" total_bugs="0" total_types="38" total_size="1040">
+    <PackageStats package="org.stagemonitor.tracing" total_bugs="0" total_types="39" total_size="1042">
       <ClassStats class="org.stagemonitor.tracing.AbstractExternalRequest" sourceFile="AbstractExternalRequest.java" interface="false" size="28" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.AbstractTracingTransformer" sourceFile="AbstractTracingTransformer.java" interface="false" size="44" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.AbstractTracingTransformer$ParameterNames" sourceFile="AbstractTracingTransformer.java" interface="true" size="1" bugs="0"/>
@@ -980,7 +995,8 @@
       <ClassStats class="org.stagemonitor.tracing.SpanContextInformation$SpanFinalizer" sourceFile="SpanContextInformation.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.Traced" sourceFile="Traced.java" interface="true" size="3" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.TracerFactory" sourceFile="TracerFactory.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="org.stagemonitor.tracing.TracingPlugin" sourceFile="TracingPlugin.java" interface="false" size="434" bugs="0"/>
+      <ClassStats class="org.stagemonitor.tracing.TracingMetricsElasticsearchInitializer" sourceFile="TracingMetricsElasticsearchInitializer.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.stagemonitor.tracing.TracingPlugin" sourceFile="TracingPlugin.java" interface="false" size="430" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.TracingPlugin$1" sourceFile="TracingPlugin.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.TracingPlugin$2" sourceFile="TracingPlugin.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.TracingPlugin$3" sourceFile="TracingPlugin.java" interface="false" size="9" bugs="0"/>
@@ -996,14 +1012,14 @@
       <ClassStats class="org.stagemonitor.tracing.ejb.RemoteInterfaceElementMatcher" sourceFile="RemoteInterfaceElementMatcher.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.ejb.RemoteInterfaceMethodMatcher" sourceFile="RemoteInterfaceMethodMatcher.java" interface="false" size="10" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.tracing.elasticsearch" total_bugs="0" total_types="15" total_size="484">
+    <PackageStats package="org.stagemonitor.tracing.elasticsearch" total_bugs="0" total_types="16" total_size="498">
       <ClassStats class="org.stagemonitor.tracing.elasticsearch.ElasticsearchSpanReporter" sourceFile="ElasticsearchSpanReporter.java" interface="false" size="94" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.elasticsearch.ElasticsearchSpanReporter$1" sourceFile="ElasticsearchSpanReporter.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.elasticsearch.ElasticsearchSpanReporter$FlushCallable" sourceFile="ElasticsearchSpanReporter.java" interface="false" size="31" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.elasticsearch.ElasticsearchSpanReporter$FlushCallable$BulkErrorCountingResponseHandler" sourceFile="ElasticsearchSpanReporter.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.elasticsearch.ElasticsearchSpanReporter$FlushCallable$BulkWritingOutputStreamHandler" sourceFile="ElasticsearchSpanReporter.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.elasticsearch.ElasticsearchSpanReporter$SpanBulkIndexOutputStreamHandler" sourceFile="ElasticsearchSpanReporter.java" interface="false" size="13" bugs="0"/>
-      <ClassStats class="org.stagemonitor.tracing.elasticsearch.ElasticsearchTracingPlugin" sourceFile="ElasticsearchTracingPlugin.java" interface="false" size="86" bugs="0"/>
+      <ClassStats class="org.stagemonitor.tracing.elasticsearch.ElasticsearchTracingPlugin" sourceFile="ElasticsearchTracingPlugin.java" interface="false" size="76" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.elasticsearch.ElasticsearchUpdateSpanReporter" sourceFile="ElasticsearchUpdateSpanReporter.java" interface="false" size="86" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.elasticsearch.ElasticsearchUpdateSpanReporter$1" sourceFile="ElasticsearchUpdateSpanReporter.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.elasticsearch.ElasticsearchUpdateSpanReporter$BulkUpdateOutputStreamHandler" sourceFile="ElasticsearchUpdateSpanReporter.java" interface="false" size="17" bugs="0"/>
@@ -1012,6 +1028,7 @@
       <ClassStats class="org.stagemonitor.tracing.elasticsearch.ElasticsearchUpdateSpanReporter$UpdateCallable" sourceFile="ElasticsearchUpdateSpanReporter.java" interface="false" size="67" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.elasticsearch.ElasticsearchUpdateSpanReporter$UpdateDescription" sourceFile="ElasticsearchUpdateSpanReporter.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.elasticsearch.SpanFlushingRunnable" sourceFile="SpanFlushingRunnable.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.stagemonitor.tracing.elasticsearch.TracingElasticsearchInitializer" sourceFile="TracingElasticsearchInitializer.java" interface="false" size="24" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.stagemonitor.tracing.elasticsearch.impl" total_bugs="0" total_types="6" total_size="74">
       <ClassStats class="org.stagemonitor.tracing.elasticsearch.impl.JaegerTracerFactory" sourceFile="JaegerTracerFactory.java" interface="false" size="25" bugs="0"/>
@@ -1025,13 +1042,13 @@
       <ClassStats class="org.stagemonitor.tracing.freemarker.FreemarkerProfilingTransformer" sourceFile="FreemarkerProfilingTransformer.java" interface="false" size="29" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.freemarker.FreemarkerProfilingTransformer$1" sourceFile="FreemarkerProfilingTransformer.java" interface="false" size="8" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.tracing.impl" total_bugs="0" total_types="2" total_size="32">
+    <PackageStats package="org.stagemonitor.tracing.impl" total_bugs="0" total_types="2" total_size="34">
       <ClassStats class="org.stagemonitor.tracing.impl.DefaultTracerFactory" sourceFile="DefaultTracerFactory.java" interface="false" size="15" bugs="0"/>
-      <ClassStats class="org.stagemonitor.tracing.impl.DefaultTracerImpl" sourceFile="DefaultTracerImpl.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.stagemonitor.tracing.impl.DefaultTracerImpl" sourceFile="DefaultTracerImpl.java" interface="false" size="19" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.tracing.mdc" total_bugs="0" total_types="2" total_size="42">
-      <ClassStats class="org.stagemonitor.tracing.mdc.MDCSpanEventListener" sourceFile="MDCSpanEventListener.java" interface="false" size="29" bugs="0"/>
-      <ClassStats class="org.stagemonitor.tracing.mdc.MDCSpanEventListener$1" sourceFile="MDCSpanEventListener.java" interface="false" size="13" bugs="0"/>
+    <PackageStats package="org.stagemonitor.tracing.mdc" total_bugs="0" total_types="2" total_size="48">
+      <ClassStats class="org.stagemonitor.tracing.mdc.MDCSpanEventListener" sourceFile="MDCSpanEventListener.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="org.stagemonitor.tracing.mdc.MDCSpanEventListener$1" sourceFile="MDCSpanEventListener.java" interface="false" size="12" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.stagemonitor.tracing.metrics" total_bugs="0" total_types="4" total_size="145">
       <ClassStats class="org.stagemonitor.tracing.metrics.CpuTimeTrackingSpanEventListener" sourceFile="CpuTimeTrackingSpanEventListener.java" interface="false" size="19" bugs="0"/>
@@ -1049,8 +1066,8 @@
       <ClassStats class="org.stagemonitor.tracing.profiler.ProfilingTransformer$ProfilerDynamicValue$1" sourceFile="ProfilingTransformer.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.profiler.ProfilingTransformer$ProfilerSignature" sourceFile="ProfilingTransformer.java" interface="true" size="1" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.tracing.profiler.elasticsearch" total_bugs="0" total_types="1" total_size="35">
-      <ClassStats class="org.stagemonitor.tracing.profiler.elasticsearch.ElasticsearchSearchQueryTransformer" sourceFile="ElasticsearchSearchQueryTransformer.java" interface="false" size="35" bugs="0"/>
+    <PackageStats package="org.stagemonitor.tracing.profiler.elasticsearch" total_bugs="0" total_types="1" total_size="43">
+      <ClassStats class="org.stagemonitor.tracing.profiler.elasticsearch.ElasticsearchSearchQueryTransformer" sourceFile="ElasticsearchSearchQueryTransformer.java" interface="false" size="43" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.stagemonitor.tracing.profiler.formatter" total_bugs="0" total_types="3" total_size="19">
       <ClassStats class="org.stagemonitor.tracing.profiler.formatter.AsciiCallTreeSignatureFormatter" sourceFile="AsciiCallTreeSignatureFormatter.java" interface="true" size="2" bugs="0"/>
@@ -1080,11 +1097,11 @@
       <ClassStats class="org.stagemonitor.tracing.sampling.RateLimitingPreExecutionInterceptor$1" sourceFile="RateLimitingPreExecutionInterceptor.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.sampling.SamplePriorityDeterminingSpanEventListener" sourceFile="SamplePriorityDeterminingSpanEventListener.java" interface="false" size="70" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.tracing.soap" total_bugs="0" total_types="8" total_size="244">
+    <PackageStats package="org.stagemonitor.tracing.soap" total_bugs="0" total_types="8" total_size="246">
       <ClassStats class="org.stagemonitor.tracing.soap.AbstractTracingSOAPHandler" sourceFile="AbstractTracingSOAPHandler.java" interface="false" size="71" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.soap.SOAPMessageInjectAdapter" sourceFile="SOAPMessageInjectAdapter.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.soap.SoapClientTransformer" sourceFile="SoapClientTransformer.java" interface="false" size="19" bugs="0"/>
-      <ClassStats class="org.stagemonitor.tracing.soap.SoapHandlerTransformer" sourceFile="SoapHandlerTransformer.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="org.stagemonitor.tracing.soap.SoapHandlerTransformer" sourceFile="SoapHandlerTransformer.java" interface="false" size="41" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.soap.SoapHandlerTransformer$1" sourceFile="SoapHandlerTransformer.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.soap.SoapTracingPlugin" sourceFile="SoapTracingPlugin.java" interface="false" size="46" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.soap.TracingClientSOAPHandler" sourceFile="TracingClientSOAPHandler.java" interface="false" size="22" bugs="0"/>
@@ -1098,15 +1115,15 @@
       <ClassStats class="org.stagemonitor.tracing.utils.RateLimiter" sourceFile="RateLimiter.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.utils.SpanUtils" sourceFile="SpanUtils.java" interface="false" size="56" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.tracing.wrapper" total_bugs="0" total_types="9" total_size="292">
+    <PackageStats package="org.stagemonitor.tracing.wrapper" total_bugs="0" total_types="9" total_size="298">
       <ClassStats class="org.stagemonitor.tracing.wrapper.AbstractSpanEventListener" sourceFile="AbstractSpanEventListener.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.wrapper.FirstOperationEventListener" sourceFile="FirstOperationEventListener.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.wrapper.NoopSpanEventListener" sourceFile="NoopSpanEventListener.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.wrapper.SpanEventListener" sourceFile="SpanEventListener.java" interface="true" size="6" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.wrapper.SpanEventListenerFactory" sourceFile="SpanEventListenerFactory.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.wrapper.SpanWrapper" sourceFile="SpanWrapper.java" interface="false" size="122" bugs="0"/>
-      <ClassStats class="org.stagemonitor.tracing.wrapper.SpanWrappingTracer" sourceFile="SpanWrappingTracer.java" interface="false" size="34" bugs="0"/>
-      <ClassStats class="org.stagemonitor.tracing.wrapper.SpanWrappingTracer$SpanWrappingSpanBuilder" sourceFile="SpanWrappingTracer.java" interface="false" size="85" bugs="0"/>
+      <ClassStats class="org.stagemonitor.tracing.wrapper.SpanWrappingTracer" sourceFile="SpanWrappingTracer.java" interface="false" size="42" bugs="0"/>
+      <ClassStats class="org.stagemonitor.tracing.wrapper.SpanWrappingTracer$SpanWrappingSpanBuilder" sourceFile="SpanWrappingTracer.java" interface="false" size="83" bugs="0"/>
       <ClassStats class="org.stagemonitor.tracing.wrapper.StatelessSpanEventListener" sourceFile="StatelessSpanEventListener.java" interface="false" size="5" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.stagemonitor.util" total_bugs="0" total_types="3" total_size="177">
@@ -1114,44 +1131,46 @@
       <ClassStats class="org.stagemonitor.util.IOUtils" sourceFile="IOUtils.java" interface="false" size="61" bugs="0"/>
       <ClassStats class="org.stagemonitor.util.StringUtils" sourceFile="StringUtils.java" interface="false" size="102" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.web.servlet" total_bugs="0" total_types="11" total_size="621">
+    <PackageStats package="org.stagemonitor.web.servlet" total_bugs="0" total_types="12" total_size="632">
       <ClassStats class="org.stagemonitor.web.servlet.DefaultMonitoredHttpRequestFactory" sourceFile="DefaultMonitoredHttpRequestFactory.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.MonitoredHttpRequest" sourceFile="MonitoredHttpRequest.java" interface="false" size="141" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.MonitoredHttpRequest$1" sourceFile="MonitoredHttpRequest.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.MonitoredHttpRequest$HttpSpanEventListener" sourceFile="MonitoredHttpRequest.java" interface="false" size="69" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.MonitoredHttpRequestFactory" sourceFile="MonitoredHttpRequestFactory.java" interface="true" size="2" bugs="0"/>
-      <ClassStats class="org.stagemonitor.web.servlet.ServletPlugin" sourceFile="ServletPlugin.java" interface="false" size="291" bugs="0"/>
+      <ClassStats class="org.stagemonitor.web.servlet.ServletElasticsearchInitializer" sourceFile="ServletElasticsearchInitializer.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.stagemonitor.web.servlet.ServletPlugin" sourceFile="ServletPlugin.java" interface="false" size="296" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.ServletPlugin$1" sourceFile="ServletPlugin.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.ServletPlugin$2" sourceFile="ServletPlugin.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.ServletPlugin$Initializer" sourceFile="ServletPlugin.java" interface="false" size="36" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.ServletProfilingTransformer" sourceFile="ServletProfilingTransformer.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.StagemonitorFileServlet" sourceFile="StagemonitorFileServlet.java" interface="false" size="40" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.web.servlet.configuration" total_bugs="0" total_types="1" total_size="59">
-      <ClassStats class="org.stagemonitor.web.servlet.configuration.ConfigurationServlet" sourceFile="ConfigurationServlet.java" interface="false" size="59" bugs="0"/>
+    <PackageStats package="org.stagemonitor.web.servlet.configuration" total_bugs="0" total_types="2" total_size="81">
+      <ClassStats class="org.stagemonitor.web.servlet.configuration.ConfigurationPasswordChecker" sourceFile="ConfigurationPasswordChecker.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.stagemonitor.web.servlet.configuration.ConfigurationServlet" sourceFile="ConfigurationServlet.java" interface="false" size="62" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.web.servlet.eum" total_bugs="0" total_types="21" total_size="624">
-      <ClassStats class="org.stagemonitor.web.servlet.eum.AbstractNumberClientSpanTagProcessor" sourceFile="AbstractNumberClientSpanTagProcessor.java" interface="false" size="40" bugs="0"/>
-      <ClassStats class="org.stagemonitor.web.servlet.eum.ClientSpanBooleanTagProcessor" sourceFile="ClientSpanBooleanTagProcessor.java" interface="false" size="16" bugs="0"/>
+    <PackageStats package="org.stagemonitor.web.servlet.eum" total_bugs="0" total_types="21" total_size="650">
+      <ClassStats class="org.stagemonitor.web.servlet.eum.AbstractNumberClientSpanTagProcessor" sourceFile="AbstractNumberClientSpanTagProcessor.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="org.stagemonitor.web.servlet.eum.ClientSpanBooleanTagProcessor" sourceFile="ClientSpanBooleanTagProcessor.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.eum.ClientSpanExtension" sourceFile="ClientSpanExtension.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.eum.ClientSpanIntegerTagProcessor" sourceFile="ClientSpanIntegerTagProcessor.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.eum.ClientSpanJavaScriptHtmlInjector" sourceFile="ClientSpanJavaScriptHtmlInjector.java" interface="false" size="35" bugs="0"/>
-      <ClassStats class="org.stagemonitor.web.servlet.eum.ClientSpanJavaScriptServlet" sourceFile="ClientSpanJavaScriptServlet.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="org.stagemonitor.web.servlet.eum.ClientSpanJavaScriptServlet" sourceFile="ClientSpanJavaScriptServlet.java" interface="false" size="55" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.eum.ClientSpanLongTagProcessor" sourceFile="ClientSpanLongTagProcessor.java" interface="false" size="11" bugs="0"/>
-      <ClassStats class="org.stagemonitor.web.servlet.eum.ClientSpanMetadataTagProcessor" sourceFile="ClientSpanMetadataTagProcessor.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="org.stagemonitor.web.servlet.eum.ClientSpanMetadataTagProcessor" sourceFile="ClientSpanMetadataTagProcessor.java" interface="false" size="43" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.eum.ClientSpanMetadataTagProcessor$ClientSpanMetadataConverter" sourceFile="ClientSpanMetadataTagProcessor.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.eum.ClientSpanMetadataTagProcessor$ClientSpanMetadataDefinition" sourceFile="ClientSpanMetadataTagProcessor.java" interface="false" size="26" bugs="0"/>
-      <ClassStats class="org.stagemonitor.web.servlet.eum.ClientSpanServlet" sourceFile="ClientSpanServlet.java" interface="false" size="139" bugs="0"/>
+      <ClassStats class="org.stagemonitor.web.servlet.eum.ClientSpanServlet" sourceFile="ClientSpanServlet.java" interface="false" size="142" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.eum.ClientSpanServlet$1" sourceFile="ClientSpanServlet.java" interface="false" size="13" bugs="0"/>
-      <ClassStats class="org.stagemonitor.web.servlet.eum.ClientSpanStringTagProcessor" sourceFile="ClientSpanStringTagProcessor.java" interface="false" size="27" bugs="0"/>
-      <ClassStats class="org.stagemonitor.web.servlet.eum.ClientSpanTagProcessor" sourceFile="ClientSpanTagProcessor.java" interface="false" size="57" bugs="0"/>
-      <ClassStats class="org.stagemonitor.web.servlet.eum.ClientSpanTypeTagProcessor" sourceFile="ClientSpanTypeTagProcessor.java" interface="false" size="21" bugs="0"/>
-      <ClassStats class="org.stagemonitor.web.servlet.eum.ResourceTimingProcessor" sourceFile="ResourceTimingProcessor.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="org.stagemonitor.web.servlet.eum.ClientSpanStringTagProcessor" sourceFile="ClientSpanStringTagProcessor.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="org.stagemonitor.web.servlet.eum.ClientSpanTagProcessor" sourceFile="ClientSpanTagProcessor.java" interface="false" size="59" bugs="0"/>
+      <ClassStats class="org.stagemonitor.web.servlet.eum.ClientSpanTypeTagProcessor" sourceFile="ClientSpanTypeTagProcessor.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="org.stagemonitor.web.servlet.eum.ResourceTimingProcessor" sourceFile="ResourceTimingProcessor.java" interface="false" size="28" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.eum.SampleClientSpanExtension" sourceFile="SampleClientSpanExtension.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.eum.WeaselClientSpanExtension" sourceFile="WeaselClientSpanExtension.java" interface="false" size="29" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.eum.WeaselClientSpanExtension$1" sourceFile="WeaselClientSpanExtension.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.eum.WeaselClientSpanExtension$2" sourceFile="WeaselClientSpanExtension.java" interface="false" size="9" bugs="0"/>
-      <ClassStats class="org.stagemonitor.web.servlet.eum.WeaselSpanTags" sourceFile="WeaselSpanTags.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="org.stagemonitor.web.servlet.eum.WeaselSpanTags" sourceFile="WeaselSpanTags.java" interface="false" size="38" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.stagemonitor.web.servlet.filter" total_bugs="0" total_types="15" total_size="494">
       <ClassStats class="org.stagemonitor.web.servlet.filter.AbstractExclusionFilter" sourceFile="AbstractExclusionFilter.java" interface="false" size="47" bugs="0"/>
@@ -1161,21 +1180,21 @@
       <ClassStats class="org.stagemonitor.web.servlet.filter.HtmlInjector$InitArguments" sourceFile="HtmlInjector.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.filter.HtmlInjector$InjectArguments" sourceFile="HtmlInjector.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.filter.HtmlInjector$IsActiveArguments" sourceFile="HtmlInjector.java" interface="false" size="8" bugs="0"/>
-      <ClassStats class="org.stagemonitor.web.servlet.filter.HttpRequestMonitorFilter" sourceFile="HttpRequestMonitorFilter.java" interface="false" size="149" bugs="0"/>
+      <ClassStats class="org.stagemonitor.web.servlet.filter.HttpRequestMonitorFilter" sourceFile="HttpRequestMonitorFilter.java" interface="false" size="151" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.filter.HttpServletResponseBufferWrapper" sourceFile="HttpServletResponseBufferWrapper.java" interface="false" size="78" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.filter.HttpServletResponseBufferWrapper$1" sourceFile="HttpServletResponseBufferWrapper.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.filter.HttpServletResponseBufferWrapper$BufferingPrintWriter" sourceFile="HttpServletResponseBufferWrapper.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.filter.HttpServletResponseBufferWrapper$BufferingServletOutputStream" sourceFile="HttpServletResponseBufferWrapper.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.filter.SpanWrapperCaptor" sourceFile="SpanWrapperCaptor.java" interface="false" size="14" bugs="0"/>
-      <ClassStats class="org.stagemonitor.web.servlet.filter.StagemonitorSecurityFilter" sourceFile="StagemonitorSecurityFilter.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.stagemonitor.web.servlet.filter.StagemonitorSecurityFilter" sourceFile="StagemonitorSecurityFilter.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.filter.StatusExposingByteCountingServletResponse" sourceFile="StatusExposingByteCountingServletResponse.java" interface="false" size="37" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.stagemonitor.web.servlet.health" total_bugs="0" total_types="1" total_size="9">
       <ClassStats class="org.stagemonitor.web.servlet.health.HealthCheckServlet" sourceFile="HealthCheckServlet.java" interface="false" size="9" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.stagemonitor.web.servlet.initializer" total_bugs="0" total_types="3" total_size="35">
+    <PackageStats package="org.stagemonitor.web.servlet.initializer" total_bugs="0" total_types="3" total_size="37">
       <ClassStats class="org.stagemonitor.web.servlet.initializer.MainStagemonitorServletContainerInitializer" sourceFile="MainStagemonitorServletContainerInitializer.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="org.stagemonitor.web.servlet.initializer.ServletContainerInitializerUtil" sourceFile="ServletContainerInitializerUtil.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="org.stagemonitor.web.servlet.initializer.ServletContainerInitializerUtil" sourceFile="ServletContainerInitializerUtil.java" interface="false" size="29" bugs="0"/>
       <ClassStats class="org.stagemonitor.web.servlet.initializer.StagemonitorServletContainerInitializer" sourceFile="StagemonitorServletContainerInitializer.java" interface="true" size="2" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.stagemonitor.web.servlet.jaxrs" total_bugs="0" total_types="1" total_size="20">
@@ -1224,49 +1243,48 @@
       <ClassStats class="org.stagemonitor.web.servlet.widget.WidgetServlet" sourceFile="WidgetServlet.java" interface="false" size="27" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="713" invocations="643" avgMicrosecondsPerInvocation="1109" maxMicrosecondsPerInvocation="71621" standardDeviationMicrosecondsPerInvocation="5375"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="690" invocations="3454" avgMicrosecondsPerInvocation="199" maxMicrosecondsPerInvocation="14553" standardDeviationMicrosecondsPerInvocation="515"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="682" invocations="3286" avgMicrosecondsPerInvocation="207" maxMicrosecondsPerInvocation="29299" standardDeviationMicrosecondsPerInvocation="692"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="598" invocations="2407" avgMicrosecondsPerInvocation="248" maxMicrosecondsPerInvocation="27328" standardDeviationMicrosecondsPerInvocation="608"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="594" invocations="3384" avgMicrosecondsPerInvocation="175" maxMicrosecondsPerInvocation="11743" standardDeviationMicrosecondsPerInvocation="487"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="529" invocations="3516" avgMicrosecondsPerInvocation="150" maxMicrosecondsPerInvocation="11576" standardDeviationMicrosecondsPerInvocation="403"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="497" invocations="3625" avgMicrosecondsPerInvocation="137" maxMicrosecondsPerInvocation="13503" standardDeviationMicrosecondsPerInvocation="434"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="453" invocations="3454" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="37526" standardDeviationMicrosecondsPerInvocation="815"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="452" invocations="2404" avgMicrosecondsPerInvocation="188" maxMicrosecondsPerInvocation="14496" standardDeviationMicrosecondsPerInvocation="562"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="387" invocations="2893" avgMicrosecondsPerInvocation="134" maxMicrosecondsPerInvocation="8182" standardDeviationMicrosecondsPerInvocation="333"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="331" invocations="979" avgMicrosecondsPerInvocation="338" maxMicrosecondsPerInvocation="9374" standardDeviationMicrosecondsPerInvocation="738"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="329" invocations="979" avgMicrosecondsPerInvocation="336" maxMicrosecondsPerInvocation="9081" standardDeviationMicrosecondsPerInvocation="833"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="327" invocations="4562" avgMicrosecondsPerInvocation="71" maxMicrosecondsPerInvocation="17557" standardDeviationMicrosecondsPerInvocation="315"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="187" invocations="643" avgMicrosecondsPerInvocation="292" maxMicrosecondsPerInvocation="32922" standardDeviationMicrosecondsPerInvocation="1364"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="185" invocations="3454" avgMicrosecondsPerInvocation="53" maxMicrosecondsPerInvocation="19650" standardDeviationMicrosecondsPerInvocation="407"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="153" invocations="643" avgMicrosecondsPerInvocation="239" maxMicrosecondsPerInvocation="8392" standardDeviationMicrosecondsPerInvocation="574"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="143" invocations="3558" avgMicrosecondsPerInvocation="40" maxMicrosecondsPerInvocation="36741" standardDeviationMicrosecondsPerInvocation="626"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="132" invocations="643" avgMicrosecondsPerInvocation="206" maxMicrosecondsPerInvocation="7345" standardDeviationMicrosecondsPerInvocation="462"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="129" invocations="643" avgMicrosecondsPerInvocation="200" maxMicrosecondsPerInvocation="13446" standardDeviationMicrosecondsPerInvocation="1002"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="126" invocations="643" avgMicrosecondsPerInvocation="196" maxMicrosecondsPerInvocation="33941" standardDeviationMicrosecondsPerInvocation="1354"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="120" invocations="83732" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="1518" standardDeviationMicrosecondsPerInvocation="10"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.FixtureWithInvocationScopeDetector" totalMilliseconds="119" invocations="643" avgMicrosecondsPerInvocation="186" maxMicrosecondsPerInvocation="44825" standardDeviationMicrosecondsPerInvocation="2230"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="108" invocations="979" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="2611" standardDeviationMicrosecondsPerInvocation="194"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="107" invocations="979" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="5528" standardDeviationMicrosecondsPerInvocation="309"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="104" invocations="979" avgMicrosecondsPerInvocation="106" maxMicrosecondsPerInvocation="3203" standardDeviationMicrosecondsPerInvocation="230"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="96" invocations="1253" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="13884" standardDeviationMicrosecondsPerInvocation="414"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="93" invocations="3286" avgMicrosecondsPerInvocation="28" maxMicrosecondsPerInvocation="2965" standardDeviationMicrosecondsPerInvocation="80"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="90" invocations="3097" avgMicrosecondsPerInvocation="29" maxMicrosecondsPerInvocation="2251" standardDeviationMicrosecondsPerInvocation="76"/>
-      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="82" invocations="82026" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="1216" standardDeviationMicrosecondsPerInvocation="7"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="81" invocations="2011" avgMicrosecondsPerInvocation="40" maxMicrosecondsPerInvocation="5544" standardDeviationMicrosecondsPerInvocation="144"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="81" invocations="3558" avgMicrosecondsPerInvocation="23" maxMicrosecondsPerInvocation="7137" standardDeviationMicrosecondsPerInvocation="196"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="81" invocations="643" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="3053" standardDeviationMicrosecondsPerInvocation="211"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="77" invocations="643" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="4999" standardDeviationMicrosecondsPerInvocation="269"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="76" invocations="643" avgMicrosecondsPerInvocation="118" maxMicrosecondsPerInvocation="3294" standardDeviationMicrosecondsPerInvocation="284"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="76" invocations="979" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="3858" standardDeviationMicrosecondsPerInvocation="213"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="75" invocations="643" avgMicrosecondsPerInvocation="116" maxMicrosecondsPerInvocation="2349" standardDeviationMicrosecondsPerInvocation="230"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="70" invocations="979" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="27897" standardDeviationMicrosecondsPerInvocation="894"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="69" invocations="979" avgMicrosecondsPerInvocation="71" maxMicrosecondsPerInvocation="3010" standardDeviationMicrosecondsPerInvocation="216"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="69" invocations="643" avgMicrosecondsPerInvocation="108" maxMicrosecondsPerInvocation="1559" standardDeviationMicrosecondsPerInvocation="181"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="69" invocations="979" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="8546" standardDeviationMicrosecondsPerInvocation="300"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="68" invocations="643" avgMicrosecondsPerInvocation="106" maxMicrosecondsPerInvocation="2230" standardDeviationMicrosecondsPerInvocation="187"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="66" invocations="643" avgMicrosecondsPerInvocation="104" maxMicrosecondsPerInvocation="5508" standardDeviationMicrosecondsPerInvocation="282"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="66" invocations="643" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="3168" standardDeviationMicrosecondsPerInvocation="180"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="854" invocations="2427" avgMicrosecondsPerInvocation="352" maxMicrosecondsPerInvocation="307815" standardDeviationMicrosecondsPerInvocation="6385"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="776" invocations="3567" avgMicrosecondsPerInvocation="217" maxMicrosecondsPerInvocation="52319" standardDeviationMicrosecondsPerInvocation="1020"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="736" invocations="3376" avgMicrosecondsPerInvocation="218" maxMicrosecondsPerInvocation="37200" standardDeviationMicrosecondsPerInvocation="811"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="686" invocations="3497" avgMicrosecondsPerInvocation="196" maxMicrosecondsPerInvocation="32672" standardDeviationMicrosecondsPerInvocation="799"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="663" invocations="2424" avgMicrosecondsPerInvocation="273" maxMicrosecondsPerInvocation="72269" standardDeviationMicrosecondsPerInvocation="1646"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="653" invocations="3630" avgMicrosecondsPerInvocation="180" maxMicrosecondsPerInvocation="21417" standardDeviationMicrosecondsPerInvocation="596"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="565" invocations="3744" avgMicrosecondsPerInvocation="150" maxMicrosecondsPerInvocation="14258" standardDeviationMicrosecondsPerInvocation="448"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="521" invocations="1000" avgMicrosecondsPerInvocation="521" maxMicrosecondsPerInvocation="75623" standardDeviationMicrosecondsPerInvocation="2813"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="444" invocations="3567" avgMicrosecondsPerInvocation="124" maxMicrosecondsPerInvocation="15465" standardDeviationMicrosecondsPerInvocation="411"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="428" invocations="4679" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="48536" standardDeviationMicrosecondsPerInvocation="752"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="413" invocations="2992" avgMicrosecondsPerInvocation="138" maxMicrosecondsPerInvocation="6773" standardDeviationMicrosecondsPerInvocation="351"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="410" invocations="1000" avgMicrosecondsPerInvocation="410" maxMicrosecondsPerInvocation="25026" standardDeviationMicrosecondsPerInvocation="1171"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="199" invocations="662" avgMicrosecondsPerInvocation="301" maxMicrosecondsPerInvocation="35864" standardDeviationMicrosecondsPerInvocation="1507"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="186" invocations="662" avgMicrosecondsPerInvocation="281" maxMicrosecondsPerInvocation="48866" standardDeviationMicrosecondsPerInvocation="1953"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="183" invocations="3567" avgMicrosecondsPerInvocation="51" maxMicrosecondsPerInvocation="9856" standardDeviationMicrosecondsPerInvocation="236"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="168" invocations="3676" avgMicrosecondsPerInvocation="45" maxMicrosecondsPerInvocation="43838" standardDeviationMicrosecondsPerInvocation="731"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="157" invocations="662" avgMicrosecondsPerInvocation="237" maxMicrosecondsPerInvocation="7547" standardDeviationMicrosecondsPerInvocation="516"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="139" invocations="1000" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="9876" standardDeviationMicrosecondsPerInvocation="532"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="138" invocations="662" avgMicrosecondsPerInvocation="208" maxMicrosecondsPerInvocation="42242" standardDeviationMicrosecondsPerInvocation="1689"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="134" invocations="662" avgMicrosecondsPerInvocation="203" maxMicrosecondsPerInvocation="62533" standardDeviationMicrosecondsPerInvocation="2430"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="133" invocations="662" avgMicrosecondsPerInvocation="202" maxMicrosecondsPerInvocation="14231" standardDeviationMicrosecondsPerInvocation="1057"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="132" invocations="1000" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="13066" standardDeviationMicrosecondsPerInvocation="464"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="130" invocations="1000" avgMicrosecondsPerInvocation="130" maxMicrosecondsPerInvocation="17471" standardDeviationMicrosecondsPerInvocation="600"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="129" invocations="86878" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="4608" standardDeviationMicrosecondsPerInvocation="18"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="126" invocations="662" avgMicrosecondsPerInvocation="191" maxMicrosecondsPerInvocation="55276" standardDeviationMicrosecondsPerInvocation="2158"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="126" invocations="662" avgMicrosecondsPerInvocation="190" maxMicrosecondsPerInvocation="10741" standardDeviationMicrosecondsPerInvocation="679"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="124" invocations="2031" avgMicrosecondsPerInvocation="61" maxMicrosecondsPerInvocation="32254" standardDeviationMicrosecondsPerInvocation="742"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="118" invocations="1272" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="22473" standardDeviationMicrosecondsPerInvocation="664"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="104" invocations="3376" avgMicrosecondsPerInvocation="30" maxMicrosecondsPerInvocation="4365" standardDeviationMicrosecondsPerInvocation="120"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="100" invocations="1000" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="9253" standardDeviationMicrosecondsPerInvocation="453"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="92" invocations="662" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="7628" standardDeviationMicrosecondsPerInvocation="444"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="89" invocations="3183" avgMicrosecondsPerInvocation="28" maxMicrosecondsPerInvocation="2006" standardDeviationMicrosecondsPerInvocation="74"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="86" invocations="662" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="3394" standardDeviationMicrosecondsPerInvocation="236"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="83" invocations="662" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="8852" standardDeviationMicrosecondsPerInvocation="604"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="83" invocations="1000" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="29168" standardDeviationMicrosecondsPerInvocation="946"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="82" invocations="1000" avgMicrosecondsPerInvocation="82" maxMicrosecondsPerInvocation="7899" standardDeviationMicrosecondsPerInvocation="337"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="82" invocations="662" avgMicrosecondsPerInvocation="123" maxMicrosecondsPerInvocation="4839" standardDeviationMicrosecondsPerInvocation="341"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="81" invocations="84426" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="602" standardDeviationMicrosecondsPerInvocation="4"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="81" invocations="662" avgMicrosecondsPerInvocation="123" maxMicrosecondsPerInvocation="2695" standardDeviationMicrosecondsPerInvocation="249"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="79" invocations="1000" avgMicrosecondsPerInvocation="79" maxMicrosecondsPerInvocation="4273" standardDeviationMicrosecondsPerInvocation="247"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="75" invocations="3676" avgMicrosecondsPerInvocation="20" maxMicrosecondsPerInvocation="5526" standardDeviationMicrosecondsPerInvocation="147"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="74" invocations="662" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="9539" standardDeviationMicrosecondsPerInvocation="448"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

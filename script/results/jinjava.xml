@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1511131128000" analysisTimestamp="1511131164070" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534837760000" analysisTimestamp="1534837762306" release="">
   <Project projectName="">
     <Jar>tmp/jinjava</Jar>
   </Project>
-  <Errors errors="0" missingClasses="116">
+  <Errors errors="0" missingClasses="117">
     <MissingClass>com.google.common.base.CaseFormat</MissingClass>
     <MissingClass>com.google.common.base.CharMatcher</MissingClass>
     <MissingClass>com.google.common.base.Charsets</MissingClass>
@@ -25,6 +25,7 @@
     <MissingClass>com.google.common.collect.ImmutableSet$Builder</MissingClass>
     <MissingClass>com.google.common.collect.Iterables</MissingClass>
     <MissingClass>com.google.common.collect.Iterators</MissingClass>
+    <MissingClass>com.google.common.collect.LinkedListMultimap</MissingClass>
     <MissingClass>com.google.common.collect.Lists</MissingClass>
     <MissingClass>com.google.common.collect.Maps</MissingClass>
     <MissingClass>com.google.common.collect.Multimap</MissingClass>
@@ -122,9 +123,9 @@
     <MissingClass>org.slf4j.Logger</MissingClass>
     <MissingClass>org.slf4j.LoggerFactory</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Sun, 19 Nov 2017 23:38:48 +0100" total_classes="480" referenced_classes="704" total_bugs="0" total_size="13679" num_packages="28" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="34.10" clock_seconds="11.55" peak_mbytes="587.35" alloc_mbytes="3641.00" gc_seconds="0.19">
-    <PackageStats package="com.hubspot.jinjava" total_bugs="0" total_types="4" total_size="193">
-      <ClassStats class="com.hubspot.jinjava.Jinjava" sourceFile="Jinjava.java" interface="false" size="58" bugs="0"/>
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 09:49:20 +0200" total_classes="490" referenced_classes="715" total_bugs="0" total_size="14033" num_packages="28" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="33.93" clock_seconds="10.46" peak_mbytes="762.79" alloc_mbytes="3641.00" gc_seconds="0.20">
+    <PackageStats package="com.hubspot.jinjava" total_bugs="0" total_types="4" total_size="195">
+      <ClassStats class="com.hubspot.jinjava.Jinjava" sourceFile="Jinjava.java" interface="false" size="60" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.JinjavaConfig" sourceFile="JinjavaConfig.java" interface="false" size="66" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.JinjavaConfig$1" sourceFile="JinjavaConfig.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.JinjavaConfig$Builder" sourceFile="JinjavaConfig.java" interface="false" size="68" bugs="0"/>
@@ -146,8 +147,8 @@
       <ClassStats class="com.hubspot.jinjava.doc.annotations.JinjavaParam" sourceFile="JinjavaParam.java" interface="true" size="5" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.doc.annotations.JinjavaSnippet" sourceFile="JinjavaSnippet.java" interface="true" size="4" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.hubspot.jinjava.el" total_bugs="0" total_types="19" total_size="797">
-      <ClassStats class="com.hubspot.jinjava.el.ExpressionResolver" sourceFile="ExpressionResolver.java" interface="false" size="53" bugs="0"/>
+    <PackageStats package="com.hubspot.jinjava.el" total_bugs="0" total_types="19" total_size="817">
+      <ClassStats class="com.hubspot.jinjava.el.ExpressionResolver" sourceFile="ExpressionResolver.java" interface="false" size="57" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.el.ExpressionResolverPerformanceTest" sourceFile="ExpressionResolverPerformanceTest.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.el.ExpressionResolverPerformanceTest$CustomMap" sourceFile="ExpressionResolverPerformanceTest.java" interface="false" size="30" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.el.ExpressionResolverPerformanceTest$CustomObject" sourceFile="ExpressionResolverPerformanceTest.java" interface="false" size="6" bugs="0"/>
@@ -159,7 +160,7 @@
       <ClassStats class="com.hubspot.jinjava.el.ExpressionResolverTest$NestedOptionalProperty" sourceFile="ExpressionResolverTest.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.el.ExpressionResolverTest$OptionalProperty" sourceFile="ExpressionResolverTest.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.el.ExtendedSyntaxBuilder" sourceFile="ExtendedSyntaxBuilder.java" interface="false" size="10" bugs="0"/>
-      <ClassStats class="com.hubspot.jinjava.el.ExtendedSyntaxBuilderTest" sourceFile="ExtendedSyntaxBuilderTest.java" interface="false" size="158" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.el.ExtendedSyntaxBuilderTest" sourceFile="ExtendedSyntaxBuilderTest.java" interface="false" size="174" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.el.JinjavaELContext" sourceFile="JinjavaELContext.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.el.JinjavaInterpreterResolver" sourceFile="JinjavaInterpreterResolver.java" interface="false" size="105" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.el.JinjavaInterpreterResolver$1" sourceFile="JinjavaInterpreterResolver.java" interface="false" size="9" bugs="0"/>
@@ -167,7 +168,7 @@
       <ClassStats class="com.hubspot.jinjava.el.MacroFunctionMapper" sourceFile="MacroFunctionMapper.java" interface="false" size="23" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.el.TruthyTypeConverter" sourceFile="TruthyTypeConverter.java" interface="false" size="6" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.hubspot.jinjava.el.ext" total_bugs="0" total_types="34" total_size="944">
+    <PackageStats package="com.hubspot.jinjava.el.ext" total_bugs="0" total_types="34" total_size="956">
       <ClassStats class="com.hubspot.jinjava.el.ext.AbsOperator" sourceFile="AbsOperator.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.el.ext.AbsOperator$1" sourceFile="AbsOperator.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.el.ext.AbsOperator$1$1" sourceFile="AbsOperator.java" interface="false" size="16" bugs="0"/>
@@ -182,7 +183,7 @@
       <ClassStats class="com.hubspot.jinjava.el.ext.AstTuple" sourceFile="AstTuple.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.el.ext.CollectionMembershipOperator" sourceFile="CollectionMembershipOperator.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.el.ext.CollectionMembershipOperator$1" sourceFile="CollectionMembershipOperator.java" interface="false" size="5" bugs="0"/>
-      <ClassStats class="com.hubspot.jinjava.el.ext.ExtendedParser" sourceFile="ExtendedParser.java" interface="false" size="224" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.el.ext.ExtendedParser" sourceFile="ExtendedParser.java" interface="false" size="236" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.el.ext.ExtendedParser$1" sourceFile="ExtendedParser.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.el.ext.ExtendedParser$2" sourceFile="ExtendedParser.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.el.ext.ExtendedParser$3" sourceFile="ExtendedParser.java" interface="false" size="4" bugs="0"/>
@@ -203,18 +204,18 @@
       <ClassStats class="com.hubspot.jinjava.el.ext.TruncDivOperator$1" sourceFile="TruncDivOperator.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.el.ext.TruncDivTest" sourceFile="TruncDivTest.java" interface="false" size="33" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.hubspot.jinjava.interpret" total_bugs="0" total_types="29" total_size="1072">
+    <PackageStats package="com.hubspot.jinjava.interpret" total_bugs="0" total_types="29" total_size="1090">
       <ClassStats class="com.hubspot.jinjava.interpret.CallStack" sourceFile="CallStack.java" interface="false" size="30" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.interpret.Context" sourceFile="Context.java" interface="false" size="230" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.interpret.Context$Library" sourceFile="Context.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.interpret.ContextTest" sourceFile="ContextTest.java" interface="false" size="32" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.interpret.DisabledException" sourceFile="DisabledException.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.interpret.ExtendsTagCycleException" sourceFile="ExtendsTagCycleException.java" interface="false" size="5" bugs="0"/>
-      <ClassStats class="com.hubspot.jinjava.interpret.FatalTemplateErrorsException" sourceFile="FatalTemplateErrorsException.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.interpret.FatalTemplateErrorsException" sourceFile="FatalTemplateErrorsException.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.interpret.ImportTagCycleException" sourceFile="ImportTagCycleException.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.interpret.IncludeTagCycleException" sourceFile="IncludeTagCycleException.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.interpret.InterpretException" sourceFile="InterpretException.java" interface="false" size="32" bugs="0"/>
-      <ClassStats class="com.hubspot.jinjava.interpret.JinjavaInterpreter" sourceFile="JinjavaInterpreter.java" interface="false" size="187" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.interpret.JinjavaInterpreter" sourceFile="JinjavaInterpreter.java" interface="false" size="192" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.interpret.JinjavaInterpreter$InterpreterScopeClosable" sourceFile="JinjavaInterpreter.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.interpret.JinjavaInterpreterTest" sourceFile="JinjavaInterpreterTest.java" interface="false" size="97" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.interpret.JinjavaInterpreterTest$Foo" sourceFile="JinjavaInterpreterTest.java" interface="false" size="12" bugs="0"/>
@@ -227,11 +228,11 @@
       <ClassStats class="com.hubspot.jinjava.interpret.TemplateError$ErrorItem" sourceFile="TemplateError.java" interface="false" size="23" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.interpret.TemplateError$ErrorReason" sourceFile="TemplateError.java" interface="false" size="21" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.interpret.TemplateError$ErrorType" sourceFile="TemplateError.java" interface="false" size="11" bugs="0"/>
-      <ClassStats class="com.hubspot.jinjava.interpret.TemplateErrorTest" sourceFile="TemplateErrorTest.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.interpret.TemplateErrorTest" sourceFile="TemplateErrorTest.java" interface="false" size="34" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.interpret.TemplateStateException" sourceFile="TemplateStateException.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.interpret.TemplateSyntaxException" sourceFile="TemplateSyntaxException.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.interpret.UnexpectedTokenException" sourceFile="UnexpectedTokenException.java" interface="false" size="9" bugs="0"/>
-      <ClassStats class="com.hubspot.jinjava.interpret.UnknownTagException" sourceFile="UnknownTagException.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.interpret.UnknownTagException" sourceFile="UnknownTagException.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.interpret.UnknownTokenException" sourceFile="UnknownTokenException.java" interface="false" size="9" bugs="0"/>
     </PackageStats>
     <PackageStats package="com.hubspot.jinjava.interpret.errorcategory" total_bugs="0" total_types="2" total_size="22">
@@ -242,9 +243,13 @@
       <ClassStats class="com.hubspot.jinjava.lib.Importable" sourceFile="Importable.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.SimpleLibrary" sourceFile="SimpleLibrary.java" interface="false" size="40" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.hubspot.jinjava.lib.exptest" total_bugs="0" total_types="20" total_size="166">
-      <ClassStats class="com.hubspot.jinjava.lib.exptest.ExpTest" sourceFile="ExpTest.java" interface="true" size="2" bugs="0"/>
+    <PackageStats package="com.hubspot.jinjava.lib.exptest" total_bugs="0" total_types="27" total_size="303">
+      <ClassStats class="com.hubspot.jinjava.lib.exptest.ExpTest" sourceFile="ExpTest.java" interface="true" size="4" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.exptest.ExpTestLibrary" sourceFile="ExpTestLibrary.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.lib.exptest.IsContainingAllExpTest" sourceFile="IsContainingAllExpTest.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.lib.exptest.IsContainingAllExpTestTest" sourceFile="IsContainingAllExpTestTest.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.lib.exptest.IsContainingExpTest" sourceFile="IsContainingExpTest.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.lib.exptest.IsContainingExpTestTest" sourceFile="IsContainingExpTestTest.java" interface="false" size="26" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.exptest.IsDefinedExpTest" sourceFile="IsDefinedExpTest.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.exptest.IsDivisibleByExpTest" sourceFile="IsDivisibleByExpTest.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.exptest.IsEqualToExpTest" sourceFile="IsEqualToExpTest.java" interface="false" size="9" bugs="0"/>
@@ -263,8 +268,11 @@
       <ClassStats class="com.hubspot.jinjava.lib.exptest.IsTruthyExpTest" sourceFile="IsTruthyExpTest.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.exptest.IsUndefinedExpTest" sourceFile="IsUndefinedExpTest.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.exptest.IsUpperExpTest" sourceFile="IsUpperExpTest.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.lib.exptest.IsWithinExpTest" sourceFile="IsWithinExpTest.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.lib.exptest.IsWithinExpTestTest" sourceFile="IsWithinExpTestTest.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.lib.exptest.NegatedExpTestTest" sourceFile="NegatedExpTestTest.java" interface="false" size="16" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.hubspot.jinjava.lib.filter" total_bugs="0" total_types="131" total_size="2270">
+    <PackageStats package="com.hubspot.jinjava.lib.filter" total_bugs="0" total_types="134" total_size="2431">
       <ClassStats class="com.hubspot.jinjava.lib.filter.AbsFilter" sourceFile="AbsFilter.java" interface="false" size="27" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.AddFilter" sourceFile="AddFilter.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.AdvancedFilter" sourceFile="AdvancedFilter.java" interface="true" size="4" bugs="0"/>
@@ -302,27 +310,30 @@
       <ClassStats class="com.hubspot.jinjava.lib.filter.EAliasedEscapeFilter" sourceFile="EAliasedEscapeFilter.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.EscapeFilter" sourceFile="EscapeFilter.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.EscapeFilterTest" sourceFile="EscapeFilterTest.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.lib.filter.EscapeJinjavaFilter" sourceFile="EscapeJinjavaFilter.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.lib.filter.EscapeJinjavaFilterTest" sourceFile="EscapeJinjavaFilterTest.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.EscapeJsFilter" sourceFile="EscapeJsFilter.java" interface="false" size="46" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.EscapeJsFilterTest" sourceFile="EscapeJsFilterTest.java" interface="false" size="24" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.EscapeJsonFilter" sourceFile="EscapeJsonFilter.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.EscapeJsonFilterTest" sourceFile="EscapeJsonFilterTest.java" interface="false" size="28" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.FileSizeFormatFilter" sourceFile="FileSizeFormatFilter.java" interface="false" size="29" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.FileSizeFormatFilterTest" sourceFile="FileSizeFormatFilterTest.java" interface="false" size="14" bugs="0"/>
-      <ClassStats class="com.hubspot.jinjava.lib.filter.Filter" sourceFile="Filter.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.lib.filter.Filter" sourceFile="Filter.java" interface="true" size="7" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.FilterLibrary" sourceFile="FilterLibrary.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.FirstFilter" sourceFile="FirstFilter.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.FirstFilterTest" sourceFile="FirstFilterTest.java" interface="false" size="13" bugs="0"/>
-      <ClassStats class="com.hubspot.jinjava.lib.filter.FloatFilter" sourceFile="FloatFilter.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.lib.filter.FloatFilter" sourceFile="FloatFilter.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.lib.filter.FloatFilterTest" sourceFile="FloatFilterTest.java" interface="false" size="61" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.ForceEscapeFilter" sourceFile="ForceEscapeFilter.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.FormatFilter" sourceFile="FormatFilter.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.FormatFilterTest" sourceFile="FormatFilterTest.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.GroupByFilter" sourceFile="GroupByFilter.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.GroupByFilter$Group" sourceFile="GroupByFilter.java" interface="false" size="12" bugs="0"/>
-      <ClassStats class="com.hubspot.jinjava.lib.filter.GroupByFilterTest" sourceFile="GroupByFilterTest.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.lib.filter.GroupByFilterTest" sourceFile="GroupByFilterTest.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.GroupByFilterTest$Person" sourceFile="GroupByFilterTest.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.IndentFilter" sourceFile="IndentFilter.java" interface="false" size="23" bugs="0"/>
-      <ClassStats class="com.hubspot.jinjava.lib.filter.IntFilter" sourceFile="IntFilter.java" interface="false" size="14" bugs="0"/>
-      <ClassStats class="com.hubspot.jinjava.lib.filter.IntFilterTest" sourceFile="IntFilterTest.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.lib.filter.IntFilter" sourceFile="IntFilter.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.lib.filter.IntFilterTest" sourceFile="IntFilterTest.java" interface="false" size="68" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.JoinFilter" sourceFile="JoinFilter.java" interface="false" size="21" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.JoinFilterTest" sourceFile="JoinFilterTest.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.JoinFilterTest$User" sourceFile="JoinFilterTest.java" interface="false" size="8" bugs="0"/>
@@ -350,8 +361,8 @@
       <ClassStats class="com.hubspot.jinjava.lib.filter.RoundFilter" sourceFile="RoundFilter.java" interface="false" size="23" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.RoundFilterTest" sourceFile="RoundFilterTest.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.SafeFilter" sourceFile="SafeFilter.java" interface="false" size="7" bugs="0"/>
-      <ClassStats class="com.hubspot.jinjava.lib.filter.SelectAttrFilter" sourceFile="SelectAttrFilter.java" interface="false" size="26" bugs="0"/>
-      <ClassStats class="com.hubspot.jinjava.lib.filter.SelectAttrFilterTest" sourceFile="SelectAttrFilterTest.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.lib.filter.SelectAttrFilter" sourceFile="SelectAttrFilter.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.lib.filter.SelectAttrFilterTest" sourceFile="SelectAttrFilterTest.java" interface="false" size="24" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.SelectAttrFilterTest$User" sourceFile="SelectAttrFilterTest.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.SelectFilter" sourceFile="SelectFilter.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.SelectFilterTest" sourceFile="SelectFilterTest.java" interface="false" size="15" bugs="0"/>
@@ -377,7 +388,7 @@
       <ClassStats class="com.hubspot.jinjava.lib.filter.TrimFilter" sourceFile="TrimFilter.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.TrimFilterTest" sourceFile="TrimFilterTest.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.TruncateFilter" sourceFile="TruncateFilter.java" interface="false" size="7" bugs="0"/>
-      <ClassStats class="com.hubspot.jinjava.lib.filter.TruncateFilterTest" sourceFile="TruncateFilterTest.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.lib.filter.TruncateFilterTest" sourceFile="TruncateFilterTest.java" interface="false" size="21" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.TruncateHtmlFilter" sourceFile="TruncateHtmlFilter.java" interface="false" size="27" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.TruncateHtmlFilter$ContentTruncatingNodeVisitor" sourceFile="TruncateHtmlFilter.java" interface="false" size="32" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.lib.filter.TruncateHtmlFilterTest" sourceFile="TruncateHtmlFilterTest.java" interface="false" size="23" bugs="0"/>
@@ -497,10 +508,10 @@
       <ClassStats class="com.hubspot.jinjava.tree.output.OutputNode" sourceFile="OutputNode.java" interface="true" size="3" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.tree.output.RenderedOutputNode" sourceFile="RenderedOutputNode.java" interface="false" size="12" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.hubspot.jinjava.tree.parse" total_bugs="0" total_types="10" total_size="577">
+    <PackageStats package="com.hubspot.jinjava.tree.parse" total_bugs="0" total_types="10" total_size="581">
       <ClassStats class="com.hubspot.jinjava.tree.parse.ExpressionToken" sourceFile="ExpressionToken.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.tree.parse.NoteToken" sourceFile="NoteToken.java" interface="false" size="12" bugs="0"/>
-      <ClassStats class="com.hubspot.jinjava.tree.parse.TagToken" sourceFile="TagToken.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="com.hubspot.jinjava.tree.parse.TagToken" sourceFile="TagToken.java" interface="false" size="44" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.tree.parse.TagTokenTest" sourceFile="TagTokenTest.java" interface="false" size="24" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.tree.parse.TextToken" sourceFile="TextToken.java" interface="false" size="26" bugs="0"/>
       <ClassStats class="com.hubspot.jinjava.tree.parse.Token" sourceFile="Token.java" interface="false" size="51" bugs="0"/>
@@ -660,52 +671,48 @@
       <ClassStats class="jinjava.javax.el.VariableMapper" sourceFile="VariableMapper.java" interface="false" size="5" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="616" invocations="2513" avgMicrosecondsPerInvocation="245" maxMicrosecondsPerInvocation="26586" standardDeviationMicrosecondsPerInvocation="776"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="596" invocations="2556" avgMicrosecondsPerInvocation="233" maxMicrosecondsPerInvocation="11497" standardDeviationMicrosecondsPerInvocation="578"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="518" invocations="2526" avgMicrosecondsPerInvocation="205" maxMicrosecondsPerInvocation="16533" standardDeviationMicrosecondsPerInvocation="695"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="471" invocations="2609" avgMicrosecondsPerInvocation="180" maxMicrosecondsPerInvocation="14296" standardDeviationMicrosecondsPerInvocation="489"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="461" invocations="1826" avgMicrosecondsPerInvocation="252" maxMicrosecondsPerInvocation="27797" standardDeviationMicrosecondsPerInvocation="1046"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="422" invocations="2651" avgMicrosecondsPerInvocation="159" maxMicrosecondsPerInvocation="16300" standardDeviationMicrosecondsPerInvocation="515"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="370" invocations="2556" avgMicrosecondsPerInvocation="144" maxMicrosecondsPerInvocation="10544" standardDeviationMicrosecondsPerInvocation="322"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="350" invocations="1832" avgMicrosecondsPerInvocation="191" maxMicrosecondsPerInvocation="6551" standardDeviationMicrosecondsPerInvocation="245"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="327" invocations="2048" avgMicrosecondsPerInvocation="159" maxMicrosecondsPerInvocation="10564" standardDeviationMicrosecondsPerInvocation="429"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="310" invocations="704" avgMicrosecondsPerInvocation="441" maxMicrosecondsPerInvocation="22516" standardDeviationMicrosecondsPerInvocation="1344"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="276" invocations="3300" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="12286" standardDeviationMicrosecondsPerInvocation="307"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="248" invocations="704" avgMicrosecondsPerInvocation="353" maxMicrosecondsPerInvocation="22506" standardDeviationMicrosecondsPerInvocation="1047"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="172" invocations="480" avgMicrosecondsPerInvocation="359" maxMicrosecondsPerInvocation="15569" standardDeviationMicrosecondsPerInvocation="1122"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="139" invocations="2648" avgMicrosecondsPerInvocation="52" maxMicrosecondsPerInvocation="32618" standardDeviationMicrosecondsPerInvocation="660"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="130" invocations="480" avgMicrosecondsPerInvocation="271" maxMicrosecondsPerInvocation="3291" standardDeviationMicrosecondsPerInvocation="386"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="129" invocations="2556" avgMicrosecondsPerInvocation="50" maxMicrosecondsPerInvocation="1991" standardDeviationMicrosecondsPerInvocation="124"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="114" invocations="480" avgMicrosecondsPerInvocation="238" maxMicrosecondsPerInvocation="11944" standardDeviationMicrosecondsPerInvocation="655"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="109" invocations="480" avgMicrosecondsPerInvocation="227" maxMicrosecondsPerInvocation="24835" standardDeviationMicrosecondsPerInvocation="1768"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="107" invocations="480" avgMicrosecondsPerInvocation="224" maxMicrosecondsPerInvocation="40301" standardDeviationMicrosecondsPerInvocation="1941"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="106" invocations="51038" avgMicrosecondsPerInvocation="2" maxMicrosecondsPerInvocation="9086" standardDeviationMicrosecondsPerInvocation="43"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="100" invocations="480" avgMicrosecondsPerInvocation="209" maxMicrosecondsPerInvocation="3329" standardDeviationMicrosecondsPerInvocation="380"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="97" invocations="2513" avgMicrosecondsPerInvocation="38" maxMicrosecondsPerInvocation="8229" standardDeviationMicrosecondsPerInvocation="199"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="90" invocations="704" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="4322" standardDeviationMicrosecondsPerInvocation="288"/>
-      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="86" invocations="61152" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="4489" standardDeviationMicrosecondsPerInvocation="24"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="85" invocations="704" avgMicrosecondsPerInvocation="121" maxMicrosecondsPerInvocation="4821" standardDeviationMicrosecondsPerInvocation="311"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="82" invocations="480" avgMicrosecondsPerInvocation="172" maxMicrosecondsPerInvocation="3706" standardDeviationMicrosecondsPerInvocation="312"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="80" invocations="897" avgMicrosecondsPerInvocation="89" maxMicrosecondsPerInvocation="13849" standardDeviationMicrosecondsPerInvocation="486"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="79" invocations="480" avgMicrosecondsPerInvocation="164" maxMicrosecondsPerInvocation="3992" standardDeviationMicrosecondsPerInvocation="338"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="74" invocations="480" avgMicrosecondsPerInvocation="154" maxMicrosecondsPerInvocation="33432" standardDeviationMicrosecondsPerInvocation="1551"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="73" invocations="480" avgMicrosecondsPerInvocation="153" maxMicrosecondsPerInvocation="2571" standardDeviationMicrosecondsPerInvocation="258"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="73" invocations="704" avgMicrosecondsPerInvocation="104" maxMicrosecondsPerInvocation="5454" standardDeviationMicrosecondsPerInvocation="312"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="72" invocations="480" avgMicrosecondsPerInvocation="151" maxMicrosecondsPerInvocation="3658" standardDeviationMicrosecondsPerInvocation="298"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="72" invocations="480" avgMicrosecondsPerInvocation="151" maxMicrosecondsPerInvocation="5672" standardDeviationMicrosecondsPerInvocation="413"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="71" invocations="2495" avgMicrosecondsPerInvocation="28" maxMicrosecondsPerInvocation="3489" standardDeviationMicrosecondsPerInvocation="92"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="69" invocations="1608" avgMicrosecondsPerInvocation="43" maxMicrosecondsPerInvocation="3838" standardDeviationMicrosecondsPerInvocation="121"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="68" invocations="704" avgMicrosecondsPerInvocation="96" maxMicrosecondsPerInvocation="4988" standardDeviationMicrosecondsPerInvocation="343"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="66" invocations="480" avgMicrosecondsPerInvocation="138" maxMicrosecondsPerInvocation="7778" standardDeviationMicrosecondsPerInvocation="534"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="64" invocations="480" avgMicrosecondsPerInvocation="135" maxMicrosecondsPerInvocation="7887" standardDeviationMicrosecondsPerInvocation="454"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="64" invocations="480" avgMicrosecondsPerInvocation="133" maxMicrosecondsPerInvocation="3603" standardDeviationMicrosecondsPerInvocation="271"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="63" invocations="2648" avgMicrosecondsPerInvocation="24" maxMicrosecondsPerInvocation="5064" standardDeviationMicrosecondsPerInvocation="153"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="62" invocations="480" avgMicrosecondsPerInvocation="130" maxMicrosecondsPerInvocation="3325" standardDeviationMicrosecondsPerInvocation="246"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="59" invocations="480" avgMicrosecondsPerInvocation="124" maxMicrosecondsPerInvocation="6590" standardDeviationMicrosecondsPerInvocation="326"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="57" invocations="480" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="4936" standardDeviationMicrosecondsPerInvocation="292"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="56" invocations="704" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="9066" standardDeviationMicrosecondsPerInvocation="394"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BadSyntaxForRegularExpression" totalMilliseconds="56" invocations="480" avgMicrosecondsPerInvocation="117" maxMicrosecondsPerInvocation="5615" standardDeviationMicrosecondsPerInvocation="382"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNonShortCircuit" totalMilliseconds="55" invocations="480" avgMicrosecondsPerInvocation="116" maxMicrosecondsPerInvocation="9023" standardDeviationMicrosecondsPerInvocation="463"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="672" invocations="2592" avgMicrosecondsPerInvocation="259" maxMicrosecondsPerInvocation="43017" standardDeviationMicrosecondsPerInvocation="1266"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="538" invocations="2635" avgMicrosecondsPerInvocation="204" maxMicrosecondsPerInvocation="6653" standardDeviationMicrosecondsPerInvocation="436"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="507" invocations="1839" avgMicrosecondsPerInvocation="275" maxMicrosecondsPerInvocation="25635" standardDeviationMicrosecondsPerInvocation="1033"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="469" invocations="2605" avgMicrosecondsPerInvocation="180" maxMicrosecondsPerInvocation="9048" standardDeviationMicrosecondsPerInvocation="480"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="430" invocations="2688" avgMicrosecondsPerInvocation="160" maxMicrosecondsPerInvocation="7952" standardDeviationMicrosecondsPerInvocation="355"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="387" invocations="2731" avgMicrosecondsPerInvocation="141" maxMicrosecondsPerInvocation="10595" standardDeviationMicrosecondsPerInvocation="357"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="335" invocations="2635" avgMicrosecondsPerInvocation="127" maxMicrosecondsPerInvocation="15588" standardDeviationMicrosecondsPerInvocation="364"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="306" invocations="1845" avgMicrosecondsPerInvocation="166" maxMicrosecondsPerInvocation="9052" standardDeviationMicrosecondsPerInvocation="252"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="305" invocations="715" avgMicrosecondsPerInvocation="427" maxMicrosecondsPerInvocation="14328" standardDeviationMicrosecondsPerInvocation="1066"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="302" invocations="2120" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="4743" standardDeviationMicrosecondsPerInvocation="317"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="281" invocations="715" avgMicrosecondsPerInvocation="393" maxMicrosecondsPerInvocation="22796" standardDeviationMicrosecondsPerInvocation="1111"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="255" invocations="3381" avgMicrosecondsPerInvocation="75" maxMicrosecondsPerInvocation="6065" standardDeviationMicrosecondsPerInvocation="228"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="134" invocations="490" avgMicrosecondsPerInvocation="275" maxMicrosecondsPerInvocation="45698" standardDeviationMicrosecondsPerInvocation="2104"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="125" invocations="715" avgMicrosecondsPerInvocation="174" maxMicrosecondsPerInvocation="40123" standardDeviationMicrosecondsPerInvocation="1526"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="121" invocations="2635" avgMicrosecondsPerInvocation="46" maxMicrosecondsPerInvocation="2125" standardDeviationMicrosecondsPerInvocation="102"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="116" invocations="490" avgMicrosecondsPerInvocation="237" maxMicrosecondsPerInvocation="3684" standardDeviationMicrosecondsPerInvocation="400"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="115" invocations="2727" avgMicrosecondsPerInvocation="42" maxMicrosecondsPerInvocation="31424" standardDeviationMicrosecondsPerInvocation="603"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="112" invocations="490" avgMicrosecondsPerInvocation="229" maxMicrosecondsPerInvocation="8369" standardDeviationMicrosecondsPerInvocation="554"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="104" invocations="715" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="4500" standardDeviationMicrosecondsPerInvocation="335"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="104" invocations="490" avgMicrosecondsPerInvocation="212" maxMicrosecondsPerInvocation="2813" standardDeviationMicrosecondsPerInvocation="265"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="103" invocations="715" avgMicrosecondsPerInvocation="144" maxMicrosecondsPerInvocation="6647" standardDeviationMicrosecondsPerInvocation="385"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="83" invocations="52332" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="2864" standardDeviationMicrosecondsPerInvocation="18"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="83" invocations="2592" avgMicrosecondsPerInvocation="32" maxMicrosecondsPerInvocation="2310" standardDeviationMicrosecondsPerInvocation="73"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="83" invocations="2575" avgMicrosecondsPerInvocation="32" maxMicrosecondsPerInvocation="8244" standardDeviationMicrosecondsPerInvocation="173"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="83" invocations="1620" avgMicrosecondsPerInvocation="51" maxMicrosecondsPerInvocation="4847" standardDeviationMicrosecondsPerInvocation="156"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="81" invocations="904" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="11232" standardDeviationMicrosecondsPerInvocation="401"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="80" invocations="490" avgMicrosecondsPerInvocation="163" maxMicrosecondsPerInvocation="9029" standardDeviationMicrosecondsPerInvocation="460"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="79" invocations="62415" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="1058" standardDeviationMicrosecondsPerInvocation="6"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="78" invocations="715" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="5632" standardDeviationMicrosecondsPerInvocation="373"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="74" invocations="490" avgMicrosecondsPerInvocation="152" maxMicrosecondsPerInvocation="28352" standardDeviationMicrosecondsPerInvocation="1453"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="66" invocations="490" avgMicrosecondsPerInvocation="134" maxMicrosecondsPerInvocation="2095" standardDeviationMicrosecondsPerInvocation="214"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="64" invocations="490" avgMicrosecondsPerInvocation="130" maxMicrosecondsPerInvocation="1762" standardDeviationMicrosecondsPerInvocation="189"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="63" invocations="490" avgMicrosecondsPerInvocation="130" maxMicrosecondsPerInvocation="3104" standardDeviationMicrosecondsPerInvocation="230"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="61" invocations="490" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="3301" standardDeviationMicrosecondsPerInvocation="279"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="59" invocations="715" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="7904" standardDeviationMicrosecondsPerInvocation="333"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="55" invocations="490" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="1270" standardDeviationMicrosecondsPerInvocation="156"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="54" invocations="490" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="5723" standardDeviationMicrosecondsPerInvocation="302"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="52" invocations="490" avgMicrosecondsPerInvocation="107" maxMicrosecondsPerInvocation="1922" standardDeviationMicrosecondsPerInvocation="170"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="52" invocations="490" avgMicrosecondsPerInvocation="107" maxMicrosecondsPerInvocation="3818" standardDeviationMicrosecondsPerInvocation="236"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="52" invocations="490" avgMicrosecondsPerInvocation="107" maxMicrosecondsPerInvocation="6499" standardDeviationMicrosecondsPerInvocation="308"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="52" invocations="2727" avgMicrosecondsPerInvocation="19" maxMicrosecondsPerInvocation="6132" standardDeviationMicrosecondsPerInvocation="146"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="50" invocations="490" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="3755" standardDeviationMicrosecondsPerInvocation="324"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

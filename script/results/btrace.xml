@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1511130129000" analysisTimestamp="1511130130483" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534836996000" analysisTimestamp="1534836997928" release="">
   <Project projectName="">
     <Jar>tmp/btrace</Jar>
   </Project>
-  <Errors errors="0" missingClasses="39">
+  <Errors errors="0" missingClasses="52">
+    <MissingClass>com.google.common.base.Preconditions</MissingClass>
     <MissingClass>com.sun.btrace.org.jctools.queues.MpscLinkedQueue</MissingClass>
     <MissingClass>com.sun.btrace.org.jctools.queues.SpmcArrayQueue</MissingClass>
     <MissingClass>com.sun.btrace.org.jctools.queues.SpscArrayQueue</MissingClass>
     <MissingClass>com.sun.btrace.org.jctools.queues.SpscLinkedQueue</MissingClass>
     <MissingClass>com.sun.btrace.org.jctools.queues.spec.ConcurrentQueueSpec</MissingClass>
     <MissingClass>com.sun.btrace.org.jctools.queues.spec.Ordering</MissingClass>
+    <MissingClass>org.apache.hadoop.conf.Configuration</MissingClass>
+    <MissingClass>org.apache.hadoop.mapred.InputSplit</MissingClass>
+    <MissingClass>org.apache.hadoop.mapred.split.SplitSizeEstimator</MissingClass>
+    <MissingClass>org.apache.hadoop.mapred.split.TezGroupedSplit</MissingClass>
+    <MissingClass>org.apache.hadoop.mapred.split.TezMapredSplitsGrouper$DefaultSplitSizeEstimator</MissingClass>
+    <MissingClass>org.apache.hadoop.mapred.split.TezMapredSplitsGrouper$LocationHolder</MissingClass>
+    <MissingClass>org.apache.hadoop.mapred.split.TezMapredSplitsGrouper$SplitHolder</MissingClass>
+    <MissingClass>org.apache.hadoop.net.Node</MissingClass>
+    <MissingClass>org.apache.hadoop.yarn.util.RackResolver</MissingClass>
+    <MissingClass>org.apache.tez.dag.api.TezUncheckedException</MissingClass>
     <MissingClass>org.apache.tools.ant.AntClassLoader</MissingClass>
     <MissingClass>org.apache.tools.ant.BuildException</MissingClass>
     <MissingClass>org.apache.tools.ant.DirectoryScanner</MissingClass>
@@ -44,9 +55,11 @@
     <MissingClass>org.apache.tools.ant.util.LoaderUtils</MissingClass>
     <MissingClass>org.apache.tools.ant.util.StringUtils</MissingClass>
     <MissingClass>org.apache.tools.ant.util.TeeOutputStream</MissingClass>
+    <MissingClass>org.slf4j.Logger</MissingClass>
+    <MissingClass>org.slf4j.LoggerFactory</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Sun, 19 Nov 2017 23:22:09 +0100" total_classes="612" referenced_classes="907" total_bugs="0" total_size="35740" num_packages="44" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="52.88" clock_seconds="16.57" peak_mbytes="1445.75" alloc_mbytes="3641.00" gc_seconds="0.31">
-    <PackageStats package="com.sun.btrace.org.jctools.maps" total_bugs="0" total_types="38" total_size="2233">
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 09:36:36 +0200" total_classes="622" referenced_classes="918" total_bugs="0" total_size="36128" num_packages="45" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="59.77" clock_seconds="21.60" peak_mbytes="1426.92" alloc_mbytes="3641.00" gc_seconds="0.48">
+    <PackageStats package="com.sun.btrace.org.jctools.maps" total_bugs="0" total_types="38" total_size="2234">
       <ClassStats class="com.sun.btrace.org.jctools.maps.AbstractEntry" sourceFile="AbstractEntry.java" interface="false" size="23" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.maps.ConcurrentAutoTable" sourceFile="ConcurrentAutoTable.java" interface="false" size="42" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.maps.ConcurrentAutoTable$CAT" sourceFile="ConcurrentAutoTable.java" interface="false" size="63" bugs="0"/>
@@ -64,7 +77,7 @@
       <ClassStats class="com.sun.btrace.org.jctools.maps.NonBlockingHashMapLong$1" sourceFile="NonBlockingHashMapLong.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.maps.NonBlockingHashMapLong$2" sourceFile="NonBlockingHashMapLong.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.maps.NonBlockingHashMapLong$3" sourceFile="NonBlockingHashMapLong.java" interface="false" size="19" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.maps.NonBlockingHashMapLong$CHM" sourceFile="NonBlockingHashMapLong.java" interface="false" size="240" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.maps.NonBlockingHashMapLong$CHM" sourceFile="NonBlockingHashMapLong.java" interface="false" size="241" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.maps.NonBlockingHashMapLong$IteratorLong" sourceFile="NonBlockingHashMapLong.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.maps.NonBlockingHashMapLong$NBHMLEntry" sourceFile="NonBlockingHashMapLong.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.maps.NonBlockingHashMapLong$Prime" sourceFile="NonBlockingHashMapLong.java" interface="false" size="6" bugs="0"/>
@@ -86,68 +99,76 @@
       <ClassStats class="com.sun.btrace.org.jctools.maps.NonBlockingSetInt$NBSI" sourceFile="NonBlockingSetInt.java" interface="false" size="163" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.maps.NonBlockingSetInt$iter" sourceFile="NonBlockingSetInt.java" interface="false" size="31" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.sun.btrace.org.jctools.queues" total_bugs="0" total_types="55" total_size="1724">
-      <ClassStats class="com.sun.btrace.org.jctools.queues.BaseLinkedQueue" sourceFile="BaseLinkedQueue.java" interface="false" size="87" bugs="0"/>
+    <PackageStats package="com.sun.btrace.org.jctools.queues" total_bugs="0" total_types="60" total_size="1816">
+      <ClassStats class="com.sun.btrace.org.jctools.queues.BaseLinkedQueue" sourceFile="BaseLinkedQueue.java" interface="false" size="75" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.BaseLinkedQueueConsumerNodeRef" sourceFile="BaseLinkedQueue.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.BaseLinkedQueuePad0" sourceFile="BaseLinkedQueue.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.BaseLinkedQueuePad1" sourceFile="BaseLinkedQueue.java" interface="false" size="18" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.queues.BaseLinkedQueueProducerNodeRef" sourceFile="BaseLinkedQueue.java" interface="false" size="19" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.queues.BaseMpscLinkedArrayQueue" sourceFile="BaseMpscLinkedArrayQueue.java" interface="false" size="276" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.queues.BaseMpscLinkedArrayQueueColdProducerFields" sourceFile="BaseMpscLinkedArrayQueue.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.queues.BaseMpscLinkedArrayQueueConsumerFields" sourceFile="BaseMpscLinkedArrayQueue.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.BaseLinkedQueuePad2" sourceFile="BaseLinkedQueue.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.BaseLinkedQueueProducerNodeRef" sourceFile="BaseLinkedQueue.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.BaseMpscLinkedArrayQueue" sourceFile="BaseMpscLinkedArrayQueue.java" interface="false" size="235" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.BaseMpscLinkedArrayQueueColdProducerFields" sourceFile="BaseMpscLinkedArrayQueue.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.BaseMpscLinkedArrayQueueConsumerFields" sourceFile="BaseMpscLinkedArrayQueue.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.BaseMpscLinkedArrayQueuePad1" sourceFile="BaseMpscLinkedArrayQueue.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.BaseMpscLinkedArrayQueuePad2" sourceFile="BaseMpscLinkedArrayQueue.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.BaseMpscLinkedArrayQueuePad3" sourceFile="BaseMpscLinkedArrayQueue.java" interface="false" size="19" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.queues.BaseMpscLinkedArrayQueueProducerFields" sourceFile="BaseMpscLinkedArrayQueue.java" interface="false" size="4" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.queues.BaseSpscLinkedArrayQueue" sourceFile="BaseSpscLinkedArrayQueue.java" interface="false" size="115" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.BaseMpscLinkedArrayQueueProducerFields" sourceFile="BaseMpscLinkedArrayQueue.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.BaseSpscLinkedArrayQueue" sourceFile="BaseSpscLinkedArrayQueue.java" interface="false" size="133" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.BaseSpscLinkedArrayQueueConsumerColdFields" sourceFile="BaseSpscLinkedArrayQueue.java" interface="false" size="5" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.queues.BaseSpscLinkedArrayQueueConsumerField" sourceFile="BaseSpscLinkedArrayQueue.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.BaseSpscLinkedArrayQueueConsumerField" sourceFile="BaseSpscLinkedArrayQueue.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.BaseSpscLinkedArrayQueueL2Pad" sourceFile="BaseSpscLinkedArrayQueue.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.BaseSpscLinkedArrayQueuePrePad" sourceFile="BaseSpscLinkedArrayQueue.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.BaseSpscLinkedArrayQueueProducerColdFields" sourceFile="BaseSpscLinkedArrayQueue.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.queues.BaseSpscLinkedArrayQueueProducerFields" sourceFile="BaseSpscLinkedArrayQueue.java" interface="false" size="4" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.queues.CircularArrayOffsetCalculator" sourceFile="CircularArrayOffsetCalculator.java" interface="false" size="8" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.queues.ConcurrentCircularArrayQueue" sourceFile="ConcurrentCircularArrayQueue.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.BaseSpscLinkedArrayQueueProducerFields" sourceFile="BaseSpscLinkedArrayQueue.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.CircularArrayOffsetCalculator" sourceFile="CircularArrayOffsetCalculator.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.ConcurrentCircularArrayQueue" sourceFile="ConcurrentCircularArrayQueue.java" interface="false" size="30" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.ConcurrentCircularArrayQueueL0Pad" sourceFile="ConcurrentCircularArrayQueue.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.ConcurrentSequencedCircularArrayQueue" sourceFile="ConcurrentSequencedCircularArrayQueue.java" interface="false" size="29" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.IndexedQueueSizeUtil" sourceFile="IndexedQueueSizeUtil.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.IndexedQueueSizeUtil$IndexedQueue" sourceFile="IndexedQueueSizeUtil.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.LinkedArrayQueueUtil" sourceFile="LinkedArrayQueueUtil.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.LinkedQueueNode" sourceFile="LinkedQueueNode.java" interface="false" size="31" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.MessagePassingQueue" sourceFile="MessagePassingQueue.java" interface="true" size="18" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.MessagePassingQueue$Consumer" sourceFile="MessagePassingQueue.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.MessagePassingQueue$ExitCondition" sourceFile="MessagePassingQueue.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.MessagePassingQueue$Supplier" sourceFile="MessagePassingQueue.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.MessagePassingQueue$WaitStrategy" sourceFile="MessagePassingQueue.java" interface="true" size="2" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.queues.MpmcArrayQueue" sourceFile="MpmcArrayQueue.java" interface="false" size="180" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.queues.MpmcArrayQueueConsumerField" sourceFile="MpmcArrayQueue.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.MessagePassingQueueUtil" sourceFile="MessagePassingQueueUtil.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.MpmcArrayQueue" sourceFile="MpmcArrayQueue.java" interface="false" size="152" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.MpmcArrayQueueConsumerIndexField" sourceFile="MpmcArrayQueue.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.MpmcArrayQueueL1Pad" sourceFile="MpmcArrayQueue.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.MpmcArrayQueueL2Pad" sourceFile="MpmcArrayQueue.java" interface="false" size="19" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.queues.MpmcArrayQueueProducerField" sourceFile="MpmcArrayQueue.java" interface="false" size="17" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.queues.MpscArrayQueue" sourceFile="MpscArrayQueue.java" interface="false" size="186" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.queues.MpscArrayQueueConsumerField" sourceFile="MpscArrayQueue.java" interface="false" size="20" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.queues.MpscArrayQueueHeadLimitField" sourceFile="MpscArrayQueue.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.MpmcArrayQueueL3Pad" sourceFile="MpmcArrayQueue.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.MpmcArrayQueueProducerIndexField" sourceFile="MpmcArrayQueue.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.MpscArrayQueue" sourceFile="MpscArrayQueue.java" interface="false" size="171" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.MpscArrayQueueConsumerIndexField" sourceFile="MpscArrayQueue.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.MpscArrayQueueL1Pad" sourceFile="MpscArrayQueue.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.MpscArrayQueueL2Pad" sourceFile="MpscArrayQueue.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.MpscArrayQueueL3Pad" sourceFile="MpscArrayQueue.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.MpscArrayQueueMidPad" sourceFile="MpscArrayQueue.java" interface="false" size="19" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.queues.MpscArrayQueueTailField" sourceFile="MpscArrayQueue.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.MpscArrayQueueProducerIndexField" sourceFile="MpscArrayQueue.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.MpscArrayQueueProducerLimitField" sourceFile="MpscArrayQueue.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.MpscChunkedArrayQueue" sourceFile="MpscChunkedArrayQueue.java" interface="false" size="31" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.queues.MpscChunkedArrayQueueColdProducerFields" sourceFile="MpscChunkedArrayQueue.java" interface="false" size="10" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.queues.MpscCompoundQueue" sourceFile="MpscCompoundQueue.java" interface="false" size="142" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.queues.MpscCompoundQueueColdFields" sourceFile="MpscCompoundQueue.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.MpscChunkedArrayQueueColdProducerFields" sourceFile="MpscChunkedArrayQueue.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.MpscCompoundQueue" sourceFile="MpscCompoundQueue.java" interface="false" size="156" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.MpscCompoundQueueColdFields" sourceFile="MpscCompoundQueue.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.MpscCompoundQueueConsumerQueueIndex" sourceFile="MpscCompoundQueue.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.MpscCompoundQueueL0Pad" sourceFile="MpscCompoundQueue.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.MpscCompoundQueueMidPad" sourceFile="MpscCompoundQueue.java" interface="false" size="19" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.queues.MpscGrowableArrayQueue" sourceFile="MpscGrowableArrayQueue.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.MpscGrowableArrayQueue" sourceFile="MpscGrowableArrayQueue.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.MpscUnboundedArrayQueue" sourceFile="MpscUnboundedArrayQueue.java" interface="false" size="39" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.queues.PaddedCircularArrayOffsetCalculator" sourceFile="PaddedCircularArrayOffsetCalculator.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.queues.PaddedCircularArrayOffsetCalculator" sourceFile="PaddedCircularArrayOffsetCalculator.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.QueueFactory" sourceFile="QueueFactory.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.queues.QueueProgressIndicators" sourceFile="QueueProgressIndicators.java" interface="true" size="3" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.sun.btrace.org.jctools.util" total_bugs="0" total_types="4" total_size="79">
-      <ClassStats class="com.sun.btrace.org.jctools.util.JvmInfo" sourceFile="JvmInfo.java" interface="true" size="8" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.util.Pow2" sourceFile="Pow2.java" interface="false" size="18" bugs="0"/>
+    <PackageStats package="com.sun.btrace.org.jctools.util" total_bugs="0" total_types="7" total_size="107">
+      <ClassStats class="com.sun.btrace.org.jctools.util.InternalAPI" sourceFile="InternalAPI.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.util.PortableJvmInfo" sourceFile="PortableJvmInfo.java" interface="true" size="10" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.util.Pow2" sourceFile="Pow2.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.util.RangeUtil" sourceFile="RangeUtil.java" interface="false" size="23" bugs="0"/>
       <ClassStats class="com.sun.btrace.org.jctools.util.UnsafeAccess" sourceFile="UnsafeAccess.java" interface="false" size="26" bugs="0"/>
-      <ClassStats class="com.sun.btrace.org.jctools.util.UnsafeRefArrayAccess" sourceFile="UnsafeRefArrayAccess.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.util.UnsafeJvmInfo" sourceFile="UnsafeJvmInfo.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.sun.btrace.org.jctools.util.UnsafeRefArrayAccess" sourceFile="UnsafeRefArrayAccess.java" interface="false" size="26" bugs="0"/>
     </PackageStats>
     <PackageStats package="com.sun.btrace.org.objectweb.asm" total_bugs="0" total_types="23" total_size="5046">
       <ClassStats class="com.sun.btrace.org.objectweb.asm.AnnotationVisitor" sourceFile="&lt;Unknown&gt;" interface="false" size="22" bugs="0"/>
@@ -247,6 +268,9 @@
       <ClassStats class="junit.textui.ResultPrinter" sourceFile="ResultPrinter.java" interface="false" size="74" bugs="0"/>
       <ClassStats class="junit.textui.TestRunner" sourceFile="TestRunner.java" interface="false" size="99" bugs="0"/>
     </PackageStats>
+    <PackageStats package="org.apache.hadoop.mapred.split" total_bugs="0" total_types="1" total_size="234">
+      <ClassStats class="org.apache.hadoop.mapred.split.TezMapredSplitsGrouper" sourceFile="TezMapredSplitsGrouper.java" interface="false" size="234" bugs="0"/>
+    </PackageStats>
     <PackageStats package="org.apache.tools.ant.taskdefs.optional.junit" total_bugs="0" total_types="43" total_size="2540">
       <ClassStats class="org.apache.tools.ant.taskdefs.optional.junit.AggregateTransformer" sourceFile="AggregateTransformer.java" interface="false" size="134" bugs="0"/>
       <ClassStats class="org.apache.tools.ant.taskdefs.optional.junit.AggregateTransformer$Format" sourceFile="AggregateTransformer.java" interface="false" size="5" bugs="0"/>
@@ -318,23 +342,24 @@
       <ClassStats class="org.gradle.cli.ProjectPropertiesCommandLineConverter" sourceFile="ProjectPropertiesCommandLineConverter.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.gradle.cli.SystemPropertiesCommandLineConverter" sourceFile="SystemPropertiesCommandLineConverter.java" interface="false" size="9" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.gradle.wrapper" total_bugs="0" total_types="16" total_size="587">
-      <ClassStats class="org.gradle.wrapper.BootstrapMainStarter" sourceFile="BootstrapMainStarter.java" interface="false" size="16" bugs="0"/>
-      <ClassStats class="org.gradle.wrapper.Download" sourceFile="Download.java" interface="false" size="56" bugs="0"/>
+    <PackageStats package="org.gradle.wrapper" total_bugs="0" total_types="17" total_size="620">
+      <ClassStats class="org.gradle.wrapper.BootstrapMainStarter" sourceFile="BootstrapMainStarter.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.Download" sourceFile="Download.java" interface="false" size="93" bugs="0"/>
       <ClassStats class="org.gradle.wrapper.Download$1" sourceFile="Download.java" interface="false" size="1" bugs="0"/>
-      <ClassStats class="org.gradle.wrapper.Download$SystemPropertiesProxyAuthenticator" sourceFile="Download.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="org.gradle.wrapper.ExclusiveFileAccessManager" sourceFile="ExclusiveFileAccessManager.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.Download$ProxyAuthenticator" sourceFile="Download.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.DownloadProgressListener" sourceFile="DownloadProgressListener.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.ExclusiveFileAccessManager" sourceFile="ExclusiveFileAccessManager.java" interface="false" size="44" bugs="0"/>
       <ClassStats class="org.gradle.wrapper.GradleUserHomeLookup" sourceFile="GradleUserHomeLookup.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="org.gradle.wrapper.GradleWrapperMain" sourceFile="GradleWrapperMain.java" interface="false" size="61" bugs="0"/>
       <ClassStats class="org.gradle.wrapper.IDownload" sourceFile="IDownload.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="org.gradle.wrapper.Install" sourceFile="Install.java" interface="false" size="128" bugs="0"/>
-      <ClassStats class="org.gradle.wrapper.Install$1" sourceFile="Install.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.Install$1" sourceFile="Install.java" interface="false" size="34" bugs="0"/>
       <ClassStats class="org.gradle.wrapper.Logger" sourceFile="Logger.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="org.gradle.wrapper.PathAssembler" sourceFile="PathAssembler.java" interface="false" size="45" bugs="0"/>
       <ClassStats class="org.gradle.wrapper.PathAssembler$LocalDistribution" sourceFile="PathAssembler.java" interface="false" size="13" bugs="0"/>
-      <ClassStats class="org.gradle.wrapper.SystemPropertiesHandler" sourceFile="SystemPropertiesHandler.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.SystemPropertiesHandler" sourceFile="SystemPropertiesHandler.java" interface="false" size="23" bugs="0"/>
       <ClassStats class="org.gradle.wrapper.WrapperConfiguration" sourceFile="WrapperConfiguration.java" interface="false" size="43" bugs="0"/>
-      <ClassStats class="org.gradle.wrapper.WrapperExecutor" sourceFile="WrapperExecutor.java" interface="false" size="83" bugs="0"/>
+      <ClassStats class="org.gradle.wrapper.WrapperExecutor" sourceFile="WrapperExecutor.java" interface="false" size="71" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.hamcrest" total_bugs="0" total_types="8" total_size="168">
       <ClassStats class="org.hamcrest.BaseDescription" sourceFile="BaseDescription.java" interface="false" size="78" bugs="0"/>
@@ -747,48 +772,47 @@
       <ClassStats class="org.objectweb.asm.xml.SAXFieldAdapter" sourceFile="&lt;Unknown&gt;" interface="false" size="14" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="1233" invocations="4807" avgMicrosecondsPerInvocation="256" maxMicrosecondsPerInvocation="106321" standardDeviationMicrosecondsPerInvocation="2324"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="1135" invocations="4735" avgMicrosecondsPerInvocation="239" maxMicrosecondsPerInvocation="46631" standardDeviationMicrosecondsPerInvocation="1101"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="1120" invocations="4818" avgMicrosecondsPerInvocation="232" maxMicrosecondsPerInvocation="47473" standardDeviationMicrosecondsPerInvocation="1361"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="1017" invocations="4954" avgMicrosecondsPerInvocation="205" maxMicrosecondsPerInvocation="38631" standardDeviationMicrosecondsPerInvocation="1093"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="724" invocations="4925" avgMicrosecondsPerInvocation="147" maxMicrosecondsPerInvocation="38331" standardDeviationMicrosecondsPerInvocation="726"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="498" invocations="4179" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="17351" standardDeviationMicrosecondsPerInvocation="450"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="492" invocations="6081" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="19210" standardDeviationMicrosecondsPerInvocation="340"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="491" invocations="4818" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="11890" standardDeviationMicrosecondsPerInvocation="244"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="473" invocations="1837" avgMicrosecondsPerInvocation="257" maxMicrosecondsPerInvocation="21369" standardDeviationMicrosecondsPerInvocation="901"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="387" invocations="907" avgMicrosecondsPerInvocation="427" maxMicrosecondsPerInvocation="23688" standardDeviationMicrosecondsPerInvocation="1117"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="385" invocations="907" avgMicrosecondsPerInvocation="425" maxMicrosecondsPerInvocation="20860" standardDeviationMicrosecondsPerInvocation="1107"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="264" invocations="4818" avgMicrosecondsPerInvocation="55" maxMicrosecondsPerInvocation="10733" standardDeviationMicrosecondsPerInvocation="253"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="234" invocations="612" avgMicrosecondsPerInvocation="383" maxMicrosecondsPerInvocation="32610" standardDeviationMicrosecondsPerInvocation="2095"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="231" invocations="1841" avgMicrosecondsPerInvocation="125" maxMicrosecondsPerInvocation="2260" standardDeviationMicrosecondsPerInvocation="131"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="216" invocations="612" avgMicrosecondsPerInvocation="353" maxMicrosecondsPerInvocation="18247" standardDeviationMicrosecondsPerInvocation="1090"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="176" invocations="612" avgMicrosecondsPerInvocation="287" maxMicrosecondsPerInvocation="8642" standardDeviationMicrosecondsPerInvocation="747"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="166" invocations="612" avgMicrosecondsPerInvocation="272" maxMicrosecondsPerInvocation="6732" standardDeviationMicrosecondsPerInvocation="523"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="156" invocations="612" avgMicrosecondsPerInvocation="255" maxMicrosecondsPerInvocation="6892" standardDeviationMicrosecondsPerInvocation="603"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="153" invocations="4735" avgMicrosecondsPerInvocation="32" maxMicrosecondsPerInvocation="9275" standardDeviationMicrosecondsPerInvocation="154"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="151" invocations="5006" avgMicrosecondsPerInvocation="30" maxMicrosecondsPerInvocation="28283" standardDeviationMicrosecondsPerInvocation="412"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="144" invocations="4594" avgMicrosecondsPerInvocation="31" maxMicrosecondsPerInvocation="7205" standardDeviationMicrosecondsPerInvocation="148"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="130" invocations="5006" avgMicrosecondsPerInvocation="26" maxMicrosecondsPerInvocation="6429" standardDeviationMicrosecondsPerInvocation="184"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="130" invocations="104888" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="2964" standardDeviationMicrosecondsPerInvocation="11"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="118" invocations="612" avgMicrosecondsPerInvocation="193" maxMicrosecondsPerInvocation="20203" standardDeviationMicrosecondsPerInvocation="1128"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="116" invocations="612" avgMicrosecondsPerInvocation="190" maxMicrosecondsPerInvocation="4341" standardDeviationMicrosecondsPerInvocation="434"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="107" invocations="907" avgMicrosecondsPerInvocation="118" maxMicrosecondsPerInvocation="3172" standardDeviationMicrosecondsPerInvocation="212"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="107" invocations="907" avgMicrosecondsPerInvocation="118" maxMicrosecondsPerInvocation="6667" standardDeviationMicrosecondsPerInvocation="383"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="102" invocations="612" avgMicrosecondsPerInvocation="167" maxMicrosecondsPerInvocation="7830" standardDeviationMicrosecondsPerInvocation="455"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="101" invocations="907" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="6236" standardDeviationMicrosecondsPerInvocation="330"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="101" invocations="612" avgMicrosecondsPerInvocation="165" maxMicrosecondsPerInvocation="3703" standardDeviationMicrosecondsPerInvocation="351"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="99" invocations="1729" avgMicrosecondsPerInvocation="57" maxMicrosecondsPerInvocation="10969" standardDeviationMicrosecondsPerInvocation="342"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="98" invocations="612" avgMicrosecondsPerInvocation="160" maxMicrosecondsPerInvocation="4695" standardDeviationMicrosecondsPerInvocation="388"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="97" invocations="612" avgMicrosecondsPerInvocation="160" maxMicrosecondsPerInvocation="3987" standardDeviationMicrosecondsPerInvocation="357"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="95" invocations="612" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="4296" standardDeviationMicrosecondsPerInvocation="403"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="94" invocations="1033" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="12443" standardDeviationMicrosecondsPerInvocation="409"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="93" invocations="612" avgMicrosecondsPerInvocation="152" maxMicrosecondsPerInvocation="7326" standardDeviationMicrosecondsPerInvocation="424"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="91" invocations="612" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="8344" standardDeviationMicrosecondsPerInvocation="430"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="89" invocations="612" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="2994" standardDeviationMicrosecondsPerInvocation="298"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="87" invocations="612" avgMicrosecondsPerInvocation="143" maxMicrosecondsPerInvocation="3409" standardDeviationMicrosecondsPerInvocation="335"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="87" invocations="651" avgMicrosecondsPerInvocation="134" maxMicrosecondsPerInvocation="4303" standardDeviationMicrosecondsPerInvocation="342"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="87" invocations="612" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="4410" standardDeviationMicrosecondsPerInvocation="315"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="86" invocations="612" avgMicrosecondsPerInvocation="141" maxMicrosecondsPerInvocation="3639" standardDeviationMicrosecondsPerInvocation="319"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="1689" invocations="4849" avgMicrosecondsPerInvocation="348" maxMicrosecondsPerInvocation="203097" standardDeviationMicrosecondsPerInvocation="4188"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="1476" invocations="4860" avgMicrosecondsPerInvocation="303" maxMicrosecondsPerInvocation="81573" standardDeviationMicrosecondsPerInvocation="1881"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="1426" invocations="4777" avgMicrosecondsPerInvocation="298" maxMicrosecondsPerInvocation="50177" standardDeviationMicrosecondsPerInvocation="1332"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="1253" invocations="4997" avgMicrosecondsPerInvocation="250" maxMicrosecondsPerInvocation="101689" standardDeviationMicrosecondsPerInvocation="1925"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="972" invocations="4968" avgMicrosecondsPerInvocation="195" maxMicrosecondsPerInvocation="49747" standardDeviationMicrosecondsPerInvocation="1151"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="712" invocations="4223" avgMicrosecondsPerInvocation="168" maxMicrosecondsPerInvocation="33411" standardDeviationMicrosecondsPerInvocation="954"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="679" invocations="6150" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="23092" standardDeviationMicrosecondsPerInvocation="696"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="618" invocations="4860" avgMicrosecondsPerInvocation="127" maxMicrosecondsPerInvocation="15680" standardDeviationMicrosecondsPerInvocation="395"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="556" invocations="1878" avgMicrosecondsPerInvocation="296" maxMicrosecondsPerInvocation="34495" standardDeviationMicrosecondsPerInvocation="1213"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="435" invocations="918" avgMicrosecondsPerInvocation="474" maxMicrosecondsPerInvocation="27250" standardDeviationMicrosecondsPerInvocation="1572"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="382" invocations="918" avgMicrosecondsPerInvocation="416" maxMicrosecondsPerInvocation="26087" standardDeviationMicrosecondsPerInvocation="1215"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="356" invocations="4860" avgMicrosecondsPerInvocation="73" maxMicrosecondsPerInvocation="24896" standardDeviationMicrosecondsPerInvocation="559"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="336" invocations="1882" avgMicrosecondsPerInvocation="178" maxMicrosecondsPerInvocation="16051" standardDeviationMicrosecondsPerInvocation="471"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="291" invocations="622" avgMicrosecondsPerInvocation="469" maxMicrosecondsPerInvocation="41442" standardDeviationMicrosecondsPerInvocation="2482"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="272" invocations="622" avgMicrosecondsPerInvocation="437" maxMicrosecondsPerInvocation="15717" standardDeviationMicrosecondsPerInvocation="1164"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="253" invocations="5049" avgMicrosecondsPerInvocation="50" maxMicrosecondsPerInvocation="76278" standardDeviationMicrosecondsPerInvocation="1124"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="231" invocations="622" avgMicrosecondsPerInvocation="372" maxMicrosecondsPerInvocation="13474" standardDeviationMicrosecondsPerInvocation="885"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="212" invocations="622" avgMicrosecondsPerInvocation="341" maxMicrosecondsPerInvocation="8860" standardDeviationMicrosecondsPerInvocation="865"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="208" invocations="4777" avgMicrosecondsPerInvocation="43" maxMicrosecondsPerInvocation="7860" standardDeviationMicrosecondsPerInvocation="211"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="205" invocations="5049" avgMicrosecondsPerInvocation="40" maxMicrosecondsPerInvocation="46347" standardDeviationMicrosecondsPerInvocation="664"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="199" invocations="622" avgMicrosecondsPerInvocation="321" maxMicrosecondsPerInvocation="11839" standardDeviationMicrosecondsPerInvocation="932"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="192" invocations="622" avgMicrosecondsPerInvocation="309" maxMicrosecondsPerInvocation="74550" standardDeviationMicrosecondsPerInvocation="3013"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="191" invocations="4636" avgMicrosecondsPerInvocation="41" maxMicrosecondsPerInvocation="12854" standardDeviationMicrosecondsPerInvocation="307"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="181" invocations="1753" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="70845" standardDeviationMicrosecondsPerInvocation="1730"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="166" invocations="109253" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="5904" standardDeviationMicrosecondsPerInvocation="26"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="158" invocations="622" avgMicrosecondsPerInvocation="254" maxMicrosecondsPerInvocation="35406" standardDeviationMicrosecondsPerInvocation="1700"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="143" invocations="622" avgMicrosecondsPerInvocation="229" maxMicrosecondsPerInvocation="11864" standardDeviationMicrosecondsPerInvocation="786"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="142" invocations="622" avgMicrosecondsPerInvocation="228" maxMicrosecondsPerInvocation="9123" standardDeviationMicrosecondsPerInvocation="614"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="141" invocations="622" avgMicrosecondsPerInvocation="228" maxMicrosecondsPerInvocation="5978" standardDeviationMicrosecondsPerInvocation="559"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="136" invocations="622" avgMicrosecondsPerInvocation="219" maxMicrosecondsPerInvocation="7133" standardDeviationMicrosecondsPerInvocation="644"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.URLProblems" totalMilliseconds="136" invocations="622" avgMicrosecondsPerInvocation="218" maxMicrosecondsPerInvocation="73876" standardDeviationMicrosecondsPerInvocation="2968"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="133" invocations="622" avgMicrosecondsPerInvocation="215" maxMicrosecondsPerInvocation="4373" standardDeviationMicrosecondsPerInvocation="493"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="133" invocations="622" avgMicrosecondsPerInvocation="214" maxMicrosecondsPerInvocation="8097" standardDeviationMicrosecondsPerInvocation="615"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="129" invocations="622" avgMicrosecondsPerInvocation="208" maxMicrosecondsPerInvocation="11837" standardDeviationMicrosecondsPerInvocation="679"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="129" invocations="622" avgMicrosecondsPerInvocation="208" maxMicrosecondsPerInvocation="9986" standardDeviationMicrosecondsPerInvocation="676"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="127" invocations="622" avgMicrosecondsPerInvocation="204" maxMicrosecondsPerInvocation="11015" standardDeviationMicrosecondsPerInvocation="801"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="126" invocations="622" avgMicrosecondsPerInvocation="203" maxMicrosecondsPerInvocation="6760" standardDeviationMicrosecondsPerInvocation="517"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="123" invocations="622" avgMicrosecondsPerInvocation="198" maxMicrosecondsPerInvocation="14261" standardDeviationMicrosecondsPerInvocation="776"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="121" invocations="622" avgMicrosecondsPerInvocation="195" maxMicrosecondsPerInvocation="13444" standardDeviationMicrosecondsPerInvocation="693"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="115" invocations="918" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="4955" standardDeviationMicrosecondsPerInvocation="311"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="115" invocations="622" avgMicrosecondsPerInvocation="185" maxMicrosecondsPerInvocation="5716" standardDeviationMicrosecondsPerInvocation="461"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

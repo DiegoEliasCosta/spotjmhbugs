@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1511104761000" analysisTimestamp="1511104763026" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534851065000" analysisTimestamp="1534852335881" release="">
   <Project projectName="">
     <Jar>tmp/pgjdbc</Jar>
   </Project>
@@ -1569,7 +1569,63 @@
     <MissingClass>waffle.windows.auth.impl.WindowsCredentialsHandleImpl</MissingClass>
     <MissingClass>waffle.windows.auth.impl.WindowsSecurityContextImpl</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Sun, 19 Nov 2017 16:19:21 +0100" total_classes="1964" referenced_classes="2565" total_bugs="184" total_size="138092" num_packages="134" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="139.60" clock_seconds="46.02" peak_mbytes="1533.08" alloc_mbytes="3641.00" gc_seconds="1.58" priority_2="184">
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 13:31:05 +0200" total_classes="2078" referenced_classes="2721" total_bugs="184" total_size="141781" num_packages="149" java_version="9.0.4" vm_version="9.0.4+11" cpu_seconds="171.89" clock_seconds="64.51" peak_mbytes="998.47" alloc_mbytes="4096.00" gc_seconds="2.00" priority_2="184">
+    <PackageStats package="com.ongres.scram.client" total_bugs="0" total_types="10" total_size="259">
+      <ClassStats class="com.ongres.scram.client.ScramClient" sourceFile="ScramClient.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="com.ongres.scram.client.ScramClient$1" sourceFile="ScramClient.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="com.ongres.scram.client.ScramClient$Builder" sourceFile="ScramClient.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="com.ongres.scram.client.ScramClient$ChannelBinding" sourceFile="ScramClient.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="com.ongres.scram.client.ScramClient$PreBuilder1" sourceFile="ScramClient.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.ongres.scram.client.ScramClient$PreBuilder2" sourceFile="ScramClient.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="com.ongres.scram.client.ScramSession" sourceFile="ScramSession.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="com.ongres.scram.client.ScramSession$1" sourceFile="ScramSession.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="com.ongres.scram.client.ScramSession$ClientFinalProcessor" sourceFile="ScramSession.java" interface="false" size="66" bugs="0"/>
+      <ClassStats class="com.ongres.scram.client.ScramSession$ServerFirstProcessor" sourceFile="ScramSession.java" interface="false" size="25" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.ongres.scram.common" total_bugs="0" total_types="6" total_size="241">
+      <ClassStats class="com.ongres.scram.common.ScramAttributeValue" sourceFile="ScramAttributeValue.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.ScramAttributes" sourceFile="ScramAttributes.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.ScramFunctions" sourceFile="ScramFunctions.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.ScramMechanism" sourceFile="ScramMechanism.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.ScramMechanisms" sourceFile="ScramMechanisms.java" interface="false" size="80" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.ScramStringFormatting" sourceFile="ScramStringFormatting.java" interface="false" size="64" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.ongres.scram.common.exception" total_bugs="0" total_types="4" total_size="35">
+      <ClassStats class="com.ongres.scram.common.exception.ScramException" sourceFile="ScramException.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.exception.ScramInvalidServerSignatureException" sourceFile="ScramInvalidServerSignatureException.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.exception.ScramParseException" sourceFile="ScramParseException.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.exception.ScramServerErrorException" sourceFile="ScramServerErrorException.java" interface="false" size="14" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.ongres.scram.common.gssapi" total_bugs="0" total_types="4" total_size="109">
+      <ClassStats class="com.ongres.scram.common.gssapi.Gs2AttributeValue" sourceFile="Gs2AttributeValue.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.gssapi.Gs2Attributes" sourceFile="Gs2Attributes.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.gssapi.Gs2CbindFlag" sourceFile="Gs2CbindFlag.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.gssapi.Gs2Header" sourceFile="Gs2Header.java" interface="false" size="40" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.ongres.scram.common.message" total_bugs="0" total_types="5" total_size="231">
+      <ClassStats class="com.ongres.scram.common.message.ClientFinalMessage" sourceFile="ClientFinalMessage.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.message.ClientFirstMessage" sourceFile="ClientFirstMessage.java" interface="false" size="57" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.message.ServerFinalMessage" sourceFile="ServerFinalMessage.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.message.ServerFinalMessage$Error" sourceFile="ServerFinalMessage.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.message.ServerFirstMessage" sourceFile="ServerFirstMessage.java" interface="false" size="52" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.ongres.scram.common.stringprep" total_bugs="0" total_types="3" total_size="24">
+      <ClassStats class="com.ongres.scram.common.stringprep.StringPreparation" sourceFile="StringPreparation.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.stringprep.StringPreparations" sourceFile="StringPreparations.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.stringprep.StringPreparations$1" sourceFile="StringPreparations.java" interface="false" size="5" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.ongres.scram.common.util" total_bugs="0" total_types="10" total_size="139">
+      <ClassStats class="com.ongres.scram.common.util.AbstractCharAttributeValue" sourceFile="AbstractCharAttributeValue.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.util.AbstractStringWritable" sourceFile="AbstractStringWritable.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.util.CharAttribute" sourceFile="CharAttribute.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.util.CharAttributeValue" sourceFile="CharAttributeValue.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.util.CryptoUtil" sourceFile="CryptoUtil.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.util.CryptoUtil$SecureRandomHolder" sourceFile="CryptoUtil.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.util.Preconditions" sourceFile="Preconditions.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.util.StringWritable" sourceFile="StringWritable.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.util.StringWritableCsv" sourceFile="StringWritableCsv.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="com.ongres.scram.common.util.UsAsciiUtils" sourceFile="UsAsciiUtils.java" interface="false" size="14" bugs="0"/>
+    </PackageStats>
     <PackageStats package="joptsimple" total_bugs="0" total_types="33" total_size="1051">
       <ClassStats class="joptsimple.AbstractOptionSpec" sourceFile="AbstractOptionSpec.java" interface="false" size="65" bugs="0"/>
       <ClassStats class="joptsimple.AlternativeLongOptionSpec" sourceFile="AlternativeLongOptionSpec.java" interface="false" size="10" bugs="0"/>
@@ -3091,13 +3147,13 @@
       <ClassStats class="org.openjdk.jmh.util.lines.TestLineReader" sourceFile="TestLineReader.java" interface="false" size="101" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.util.lines.TestLineWriter" sourceFile="TestLineWriter.java" interface="false" size="80" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql" total_bugs="0" total_types="9" total_size="543">
-      <ClassStats class="org.postgresql.Driver" sourceFile="Driver.java" interface="false" size="249" bugs="0"/>
+    <PackageStats package="org.postgresql" total_bugs="0" total_types="9" total_size="545">
+      <ClassStats class="org.postgresql.Driver" sourceFile="Driver.java" interface="false" size="248" bugs="0"/>
       <ClassStats class="org.postgresql.Driver$1" sourceFile="Driver.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.postgresql.Driver$ConnectThread" sourceFile="Driver.java" interface="false" size="52" bugs="0"/>
-      <ClassStats class="org.postgresql.PGConnection" sourceFile="PGConnection.java" interface="true" size="19" bugs="0"/>
+      <ClassStats class="org.postgresql.PGConnection" sourceFile="PGConnection.java" interface="true" size="20" bugs="0"/>
       <ClassStats class="org.postgresql.PGNotification" sourceFile="PGNotification.java" interface="true" size="4" bugs="0"/>
-      <ClassStats class="org.postgresql.PGProperty" sourceFile="PGProperty.java" interface="false" size="195" bugs="0"/>
+      <ClassStats class="org.postgresql.PGProperty" sourceFile="PGProperty.java" interface="false" size="197" bugs="0"/>
       <ClassStats class="org.postgresql.PGRefCursorResultSet" sourceFile="PGRefCursorResultSet.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="org.postgresql.PGResultSetMetaData" sourceFile="PGResultSetMetaData.java" interface="true" size="5" bugs="0"/>
       <ClassStats class="org.postgresql.PGStatement" sourceFile="PGStatement.java" interface="true" size="10" bugs="0"/>
@@ -3247,7 +3303,7 @@
       <ClassStats class="org.postgresql.copy.PGCopyInputStream" sourceFile="PGCopyInputStream.java" interface="false" size="84" bugs="0"/>
       <ClassStats class="org.postgresql.copy.PGCopyOutputStream" sourceFile="PGCopyOutputStream.java" interface="false" size="95" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.core" total_bugs="0" total_types="50" total_size="2439">
+    <PackageStats package="org.postgresql.core" total_bugs="0" total_types="53" total_size="2595">
       <ClassStats class="org.postgresql.core.BaseConnection" sourceFile="BaseConnection.java" interface="true" size="26" bugs="0"/>
       <ClassStats class="org.postgresql.core.BaseQueryKey" sourceFile="BaseQueryKey.java" interface="false" size="28" bugs="0"/>
       <ClassStats class="org.postgresql.core.BaseStatement" sourceFile="BaseStatement.java" interface="true" size="6" bugs="0"/>
@@ -3259,23 +3315,26 @@
       <ClassStats class="org.postgresql.core.EncodingPredictor" sourceFile="EncodingPredictor.java" interface="false" size="51" bugs="0"/>
       <ClassStats class="org.postgresql.core.EncodingPredictor$DecodeResult" sourceFile="EncodingPredictor.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.postgresql.core.EncodingPredictor$Translation" sourceFile="EncodingPredictor.java" interface="false" size="14" bugs="0"/>
-      <ClassStats class="org.postgresql.core.Field" sourceFile="Field.java" interface="false" size="71" bugs="0"/>
+      <ClassStats class="org.postgresql.core.Field" sourceFile="Field.java" interface="false" size="72" bugs="0"/>
+      <ClassStats class="org.postgresql.core.JavaVersion" sourceFile="JavaVersion.java" interface="false" size="27" bugs="0"/>
       <ClassStats class="org.postgresql.core.JdbcCallParseInfo" sourceFile="JdbcCallParseInfo.java" interface="false" size="16" bugs="0"/>
-      <ClassStats class="org.postgresql.core.NativeQuery" sourceFile="NativeQuery.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="org.postgresql.core.NativeQuery" sourceFile="NativeQuery.java" interface="false" size="62" bugs="0"/>
       <ClassStats class="org.postgresql.core.Notification" sourceFile="Notification.java" interface="false" size="19" bugs="0"/>
-      <ClassStats class="org.postgresql.core.Oid" sourceFile="Oid.java" interface="false" size="82" bugs="0"/>
+      <ClassStats class="org.postgresql.core.Oid" sourceFile="Oid.java" interface="false" size="92" bugs="0"/>
+      <ClassStats class="org.postgresql.core.OidToStringTest" sourceFile="OidToStringTest.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.postgresql.core.OidValueOfTest" sourceFile="OidValueOfTest.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="org.postgresql.core.PGBindException" sourceFile="PGBindException.java" interface="false" size="8" bugs="0"/>
-      <ClassStats class="org.postgresql.core.PGStream" sourceFile="PGStream.java" interface="false" size="204" bugs="0"/>
+      <ClassStats class="org.postgresql.core.PGStream" sourceFile="PGStream.java" interface="false" size="211" bugs="0"/>
       <ClassStats class="org.postgresql.core.PGStream$1" sourceFile="PGStream.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.postgresql.core.ParameterList" sourceFile="ParameterList.java" interface="true" size="20" bugs="0"/>
-      <ClassStats class="org.postgresql.core.Parser" sourceFile="Parser.java" interface="false" size="531" bugs="0"/>
+      <ClassStats class="org.postgresql.core.Parser" sourceFile="Parser.java" interface="false" size="572" bugs="0"/>
       <ClassStats class="org.postgresql.core.Parser$1" sourceFile="Parser.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.postgresql.core.Parser$SqlParseState" sourceFile="Parser.java" interface="false" size="54" bugs="0"/>
-      <ClassStats class="org.postgresql.core.ParserTest" sourceFile="ParserTest.java" interface="false" size="100" bugs="0"/>
+      <ClassStats class="org.postgresql.core.ParserTest" sourceFile="ParserTest.java" interface="false" size="133" bugs="0"/>
       <ClassStats class="org.postgresql.core.Provider" sourceFile="Provider.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="org.postgresql.core.Query" sourceFile="Query.java" interface="true" size="11" bugs="0"/>
-      <ClassStats class="org.postgresql.core.QueryExecutor" sourceFile="QueryExecutor.java" interface="true" size="59" bugs="0"/>
-      <ClassStats class="org.postgresql.core.QueryExecutorBase" sourceFile="QueryExecutorBase.java" interface="false" size="204" bugs="0"/>
+      <ClassStats class="org.postgresql.core.QueryExecutor" sourceFile="QueryExecutor.java" interface="true" size="61" bugs="0"/>
+      <ClassStats class="org.postgresql.core.QueryExecutorBase" sourceFile="QueryExecutorBase.java" interface="false" size="209" bugs="0"/>
       <ClassStats class="org.postgresql.core.QueryExecutorBase$1" sourceFile="QueryExecutorBase.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.postgresql.core.QueryWithReturningColumnsKey" sourceFile="QueryWithReturningColumnsKey.java" interface="false" size="24" bugs="0"/>
       <ClassStats class="org.postgresql.core.ReplicationProtocol" sourceFile="ReplicationProtocol.java" interface="true" size="3" bugs="0"/>
@@ -3290,7 +3349,7 @@
       <ClassStats class="org.postgresql.core.SetupQueryRunner$1" sourceFile="SetupQueryRunner.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.postgresql.core.SetupQueryRunner$SimpleResultHandler" sourceFile="SetupQueryRunner.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="org.postgresql.core.SocketFactoryFactory" sourceFile="SocketFactoryFactory.java" interface="false" size="12" bugs="0"/>
-      <ClassStats class="org.postgresql.core.SqlCommand" sourceFile="SqlCommand.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="org.postgresql.core.SqlCommand" sourceFile="SqlCommand.java" interface="false" size="34" bugs="0"/>
       <ClassStats class="org.postgresql.core.SqlCommandType" sourceFile="SqlCommandType.java" interface="false" size="21" bugs="0"/>
       <ClassStats class="org.postgresql.core.TransactionState" sourceFile="TransactionState.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="org.postgresql.core.TypeInfo" sourceFile="TypeInfo.java" interface="true" size="22" bugs="0"/>
@@ -3299,11 +3358,11 @@
       <ClassStats class="org.postgresql.core.Version" sourceFile="Version.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="org.postgresql.core.VisibleBufferedInputStream" sourceFile="VisibleBufferedInputStream.java" interface="false" size="113" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.core.v3" total_bugs="0" total_types="24" total_size="2506">
-      <ClassStats class="org.postgresql.core.v3.BatchedQuery" sourceFile="BatchedQuery.java" interface="false" size="112" bugs="0"/>
+    <PackageStats package="org.postgresql.core.v3" total_bugs="0" total_types="24" total_size="2551">
+      <ClassStats class="org.postgresql.core.v3.BatchedQuery" sourceFile="BatchedQuery.java" interface="false" size="113" bugs="0"/>
       <ClassStats class="org.postgresql.core.v3.CompositeParameterList" sourceFile="CompositeParameterList.java" interface="false" size="104" bugs="0"/>
       <ClassStats class="org.postgresql.core.v3.CompositeQuery" sourceFile="CompositeQuery.java" interface="false" size="49" bugs="0"/>
-      <ClassStats class="org.postgresql.core.v3.ConnectionFactoryImpl" sourceFile="ConnectionFactoryImpl.java" interface="false" size="298" bugs="0"/>
+      <ClassStats class="org.postgresql.core.v3.ConnectionFactoryImpl" sourceFile="ConnectionFactoryImpl.java" interface="false" size="320" bugs="0"/>
       <ClassStats class="org.postgresql.core.v3.ConnectionFactoryImpl$1" sourceFile="ConnectionFactoryImpl.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.postgresql.core.v3.ConnectionFactoryImpl$UnsupportedProtocolException" sourceFile="ConnectionFactoryImpl.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.postgresql.core.v3.CopyDualImpl" sourceFile="CopyDualImpl.java" interface="false" size="26" bugs="0"/>
@@ -3313,20 +3372,20 @@
       <ClassStats class="org.postgresql.core.v3.DescribeRequest" sourceFile="DescribeRequest.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="org.postgresql.core.v3.ExecuteRequest" sourceFile="ExecuteRequest.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="org.postgresql.core.v3.Portal" sourceFile="Portal.java" interface="false" size="28" bugs="0"/>
-      <ClassStats class="org.postgresql.core.v3.QueryExecutorImpl" sourceFile="QueryExecutorImpl.java" interface="false" size="1298" bugs="0"/>
+      <ClassStats class="org.postgresql.core.v3.QueryExecutorImpl" sourceFile="QueryExecutorImpl.java" interface="false" size="1297" bugs="0"/>
       <ClassStats class="org.postgresql.core.v3.QueryExecutorImpl$1" sourceFile="QueryExecutorImpl.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="org.postgresql.core.v3.QueryExecutorImpl$2" sourceFile="QueryExecutorImpl.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="org.postgresql.core.v3.QueryExecutorImpl$3" sourceFile="QueryExecutorImpl.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.postgresql.core.v3.QueryExecutorImpl$4" sourceFile="QueryExecutorImpl.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.postgresql.core.v3.SimpleParameterList" sourceFile="SimpleParameterList.java" interface="false" size="253" bugs="0"/>
-      <ClassStats class="org.postgresql.core.v3.SimpleQuery" sourceFile="SimpleQuery.java" interface="false" size="163" bugs="0"/>
+      <ClassStats class="org.postgresql.core.v3.SimpleQuery" sourceFile="SimpleQuery.java" interface="false" size="186" bugs="0"/>
       <ClassStats class="org.postgresql.core.v3.TypeTransferModeRegistry" sourceFile="TypeTransferModeRegistry.java" interface="true" size="3" bugs="0"/>
       <ClassStats class="org.postgresql.core.v3.V3ParameterList" sourceFile="V3ParameterList.java" interface="true" size="7" bugs="0"/>
       <ClassStats class="org.postgresql.core.v3.V3ParameterListTests" sourceFile="V3ParameterListTests.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="org.postgresql.core.v3.V3ParameterListTests$1" sourceFile="V3ParameterListTests.java" interface="false" size="8" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.core.v3.replication" total_bugs="0" total_types="3" total_size="213">
-      <ClassStats class="org.postgresql.core.v3.replication.V3PGReplicationStream" sourceFile="V3PGReplicationStream.java" interface="false" size="146" bugs="0"/>
+    <PackageStats package="org.postgresql.core.v3.replication" total_bugs="0" total_types="3" total_size="215">
+      <ClassStats class="org.postgresql.core.v3.replication.V3PGReplicationStream" sourceFile="V3PGReplicationStream.java" interface="false" size="148" bugs="0"/>
       <ClassStats class="org.postgresql.core.v3.replication.V3PGReplicationStream$1" sourceFile="V3PGReplicationStream.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.postgresql.core.v3.replication.V3ReplicationProtocol" sourceFile="V3ReplicationProtocol.java" interface="false" size="63" bugs="0"/>
     </PackageStats>
@@ -3339,8 +3398,8 @@
       <ClassStats class="org.postgresql.ds.PGPoolingDataSource$1" sourceFile="PGPoolingDataSource.java" interface="false" size="24" bugs="0"/>
       <ClassStats class="org.postgresql.ds.PGSimpleDataSource" sourceFile="PGSimpleDataSource.java" interface="false" size="17" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.ds.common" total_bugs="0" total_types="3" total_size="505">
-      <ClassStats class="org.postgresql.ds.common.BaseDataSource" sourceFile="BaseDataSource.java" interface="false" size="453" bugs="0"/>
+    <PackageStats package="org.postgresql.ds.common" total_bugs="0" total_types="3" total_size="510">
+      <ClassStats class="org.postgresql.ds.common.BaseDataSource" sourceFile="BaseDataSource.java" interface="false" size="458" bugs="0"/>
       <ClassStats class="org.postgresql.ds.common.BaseDataSource$1" sourceFile="BaseDataSource.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.postgresql.ds.common.PGObjectFactory" sourceFile="PGObjectFactory.java" interface="false" size="48" bugs="0"/>
     </PackageStats>
@@ -3362,23 +3421,25 @@
       <ClassStats class="org.postgresql.gss.GssAction" sourceFile="GssAction.java" interface="false" size="78" bugs="0"/>
       <ClassStats class="org.postgresql.gss.MakeGSS" sourceFile="MakeGSS.java" interface="false" size="36" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.hostchooser" total_bugs="0" total_types="14" total_size="185">
-      <ClassStats class="org.postgresql.hostchooser.GlobalHostStatusTracker" sourceFile="GlobalHostStatusTracker.java" interface="false" size="32" bugs="0"/>
-      <ClassStats class="org.postgresql.hostchooser.GlobalHostStatusTracker$HostSpecStatus" sourceFile="GlobalHostStatusTracker.java" interface="false" size="12" bugs="0"/>
+    <PackageStats package="org.postgresql.hostchooser" total_bugs="0" total_types="16" total_size="197">
+      <ClassStats class="org.postgresql.hostchooser.CandidateHost" sourceFile="CandidateHost.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.postgresql.hostchooser.GlobalHostStatusTracker" sourceFile="GlobalHostStatusTracker.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="org.postgresql.hostchooser.GlobalHostStatusTracker$HostSpecStatus" sourceFile="GlobalHostStatusTracker.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="org.postgresql.hostchooser.HostChooser" sourceFile="HostChooser.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="org.postgresql.hostchooser.HostChooserFactory" sourceFile="HostChooserFactory.java" interface="false" size="7" bugs="0"/>
-      <ClassStats class="org.postgresql.hostchooser.HostRequirement" sourceFile="HostRequirement.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.postgresql.hostchooser.HostRequirement" sourceFile="HostRequirement.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="org.postgresql.hostchooser.HostRequirement$1" sourceFile="HostRequirement.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="org.postgresql.hostchooser.HostRequirement$2" sourceFile="HostRequirement.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="org.postgresql.hostchooser.HostRequirement$3" sourceFile="HostRequirement.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="org.postgresql.hostchooser.HostRequirement$4" sourceFile="HostRequirement.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="org.postgresql.hostchooser.HostStatus" sourceFile="HostStatus.java" interface="false" size="15" bugs="0"/>
-      <ClassStats class="org.postgresql.hostchooser.MultiHostChooser" sourceFile="MultiHostChooser.java" interface="false" size="51" bugs="0"/>
-      <ClassStats class="org.postgresql.hostchooser.MultiHostChooser$1" sourceFile="MultiHostChooser.java" interface="false" size="4" bugs="0"/>
-      <ClassStats class="org.postgresql.hostchooser.MultiHostChooser$HostSpecByTargetServerTypeComparator" sourceFile="MultiHostChooser.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.postgresql.hostchooser.MultiHostChooser" sourceFile="MultiHostChooser.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="org.postgresql.hostchooser.MultiHostChooser$1" sourceFile="MultiHostChooser.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.postgresql.hostchooser.MultiHostChooser$2" sourceFile="MultiHostChooser.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.postgresql.hostchooser.MultiHostChooser$3" sourceFile="MultiHostChooser.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="org.postgresql.hostchooser.SingleHostChooser" sourceFile="SingleHostChooser.java" interface="false" size="8" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.jdbc" total_bugs="0" total_types="47" total_size="9028">
+    <PackageStats package="org.postgresql.jdbc" total_bugs="0" total_types="56" total_size="9591">
       <ClassStats class="org.postgresql.jdbc.AbstractBlobClob" sourceFile="AbstractBlobClob.java" interface="false" size="111" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.AbstractBlobClob$LOIterator" sourceFile="AbstractBlobClob.java" interface="false" size="24" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.AutoSave" sourceFile="AutoSave.java" interface="false" size="21" bugs="0"/>
@@ -3392,34 +3453,43 @@
       <ClassStats class="org.postgresql.jdbc.InsertRewriteWithAlternatingTypesIssue584" sourceFile="InsertRewriteWithAlternatingTypesIssue584.java" interface="false" size="91" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.PSQLSavepoint" sourceFile="PSQLSavepoint.java" interface="false" size="38" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.PSQLWarningWrapper" sourceFile="PSQLWarningWrapper.java" interface="false" size="14" bugs="0"/>
-      <ClassStats class="org.postgresql.jdbc.PgArray" sourceFile="PgArray.java" interface="false" size="514" bugs="0"/>
+      <ClassStats class="org.postgresql.jdbc.PgArray" sourceFile="PgArray.java" interface="false" size="529" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.PgArray$1" sourceFile="PgArray.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.PgArray$PgArrayList" sourceFile="PgArray.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.PgBlob" sourceFile="PgBlob.java" interface="false" size="19" bugs="0"/>
-      <ClassStats class="org.postgresql.jdbc.PgCallableStatement" sourceFile="PgCallableStatement.java" interface="false" size="432" bugs="0"/>
+      <ClassStats class="org.postgresql.jdbc.PgCallableStatement" sourceFile="PgCallableStatement.java" interface="false" size="437" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.PgClob" sourceFile="PgClob.java" interface="false" size="34" bugs="0"/>
-      <ClassStats class="org.postgresql.jdbc.PgConnection" sourceFile="PgConnection.java" interface="false" size="813" bugs="0"/>
+      <ClassStats class="org.postgresql.jdbc.PgConnection" sourceFile="PgConnection.java" interface="false" size="857" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.PgConnection$1" sourceFile="PgConnection.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.PgConnection$AbortCommand" sourceFile="PgConnection.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.PgConnection$TransactionCommandHandler" sourceFile="PgConnection.java" interface="false" size="11" bugs="0"/>
-      <ClassStats class="org.postgresql.jdbc.PgDatabaseMetaData" sourceFile="PgDatabaseMetaData.java" interface="false" size="1208" bugs="0"/>
+      <ClassStats class="org.postgresql.jdbc.PgDatabaseMetaData" sourceFile="PgDatabaseMetaData.java" interface="false" size="1228" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.PgParameterMetaData" sourceFile="PgParameterMetaData.java" interface="false" size="46" bugs="0"/>
-      <ClassStats class="org.postgresql.jdbc.PgPreparedStatement" sourceFile="PgPreparedStatement.java" interface="false" size="906" bugs="0"/>
-      <ClassStats class="org.postgresql.jdbc.PgResultSet" sourceFile="PgResultSet.java" interface="false" size="1878" bugs="0"/>
+      <ClassStats class="org.postgresql.jdbc.PgPreparedStatement" sourceFile="PgPreparedStatement.java" interface="false" size="911" bugs="0"/>
+      <ClassStats class="org.postgresql.jdbc.PgResultSet" sourceFile="PgResultSet.java" interface="false" size="1889" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.PgResultSet$1" sourceFile="PgResultSet.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.PgResultSet$CursorResultHandler" sourceFile="PgResultSet.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.PgResultSet$NullObject" sourceFile="PgResultSet.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.PgResultSet$PrimaryKey" sourceFile="PgResultSet.java" interface="false" size="11" bugs="0"/>
-      <ClassStats class="org.postgresql.jdbc.PgResultSetMetaData" sourceFile="PgResultSetMetaData.java" interface="false" size="177" bugs="0"/>
+      <ClassStats class="org.postgresql.jdbc.PgResultSetMetaData" sourceFile="PgResultSetMetaData.java" interface="false" size="176" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.PgSQLXML" sourceFile="PgSQLXML.java" interface="false" size="156" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.PgSQLXML$NonPrintingErrorHandler" sourceFile="PgSQLXML.java" interface="false" size="9" bugs="0"/>
-      <ClassStats class="org.postgresql.jdbc.PgStatement" sourceFile="PgStatement.java" interface="false" size="534" bugs="0"/>
+      <ClassStats class="org.postgresql.jdbc.PgStatement" sourceFile="PgStatement.java" interface="false" size="581" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.PgStatement$1" sourceFile="PgStatement.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.PgStatement$StatementResultHandler" sourceFile="PgStatement.java" interface="false" size="26" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.PreferQueryMode" sourceFile="PreferQueryMode.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="org.postgresql.jdbc.PrimitiveArraySupport" sourceFile="PrimitiveArraySupport.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="org.postgresql.jdbc.PrimitiveArraySupport$1" sourceFile="PrimitiveArraySupport.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="org.postgresql.jdbc.PrimitiveArraySupport$2" sourceFile="PrimitiveArraySupport.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="org.postgresql.jdbc.PrimitiveArraySupport$3" sourceFile="PrimitiveArraySupport.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="org.postgresql.jdbc.PrimitiveArraySupport$4" sourceFile="PrimitiveArraySupport.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="org.postgresql.jdbc.PrimitiveArraySupport$5" sourceFile="PrimitiveArraySupport.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="org.postgresql.jdbc.PrimitiveArraySupport$6" sourceFile="PrimitiveArraySupport.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="org.postgresql.jdbc.PrimitiveArraySupport$7" sourceFile="PrimitiveArraySupport.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="org.postgresql.jdbc.PrimitiveArraySupportTest" sourceFile="PrimitiveArraySupportTest.java" interface="false" size="136" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.ResultWrapper" sourceFile="ResultWrapper.java" interface="false" size="31" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.StatementCancelState" sourceFile="StatementCancelState.java" interface="false" size="15" bugs="0"/>
-      <ClassStats class="org.postgresql.jdbc.TimestampUtils" sourceFile="TimestampUtils.java" interface="false" size="626" bugs="0"/>
+      <ClassStats class="org.postgresql.jdbc.TimestampUtils" sourceFile="TimestampUtils.java" interface="false" size="638" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.TimestampUtils$1" sourceFile="TimestampUtils.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.TimestampUtils$Infinity" sourceFile="TimestampUtils.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc.TimestampUtils$ParsedBinaryTimestamp" sourceFile="TimestampUtils.java" interface="false" size="10" bugs="0"/>
@@ -3441,8 +3511,12 @@
       <ClassStats class="org.postgresql.jdbc3.Jdbc3PoolingDataSource" sourceFile="Jdbc3PoolingDataSource.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="org.postgresql.jdbc3.Jdbc3SimpleDataSource" sourceFile="Jdbc3SimpleDataSource.java" interface="false" size="3" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.largeobject" total_bugs="0" total_types="4" total_size="330">
-      <ClassStats class="org.postgresql.largeobject.BlobInputStream" sourceFile="BlobInputStream.java" interface="false" size="68" bugs="0"/>
+    <PackageStats package="org.postgresql.jre8.sasl" total_bugs="0" total_types="2" total_size="97">
+      <ClassStats class="org.postgresql.jre8.sasl.ScramAuthenticator" sourceFile="ScramAuthenticator.java" interface="false" size="95" bugs="0"/>
+      <ClassStats class="org.postgresql.jre8.sasl.ScramAuthenticator$BodySender" sourceFile="ScramAuthenticator.java" interface="true" size="2" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.postgresql.largeobject" total_bugs="0" total_types="4" total_size="332">
+      <ClassStats class="org.postgresql.largeobject.BlobInputStream" sourceFile="BlobInputStream.java" interface="false" size="70" bugs="0"/>
       <ClassStats class="org.postgresql.largeobject.BlobOutputStream" sourceFile="BlobOutputStream.java" interface="false" size="58" bugs="0"/>
       <ClassStats class="org.postgresql.largeobject.LargeObject" sourceFile="LargeObject.java" interface="false" size="131" bugs="0"/>
       <ClassStats class="org.postgresql.largeobject.LargeObjectManager" sourceFile="LargeObjectManager.java" interface="false" size="73" bugs="0"/>
@@ -3452,16 +3526,16 @@
       <ClassStats class="org.postgresql.osgi.PGDataSourceFactory" sourceFile="PGDataSourceFactory.java" interface="false" size="57" bugs="0"/>
       <ClassStats class="org.postgresql.osgi.PGDataSourceFactory$SingleUseProperties" sourceFile="PGDataSourceFactory.java" interface="false" size="11" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.replication" total_bugs="0" total_types="13" total_size="1368">
+    <PackageStats package="org.postgresql.replication" total_bugs="0" total_types="13" total_size="1375">
       <ClassStats class="org.postgresql.replication.LogSequenceNumber" sourceFile="LogSequenceNumber.java" interface="false" size="45" bugs="0"/>
       <ClassStats class="org.postgresql.replication.LogSequenceNumberTest" sourceFile="LogSequenceNumberTest.java" interface="false" size="52" bugs="0"/>
-      <ClassStats class="org.postgresql.replication.LogicalReplicationStatusTest" sourceFile="LogicalReplicationStatusTest.java" interface="false" size="295" bugs="0"/>
-      <ClassStats class="org.postgresql.replication.LogicalReplicationTest" sourceFile="LogicalReplicationTest.java" interface="false" size="519" bugs="0"/>
+      <ClassStats class="org.postgresql.replication.LogicalReplicationStatusTest" sourceFile="LogicalReplicationStatusTest.java" interface="false" size="300" bugs="0"/>
+      <ClassStats class="org.postgresql.replication.LogicalReplicationTest" sourceFile="LogicalReplicationTest.java" interface="false" size="520" bugs="0"/>
       <ClassStats class="org.postgresql.replication.LogicalReplicationTest$1" sourceFile="LogicalReplicationTest.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="org.postgresql.replication.PGReplicationConnection" sourceFile="PGReplicationConnection.java" interface="true" size="4" bugs="0"/>
       <ClassStats class="org.postgresql.replication.PGReplicationConnectionImpl" sourceFile="PGReplicationConnectionImpl.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="org.postgresql.replication.PGReplicationStream" sourceFile="PGReplicationStream.java" interface="true" size="11" bugs="0"/>
-      <ClassStats class="org.postgresql.replication.PhysicalReplicationTest" sourceFile="PhysicalReplicationTest.java" interface="false" size="176" bugs="0"/>
+      <ClassStats class="org.postgresql.replication.PhysicalReplicationTest" sourceFile="PhysicalReplicationTest.java" interface="false" size="177" bugs="0"/>
       <ClassStats class="org.postgresql.replication.ReplicationConnectionTest" sourceFile="ReplicationConnectionTest.java" interface="false" size="56" bugs="0"/>
       <ClassStats class="org.postgresql.replication.ReplicationSlotTest" sourceFile="ReplicationSlotTest.java" interface="false" size="129" bugs="0"/>
       <ClassStats class="org.postgresql.replication.ReplicationTestSuite" sourceFile="ReplicationTestSuite.java" interface="false" size="34" bugs="0"/>
@@ -3496,6 +3570,62 @@
       <ClassStats class="org.postgresql.replication.fluent.physical.PhysicalStreamBuilder" sourceFile="PhysicalStreamBuilder.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="org.postgresql.replication.fluent.physical.StartPhysicalReplicationCallback" sourceFile="StartPhysicalReplicationCallback.java" interface="true" size="2" bugs="0"/>
     </PackageStats>
+    <PackageStats package="org.postgresql.shaded.com.ongres.scram.client" total_bugs="0" total_types="10" total_size="259">
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.client.ScramClient" sourceFile="ScramClient.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.client.ScramClient$1" sourceFile="ScramClient.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.client.ScramClient$Builder" sourceFile="ScramClient.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.client.ScramClient$ChannelBinding" sourceFile="ScramClient.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.client.ScramClient$PreBuilder1" sourceFile="ScramClient.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.client.ScramClient$PreBuilder2" sourceFile="ScramClient.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.client.ScramSession" sourceFile="ScramSession.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.client.ScramSession$1" sourceFile="ScramSession.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.client.ScramSession$ClientFinalProcessor" sourceFile="ScramSession.java" interface="false" size="66" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.client.ScramSession$ServerFirstProcessor" sourceFile="ScramSession.java" interface="false" size="25" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.postgresql.shaded.com.ongres.scram.common" total_bugs="0" total_types="6" total_size="241">
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.ScramAttributeValue" sourceFile="ScramAttributeValue.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.ScramAttributes" sourceFile="ScramAttributes.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.ScramFunctions" sourceFile="ScramFunctions.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.ScramMechanism" sourceFile="ScramMechanism.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.ScramMechanisms" sourceFile="ScramMechanisms.java" interface="false" size="80" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.ScramStringFormatting" sourceFile="ScramStringFormatting.java" interface="false" size="64" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.postgresql.shaded.com.ongres.scram.common.exception" total_bugs="0" total_types="4" total_size="35">
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.exception.ScramException" sourceFile="ScramException.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.exception.ScramInvalidServerSignatureException" sourceFile="ScramInvalidServerSignatureException.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.exception.ScramParseException" sourceFile="ScramParseException.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.exception.ScramServerErrorException" sourceFile="ScramServerErrorException.java" interface="false" size="14" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.postgresql.shaded.com.ongres.scram.common.gssapi" total_bugs="0" total_types="4" total_size="109">
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.gssapi.Gs2AttributeValue" sourceFile="Gs2AttributeValue.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.gssapi.Gs2Attributes" sourceFile="Gs2Attributes.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.gssapi.Gs2CbindFlag" sourceFile="Gs2CbindFlag.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.gssapi.Gs2Header" sourceFile="Gs2Header.java" interface="false" size="40" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.postgresql.shaded.com.ongres.scram.common.message" total_bugs="0" total_types="5" total_size="231">
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.message.ClientFinalMessage" sourceFile="ClientFinalMessage.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.message.ClientFirstMessage" sourceFile="ClientFirstMessage.java" interface="false" size="57" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.message.ServerFinalMessage" sourceFile="ServerFinalMessage.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.message.ServerFinalMessage$Error" sourceFile="ServerFinalMessage.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.message.ServerFirstMessage" sourceFile="ServerFirstMessage.java" interface="false" size="52" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.postgresql.shaded.com.ongres.scram.common.stringprep" total_bugs="0" total_types="3" total_size="24">
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.stringprep.StringPreparation" sourceFile="StringPreparation.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.stringprep.StringPreparations" sourceFile="StringPreparations.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.stringprep.StringPreparations$1" sourceFile="StringPreparations.java" interface="false" size="5" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.postgresql.shaded.com.ongres.scram.common.util" total_bugs="0" total_types="10" total_size="139">
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.util.AbstractCharAttributeValue" sourceFile="AbstractCharAttributeValue.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.util.AbstractStringWritable" sourceFile="AbstractStringWritable.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.util.CharAttribute" sourceFile="CharAttribute.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.util.CharAttributeValue" sourceFile="CharAttributeValue.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.util.CryptoUtil" sourceFile="CryptoUtil.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.util.CryptoUtil$SecureRandomHolder" sourceFile="CryptoUtil.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.util.Preconditions" sourceFile="Preconditions.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.util.StringWritable" sourceFile="StringWritable.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.util.StringWritableCsv" sourceFile="StringWritableCsv.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="org.postgresql.shaded.com.ongres.scram.common.util.UsAsciiUtils" sourceFile="UsAsciiUtils.java" interface="false" size="14" bugs="0"/>
+    </PackageStats>
     <PackageStats package="org.postgresql.ssl" total_bugs="0" total_types="8" total_size="185">
       <ClassStats class="org.postgresql.ssl.DbKeyStoreSocketFactory" sourceFile="DbKeyStoreSocketFactory.java" interface="false" size="27" bugs="0"/>
       <ClassStats class="org.postgresql.ssl.DbKeyStoreSocketFactory$DbKeyStoreSocketException" sourceFile="DbKeyStoreSocketFactory.java" interface="false" size="4" bugs="0"/>
@@ -3511,38 +3641,43 @@
       <ClassStats class="org.postgresql.ssl.jdbc4.LibPQFactory" sourceFile="LibPQFactory.java" interface="false" size="123" bugs="0"/>
       <ClassStats class="org.postgresql.ssl.jdbc4.LibPQFactory$ConsoleCallbackHandler" sourceFile="LibPQFactory.java" interface="false" size="20" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.sspi" total_bugs="0" total_types="4" total_size="118">
+    <PackageStats package="org.postgresql.sspi" total_bugs="0" total_types="4" total_size="120">
       <ClassStats class="org.postgresql.sspi.ISSPIClient" sourceFile="ISSPIClient.java" interface="true" size="5" bugs="0"/>
       <ClassStats class="org.postgresql.sspi.NTDSAPI" sourceFile="NTDSAPI.java" interface="true" size="8" bugs="0"/>
-      <ClassStats class="org.postgresql.sspi.NTDSAPIWrapper" sourceFile="NTDSAPIWrapper.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.postgresql.sspi.NTDSAPIWrapper" sourceFile="NTDSAPIWrapper.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="org.postgresql.sspi.SSPIClient" sourceFile="SSPIClient.java" interface="false" size="91" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.postgresql.test" total_bugs="0" total_types="1" total_size="387">
       <ClassStats class="org.postgresql.test.TestUtil" sourceFile="TestUtil.java" interface="false" size="387" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.test.core" total_bugs="0" total_types="1" total_size="25">
+    <PackageStats package="org.postgresql.test.core" total_bugs="0" total_types="2" total_size="36">
+      <ClassStats class="org.postgresql.test.core.JavaVersionTest" sourceFile="JavaVersionTest.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.postgresql.test.core.NativeQueryBindLengthTest" sourceFile="NativeQueryBindLengthTest.java" interface="false" size="25" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.postgresql.test.extensions" total_bugs="0" total_types="2" total_size="70">
       <ClassStats class="org.postgresql.test.extensions.ExtensionsTestSuite" sourceFile="ExtensionsTestSuite.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="org.postgresql.test.extensions.HStoreTest" sourceFile="HStoreTest.java" interface="false" size="67" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.test.hostchooser" total_bugs="0" total_types="3" total_size="203">
-      <ClassStats class="org.postgresql.test.hostchooser.MultiHostTestSuite" sourceFile="MultiHostTestSuite.java" interface="false" size="24" bugs="0"/>
+    <PackageStats package="org.postgresql.test.hostchooser" total_bugs="0" total_types="3" total_size="270">
+      <ClassStats class="org.postgresql.test.hostchooser.MultiHostTestSuite" sourceFile="MultiHostTestSuite.java" interface="false" size="37" bugs="0"/>
       <ClassStats class="org.postgresql.test.hostchooser.MultiHostTestSuite$DummyTest" sourceFile="MultiHostTestSuite.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="org.postgresql.test.hostchooser.MultiHostsConnectionTest" sourceFile="MultiHostsConnectionTest.java" interface="false" size="173" bugs="0"/>
+      <ClassStats class="org.postgresql.test.hostchooser.MultiHostsConnectionTest" sourceFile="MultiHostsConnectionTest.java" interface="false" size="227" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.test.jdbc2" total_bugs="0" total_types="79" total_size="10626">
+    <PackageStats package="org.postgresql.test.jdbc2" total_bugs="0" total_types="89" total_size="11327">
       <ClassStats class="org.postgresql.test.jdbc2.ANTTest" sourceFile="ANTTest.java" interface="false" size="13" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc2.ArrayTest" sourceFile="ArrayTest.java" interface="false" size="326" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc2.AutoRollbackTestSuite" sourceFile="AutoRollbackTestSuite.java" interface="false" size="186" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.ArrayTest" sourceFile="ArrayTest.java" interface="false" size="412" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.AutoRollbackTestSuite" sourceFile="AutoRollbackTestSuite.java" interface="false" size="206" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.AutoRollbackTestSuite$1" sourceFile="AutoRollbackTestSuite.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.AutoRollbackTestSuite$ContinueMode" sourceFile="AutoRollbackTestSuite.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.AutoRollbackTestSuite$FailMode" sourceFile="AutoRollbackTestSuite.java" interface="false" size="17" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc2.BaseTest4" sourceFile="BaseTest4.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.AutoRollbackTestSuite$ReturnColumns" sourceFile="AutoRollbackTestSuite.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.AutoRollbackTestSuite$TestStatement" sourceFile="AutoRollbackTestSuite.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.BaseTest4" sourceFile="BaseTest4.java" interface="false" size="61" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.BaseTest4$AutoCommit" sourceFile="BaseTest4.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.BaseTest4$BinaryMode" sourceFile="BaseTest4.java" interface="false" size="10" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc2.BatchExecuteTest" sourceFile="BatchExecuteTest.java" interface="false" size="521" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.BaseTest4$ReWriteBatchedInserts" sourceFile="BaseTest4.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.BaseTest4$StringType" sourceFile="BaseTest4.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.BatchExecuteTest" sourceFile="BatchExecuteTest.java" interface="false" size="522" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.BatchFailureTest" sourceFile="BatchFailureTest.java" interface="false" size="110" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.BatchFailureTest$1" sourceFile="BatchFailureTest.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.BatchFailureTest$BatchType" sourceFile="BatchFailureTest.java" interface="false" size="23" bugs="0"/>
@@ -3551,16 +3686,17 @@
       <ClassStats class="org.postgresql.test.jdbc2.BatchFailureTest$BatchType$3" sourceFile="BatchFailureTest.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.BatchFailureTest$FailMode" sourceFile="BatchFailureTest.java" interface="false" size="30" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.BatchFailureTest$FailPosition" sourceFile="BatchFailureTest.java" interface="false" size="16" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc2.BatchedInsertReWriteEnabledTest" sourceFile="BatchedInsertReWriteEnabledTest.java" interface="false" size="265" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc2.BlobTest" sourceFile="BlobTest.java" interface="false" size="249" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.BatchedInsertReWriteEnabledTest" sourceFile="BatchedInsertReWriteEnabledTest.java" interface="false" size="267" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.BlobTest" sourceFile="BlobTest.java" interface="false" size="267" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.BlobTransactionTest" sourceFile="BlobTransactionTest.java" interface="false" size="88" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.CallableStmtTest" sourceFile="CallableStmtTest.java" interface="false" size="203" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.ClientEncodingTest" sourceFile="ClientEncodingTest.java" interface="false" size="42" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.ColumnSanitiserDisabledTest" sourceFile="ColumnSanitiserDisabledTest.java" interface="false" size="55" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.ColumnSanitiserEnabledTest" sourceFile="ColumnSanitiserEnabledTest.java" interface="false" size="54" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.ConcurrentStatementFetch" sourceFile="ConcurrentStatementFetch.java" interface="false" size="42" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.ConnectTimeoutTest" sourceFile="ConnectTimeoutTest.java" interface="false" size="27" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.ConnectionTest" sourceFile="ConnectionTest.java" interface="false" size="134" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc2.CopyBothResponseTest" sourceFile="CopyBothResponseTest.java" interface="false" size="106" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.CopyBothResponseTest" sourceFile="CopyBothResponseTest.java" interface="false" size="107" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.CopyLargeFileTest" sourceFile="CopyLargeFileTest.java" interface="false" size="53" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.CopyTest" sourceFile="CopyTest.java" interface="false" size="252" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.CopyTest$1" sourceFile="CopyTest.java" interface="false" size="6" bugs="0"/>
@@ -3568,11 +3704,12 @@
       <ClassStats class="org.postgresql.test.jdbc2.CursorFetchTest" sourceFile="CursorFetchTest.java" interface="false" size="312" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.DatabaseEncodingTest" sourceFile="DatabaseEncodingTest.java" interface="false" size="152" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.DatabaseMetaDataPropertiesTest" sourceFile="DatabaseMetaDataPropertiesTest.java" interface="false" size="118" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc2.DatabaseMetaDataTest" sourceFile="DatabaseMetaDataTest.java" interface="false" size="828" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.DatabaseMetaDataTest" sourceFile="DatabaseMetaDataTest.java" interface="false" size="841" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.DateStyleTest" sourceFile="DateStyleTest.java" interface="false" size="27" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.DateTest" sourceFile="DateTest.java" interface="false" size="162" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc2.DriverTest" sourceFile="DriverTest.java" interface="false" size="137" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.DriverTest" sourceFile="DriverTest.java" interface="false" size="141" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.EncodingTest" sourceFile="EncodingTest.java" interface="false" size="29" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc2.GeometricTest" sourceFile="GeometricTest.java" interface="false" size="85" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.GeometricTest" sourceFile="GeometricTest.java" interface="false" size="94" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.GetXXXTest" sourceFile="GetXXXTest.java" interface="false" size="38" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.IntervalTest" sourceFile="IntervalTest.java" interface="false" size="182" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.JBuilderTest" sourceFile="JBuilderTest.java" interface="false" size="24" bugs="0"/>
@@ -3587,31 +3724,35 @@
       <ClassStats class="org.postgresql.test.jdbc2.PGPropertyTest" sourceFile="PGPropertyTest.java" interface="false" size="139" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.PGTimeTest" sourceFile="PGTimeTest.java" interface="false" size="98" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.PGTimestampTest" sourceFile="PGTimestampTest.java" interface="false" size="107" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc2.PreparedStatementTest" sourceFile="PreparedStatementTest.java" interface="false" size="916" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.PreparedStatementTest" sourceFile="PreparedStatementTest.java" interface="false" size="984" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.PreparedStatementTest$1" sourceFile="PreparedStatementTest.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.QuotationTest" sourceFile="QuotationTest.java" interface="false" size="78" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.QuotationTest$QuoteStyle" sourceFile="QuotationTest.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.RefCursorTest" sourceFile="RefCursorTest.java" interface="false" size="92" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc2.ResultSetMetaDataTest" sourceFile="ResultSetMetaDataTest.java" interface="false" size="180" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.ResultSetMetaDataTest" sourceFile="ResultSetMetaDataTest.java" interface="false" size="219" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.ResultSetTest" sourceFile="ResultSetTest.java" interface="false" size="643" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.SearchPathLookupTest" sourceFile="SearchPathLookupTest.java" interface="false" size="77" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.ServerCursorTest" sourceFile="ServerCursorTest.java" interface="false" size="50" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.ServerErrorTest" sourceFile="ServerErrorTest.java" interface="false" size="60" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.ServerPreparedStmtTest" sourceFile="ServerPreparedStmtTest.java" interface="false" size="179" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc2.StatementTest" sourceFile="StatementTest.java" interface="false" size="481" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.StatementTest" sourceFile="StatementTest.java" interface="false" size="540" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.StatementTest$1" sourceFile="StatementTest.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.StatementTest$2" sourceFile="StatementTest.java" interface="false" size="25" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc2.StatementTest$3" sourceFile="StatementTest.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.StatementTest$3" sourceFile="StatementTest.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.StatementTest$4" sourceFile="StatementTest.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.StatementTest$5" sourceFile="StatementTest.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.StringTypeUnspecifiedArrayTest" sourceFile="StringTypeUnspecifiedArrayTest.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.TestACL" sourceFile="TestACL.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.TestACL$1" sourceFile="TestACL.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.TimeTest" sourceFile="TimeTest.java" interface="false" size="164" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc2.TimestampTest" sourceFile="TimestampTest.java" interface="false" size="622" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.TimestampTest" sourceFile="TimestampTest.java" interface="false" size="692" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.TimezoneCachingTest" sourceFile="TimezoneCachingTest.java" interface="false" size="291" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc2.TimezoneTest" sourceFile="TimezoneTest.java" interface="false" size="582" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.TimezoneTest" sourceFile="TimezoneTest.java" interface="false" size="587" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.TypeCacheDLLStressTest" sourceFile="TypeCacheDLLStressTest.java" interface="false" size="40" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.TypeCacheDLLStressTest$1" sourceFile="TypeCacheDLLStressTest.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.TypeCacheDLLStressTest$2" sourceFile="TypeCacheDLLStressTest.java" interface="false" size="11" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc2.UpdateableResultTest" sourceFile="UpdateableResultTest.java" interface="false" size="367" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc2.UpsertTest" sourceFile="UpsertTest.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.UpdateableResultTest" sourceFile="UpdateableResultTest.java" interface="false" size="402" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc2.UpsertTest" sourceFile="UpsertTest.java" interface="false" size="112" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.postgresql.test.jdbc2.optional" total_bugs="0" total_types="11" total_size="619">
       <ClassStats class="org.postgresql.test.jdbc2.optional.BaseDataSourceTest" sourceFile="BaseDataSourceTest.java" interface="false" size="118" bugs="0"/>
@@ -3626,11 +3767,11 @@
       <ClassStats class="org.postgresql.test.jdbc2.optional.SimpleDataSourceWithSetURLTest" sourceFile="SimpleDataSourceWithSetURLTest.java" interface="false" size="30" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.optional.SimpleDataSourceWithUrlTest" sourceFile="SimpleDataSourceWithUrlTest.java" interface="false" size="13" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.test.jdbc3" total_bugs="0" total_types="15" total_size="1877">
-      <ClassStats class="org.postgresql.test.jdbc3.CompositeQueryParseTest" sourceFile="CompositeQueryParseTest.java" interface="false" size="113" bugs="0"/>
+    <PackageStats package="org.postgresql.test.jdbc3" total_bugs="0" total_types="16" total_size="1934">
+      <ClassStats class="org.postgresql.test.jdbc3.CompositeQueryParseTest" sourceFile="CompositeQueryParseTest.java" interface="false" size="118" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc3.CompositeTest" sourceFile="CompositeTest.java" interface="false" size="141" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc3.DatabaseMetaDataTest" sourceFile="DatabaseMetaDataTest.java" interface="false" size="26" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc3.GeneratedKeysTest" sourceFile="GeneratedKeysTest.java" interface="false" size="283" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc3.GeneratedKeysTest" sourceFile="GeneratedKeysTest.java" interface="false" size="322" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc3.GeneratedKeysTest$1" sourceFile="GeneratedKeysTest.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc3.GeneratedKeysTest$ReturningInQuery" sourceFile="GeneratedKeysTest.java" interface="false" size="33" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc3.Jdbc3BlobTest" sourceFile="Jdbc3BlobTest.java" interface="false" size="168" bugs="0"/>
@@ -3640,11 +3781,12 @@
       <ClassStats class="org.postgresql.test.jdbc3.ParameterMetaDataTest" sourceFile="ParameterMetaDataTest.java" interface="false" size="62" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc3.ResultSetTest" sourceFile="ResultSetTest.java" interface="false" size="32" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc3.SendRecvBufferSizeTest" sourceFile="SendRecvBufferSizeTest.java" interface="false" size="25" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc3.StringTypeParameterTest" sourceFile="StringTypeParameterTest.java" interface="false" size="89" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc3.SqlCommandParseTest" sourceFile="SqlCommandParseTest.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc3.StringTypeParameterTest" sourceFile="StringTypeParameterTest.java" interface="false" size="90" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc3.TypesTest" sourceFile="TypesTest.java" interface="false" size="63" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.test.jdbc4" total_bugs="0" total_types="19" total_size="1562">
-      <ClassStats class="org.postgresql.test.jdbc4.ArrayTest" sourceFile="ArrayTest.java" interface="false" size="378" bugs="0"/>
+    <PackageStats package="org.postgresql.test.jdbc4" total_bugs="0" total_types="19" total_size="1604">
+      <ClassStats class="org.postgresql.test.jdbc4.ArrayTest" sourceFile="ArrayTest.java" interface="false" size="396" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc4.BinaryStreamTest" sourceFile="BinaryStreamTest.java" interface="false" size="101" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc4.BinaryTest" sourceFile="BinaryTest.java" interface="false" size="71" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc4.BlobTest" sourceFile="BlobTest.java" interface="false" size="92" bugs="0"/>
@@ -3657,31 +3799,32 @@
       <ClassStats class="org.postgresql.test.jdbc4.LibPQFactoryHostNameTest" sourceFile="LibPQFactoryHostNameTest.java" interface="false" size="32" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc4.LogTest" sourceFile="LogTest.java" interface="false" size="37" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc4.PGCopyInputStreamTest" sourceFile="PGCopyInputStreamTest.java" interface="false" size="58" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc4.UUIDTest" sourceFile="UUIDTest.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc4.UUIDTest" sourceFile="UUIDTest.java" interface="false" size="55" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc4.WrapperTest" sourceFile="WrapperTest.java" interface="false" size="73" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc4.WrapperTest$PrivateInterface" sourceFile="WrapperTest.java" interface="true" size="1" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc4.XmlTest" sourceFile="XmlTest.java" interface="false" size="230" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc4.XmlTest$1" sourceFile="XmlTest.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc4.XmlTest$Ignorer" sourceFile="XmlTest.java" interface="false" size="9" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.test.jdbc4.jdbc41" total_bugs="0" total_types="8" total_size="806">
+    <PackageStats package="org.postgresql.test.jdbc4.jdbc41" total_bugs="0" total_types="9" total_size="848">
       <ClassStats class="org.postgresql.test.jdbc4.jdbc41.AbortTest" sourceFile="AbortTest.java" interface="false" size="29" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc4.jdbc41.AbortTest$1" sourceFile="AbortTest.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc4.jdbc41.AbortTest$2" sourceFile="AbortTest.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc4.jdbc41.CloseOnCompletionTest" sourceFile="CloseOnCompletionTest.java" interface="false" size="43" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc4.jdbc41.GetObjectTest" sourceFile="GetObjectTest.java" interface="false" size="548" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc4.jdbc41.GetObjectTest" sourceFile="GetObjectTest.java" interface="false" size="549" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc4.jdbc41.Jdbc41TestSuite" sourceFile="Jdbc41TestSuite.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc4.jdbc41.NetworkTimeoutTest" sourceFile="NetworkTimeoutTest.java" interface="false" size="41" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc4.jdbc41.SchemaTest" sourceFile="SchemaTest.java" interface="false" size="146" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc4.jdbc41.SharedTimerClassLoaderLeakTest" sourceFile="SharedTimerClassLoaderLeakTest.java" interface="false" size="9" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.test.jdbc42" total_bugs="0" total_types="8" total_size="509">
+    <PackageStats package="org.postgresql.test.jdbc42" total_bugs="0" total_types="8" total_size="515">
       <ClassStats class="org.postgresql.test.jdbc42.CustomizeDefaultFetchSizeTest" sourceFile="CustomizeDefaultFetchSizeTest.java" interface="false" size="35" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc42.GetObject310InfinityTests" sourceFile="GetObject310InfinityTests.java" interface="false" size="50" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc42.GetObject310Test" sourceFile="GetObject310Test.java" interface="false" size="135" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc42.Jdbc42CallableStatementTest" sourceFile="Jdbc42CallableStatementTest.java" interface="false" size="49" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc42.GetObject310Test" sourceFile="GetObject310Test.java" interface="false" size="137" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc42.Jdbc42CallableStatementTest" sourceFile="Jdbc42CallableStatementTest.java" interface="false" size="50" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc42.Jdbc42TestSuite" sourceFile="Jdbc42TestSuite.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc42.PreparedStatementTest" sourceFile="PreparedStatementTest.java" interface="false" size="45" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc42.SetObject310Test" sourceFile="SetObject310Test.java" interface="false" size="186" bugs="0"/>
+      <ClassStats class="org.postgresql.test.jdbc42.SetObject310Test" sourceFile="SetObject310Test.java" interface="false" size="189" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc42.SimpleJdbc42Test" sourceFile="SimpleJdbc42Test.java" interface="false" size="6" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.postgresql.test.jre8.core" total_bugs="0" total_types="2" total_size="20">
@@ -3696,20 +3839,20 @@
       <ClassStats class="org.postgresql.test.socketfactory.CustomSocketFactory" sourceFile="CustomSocketFactory.java" interface="false" size="28" bugs="0"/>
       <ClassStats class="org.postgresql.test.socketfactory.SocketFactoryTestSuite" sourceFile="SocketFactoryTestSuite.java" interface="false" size="19" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.test.ssl" total_bugs="0" total_types="3" total_size="488">
+    <PackageStats package="org.postgresql.test.ssl" total_bugs="0" total_types="3" total_size="462">
       <ClassStats class="org.postgresql.test.ssl.SingleCertValidatingFactoryTestSuite" sourceFile="SingleCertValidatingFactoryTestSuite.java" interface="false" size="173" bugs="0"/>
-      <ClassStats class="org.postgresql.test.ssl.SslTest" sourceFile="SslTest.java" interface="false" size="291" bugs="0"/>
-      <ClassStats class="org.postgresql.test.ssl.SslTestSuite" sourceFile="SslTestSuite.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="org.postgresql.test.ssl.SslTest" sourceFile="SslTest.java" interface="false" size="268" bugs="0"/>
+      <ClassStats class="org.postgresql.test.ssl.SslTestSuite" sourceFile="SslTestSuite.java" interface="false" size="21" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.postgresql.test.sspi" total_bugs="0" total_types="2" total_size="29">
       <ClassStats class="org.postgresql.test.sspi.SSPITest" sourceFile="SSPITest.java" interface="false" size="26" bugs="0"/>
       <ClassStats class="org.postgresql.test.sspi.SSPITestSuite" sourceFile="SSPITestSuite.java" interface="false" size="3" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.test.util" total_bugs="0" total_types="13" total_size="422">
+    <PackageStats package="org.postgresql.test.util" total_bugs="0" total_types="13" total_size="432">
       <ClassStats class="org.postgresql.test.util.BrokenInputStream" sourceFile="BrokenInputStream.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="org.postgresql.test.util.BufferGenerator" sourceFile="BufferGenerator.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="org.postgresql.test.util.ExpressionPropertiesTest" sourceFile="ExpressionPropertiesTest.java" interface="false" size="39" bugs="0"/>
-      <ClassStats class="org.postgresql.test.util.HostSpecTest" sourceFile="HostSpecTest.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="org.postgresql.test.util.HostSpecTest" sourceFile="HostSpecTest.java" interface="false" size="50" bugs="0"/>
       <ClassStats class="org.postgresql.test.util.LruCacheTest" sourceFile="LruCacheTest.java" interface="false" size="84" bugs="0"/>
       <ClassStats class="org.postgresql.test.util.LruCacheTest$1" sourceFile="LruCacheTest.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.postgresql.test.util.LruCacheTest$2" sourceFile="LruCacheTest.java" interface="false" size="11" bugs="0"/>
@@ -3727,40 +3870,42 @@
     <PackageStats package="org.postgresql.test.util.rules.annotation" total_bugs="0" total_types="1" total_size="2">
       <ClassStats class="org.postgresql.test.util.rules.annotation.HaveMinimalServerVersion" sourceFile="HaveMinimalServerVersion.java" interface="true" size="2" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.test.xa" total_bugs="0" total_types="3" total_size="257">
-      <ClassStats class="org.postgresql.test.xa.XADataSourceTest" sourceFile="XADataSourceTest.java" interface="false" size="210" bugs="0"/>
+    <PackageStats package="org.postgresql.test.xa" total_bugs="0" total_types="3" total_size="447">
+      <ClassStats class="org.postgresql.test.xa.XADataSourceTest" sourceFile="XADataSourceTest.java" interface="false" size="400" bugs="0"/>
       <ClassStats class="org.postgresql.test.xa.XADataSourceTest$CustomXid" sourceFile="XADataSourceTest.java" interface="false" size="44" bugs="0"/>
       <ClassStats class="org.postgresql.test.xa.XATestSuite" sourceFile="XATestSuite.java" interface="false" size="3" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.translation" total_bugs="0" total_types="15" total_size="4518">
-      <ClassStats class="org.postgresql.translation.messages_bg" sourceFile="messages_bg.java" interface="false" size="455" bugs="0"/>
-      <ClassStats class="org.postgresql.translation.messages_cs" sourceFile="messages_cs.java" interface="false" size="221" bugs="0"/>
-      <ClassStats class="org.postgresql.translation.messages_de" sourceFile="messages_de.java" interface="false" size="363" bugs="0"/>
-      <ClassStats class="org.postgresql.translation.messages_es" sourceFile="messages_es.java" interface="false" size="71" bugs="0"/>
-      <ClassStats class="org.postgresql.translation.messages_fr" sourceFile="messages_fr.java" interface="false" size="363" bugs="0"/>
-      <ClassStats class="org.postgresql.translation.messages_it" sourceFile="messages_it.java" interface="false" size="347" bugs="0"/>
-      <ClassStats class="org.postgresql.translation.messages_ja" sourceFile="messages_ja.java" interface="false" size="509" bugs="0"/>
-      <ClassStats class="org.postgresql.translation.messages_nl" sourceFile="messages_nl.java" interface="false" size="36" bugs="0"/>
-      <ClassStats class="org.postgresql.translation.messages_pl" sourceFile="messages_pl.java" interface="false" size="175" bugs="0"/>
-      <ClassStats class="org.postgresql.translation.messages_pt_BR" sourceFile="messages_pt_BR.java" interface="false" size="399" bugs="0"/>
-      <ClassStats class="org.postgresql.translation.messages_ru" sourceFile="messages_ru.java" interface="false" size="231" bugs="0"/>
-      <ClassStats class="org.postgresql.translation.messages_sr" sourceFile="messages_sr.java" interface="false" size="397" bugs="0"/>
-      <ClassStats class="org.postgresql.translation.messages_tr" sourceFile="messages_tr.java" interface="false" size="397" bugs="0"/>
-      <ClassStats class="org.postgresql.translation.messages_zh_CN" sourceFile="messages_zh_CN.java" interface="false" size="277" bugs="0"/>
-      <ClassStats class="org.postgresql.translation.messages_zh_TW" sourceFile="messages_zh_TW.java" interface="false" size="277" bugs="0"/>
+    <PackageStats package="org.postgresql.translation" total_bugs="0" total_types="15" total_size="4220">
+      <ClassStats class="org.postgresql.translation.messages_bg" sourceFile="messages_bg.java" interface="false" size="431" bugs="0"/>
+      <ClassStats class="org.postgresql.translation.messages_cs" sourceFile="messages_cs.java" interface="false" size="209" bugs="0"/>
+      <ClassStats class="org.postgresql.translation.messages_de" sourceFile="messages_de.java" interface="false" size="321" bugs="0"/>
+      <ClassStats class="org.postgresql.translation.messages_es" sourceFile="messages_es.java" interface="false" size="65" bugs="0"/>
+      <ClassStats class="org.postgresql.translation.messages_fr" sourceFile="messages_fr.java" interface="false" size="321" bugs="0"/>
+      <ClassStats class="org.postgresql.translation.messages_it" sourceFile="messages_it.java" interface="false" size="305" bugs="0"/>
+      <ClassStats class="org.postgresql.translation.messages_ja" sourceFile="messages_ja.java" interface="false" size="485" bugs="0"/>
+      <ClassStats class="org.postgresql.translation.messages_nl" sourceFile="messages_nl.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="org.postgresql.translation.messages_pl" sourceFile="messages_pl.java" interface="false" size="167" bugs="0"/>
+      <ClassStats class="org.postgresql.translation.messages_pt_BR" sourceFile="messages_pt_BR.java" interface="false" size="375" bugs="0"/>
+      <ClassStats class="org.postgresql.translation.messages_ru" sourceFile="messages_ru.java" interface="false" size="241" bugs="0"/>
+      <ClassStats class="org.postgresql.translation.messages_sr" sourceFile="messages_sr.java" interface="false" size="373" bugs="0"/>
+      <ClassStats class="org.postgresql.translation.messages_tr" sourceFile="messages_tr.java" interface="false" size="375" bugs="0"/>
+      <ClassStats class="org.postgresql.translation.messages_zh_CN" sourceFile="messages_zh_CN.java" interface="false" size="259" bugs="0"/>
+      <ClassStats class="org.postgresql.translation.messages_zh_TW" sourceFile="messages_zh_TW.java" interface="false" size="259" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.util" total_bugs="0" total_types="42" total_size="1949">
-      <ClassStats class="org.postgresql.util.Base64" sourceFile="Base64.java" interface="false" size="129" bugs="0"/>
-      <ClassStats class="org.postgresql.util.ByteConverter" sourceFile="ByteConverter.java" interface="false" size="40" bugs="0"/>
+    <PackageStats package="org.postgresql.util" total_bugs="0" total_types="43" total_size="1825">
+      <ClassStats class="org.postgresql.util.Base64" sourceFile="Base64.java" interface="false" size="133" bugs="0"/>
+      <ClassStats class="org.postgresql.util.ByteConverter" sourceFile="ByteConverter.java" interface="false" size="45" bugs="0"/>
       <ClassStats class="org.postgresql.util.CanEstimateSize" sourceFile="CanEstimateSize.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="org.postgresql.util.ConnectionUtil" sourceFile="ConnectionUtil.java" interface="false" size="24" bugs="0"/>
       <ClassStats class="org.postgresql.util.DriverInfo" sourceFile="DriverInfo.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="org.postgresql.util.ExpressionProperties" sourceFile="ExpressionProperties.java" interface="false" size="43" bugs="0"/>
       <ClassStats class="org.postgresql.util.GT" sourceFile="GT.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="org.postgresql.util.Gettable" sourceFile="Gettable.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.postgresql.util.GettableHashMap" sourceFile="GettableHashMap.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="org.postgresql.util.HStoreConverter" sourceFile="HStoreConverter.java" interface="false" size="104" bugs="0"/>
-      <ClassStats class="org.postgresql.util.HostSpec" sourceFile="HostSpec.java" interface="false" size="49" bugs="0"/>
+      <ClassStats class="org.postgresql.util.HostSpec" sourceFile="HostSpec.java" interface="false" size="50" bugs="0"/>
       <ClassStats class="org.postgresql.util.JdbcBlackHole" sourceFile="JdbcBlackHole.java" interface="false" size="21" bugs="0"/>
-      <ClassStats class="org.postgresql.util.LruCache" sourceFile="LruCache.java" interface="false" size="55" bugs="0"/>
+      <ClassStats class="org.postgresql.util.LruCache" sourceFile="LruCache.java" interface="false" size="61" bugs="0"/>
       <ClassStats class="org.postgresql.util.LruCache$1" sourceFile="LruCache.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="org.postgresql.util.LruCache$2" sourceFile="LruCache.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="org.postgresql.util.LruCache$CreateAction" sourceFile="LruCache.java" interface="true" size="2" bugs="0"/>
@@ -3779,7 +3924,7 @@
       <ClassStats class="org.postgresql.util.PGobject" sourceFile="PGobject.java" interface="false" size="29" bugs="0"/>
       <ClassStats class="org.postgresql.util.PGtokenizer" sourceFile="PGtokenizer.java" interface="false" size="65" bugs="0"/>
       <ClassStats class="org.postgresql.util.PSQLException" sourceFile="PSQLException.java" interface="false" size="14" bugs="0"/>
-      <ClassStats class="org.postgresql.util.PSQLState" sourceFile="PSQLState.java" interface="false" size="101" bugs="0"/>
+      <ClassStats class="org.postgresql.util.PSQLState" sourceFile="PSQLState.java" interface="false" size="111" bugs="0"/>
       <ClassStats class="org.postgresql.util.PSQLWarning" sourceFile="PSQLWarning.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="org.postgresql.util.PSQLWarningTest" sourceFile="PSQLWarningTest.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="org.postgresql.util.ReaderInputStream" sourceFile="ReaderInputStream.java" interface="false" size="87" bugs="0"/>
@@ -3790,11 +3935,10 @@
       <ClassStats class="org.postgresql.util.SharedTimer" sourceFile="SharedTimer.java" interface="false" size="37" bugs="0"/>
       <ClassStats class="org.postgresql.util.StreamWrapper" sourceFile="StreamWrapper.java" interface="false" size="74" bugs="0"/>
       <ClassStats class="org.postgresql.util.StreamWrapper$1" sourceFile="StreamWrapper.java" interface="false" size="38" bugs="0"/>
-      <ClassStats class="org.postgresql.util.UnixCrypt" sourceFile="UnixCrypt.java" interface="false" size="155" bugs="0"/>
       <ClassStats class="org.postgresql.util.WriterHandler" sourceFile="WriterHandler.java" interface="false" size="60" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.xa" total_bugs="0" total_types="7" total_size="302">
-      <ClassStats class="org.postgresql.xa.PGXAConnection" sourceFile="PGXAConnection.java" interface="false" size="173" bugs="0"/>
+    <PackageStats package="org.postgresql.xa" total_bugs="0" total_types="7" total_size="344">
+      <ClassStats class="org.postgresql.xa.PGXAConnection" sourceFile="PGXAConnection.java" interface="false" size="215" bugs="0"/>
       <ClassStats class="org.postgresql.xa.PGXAConnection$ConnectionHandler" sourceFile="PGXAConnection.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="org.postgresql.xa.PGXAConnection$State" sourceFile="PGXAConnection.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="org.postgresql.xa.PGXADataSource" sourceFile="PGXADataSource.java" interface="false" size="12" bugs="0"/>
@@ -3803,48 +3947,50 @@
       <ClassStats class="org.postgresql.xa.RecoveredXid" sourceFile="RecoveredXid.java" interface="false" size="53" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="3454" invocations="14035" avgMicrosecondsPerInvocation="246" maxMicrosecondsPerInvocation="75481" standardDeviationMicrosecondsPerInvocation="1217"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="3233" invocations="14283" avgMicrosecondsPerInvocation="226" maxMicrosecondsPerInvocation="81425" standardDeviationMicrosecondsPerInvocation="1574"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="2957" invocations="15148" avgMicrosecondsPerInvocation="195" maxMicrosecondsPerInvocation="62423" standardDeviationMicrosecondsPerInvocation="1137"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="2820" invocations="14618" avgMicrosecondsPerInvocation="192" maxMicrosecondsPerInvocation="39629" standardDeviationMicrosecondsPerInvocation="733"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="2144" invocations="15001" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="13712" standardDeviationMicrosecondsPerInvocation="442"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="1516" invocations="12488" avgMicrosecondsPerInvocation="121" maxMicrosecondsPerInvocation="11081" standardDeviationMicrosecondsPerInvocation="351"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1299" invocations="14633" avgMicrosecondsPerInvocation="88" maxMicrosecondsPerInvocation="47119" standardDeviationMicrosecondsPerInvocation="433"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1200" invocations="17999" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="18831" standardDeviationMicrosecondsPerInvocation="320"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="837" invocations="14618" avgMicrosecondsPerInvocation="57" maxMicrosecondsPerInvocation="15213" standardDeviationMicrosecondsPerInvocation="292"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="775" invocations="1964" avgMicrosecondsPerInvocation="395" maxMicrosecondsPerInvocation="499559" standardDeviationMicrosecondsPerInvocation="11270"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="750" invocations="4101" avgMicrosecondsPerInvocation="182" maxMicrosecondsPerInvocation="26061" standardDeviationMicrosecondsPerInvocation="809"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="696" invocations="2565" avgMicrosecondsPerInvocation="271" maxMicrosecondsPerInvocation="13863" standardDeviationMicrosecondsPerInvocation="668"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="682" invocations="2565" avgMicrosecondsPerInvocation="265" maxMicrosecondsPerInvocation="8729" standardDeviationMicrosecondsPerInvocation="615"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="634" invocations="1964" avgMicrosecondsPerInvocation="323" maxMicrosecondsPerInvocation="31012" standardDeviationMicrosecondsPerInvocation="1574"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="595" invocations="4108" avgMicrosecondsPerInvocation="144" maxMicrosecondsPerInvocation="3050" standardDeviationMicrosecondsPerInvocation="202"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="591" invocations="3857" avgMicrosecondsPerInvocation="153" maxMicrosecondsPerInvocation="66159" standardDeviationMicrosecondsPerInvocation="1108"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="582" invocations="1964" avgMicrosecondsPerInvocation="296" maxMicrosecondsPerInvocation="13387" standardDeviationMicrosecondsPerInvocation="768"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="544" invocations="1964" avgMicrosecondsPerInvocation="277" maxMicrosecondsPerInvocation="18361" standardDeviationMicrosecondsPerInvocation="754"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="509" invocations="1964" avgMicrosecondsPerInvocation="259" maxMicrosecondsPerInvocation="8863" standardDeviationMicrosecondsPerInvocation="628"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="447" invocations="13784" avgMicrosecondsPerInvocation="32" maxMicrosecondsPerInvocation="5139" standardDeviationMicrosecondsPerInvocation="114"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="424" invocations="14035" avgMicrosecondsPerInvocation="30" maxMicrosecondsPerInvocation="55230" standardDeviationMicrosecondsPerInvocation="471"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="389" invocations="15750" avgMicrosecondsPerInvocation="24" maxMicrosecondsPerInvocation="30066" standardDeviationMicrosecondsPerInvocation="267"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="363" invocations="1964" avgMicrosecondsPerInvocation="184" maxMicrosecondsPerInvocation="83639" standardDeviationMicrosecondsPerInvocation="1923"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="362" invocations="1964" avgMicrosecondsPerInvocation="184" maxMicrosecondsPerInvocation="14492" standardDeviationMicrosecondsPerInvocation="733"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="345" invocations="1964" avgMicrosecondsPerInvocation="175" maxMicrosecondsPerInvocation="9349" standardDeviationMicrosecondsPerInvocation="451"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="343" invocations="1599" avgMicrosecondsPerInvocation="214" maxMicrosecondsPerInvocation="7305" standardDeviationMicrosecondsPerInvocation="650"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="340" invocations="391056" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="5203" standardDeviationMicrosecondsPerInvocation="12"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="302" invocations="1964" avgMicrosecondsPerInvocation="154" maxMicrosecondsPerInvocation="4754" standardDeviationMicrosecondsPerInvocation="373"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="299" invocations="1964" avgMicrosecondsPerInvocation="152" maxMicrosecondsPerInvocation="6797" standardDeviationMicrosecondsPerInvocation="412"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="294" invocations="1964" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="4947" standardDeviationMicrosecondsPerInvocation="350"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="286" invocations="1964" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="4680" standardDeviationMicrosecondsPerInvocation="322"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="281" invocations="1964" avgMicrosecondsPerInvocation="143" maxMicrosecondsPerInvocation="4803" standardDeviationMicrosecondsPerInvocation="350"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="279" invocations="1964" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="6149" standardDeviationMicrosecondsPerInvocation="395"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="278" invocations="1964" avgMicrosecondsPerInvocation="141" maxMicrosecondsPerInvocation="5363" standardDeviationMicrosecondsPerInvocation="371"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="271" invocations="1964" avgMicrosecondsPerInvocation="138" maxMicrosecondsPerInvocation="5802" standardDeviationMicrosecondsPerInvocation="348"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="267" invocations="1964" avgMicrosecondsPerInvocation="136" maxMicrosecondsPerInvocation="3773" standardDeviationMicrosecondsPerInvocation="307"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="265" invocations="1964" avgMicrosecondsPerInvocation="135" maxMicrosecondsPerInvocation="4388" standardDeviationMicrosecondsPerInvocation="328"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="256" invocations="1964" avgMicrosecondsPerInvocation="130" maxMicrosecondsPerInvocation="4334" standardDeviationMicrosecondsPerInvocation="318"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="251" invocations="1964" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="5635" standardDeviationMicrosecondsPerInvocation="327"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.LoopInsideBenchmarkDetector" totalMilliseconds="238" invocations="1964" avgMicrosecondsPerInvocation="121" maxMicrosecondsPerInvocation="5207" standardDeviationMicrosecondsPerInvocation="329"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadForLoop" totalMilliseconds="238" invocations="1964" avgMicrosecondsPerInvocation="121" maxMicrosecondsPerInvocation="3646" standardDeviationMicrosecondsPerInvocation="295"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="235" invocations="2565" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="3863" standardDeviationMicrosecondsPerInvocation="227"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="4867" invocations="15873" avgMicrosecondsPerInvocation="306" maxMicrosecondsPerInvocation="431537" standardDeviationMicrosecondsPerInvocation="4116"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="4410" invocations="14708" avgMicrosecondsPerInvocation="299" maxMicrosecondsPerInvocation="97387" standardDeviationMicrosecondsPerInvocation="1664"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="4020" invocations="14977" avgMicrosecondsPerInvocation="268" maxMicrosecondsPerInvocation="162820" standardDeviationMicrosecondsPerInvocation="2253"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="3812" invocations="15315" avgMicrosecondsPerInvocation="248" maxMicrosecondsPerInvocation="82326" standardDeviationMicrosecondsPerInvocation="1481"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="3128" invocations="15715" avgMicrosecondsPerInvocation="199" maxMicrosecondsPerInvocation="169043" standardDeviationMicrosecondsPerInvocation="1774"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="2074" invocations="13099" avgMicrosecondsPerInvocation="158" maxMicrosecondsPerInvocation="61293" standardDeviationMicrosecondsPerInvocation="852"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1607" invocations="15328" avgMicrosecondsPerInvocation="104" maxMicrosecondsPerInvocation="25532" standardDeviationMicrosecondsPerInvocation="360"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1595" invocations="18859" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="37723" standardDeviationMicrosecondsPerInvocation="429"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1247" invocations="4477" avgMicrosecondsPerInvocation="278" maxMicrosecondsPerInvocation="49566" standardDeviationMicrosecondsPerInvocation="1248"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1101" invocations="2721" avgMicrosecondsPerInvocation="404" maxMicrosecondsPerInvocation="67854" standardDeviationMicrosecondsPerInvocation="1788"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="1083" invocations="15315" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="79170" standardDeviationMicrosecondsPerInvocation="738"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1069" invocations="2721" avgMicrosecondsPerInvocation="393" maxMicrosecondsPerInvocation="17515" standardDeviationMicrosecondsPerInvocation="1025"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="952" invocations="2078" avgMicrosecondsPerInvocation="458" maxMicrosecondsPerInvocation="154209" standardDeviationMicrosecondsPerInvocation="3763"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="890" invocations="2078" avgMicrosecondsPerInvocation="428" maxMicrosecondsPerInvocation="112682" standardDeviationMicrosecondsPerInvocation="3348"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="889" invocations="4013" avgMicrosecondsPerInvocation="221" maxMicrosecondsPerInvocation="91171" standardDeviationMicrosecondsPerInvocation="1905"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="827" invocations="2078" avgMicrosecondsPerInvocation="398" maxMicrosecondsPerInvocation="165436" standardDeviationMicrosecondsPerInvocation="3817"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="698" invocations="2078" avgMicrosecondsPerInvocation="335" maxMicrosecondsPerInvocation="29879" standardDeviationMicrosecondsPerInvocation="1134"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="674" invocations="14392" avgMicrosecondsPerInvocation="46" maxMicrosecondsPerInvocation="32035" standardDeviationMicrosecondsPerInvocation="445"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="654" invocations="16478" avgMicrosecondsPerInvocation="39" maxMicrosecondsPerInvocation="100140" standardDeviationMicrosecondsPerInvocation="1096"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="643" invocations="2078" avgMicrosecondsPerInvocation="309" maxMicrosecondsPerInvocation="156130" standardDeviationMicrosecondsPerInvocation="3654"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="599" invocations="2078" avgMicrosecondsPerInvocation="288" maxMicrosecondsPerInvocation="179720" standardDeviationMicrosecondsPerInvocation="3984"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="521" invocations="2078" avgMicrosecondsPerInvocation="251" maxMicrosecondsPerInvocation="57366" standardDeviationMicrosecondsPerInvocation="1509"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="502" invocations="2078" avgMicrosecondsPerInvocation="241" maxMicrosecondsPerInvocation="53647" standardDeviationMicrosecondsPerInvocation="1452"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="496" invocations="424160" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="29286" standardDeviationMicrosecondsPerInvocation="53"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="461" invocations="2078" avgMicrosecondsPerInvocation="221" maxMicrosecondsPerInvocation="25319" standardDeviationMicrosecondsPerInvocation="871"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="451" invocations="14708" avgMicrosecondsPerInvocation="30" maxMicrosecondsPerInvocation="12861" standardDeviationMicrosecondsPerInvocation="149"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="432" invocations="2078" avgMicrosecondsPerInvocation="208" maxMicrosecondsPerInvocation="33858" standardDeviationMicrosecondsPerInvocation="1005"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindFieldSelfAssignment" totalMilliseconds="432" invocations="2078" avgMicrosecondsPerInvocation="208" maxMicrosecondsPerInvocation="56158" standardDeviationMicrosecondsPerInvocation="1713"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="420" invocations="2078" avgMicrosecondsPerInvocation="202" maxMicrosecondsPerInvocation="133417" standardDeviationMicrosecondsPerInvocation="3000"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="417" invocations="2078" avgMicrosecondsPerInvocation="200" maxMicrosecondsPerInvocation="18868" standardDeviationMicrosecondsPerInvocation="700"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SynchronizingOnContentsOfFieldToProtectField" totalMilliseconds="414" invocations="2078" avgMicrosecondsPerInvocation="199" maxMicrosecondsPerInvocation="84507" standardDeviationMicrosecondsPerInvocation="1933"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="412" invocations="16478" avgMicrosecondsPerInvocation="25" maxMicrosecondsPerInvocation="124982" standardDeviationMicrosecondsPerInvocation="984"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDerefsInvolvingNonShortCircuitEvaluation" totalMilliseconds="411" invocations="2078" avgMicrosecondsPerInvocation="197" maxMicrosecondsPerInvocation="67530" standardDeviationMicrosecondsPerInvocation="1626"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="409" invocations="1639" avgMicrosecondsPerInvocation="249" maxMicrosecondsPerInvocation="8694" standardDeviationMicrosecondsPerInvocation="779"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="403" invocations="2078" avgMicrosecondsPerInvocation="194" maxMicrosecondsPerInvocation="35161" standardDeviationMicrosecondsPerInvocation="947"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="394" invocations="2078" avgMicrosecondsPerInvocation="189" maxMicrosecondsPerInvocation="16395" standardDeviationMicrosecondsPerInvocation="670"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="387" invocations="2078" avgMicrosecondsPerInvocation="186" maxMicrosecondsPerInvocation="21680" standardDeviationMicrosecondsPerInvocation="690"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="387" invocations="2078" avgMicrosecondsPerInvocation="186" maxMicrosecondsPerInvocation="10705" standardDeviationMicrosecondsPerInvocation="511"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="387" invocations="2078" avgMicrosecondsPerInvocation="186" maxMicrosecondsPerInvocation="9368" standardDeviationMicrosecondsPerInvocation="547"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="373" invocations="2078" avgMicrosecondsPerInvocation="179" maxMicrosecondsPerInvocation="20090" standardDeviationMicrosecondsPerInvocation="726"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BadSyntaxForRegularExpression" totalMilliseconds="371" invocations="2078" avgMicrosecondsPerInvocation="178" maxMicrosecondsPerInvocation="32871" standardDeviationMicrosecondsPerInvocation="861"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="367" invocations="2078" avgMicrosecondsPerInvocation="177" maxMicrosecondsPerInvocation="7689" standardDeviationMicrosecondsPerInvocation="493"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="365" invocations="2078" avgMicrosecondsPerInvocation="175" maxMicrosecondsPerInvocation="8041" standardDeviationMicrosecondsPerInvocation="458"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNonShortCircuit" totalMilliseconds="357" invocations="2078" avgMicrosecondsPerInvocation="171" maxMicrosecondsPerInvocation="27248" standardDeviationMicrosecondsPerInvocation="738"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

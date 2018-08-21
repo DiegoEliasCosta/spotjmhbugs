@@ -16,6 +16,7 @@ class JMHSpotBugsAutomater
   JMH_JAR_PATTERNS = ["jmh", "benchmark", "perf", "bench"]
   JMH_DIR_PATTERNS = ["jmh", "benchmark", "perf", "bench"]
   SEND_ENTER = "echo \"\n\" |"
+  GIT_VERSION = "2018-05-30"
 
   def initialize(outfile, tmp_dir, cache_dir, debug, no_build = false, count_file = nil, previous_results = nil)
     @debug = debug
@@ -30,14 +31,16 @@ class JMHSpotBugsAutomater
       @result = previous_results
     else
       @result = CSV.new
-      @result.headers = ["project", "bugtype", "count"]
+      @result.headers = ["project", "bugtype", "count", "version"]
     end
   end
 
   def analyze_project(project)
 
+    hash = 'na'
+
     if !@skipbuild
-      success, dir = clone_project(project['project'], @tmp_dir)
+      success, dir, hash = clone_project(project['project'], @tmp_dir)
       if !success && !File.exists?(dir)
         @debug.puts "Failed to checkout project #{project['project']}"
         return
@@ -50,11 +53,11 @@ class JMHSpotBugsAutomater
       # this is a sanity check
       found = check_for_jmh_artefact dir
       if !found
-        if backend == :mvn
-          guess_and_compile_mvn_dir dir
-        elsif backend == :gradlew
+        # if backend == :mvn
+        #   guess_and_compile_mvn_dir dir
+        # elsif backend == :gradlew
           @debug.puts "No JMHy artefact found  for #{project['project']} in #{dir}."
-        end
+        # end
       end
     else
       project_name = project['project'].split("/")[1]
@@ -65,13 +68,13 @@ class JMHSpotBugsAutomater
 
     if r != :failed
 
-      if counted > 0
+      if counted && counted > 0
         method_found_reports = r.reject{|line| line[1] != "JMH_BENCHMARK_METHOD_FOUND" }
         actual = (method_found_reports.size > 0) ? method_found_reports[0][2] : 0
         @debug.puts "Warning: expected to find #{counted} benchmarks for #{project['project']}, but found #{actual}." if counted != actual
       end
 
-      r.each{|line| @result << line }
+      r.each{|line| @result << line + [hash] }
       @debug.puts "Successfully analyzed project #{project['project']}."
       @result.save(@outfile)
       @debug.puts "Successfully saved file"
@@ -109,10 +112,30 @@ class JMHSpotBugsAutomater
       project_name = project.split("/")[1]
       Dir.chdir(tmp_dir) do
         success = false
+        version_hash = 'na'
         if !Dir.exists? project_name
           success = system "#{GIT_CMD} clone #{url}"
+          if Dir.exists?(project_name) then
+            Dir.chdir(project_name) do
+              checkout_cmd = "git rev-list master  -n 1 --first-parent --before=\"#{GIT_VERSION}\""
+              version_hash = `#{checkout_cmd}`
+              system "git checkout #{version_hash}"
+            end
+          else
+            @debug.puts "Failed to checkout project #{project}"
+            success = false
+          end
+        else
+          Dir.chdir(project_name) do
+            check_cmd = "#{GIT_CMD} rev-parse HEAD"
+            version_hash = `#{check_cmd}`
+          end
         end
-        return success, "#{tmp_dir}/#{project_name}"
+        if !version_hash || version_hash == '' then
+          version_hash = 'na'
+          @debug.puts "Failed to get right version for #{project}"
+        end
+        return success, "#{tmp_dir}/#{project_name}", version_hash
       end
     end
 

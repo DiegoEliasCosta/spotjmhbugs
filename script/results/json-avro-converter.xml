@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1511125354000" analysisTimestamp="1511125356159" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534809290000" analysisTimestamp="1534809292204" release="">
   <Project projectName="">
     <Jar>tmp/json-avro-converter</Jar>
   </Project>
@@ -88,7 +88,7 @@
       <SourceLine classname="tech.allegro.schema.json2avro.converter.generated.JsonAvroConverterBenchmark_jmhType_B2" sourcefile="JsonAvroConverterBenchmark_jmhType_B2.java" sourcepath="tech/allegro/schema/json2avro/converter/generated/JsonAvroConverterBenchmark_jmhType_B2.java"/>
     </Field>
   </BugInstance>
-  <Errors errors="0" missingClasses="47">
+  <Errors errors="0" missingClasses="60">
     <MissingClass>groovy.lang.MetaClass</MissingClass>
     <MissingClass>org.apache.avro.AvroRuntimeException</MissingClass>
     <MissingClass>org.apache.avro.AvroTypeException</MissingClass>
@@ -96,18 +96,28 @@
     <MissingClass>org.apache.avro.Schema$Field</MissingClass>
     <MissingClass>org.apache.avro.Schema$Parser</MissingClass>
     <MissingClass>org.apache.avro.Schema$Type</MissingClass>
+    <MissingClass>org.apache.avro.generic.GenericData</MissingClass>
     <MissingClass>org.apache.avro.generic.GenericData$EnumSymbol</MissingClass>
     <MissingClass>org.apache.avro.generic.GenericDatumReader</MissingClass>
     <MissingClass>org.apache.avro.generic.GenericDatumWriter</MissingClass>
     <MissingClass>org.apache.avro.generic.GenericRecord</MissingClass>
     <MissingClass>org.apache.avro.generic.GenericRecordBuilder</MissingClass>
+    <MissingClass>org.apache.avro.io.BinaryDecoder</MissingClass>
     <MissingClass>org.apache.avro.io.BinaryEncoder</MissingClass>
+    <MissingClass>org.apache.avro.io.DatumReader</MissingClass>
+    <MissingClass>org.apache.avro.io.DatumWriter</MissingClass>
     <MissingClass>org.apache.avro.io.DecoderFactory</MissingClass>
     <MissingClass>org.apache.avro.io.EncoderFactory</MissingClass>
     <MissingClass>org.apache.avro.io.JsonEncoder</MissingClass>
     <MissingClass>org.apache.avro.io.parsing.Parser</MissingClass>
     <MissingClass>org.apache.avro.io.parsing.Symbol</MissingClass>
     <MissingClass>org.apache.avro.io.parsing.Symbol$Alternative</MissingClass>
+    <MissingClass>org.apache.avro.message.BinaryMessageDecoder</MissingClass>
+    <MissingClass>org.apache.avro.message.BinaryMessageEncoder</MissingClass>
+    <MissingClass>org.apache.avro.specific.SpecificData</MissingClass>
+    <MissingClass>org.apache.avro.specific.SpecificDatumReader</MissingClass>
+    <MissingClass>org.apache.avro.specific.SpecificRecordBase</MissingClass>
+    <MissingClass>org.apache.avro.specific.SpecificRecordBuilderBase</MissingClass>
     <MissingClass>org.codehaus.groovy.reflection.ClassInfo</MissingClass>
     <MissingClass>org.codehaus.groovy.runtime.ScriptBytecodeAdapter</MissingClass>
     <MissingClass>org.codehaus.groovy.runtime.callsite.CallSite</MissingClass>
@@ -117,6 +127,7 @@
     <MissingClass>org.codehaus.jackson.map.ObjectMapper</MissingClass>
     <MissingClass>org.openjdk.jmh.infra.BenchmarkParams</MissingClass>
     <MissingClass>org.openjdk.jmh.infra.Blackhole</MissingClass>
+    <MissingClass>org.openjdk.jmh.infra.Control</MissingClass>
     <MissingClass>org.openjdk.jmh.infra.IterationParams</MissingClass>
     <MissingClass>org.openjdk.jmh.infra.ThreadParams</MissingClass>
     <MissingClass>org.openjdk.jmh.results.AverageTimeResult</MissingClass>
@@ -126,6 +137,7 @@
     <MissingClass>org.openjdk.jmh.results.SampleTimeResult</MissingClass>
     <MissingClass>org.openjdk.jmh.results.SingleShotResult</MissingClass>
     <MissingClass>org.openjdk.jmh.results.ThroughputResult</MissingClass>
+    <MissingClass>org.openjdk.jmh.runner.FailureAssistException</MissingClass>
     <MissingClass>org.openjdk.jmh.runner.InfraControl</MissingClass>
     <MissingClass>org.openjdk.jmh.runner.Runner</MissingClass>
     <MissingClass>org.openjdk.jmh.runner.options.ChainedOptionsBuilder</MissingClass>
@@ -133,27 +145,28 @@
     <MissingClass>org.openjdk.jmh.runner.options.TimeValue</MissingClass>
     <MissingClass>org.openjdk.jmh.util.SampleBuffer</MissingClass>
     <MissingClass>org.spockframework.lang.SpecInternals</MissingClass>
+    <MissingClass>org.spockframework.runtime.ErrorCollector</MissingClass>
     <MissingClass>org.spockframework.runtime.SpockRuntime</MissingClass>
     <MissingClass>org.spockframework.runtime.ValueRecorder</MissingClass>
     <MissingClass>spock.lang.Specification</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Sun, 19 Nov 2017 22:02:34 +0100" total_classes="61" referenced_classes="191" total_bugs="10" total_size="4653" num_packages="6" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="15.67" clock_seconds="4.68" peak_mbytes="352.20" alloc_mbytes="3641.00" gc_seconds="0.11" priority_2="10">
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 01:54:50 +0200" total_classes="60" referenced_classes="192" total_bugs="10" total_size="4404" num_packages="5" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="17.89" clock_seconds="5.17" peak_mbytes="363.64" alloc_mbytes="3641.00" gc_seconds="0.12" priority_2="10">
     <PackageStats package="org.apache.avro.io" total_bugs="0" total_types="1" total_size="16">
       <ClassStats class="org.apache.avro.io.NoWrappingJsonEncoder" sourceFile="NoWrappingJsonEncoder.java" interface="false" size="16" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.gradle.cli" total_bugs="0" total_types="24" total_size="545">
+    <PackageStats package="org.gradle.cli" total_bugs="0" total_types="24" total_size="536">
       <ClassStats class="org.gradle.cli.AbstractCommandLineConverter" sourceFile="AbstractCommandLineConverter.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.gradle.cli.AbstractPropertiesCommandLineConverter" sourceFile="AbstractPropertiesCommandLineConverter.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="org.gradle.cli.CommandLineArgumentException" sourceFile="CommandLineArgumentException.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.gradle.cli.CommandLineConverter" sourceFile="CommandLineConverter.java" interface="true" size="4" bugs="0"/>
       <ClassStats class="org.gradle.cli.CommandLineOption" sourceFile="CommandLineOption.java" interface="false" size="63" bugs="0"/>
-      <ClassStats class="org.gradle.cli.CommandLineParser" sourceFile="CommandLineParser.java" interface="false" size="138" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser" sourceFile="CommandLineParser.java" interface="false" size="131" bugs="0"/>
       <ClassStats class="org.gradle.cli.CommandLineParser$1" sourceFile="CommandLineParser.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.gradle.cli.CommandLineParser$AfterFirstSubCommand" sourceFile="CommandLineParser.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="org.gradle.cli.CommandLineParser$AfterOptions" sourceFile="CommandLineParser.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="org.gradle.cli.CommandLineParser$BeforeFirstSubCommand" sourceFile="CommandLineParser.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="org.gradle.cli.CommandLineParser$CaseInsensitiveStringComparator" sourceFile="CommandLineParser.java" interface="false" size="10" bugs="0"/>
-      <ClassStats class="org.gradle.cli.CommandLineParser$KnownOptionParserState" sourceFile="CommandLineParser.java" interface="false" size="45" bugs="0"/>
+      <ClassStats class="org.gradle.cli.CommandLineParser$KnownOptionParserState" sourceFile="CommandLineParser.java" interface="false" size="43" bugs="0"/>
       <ClassStats class="org.gradle.cli.CommandLineParser$MissingOptionArgState" sourceFile="CommandLineParser.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="org.gradle.cli.CommandLineParser$OptionAwareParserState" sourceFile="CommandLineParser.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="org.gradle.cli.CommandLineParser$OptionComparator" sourceFile="CommandLineParser.java" interface="false" size="9" bugs="0"/>
@@ -186,67 +199,63 @@
       <ClassStats class="org.gradle.wrapper.WrapperConfiguration" sourceFile="WrapperConfiguration.java" interface="false" size="43" bugs="0"/>
       <ClassStats class="org.gradle.wrapper.WrapperExecutor" sourceFile="WrapperExecutor.java" interface="false" size="71" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.openjdk.jmh.infra.generated" total_bugs="0" total_types="4" total_size="543">
-      <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmhType" sourceFile="Blackhole_jmhType.java" interface="false" size="3" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B1" sourceFile="Blackhole_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" sourceFile="Blackhole_jmhType_B2.java" interface="false" size="22" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B3" sourceFile="Blackhole_jmhType_B3.java" interface="false" size="259" bugs="0"/>
-    </PackageStats>
-    <PackageStats package="tech.allegro.schema.json2avro.converter" total_bugs="4" total_types="7" total_size="347" priority_2="4">
+    <PackageStats package="tech.allegro.schema.json2avro.converter" total_bugs="4" total_types="10" total_size="466" priority_2="4">
       <ClassStats class="tech.allegro.schema.json2avro.converter.AvroConversionException" sourceFile="AvroConversionException.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="tech.allegro.schema.json2avro.converter.AvroTypeExceptions" sourceFile="AvroTypeExceptions.java" interface="false" size="30" bugs="0"/>
-      <ClassStats class="tech.allegro.schema.json2avro.converter.JsonAvroConverter" sourceFile="JsonAvroConverter.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="tech.allegro.schema.json2avro.converter.JsonAvroConverter" sourceFile="JsonAvroConverter.java" interface="false" size="50" bugs="0"/>
       <ClassStats class="tech.allegro.schema.json2avro.converter.JsonAvroConverterBenchmark" sourceFile="JsonAvroConverterBenchmark.java" interface="false" size="35" bugs="4" priority_2="4"/>
-      <ClassStats class="tech.allegro.schema.json2avro.converter.JsonAvroConverterSpec" sourceFile="JsonAvroConverterSpec.groovy" interface="false" size="143" bugs="0"/>
+      <ClassStats class="tech.allegro.schema.json2avro.converter.JsonAvroConverterSpec" sourceFile="JsonAvroConverterSpec.groovy" interface="false" size="149" bugs="0"/>
       <ClassStats class="tech.allegro.schema.json2avro.converter.JsonGenericRecordReader" sourceFile="JsonGenericRecordReader.java" interface="false" size="89" bugs="0"/>
       <ClassStats class="tech.allegro.schema.json2avro.converter.JsonGenericRecordReader$1" sourceFile="JsonGenericRecordReader.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="tech.allegro.schema.json2avro.converter.SpecificRecordConvertTest" sourceFile="SpecificRecordConvertTest.java" interface="false" size="60" bugs="0"/>
+      <ClassStats class="tech.allegro.schema.json2avro.converter.SpecificRecordConvertTest$1" sourceFile="SpecificRecordConvertTest.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="tech.allegro.schema.json2avro.converter.SpecificRecordConvertTest$Builder" sourceFile="SpecificRecordConvertTest.java" interface="false" size="41" bugs="0"/>
     </PackageStats>
-    <PackageStats package="tech.allegro.schema.json2avro.converter.generated" total_bugs="6" total_types="8" total_size="2582" priority_2="6">
-      <ClassStats class="tech.allegro.schema.json2avro.converter.generated.JsonAvroConverterBenchmark_conversionLatencyForCompleteMessage_jmhTest" sourceFile="JsonAvroConverterBenchmark_conversionLatencyForCompleteMessage_jmhTest.java" interface="false" size="509" bugs="0"/>
-      <ClassStats class="tech.allegro.schema.json2avro.converter.generated.JsonAvroConverterBenchmark_conversionLatencyForMessageWithNotProvidedOptionalField_jmhTest" sourceFile="JsonAvroConverterBenchmark_conversionLatencyForMessageWithNotProvidedOptionalField_jmhTest.java" interface="false" size="509" bugs="0"/>
-      <ClassStats class="tech.allegro.schema.json2avro.converter.generated.JsonAvroConverterBenchmark_conversionThroughputForCompleteMessage_jmhTest" sourceFile="JsonAvroConverterBenchmark_conversionThroughputForCompleteMessage_jmhTest.java" interface="false" size="509" bugs="0"/>
-      <ClassStats class="tech.allegro.schema.json2avro.converter.generated.JsonAvroConverterBenchmark_conversionThroughputForMessageWithNotProvidedOptionalField_jmhTest" sourceFile="JsonAvroConverterBenchmark_conversionThroughputForMessageWithNotProvidedOptionalField_jmhTest.java" interface="false" size="509" bugs="0"/>
+    <PackageStats package="tech.allegro.schema.json2avro.converter.generated" total_bugs="6" total_types="8" total_size="2766" priority_2="6">
+      <ClassStats class="tech.allegro.schema.json2avro.converter.generated.JsonAvroConverterBenchmark_conversionLatencyForCompleteMessage_jmhTest" sourceFile="JsonAvroConverterBenchmark_conversionLatencyForCompleteMessage_jmhTest.java" interface="false" size="555" bugs="0"/>
+      <ClassStats class="tech.allegro.schema.json2avro.converter.generated.JsonAvroConverterBenchmark_conversionLatencyForMessageWithNotProvidedOptionalField_jmhTest" sourceFile="JsonAvroConverterBenchmark_conversionLatencyForMessageWithNotProvidedOptionalField_jmhTest.java" interface="false" size="555" bugs="0"/>
+      <ClassStats class="tech.allegro.schema.json2avro.converter.generated.JsonAvroConverterBenchmark_conversionThroughputForCompleteMessage_jmhTest" sourceFile="JsonAvroConverterBenchmark_conversionThroughputForCompleteMessage_jmhTest.java" interface="false" size="555" bugs="0"/>
+      <ClassStats class="tech.allegro.schema.json2avro.converter.generated.JsonAvroConverterBenchmark_conversionThroughputForMessageWithNotProvidedOptionalField_jmhTest" sourceFile="JsonAvroConverterBenchmark_conversionThroughputForMessageWithNotProvidedOptionalField_jmhTest.java" interface="false" size="555" bugs="0"/>
       <ClassStats class="tech.allegro.schema.json2avro.converter.generated.JsonAvroConverterBenchmark_jmhType" sourceFile="JsonAvroConverterBenchmark_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="tech.allegro.schema.json2avro.converter.generated.JsonAvroConverterBenchmark_jmhType_B1" sourceFile="JsonAvroConverterBenchmark_jmhType_B1.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="tech.allegro.schema.json2avro.converter.generated.JsonAvroConverterBenchmark_jmhType_B2" sourceFile="JsonAvroConverterBenchmark_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
       <ClassStats class="tech.allegro.schema.json2avro.converter.generated.JsonAvroConverterBenchmark_jmhType_B3" sourceFile="JsonAvroConverterBenchmark_jmhType_B3.java" interface="false" size="259" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="322" invocations="1092" avgMicrosecondsPerInvocation="295" maxMicrosecondsPerInvocation="18695" standardDeviationMicrosecondsPerInvocation="902"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="235" invocations="351" avgMicrosecondsPerInvocation="670" maxMicrosecondsPerInvocation="24471" standardDeviationMicrosecondsPerInvocation="1713"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="232" invocations="355" avgMicrosecondsPerInvocation="654" maxMicrosecondsPerInvocation="46993" standardDeviationMicrosecondsPerInvocation="2697"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="205" invocations="389" avgMicrosecondsPerInvocation="529" maxMicrosecondsPerInvocation="10224" standardDeviationMicrosecondsPerInvocation="1032"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="194" invocations="372" avgMicrosecondsPerInvocation="522" maxMicrosecondsPerInvocation="10156" standardDeviationMicrosecondsPerInvocation="1047"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="184" invocations="356" avgMicrosecondsPerInvocation="517" maxMicrosecondsPerInvocation="7798" standardDeviationMicrosecondsPerInvocation="986"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="182" invocations="1095" avgMicrosecondsPerInvocation="166" maxMicrosecondsPerInvocation="2696" standardDeviationMicrosecondsPerInvocation="131"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="171" invocations="191" avgMicrosecondsPerInvocation="899" maxMicrosecondsPerInvocation="33619" standardDeviationMicrosecondsPerInvocation="2629"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="148" invocations="191" avgMicrosecondsPerInvocation="777" maxMicrosecondsPerInvocation="27604" standardDeviationMicrosecondsPerInvocation="2191"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="124" invocations="865" avgMicrosecondsPerInvocation="143" maxMicrosecondsPerInvocation="2616" standardDeviationMicrosecondsPerInvocation="207"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="122" invocations="356" avgMicrosecondsPerInvocation="343" maxMicrosecondsPerInvocation="10297" standardDeviationMicrosecondsPerInvocation="867"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="95" invocations="304" avgMicrosecondsPerInvocation="313" maxMicrosecondsPerInvocation="3245" standardDeviationMicrosecondsPerInvocation="530"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="74" invocations="191" avgMicrosecondsPerInvocation="392" maxMicrosecondsPerInvocation="36142" standardDeviationMicrosecondsPerInvocation="2626"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="73" invocations="61" avgMicrosecondsPerInvocation="1204" maxMicrosecondsPerInvocation="24299" standardDeviationMicrosecondsPerInvocation="4548"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="57" invocations="371" avgMicrosecondsPerInvocation="154" maxMicrosecondsPerInvocation="26750" standardDeviationMicrosecondsPerInvocation="1387"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="57" invocations="970" avgMicrosecondsPerInvocation="58" maxMicrosecondsPerInvocation="1104" standardDeviationMicrosecondsPerInvocation="105"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="56" invocations="191" avgMicrosecondsPerInvocation="296" maxMicrosecondsPerInvocation="6023" standardDeviationMicrosecondsPerInvocation="639"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="56" invocations="61" avgMicrosecondsPerInvocation="925" maxMicrosecondsPerInvocation="19556" standardDeviationMicrosecondsPerInvocation="2640"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="52" invocations="284" avgMicrosecondsPerInvocation="185" maxMicrosecondsPerInvocation="15105" standardDeviationMicrosecondsPerInvocation="935"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="50" invocations="356" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="1474" standardDeviationMicrosecondsPerInvocation="276"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="40" invocations="191" avgMicrosecondsPerInvocation="212" maxMicrosecondsPerInvocation="14243" standardDeviationMicrosecondsPerInvocation="1094"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="40" invocations="191" avgMicrosecondsPerInvocation="211" maxMicrosecondsPerInvocation="4593" standardDeviationMicrosecondsPerInvocation="470"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="39" invocations="191" avgMicrosecondsPerInvocation="206" maxMicrosecondsPerInvocation="3412" standardDeviationMicrosecondsPerInvocation="379"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="36" invocations="61" avgMicrosecondsPerInvocation="606" maxMicrosecondsPerInvocation="9299" standardDeviationMicrosecondsPerInvocation="1542"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="35" invocations="61" avgMicrosecondsPerInvocation="586" maxMicrosecondsPerInvocation="15638" standardDeviationMicrosecondsPerInvocation="2012"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="35" invocations="305" avgMicrosecondsPerInvocation="115" maxMicrosecondsPerInvocation="2301" standardDeviationMicrosecondsPerInvocation="256"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="34" invocations="191" avgMicrosecondsPerInvocation="178" maxMicrosecondsPerInvocation="5712" standardDeviationMicrosecondsPerInvocation="513"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="32" invocations="61" avgMicrosecondsPerInvocation="526" maxMicrosecondsPerInvocation="11077" standardDeviationMicrosecondsPerInvocation="1502"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="31" invocations="191" avgMicrosecondsPerInvocation="164" maxMicrosecondsPerInvocation="2338" standardDeviationMicrosecondsPerInvocation="320"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LazyInit" totalMilliseconds="30" invocations="61" avgMicrosecondsPerInvocation="501" maxMicrosecondsPerInvocation="19719" standardDeviationMicrosecondsPerInvocation="2629"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="28" invocations="351" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="1139" standardDeviationMicrosecondsPerInvocation="155"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="27" invocations="191" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="8469" standardDeviationMicrosecondsPerInvocation="698"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="24" invocations="8771" avgMicrosecondsPerInvocation="2" maxMicrosecondsPerInvocation="1867" standardDeviationMicrosecondsPerInvocation="27"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="24" invocations="61" avgMicrosecondsPerInvocation="405" maxMicrosecondsPerInvocation="6397" standardDeviationMicrosecondsPerInvocation="1068"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="23" invocations="61" avgMicrosecondsPerInvocation="378" maxMicrosecondsPerInvocation="7774" standardDeviationMicrosecondsPerInvocation="1101"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="334" invocations="1115" avgMicrosecondsPerInvocation="300" maxMicrosecondsPerInvocation="19705" standardDeviationMicrosecondsPerInvocation="960"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="257" invocations="378" avgMicrosecondsPerInvocation="680" maxMicrosecondsPerInvocation="30018" standardDeviationMicrosecondsPerInvocation="2023"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="230" invocations="374" avgMicrosecondsPerInvocation="615" maxMicrosecondsPerInvocation="7924" standardDeviationMicrosecondsPerInvocation="1280"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="226" invocations="402" avgMicrosecondsPerInvocation="562" maxMicrosecondsPerInvocation="10689" standardDeviationMicrosecondsPerInvocation="1152"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="216" invocations="1118" avgMicrosecondsPerInvocation="193" maxMicrosecondsPerInvocation="4617" standardDeviationMicrosecondsPerInvocation="224"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="213" invocations="380" avgMicrosecondsPerInvocation="560" maxMicrosecondsPerInvocation="10621" standardDeviationMicrosecondsPerInvocation="1180"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="187" invocations="384" avgMicrosecondsPerInvocation="486" maxMicrosecondsPerInvocation="9510" standardDeviationMicrosecondsPerInvocation="1067"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="177" invocations="192" avgMicrosecondsPerInvocation="923" maxMicrosecondsPerInvocation="40800" standardDeviationMicrosecondsPerInvocation="3111"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="159" invocations="192" avgMicrosecondsPerInvocation="828" maxMicrosecondsPerInvocation="31544" standardDeviationMicrosecondsPerInvocation="2943"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="136" invocations="895" avgMicrosecondsPerInvocation="152" maxMicrosecondsPerInvocation="2345" standardDeviationMicrosecondsPerInvocation="218"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="134" invocations="322" avgMicrosecondsPerInvocation="417" maxMicrosecondsPerInvocation="10766" standardDeviationMicrosecondsPerInvocation="943"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="126" invocations="380" avgMicrosecondsPerInvocation="331" maxMicrosecondsPerInvocation="12001" standardDeviationMicrosecondsPerInvocation="814"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LazyInit" totalMilliseconds="108" invocations="60" avgMicrosecondsPerInvocation="1811" maxMicrosecondsPerInvocation="30501" standardDeviationMicrosecondsPerInvocation="6473"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="87" invocations="60" avgMicrosecondsPerInvocation="1461" maxMicrosecondsPerInvocation="29706" standardDeviationMicrosecondsPerInvocation="5166"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="80" invocations="60" avgMicrosecondsPerInvocation="1338" maxMicrosecondsPerInvocation="54250" standardDeviationMicrosecondsPerInvocation="7026"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="77" invocations="192" avgMicrosecondsPerInvocation="405" maxMicrosecondsPerInvocation="32994" standardDeviationMicrosecondsPerInvocation="2399"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="60" invocations="326" avgMicrosecondsPerInvocation="187" maxMicrosecondsPerInvocation="5353" standardDeviationMicrosecondsPerInvocation="494"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="60" invocations="380" avgMicrosecondsPerInvocation="158" maxMicrosecondsPerInvocation="6595" standardDeviationMicrosecondsPerInvocation="441"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="59" invocations="977" avgMicrosecondsPerInvocation="60" maxMicrosecondsPerInvocation="4038" standardDeviationMicrosecondsPerInvocation="174"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="58" invocations="395" avgMicrosecondsPerInvocation="148" maxMicrosecondsPerInvocation="27520" standardDeviationMicrosecondsPerInvocation="1385"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="58" invocations="192" avgMicrosecondsPerInvocation="304" maxMicrosecondsPerInvocation="6969" standardDeviationMicrosecondsPerInvocation="651"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="55" invocations="60" avgMicrosecondsPerInvocation="927" maxMicrosecondsPerInvocation="20058" standardDeviationMicrosecondsPerInvocation="2695"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="53" invocations="295" avgMicrosecondsPerInvocation="180" maxMicrosecondsPerInvocation="14683" standardDeviationMicrosecondsPerInvocation="900"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="45" invocations="60" avgMicrosecondsPerInvocation="761" maxMicrosecondsPerInvocation="21358" standardDeviationMicrosecondsPerInvocation="2762"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="45" invocations="60" avgMicrosecondsPerInvocation="753" maxMicrosecondsPerInvocation="21255" standardDeviationMicrosecondsPerInvocation="2758"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="38" invocations="192" avgMicrosecondsPerInvocation="202" maxMicrosecondsPerInvocation="4494" standardDeviationMicrosecondsPerInvocation="486"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="37" invocations="192" avgMicrosecondsPerInvocation="194" maxMicrosecondsPerInvocation="2577" standardDeviationMicrosecondsPerInvocation="340"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="35" invocations="60" avgMicrosecondsPerInvocation="591" maxMicrosecondsPerInvocation="6147" standardDeviationMicrosecondsPerInvocation="1420"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="32" invocations="192" avgMicrosecondsPerInvocation="171" maxMicrosecondsPerInvocation="5809" standardDeviationMicrosecondsPerInvocation="485"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="32" invocations="374" avgMicrosecondsPerInvocation="86" maxMicrosecondsPerInvocation="1339" standardDeviationMicrosecondsPerInvocation="192"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="31" invocations="192" avgMicrosecondsPerInvocation="162" maxMicrosecondsPerInvocation="5626" standardDeviationMicrosecondsPerInvocation="464"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="31" invocations="192" avgMicrosecondsPerInvocation="162" maxMicrosecondsPerInvocation="3059" standardDeviationMicrosecondsPerInvocation="351"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="28" invocations="395" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="2566" standardDeviationMicrosecondsPerInvocation="239"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="28" invocations="60" avgMicrosecondsPerInvocation="475" maxMicrosecondsPerInvocation="10020" standardDeviationMicrosecondsPerInvocation="1442"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

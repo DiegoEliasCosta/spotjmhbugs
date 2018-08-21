@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1511131434000" analysisTimestamp="1511131443639" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534845421000" analysisTimestamp="1534845423592" release="">
   <Project projectName="">
     <Jar>tmp/cukedoctor</Jar>
   </Project>
-  <Errors errors="0" missingClasses="50">
+  <Errors errors="0" missingClasses="49">
     <MissingClass>com.beust.jcommander.JCommander</MissingClass>
     <MissingClass>com.fasterxml.jackson.core.type.TypeReference</MissingClass>
     <MissingClass>com.fasterxml.jackson.databind.ObjectMapper</MissingClass>
@@ -25,11 +25,10 @@
     <MissingClass>org.asciidoctor.Attributes</MissingClass>
     <MissingClass>org.asciidoctor.OptionsBuilder</MissingClass>
     <MissingClass>org.asciidoctor.SafeMode</MissingClass>
-    <MissingClass>org.asciidoctor.ast.AbstractBlock</MissingClass>
     <MissingClass>org.asciidoctor.ast.Document</MissingClass>
-    <MissingClass>org.asciidoctor.ast.DocumentRuby</MissingClass>
+    <MissingClass>org.asciidoctor.ast.StructuralNode</MissingClass>
     <MissingClass>org.asciidoctor.extension.BlockMacroProcessor</MissingClass>
-    <MissingClass>org.asciidoctor.extension.JavaExtensionRegistry</MissingClass>
+    <MissingClass>org.asciidoctor.extension.ExtensionGroup</MissingClass>
     <MissingClass>org.asciidoctor.extension.Postprocessor</MissingClass>
     <MissingClass>org.asciidoctor.extension.spi.ExtensionRegistry</MissingClass>
     <MissingClass>org.assertj.core.api.AbstractAssert</MissingClass>
@@ -56,10 +55,10 @@
     <MissingClass>org.mockito.stubbing.Stubber</MissingClass>
     <MissingClass>org.yaml.snakeyaml.Yaml</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Sun, 19 Nov 2017 23:43:54 +0100" total_classes="111" referenced_classes="218" total_bugs="0" total_size="5923" num_packages="25" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="19.25" clock_seconds="5.89" peak_mbytes="353.38" alloc_mbytes="3641.00" gc_seconds="0.14">
-    <PackageStats package="com.github.cukedoctor" total_bugs="0" total_types="3" total_size="303">
-      <ClassStats class="com.github.cukedoctor.Cukedoctor" sourceFile="Cukedoctor.java" interface="false" size="11" bugs="0"/>
-      <ClassStats class="com.github.cukedoctor.CukedoctorMain" sourceFile="CukedoctorMain.java" interface="false" size="124" bugs="0"/>
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 11:57:01 +0200" total_classes="111" referenced_classes="219" total_bugs="0" total_size="6143" num_packages="25" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="20.36" clock_seconds="6.06" peak_mbytes="359.29" alloc_mbytes="3641.00" gc_seconds="0.16">
+    <PackageStats package="com.github.cukedoctor" total_bugs="0" total_types="3" total_size="306">
+      <ClassStats class="com.github.cukedoctor.Cukedoctor" sourceFile="Cukedoctor.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.github.cukedoctor.CukedoctorMain" sourceFile="CukedoctorMain.java" interface="false" size="125" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.CukedoctorMainTest" sourceFile="CukedoctorMainTest.java" interface="false" size="168" bugs="0"/>
     </PackageStats>
     <PackageStats package="com.github.cukedoctor.api" total_bugs="0" total_types="6" total_size="230">
@@ -73,16 +72,16 @@
     <PackageStats package="com.github.cukedoctor.api.builder" total_bugs="0" total_types="1" total_size="17">
       <ClassStats class="com.github.cukedoctor.api.builder.AttributesBuilder" sourceFile="AttributesBuilder.java" interface="true" size="17" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.github.cukedoctor.api.model" total_bugs="0" total_types="17" total_size="684">
+    <PackageStats package="com.github.cukedoctor.api.model" total_bugs="0" total_types="17" total_size="689">
       <ClassStats class="com.github.cukedoctor.api.model.Argument" sourceFile="Argument.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.api.model.Comment" sourceFile="Comment.java" interface="false" size="27" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.api.model.DocString" sourceFile="DocString.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.api.model.Example" sourceFile="Example.java" interface="false" size="15" bugs="0"/>
-      <ClassStats class="com.github.cukedoctor.api.model.Feature" sourceFile="Feature.java" interface="false" size="200" bugs="0"/>
+      <ClassStats class="com.github.cukedoctor.api.model.Feature" sourceFile="Feature.java" interface="false" size="202" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.api.model.FeatureTest" sourceFile="FeatureTest.java" interface="false" size="57" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.api.model.Match" sourceFile="Match.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.api.model.Output" sourceFile="Output.java" interface="false" size="13" bugs="0"/>
-      <ClassStats class="com.github.cukedoctor.api.model.Result" sourceFile="Result.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="com.github.cukedoctor.api.model.Result" sourceFile="Result.java" interface="false" size="32" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.api.model.Row" sourceFile="Row.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.api.model.Scenario" sourceFile="Scenario.java" interface="false" size="82" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.api.model.ScenarioTotalizations" sourceFile="ScenarioTotalizations.java" interface="false" size="67" bugs="0"/>
@@ -115,14 +114,14 @@
       <ClassStats class="com.github.cukedoctor.builder.AttributesBuilderImpl" sourceFile="AttributesBuilderImpl.java" interface="false" size="57" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.builder.CukedoctorDocumentBuilderImpl" sourceFile="CukedoctorDocumentBuilderImpl.java" interface="false" size="25" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.github.cukedoctor.config" total_bugs="0" total_types="3" total_size="94">
-      <ClassStats class="com.github.cukedoctor.config.CukedoctorConfig" sourceFile="CukedoctorConfig.java" interface="false" size="30" bugs="0"/>
+    <PackageStats package="com.github.cukedoctor.config" total_bugs="0" total_types="3" total_size="160">
+      <ClassStats class="com.github.cukedoctor.config.CukedoctorConfig" sourceFile="CukedoctorConfig.java" interface="false" size="90" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.config.GlobalConfig" sourceFile="GlobalConfig.java" interface="false" size="31" bugs="0"/>
-      <ClassStats class="com.github.cukedoctor.config.LayoutConfig" sourceFile="LayoutConfig.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="com.github.cukedoctor.config.LayoutConfig" sourceFile="LayoutConfig.java" interface="false" size="39" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.github.cukedoctor.converter" total_bugs="0" total_types="2" total_size="760">
-      <ClassStats class="com.github.cukedoctor.converter.CukedoctorConverterImpl" sourceFile="CukedoctorConverterImpl.java" interface="false" size="118" bugs="0"/>
-      <ClassStats class="com.github.cukedoctor.converter.CukedoctorConverterTest" sourceFile="CukedoctorConverterTest.java" interface="false" size="642" bugs="0"/>
+    <PackageStats package="com.github.cukedoctor.converter" total_bugs="0" total_types="2" total_size="811">
+      <ClassStats class="com.github.cukedoctor.converter.CukedoctorConverterImpl" sourceFile="CukedoctorConverterImpl.java" interface="false" size="123" bugs="0"/>
+      <ClassStats class="com.github.cukedoctor.converter.CukedoctorConverterTest" sourceFile="CukedoctorConverterTest.java" interface="false" size="688" bugs="0"/>
     </PackageStats>
     <PackageStats package="com.github.cukedoctor.example" total_bugs="0" total_types="4" total_size="140">
       <ClassStats class="com.github.cukedoctor.example.Belly" sourceFile="Belly.java" interface="false" size="12" bugs="0"/>
@@ -139,12 +138,12 @@
       <ClassStats class="com.github.cukedoctor.example.spi.CustomScenarioRenderer" sourceFile="CustomScenarioRenderer.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.example.spi.CustomSummaryRenderer" sourceFile="CustomSummaryRenderer.java" interface="false" size="12" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.github.cukedoctor.extension" total_bugs="0" total_types="13" total_size="430">
-      <ClassStats class="com.github.cukedoctor.extension.CukedoctorExtensionRegistry" sourceFile="CukedoctorExtensionRegistry.java" interface="false" size="21" bugs="0"/>
-      <ClassStats class="com.github.cukedoctor.extension.CukedoctorFilterExtension" sourceFile="CukedoctorFilterExtension.java" interface="false" size="11" bugs="0"/>
+    <PackageStats package="com.github.cukedoctor.extension" total_bugs="0" total_types="13" total_size="442">
+      <ClassStats class="com.github.cukedoctor.extension.CukedoctorExtensionRegistry" sourceFile="CukedoctorExtensionRegistry.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="com.github.cukedoctor.extension.CukedoctorFilterExtension" sourceFile="CukedoctorFilterExtension.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.extension.CukedoctorFooterExtension" sourceFile="CukedoctorFooterExtension.java" interface="false" size="33" bugs="0"/>
-      <ClassStats class="com.github.cukedoctor.extension.CukedoctorMinMaxExtension" sourceFile="CukedoctorMinMaxExtension.java" interface="false" size="19" bugs="0"/>
-      <ClassStats class="com.github.cukedoctor.extension.CukedoctorScriptExtension" sourceFile="CukedoctorScriptExtension.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="com.github.cukedoctor.extension.CukedoctorMinMaxExtension" sourceFile="CukedoctorMinMaxExtension.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="com.github.cukedoctor.extension.CukedoctorScriptExtension" sourceFile="CukedoctorScriptExtension.java" interface="false" size="38" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.extension.CukedoctorStyleExtension" sourceFile="CukedoctorStyleExtension.java" interface="false" size="41" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.extension.CukedoctorThemeExtension" sourceFile="CukedoctorThemeExtension.java" interface="false" size="27" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.extension.FilterExtensionTest" sourceFile="FilterExtensionTest.java" interface="false" size="34" bugs="0"/>
@@ -165,8 +164,8 @@
     <PackageStats package="com.github.cukedoctor.markup" total_bugs="0" total_types="1" total_size="15">
       <ClassStats class="com.github.cukedoctor.markup.Asciidoc" sourceFile="Asciidoc.java" interface="false" size="15" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.github.cukedoctor.mojo" total_bugs="0" total_types="4" total_size="601">
-      <ClassStats class="com.github.cukedoctor.mojo.CukedoctorMojo" sourceFile="CukedoctorMojo.java" interface="false" size="142" bugs="0"/>
+    <PackageStats package="com.github.cukedoctor.mojo" total_bugs="0" total_types="4" total_size="602">
+      <ClassStats class="com.github.cukedoctor.mojo.CukedoctorMojo" sourceFile="CukedoctorMojo.java" interface="false" size="143" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.mojo.CukedoctorMojoTest" sourceFile="CukedoctorMojoTest.java" interface="false" size="261" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.mojo.FileUtil" sourceFile="FileUtil.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.mojo.HelpMojo" sourceFile="HelpMojo.java" interface="false" size="180" bugs="0"/>
@@ -183,16 +182,16 @@
       <ClassStats class="com.github.cukedoctor.parser.FeatureParser$1" sourceFile="FeatureParser.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.parser.FeatureParserTest" sourceFile="FeatureParserTest.java" interface="false" size="92" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.github.cukedoctor.renderer" total_bugs="0" total_types="9" total_size="625">
-      <ClassStats class="com.github.cukedoctor.renderer.AbstractBaseRenderer" sourceFile="AbstractBaseRenderer.java" interface="false" size="19" bugs="0"/>
+    <PackageStats package="com.github.cukedoctor.renderer" total_bugs="0" total_types="9" total_size="658">
+      <ClassStats class="com.github.cukedoctor.renderer.AbstractBaseRenderer" sourceFile="AbstractBaseRenderer.java" interface="false" size="21" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.renderer.BaseRenderer" sourceFile="BaseRenderer.java" interface="true" size="4" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.renderer.CukedoctorExamplesRenderer" sourceFile="CukedoctorExamplesRenderer.java" interface="false" size="20" bugs="0"/>
-      <ClassStats class="com.github.cukedoctor.renderer.CukedoctorFeatureRenderer" sourceFile="CukedoctorFeatureRenderer.java" interface="false" size="47" bugs="0"/>
-      <ClassStats class="com.github.cukedoctor.renderer.CukedoctorScenarioRenderer" sourceFile="CukedoctorScenarioRenderer.java" interface="false" size="63" bugs="0"/>
-      <ClassStats class="com.github.cukedoctor.renderer.CukedoctorStepsRenderer" sourceFile="CukedoctorStepsRenderer.java" interface="false" size="110" bugs="0"/>
-      <ClassStats class="com.github.cukedoctor.renderer.CukedoctorSummaryRenderer" sourceFile="CukedoctorSummaryRenderer.java" interface="false" size="58" bugs="0"/>
+      <ClassStats class="com.github.cukedoctor.renderer.CukedoctorFeatureRenderer" sourceFile="CukedoctorFeatureRenderer.java" interface="false" size="59" bugs="0"/>
+      <ClassStats class="com.github.cukedoctor.renderer.CukedoctorScenarioRenderer" sourceFile="CukedoctorScenarioRenderer.java" interface="false" size="71" bugs="0"/>
+      <ClassStats class="com.github.cukedoctor.renderer.CukedoctorStepsRenderer" sourceFile="CukedoctorStepsRenderer.java" interface="false" size="115" bugs="0"/>
+      <ClassStats class="com.github.cukedoctor.renderer.CukedoctorSummaryRenderer" sourceFile="CukedoctorSummaryRenderer.java" interface="false" size="62" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.renderer.CukedoctorTagsRenderer" sourceFile="CukedoctorTagsRenderer.java" interface="false" size="20" bugs="0"/>
-      <ClassStats class="com.github.cukedoctor.renderer.RendererTest" sourceFile="RendererTest.java" interface="false" size="284" bugs="0"/>
+      <ClassStats class="com.github.cukedoctor.renderer.RendererTest" sourceFile="RendererTest.java" interface="false" size="286" bugs="0"/>
     </PackageStats>
     <PackageStats package="com.github.cukedoctor.spi" total_bugs="0" total_types="6" total_size="13">
       <ClassStats class="com.github.cukedoctor.spi.ExamplesRenderer" sourceFile="ExamplesRenderer.java" interface="true" size="2" bugs="0"/>
@@ -202,14 +201,14 @@
       <ClassStats class="com.github.cukedoctor.spi.SummaryRenderer" sourceFile="SummaryRenderer.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.spi.TagsRenderer" sourceFile="TagsRenderer.java" interface="true" size="2" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.github.cukedoctor.util" total_bugs="0" total_types="9" total_size="1110">
+    <PackageStats package="com.github.cukedoctor.util" total_bugs="0" total_types="9" total_size="1159">
       <ClassStats class="com.github.cukedoctor.util.Assert" sourceFile="Assert.java" interface="false" size="56" bugs="0"/>
-      <ClassStats class="com.github.cukedoctor.util.Constants" sourceFile="Constants.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="com.github.cukedoctor.util.Constants" sourceFile="Constants.java" interface="false" size="32" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.util.Constants$Atributes" sourceFile="Constants.java" interface="false" size="37" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.util.Constants$Markup" sourceFile="Constants.java" interface="false" size="23" bugs="0"/>
-      <ClassStats class="com.github.cukedoctor.util.Expectations" sourceFile="Expectations.java" interface="true" size="826" bugs="0"/>
-      <ClassStats class="com.github.cukedoctor.util.FileUtil" sourceFile="FileUtil.java" interface="false" size="84" bugs="0"/>
-      <ClassStats class="com.github.cukedoctor.util.FileUtil$1" sourceFile="FileUtil.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="com.github.cukedoctor.util.Expectations" sourceFile="Expectations.java" interface="true" size="854" bugs="0"/>
+      <ClassStats class="com.github.cukedoctor.util.FileUtil" sourceFile="FileUtil.java" interface="false" size="86" bugs="0"/>
+      <ClassStats class="com.github.cukedoctor.util.FileUtil$1" sourceFile="FileUtil.java" interface="false" size="24" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.util.FileUtilTest" sourceFile="FileUtilTest.java" interface="false" size="21" bugs="0"/>
       <ClassStats class="com.github.cukedoctor.util.Formatter" sourceFile="Formatter.java" interface="false" size="26" bugs="0"/>
     </PackageStats>
@@ -219,45 +218,47 @@
       <ClassStats class="com.github.cukedoctor.util.builder.StepBuilder" sourceFile="StepBuilder.java" interface="false" size="36" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="292" invocations="766" avgMicrosecondsPerInvocation="381" maxMicrosecondsPerInvocation="8126" standardDeviationMicrosecondsPerInvocation="775"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="291" invocations="770" avgMicrosecondsPerInvocation="378" maxMicrosecondsPerInvocation="11575" standardDeviationMicrosecondsPerInvocation="843"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="268" invocations="847" avgMicrosecondsPerInvocation="317" maxMicrosecondsPerInvocation="40129" standardDeviationMicrosecondsPerInvocation="1536"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="260" invocations="1077" avgMicrosecondsPerInvocation="242" maxMicrosecondsPerInvocation="14432" standardDeviationMicrosecondsPerInvocation="651"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="244" invocations="770" avgMicrosecondsPerInvocation="317" maxMicrosecondsPerInvocation="10877" standardDeviationMicrosecondsPerInvocation="756"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="241" invocations="780" avgMicrosecondsPerInvocation="309" maxMicrosecondsPerInvocation="10467" standardDeviationMicrosecondsPerInvocation="782"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="229" invocations="1083" avgMicrosecondsPerInvocation="211" maxMicrosecondsPerInvocation="3295" standardDeviationMicrosecondsPerInvocation="189"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="193" invocations="218" avgMicrosecondsPerInvocation="885" maxMicrosecondsPerInvocation="39611" standardDeviationMicrosecondsPerInvocation="3002"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="192" invocations="1165" avgMicrosecondsPerInvocation="165" maxMicrosecondsPerInvocation="16625" standardDeviationMicrosecondsPerInvocation="645"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="182" invocations="572" avgMicrosecondsPerInvocation="319" maxMicrosecondsPerInvocation="28581" standardDeviationMicrosecondsPerInvocation="1304"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="177" invocations="771" avgMicrosecondsPerInvocation="230" maxMicrosecondsPerInvocation="8595" standardDeviationMicrosecondsPerInvocation="465"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="132" invocations="218" avgMicrosecondsPerInvocation="605" maxMicrosecondsPerInvocation="8197" standardDeviationMicrosecondsPerInvocation="1094"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="111" invocations="111" avgMicrosecondsPerInvocation="1001" maxMicrosecondsPerInvocation="42635" standardDeviationMicrosecondsPerInvocation="4551"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="76" invocations="816" avgMicrosecondsPerInvocation="94" maxMicrosecondsPerInvocation="28461" standardDeviationMicrosecondsPerInvocation="1001"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="75" invocations="770" avgMicrosecondsPerInvocation="98" maxMicrosecondsPerInvocation="6481" standardDeviationMicrosecondsPerInvocation="325"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="71" invocations="218" avgMicrosecondsPerInvocation="327" maxMicrosecondsPerInvocation="27765" standardDeviationMicrosecondsPerInvocation="1923"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="63" invocations="111" avgMicrosecondsPerInvocation="574" maxMicrosecondsPerInvocation="6464" standardDeviationMicrosecondsPerInvocation="1055"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="59" invocations="218" avgMicrosecondsPerInvocation="272" maxMicrosecondsPerInvocation="4001" standardDeviationMicrosecondsPerInvocation="593"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="57" invocations="218" avgMicrosecondsPerInvocation="264" maxMicrosecondsPerInvocation="5578" standardDeviationMicrosecondsPerInvocation="630"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="55" invocations="111" avgMicrosecondsPerInvocation="498" maxMicrosecondsPerInvocation="21421" standardDeviationMicrosecondsPerInvocation="2064"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="51" invocations="111" avgMicrosecondsPerInvocation="466" maxMicrosecondsPerInvocation="6765" standardDeviationMicrosecondsPerInvocation="1006"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="50" invocations="111" avgMicrosecondsPerInvocation="456" maxMicrosecondsPerInvocation="4655" standardDeviationMicrosecondsPerInvocation="663"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="48" invocations="329" avgMicrosecondsPerInvocation="147" maxMicrosecondsPerInvocation="11978" standardDeviationMicrosecondsPerInvocation="701"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="48" invocations="17152" avgMicrosecondsPerInvocation="2" maxMicrosecondsPerInvocation="5803" standardDeviationMicrosecondsPerInvocation="58"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="46" invocations="111" avgMicrosecondsPerInvocation="421" maxMicrosecondsPerInvocation="5144" standardDeviationMicrosecondsPerInvocation="770"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="42" invocations="218" avgMicrosecondsPerInvocation="194" maxMicrosecondsPerInvocation="23408" standardDeviationMicrosecondsPerInvocation="1680"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="42" invocations="951" avgMicrosecondsPerInvocation="44" maxMicrosecondsPerInvocation="2095" standardDeviationMicrosecondsPerInvocation="105"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="41" invocations="111" avgMicrosecondsPerInvocation="375" maxMicrosecondsPerInvocation="5978" standardDeviationMicrosecondsPerInvocation="704"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="41" invocations="113" avgMicrosecondsPerInvocation="368" maxMicrosecondsPerInvocation="12660" standardDeviationMicrosecondsPerInvocation="1199"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="40" invocations="766" avgMicrosecondsPerInvocation="52" maxMicrosecondsPerInvocation="1621" standardDeviationMicrosecondsPerInvocation="115"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="40" invocations="218" avgMicrosecondsPerInvocation="185" maxMicrosecondsPerInvocation="4458" standardDeviationMicrosecondsPerInvocation="545"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="37" invocations="111" avgMicrosecondsPerInvocation="337" maxMicrosecondsPerInvocation="9636" standardDeviationMicrosecondsPerInvocation="964"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="36" invocations="766" avgMicrosecondsPerInvocation="48" maxMicrosecondsPerInvocation="2040" standardDeviationMicrosecondsPerInvocation="108"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="36" invocations="218" avgMicrosecondsPerInvocation="165" maxMicrosecondsPerInvocation="8498" standardDeviationMicrosecondsPerInvocation="709"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="34" invocations="111" avgMicrosecondsPerInvocation="307" maxMicrosecondsPerInvocation="4444" standardDeviationMicrosecondsPerInvocation="554"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="33" invocations="111" avgMicrosecondsPerInvocation="303" maxMicrosecondsPerInvocation="3931" standardDeviationMicrosecondsPerInvocation="513"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="32" invocations="111" avgMicrosecondsPerInvocation="296" maxMicrosecondsPerInvocation="2753" standardDeviationMicrosecondsPerInvocation="463"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="30" invocations="218" avgMicrosecondsPerInvocation="141" maxMicrosecondsPerInvocation="2129" standardDeviationMicrosecondsPerInvocation="305"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="30" invocations="111" avgMicrosecondsPerInvocation="275" maxMicrosecondsPerInvocation="4923" standardDeviationMicrosecondsPerInvocation="615"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="326" invocations="1078" avgMicrosecondsPerInvocation="302" maxMicrosecondsPerInvocation="21816" standardDeviationMicrosecondsPerInvocation="886"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="288" invocations="797" avgMicrosecondsPerInvocation="362" maxMicrosecondsPerInvocation="8543" standardDeviationMicrosecondsPerInvocation="753"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="278" invocations="802" avgMicrosecondsPerInvocation="347" maxMicrosecondsPerInvocation="11429" standardDeviationMicrosecondsPerInvocation="722"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="273" invocations="802" avgMicrosecondsPerInvocation="341" maxMicrosecondsPerInvocation="27223" standardDeviationMicrosecondsPerInvocation="1198"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="245" invocations="812" avgMicrosecondsPerInvocation="302" maxMicrosecondsPerInvocation="12613" standardDeviationMicrosecondsPerInvocation="879"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="230" invocations="883" avgMicrosecondsPerInvocation="260" maxMicrosecondsPerInvocation="12942" standardDeviationMicrosecondsPerInvocation="739"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="223" invocations="1084" avgMicrosecondsPerInvocation="206" maxMicrosecondsPerInvocation="2904" standardDeviationMicrosecondsPerInvocation="161"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="209" invocations="582" avgMicrosecondsPerInvocation="360" maxMicrosecondsPerInvocation="45980" standardDeviationMicrosecondsPerInvocation="1993"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="172" invocations="803" avgMicrosecondsPerInvocation="214" maxMicrosecondsPerInvocation="10788" standardDeviationMicrosecondsPerInvocation="492"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="165" invocations="219" avgMicrosecondsPerInvocation="753" maxMicrosecondsPerInvocation="16301" standardDeviationMicrosecondsPerInvocation="1779"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="154" invocations="1197" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="4654" standardDeviationMicrosecondsPerInvocation="315"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="124" invocations="219" avgMicrosecondsPerInvocation="567" maxMicrosecondsPerInvocation="6352" standardDeviationMicrosecondsPerInvocation="963"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="118" invocations="111" avgMicrosecondsPerInvocation="1066" maxMicrosecondsPerInvocation="47552" standardDeviationMicrosecondsPerInvocation="4984"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="77" invocations="219" avgMicrosecondsPerInvocation="352" maxMicrosecondsPerInvocation="24703" standardDeviationMicrosecondsPerInvocation="1709"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="74" invocations="848" avgMicrosecondsPerInvocation="88" maxMicrosecondsPerInvocation="27556" standardDeviationMicrosecondsPerInvocation="958"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="71" invocations="802" avgMicrosecondsPerInvocation="89" maxMicrosecondsPerInvocation="10148" standardDeviationMicrosecondsPerInvocation="384"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="62" invocations="219" avgMicrosecondsPerInvocation="285" maxMicrosecondsPerInvocation="6317" standardDeviationMicrosecondsPerInvocation="631"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="59" invocations="111" avgMicrosecondsPerInvocation="537" maxMicrosecondsPerInvocation="7723" standardDeviationMicrosecondsPerInvocation="1014"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="58" invocations="219" avgMicrosecondsPerInvocation="268" maxMicrosecondsPerInvocation="22423" standardDeviationMicrosecondsPerInvocation="1530"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="54" invocations="952" avgMicrosecondsPerInvocation="57" maxMicrosecondsPerInvocation="1236" standardDeviationMicrosecondsPerInvocation="110"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="52" invocations="331" avgMicrosecondsPerInvocation="157" maxMicrosecondsPerInvocation="14855" standardDeviationMicrosecondsPerInvocation="848"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="51" invocations="111" avgMicrosecondsPerInvocation="466" maxMicrosecondsPerInvocation="5243" standardDeviationMicrosecondsPerInvocation="675"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="50" invocations="111" avgMicrosecondsPerInvocation="451" maxMicrosecondsPerInvocation="5776" standardDeviationMicrosecondsPerInvocation="810"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="49" invocations="111" avgMicrosecondsPerInvocation="446" maxMicrosecondsPerInvocation="6680" standardDeviationMicrosecondsPerInvocation="954"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="46" invocations="111" avgMicrosecondsPerInvocation="420" maxMicrosecondsPerInvocation="6506" standardDeviationMicrosecondsPerInvocation="776"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="42" invocations="797" avgMicrosecondsPerInvocation="52" maxMicrosecondsPerInvocation="1151" standardDeviationMicrosecondsPerInvocation="97"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="40" invocations="797" avgMicrosecondsPerInvocation="50" maxMicrosecondsPerInvocation="1470" standardDeviationMicrosecondsPerInvocation="104"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="40" invocations="111" avgMicrosecondsPerInvocation="365" maxMicrosecondsPerInvocation="12785" standardDeviationMicrosecondsPerInvocation="1247"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="40" invocations="114" avgMicrosecondsPerInvocation="355" maxMicrosecondsPerInvocation="3636" standardDeviationMicrosecondsPerInvocation="539"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="39" invocations="219" avgMicrosecondsPerInvocation="180" maxMicrosecondsPerInvocation="5793" standardDeviationMicrosecondsPerInvocation="539"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="37" invocations="219" avgMicrosecondsPerInvocation="172" maxMicrosecondsPerInvocation="11647" standardDeviationMicrosecondsPerInvocation="834"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="37" invocations="17807" avgMicrosecondsPerInvocation="2" maxMicrosecondsPerInvocation="1551" standardDeviationMicrosecondsPerInvocation="16"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="36" invocations="111" avgMicrosecondsPerInvocation="331" maxMicrosecondsPerInvocation="10352" standardDeviationMicrosecondsPerInvocation="1049"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InheritanceUnsafeGetResource" totalMilliseconds="36" invocations="111" avgMicrosecondsPerInvocation="330" maxMicrosecondsPerInvocation="31991" standardDeviationMicrosecondsPerInvocation="3019"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="35" invocations="111" avgMicrosecondsPerInvocation="320" maxMicrosecondsPerInvocation="4606" standardDeviationMicrosecondsPerInvocation="615"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="34" invocations="111" avgMicrosecondsPerInvocation="313" maxMicrosecondsPerInvocation="5321" standardDeviationMicrosecondsPerInvocation="613"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="33" invocations="111" avgMicrosecondsPerInvocation="305" maxMicrosecondsPerInvocation="2946" standardDeviationMicrosecondsPerInvocation="546"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="33" invocations="111" avgMicrosecondsPerInvocation="300" maxMicrosecondsPerInvocation="2708" standardDeviationMicrosecondsPerInvocation="451"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="32" invocations="111" avgMicrosecondsPerInvocation="296" maxMicrosecondsPerInvocation="3471" standardDeviationMicrosecondsPerInvocation="478"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="29" invocations="219" avgMicrosecondsPerInvocation="134" maxMicrosecondsPerInvocation="1979" standardDeviationMicrosecondsPerInvocation="270"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="29" invocations="111" avgMicrosecondsPerInvocation="264" maxMicrosecondsPerInvocation="4518" standardDeviationMicrosecondsPerInvocation="514"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

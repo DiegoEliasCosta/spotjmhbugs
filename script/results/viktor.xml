@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1511114821000" analysisTimestamp="1511114823081" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534818345000" analysisTimestamp="1534818347726" release="">
   <Project projectName="">
     <Jar>tmp/viktor</Jar>
   </Project>
@@ -815,14 +815,36 @@
       <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
     </Field>
   </BugInstance>
-  <Errors errors="0" missingClasses="5">
+  <Errors errors="0" missingClasses="27">
+    <MissingClass>javax.jms.Message</MissingClass>
+    <MissingClass>javax.jms.MessageListener</MissingClass>
+    <MissingClass>javax.jms.ObjectMessage</MissingClass>
+    <MissingClass>javax.jms.TopicConnection</MissingClass>
+    <MissingClass>javax.jms.TopicConnectionFactory</MissingClass>
+    <MissingClass>javax.jms.TopicPublisher</MissingClass>
+    <MissingClass>javax.jms.TopicSession</MissingClass>
+    <MissingClass>javax.jms.TopicSubscriber</MissingClass>
+    <MissingClass>javax.mail.Authenticator</MissingClass>
+    <MissingClass>javax.mail.Message</MissingClass>
+    <MissingClass>javax.mail.Message$RecipientType</MissingClass>
+    <MissingClass>javax.mail.MessagingException</MissingClass>
+    <MissingClass>javax.mail.Multipart</MissingClass>
+    <MissingClass>javax.mail.PasswordAuthentication</MissingClass>
+    <MissingClass>javax.mail.Session</MissingClass>
+    <MissingClass>javax.mail.Transport</MissingClass>
+    <MissingClass>javax.mail.internet.InternetAddress</MissingClass>
+    <MissingClass>javax.mail.internet.InternetHeaders</MissingClass>
+    <MissingClass>javax.mail.internet.MimeBodyPart</MissingClass>
+    <MissingClass>javax.mail.internet.MimeMessage</MissingClass>
+    <MissingClass>javax.mail.internet.MimeMultipart</MissingClass>
+    <MissingClass>javax.mail.internet.MimeUtility</MissingClass>
     <MissingClass>kotlin.sequences.DropSequence$iterator</MissingClass>
     <MissingClass>kotlin.sequences.IndexingSequence$iterator</MissingClass>
     <MissingClass>kotlin.sequences.TakeSequence$iterator</MissingClass>
     <MissingClass>kotlin.test.AssertionsKt</MissingClass>
     <MissingClass>org.junit.Assert</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Sun, 19 Nov 2017 19:07:01 +0100" total_classes="2454" referenced_classes="2825" total_bugs="97" total_size="128656" num_packages="121" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="140.30" clock_seconds="45.31" peak_mbytes="1487.08" alloc_mbytes="3641.00" gc_seconds="1.15" priority_2="97">
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 04:25:45 +0200" total_classes="2768" referenced_classes="3661" total_bugs="97" total_size="143736" num_packages="142" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="159.73" clock_seconds="52.14" peak_mbytes="1552.45" alloc_mbytes="3641.00" gc_seconds="1.92" priority_2="97">
     <PackageStats package="info.yeppp" total_bugs="0" total_types="28" total_size="1398">
       <ClassStats class="info.yeppp.ArmCpuIsaFeature" sourceFile="&lt;Unknown&gt;" interface="false" size="47" bugs="0"/>
       <ClassStats class="info.yeppp.ArmCpuSimdFeature" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="0"/>
@@ -2891,6 +2913,362 @@
       <ClassStats class="org.apache.commons.math3.util.ResizableDoubleArray$ExpansionMode" sourceFile="ResizableDoubleArray.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.util.TransformerMap" sourceFile="TransformerMap.java" interface="false" size="57" bugs="0"/>
     </PackageStats>
+    <PackageStats package="org.apache.log4j" total_bugs="0" total_types="42" total_size="3544">
+      <ClassStats class="org.apache.log4j.Appender" sourceFile="Appender.java" interface="true" size="13" bugs="0"/>
+      <ClassStats class="org.apache.log4j.AppenderSkeleton" sourceFile="AppenderSkeleton.java" interface="false" size="76" bugs="0"/>
+      <ClassStats class="org.apache.log4j.AsyncAppender" sourceFile="AsyncAppender.java" interface="false" size="138" bugs="0"/>
+      <ClassStats class="org.apache.log4j.AsyncAppender$DiscardSummary" sourceFile="AsyncAppender.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.apache.log4j.AsyncAppender$Dispatcher" sourceFile="AsyncAppender.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="org.apache.log4j.BasicConfigurator" sourceFile="BasicConfigurator.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.apache.log4j.Category" sourceFile="Category.java" interface="false" size="272" bugs="0"/>
+      <ClassStats class="org.apache.log4j.CategoryKey" sourceFile="CategoryKey.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.apache.log4j.ConsoleAppender" sourceFile="ConsoleAppender.java" interface="false" size="52" bugs="0"/>
+      <ClassStats class="org.apache.log4j.ConsoleAppender$SystemErrStream" sourceFile="ConsoleAppender.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.apache.log4j.ConsoleAppender$SystemOutStream" sourceFile="ConsoleAppender.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.apache.log4j.DailyRollingFileAppender" sourceFile="DailyRollingFileAppender.java" interface="false" size="114" bugs="0"/>
+      <ClassStats class="org.apache.log4j.DefaultCategoryFactory" sourceFile="DefaultCategoryFactory.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.apache.log4j.DefaultThrowableRenderer" sourceFile="DefaultThrowableRenderer.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="org.apache.log4j.Dispatcher" sourceFile="Dispatcher.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="org.apache.log4j.EnhancedPatternLayout" sourceFile="EnhancedPatternLayout.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="org.apache.log4j.EnhancedThrowableRenderer" sourceFile="EnhancedThrowableRenderer.java" interface="false" size="71" bugs="0"/>
+      <ClassStats class="org.apache.log4j.FileAppender" sourceFile="FileAppender.java" interface="false" size="102" bugs="0"/>
+      <ClassStats class="org.apache.log4j.HTMLLayout" sourceFile="HTMLLayout.java" interface="false" size="128" bugs="0"/>
+      <ClassStats class="org.apache.log4j.Hierarchy" sourceFile="Hierarchy.java" interface="false" size="193" bugs="0"/>
+      <ClassStats class="org.apache.log4j.Layout" sourceFile="Layout.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.apache.log4j.Level" sourceFile="Level.java" interface="false" size="72" bugs="0"/>
+      <ClassStats class="org.apache.log4j.LogMF" sourceFile="LogMF.java" interface="false" size="465" bugs="0"/>
+      <ClassStats class="org.apache.log4j.LogManager" sourceFile="LogManager.java" interface="false" size="78" bugs="0"/>
+      <ClassStats class="org.apache.log4j.LogSF" sourceFile="LogSF.java" interface="false" size="405" bugs="0"/>
+      <ClassStats class="org.apache.log4j.LogXF" sourceFile="LogXF.java" interface="false" size="96" bugs="0"/>
+      <ClassStats class="org.apache.log4j.Logger" sourceFile="Logger.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="org.apache.log4j.MDC" sourceFile="MDC.java" interface="false" size="78" bugs="0"/>
+      <ClassStats class="org.apache.log4j.NDC" sourceFile="NDC.java" interface="false" size="95" bugs="0"/>
+      <ClassStats class="org.apache.log4j.NDC$DiagnosticContext" sourceFile="NDC.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.apache.log4j.NameValue" sourceFile="PropertyConfigurator.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.apache.log4j.PatternLayout" sourceFile="PatternLayout.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="org.apache.log4j.Priority" sourceFile="Priority.java" interface="false" size="57" bugs="0"/>
+      <ClassStats class="org.apache.log4j.PropertyConfigurator" sourceFile="PropertyConfigurator.java" interface="false" size="319" bugs="0"/>
+      <ClassStats class="org.apache.log4j.PropertyWatchdog" sourceFile="PropertyConfigurator.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.apache.log4j.ProvisionNode" sourceFile="ProvisionNode.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.apache.log4j.RollingCalendar" sourceFile="DailyRollingFileAppender.java" interface="false" size="58" bugs="0"/>
+      <ClassStats class="org.apache.log4j.RollingFileAppender" sourceFile="RollingFileAppender.java" interface="false" size="84" bugs="0"/>
+      <ClassStats class="org.apache.log4j.SimpleLayout" sourceFile="SimpleLayout.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.apache.log4j.SortedKeyEnumeration" sourceFile="PropertyConfigurator.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.apache.log4j.TTCCLayout" sourceFile="TTCCLayout.java" interface="false" size="55" bugs="0"/>
+      <ClassStats class="org.apache.log4j.WriterAppender" sourceFile="WriterAppender.java" interface="false" size="119" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.log4j.chainsaw" total_bugs="0" total_types="20" total_size="749">
+      <ClassStats class="org.apache.log4j.chainsaw.ControlPanel" sourceFile="ControlPanel.java" interface="false" size="94" bugs="0"/>
+      <ClassStats class="org.apache.log4j.chainsaw.ControlPanel$1" sourceFile="ControlPanel.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.apache.log4j.chainsaw.ControlPanel$2" sourceFile="ControlPanel.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.apache.log4j.chainsaw.ControlPanel$3" sourceFile="ControlPanel.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.apache.log4j.chainsaw.ControlPanel$4" sourceFile="ControlPanel.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.apache.log4j.chainsaw.ControlPanel$5" sourceFile="ControlPanel.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.apache.log4j.chainsaw.ControlPanel$6" sourceFile="ControlPanel.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.log4j.chainsaw.ControlPanel$7" sourceFile="ControlPanel.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.apache.log4j.chainsaw.DetailPanel" sourceFile="DetailPanel.java" interface="false" size="60" bugs="0"/>
+      <ClassStats class="org.apache.log4j.chainsaw.EventDetails" sourceFile="EventDetails.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="org.apache.log4j.chainsaw.ExitAction" sourceFile="ExitAction.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.apache.log4j.chainsaw.LoadXMLAction" sourceFile="LoadXMLAction.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="org.apache.log4j.chainsaw.LoggingReceiver" sourceFile="LoggingReceiver.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="org.apache.log4j.chainsaw.LoggingReceiver$Slurper" sourceFile="LoggingReceiver.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="org.apache.log4j.chainsaw.Main" sourceFile="Main.java" interface="false" size="74" bugs="0"/>
+      <ClassStats class="org.apache.log4j.chainsaw.Main$1" sourceFile="Main.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.apache.log4j.chainsaw.MyTableModel" sourceFile="MyTableModel.java" interface="false" size="160" bugs="0"/>
+      <ClassStats class="org.apache.log4j.chainsaw.MyTableModel$1" sourceFile="MyTableModel.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.apache.log4j.chainsaw.MyTableModel$Processor" sourceFile="MyTableModel.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="org.apache.log4j.chainsaw.XMLFileHandler" sourceFile="XMLFileHandler.java" interface="false" size="70" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.log4j.config" total_bugs="0" total_types="5" total_size="258">
+      <ClassStats class="org.apache.log4j.config.PropertyGetter" sourceFile="PropertyGetter.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="org.apache.log4j.config.PropertyGetter$PropertyCallback" sourceFile="PropertyGetter.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.apache.log4j.config.PropertyPrinter" sourceFile="PropertyPrinter.java" interface="false" size="77" bugs="0"/>
+      <ClassStats class="org.apache.log4j.config.PropertySetter" sourceFile="PropertySetter.java" interface="false" size="121" bugs="0"/>
+      <ClassStats class="org.apache.log4j.config.PropertySetterException" sourceFile="PropertySetterException.java" interface="false" size="15" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.log4j.helpers" total_bugs="0" total_types="33" total_size="1473">
+      <ClassStats class="org.apache.log4j.helpers.AbsoluteTimeDateFormat" sourceFile="AbsoluteTimeDateFormat.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.AppenderAttachableImpl" sourceFile="AppenderAttachableImpl.java" interface="false" size="64" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.BoundedFIFO" sourceFile="BoundedFIFO.java" interface="false" size="65" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.CountingQuietWriter" sourceFile="CountingQuietWriter.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.CyclicBuffer" sourceFile="CyclicBuffer.java" interface="false" size="62" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.DateLayout" sourceFile="DateLayout.java" interface="false" size="66" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.DateTimeDateFormat" sourceFile="DateTimeDateFormat.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.FileWatchdog" sourceFile="FileWatchdog.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.FormattingInfo" sourceFile="FormattingInfo.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.ISO8601DateFormat" sourceFile="ISO8601DateFormat.java" interface="false" size="67" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.Loader" sourceFile="Loader.java" interface="false" size="70" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.LogLog" sourceFile="LogLog.java" interface="false" size="59" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.MDCKeySetExtractor" sourceFile="MDCKeySetExtractor.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.NullEnumeration" sourceFile="NullEnumeration.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.OnlyOnceErrorHandler" sourceFile="OnlyOnceErrorHandler.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.OptionConverter" sourceFile="OptionConverter.java" interface="false" size="201" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.PatternConverter" sourceFile="PatternConverter.java" interface="false" size="45" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.PatternParser" sourceFile="PatternParser.java" interface="false" size="189" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.PatternParser$BasicPatternConverter" sourceFile="PatternParser.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.PatternParser$CategoryPatternConverter" sourceFile="PatternParser.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.PatternParser$ClassNamePatternConverter" sourceFile="PatternParser.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.PatternParser$DatePatternConverter" sourceFile="PatternParser.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.PatternParser$LiteralPatternConverter" sourceFile="PatternParser.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.PatternParser$LocationPatternConverter" sourceFile="PatternParser.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.PatternParser$MDCPatternConverter" sourceFile="PatternParser.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.PatternParser$NamedPatternConverter" sourceFile="PatternParser.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.QuietWriter" sourceFile="QuietWriter.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.RelativeTimeDateFormat" sourceFile="RelativeTimeDateFormat.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.SyslogQuietWriter" sourceFile="SyslogQuietWriter.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.SyslogWriter" sourceFile="SyslogWriter.java" interface="false" size="55" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.ThreadLocalMap" sourceFile="ThreadLocalMap.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.Transform" sourceFile="Transform.java" interface="false" size="45" bugs="0"/>
+      <ClassStats class="org.apache.log4j.helpers.UtilLoggingLevel" sourceFile="UtilLoggingLevel.java" interface="false" size="70" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.log4j.jdbc" total_bugs="0" total_types="1" total_size="124">
+      <ClassStats class="org.apache.log4j.jdbc.JDBCAppender" sourceFile="JDBCAppender.java" interface="false" size="124" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.log4j.jmx" total_bugs="0" total_types="7" total_size="637">
+      <ClassStats class="org.apache.log4j.jmx.AbstractDynamicMBean" sourceFile="AbstractDynamicMBean.java" interface="false" size="73" bugs="0"/>
+      <ClassStats class="org.apache.log4j.jmx.Agent" sourceFile="Agent.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="org.apache.log4j.jmx.AppenderDynamicMBean" sourceFile="AppenderDynamicMBean.java" interface="false" size="150" bugs="0"/>
+      <ClassStats class="org.apache.log4j.jmx.HierarchyDynamicMBean" sourceFile="HierarchyDynamicMBean.java" interface="false" size="122" bugs="0"/>
+      <ClassStats class="org.apache.log4j.jmx.LayoutDynamicMBean" sourceFile="LayoutDynamicMBean.java" interface="false" size="112" bugs="0"/>
+      <ClassStats class="org.apache.log4j.jmx.LoggerDynamicMBean" sourceFile="LoggerDynamicMBean.java" interface="false" size="118" bugs="0"/>
+      <ClassStats class="org.apache.log4j.jmx.MethodUnion" sourceFile="MethodUnion.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.log4j.lf5" total_bugs="0" total_types="10" total_size="367">
+      <ClassStats class="org.apache.log4j.lf5.AppenderFinalizer" sourceFile="AppenderFinalizer.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.DefaultLF5Configurator" sourceFile="DefaultLF5Configurator.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.LF5Appender" sourceFile="LF5Appender.java" interface="false" size="78" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.Log4JLogRecord" sourceFile="Log4JLogRecord.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.LogLevel" sourceFile="LogLevel.java" interface="false" size="114" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.LogLevelFormatException" sourceFile="LogLevelFormatException.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.LogRecord" sourceFile="LogRecord.java" interface="false" size="107" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.LogRecordFilter" sourceFile="LogRecordFilter.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.PassingLogRecordFilter" sourceFile="PassingLogRecordFilter.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.StartLogFactor5" sourceFile="StartLogFactor5.java" interface="false" size="9" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.log4j.lf5.util" total_bugs="0" total_types="8" total_size="435">
+      <ClassStats class="org.apache.log4j.lf5.util.AdapterLogRecord" sourceFile="AdapterLogRecord.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.util.DateFormatManager" sourceFile="DateFormatManager.java" interface="false" size="110" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.util.LogFileParser" sourceFile="LogFileParser.java" interface="false" size="130" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.util.LogFileParser$1" sourceFile="LogFileParser.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.util.LogMonitorAdapter" sourceFile="LogMonitorAdapter.java" interface="false" size="80" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.util.Resource" sourceFile="Resource.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.util.ResourceUtils" sourceFile="ResourceUtils.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.util.StreamUtils" sourceFile="StreamUtils.java" interface="false" size="25" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.log4j.lf5.viewer" total_bugs="0" total_types="52" total_size="1554">
+      <ClassStats class="org.apache.log4j.lf5.viewer.FilteredLogTableModel" sourceFile="FilteredLogTableModel.java" interface="false" size="108" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LF5SwingUtils" sourceFile="LF5SwingUtils.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LF5SwingUtils$1" sourceFile="LF5SwingUtils.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor" sourceFile="LogBrokerMonitor.java" interface="false" size="733" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$1" sourceFile="LogBrokerMonitor.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$10" sourceFile="LogBrokerMonitor.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$11" sourceFile="LogBrokerMonitor.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$12" sourceFile="LogBrokerMonitor.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$13" sourceFile="LogBrokerMonitor.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$14" sourceFile="LogBrokerMonitor.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$15" sourceFile="LogBrokerMonitor.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$16" sourceFile="LogBrokerMonitor.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$17" sourceFile="LogBrokerMonitor.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$18" sourceFile="LogBrokerMonitor.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$19" sourceFile="LogBrokerMonitor.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$2" sourceFile="LogBrokerMonitor.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$20" sourceFile="LogBrokerMonitor.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$21" sourceFile="LogBrokerMonitor.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$22" sourceFile="LogBrokerMonitor.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$23" sourceFile="LogBrokerMonitor.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$24" sourceFile="LogBrokerMonitor.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$25" sourceFile="LogBrokerMonitor.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$26" sourceFile="LogBrokerMonitor.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$27" sourceFile="LogBrokerMonitor.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$28" sourceFile="LogBrokerMonitor.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$29" sourceFile="LogBrokerMonitor.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$3" sourceFile="LogBrokerMonitor.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$30" sourceFile="LogBrokerMonitor.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$31" sourceFile="LogBrokerMonitor.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$32" sourceFile="LogBrokerMonitor.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$4" sourceFile="LogBrokerMonitor.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$5" sourceFile="LogBrokerMonitor.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$6" sourceFile="LogBrokerMonitor.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$7" sourceFile="LogBrokerMonitor.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$8" sourceFile="LogBrokerMonitor.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$9" sourceFile="LogBrokerMonitor.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogBrokerMonitor$LogBrokerMonitorWindowAdaptor" sourceFile="LogBrokerMonitor.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogFactor5Dialog" sourceFile="LogFactor5Dialog.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogFactor5ErrorDialog" sourceFile="LogFactor5ErrorDialog.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogFactor5ErrorDialog$1" sourceFile="LogFactor5ErrorDialog.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogFactor5InputDialog" sourceFile="LogFactor5InputDialog.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogFactor5InputDialog$1" sourceFile="LogFactor5InputDialog.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogFactor5InputDialog$2" sourceFile="LogFactor5InputDialog.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogFactor5InputDialog$3" sourceFile="LogFactor5InputDialog.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogFactor5LoadingDialog" sourceFile="LogFactor5LoadingDialog.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogTable" sourceFile="LogTable.java" interface="false" size="96" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogTable$LogTableListSelectionListener" sourceFile="LogTable.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogTableColumn" sourceFile="LogTableColumn.java" interface="false" size="60" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogTableColumnFormatException" sourceFile="LogTableColumnFormatException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogTableModel" sourceFile="LogTableModel.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.LogTableRowRenderer" sourceFile="LogTableRowRenderer.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.TrackingAdjustmentListener" sourceFile="TrackingAdjustmentListener.java" interface="false" size="15" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.log4j.lf5.viewer.categoryexplorer" total_bugs="0" total_types="22" total_size="718">
+      <ClassStats class="org.apache.log4j.lf5.viewer.categoryexplorer.CategoryAbstractCellEditor" sourceFile="CategoryAbstractCellEditor.java" interface="false" size="64" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.categoryexplorer.CategoryElement" sourceFile="CategoryElement.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.categoryexplorer.CategoryExplorerLogRecordFilter" sourceFile="CategoryExplorerLogRecordFilter.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.categoryexplorer.CategoryExplorerModel" sourceFile="CategoryExplorerModel.java" interface="false" size="144" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.categoryexplorer.CategoryExplorerModel$1" sourceFile="CategoryExplorerModel.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.categoryexplorer.CategoryExplorerTree" sourceFile="CategoryExplorerTree.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.categoryexplorer.CategoryExplorerTree$1" sourceFile="CategoryExplorerTree.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.categoryexplorer.CategoryImmediateEditor" sourceFile="CategoryImmediateEditor.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.categoryexplorer.CategoryNode" sourceFile="CategoryNode.java" interface="false" size="88" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.categoryexplorer.CategoryNodeEditor" sourceFile="CategoryNodeEditor.java" interface="false" size="104" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.categoryexplorer.CategoryNodeEditor$1" sourceFile="CategoryNodeEditor.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.categoryexplorer.CategoryNodeEditor$2" sourceFile="CategoryNodeEditor.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.categoryexplorer.CategoryNodeEditor$3" sourceFile="CategoryNodeEditor.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.categoryexplorer.CategoryNodeEditor$4" sourceFile="CategoryNodeEditor.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.categoryexplorer.CategoryNodeEditor$5" sourceFile="CategoryNodeEditor.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.categoryexplorer.CategoryNodeEditor$6" sourceFile="CategoryNodeEditor.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.categoryexplorer.CategoryNodeEditor$7" sourceFile="CategoryNodeEditor.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.categoryexplorer.CategoryNodeEditor$8" sourceFile="CategoryNodeEditor.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.categoryexplorer.CategoryNodeEditorRenderer" sourceFile="CategoryNodeEditorRenderer.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.categoryexplorer.CategoryNodeRenderer" sourceFile="CategoryNodeRenderer.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.categoryexplorer.CategoryPath" sourceFile="CategoryPath.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.categoryexplorer.TreeModelAdapter" sourceFile="TreeModelAdapter.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.log4j.lf5.viewer.configure" total_bugs="0" total_types="2" total_size="371">
+      <ClassStats class="org.apache.log4j.lf5.viewer.configure.ConfigurationManager" sourceFile="ConfigurationManager.java" interface="false" size="263" bugs="0"/>
+      <ClassStats class="org.apache.log4j.lf5.viewer.configure.MRUFileManager" sourceFile="MRUFileManager.java" interface="false" size="108" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.log4j.net" total_bugs="0" total_types="16" total_size="1610">
+      <ClassStats class="org.apache.log4j.net.DefaultEvaluator" sourceFile="SMTPAppender.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="org.apache.log4j.net.JMSAppender" sourceFile="JMSAppender.java" interface="false" size="165" bugs="0"/>
+      <ClassStats class="org.apache.log4j.net.JMSSink" sourceFile="JMSSink.java" interface="false" size="65" bugs="0"/>
+      <ClassStats class="org.apache.log4j.net.SMTPAppender" sourceFile="SMTPAppender.java" interface="false" size="281" bugs="0"/>
+      <ClassStats class="org.apache.log4j.net.SMTPAppender$1" sourceFile="SMTPAppender.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.apache.log4j.net.SimpleSocketServer" sourceFile="SimpleSocketServer.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="org.apache.log4j.net.SocketAppender" sourceFile="SocketAppender.java" interface="false" size="162" bugs="0"/>
+      <ClassStats class="org.apache.log4j.net.SocketAppender$Connector" sourceFile="SocketAppender.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="org.apache.log4j.net.SocketHubAppender" sourceFile="SocketHubAppender.java" interface="false" size="129" bugs="0"/>
+      <ClassStats class="org.apache.log4j.net.SocketHubAppender$ServerMonitor" sourceFile="SocketHubAppender.java" interface="false" size="84" bugs="0"/>
+      <ClassStats class="org.apache.log4j.net.SocketNode" sourceFile="SocketNode.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="org.apache.log4j.net.SocketServer" sourceFile="SocketServer.java" interface="false" size="81" bugs="0"/>
+      <ClassStats class="org.apache.log4j.net.SyslogAppender" sourceFile="SyslogAppender.java" interface="false" size="249" bugs="0"/>
+      <ClassStats class="org.apache.log4j.net.TelnetAppender" sourceFile="TelnetAppender.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="org.apache.log4j.net.TelnetAppender$SocketHandler" sourceFile="TelnetAppender.java" interface="false" size="72" bugs="0"/>
+      <ClassStats class="org.apache.log4j.net.ZeroConfSupport" sourceFile="ZeroConfSupport.java" interface="false" size="143" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.log4j.nt" total_bugs="0" total_types="1" total_size="86">
+      <ClassStats class="org.apache.log4j.nt.NTEventLogAppender" sourceFile="NTEventLogAppender.java" interface="false" size="86" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.log4j.or" total_bugs="0" total_types="4" total_size="98">
+      <ClassStats class="org.apache.log4j.or.DefaultRenderer" sourceFile="DefaultRenderer.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.log4j.or.ObjectRenderer" sourceFile="ObjectRenderer.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.apache.log4j.or.RendererMap" sourceFile="RendererMap.java" interface="false" size="60" bugs="0"/>
+      <ClassStats class="org.apache.log4j.or.ThreadGroupRenderer" sourceFile="ThreadGroupRenderer.java" interface="false" size="28" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.log4j.or.jms" total_bugs="0" total_types="1" total_size="38">
+      <ClassStats class="org.apache.log4j.or.jms.MessageRenderer" sourceFile="MessageRenderer.java" interface="false" size="38" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.log4j.or.sax" total_bugs="0" total_types="1" total_size="21">
+      <ClassStats class="org.apache.log4j.or.sax.AttributesRenderer" sourceFile="AttributesRenderer.java" interface="false" size="21" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.log4j.pattern" total_bugs="0" total_types="37" total_size="1157">
+      <ClassStats class="org.apache.log4j.pattern.BridgePatternConverter" sourceFile="BridgePatternConverter.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.BridgePatternParser" sourceFile="BridgePatternParser.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.CachedDateFormat" sourceFile="CachedDateFormat.java" interface="false" size="96" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.ClassNamePatternConverter" sourceFile="ClassNamePatternConverter.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.DatePatternConverter" sourceFile="DatePatternConverter.java" interface="false" size="52" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.DatePatternConverter$DefaultZoneDateFormat" sourceFile="DatePatternConverter.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.FileDatePatternConverter" sourceFile="FileDatePatternConverter.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.FileLocationPatternConverter" sourceFile="FileLocationPatternConverter.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.FormattingInfo" sourceFile="FormattingInfo.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.FullLocationPatternConverter" sourceFile="FullLocationPatternConverter.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.IntegerPatternConverter" sourceFile="IntegerPatternConverter.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.LevelPatternConverter" sourceFile="LevelPatternConverter.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.LineLocationPatternConverter" sourceFile="LineLocationPatternConverter.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.LineSeparatorPatternConverter" sourceFile="LineSeparatorPatternConverter.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.LiteralPatternConverter" sourceFile="LiteralPatternConverter.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.LogEvent" sourceFile="LogEvent.java" interface="false" size="191" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.LoggerPatternConverter" sourceFile="LoggerPatternConverter.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.LoggingEventPatternConverter" sourceFile="LoggingEventPatternConverter.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.MessagePatternConverter" sourceFile="MessagePatternConverter.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.MethodLocationPatternConverter" sourceFile="MethodLocationPatternConverter.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.NDCPatternConverter" sourceFile="NDCPatternConverter.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.NameAbbreviator" sourceFile="NameAbbreviator.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.NameAbbreviator$DropElementAbbreviator" sourceFile="NameAbbreviator.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.NameAbbreviator$MaxElementAbbreviator" sourceFile="NameAbbreviator.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.NameAbbreviator$NOPAbbreviator" sourceFile="NameAbbreviator.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.NameAbbreviator$PatternAbbreviator" sourceFile="NameAbbreviator.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.NameAbbreviator$PatternAbbreviatorFragment" sourceFile="NameAbbreviator.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.NamePatternConverter" sourceFile="NamePatternConverter.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.PatternConverter" sourceFile="PatternConverter.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.PatternParser" sourceFile="PatternParser.java" interface="false" size="232" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.PatternParser$ReadOnlyMap" sourceFile="PatternParser.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.PropertiesPatternConverter" sourceFile="PropertiesPatternConverter.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.RelativeTimePatternConverter" sourceFile="RelativeTimePatternConverter.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.RelativeTimePatternConverter$CachedTimestamp" sourceFile="RelativeTimePatternConverter.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.SequenceNumberPatternConverter" sourceFile="SequenceNumberPatternConverter.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.ThreadPatternConverter" sourceFile="ThreadPatternConverter.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.apache.log4j.pattern.ThrowableInformationPatternConverter" sourceFile="ThrowableInformationPatternConverter.java" interface="false" size="32" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.log4j.rewrite" total_bugs="0" total_types="5" total_size="153">
+      <ClassStats class="org.apache.log4j.rewrite.MapRewritePolicy" sourceFile="MapRewritePolicy.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.apache.log4j.rewrite.PropertyRewritePolicy" sourceFile="PropertyRewritePolicy.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="org.apache.log4j.rewrite.ReflectionRewritePolicy" sourceFile="ReflectionRewritePolicy.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="org.apache.log4j.rewrite.RewriteAppender" sourceFile="RewriteAppender.java" interface="false" size="78" bugs="0"/>
+      <ClassStats class="org.apache.log4j.rewrite.RewritePolicy" sourceFile="RewritePolicy.java" interface="true" size="2" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.log4j.spi" total_bugs="0" total_types="24" total_size="693">
+      <ClassStats class="org.apache.log4j.spi.AppenderAttachable" sourceFile="AppenderAttachable.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="org.apache.log4j.spi.Configurator" sourceFile="Configurator.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="org.apache.log4j.spi.DefaultRepositorySelector" sourceFile="DefaultRepositorySelector.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.log4j.spi.ErrorCode" sourceFile="ErrorCode.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="org.apache.log4j.spi.ErrorHandler" sourceFile="ErrorHandler.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="org.apache.log4j.spi.Filter" sourceFile="Filter.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.apache.log4j.spi.HierarchyEventListener" sourceFile="HierarchyEventListener.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="org.apache.log4j.spi.LocationInfo" sourceFile="LocationInfo.java" interface="false" size="174" bugs="0"/>
+      <ClassStats class="org.apache.log4j.spi.LoggerFactory" sourceFile="LoggerFactory.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.apache.log4j.spi.LoggerRepository" sourceFile="LoggerRepository.java" interface="true" size="16" bugs="0"/>
+      <ClassStats class="org.apache.log4j.spi.LoggingEvent" sourceFile="LoggingEvent.java" interface="false" size="209" bugs="0"/>
+      <ClassStats class="org.apache.log4j.spi.NOPLogger" sourceFile="NOPLogger.java" interface="false" size="81" bugs="0"/>
+      <ClassStats class="org.apache.log4j.spi.NOPLoggerRepository" sourceFile="NOPLoggerRepository.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="org.apache.log4j.spi.NullWriter" sourceFile="NullWriter.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.apache.log4j.spi.OptionHandler" sourceFile="OptionHandler.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.apache.log4j.spi.RendererSupport" sourceFile="RendererSupport.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="org.apache.log4j.spi.RepositorySelector" sourceFile="RepositorySelector.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.apache.log4j.spi.RootCategory" sourceFile="RootCategory.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.apache.log4j.spi.RootLogger" sourceFile="RootLogger.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.apache.log4j.spi.ThrowableInformation" sourceFile="ThrowableInformation.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="org.apache.log4j.spi.ThrowableRenderer" sourceFile="ThrowableRenderer.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.apache.log4j.spi.ThrowableRendererSupport" sourceFile="ThrowableRendererSupport.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="org.apache.log4j.spi.TriggeringEventEvaluator" sourceFile="TriggeringEventEvaluator.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.apache.log4j.spi.VectorWriter" sourceFile="VectorWriter.java" interface="false" size="42" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.log4j.varia" total_bugs="0" total_types="11" total_size="308">
+      <ClassStats class="org.apache.log4j.varia.DenyAllFilter" sourceFile="DenyAllFilter.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.apache.log4j.varia.ExternallyRolledFileAppender" sourceFile="ExternallyRolledFileAppender.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="org.apache.log4j.varia.FallbackErrorHandler" sourceFile="FallbackErrorHandler.java" interface="false" size="42" bugs="0"/>
+      <ClassStats class="org.apache.log4j.varia.HUP" sourceFile="ExternallyRolledFileAppender.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="org.apache.log4j.varia.HUPNode" sourceFile="ExternallyRolledFileAppender.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="org.apache.log4j.varia.LevelMatchFilter" sourceFile="LevelMatchFilter.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="org.apache.log4j.varia.LevelRangeFilter" sourceFile="LevelRangeFilter.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="org.apache.log4j.varia.NullAppender" sourceFile="NullAppender.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="org.apache.log4j.varia.ReloadingPropertyConfigurator" sourceFile="ReloadingPropertyConfigurator.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.apache.log4j.varia.Roller" sourceFile="Roller.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="org.apache.log4j.varia.StringMatchFilter" sourceFile="StringMatchFilter.java" interface="false" size="35" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.log4j.xml" total_bugs="0" total_types="12" total_size="676">
+      <ClassStats class="org.apache.log4j.xml.DOMConfigurator" sourceFile="DOMConfigurator.java" interface="false" size="497" bugs="0"/>
+      <ClassStats class="org.apache.log4j.xml.DOMConfigurator$1" sourceFile="DOMConfigurator.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.apache.log4j.xml.DOMConfigurator$2" sourceFile="DOMConfigurator.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.apache.log4j.xml.DOMConfigurator$3" sourceFile="DOMConfigurator.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.apache.log4j.xml.DOMConfigurator$4" sourceFile="DOMConfigurator.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.apache.log4j.xml.DOMConfigurator$5" sourceFile="DOMConfigurator.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.apache.log4j.xml.DOMConfigurator$ParseAction" sourceFile="DOMConfigurator.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.apache.log4j.xml.Log4jEntityResolver" sourceFile="Log4jEntityResolver.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.apache.log4j.xml.SAXErrorHandler" sourceFile="SAXErrorHandler.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.apache.log4j.xml.UnrecognizedElementHandler" sourceFile="UnrecognizedElementHandler.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.apache.log4j.xml.XMLLayout" sourceFile="XMLLayout.java" interface="false" size="84" bugs="0"/>
+      <ClassStats class="org.apache.log4j.xml.XMLWatchdog" sourceFile="DOMConfigurator.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
     <PackageStats package="org.gradle.cli" total_bugs="0" total_types="24" total_size="545">
       <ClassStats class="org.gradle.cli.AbstractCommandLineConverter" sourceFile="AbstractCommandLineConverter.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.gradle.cli.AbstractPropertiesCommandLineConverter" sourceFile="AbstractPropertiesCommandLineConverter.java" interface="false" size="20" bugs="0"/>
@@ -2986,7 +3364,7 @@
       <ClassStats class="org.jetbrains.bio.npy.SupportKt" sourceFile="Support.kt" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.jetbrains.bio.npy.Token" sourceFile="DictParser.kt" interface="false" size="27" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.jetbrains.bio.viktor" total_bugs="35" total_types="85" total_size="3227" priority_2="35">
+    <PackageStats package="org.jetbrains.bio.viktor" total_bugs="35" total_types="85" total_size="3237" priority_2="35">
       <ClassStats class="org.jetbrains.bio.viktor.BalancedDotTest" sourceFile="BalancedSumTests.kt" interface="false" size="16" bugs="0"/>
       <ClassStats class="org.jetbrains.bio.viktor.BalancedDotTest$Companion" sourceFile="BalancedSumTests.kt" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.jetbrains.bio.viktor.BalancedSumTest" sourceFile="BalancedSumTests.kt" interface="false" size="14" bugs="0"/>
@@ -3038,8 +3416,8 @@
       <ClassStats class="org.jetbrains.bio.viktor.InternalsKt" sourceFile="Internals.kt" interface="false" size="24" bugs="0"/>
       <ClassStats class="org.jetbrains.bio.viktor.KahanSum" sourceFile="MoreMath.kt" interface="false" size="20" bugs="0"/>
       <ClassStats class="org.jetbrains.bio.viktor.KahanSumTest" sourceFile="MoreMathTests.kt" interface="false" size="16" bugs="0"/>
-      <ClassStats class="org.jetbrains.bio.viktor.Loader" sourceFile="Loader.kt" interface="false" size="30" bugs="0"/>
-      <ClassStats class="org.jetbrains.bio.viktor.LoaderKt" sourceFile="Loader.kt" interface="false" size="3" bugs="0"/>
+      <ClassStats class="org.jetbrains.bio.viktor.Loader" sourceFile="Loader.kt" interface="false" size="37" bugs="0"/>
+      <ClassStats class="org.jetbrains.bio.viktor.LoaderKt" sourceFile="Loader.kt" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.jetbrains.bio.viktor.Log1pBenchmark" sourceFile="Log1pBenchmark.java" interface="false" size="34" bugs="3" priority_2="3"/>
       <ClassStats class="org.jetbrains.bio.viktor.LogAddExpBenchmark" sourceFile="LogAddExpBenchmark.java" interface="false" size="36" bugs="3" priority_2="3"/>
       <ClassStats class="org.jetbrains.bio.viktor.LogBenchmark" sourceFile="LogBenchmark.java" interface="false" size="31" bugs="4" priority_2="4"/>
@@ -3520,46 +3898,47 @@
       <ClassStats class="org.openjdk.jmh.util.Version" sourceFile="Version.java" interface="false" size="43" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="3542" invocations="17203" avgMicrosecondsPerInvocation="205" maxMicrosecondsPerInvocation="82541" standardDeviationMicrosecondsPerInvocation="1534"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="3228" invocations="18606" avgMicrosecondsPerInvocation="173" maxMicrosecondsPerInvocation="23375" standardDeviationMicrosecondsPerInvocation="588"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="3164" invocations="19045" avgMicrosecondsPerInvocation="166" maxMicrosecondsPerInvocation="51692" standardDeviationMicrosecondsPerInvocation="924"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="2959" invocations="15269" avgMicrosecondsPerInvocation="193" maxMicrosecondsPerInvocation="32025" standardDeviationMicrosecondsPerInvocation="704"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="2645" invocations="18838" avgMicrosecondsPerInvocation="140" maxMicrosecondsPerInvocation="14952" standardDeviationMicrosecondsPerInvocation="407"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="2047" invocations="13909" avgMicrosecondsPerInvocation="147" maxMicrosecondsPerInvocation="377052" standardDeviationMicrosecondsPerInvocation="3219"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1402" invocations="20673" avgMicrosecondsPerInvocation="67" maxMicrosecondsPerInvocation="69289" standardDeviationMicrosecondsPerInvocation="554"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1268" invocations="17698" avgMicrosecondsPerInvocation="71" maxMicrosecondsPerInvocation="10160" standardDeviationMicrosecondsPerInvocation="158"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="866" invocations="2825" avgMicrosecondsPerInvocation="306" maxMicrosecondsPerInvocation="40460" standardDeviationMicrosecondsPerInvocation="1484"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="845" invocations="16359" avgMicrosecondsPerInvocation="51" maxMicrosecondsPerInvocation="27388" standardDeviationMicrosecondsPerInvocation="312"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="839" invocations="4119" avgMicrosecondsPerInvocation="203" maxMicrosecondsPerInvocation="32988" standardDeviationMicrosecondsPerInvocation="946"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="789" invocations="2825" avgMicrosecondsPerInvocation="279" maxMicrosecondsPerInvocation="40823" standardDeviationMicrosecondsPerInvocation="1026"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="556" invocations="2453" avgMicrosecondsPerInvocation="226" maxMicrosecondsPerInvocation="13542" standardDeviationMicrosecondsPerInvocation="638"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="542" invocations="2453" avgMicrosecondsPerInvocation="221" maxMicrosecondsPerInvocation="25320" standardDeviationMicrosecondsPerInvocation="765"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="502" invocations="805260" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="9832" standardDeviationMicrosecondsPerInvocation="13"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="463" invocations="14869" avgMicrosecondsPerInvocation="31" maxMicrosecondsPerInvocation="4901" standardDeviationMicrosecondsPerInvocation="118"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="461" invocations="2453" avgMicrosecondsPerInvocation="188" maxMicrosecondsPerInvocation="17425" standardDeviationMicrosecondsPerInvocation="599"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="438" invocations="4132" avgMicrosecondsPerInvocation="106" maxMicrosecondsPerInvocation="2317" standardDeviationMicrosecondsPerInvocation="142"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="398" invocations="19129" avgMicrosecondsPerInvocation="20" maxMicrosecondsPerInvocation="28891" standardDeviationMicrosecondsPerInvocation="222"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="370" invocations="15269" avgMicrosecondsPerInvocation="24" maxMicrosecondsPerInvocation="8634" standardDeviationMicrosecondsPerInvocation="93"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="346" invocations="2453" avgMicrosecondsPerInvocation="141" maxMicrosecondsPerInvocation="19509" standardDeviationMicrosecondsPerInvocation="709"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="327" invocations="2453" avgMicrosecondsPerInvocation="133" maxMicrosecondsPerInvocation="48531" standardDeviationMicrosecondsPerInvocation="1028"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="318" invocations="2453" avgMicrosecondsPerInvocation="129" maxMicrosecondsPerInvocation="6470" standardDeviationMicrosecondsPerInvocation="324"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="316" invocations="2453" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="58258" standardDeviationMicrosecondsPerInvocation="1210"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="295" invocations="2453" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="8170" standardDeviationMicrosecondsPerInvocation="346"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="285" invocations="2453" avgMicrosecondsPerInvocation="116" maxMicrosecondsPerInvocation="4756" standardDeviationMicrosecondsPerInvocation="307"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="280" invocations="2453" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="8373" standardDeviationMicrosecondsPerInvocation="321"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="278" invocations="2453" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="9365" standardDeviationMicrosecondsPerInvocation="319"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="277" invocations="2453" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="7724" standardDeviationMicrosecondsPerInvocation="390"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="276" invocations="2453" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="4874" standardDeviationMicrosecondsPerInvocation="330"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="274" invocations="2825" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="16934" standardDeviationMicrosecondsPerInvocation="393"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="273" invocations="2453" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="4743" standardDeviationMicrosecondsPerInvocation="278"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="273" invocations="2453" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="6432" standardDeviationMicrosecondsPerInvocation="333"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="271" invocations="2453" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="7019" standardDeviationMicrosecondsPerInvocation="324"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindFloatEquality" totalMilliseconds="270" invocations="2453" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="42944" standardDeviationMicrosecondsPerInvocation="912"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="268" invocations="2453" avgMicrosecondsPerInvocation="109" maxMicrosecondsPerInvocation="14671" standardDeviationMicrosecondsPerInvocation="404"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="253" invocations="2453" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="11190" standardDeviationMicrosecondsPerInvocation="348"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="251" invocations="2453" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="11490" standardDeviationMicrosecondsPerInvocation="340"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="239" invocations="2453" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="26540" standardDeviationMicrosecondsPerInvocation="918"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="239" invocations="2453" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="4861" standardDeviationMicrosecondsPerInvocation="280"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="4457" invocations="17555" avgMicrosecondsPerInvocation="253" maxMicrosecondsPerInvocation="718784" standardDeviationMicrosecondsPerInvocation="5545"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="3663" invocations="19489" avgMicrosecondsPerInvocation="187" maxMicrosecondsPerInvocation="71430" standardDeviationMicrosecondsPerInvocation="1231"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="3592" invocations="20892" avgMicrosecondsPerInvocation="171" maxMicrosecondsPerInvocation="27351" standardDeviationMicrosecondsPerInvocation="610"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="3426" invocations="21445" avgMicrosecondsPerInvocation="159" maxMicrosecondsPerInvocation="90647" standardDeviationMicrosecondsPerInvocation="1040"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="2801" invocations="21204" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="11512" standardDeviationMicrosecondsPerInvocation="364"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="1796" invocations="15692" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="38684" standardDeviationMicrosecondsPerInvocation="454"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1496" invocations="19984" avgMicrosecondsPerInvocation="74" maxMicrosecondsPerInvocation="14092" standardDeviationMicrosecondsPerInvocation="167"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1467" invocations="23902" avgMicrosecondsPerInvocation="61" maxMicrosecondsPerInvocation="97732" standardDeviationMicrosecondsPerInvocation="662"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1069" invocations="5892" avgMicrosecondsPerInvocation="181" maxMicrosecondsPerInvocation="31898" standardDeviationMicrosecondsPerInvocation="831"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1065" invocations="3661" avgMicrosecondsPerInvocation="291" maxMicrosecondsPerInvocation="52965" standardDeviationMicrosecondsPerInvocation="1139"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1006" invocations="3661" avgMicrosecondsPerInvocation="274" maxMicrosecondsPerInvocation="82164" standardDeviationMicrosecondsPerInvocation="1604"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="980" invocations="18645" avgMicrosecondsPerInvocation="52" maxMicrosecondsPerInvocation="63753" standardDeviationMicrosecondsPerInvocation="586"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="774" invocations="7324" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="8973" standardDeviationMicrosecondsPerInvocation="185"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="650" invocations="2767" avgMicrosecondsPerInvocation="235" maxMicrosecondsPerInvocation="13221" standardDeviationMicrosecondsPerInvocation="654"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="577" invocations="2767" avgMicrosecondsPerInvocation="208" maxMicrosecondsPerInvocation="21714" standardDeviationMicrosecondsPerInvocation="664"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="537" invocations="886676" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="1648" standardDeviationMicrosecondsPerInvocation="4"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="535" invocations="2767" avgMicrosecondsPerInvocation="193" maxMicrosecondsPerInvocation="13842" standardDeviationMicrosecondsPerInvocation="558"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="450" invocations="17138" avgMicrosecondsPerInvocation="26" maxMicrosecondsPerInvocation="3742" standardDeviationMicrosecondsPerInvocation="96"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="443" invocations="21489" avgMicrosecondsPerInvocation="20" maxMicrosecondsPerInvocation="27588" standardDeviationMicrosecondsPerInvocation="200"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="420" invocations="17555" avgMicrosecondsPerInvocation="23" maxMicrosecondsPerInvocation="6257" standardDeviationMicrosecondsPerInvocation="83"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="401" invocations="2767" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="24144" standardDeviationMicrosecondsPerInvocation="732"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="393" invocations="2767" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="9235" standardDeviationMicrosecondsPerInvocation="414"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="357" invocations="2767" avgMicrosecondsPerInvocation="129" maxMicrosecondsPerInvocation="49198" standardDeviationMicrosecondsPerInvocation="988"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="349" invocations="2767" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="34563" standardDeviationMicrosecondsPerInvocation="724"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="333" invocations="2767" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="5835" standardDeviationMicrosecondsPerInvocation="311"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="328" invocations="2767" avgMicrosecondsPerInvocation="118" maxMicrosecondsPerInvocation="11052" standardDeviationMicrosecondsPerInvocation="346"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="328" invocations="2767" avgMicrosecondsPerInvocation="118" maxMicrosecondsPerInvocation="5515" standardDeviationMicrosecondsPerInvocation="316"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="320" invocations="2767" avgMicrosecondsPerInvocation="115" maxMicrosecondsPerInvocation="57621" standardDeviationMicrosecondsPerInvocation="1126"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="320" invocations="3661" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="25722" standardDeviationMicrosecondsPerInvocation="475"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="317" invocations="2767" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="6067" standardDeviationMicrosecondsPerInvocation="338"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="316" invocations="2767" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="4250" standardDeviationMicrosecondsPerInvocation="267"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="312" invocations="2767" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="7165" standardDeviationMicrosecondsPerInvocation="321"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="311" invocations="2767" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="9616" standardDeviationMicrosecondsPerInvocation="329"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="311" invocations="2767" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="5103" standardDeviationMicrosecondsPerInvocation="280"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="297" invocations="2767" avgMicrosecondsPerInvocation="107" maxMicrosecondsPerInvocation="4737" standardDeviationMicrosecondsPerInvocation="281"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="296" invocations="2767" avgMicrosecondsPerInvocation="107" maxMicrosecondsPerInvocation="4400" standardDeviationMicrosecondsPerInvocation="277"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="291" invocations="2767" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="5156" standardDeviationMicrosecondsPerInvocation="295"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="287" invocations="2767" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="25241" standardDeviationMicrosecondsPerInvocation="798"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="280" invocations="2767" avgMicrosecondsPerInvocation="101" maxMicrosecondsPerInvocation="12491" standardDeviationMicrosecondsPerInvocation="343"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="274" invocations="2767" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="5586" standardDeviationMicrosecondsPerInvocation="294"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReadOfInstanceFieldInMethodInvokedByConstructorInSuperclass" totalMilliseconds="269" invocations="2767" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="58318" standardDeviationMicrosecondsPerInvocation="1123"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

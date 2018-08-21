@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1511117510000" analysisTimestamp="1511117512163" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534814598000" analysisTimestamp="1534814599900" release="">
   <Project projectName="">
     <Jar>tmp/cqrs-hotel</Jar>
   </Project>
@@ -170,7 +170,7 @@
       <SourceLine classname="fi.luontola.cqrshotel.framework.generated.InMemoryEventStore_ReadRecentEventsBenchmark_jmhType_B2" sourcefile="InMemoryEventStore_ReadRecentEventsBenchmark_jmhType_B2.java" sourcepath="fi/luontola/cqrshotel/framework/generated/InMemoryEventStore_ReadRecentEventsBenchmark_jmhType_B2.java"/>
     </Field>
   </BugInstance>
-  <Errors errors="0" missingClasses="1084">
+  <Errors errors="0" missingClasses="1085">
     <MissingClass>android.content.Context</MissingClass>
     <MissingClass>android.content.pm.ApplicationInfo</MissingClass>
     <MissingClass>android.content.res.AssetManager</MissingClass>
@@ -867,6 +867,7 @@
     <MissingClass>org.glassfish.jersey.server.ResourceConfig</MissingClass>
     <MissingClass>org.glassfish.jersey.servlet.ServletContainer</MissingClass>
     <MissingClass>org.h2.server.web.WebServlet</MissingClass>
+    <MissingClass>org.hamcrest.Matcher</MissingClass>
     <MissingClass>org.hamcrest.MatcherAssert</MissingClass>
     <MissingClass>org.hamcrest.Matchers</MissingClass>
     <MissingClass>org.hibernate.boot.model.naming.Identifier</MissingClass>
@@ -1256,7 +1257,7 @@
     <MissingClass>waffle.windows.auth.impl.WindowsCredentialsHandleImpl</MissingClass>
     <MissingClass>waffle.windows.auth.impl.WindowsSecurityContextImpl</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Sun, 19 Nov 2017 19:51:50 +0100" total_classes="10413" referenced_classes="11773" total_bugs="20" total_size="446964" num_packages="777" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="341.77" clock_seconds="123.90" peak_mbytes="1808.56" alloc_mbytes="3641.00" gc_seconds="6.42" priority_2="20">
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 03:23:18 +0200" total_classes="10443" referenced_classes="11805" total_bugs="20" total_size="447789" num_packages="777" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="374.45" clock_seconds="134.20" peak_mbytes="1763.52" alloc_mbytes="3641.00" gc_seconds="6.24" priority_2="20">
     <PackageStats package="ch.qos.logback.classic" total_bugs="0" total_types="8" total_size="884">
       <ClassStats class="ch.qos.logback.classic.AsyncAppender" sourceFile="AsyncAppender.java" interface="false" size="21" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.BasicConfigurator" sourceFile="BasicConfigurator.java" interface="false" size="20" bugs="0"/>
@@ -2828,11 +2829,14 @@
       <ClassStats class="com.fasterxml.jackson.datatype.jsr310.ser.key.Jsr310NullKeySerializer" sourceFile="Jsr310NullKeySerializer.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="com.fasterxml.jackson.datatype.jsr310.ser.key.ZonedDateTimeKeySerializer" sourceFile="ZonedDateTimeKeySerializer.java" interface="false" size="12" bugs="0"/>
     </PackageStats>
-    <PackageStats package="fi.luontola.cqrshotel" total_bugs="0" total_types="15" total_size="419">
-      <ClassStats class="fi.luontola.cqrshotel.ApiController" sourceFile="ApiController.java" interface="false" size="26" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.ApiControllerTest" sourceFile="ApiControllerTest.java" interface="false" size="107" bugs="0"/>
+    <PackageStats package="fi.luontola.cqrshotel" total_bugs="0" total_types="18" total_size="551">
+      <ClassStats class="fi.luontola.cqrshotel.AcceptanceTest" sourceFile="AcceptanceTest.java" interface="false" size="62" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.ApiController" sourceFile="ApiController.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.ApiControllerTest" sourceFile="ApiControllerTest.java" interface="false" size="118" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.Application" sourceFile="Application.java" interface="false" size="39" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.Core" sourceFile="Core.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.Core" sourceFile="Core.java" interface="false" size="73" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.Core$ProjectionConfig" sourceFile="Core.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.Core$QueryHandlerConfig" sourceFile="Core.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.CoreTest" sourceFile="CoreTest.java" interface="false" size="51" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.FastTests" sourceFile="FastTests.java" interface="true" size="1" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.JdbcConfiguration" sourceFile="JdbcConfiguration.java" interface="false" size="18" bugs="0"/>
@@ -2843,24 +2847,23 @@
       <ClassStats class="fi.luontola.cqrshotel.SlowTests" sourceFile="SlowTests.java" interface="true" size="1" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.StatusPage" sourceFile="StatusPage.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.StatusPage$EventStoreStatus" sourceFile="StatusPage.java" interface="false" size="8" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.StatusPage$ProjectionStatus" sourceFile="StatusPage.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.StatusPage$ProjectionStatus" sourceFile="StatusPage.java" interface="false" size="9" bugs="0"/>
     </PackageStats>
-    <PackageStats package="fi.luontola.cqrshotel.capacity" total_bugs="0" total_types="1" total_size="57">
-      <ClassStats class="fi.luontola.cqrshotel.capacity.CapacityViewTest" sourceFile="CapacityViewTest.java" interface="false" size="57" bugs="0"/>
-    </PackageStats>
-    <PackageStats package="fi.luontola.cqrshotel.capacity.queries" total_bugs="0" total_types="6" total_size="69">
+    <PackageStats package="fi.luontola.cqrshotel.capacity.queries" total_bugs="0" total_types="7" total_size="125">
       <ClassStats class="fi.luontola.cqrshotel.capacity.queries.CapacityDto" sourceFile="CapacityDto.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.capacity.queries.CapacityView" sourceFile="CapacityView.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.capacity.queries.CapacityView" sourceFile="CapacityView.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.capacity.queries.CapacityViewTest" sourceFile="CapacityViewTest.java" interface="false" size="57" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.capacity.queries.GetCapacityByDate" sourceFile="GetCapacityByDate.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.capacity.queries.GetCapacityByDateHandler" sourceFile="GetCapacityByDateHandler.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.capacity.queries.GetCapacityByDateRange" sourceFile="GetCapacityByDateRange.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.capacity.queries.GetCapacityByDateRangeHandler" sourceFile="GetCapacityByDateRangeHandler.java" interface="false" size="10" bugs="0"/>
     </PackageStats>
-    <PackageStats package="fi.luontola.cqrshotel.framework" total_bugs="8" total_types="70" total_size="1416" priority_2="8">
+    <PackageStats package="fi.luontola.cqrshotel.framework" total_bugs="8" total_types="78" total_size="1550" priority_2="8">
       <ClassStats class="fi.luontola.cqrshotel.framework.AggregateRoot" sourceFile="AggregateRoot.java" interface="false" size="40" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.framework.AggregateRootTester" sourceFile="AggregateRootTester.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.AnnotatedProjection" sourceFile="AnnotatedProjection.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.framework.Command" sourceFile="Command.java" interface="true" size="1" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.framework.Commit" sourceFile="Commit.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.Commit" sourceFile="Commit.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.framework.CompositeHandler" sourceFile="CompositeHandler.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.framework.CompositeHandlerTest" sourceFile="CompositeHandlerTest.java" interface="false" size="37" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.framework.CompositeHandlerTest$1" sourceFile="CompositeHandlerTest.java" interface="false" size="1" bugs="0"/>
@@ -2902,33 +2905,40 @@
       <ClassStats class="fi.luontola.cqrshotel.framework.InMemoryEventStore" sourceFile="InMemoryEventStore.java" interface="false" size="49" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.framework.InMemoryEventStoreTest" sourceFile="InMemoryEventStoreTest.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.framework.InMemoryEventStore_ReadRecentEventsBenchmark" sourceFile="InMemoryEventStore_ReadRecentEventsBenchmark.java" interface="false" size="31" bugs="4" priority_2="4"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.InMemoryProjectionUpdater" sourceFile="InMemoryProjectionUpdater.java" interface="false" size="45" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.InMemoryProjectionUpdater$Waiter" sourceFile="InMemoryProjectionUpdater.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.InMemoryProjectionUpdaterTest" sourceFile="InMemoryProjectionUpdaterTest.java" interface="false" size="81" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.InMemoryProjectionUpdaterTest$1" sourceFile="InMemoryProjectionUpdaterTest.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.InMemoryProjectionUpdaterTest$DummyEvent" sourceFile="InMemoryProjectionUpdaterTest.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.InMemoryProjectionUpdaterTest$SpyProjection" sourceFile="InMemoryProjectionUpdaterTest.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.framework.Message" sourceFile="Message.java" interface="true" size="1" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.framework.OptimisticLockingException" sourceFile="OptimisticLockingException.java" interface="false" size="10" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.framework.Projection" sourceFile="Projection.java" interface="false" size="45" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.framework.Projection$Waiter" sourceFile="Projection.java" interface="false" size="12" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.framework.ProjectionTest" sourceFile="ProjectionTest.java" interface="false" size="78" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.framework.ProjectionTest$1" sourceFile="ProjectionTest.java" interface="false" size="9" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.framework.ProjectionTest$DummyEvent" sourceFile="ProjectionTest.java" interface="false" size="8" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.framework.ProjectionTest$SpyProjection" sourceFile="ProjectionTest.java" interface="false" size="9" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.framework.ProjectionsUpdater" sourceFile="ProjectionsUpdater.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.PersistedProcess" sourceFile="ProcessManagersTest.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.ProcessManagers" sourceFile="ProcessManagersTest.java" interface="false" size="49" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.ProcessManagersTest" sourceFile="ProcessManagersTest.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.ProcessManagersTest$RegisterCreated" sourceFile="ProcessManagersTest.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.ProcessManagersTest$RegisterProcess" sourceFile="ProcessManagersTest.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.ProcessManagersTest$ShowCurrentValue" sourceFile="ProcessManagersTest.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.ProcessManagersTest$ValueAddedToRegister" sourceFile="ProcessManagersTest.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.ProcessRepo" sourceFile="ProcessManagersTest.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.Projection" sourceFile="Projection.java" interface="true" size="4" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.framework.PsqlEventStore" sourceFile="PsqlEventStore.java" interface="false" size="89" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.framework.PsqlEventStoreTest" sourceFile="PsqlEventStoreTest.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.Publisher" sourceFile="Publisher.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.framework.Query" sourceFile="Query.java" interface="true" size="1" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.framework.Repository" sourceFile="Repository.java" interface="false" size="42" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.Repository" sourceFile="Repository.java" interface="false" size="41" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.framework.RepositoryTest" sourceFile="RepositoryTest.java" interface="false" size="54" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.framework.RepositoryTest$GuineaPig" sourceFile="RepositoryTest.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.framework.RepositoryTest$GuineaPigRepository" sourceFile="RepositoryTest.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.framework.RepositoryTest$ValueChanged" sourceFile="RepositoryTest.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.framework.SingleThreadedTriggerableWorker" sourceFile="SingleThreadedTriggerableWorker.java" interface="false" size="21" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.framework.SingleThreadedTriggerableWorkerTest" sourceFile="SingleThreadedTriggerableWorkerTest.java" interface="false" size="116" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.framework.StreamProjection" sourceFile="StreamProjection.java" interface="false" size="19" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.framework.StreamProjectionTest" sourceFile="StreamProjectionTest.java" interface="false" size="36" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.framework.StreamProjectionTest$1" sourceFile="StreamProjectionTest.java" interface="false" size="1" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.framework.StreamProjectionTest$DummyEvent" sourceFile="StreamProjectionTest.java" interface="false" size="8" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.framework.StreamProjectionTest$SpyProjection" sourceFile="StreamProjectionTest.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.SingleThreadedTriggerableWorker" sourceFile="SingleThreadedTriggerableWorker.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.SingleThreadedTriggerableWorker$UncaughtExceptionHandler" sourceFile="SingleThreadedTriggerableWorker.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.SingleThreadedTriggerableWorkerTest" sourceFile="SingleThreadedTriggerableWorkerTest.java" interface="false" size="133" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.SpyPublisher" sourceFile="SpyPublisher.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.framework.UpdateProjectionsAfterHandling" sourceFile="UpdateProjectionsAfterHandling.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.WorkersPool" sourceFile="WorkersPool.java" interface="false" size="19" bugs="0"/>
     </PackageStats>
-    <PackageStats package="fi.luontola.cqrshotel.framework.consistency" total_bugs="0" total_types="11" total_size="208">
+    <PackageStats package="fi.luontola.cqrshotel.framework.consistency" total_bugs="0" total_types="11" total_size="209">
       <ClassStats class="fi.luontola.cqrshotel.framework.consistency.ObservedPosition" sourceFile="ObservedPosition.java" interface="false" size="34" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.framework.consistency.ObservedPositionHeadersTest" sourceFile="ObservedPositionHeadersTest.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.framework.consistency.ObservedPositionHeadersTest$GuineaPigApp" sourceFile="ObservedPositionHeadersTest.java" interface="false" size="7" bugs="0"/>
@@ -2937,7 +2947,7 @@
       <ClassStats class="fi.luontola.cqrshotel.framework.consistency.ReadModelNotUpToDateException" sourceFile="ReadModelNotUpToDateException.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.framework.consistency.ReadModelNotUpToDateExceptionHandler" sourceFile="ReadModelNotUpToDateExceptionHandler.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.framework.consistency.ReadObservedPositionFromRequestHeaders" sourceFile="ReadObservedPositionFromRequestHeaders.java" interface="false" size="15" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.framework.consistency.UpdateObservedPositionAfterCommit" sourceFile="UpdateObservedPositionAfterCommit.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.framework.consistency.UpdateObservedPositionAfterCommit" sourceFile="UpdateObservedPositionAfterCommit.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.framework.consistency.WaitForProjectionToUpdate" sourceFile="WaitForProjectionToUpdate.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.framework.consistency.WriteObservedPositionToResponseHeaders" sourceFile="WriteObservedPositionToResponseHeaders.java" interface="false" size="11" bugs="0"/>
     </PackageStats>
@@ -2957,73 +2967,94 @@
       <ClassStats class="fi.luontola.cqrshotel.framework.generated.InMemoryEventStore_ReadRecentEventsBenchmark_jmhType_B2" sourceFile="InMemoryEventStore_ReadRecentEventsBenchmark_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
       <ClassStats class="fi.luontola.cqrshotel.framework.generated.InMemoryEventStore_ReadRecentEventsBenchmark_jmhType_B3" sourceFile="InMemoryEventStore_ReadRecentEventsBenchmark_jmhType_B3.java" interface="false" size="259" bugs="0"/>
     </PackageStats>
-    <PackageStats package="fi.luontola.cqrshotel.hotel" total_bugs="0" total_types="1" total_size="12">
-      <ClassStats class="fi.luontola.cqrshotel.hotel.Hotel" sourceFile="Hotel.java" interface="false" size="12" bugs="0"/>
+    <PackageStats package="fi.luontola.cqrshotel.hotel" total_bugs="0" total_types="1" total_size="16">
+      <ClassStats class="fi.luontola.cqrshotel.hotel.Hotel" sourceFile="Hotel.java" interface="false" size="16" bugs="0"/>
     </PackageStats>
     <PackageStats package="fi.luontola.cqrshotel.pricing" total_bugs="0" total_types="3" total_size="24">
       <ClassStats class="fi.luontola.cqrshotel.pricing.InMemoryPricingEngine" sourceFile="InMemoryPricingEngine.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.pricing.PricingEngine" sourceFile="PricingEngine.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.pricing.RandomPricingEngine" sourceFile="RandomPricingEngine.java" interface="false" size="12" bugs="0"/>
     </PackageStats>
-    <PackageStats package="fi.luontola.cqrshotel.reservation" total_bugs="0" total_types="6" total_size="248">
-      <ClassStats class="fi.luontola.cqrshotel.reservation.MakeReservationTest" sourceFile="MakeReservationTest.java" interface="false" size="66" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.reservation.Reservation" sourceFile="Reservation.java" interface="false" size="68" bugs="0"/>
+    <PackageStats package="fi.luontola.cqrshotel.reservation" total_bugs="0" total_types="9" total_size="347">
+      <ClassStats class="fi.luontola.cqrshotel.reservation.AssignRoomTest" sourceFile="AssignRoomTest.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.reservation.MakeReservationTest" sourceFile="MakeReservationTest.java" interface="false" size="64" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.reservation.Reservation" sourceFile="Reservation.java" interface="false" size="69" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.reservation.Reservation$State" sourceFile="Reservation.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.reservation.ReservationProcess" sourceFile="ReservationProcess.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.reservation.ReservationProcessTest" sourceFile="ReservationProcessTest.java" interface="false" size="40" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.reservation.ReservationRepo" sourceFile="ReservationRepo.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.reservation.SearchForAccommodationQueryHandlerTest" sourceFile="SearchForAccommodationQueryHandlerTest.java" interface="false" size="58" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.reservation.SearchForAccommodationTest" sourceFile="SearchForAccommodationTest.java" interface="false" size="43" bugs="0"/>
     </PackageStats>
-    <PackageStats package="fi.luontola.cqrshotel.reservation.commands" total_bugs="0" total_types="4" total_size="58">
+    <PackageStats package="fi.luontola.cqrshotel.reservation.commands" total_bugs="0" total_types="6" total_size="82">
+      <ClassStats class="fi.luontola.cqrshotel.reservation.commands.AssignRoom" sourceFile="AssignRoom.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.reservation.commands.AssignRoomHandler" sourceFile="AssignRoomHandler.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.reservation.commands.MakeReservation" sourceFile="MakeReservation.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.reservation.commands.MakeReservationHandler" sourceFile="MakeReservationHandler.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.reservation.commands.SearchForAccommodation" sourceFile="SearchForAccommodation.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.reservation.commands.SearchForAccommodationCommandHandler" sourceFile="SearchForAccommodationCommandHandler.java" interface="false" size="18" bugs="0"/>
     </PackageStats>
-    <PackageStats package="fi.luontola.cqrshotel.reservation.events" total_bugs="0" total_types="6" total_size="71">
+    <PackageStats package="fi.luontola.cqrshotel.reservation.events" total_bugs="0" total_types="7" total_size="81">
       <ClassStats class="fi.luontola.cqrshotel.reservation.events.ContactInformationUpdated" sourceFile="ContactInformationUpdated.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.reservation.events.CustomerDiscovered" sourceFile="CustomerDiscovered.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.reservation.events.LineItemCreated" sourceFile="LineItemCreated.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.reservation.events.PriceOffered" sourceFile="PriceOffered.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.reservation.events.ReservationInitiated" sourceFile="ReservationInitiated.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.reservation.events.RoomAssigned" sourceFile="RoomAssigned.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.reservation.events.SearchedForAccommodation" sourceFile="SearchedForAccommodation.java" interface="false" size="10" bugs="0"/>
     </PackageStats>
-    <PackageStats package="fi.luontola.cqrshotel.reservation.queries" total_bugs="0" total_types="10" total_size="161">
+    <PackageStats package="fi.luontola.cqrshotel.reservation.queries" total_bugs="0" total_types="10" total_size="186">
       <ClassStats class="fi.luontola.cqrshotel.reservation.queries.FindAllReservations" sourceFile="FindAllReservations.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.reservation.queries.FindAllReservationsHandler" sourceFile="FindAllReservationsHandler.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.reservation.queries.FindReservationById" sourceFile="FindReservationById.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.reservation.queries.FindReservationByIdHandler" sourceFile="FindReservationByIdHandler.java" interface="false" size="10" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.reservation.queries.ReservationDto" sourceFile="ReservationDto.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.reservation.queries.ReservationDto" sourceFile="ReservationDto.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.reservation.queries.ReservationOffer" sourceFile="ReservationOffer.java" interface="false" size="7" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.reservation.queries.ReservationOfferView" sourceFile="ReservationOfferView.java" interface="false" size="24" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.reservation.queries.ReservationsView" sourceFile="ReservationsView.java" interface="false" size="32" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.reservation.queries.ReservationsViewTest" sourceFile="ReservationsViewTest.java" interface="false" size="44" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.reservation.queries.SearchForAccommodationQueryHandler" sourceFile="SearchForAccommodationQueryHandler.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.reservation.queries.ReservationOfferView" sourceFile="ReservationOfferView.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.reservation.queries.ReservationsView" sourceFile="ReservationsView.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.reservation.queries.ReservationsViewTest" sourceFile="ReservationsViewTest.java" interface="false" size="49" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.reservation.queries.SearchForAccommodationQueryHandler" sourceFile="SearchForAccommodationQueryHandler.java" interface="false" size="20" bugs="0"/>
     </PackageStats>
-    <PackageStats package="fi.luontola.cqrshotel.room" total_bugs="0" total_types="7" total_size="126">
+    <PackageStats package="fi.luontola.cqrshotel.room" total_bugs="0" total_types="8" total_size="187">
       <ClassStats class="fi.luontola.cqrshotel.room.CreateRoomTest" sourceFile="CreateRoomTest.java" interface="false" size="16" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.room.OccupyRoomTest" sourceFile="OccupyRoomTest.java" interface="false" size="68" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.room.NoRoomsAvailableException" sourceFile="NoRoomsAvailableException.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.room.OccupyAnyAvailableRoomTest" sourceFile="OccupyAnyAvailableRoomTest.java" interface="false" size="60" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.room.OccupyRoomTest" sourceFile="OccupyRoomTest.java" interface="false" size="70" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.room.Range" sourceFile="Range.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.room.Room" sourceFile="Room.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.room.RoomAlreadyOccupiedException" sourceFile="RoomAlreadyOccupiedException.java" interface="false" size="3" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.room.RoomAvailabilityView" sourceFile="RoomAvailabilityView.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.room.RoomRepo" sourceFile="RoomRepo.java" interface="false" size="4" bugs="0"/>
     </PackageStats>
-    <PackageStats package="fi.luontola.cqrshotel.room.commands" total_bugs="0" total_types="4" total_size="44">
+    <PackageStats package="fi.luontola.cqrshotel.room.commands" total_bugs="0" total_types="6" total_size="76">
       <ClassStats class="fi.luontola.cqrshotel.room.commands.CreateRoom" sourceFile="CreateRoom.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.room.commands.CreateRoomHandler" sourceFile="CreateRoomHandler.java" interface="false" size="13" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.room.commands.OccupyRoom" sourceFile="OccupyRoom.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.room.commands.OccupyAnyAvailableRoom" sourceFile="OccupyAnyAvailableRoom.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.room.commands.OccupyAnyAvailableRoomHandler" sourceFile="OccupyAnyAvailableRoomHandler.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.room.commands.OccupyRoom" sourceFile="OccupyRoom.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.room.commands.OccupyRoomHandler" sourceFile="OccupyRoomHandler.java" interface="false" size="13" bugs="0"/>
     </PackageStats>
-    <PackageStats package="fi.luontola.cqrshotel.room.events" total_bugs="0" total_types="2" total_size="18">
+    <PackageStats package="fi.luontola.cqrshotel.room.events" total_bugs="0" total_types="2" total_size="20">
       <ClassStats class="fi.luontola.cqrshotel.room.events.RoomCreated" sourceFile="RoomCreated.java" interface="false" size="8" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.room.events.RoomOccupied" sourceFile="RoomOccupied.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.room.events.RoomOccupied" sourceFile="RoomOccupied.java" interface="false" size="12" bugs="0"/>
     </PackageStats>
-    <PackageStats package="fi.luontola.cqrshotel.room.queries" total_bugs="0" total_types="5" total_size="55">
+    <PackageStats package="fi.luontola.cqrshotel.room.queries" total_bugs="0" total_types="12" total_size="263">
       <ClassStats class="fi.luontola.cqrshotel.room.queries.FindAllRooms" sourceFile="FindAllRooms.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.room.queries.FindAllRoomsHandler" sourceFile="FindAllRoomsHandler.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.room.queries.GetAvailabilityByDateRange" sourceFile="GetAvailabilityByDateRange.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.room.queries.GetAvailabilityByDateRangeHandler" sourceFile="GetAvailabilityByDateRangeHandler.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.room.queries.GetAvailabilityByDateRangeHandlerTest" sourceFile="GetAvailabilityByDateRangeHandlerTest.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.room.queries.RoomAvailabilityDto" sourceFile="RoomAvailabilityDto.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.room.queries.RoomAvailabilityIntervalDto" sourceFile="RoomAvailabilityIntervalDto.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.room.queries.RoomAvailabilityView" sourceFile="RoomAvailabilityView.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.room.queries.RoomAvailabilityViewTest" sourceFile="RoomAvailabilityViewTest.java" interface="false" size="91" bugs="0"/>
       <ClassStats class="fi.luontola.cqrshotel.room.queries.RoomDto" sourceFile="RoomDto.java" interface="false" size="5" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.room.queries.RoomsView" sourceFile="RoomsView.java" interface="false" size="14" bugs="0"/>
-      <ClassStats class="fi.luontola.cqrshotel.room.queries.RoomsViewTest" sourceFile="RoomsViewTest.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.room.queries.RoomsView" sourceFile="RoomsView.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.room.queries.RoomsViewTest" sourceFile="RoomsViewTest.java" interface="false" size="32" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="fi.luontola.cqrshotel.testing" total_bugs="0" total_types="3" total_size="94">
+      <ClassStats class="fi.luontola.cqrshotel.testing.WeightedRandom" sourceFile="WeightedRandom.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.testing.WeightedRandom$WeightedItem" sourceFile="WeightedRandom.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="fi.luontola.cqrshotel.testing.WeightedRandomTest" sourceFile="WeightedRandomTest.java" interface="false" size="52" bugs="0"/>
     </PackageStats>
     <PackageStats package="fi.luontola.cqrshotel.util" total_bugs="0" total_types="1" total_size="9">
       <ClassStats class="fi.luontola.cqrshotel.util.Struct" sourceFile="Struct.java" interface="false" size="9" bugs="0"/>
@@ -13225,52 +13256,51 @@
       <ClassStats class="org.yaml.snakeyaml.util.UriEncoder" sourceFile="UriEncoder.java" interface="false" size="18" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="9026" invocations="69613" avgMicrosecondsPerInvocation="129" maxMicrosecondsPerInvocation="1033599" standardDeviationMicrosecondsPerInvocation="4010"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="7954" invocations="71543" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="83449" standardDeviationMicrosecondsPerInvocation="746"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="6755" invocations="70978" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="91565" standardDeviationMicrosecondsPerInvocation="663"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="6404" invocations="75579" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="95407" standardDeviationMicrosecondsPerInvocation="676"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="5974" invocations="73155" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="54991" standardDeviationMicrosecondsPerInvocation="393"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="4015" invocations="56065" avgMicrosecondsPerInvocation="71" maxMicrosecondsPerInvocation="10865" standardDeviationMicrosecondsPerInvocation="205"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="3718" invocations="71557" avgMicrosecondsPerInvocation="51" maxMicrosecondsPerInvocation="53733" standardDeviationMicrosecondsPerInvocation="233"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="3117" invocations="49701" avgMicrosecondsPerInvocation="62" maxMicrosecondsPerInvocation="8335" standardDeviationMicrosecondsPerInvocation="100"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="2773" invocations="71543" avgMicrosecondsPerInvocation="38" maxMicrosecondsPerInvocation="1116606" standardDeviationMicrosecondsPerInvocation="4175"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="2356" invocations="79335" avgMicrosecondsPerInvocation="29" maxMicrosecondsPerInvocation="44743" standardDeviationMicrosecondsPerInvocation="202"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="2145" invocations="11773" avgMicrosecondsPerInvocation="182" maxMicrosecondsPerInvocation="87442" standardDeviationMicrosecondsPerInvocation="940"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="1848" invocations="10413" avgMicrosecondsPerInvocation="177" maxMicrosecondsPerInvocation="67952" standardDeviationMicrosecondsPerInvocation="2012"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1772" invocations="15960" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="59278" standardDeviationMicrosecondsPerInvocation="781"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1709" invocations="11773" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="19044" standardDeviationMicrosecondsPerInvocation="404"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="1560" invocations="2411392" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="75446" standardDeviationMicrosecondsPerInvocation="49"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="1554" invocations="10413" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="96817" standardDeviationMicrosecondsPerInvocation="1015"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="1429" invocations="10413" avgMicrosecondsPerInvocation="137" maxMicrosecondsPerInvocation="99105" standardDeviationMicrosecondsPerInvocation="1028"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="1418" invocations="10413" avgMicrosecondsPerInvocation="136" maxMicrosecondsPerInvocation="8872" standardDeviationMicrosecondsPerInvocation="281"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="1279" invocations="10413" avgMicrosecondsPerInvocation="122" maxMicrosecondsPerInvocation="117105" standardDeviationMicrosecondsPerInvocation="1309"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="1223" invocations="43106" avgMicrosecondsPerInvocation="28" maxMicrosecondsPerInvocation="12827" standardDeviationMicrosecondsPerInvocation="82"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="1164" invocations="69613" avgMicrosecondsPerInvocation="16" maxMicrosecondsPerInvocation="123725" standardDeviationMicrosecondsPerInvocation="471"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="1116" invocations="10922" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="7371" standardDeviationMicrosecondsPerInvocation="244"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="1104" invocations="11773" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="611139" standardDeviationMicrosecondsPerInvocation="5632"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="1077" invocations="10413" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="64415" standardDeviationMicrosecondsPerInvocation="678"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="979" invocations="78965" avgMicrosecondsPerInvocation="12" maxMicrosecondsPerInvocation="32115" standardDeviationMicrosecondsPerInvocation="143"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="963" invocations="67811" avgMicrosecondsPerInvocation="14" maxMicrosecondsPerInvocation="3263" standardDeviationMicrosecondsPerInvocation="42"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="953" invocations="10413" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="20935" standardDeviationMicrosecondsPerInvocation="400"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="951" invocations="10413" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="60008" standardDeviationMicrosecondsPerInvocation="626"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="945" invocations="10413" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="90117" standardDeviationMicrosecondsPerInvocation="906"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="932" invocations="10413" avgMicrosecondsPerInvocation="89" maxMicrosecondsPerInvocation="12402" standardDeviationMicrosecondsPerInvocation="289"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="922" invocations="10413" avgMicrosecondsPerInvocation="88" maxMicrosecondsPerInvocation="55576" standardDeviationMicrosecondsPerInvocation="720"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="904" invocations="10413" avgMicrosecondsPerInvocation="86" maxMicrosecondsPerInvocation="50677" standardDeviationMicrosecondsPerInvocation="602"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="837" invocations="10413" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="93128" standardDeviationMicrosecondsPerInvocation="929"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="829" invocations="10413" avgMicrosecondsPerInvocation="79" maxMicrosecondsPerInvocation="7471" standardDeviationMicrosecondsPerInvocation="201"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="820" invocations="10413" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="8830" standardDeviationMicrosecondsPerInvocation="202"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="798" invocations="10413" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="5448" standardDeviationMicrosecondsPerInvocation="213"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="753" invocations="10413" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="9764" standardDeviationMicrosecondsPerInvocation="216"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="726" invocations="10413" avgMicrosecondsPerInvocation="69" maxMicrosecondsPerInvocation="10350" standardDeviationMicrosecondsPerInvocation="338"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="724" invocations="10413" avgMicrosecondsPerInvocation="69" maxMicrosecondsPerInvocation="7986" standardDeviationMicrosecondsPerInvocation="221"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="721" invocations="10413" avgMicrosecondsPerInvocation="69" maxMicrosecondsPerInvocation="18613" standardDeviationMicrosecondsPerInvocation="254"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="717" invocations="10413" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="4799" standardDeviationMicrosecondsPerInvocation="180"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="716" invocations="10413" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="30495" standardDeviationMicrosecondsPerInvocation="343"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SynchronizationOnSharedBuiltinConstant" totalMilliseconds="716" invocations="10413" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="76894" standardDeviationMicrosecondsPerInvocation="890"/>
-      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="711" invocations="1316118" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="4859" standardDeviationMicrosecondsPerInvocation="5"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="705" invocations="10413" avgMicrosecondsPerInvocation="67" maxMicrosecondsPerInvocation="40185" standardDeviationMicrosecondsPerInvocation="435"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="700" invocations="78965" avgMicrosecondsPerInvocation="8" maxMicrosecondsPerInvocation="53527" standardDeviationMicrosecondsPerInvocation="198"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="10013" invocations="69746" avgMicrosecondsPerInvocation="143" maxMicrosecondsPerInvocation="1086818" standardDeviationMicrosecondsPerInvocation="4198"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="8890" invocations="71679" avgMicrosecondsPerInvocation="124" maxMicrosecondsPerInvocation="78714" standardDeviationMicrosecondsPerInvocation="744"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="7539" invocations="71114" avgMicrosecondsPerInvocation="106" maxMicrosecondsPerInvocation="82539" standardDeviationMicrosecondsPerInvocation="803"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="7203" invocations="75716" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="125012" standardDeviationMicrosecondsPerInvocation="947"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="6613" invocations="73293" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="88688" standardDeviationMicrosecondsPerInvocation="484"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="4772" invocations="56198" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="104480" standardDeviationMicrosecondsPerInvocation="657"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="3990" invocations="71693" avgMicrosecondsPerInvocation="55" maxMicrosecondsPerInvocation="56261" standardDeviationMicrosecondsPerInvocation="266"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="3371" invocations="49896" avgMicrosecondsPerInvocation="67" maxMicrosecondsPerInvocation="22829" standardDeviationMicrosecondsPerInvocation="167"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="2777" invocations="11805" avgMicrosecondsPerInvocation="235" maxMicrosecondsPerInvocation="629228" standardDeviationMicrosecondsPerInvocation="5811"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="2388" invocations="79481" avgMicrosecondsPerInvocation="30" maxMicrosecondsPerInvocation="17860" standardDeviationMicrosecondsPerInvocation="121"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1859" invocations="15993" avgMicrosecondsPerInvocation="116" maxMicrosecondsPerInvocation="75454" standardDeviationMicrosecondsPerInvocation="862"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="1833" invocations="71679" avgMicrosecondsPerInvocation="25" maxMicrosecondsPerInvocation="7478" standardDeviationMicrosecondsPerInvocation="97"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="1769" invocations="10443" avgMicrosecondsPerInvocation="169" maxMicrosecondsPerInvocation="90198" standardDeviationMicrosecondsPerInvocation="1050"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="1726" invocations="10443" avgMicrosecondsPerInvocation="165" maxMicrosecondsPerInvocation="33438" standardDeviationMicrosecondsPerInvocation="1762"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1722" invocations="11805" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="10713" standardDeviationMicrosecondsPerInvocation="377"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="1636" invocations="43255" avgMicrosecondsPerInvocation="37" maxMicrosecondsPerInvocation="100473" standardDeviationMicrosecondsPerInvocation="825"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="1603" invocations="2415027" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="8409" standardDeviationMicrosecondsPerInvocation="10"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="1553" invocations="10443" avgMicrosecondsPerInvocation="148" maxMicrosecondsPerInvocation="69535" standardDeviationMicrosecondsPerInvocation="1382"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="1536" invocations="10443" avgMicrosecondsPerInvocation="147" maxMicrosecondsPerInvocation="12528" standardDeviationMicrosecondsPerInvocation="355"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="1468" invocations="10443" avgMicrosecondsPerInvocation="140" maxMicrosecondsPerInvocation="63678" standardDeviationMicrosecondsPerInvocation="722"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="1195" invocations="10922" avgMicrosecondsPerInvocation="109" maxMicrosecondsPerInvocation="8578" standardDeviationMicrosecondsPerInvocation="254"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="1166" invocations="10443" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="467656" standardDeviationMicrosecondsPerInvocation="4578"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="1157" invocations="69746" avgMicrosecondsPerInvocation="16" maxMicrosecondsPerInvocation="16536" standardDeviationMicrosecondsPerInvocation="91"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="1137" invocations="10443" avgMicrosecondsPerInvocation="108" maxMicrosecondsPerInvocation="27330" standardDeviationMicrosecondsPerInvocation="457"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="1090" invocations="67933" avgMicrosecondsPerInvocation="16" maxMicrosecondsPerInvocation="9227" standardDeviationMicrosecondsPerInvocation="73"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="1082" invocations="10443" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="59610" standardDeviationMicrosecondsPerInvocation="797"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="1059" invocations="10443" avgMicrosecondsPerInvocation="101" maxMicrosecondsPerInvocation="21809" standardDeviationMicrosecondsPerInvocation="478"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="1040" invocations="79104" avgMicrosecondsPerInvocation="13" maxMicrosecondsPerInvocation="31202" standardDeviationMicrosecondsPerInvocation="119"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="979" invocations="10443" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="72796" standardDeviationMicrosecondsPerInvocation="769"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="972" invocations="10443" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="5429" standardDeviationMicrosecondsPerInvocation="242"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="964" invocations="10443" avgMicrosecondsPerInvocation="92" maxMicrosecondsPerInvocation="16213" standardDeviationMicrosecondsPerInvocation="437"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="918" invocations="10443" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="6862" standardDeviationMicrosecondsPerInvocation="228"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="902" invocations="10443" avgMicrosecondsPerInvocation="86" maxMicrosecondsPerInvocation="97573" standardDeviationMicrosecondsPerInvocation="1033"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="900" invocations="10443" avgMicrosecondsPerInvocation="86" maxMicrosecondsPerInvocation="10810" standardDeviationMicrosecondsPerInvocation="240"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="895" invocations="10443" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="10490" standardDeviationMicrosecondsPerInvocation="249"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="894" invocations="10443" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="15071" standardDeviationMicrosecondsPerInvocation="313"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="879" invocations="10443" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="61931" standardDeviationMicrosecondsPerInvocation="655"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="831" invocations="10443" avgMicrosecondsPerInvocation="79" maxMicrosecondsPerInvocation="88979" standardDeviationMicrosecondsPerInvocation="901"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="820" invocations="10443" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="17342" standardDeviationMicrosecondsPerInvocation="294"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="808" invocations="10443" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="13954" standardDeviationMicrosecondsPerInvocation="397"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="805" invocations="10443" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="88175" standardDeviationMicrosecondsPerInvocation="881"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="802" invocations="10443" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="16625" standardDeviationMicrosecondsPerInvocation="301"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindFloatEquality" totalMilliseconds="793" invocations="10443" avgMicrosecondsPerInvocation="75" maxMicrosecondsPerInvocation="101609" standardDeviationMicrosecondsPerInvocation="1012"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="771" invocations="10443" avgMicrosecondsPerInvocation="73" maxMicrosecondsPerInvocation="5279" standardDeviationMicrosecondsPerInvocation="199"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="750" invocations="79104" avgMicrosecondsPerInvocation="9" maxMicrosecondsPerInvocation="67096" standardDeviationMicrosecondsPerInvocation="247"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

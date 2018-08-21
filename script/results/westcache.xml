@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1511118522000" analysisTimestamp="1511118523843" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534816201000" analysisTimestamp="1534816202436" release="">
   <Project projectName="">
     <Jar>tmp/westcache</Jar>
   </Project>
@@ -22,7 +22,7 @@
     </Method>
     <SourceLine classname="com.github.bingoohuang.westcache.ExpiringCacheManagerTest" start="114" end="114" startBytecode="0" endBytecode="0" sourcefile="ExpiringCacheManagerTest.java" sourcepath="com/github/bingoohuang/westcache/ExpiringCacheManagerTest.java"/>
   </BugInstance>
-  <Errors errors="0" missingClasses="130">
+  <Errors errors="0" missingClasses="135">
     <MissingClass>com.alibaba.fastjson.JSON</MissingClass>
     <MissingClass>com.alibaba.fastjson.TypeReference</MissingClass>
     <MissingClass>com.alibaba.fastjson.parser.DefaultJSONParser</MissingClass>
@@ -33,6 +33,8 @@
     <MissingClass>com.alibaba.fastjson.serializer.ObjectSerializer</MissingClass>
     <MissingClass>com.alibaba.fastjson.serializer.SerializeConfig</MissingClass>
     <MissingClass>com.alibaba.fastjson.serializer.SerializeWriter</MissingClass>
+    <MissingClass>com.alibaba.fastjson.serializer.SerializerFeature</MissingClass>
+    <MissingClass>com.alibaba.fastjson.util.ParameterizedTypeImpl</MissingClass>
     <MissingClass>com.google.common.base.Charsets</MissingClass>
     <MissingClass>com.google.common.base.Function</MissingClass>
     <MissingClass>com.google.common.base.Joiner</MissingClass>
@@ -49,6 +51,7 @@
     <MissingClass>com.google.common.collect.Lists</MissingClass>
     <MissingClass>com.google.common.collect.Maps</MissingClass>
     <MissingClass>com.google.common.collect.Sets</MissingClass>
+    <MissingClass>com.google.common.io.CharStreams</MissingClass>
     <MissingClass>com.google.common.io.Files</MissingClass>
     <MissingClass>com.google.common.truth.BooleanSubject</MissingClass>
     <MissingClass>com.google.common.truth.ClassSubject</MissingClass>
@@ -57,6 +60,7 @@
     <MissingClass>com.google.common.truth.IterableSubject</MissingClass>
     <MissingClass>com.google.common.truth.LongSubject</MissingClass>
     <MissingClass>com.google.common.truth.MapSubject</MissingClass>
+    <MissingClass>com.google.common.truth.Ordered</MissingClass>
     <MissingClass>com.google.common.truth.StringSubject</MissingClass>
     <MissingClass>com.google.common.truth.Subject</MissingClass>
     <MissingClass>com.google.common.truth.Truth</MissingClass>
@@ -132,6 +136,7 @@
     <MissingClass>org.springframework.beans.factory.FactoryBean</MissingClass>
     <MissingClass>org.springframework.beans.factory.InitializingBean</MissingClass>
     <MissingClass>org.springframework.beans.factory.annotation.AnnotatedBeanDefinition</MissingClass>
+    <MissingClass>org.springframework.beans.factory.config.AutowireCapableBeanFactory</MissingClass>
     <MissingClass>org.springframework.beans.factory.config.BeanDefinitionHolder</MissingClass>
     <MissingClass>org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor</MissingClass>
     <MissingClass>org.springframework.beans.factory.support.GenericBeanDefinition</MissingClass>
@@ -154,8 +159,8 @@
     <MissingClass>redis.clients.jedis.JedisPoolConfig</MissingClass>
     <MissingClass>redis.embedded.RedisServer</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Sun, 19 Nov 2017 20:08:42 +0100" total_classes="300" referenced_classes="401" total_bugs="2" total_size="6871" num_packages="19" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="18.34" clock_seconds="5.72" peak_mbytes="342.16" alloc_mbytes="3641.00" gc_seconds="0.13" priority_2="2">
-    <PackageStats package="com.github.bingoohuang.westcache" total_bugs="2" total_types="103" total_size="1621" priority_2="2">
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 03:50:01 +0200" total_classes="307" referenced_classes="415" total_bugs="2" total_size="7213" num_packages="19" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="19.08" clock_seconds="5.58" peak_mbytes="337.07" alloc_mbytes="3641.00" gc_seconds="0.13" priority_2="2">
+    <PackageStats package="com.github.bingoohuang.westcache" total_bugs="2" total_types="106" total_size="1656" priority_2="2">
       <ClassStats class="com.github.bingoohuang.westcache.AnnOverrideTest" sourceFile="AnnOverrideTest.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.AnnOverrideTest$AnnOverrideService" sourceFile="AnnOverrideTest.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.BenchMarkTest" sourceFile="BenchMarkTest.java" interface="false" size="40" bugs="1" priority_2="1"/>
@@ -190,6 +195,9 @@
       <ClassStats class="com.github.bingoohuang.westcache.FlushSnapshotTest" sourceFile="FlushSnapshotTest.java" interface="false" size="38" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.FlushSnapshotTest$1" sourceFile="FlushSnapshotTest.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.FlushSnapshotTest$FlushSnapshotBean" sourceFile="FlushSnapshotTest.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.GenericTest" sourceFile="GenericTest.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.GenericTest$GenericBean" sourceFile="GenericTest.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.GenericTest$GenericService" sourceFile="GenericTest.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.GuavaExpiringCacheManagerTest" sourceFile="GuavaExpiringCacheManagerTest.java" interface="false" size="44" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.GuavaExpiringCacheManagerTest$1" sourceFile="GuavaExpiringCacheManagerTest.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.GuavaExpiringCacheManagerTest$2" sourceFile="GuavaExpiringCacheManagerTest.java" interface="false" size="7" bugs="0"/>
@@ -236,7 +244,7 @@
       <ClassStats class="com.github.bingoohuang.westcache.SnapshotTest$SnapshotService" sourceFile="SnapshotTest.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.SnapshotTest$SnapshotServiceCustomizedAnnotation" sourceFile="SnapshotTest.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.SnapshotTest$WestCacheableSnapshot" sourceFile="SnapshotTest.java" interface="true" size="1" bugs="0"/>
-      <ClassStats class="com.github.bingoohuang.westcache.SpecsTest" sourceFile="SpecsTest.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.SpecsTest" sourceFile="SpecsTest.java" interface="false" size="32" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.SpecsTest$1" sourceFile="SpecsTest.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.SpecsTest$2" sourceFile="SpecsTest.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.SpecsTest$CustomizedCacheKey" sourceFile="SpecsTest.java" interface="true" size="2" bugs="0"/>
@@ -254,7 +262,7 @@
       <ClassStats class="com.github.bingoohuang.westcache.WestCacheConnectorTest$4" sourceFile="WestCacheConnectorTest.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.WestCacheConnectorTest$5" sourceFile="WestCacheConnectorTest.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.WestCacheConnectorTest$ConnectorService" sourceFile="WestCacheConnectorTest.java" interface="false" size="5" bugs="0"/>
-      <ClassStats class="com.github.bingoohuang.westcache.WestCacheFactory" sourceFile="WestCacheFactory.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.WestCacheFactory" sourceFile="WestCacheFactory.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.WestCacheFactoryTest" sourceFile="WestCacheFactoryTest.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.WestCacheFactoryTest$XyzClass" sourceFile="WestCacheFactoryTest.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.WestCacheRegistry" sourceFile="WestCacheRegistry.java" interface="false" size="42" bugs="0"/>
@@ -273,7 +281,7 @@
       <ClassStats class="com.github.bingoohuang.westcache.base.WestCacheManager" sourceFile="WestCacheManager.java" interface="true" size="5" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.base.WestCacheSnapshot" sourceFile="WestCacheSnapshot.java" interface="true" size="4" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.github.bingoohuang.westcache.batch" total_bugs="0" total_types="12" total_size="258">
+    <PackageStats package="com.github.bingoohuang.westcache.batch" total_bugs="0" total_types="12" total_size="261">
       <ClassStats class="com.github.bingoohuang.westcache.batch.BatchService" sourceFile="BatchService.java" interface="false" size="36" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.batch.BatchService$1" sourceFile="BatchService.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.batch.BatchService$2" sourceFile="BatchService.java" interface="false" size="14" bugs="0"/>
@@ -283,16 +291,16 @@
       <ClassStats class="com.github.bingoohuang.westcache.batch.Batcher" sourceFile="Batcher.java" interface="false" size="47" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.batch.Batcher$1" sourceFile="Batcher.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.batch.Batcher$2" sourceFile="Batcher.java" interface="false" size="7" bugs="0"/>
-      <ClassStats class="com.github.bingoohuang.westcache.batch.Batcher$BatcherBean" sourceFile="Batcher.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.batch.Batcher$BatcherBean" sourceFile="Batcher.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.batch.BatcherBuilder" sourceFile="BatcherBuilder.java" interface="false" size="34" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.batch.BatcherJob" sourceFile="BatcherJob.java" interface="true" size="2" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.github.bingoohuang.westcache.cglib" total_bugs="0" total_types="6" total_size="89">
+    <PackageStats package="com.github.bingoohuang.westcache.cglib" total_bugs="0" total_types="6" total_size="93">
       <ClassStats class="com.github.bingoohuang.westcache.cglib.CacheMethodInterceptor" sourceFile="CacheMethodInterceptor.java" interface="false" size="33" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.cglib.CacheMethodInterceptor$1" sourceFile="CacheMethodInterceptor.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.cglib.CacheMethodInterceptor$2" sourceFile="CacheMethodInterceptor.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.cglib.CglibCacheMethodInterceptor" sourceFile="CglibCacheMethodInterceptor.java" interface="false" size="17" bugs="0"/>
-      <ClassStats class="com.github.bingoohuang.westcache.cglib.Cglibs" sourceFile="Cglibs.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.cglib.Cglibs" sourceFile="Cglibs.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.cglib.WestCacheCglib" sourceFile="WestCacheCglib.java" interface="true" size="1" bugs="0"/>
     </PackageStats>
     <PackageStats package="com.github.bingoohuang.westcache.config" total_bugs="0" total_types="1" total_size="7">
@@ -303,18 +311,17 @@
       <ClassStats class="com.github.bingoohuang.westcache.eqler.EqlerCacheableTest$1" sourceFile="EqlerCacheableTest.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.eqler.EqlerCacheableTest$2" sourceFile="EqlerCacheableTest.java" interface="false" size="7" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.github.bingoohuang.westcache.flusher" total_bugs="0" total_types="18" total_size="390">
+    <PackageStats package="com.github.bingoohuang.westcache.flusher" total_bugs="0" total_types="17" total_size="381">
       <ClassStats class="com.github.bingoohuang.westcache.flusher.ByPassCacheFlusher" sourceFile="ByPassCacheFlusher.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.flusher.DiamondCacheFlusher" sourceFile="DiamondCacheFlusher.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.flusher.DiamondCacheFlusher$1" sourceFile="DiamondCacheFlusher.java" interface="false" size="9" bugs="0"/>
-      <ClassStats class="com.github.bingoohuang.westcache.flusher.DiamondCacheFlusherTest" sourceFile="DiamondCacheFlusherTest.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.flusher.DiamondCacheFlusherTest" sourceFile="DiamondCacheFlusherTest.java" interface="false" size="21" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.flusher.DiamondCacheFlusherTest$1" sourceFile="DiamondCacheFlusherTest.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="com.github.bingoohuang.westcache.flusher.DiamondCacheFlusherTest$2" sourceFile="DiamondCacheFlusherTest.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.flusher.DiamondCacheFlusherTest$DiamondFlusherService" sourceFile="DiamondCacheFlusherTest.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.flusher.DirectValueType" sourceFile="DirectValueType.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.flusher.QuartzCacheFlusher" sourceFile="QuartzCacheFlusher.java" interface="false" size="29" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.flusher.QuartzCacheFlusher$1" sourceFile="QuartzCacheFlusher.java" interface="false" size="14" bugs="0"/>
-      <ClassStats class="com.github.bingoohuang.westcache.flusher.QuartzCacheFlusher$1$1" sourceFile="QuartzCacheFlusher.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.flusher.QuartzCacheFlusher$1$1" sourceFile="QuartzCacheFlusher.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.flusher.QuartzCacheFlusher$RunnableCacheJob" sourceFile="QuartzCacheFlusher.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.flusher.SimpleCacheFlusher" sourceFile="SimpleCacheFlusher.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.flusher.TableBasedCacheFlusher" sourceFile="TableBasedCacheFlusher.java" interface="false" size="163" bugs="0"/>
@@ -335,17 +342,17 @@
       <ClassStats class="com.github.bingoohuang.westcache.generated.ExpiringCacheManagerTest_jmhType_B2" sourceFile="ExpiringCacheManagerTest_jmhType_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.generated.ExpiringCacheManagerTest_jmhType_B3" sourceFile="ExpiringCacheManagerTest_jmhType_B3.java" interface="false" size="259" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.github.bingoohuang.westcache.interceptor" total_bugs="0" total_types="3" total_size="36">
+    <PackageStats package="com.github.bingoohuang.westcache.interceptor" total_bugs="0" total_types="3" total_size="40">
       <ClassStats class="com.github.bingoohuang.westcache.interceptor.ByPassInterceptor" sourceFile="ByPassInterceptor.java" interface="false" size="5" bugs="0"/>
-      <ClassStats class="com.github.bingoohuang.westcache.interceptor.RedisInterceptor" sourceFile="RedisInterceptor.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.interceptor.RedisInterceptor" sourceFile="RedisInterceptor.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.interceptor.RedisInterceptor$1" sourceFile="RedisInterceptor.java" interface="false" size="10" bugs="0"/>
     </PackageStats>
     <PackageStats package="com.github.bingoohuang.westcache.keyer" total_bugs="0" total_types="2" total_size="20">
       <ClassStats class="com.github.bingoohuang.westcache.keyer.DefaultKeyer" sourceFile="DefaultKeyer.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.keyer.SimpleKeyer" sourceFile="SimpleKeyer.java" interface="false" size="8" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.github.bingoohuang.westcache.manager" total_bugs="0" total_types="17" total_size="299">
-      <ClassStats class="com.github.bingoohuang.westcache.manager.BaseCacheManager" sourceFile="BaseCacheManager.java" interface="false" size="58" bugs="0"/>
+    <PackageStats package="com.github.bingoohuang.westcache.manager" total_bugs="0" total_types="17" total_size="303">
+      <ClassStats class="com.github.bingoohuang.westcache.manager.BaseCacheManager" sourceFile="BaseCacheManager.java" interface="false" size="57" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.manager.BaseCacheManager$1" sourceFile="BaseCacheManager.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.manager.BaseCacheManager$2" sourceFile="BaseCacheManager.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.manager.BaseCacheManager$3" sourceFile="BaseCacheManager.java" interface="false" size="14" bugs="0"/>
@@ -360,15 +367,14 @@
       <ClassStats class="com.github.bingoohuang.westcache.manager.GuavaCacheManager" sourceFile="GuavaCacheManager.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.manager.GuavaCacheManager$GuavaWestCache" sourceFile="GuavaCacheManager.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.manager.RedisCacheManager" sourceFile="RedisCacheManager.java" interface="false" size="12" bugs="0"/>
-      <ClassStats class="com.github.bingoohuang.westcache.manager.RedisCacheManager$RedisWestCache" sourceFile="RedisCacheManager.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.manager.RedisCacheManager$RedisWestCache" sourceFile="RedisCacheManager.java" interface="false" size="42" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.manager.RedisCacheManager$RedisWestCache$1" sourceFile="RedisCacheManager.java" interface="false" size="10" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.github.bingoohuang.westcache.outofbox" total_bugs="0" total_types="6" total_size="71">
+    <PackageStats package="com.github.bingoohuang.westcache.outofbox" total_bugs="0" total_types="5" total_size="67">
       <ClassStats class="com.github.bingoohuang.westcache.outofbox.MallCacheable" sourceFile="MallCacheable.java" interface="true" size="1" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.outofbox.PackageLimitedKeyer" sourceFile="PackageLimitedKeyer.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.outofbox.TableCacheFlusher" sourceFile="TableCacheFlusher.java" interface="false" size="36" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.outofbox.TableCacheFlusher$1" sourceFile="TableCacheFlusher.java" interface="false" size="4" bugs="0"/>
-      <ClassStats class="com.github.bingoohuang.westcache.outofbox.TableCacheFlusher$2" sourceFile="TableCacheFlusher.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.outofbox.TableCacheFlusherDao" sourceFile="TableCacheFlusherDao.java" interface="true" size="8" bugs="0"/>
     </PackageStats>
     <PackageStats package="com.github.bingoohuang.westcache.peng" total_bugs="0" total_types="8" total_size="155">
@@ -384,17 +390,19 @@
     <PackageStats package="com.github.bingoohuang.westcache.registry" total_bugs="0" total_types="1" total_size="16">
       <ClassStats class="com.github.bingoohuang.westcache.registry.RegistryTemplate" sourceFile="RegistryTemplate.java" interface="false" size="16" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.github.bingoohuang.westcache.snapshot" total_bugs="0" total_types="4" total_size="67">
+    <PackageStats package="com.github.bingoohuang.westcache.snapshot" total_bugs="0" total_types="6" total_size="82">
       <ClassStats class="com.github.bingoohuang.westcache.snapshot.FileCacheSnapshot" sourceFile="FileCacheSnapshot.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.snapshot.FileCacheSnapshotTest" sourceFile="FileCacheSnapshotTest.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.snapshot.FileCacheSnapshotTest$1" sourceFile="FileCacheSnapshotTest.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.snapshot.RedisCacheSnapshot" sourceFile="RedisCacheSnapshot.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.snapshot.RedisSnapshotService" sourceFile="RedisSnapshotService.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.snapshot.RedisSnapshotTest" sourceFile="RedisSnapshotTest.java" interface="false" size="10" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.github.bingoohuang.westcache.spring" total_bugs="0" total_types="13" total_size="202">
-      <ClassStats class="com.github.bingoohuang.westcache.spring.SpringAppContext" sourceFile="SpringAppContext.java" interface="false" size="35" bugs="0"/>
-      <ClassStats class="com.github.bingoohuang.westcache.spring.WestCacheableAdvisor" sourceFile="WestCacheableAdvisor.java" interface="false" size="13" bugs="0"/>
-      <ClassStats class="com.github.bingoohuang.westcache.spring.WestCacheableAdvisor$1" sourceFile="WestCacheableAdvisor.java" interface="false" size="12" bugs="0"/>
-      <ClassStats class="com.github.bingoohuang.westcache.spring.WestCacheableAdvisor$1$1" sourceFile="WestCacheableAdvisor.java" interface="false" size="13" bugs="0"/>
+    <PackageStats package="com.github.bingoohuang.westcache.spring" total_bugs="0" total_types="13" total_size="215">
+      <ClassStats class="com.github.bingoohuang.westcache.spring.SpringAppContext" sourceFile="SpringAppContext.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.spring.WestCacheClassFilter" sourceFile="WestCacheClassFilter.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.spring.WestCacheStaticMethodMatcherPointcut" sourceFile="WestCacheStaticMethodMatcherPointcut.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.spring.WestCacheableAdvisor" sourceFile="WestCacheableAdvisor.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.spring.WestCacheableClassPathScanner" sourceFile="WestCacheableClassPathScanner.java" interface="false" size="30" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.spring.WestCacheableClassPathScanner$1" sourceFile="WestCacheableClassPathScanner.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.spring.WestCacheableClassPathScanner$WestCacheableFactoryBean" sourceFile="WestCacheableClassPathScanner.java" interface="false" size="12" bugs="0"/>
@@ -425,8 +433,8 @@
       <ClassStats class="com.github.bingoohuang.westcache.springxml.SpringXmlConfig" sourceFile="SpringXmlConfig.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.springxml.XmlService" sourceFile="XmlService.java" interface="false" size="8" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.github.bingoohuang.westcache.utils" total_bugs="0" total_types="66" total_size="1325">
-      <ClassStats class="com.github.bingoohuang.westcache.utils.Anns" sourceFile="Anns.java" interface="false" size="94" bugs="0"/>
+    <PackageStats package="com.github.bingoohuang.westcache.utils" total_bugs="0" total_types="70" total_size="1602">
+      <ClassStats class="com.github.bingoohuang.westcache.utils.Anns" sourceFile="Anns.java" interface="false" size="97" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.Anns$MethodAndAnnotationAttributes" sourceFile="Anns.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.AnnsTest" sourceFile="AnnsTest.java" interface="false" size="37" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.AnnsTest$AnnCom" sourceFile="AnnsTest.java" interface="true" size="3" bugs="0"/>
@@ -436,6 +444,9 @@
       <ClassStats class="com.github.bingoohuang.westcache.utils.AnnsTest$Interface1" sourceFile="AnnsTest.java" interface="true" size="3" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.AnnsTest$Interface2" sourceFile="AnnsTest.java" interface="true" size="3" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.AnnsTest$InterfaceSon" sourceFile="AnnsTest.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.utils.AntPathMatcher" sourceFile="AntPathMatcher.java" interface="false" size="158" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.utils.BlackListClass" sourceFile="BlackListClass.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.utils.BlackListClassTest" sourceFile="BlackListClassTest.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.Config" sourceFile="Config.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.CopyPropertiesTest" sourceFile="CopyPropertiesTest.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.CopyPropertiesTest$SourceBean" sourceFile="CopyPropertiesTest.java" interface="false" size="12" bugs="0"/>
@@ -443,18 +454,18 @@
       <ClassStats class="com.github.bingoohuang.westcache.utils.Durations" sourceFile="Durations.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.DurationsTest" sourceFile="DurationsTest.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.EmbeddedRedis" sourceFile="EmbeddedRedis.java" interface="false" size="25" bugs="0"/>
-      <ClassStats class="com.github.bingoohuang.westcache.utils.Envs" sourceFile="Envs.java" interface="false" size="66" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.utils.Envs" sourceFile="Envs.java" interface="false" size="75" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.EnvsTest" sourceFile="EnvsTest.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.ExpireAfterWrites" sourceFile="ExpireAfterWrites.java" interface="false" size="32" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.ExpireAfterWritesTest" sourceFile="ExpireAfterWritesTest.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.ExpireAfterWritesTest$ServiceEawBean" sourceFile="ExpireAfterWritesTest.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.ExpireAfterWritesTest$ServiceEawBean2" sourceFile="ExpireAfterWritesTest.java" interface="false" size="5" bugs="0"/>
-      <ClassStats class="com.github.bingoohuang.westcache.utils.FastJsons" sourceFile="FastJsons.java" interface="false" size="25" bugs="0"/>
-      <ClassStats class="com.github.bingoohuang.westcache.utils.FastJsonsTest" sourceFile="FastJsonsTest.java" interface="false" size="82" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.utils.FastJsons" sourceFile="FastJsons.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.utils.FastJsonsTest" sourceFile="FastJsonsTest.java" interface="false" size="96" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.FastJsonsTest$1" sourceFile="FastJsonsTest.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.FastJsonsTest$BeanBean" sourceFile="FastJsonsTest.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.FastJsonsTest$FastBean" sourceFile="FastJsonsTest.java" interface="false" size="16" bugs="0"/>
-      <ClassStats class="com.github.bingoohuang.westcache.utils.FastJsonsTest$FastInterface" sourceFile="FastJsonsTest.java" interface="true" size="6" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.utils.FastJsonsTest$FastInterface" sourceFile="FastJsonsTest.java" interface="true" size="7" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.FastJsonsTest$JodaBean" sourceFile="FastJsonsTest.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.FastJsonsTest$UnsupportedKeyException" sourceFile="FastJsonsTest.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.Guavas" sourceFile="Guavas.java" interface="false" size="21" bugs="0"/>
@@ -464,11 +475,11 @@
       <ClassStats class="com.github.bingoohuang.westcache.utils.GuavasTest$3" sourceFile="GuavasTest.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.Helper" sourceFile="Helper.java" interface="false" size="40" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.Helper$1" sourceFile="Helper.java" interface="false" size="5" bugs="0"/>
-      <ClassStats class="com.github.bingoohuang.westcache.utils.JsonJodaDeserializer" sourceFile="JsonJodaDeserializer.java" interface="false" size="9" bugs="0"/>
-      <ClassStats class="com.github.bingoohuang.westcache.utils.JsonJodaSerializer" sourceFile="JsonJodaSerializer.java" interface="false" size="11" bugs="0"/>
-      <ClassStats class="com.github.bingoohuang.westcache.utils.Keys" sourceFile="Keys.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.utils.JsonJodaDeserializer" sourceFile="JsonJodaDeserializer.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.utils.JsonJodaSerializer" sourceFile="JsonJodaSerializer.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.utils.Keys" sourceFile="Keys.java" interface="false" size="30" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.MethodProvider" sourceFile="MethodProvider.java" interface="true" size="2" bugs="0"/>
-      <ClassStats class="com.github.bingoohuang.westcache.utils.Methods" sourceFile="Methods.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.utils.Methods" sourceFile="Methods.java" interface="false" size="28" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.MethodsTest" sourceFile="MethodsTest.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.MethodsTest$Class1" sourceFile="MethodsTest.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.MethodsTest$Interface1" sourceFile="MethodsTest.java" interface="true" size="2" bugs="0"/>
@@ -477,7 +488,8 @@
       <ClassStats class="com.github.bingoohuang.westcache.utils.MethodsTest$ParentClass" sourceFile="MethodsTest.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.Quartz" sourceFile="Quartz.java" interface="false" size="32" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.QuietCloseable" sourceFile="QuietCloseable.java" interface="true" size="2" bugs="0"/>
-      <ClassStats class="com.github.bingoohuang.westcache.utils.Redis" sourceFile="Redis.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.utils.Redis" sourceFile="Redis.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.utils.Redis$1" sourceFile="Redis.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.Redis$JedisInvocationHandler" sourceFile="Redis.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.Redis$JedisInvocationHandler$1" sourceFile="Redis.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.RedisTest" sourceFile="RedisTest.java" interface="false" size="9" bugs="0"/>
@@ -489,50 +501,52 @@
       <ClassStats class="com.github.bingoohuang.westcache.utils.WestCacheConnector$1" sourceFile="WestCacheConnector.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.WestCacheConnector$ConnectTag" sourceFile="WestCacheConnector.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.WestCacheOption" sourceFile="WestCacheOption.java" interface="false" size="75" bugs="0"/>
-      <ClassStats class="com.github.bingoohuang.westcache.utils.WestCacheOption$1" sourceFile="WestCacheOption.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.github.bingoohuang.westcache.utils.WestCacheOption$1" sourceFile="WestCacheOption.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.WestCacheOption$Builder" sourceFile="WestCacheOption.java" interface="false" size="72" bugs="0"/>
       <ClassStats class="com.github.bingoohuang.westcache.utils.WestCacheOptionTest" sourceFile="WestCacheOptionTest.java" interface="false" size="6" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="314" invocations="1280" avgMicrosecondsPerInvocation="245" maxMicrosecondsPerInvocation="14770" standardDeviationMicrosecondsPerInvocation="742"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="290" invocations="1284" avgMicrosecondsPerInvocation="226" maxMicrosecondsPerInvocation="16855" standardDeviationMicrosecondsPerInvocation="690"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="227" invocations="1073" avgMicrosecondsPerInvocation="211" maxMicrosecondsPerInvocation="4049" standardDeviationMicrosecondsPerInvocation="399"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="216" invocations="1082" avgMicrosecondsPerInvocation="200" maxMicrosecondsPerInvocation="27705" standardDeviationMicrosecondsPerInvocation="926"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="215" invocations="1091" avgMicrosecondsPerInvocation="197" maxMicrosecondsPerInvocation="6127" standardDeviationMicrosecondsPerInvocation="396"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="206" invocations="300" avgMicrosecondsPerInvocation="688" maxMicrosecondsPerInvocation="28607" standardDeviationMicrosecondsPerInvocation="3888"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="180" invocations="1100" avgMicrosecondsPerInvocation="163" maxMicrosecondsPerInvocation="8676" standardDeviationMicrosecondsPerInvocation="424"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="177" invocations="1158" avgMicrosecondsPerInvocation="153" maxMicrosecondsPerInvocation="10212" standardDeviationMicrosecondsPerInvocation="449"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="165" invocations="401" avgMicrosecondsPerInvocation="412" maxMicrosecondsPerInvocation="16748" standardDeviationMicrosecondsPerInvocation="1388"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="145" invocations="1091" avgMicrosecondsPerInvocation="133" maxMicrosecondsPerInvocation="8652" standardDeviationMicrosecondsPerInvocation="299"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.FixtureWithInvocationScopeDetector" totalMilliseconds="140" invocations="300" avgMicrosecondsPerInvocation="467" maxMicrosecondsPerInvocation="41148" standardDeviationMicrosecondsPerInvocation="3979"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="122" invocations="896" avgMicrosecondsPerInvocation="136" maxMicrosecondsPerInvocation="5850" standardDeviationMicrosecondsPerInvocation="299"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="119" invocations="401" avgMicrosecondsPerInvocation="297" maxMicrosecondsPerInvocation="9227" standardDeviationMicrosecondsPerInvocation="776"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="118" invocations="1488" avgMicrosecondsPerInvocation="79" maxMicrosecondsPerInvocation="7440" standardDeviationMicrosecondsPerInvocation="270"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="78" invocations="1184" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="24138" standardDeviationMicrosecondsPerInvocation="719"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="73" invocations="401" avgMicrosecondsPerInvocation="183" maxMicrosecondsPerInvocation="32204" standardDeviationMicrosecondsPerInvocation="1623"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="63" invocations="300" avgMicrosecondsPerInvocation="211" maxMicrosecondsPerInvocation="4486" standardDeviationMicrosecondsPerInvocation="425"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="62" invocations="530" avgMicrosecondsPerInvocation="117" maxMicrosecondsPerInvocation="16636" standardDeviationMicrosecondsPerInvocation="761"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="55" invocations="1091" avgMicrosecondsPerInvocation="50" maxMicrosecondsPerInvocation="1367" standardDeviationMicrosecondsPerInvocation="102"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="52" invocations="300" avgMicrosecondsPerInvocation="176" maxMicrosecondsPerInvocation="4577" standardDeviationMicrosecondsPerInvocation="364"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="52" invocations="401" avgMicrosecondsPerInvocation="130" maxMicrosecondsPerInvocation="17660" standardDeviationMicrosecondsPerInvocation="986"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="48" invocations="401" avgMicrosecondsPerInvocation="121" maxMicrosecondsPerInvocation="3072" standardDeviationMicrosecondsPerInvocation="306"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="48" invocations="401" avgMicrosecondsPerInvocation="121" maxMicrosecondsPerInvocation="4778" standardDeviationMicrosecondsPerInvocation="337"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="45" invocations="1052" avgMicrosecondsPerInvocation="42" maxMicrosecondsPerInvocation="1560" standardDeviationMicrosecondsPerInvocation="96"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="44" invocations="1053" avgMicrosecondsPerInvocation="42" maxMicrosecondsPerInvocation="9660" standardDeviationMicrosecondsPerInvocation="305"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="44" invocations="300" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="4877" standardDeviationMicrosecondsPerInvocation="370"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.ReadOfInstanceFieldInMethodInvokedByConstructorInSuperclass" totalMilliseconds="40" invocations="300" avgMicrosecondsPerInvocation="134" maxMicrosecondsPerInvocation="25307" standardDeviationMicrosecondsPerInvocation="1458"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="39" invocations="300" avgMicrosecondsPerInvocation="133" maxMicrosecondsPerInvocation="2594" standardDeviationMicrosecondsPerInvocation="254"/>
-      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="38" invocations="38103" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="61" standardDeviationMicrosecondsPerInvocation="0"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="36" invocations="300" avgMicrosecondsPerInvocation="123" maxMicrosecondsPerInvocation="3792" standardDeviationMicrosecondsPerInvocation="267"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="34" invocations="401" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="4434" standardDeviationMicrosecondsPerInvocation="305"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="34" invocations="14090" avgMicrosecondsPerInvocation="2" maxMicrosecondsPerInvocation="450" standardDeviationMicrosecondsPerInvocation="9"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="33" invocations="300" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="4391" standardDeviationMicrosecondsPerInvocation="357"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="33" invocations="300" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="2337" standardDeviationMicrosecondsPerInvocation="221"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="33" invocations="300" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="2958" standardDeviationMicrosecondsPerInvocation="239"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="32" invocations="1073" avgMicrosecondsPerInvocation="30" maxMicrosecondsPerInvocation="952" standardDeviationMicrosecondsPerInvocation="56"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="29" invocations="300" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="3497" standardDeviationMicrosecondsPerInvocation="246"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="28" invocations="300" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="2677" standardDeviationMicrosecondsPerInvocation="216"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="28" invocations="401" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="2514" standardDeviationMicrosecondsPerInvocation="216"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="311" invocations="1301" avgMicrosecondsPerInvocation="239" maxMicrosecondsPerInvocation="16236" standardDeviationMicrosecondsPerInvocation="724"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="254" invocations="1143" avgMicrosecondsPerInvocation="222" maxMicrosecondsPerInvocation="34973" standardDeviationMicrosecondsPerInvocation="1269"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="243" invocations="1116" avgMicrosecondsPerInvocation="218" maxMicrosecondsPerInvocation="5436" standardDeviationMicrosecondsPerInvocation="449"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="237" invocations="1134" avgMicrosecondsPerInvocation="209" maxMicrosecondsPerInvocation="6106" standardDeviationMicrosecondsPerInvocation="455"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="211" invocations="1125" avgMicrosecondsPerInvocation="187" maxMicrosecondsPerInvocation="6431" standardDeviationMicrosecondsPerInvocation="480"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="206" invocations="1304" avgMicrosecondsPerInvocation="158" maxMicrosecondsPerInvocation="1070" standardDeviationMicrosecondsPerInvocation="121"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="202" invocations="1204" avgMicrosecondsPerInvocation="167" maxMicrosecondsPerInvocation="8952" standardDeviationMicrosecondsPerInvocation="480"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="156" invocations="415" avgMicrosecondsPerInvocation="377" maxMicrosecondsPerInvocation="10283" standardDeviationMicrosecondsPerInvocation="1075"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="156" invocations="1134" avgMicrosecondsPerInvocation="137" maxMicrosecondsPerInvocation="9793" standardDeviationMicrosecondsPerInvocation="335"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="143" invocations="934" avgMicrosecondsPerInvocation="153" maxMicrosecondsPerInvocation="7754" standardDeviationMicrosecondsPerInvocation="384"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="138" invocations="1552" avgMicrosecondsPerInvocation="89" maxMicrosecondsPerInvocation="7151" standardDeviationMicrosecondsPerInvocation="268"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="133" invocations="307" avgMicrosecondsPerInvocation="433" maxMicrosecondsPerInvocation="29353" standardDeviationMicrosecondsPerInvocation="2749"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="129" invocations="415" avgMicrosecondsPerInvocation="313" maxMicrosecondsPerInvocation="7993" standardDeviationMicrosecondsPerInvocation="781"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="89" invocations="1134" avgMicrosecondsPerInvocation="79" maxMicrosecondsPerInvocation="26016" standardDeviationMicrosecondsPerInvocation="782"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="82" invocations="415" avgMicrosecondsPerInvocation="198" maxMicrosecondsPerInvocation="26667" standardDeviationMicrosecondsPerInvocation="1339"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="69" invocations="1228" avgMicrosecondsPerInvocation="56" maxMicrosecondsPerInvocation="21478" standardDeviationMicrosecondsPerInvocation="613"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="59" invocations="307" avgMicrosecondsPerInvocation="194" maxMicrosecondsPerInvocation="4272" standardDeviationMicrosecondsPerInvocation="385"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="55" invocations="548" avgMicrosecondsPerInvocation="101" maxMicrosecondsPerInvocation="12491" standardDeviationMicrosecondsPerInvocation="555"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="55" invocations="415" avgMicrosecondsPerInvocation="133" maxMicrosecondsPerInvocation="4025" standardDeviationMicrosecondsPerInvocation="333"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="51" invocations="307" avgMicrosecondsPerInvocation="168" maxMicrosecondsPerInvocation="2675" standardDeviationMicrosecondsPerInvocation="293"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="51" invocations="1071" avgMicrosecondsPerInvocation="47" maxMicrosecondsPerInvocation="2462" standardDeviationMicrosecondsPerInvocation="116"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="49" invocations="307" avgMicrosecondsPerInvocation="162" maxMicrosecondsPerInvocation="25181" standardDeviationMicrosecondsPerInvocation="1433"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="49" invocations="39006" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="2420" standardDeviationMicrosecondsPerInvocation="14"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="43" invocations="307" avgMicrosecondsPerInvocation="141" maxMicrosecondsPerInvocation="3156" standardDeviationMicrosecondsPerInvocation="275"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="42" invocations="307" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="2892" standardDeviationMicrosecondsPerInvocation="297"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="41" invocations="415" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="3476" standardDeviationMicrosecondsPerInvocation="250"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="39" invocations="14861" avgMicrosecondsPerInvocation="2" maxMicrosecondsPerInvocation="1344" standardDeviationMicrosecondsPerInvocation="14"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="38" invocations="1096" avgMicrosecondsPerInvocation="34" maxMicrosecondsPerInvocation="943" standardDeviationMicrosecondsPerInvocation="75"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="35" invocations="415" avgMicrosecondsPerInvocation="86" maxMicrosecondsPerInvocation="4369" standardDeviationMicrosecondsPerInvocation="317"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="35" invocations="307" avgMicrosecondsPerInvocation="115" maxMicrosecondsPerInvocation="4397" standardDeviationMicrosecondsPerInvocation="355"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="34" invocations="415" avgMicrosecondsPerInvocation="82" maxMicrosecondsPerInvocation="5817" standardDeviationMicrosecondsPerInvocation="326"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="33" invocations="307" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="1863" standardDeviationMicrosecondsPerInvocation="177"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="33" invocations="1116" avgMicrosecondsPerInvocation="30" maxMicrosecondsPerInvocation="687" standardDeviationMicrosecondsPerInvocation="51"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="33" invocations="415" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="2763" standardDeviationMicrosecondsPerInvocation="242"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="33" invocations="307" avgMicrosecondsPerInvocation="108" maxMicrosecondsPerInvocation="5228" standardDeviationMicrosecondsPerInvocation="319"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="30" invocations="307" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="1173" standardDeviationMicrosecondsPerInvocation="153"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="30" invocations="307" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="9200" standardDeviationMicrosecondsPerInvocation="576"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.Naming" totalMilliseconds="29" invocations="307" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="7768" standardDeviationMicrosecondsPerInvocation="448"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="29" invocations="1228" avgMicrosecondsPerInvocation="23" maxMicrosecondsPerInvocation="3384" standardDeviationMicrosecondsPerInvocation="134"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="29" invocations="307" avgMicrosecondsPerInvocation="94" maxMicrosecondsPerInvocation="3552" standardDeviationMicrosecondsPerInvocation="245"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="28" invocations="307" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="1503" standardDeviationMicrosecondsPerInvocation="164"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
