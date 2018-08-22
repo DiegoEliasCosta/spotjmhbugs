@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1534820521000" analysisTimestamp="1534820523261" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534895092000" analysisTimestamp="1534895094188" release="">
   <Project projectName="">
     <Jar>tmp/hasher</Jar>
   </Project>
@@ -48,6 +48,30 @@
       <SourceLine classname="benchmarks.Benchmark128BitHash" start="65" end="69" startBytecode="0" endBytecode="140" sourcefile="Benchmark128BitHash.java" sourcepath="benchmarks/Benchmark128BitHash.java"/>
     </Method>
     <SourceLine classname="benchmarks.Benchmark128BitHash" start="65" end="65" startBytecode="0" endBytecode="0" sourcefile="Benchmark128BitHash.java" sourcepath="benchmarks/Benchmark128BitHash.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_UNSINKED_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="benchmarks.Benchmark128BitHash">
+      <SourceLine classname="benchmarks.Benchmark128BitHash" start="49" end="101" sourcefile="Benchmark128BitHash.java" sourcepath="benchmarks/Benchmark128BitHash.java"/>
+    </Class>
+    <Method classname="benchmarks.Benchmark128BitHash" name="greenrobot_murmur3f_128" signature="(Lorg/openjdk/jmh/infra/Blackhole;Lbenchmarks/BenchmarkData;Lbenchmarks/ByteCounter;)V" isStatic="false">
+      <SourceLine classname="benchmarks.Benchmark128BitHash" start="80" end="85" startBytecode="0" endBytecode="151" sourcefile="Benchmark128BitHash.java" sourcepath="benchmarks/Benchmark128BitHash.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="JMH_UNSINKED_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="benchmarks.Benchmark128BitHash">
+      <SourceLine classname="benchmarks.Benchmark128BitHash" start="49" end="101" sourcefile="Benchmark128BitHash.java" sourcepath="benchmarks/Benchmark128BitHash.java"/>
+    </Class>
+    <Method classname="benchmarks.Benchmark128BitHash" name="md5" signature="(Lorg/openjdk/jmh/infra/Blackhole;Lbenchmarks/BenchmarkData;Lbenchmarks/ByteCounter;)V" isStatic="false">
+      <SourceLine classname="benchmarks.Benchmark128BitHash" start="55" end="59" startBytecode="0" endBytecode="140" sourcefile="Benchmark128BitHash.java" sourcepath="benchmarks/Benchmark128BitHash.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="JMH_UNSINKED_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="benchmarks.Benchmark128BitHash">
+      <SourceLine classname="benchmarks.Benchmark128BitHash" start="49" end="101" sourcefile="Benchmark128BitHash.java" sourcepath="benchmarks/Benchmark128BitHash.java"/>
+    </Class>
+    <Method classname="benchmarks.Benchmark128BitHash" name="sha" signature="(Lorg/openjdk/jmh/infra/Blackhole;Lbenchmarks/BenchmarkData;Lbenchmarks/ByteCounter;)V" isStatic="false">
+      <SourceLine classname="benchmarks.Benchmark128BitHash" start="65" end="69" startBytecode="0" endBytecode="140" sourcefile="Benchmark128BitHash.java" sourcepath="benchmarks/Benchmark128BitHash.java"/>
+    </Method>
   </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="benchmarks.Benchmark32BitHash">
@@ -102,6 +126,14 @@
       <SourceLine classname="benchmarks.Benchmark32BitHash" start="75" end="77" startBytecode="0" endBytecode="99" sourcefile="Benchmark32BitHash.java" sourcepath="benchmarks/Benchmark32BitHash.java"/>
     </Method>
     <SourceLine classname="benchmarks.Benchmark32BitHash" start="75" end="75" startBytecode="0" endBytecode="0" sourcefile="Benchmark32BitHash.java" sourcepath="benchmarks/Benchmark32BitHash.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_UNSINKED_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="benchmarks.Benchmark32BitHash">
+      <SourceLine classname="benchmarks.Benchmark32BitHash" start="48" end="101" sourcefile="Benchmark32BitHash.java" sourcepath="benchmarks/Benchmark32BitHash.java"/>
+    </Class>
+    <Method classname="benchmarks.Benchmark32BitHash" name="greenrobot_murmur3a_32" signature="(Lbenchmarks/BenchmarkData;Lbenchmarks/ByteCounter;)I" isStatic="false">
+      <SourceLine classname="benchmarks.Benchmark32BitHash" start="66" end="70" startBytecode="0" endBytecode="131" sourcefile="Benchmark32BitHash.java" sourcepath="benchmarks/Benchmark32BitHash.java"/>
+    </Method>
   </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="benchmarks.Benchmark64BitHash">
@@ -166,330 +198,34 @@
     </Method>
     <SourceLine classname="benchmarks.Benchmark64BitHash" start="97" end="97" startBytecode="0" endBytecode="0" sourcefile="Benchmark64BitHash.java" sourcepath="benchmarks/Benchmark64BitHash.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.Benchmark128BitHash_jmh_B2">
-      <SourceLine classname="benchmarks.generated.Benchmark128BitHash_jmh_B2" start="3" end="17" sourcefile="Benchmark128BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark128BitHash_jmh_B2.java"/>
+  <BugInstance type="JMH_UNSINKED_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="benchmarks.Benchmark64BitHash">
+      <SourceLine classname="benchmarks.Benchmark64BitHash" start="49" end="109" sourcefile="Benchmark64BitHash.java" sourcepath="benchmarks/Benchmark64BitHash.java"/>
     </Class>
-    <Field classname="benchmarks.generated.Benchmark128BitHash_jmh_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.Benchmark128BitHash_jmh_B2" sourcefile="Benchmark128BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark128BitHash_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.Benchmark128BitHash_jmh_B2">
-      <SourceLine classname="benchmarks.generated.Benchmark128BitHash_jmh_B2" start="3" end="17" sourcefile="Benchmark128BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark128BitHash_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.Benchmark128BitHash_jmh_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.Benchmark128BitHash_jmh_B2" sourcefile="Benchmark128BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark128BitHash_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.Benchmark128BitHash_jmh_B2">
-      <SourceLine classname="benchmarks.generated.Benchmark128BitHash_jmh_B2" start="3" end="17" sourcefile="Benchmark128BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark128BitHash_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.Benchmark128BitHash_jmh_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.Benchmark128BitHash_jmh_B2" sourcefile="Benchmark128BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark128BitHash_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.Benchmark128BitHash_jmh_B2">
-      <SourceLine classname="benchmarks.generated.Benchmark128BitHash_jmh_B2" start="3" end="17" sourcefile="Benchmark128BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark128BitHash_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.Benchmark128BitHash_jmh_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.Benchmark128BitHash_jmh_B2" sourcefile="Benchmark128BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark128BitHash_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.Benchmark128BitHash_jmh_B2">
-      <SourceLine classname="benchmarks.generated.Benchmark128BitHash_jmh_B2" start="3" end="17" sourcefile="Benchmark128BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark128BitHash_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.Benchmark128BitHash_jmh_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.Benchmark128BitHash_jmh_B2" sourcefile="Benchmark128BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark128BitHash_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.Benchmark128BitHash_jmh_B2">
-      <SourceLine classname="benchmarks.generated.Benchmark128BitHash_jmh_B2" start="3" end="17" sourcefile="Benchmark128BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark128BitHash_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.Benchmark128BitHash_jmh_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.Benchmark128BitHash_jmh_B2" sourcefile="Benchmark128BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark128BitHash_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.Benchmark32BitHash_jmh_B2">
-      <SourceLine classname="benchmarks.generated.Benchmark32BitHash_jmh_B2" start="3" end="17" sourcefile="Benchmark32BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark32BitHash_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.Benchmark32BitHash_jmh_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.Benchmark32BitHash_jmh_B2" sourcefile="Benchmark32BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark32BitHash_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.Benchmark32BitHash_jmh_B2">
-      <SourceLine classname="benchmarks.generated.Benchmark32BitHash_jmh_B2" start="3" end="17" sourcefile="Benchmark32BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark32BitHash_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.Benchmark32BitHash_jmh_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.Benchmark32BitHash_jmh_B2" sourcefile="Benchmark32BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark32BitHash_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.Benchmark32BitHash_jmh_B2">
-      <SourceLine classname="benchmarks.generated.Benchmark32BitHash_jmh_B2" start="3" end="17" sourcefile="Benchmark32BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark32BitHash_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.Benchmark32BitHash_jmh_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.Benchmark32BitHash_jmh_B2" sourcefile="Benchmark32BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark32BitHash_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.Benchmark32BitHash_jmh_B2">
-      <SourceLine classname="benchmarks.generated.Benchmark32BitHash_jmh_B2" start="3" end="17" sourcefile="Benchmark32BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark32BitHash_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.Benchmark32BitHash_jmh_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.Benchmark32BitHash_jmh_B2" sourcefile="Benchmark32BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark32BitHash_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.Benchmark32BitHash_jmh_B2">
-      <SourceLine classname="benchmarks.generated.Benchmark32BitHash_jmh_B2" start="3" end="17" sourcefile="Benchmark32BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark32BitHash_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.Benchmark32BitHash_jmh_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.Benchmark32BitHash_jmh_B2" sourcefile="Benchmark32BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark32BitHash_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.Benchmark32BitHash_jmh_B2">
-      <SourceLine classname="benchmarks.generated.Benchmark32BitHash_jmh_B2" start="3" end="17" sourcefile="Benchmark32BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark32BitHash_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.Benchmark32BitHash_jmh_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.Benchmark32BitHash_jmh_B2" sourcefile="Benchmark32BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark32BitHash_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.Benchmark64BitHash_jmh_B2">
-      <SourceLine classname="benchmarks.generated.Benchmark64BitHash_jmh_B2" start="3" end="17" sourcefile="Benchmark64BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark64BitHash_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.Benchmark64BitHash_jmh_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.Benchmark64BitHash_jmh_B2" sourcefile="Benchmark64BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark64BitHash_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.Benchmark64BitHash_jmh_B2">
-      <SourceLine classname="benchmarks.generated.Benchmark64BitHash_jmh_B2" start="3" end="17" sourcefile="Benchmark64BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark64BitHash_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.Benchmark64BitHash_jmh_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.Benchmark64BitHash_jmh_B2" sourcefile="Benchmark64BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark64BitHash_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.Benchmark64BitHash_jmh_B2">
-      <SourceLine classname="benchmarks.generated.Benchmark64BitHash_jmh_B2" start="3" end="17" sourcefile="Benchmark64BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark64BitHash_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.Benchmark64BitHash_jmh_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.Benchmark64BitHash_jmh_B2" sourcefile="Benchmark64BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark64BitHash_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.Benchmark64BitHash_jmh_B2">
-      <SourceLine classname="benchmarks.generated.Benchmark64BitHash_jmh_B2" start="3" end="17" sourcefile="Benchmark64BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark64BitHash_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.Benchmark64BitHash_jmh_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.Benchmark64BitHash_jmh_B2" sourcefile="Benchmark64BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark64BitHash_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.Benchmark64BitHash_jmh_B2">
-      <SourceLine classname="benchmarks.generated.Benchmark64BitHash_jmh_B2" start="3" end="17" sourcefile="Benchmark64BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark64BitHash_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.Benchmark64BitHash_jmh_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.Benchmark64BitHash_jmh_B2" sourcefile="Benchmark64BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark64BitHash_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.Benchmark64BitHash_jmh_B2">
-      <SourceLine classname="benchmarks.generated.Benchmark64BitHash_jmh_B2" start="3" end="17" sourcefile="Benchmark64BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark64BitHash_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.Benchmark64BitHash_jmh_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.Benchmark64BitHash_jmh_B2" sourcefile="Benchmark64BitHash_jmh_B2.java" sourcepath="benchmarks/generated/Benchmark64BitHash_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.BenchmarkData_jmh_B2">
-      <SourceLine classname="benchmarks.generated.BenchmarkData_jmh_B2" start="3" end="17" sourcefile="BenchmarkData_jmh_B2.java" sourcepath="benchmarks/generated/BenchmarkData_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.BenchmarkData_jmh_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.BenchmarkData_jmh_B2" sourcefile="BenchmarkData_jmh_B2.java" sourcepath="benchmarks/generated/BenchmarkData_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.BenchmarkData_jmh_B2">
-      <SourceLine classname="benchmarks.generated.BenchmarkData_jmh_B2" start="3" end="17" sourcefile="BenchmarkData_jmh_B2.java" sourcepath="benchmarks/generated/BenchmarkData_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.BenchmarkData_jmh_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.BenchmarkData_jmh_B2" sourcefile="BenchmarkData_jmh_B2.java" sourcepath="benchmarks/generated/BenchmarkData_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.BenchmarkData_jmh_B2">
-      <SourceLine classname="benchmarks.generated.BenchmarkData_jmh_B2" start="3" end="17" sourcefile="BenchmarkData_jmh_B2.java" sourcepath="benchmarks/generated/BenchmarkData_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.BenchmarkData_jmh_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.BenchmarkData_jmh_B2" sourcefile="BenchmarkData_jmh_B2.java" sourcepath="benchmarks/generated/BenchmarkData_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.BenchmarkData_jmh_B2">
-      <SourceLine classname="benchmarks.generated.BenchmarkData_jmh_B2" start="3" end="17" sourcefile="BenchmarkData_jmh_B2.java" sourcepath="benchmarks/generated/BenchmarkData_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.BenchmarkData_jmh_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.BenchmarkData_jmh_B2" sourcefile="BenchmarkData_jmh_B2.java" sourcepath="benchmarks/generated/BenchmarkData_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.BenchmarkData_jmh_B2">
-      <SourceLine classname="benchmarks.generated.BenchmarkData_jmh_B2" start="3" end="17" sourcefile="BenchmarkData_jmh_B2.java" sourcepath="benchmarks/generated/BenchmarkData_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.BenchmarkData_jmh_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.BenchmarkData_jmh_B2" sourcefile="BenchmarkData_jmh_B2.java" sourcepath="benchmarks/generated/BenchmarkData_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.BenchmarkData_jmh_B2">
-      <SourceLine classname="benchmarks.generated.BenchmarkData_jmh_B2" start="3" end="17" sourcefile="BenchmarkData_jmh_B2.java" sourcepath="benchmarks/generated/BenchmarkData_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.BenchmarkData_jmh_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.BenchmarkData_jmh_B2" sourcefile="BenchmarkData_jmh_B2.java" sourcepath="benchmarks/generated/BenchmarkData_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.ByteCounter_jmh_B2">
-      <SourceLine classname="benchmarks.generated.ByteCounter_jmh_B2" start="3" end="17" sourcefile="ByteCounter_jmh_B2.java" sourcepath="benchmarks/generated/ByteCounter_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.ByteCounter_jmh_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.ByteCounter_jmh_B2" sourcefile="ByteCounter_jmh_B2.java" sourcepath="benchmarks/generated/ByteCounter_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.ByteCounter_jmh_B2">
-      <SourceLine classname="benchmarks.generated.ByteCounter_jmh_B2" start="3" end="17" sourcefile="ByteCounter_jmh_B2.java" sourcepath="benchmarks/generated/ByteCounter_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.ByteCounter_jmh_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.ByteCounter_jmh_B2" sourcefile="ByteCounter_jmh_B2.java" sourcepath="benchmarks/generated/ByteCounter_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.ByteCounter_jmh_B2">
-      <SourceLine classname="benchmarks.generated.ByteCounter_jmh_B2" start="3" end="17" sourcefile="ByteCounter_jmh_B2.java" sourcepath="benchmarks/generated/ByteCounter_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.ByteCounter_jmh_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.ByteCounter_jmh_B2" sourcefile="ByteCounter_jmh_B2.java" sourcepath="benchmarks/generated/ByteCounter_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.ByteCounter_jmh_B2">
-      <SourceLine classname="benchmarks.generated.ByteCounter_jmh_B2" start="3" end="17" sourcefile="ByteCounter_jmh_B2.java" sourcepath="benchmarks/generated/ByteCounter_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.ByteCounter_jmh_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.ByteCounter_jmh_B2" sourcefile="ByteCounter_jmh_B2.java" sourcepath="benchmarks/generated/ByteCounter_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.ByteCounter_jmh_B2">
-      <SourceLine classname="benchmarks.generated.ByteCounter_jmh_B2" start="3" end="17" sourcefile="ByteCounter_jmh_B2.java" sourcepath="benchmarks/generated/ByteCounter_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.ByteCounter_jmh_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.ByteCounter_jmh_B2" sourcefile="ByteCounter_jmh_B2.java" sourcepath="benchmarks/generated/ByteCounter_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="benchmarks.generated.ByteCounter_jmh_B2">
-      <SourceLine classname="benchmarks.generated.ByteCounter_jmh_B2" start="3" end="17" sourcefile="ByteCounter_jmh_B2.java" sourcepath="benchmarks/generated/ByteCounter_jmh_B2.java"/>
-    </Class>
-    <Field classname="benchmarks.generated.ByteCounter_jmh_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="benchmarks.generated.ByteCounter_jmh_B2" sourcefile="ByteCounter_jmh_B2.java" sourcepath="benchmarks/generated/ByteCounter_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.BenchmarkParams">
-      <SourceLine classname="org.openjdk.jmh.infra.BenchmarkParams" start="52" end="86" sourcefile="BenchmarkParams.java" sourcepath="org/openjdk/jmh/infra/BenchmarkParams.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.BenchmarkParams" name="serialVersionUID" signature="J" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.BenchmarkParams" sourcefile="BenchmarkParams.java" sourcepath="org/openjdk/jmh/infra/BenchmarkParams.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.IterationParams">
-      <SourceLine classname="org.openjdk.jmh.infra.IterationParams" start="49" end="63" sourcefile="IterationParams.java" sourcepath="org/openjdk/jmh/infra/IterationParams.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.IterationParams" name="serialVersionUID" signature="J" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.IterationParams" sourcefile="IterationParams.java" sourcepath="org/openjdk/jmh/infra/IterationParams.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" start="3" end="17" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" start="3" end="17" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" start="3" end="17" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" start="3" end="17" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" start="3" end="17" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" start="3" end="17" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Field>
+    <Method classname="benchmarks.Benchmark64BitHash" name="greenrobot_murmur3f_64" signature="(Lbenchmarks/BenchmarkData;Lbenchmarks/ByteCounter;)J" isStatic="false">
+      <SourceLine classname="benchmarks.Benchmark64BitHash" start="67" end="71" startBytecode="0" endBytecode="130" sourcefile="Benchmark64BitHash.java" sourcepath="benchmarks/Benchmark64BitHash.java"/>
+    </Method>
   </BugInstance>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Tue, 21 Aug 2018 05:02:01 +0200" total_classes="2976" referenced_classes="3394" total_bugs="56" total_size="122618" num_packages="130" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="138.04" clock_seconds="44.75" peak_mbytes="1501.20" alloc_mbytes="3641.00" gc_seconds="1.21" priority_2="56">
+  <FindBugsSummary timestamp="Wed, 22 Aug 2018 01:44:52 +0200" total_classes="2976" referenced_classes="3427" total_bugs="23" total_size="122618" num_packages="130" java_version="9.0.4" vm_version="9.0.4+11" cpu_seconds="172.50" clock_seconds="59.67" peak_mbytes="960.60" alloc_mbytes="4096.00" gc_seconds="1.53" priority_2="18" priority_1="5">
     <PackageStats package="" total_bugs="0" total_types="3" total_size="251">
       <ClassStats class="TestFNV" sourceFile="TestFNV.java" interface="false" size="95" bugs="0"/>
       <ClassStats class="TestMurmur3" sourceFile="TestMurmur3.java" interface="false" size="128" bugs="0"/>
       <ClassStats class="TestXXHash" sourceFile="TestXXHash.java" interface="false" size="28" bugs="0"/>
     </PackageStats>
-    <PackageStats package="benchmarks" total_bugs="18" total_types="5" total_size="138" priority_2="18">
-      <ClassStats class="benchmarks.Benchmark128BitHash" sourceFile="Benchmark128BitHash.java" interface="false" size="39" bugs="5" priority_2="5"/>
-      <ClassStats class="benchmarks.Benchmark32BitHash" sourceFile="Benchmark32BitHash.java" interface="false" size="36" bugs="6" priority_2="6"/>
-      <ClassStats class="benchmarks.Benchmark64BitHash" sourceFile="Benchmark64BitHash.java" interface="false" size="40" bugs="7" priority_2="7"/>
+    <PackageStats package="benchmarks" total_bugs="23" total_types="5" total_size="138" priority_2="18" priority_1="5">
+      <ClassStats class="benchmarks.Benchmark128BitHash" sourceFile="Benchmark128BitHash.java" interface="false" size="39" bugs="8" priority_2="5" priority_1="3"/>
+      <ClassStats class="benchmarks.Benchmark32BitHash" sourceFile="Benchmark32BitHash.java" interface="false" size="36" bugs="7" priority_2="6" priority_1="1"/>
+      <ClassStats class="benchmarks.Benchmark64BitHash" sourceFile="Benchmark64BitHash.java" interface="false" size="40" bugs="8" priority_2="7" priority_1="1"/>
       <ClassStats class="benchmarks.BenchmarkData" sourceFile="BenchmarkData.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="benchmarks.ByteCounter" sourceFile="ByteCounter.java" interface="false" size="12" bugs="0"/>
     </PackageStats>
-    <PackageStats package="benchmarks.generated" total_bugs="30" total_types="38" total_size="11959" priority_2="30">
+    <PackageStats package="benchmarks.generated" total_bugs="0" total_types="38" total_size="11959">
       <ClassStats class="benchmarks.generated.Benchmark128BitHash_greenrobot_murmur3f_128" sourceFile="Benchmark128BitHash_greenrobot_murmur3f_128.java" interface="false" size="538" bugs="0"/>
       <ClassStats class="benchmarks.generated.Benchmark128BitHash_guava_murmur3_128" sourceFile="Benchmark128BitHash_guava_murmur3_128.java" interface="false" size="538" bugs="0"/>
       <ClassStats class="benchmarks.generated.Benchmark128BitHash_jmh" sourceFile="Benchmark128BitHash_jmh.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="benchmarks.generated.Benchmark128BitHash_jmh_B1" sourceFile="Benchmark128BitHash_jmh_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="benchmarks.generated.Benchmark128BitHash_jmh_B2" sourceFile="Benchmark128BitHash_jmh_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="benchmarks.generated.Benchmark128BitHash_jmh_B2" sourceFile="Benchmark128BitHash_jmh_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="benchmarks.generated.Benchmark128BitHash_jmh_B3" sourceFile="Benchmark128BitHash_jmh_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="benchmarks.generated.Benchmark128BitHash_md5" sourceFile="Benchmark128BitHash_md5.java" interface="false" size="538" bugs="0"/>
       <ClassStats class="benchmarks.generated.Benchmark128BitHash_murmur3_128" sourceFile="Benchmark128BitHash_murmur3_128.java" interface="false" size="538" bugs="0"/>
@@ -500,7 +236,7 @@
       <ClassStats class="benchmarks.generated.Benchmark32BitHash_guava_murmur3_32" sourceFile="Benchmark32BitHash_guava_murmur3_32.java" interface="false" size="503" bugs="0"/>
       <ClassStats class="benchmarks.generated.Benchmark32BitHash_jmh" sourceFile="Benchmark32BitHash_jmh.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="benchmarks.generated.Benchmark32BitHash_jmh_B1" sourceFile="Benchmark32BitHash_jmh_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="benchmarks.generated.Benchmark32BitHash_jmh_B2" sourceFile="Benchmark32BitHash_jmh_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="benchmarks.generated.Benchmark32BitHash_jmh_B2" sourceFile="Benchmark32BitHash_jmh_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="benchmarks.generated.Benchmark32BitHash_jmh_B3" sourceFile="Benchmark32BitHash_jmh_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="benchmarks.generated.Benchmark32BitHash_murmur2_32" sourceFile="Benchmark32BitHash_murmur2_32.java" interface="false" size="503" bugs="0"/>
       <ClassStats class="benchmarks.generated.Benchmark32BitHash_murmur3_32" sourceFile="Benchmark32BitHash_murmur3_32.java" interface="false" size="503" bugs="0"/>
@@ -510,18 +246,18 @@
       <ClassStats class="benchmarks.generated.Benchmark64BitHash_guava_murmur3_64" sourceFile="Benchmark64BitHash_guava_murmur3_64.java" interface="false" size="503" bugs="0"/>
       <ClassStats class="benchmarks.generated.Benchmark64BitHash_jmh" sourceFile="Benchmark64BitHash_jmh.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="benchmarks.generated.Benchmark64BitHash_jmh_B1" sourceFile="Benchmark64BitHash_jmh_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="benchmarks.generated.Benchmark64BitHash_jmh_B2" sourceFile="Benchmark64BitHash_jmh_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="benchmarks.generated.Benchmark64BitHash_jmh_B2" sourceFile="Benchmark64BitHash_jmh_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="benchmarks.generated.Benchmark64BitHash_jmh_B3" sourceFile="Benchmark64BitHash_jmh_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="benchmarks.generated.Benchmark64BitHash_murmur2_64" sourceFile="Benchmark64BitHash_murmur2_64.java" interface="false" size="503" bugs="0"/>
       <ClassStats class="benchmarks.generated.Benchmark64BitHash_murmur3_64" sourceFile="Benchmark64BitHash_murmur3_64.java" interface="false" size="503" bugs="0"/>
       <ClassStats class="benchmarks.generated.Benchmark64BitHash_xxhash_64" sourceFile="Benchmark64BitHash_xxhash_64.java" interface="false" size="503" bugs="0"/>
       <ClassStats class="benchmarks.generated.BenchmarkData_jmh" sourceFile="BenchmarkData_jmh.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="benchmarks.generated.BenchmarkData_jmh_B1" sourceFile="BenchmarkData_jmh_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="benchmarks.generated.BenchmarkData_jmh_B2" sourceFile="BenchmarkData_jmh_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="benchmarks.generated.BenchmarkData_jmh_B2" sourceFile="BenchmarkData_jmh_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="benchmarks.generated.BenchmarkData_jmh_B3" sourceFile="BenchmarkData_jmh_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="benchmarks.generated.ByteCounter_jmh" sourceFile="ByteCounter_jmh.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="benchmarks.generated.ByteCounter_jmh_B1" sourceFile="ByteCounter_jmh_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="benchmarks.generated.ByteCounter_jmh_B2" sourceFile="ByteCounter_jmh_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="benchmarks.generated.ByteCounter_jmh_B2" sourceFile="ByteCounter_jmh_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="benchmarks.generated.ByteCounter_jmh_B3" sourceFile="ByteCounter_jmh_B3.java" interface="false" size="259" bugs="0"/>
     </PackageStats>
     <PackageStats package="com.google.common.annotations" total_bugs="0" total_types="4" total_size="7">
@@ -3471,8 +3207,8 @@
       <ClassStats class="org.openjdk.jmh.generators.core.StateObjectHandler" sourceFile="StateObjectHandler.java" interface="false" size="549" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.generators.core.StateObjectHandler$1" sourceFile="StateObjectHandler.java" interface="false" size="4" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.openjdk.jmh.infra" total_bugs="2" total_types="30" total_size="1823" priority_2="2">
-      <ClassStats class="org.openjdk.jmh.infra.BenchmarkParams" sourceFile="BenchmarkParams.java" interface="false" size="38" bugs="1" priority_2="1"/>
+    <PackageStats package="org.openjdk.jmh.infra" total_bugs="0" total_types="30" total_size="1823">
+      <ClassStats class="org.openjdk.jmh.infra.BenchmarkParams" sourceFile="BenchmarkParams.java" interface="false" size="38" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.BenchmarkParamsL0" sourceFile="BenchmarkParams.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.BenchmarkParamsL1" sourceFile="BenchmarkParams.java" interface="false" size="131" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.BenchmarkParamsL2" sourceFile="BenchmarkParams.java" interface="false" size="126" bugs="0"/>
@@ -3490,7 +3226,7 @@
       <ClassStats class="org.openjdk.jmh.infra.ControlL2" sourceFile="Control.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.ControlL3" sourceFile="Control.java" interface="false" size="131" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.ControlL4" sourceFile="Control.java" interface="false" size="4" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.infra.IterationParams" sourceFile="IterationParams.java" interface="false" size="19" bugs="1" priority_2="1"/>
+      <ClassStats class="org.openjdk.jmh.infra.IterationParams" sourceFile="IterationParams.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.IterationParamsL0" sourceFile="IterationParams.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.IterationParamsL1" sourceFile="IterationParams.java" interface="false" size="131" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.IterationParamsL2" sourceFile="IterationParams.java" interface="false" size="43" bugs="0"/>
@@ -3503,10 +3239,10 @@
       <ClassStats class="org.openjdk.jmh.infra.ThreadParamsL3" sourceFile="ThreadParams.java" interface="false" size="135" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.ThreadParamsL4" sourceFile="ThreadParams.java" interface="false" size="8" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.openjdk.jmh.infra.generated" total_bugs="6" total_types="4" total_size="546" priority_2="6">
+    <PackageStats package="org.openjdk.jmh.infra.generated" total_bugs="0" total_types="4" total_size="546">
       <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmh" sourceFile="Blackhole_jmh.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmh_B1" sourceFile="Blackhole_jmh_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourceFile="Blackhole_jmh_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourceFile="Blackhole_jmh_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmh_B3" sourceFile="Blackhole_jmh_B3.java" interface="false" size="259" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.openjdk.jmh.profile" total_bugs="0" total_types="39" total_size="1303">
@@ -3709,51 +3445,50 @@
       <ClassStats class="org.openjdk.jmh.util.Utils$BurningTask" sourceFile="Utils.java" interface="false" size="6" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="2969" invocations="18912" avgMicrosecondsPerInvocation="157" maxMicrosecondsPerInvocation="38193" standardDeviationMicrosecondsPerInvocation="609"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="2944" invocations="20602" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="24995" standardDeviationMicrosecondsPerInvocation="584"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="2690" invocations="20987" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="64244" standardDeviationMicrosecondsPerInvocation="976"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="2569" invocations="19689" avgMicrosecondsPerInvocation="130" maxMicrosecondsPerInvocation="61325" standardDeviationMicrosecondsPerInvocation="826"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="2316" invocations="20857" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="57770" standardDeviationMicrosecondsPerInvocation="552"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="1690" invocations="17875" avgMicrosecondsPerInvocation="94" maxMicrosecondsPerInvocation="21416" standardDeviationMicrosecondsPerInvocation="338"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1364" invocations="20608" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="9785" standardDeviationMicrosecondsPerInvocation="159"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1189" invocations="24109" avgMicrosecondsPerInvocation="49" maxMicrosecondsPerInvocation="15088" standardDeviationMicrosecondsPerInvocation="240"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="889" invocations="3394" avgMicrosecondsPerInvocation="261" maxMicrosecondsPerInvocation="51090" standardDeviationMicrosecondsPerInvocation="1094"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="883" invocations="4564" avgMicrosecondsPerInvocation="193" maxMicrosecondsPerInvocation="54216" standardDeviationMicrosecondsPerInvocation="1150"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="779" invocations="3394" avgMicrosecondsPerInvocation="229" maxMicrosecondsPerInvocation="11900" standardDeviationMicrosecondsPerInvocation="640"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="716" invocations="20602" avgMicrosecondsPerInvocation="34" maxMicrosecondsPerInvocation="10069" standardDeviationMicrosecondsPerInvocation="168"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="707" invocations="2976" avgMicrosecondsPerInvocation="237" maxMicrosecondsPerInvocation="427182" standardDeviationMicrosecondsPerInvocation="7831"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="613" invocations="2976" avgMicrosecondsPerInvocation="206" maxMicrosecondsPerInvocation="14499" standardDeviationMicrosecondsPerInvocation="604"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="605" invocations="947320" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="3667" standardDeviationMicrosecondsPerInvocation="7"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="565" invocations="2976" avgMicrosecondsPerInvocation="189" maxMicrosecondsPerInvocation="43630" standardDeviationMicrosecondsPerInvocation="973"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="510" invocations="2976" avgMicrosecondsPerInvocation="171" maxMicrosecondsPerInvocation="7602" standardDeviationMicrosecondsPerInvocation="431"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="442" invocations="22074" avgMicrosecondsPerInvocation="20" maxMicrosecondsPerInvocation="31363" standardDeviationMicrosecondsPerInvocation="223"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="422" invocations="4571" avgMicrosecondsPerInvocation="92" maxMicrosecondsPerInvocation="1904" standardDeviationMicrosecondsPerInvocation="110"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="418" invocations="2976" avgMicrosecondsPerInvocation="140" maxMicrosecondsPerInvocation="81024" standardDeviationMicrosecondsPerInvocation="1947"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="418" invocations="18464" avgMicrosecondsPerInvocation="22" maxMicrosecondsPerInvocation="6411" standardDeviationMicrosecondsPerInvocation="101"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="381" invocations="2976" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="12577" standardDeviationMicrosecondsPerInvocation="365"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="346" invocations="18912" avgMicrosecondsPerInvocation="18" maxMicrosecondsPerInvocation="2102" standardDeviationMicrosecondsPerInvocation="47"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="346" invocations="2976" avgMicrosecondsPerInvocation="116" maxMicrosecondsPerInvocation="4590" standardDeviationMicrosecondsPerInvocation="243"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="339" invocations="2976" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="40148" standardDeviationMicrosecondsPerInvocation="783"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="335" invocations="2976" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="42194" standardDeviationMicrosecondsPerInvocation="801"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="328" invocations="2976" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="7831" standardDeviationMicrosecondsPerInvocation="327"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="312" invocations="2976" avgMicrosecondsPerInvocation="104" maxMicrosecondsPerInvocation="5612" standardDeviationMicrosecondsPerInvocation="299"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="299" invocations="2976" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="4590" standardDeviationMicrosecondsPerInvocation="255"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="292" invocations="2976" avgMicrosecondsPerInvocation="98" maxMicrosecondsPerInvocation="4485" standardDeviationMicrosecondsPerInvocation="243"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="283" invocations="2976" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="6244" standardDeviationMicrosecondsPerInvocation="289"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="280" invocations="3394" avgMicrosecondsPerInvocation="82" maxMicrosecondsPerInvocation="6708" standardDeviationMicrosecondsPerInvocation="221"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="278" invocations="2976" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="5376" standardDeviationMicrosecondsPerInvocation="248"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="273" invocations="2976" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="4546" standardDeviationMicrosecondsPerInvocation="243"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="267" invocations="2976" avgMicrosecondsPerInvocation="89" maxMicrosecondsPerInvocation="5828" standardDeviationMicrosecondsPerInvocation="242"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="264" invocations="2976" avgMicrosecondsPerInvocation="88" maxMicrosecondsPerInvocation="7277" standardDeviationMicrosecondsPerInvocation="275"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IntCast2LongAsInstant" totalMilliseconds="259" invocations="2976" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="45831" standardDeviationMicrosecondsPerInvocation="861"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="258" invocations="3394" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="80578" standardDeviationMicrosecondsPerInvocation="1393"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="255" invocations="4932" avgMicrosecondsPerInvocation="51" maxMicrosecondsPerInvocation="14143" standardDeviationMicrosecondsPerInvocation="220"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="252" invocations="2976" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="3292" standardDeviationMicrosecondsPerInvocation="202"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="251" invocations="2976" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="32619" standardDeviationMicrosecondsPerInvocation="847"/>
-      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="249" invocations="376230" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="2244" standardDeviationMicrosecondsPerInvocation="5"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="248" invocations="2976" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="12425" standardDeviationMicrosecondsPerInvocation="354"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="242" invocations="22074" avgMicrosecondsPerInvocation="10" maxMicrosecondsPerInvocation="4597" standardDeviationMicrosecondsPerInvocation="66"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="241" invocations="2976" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="4809" standardDeviationMicrosecondsPerInvocation="223"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="6144" invocations="2976" avgMicrosecondsPerInvocation="2064" maxMicrosecondsPerInvocation="92993" standardDeviationMicrosecondsPerInvocation="7413"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="3459" invocations="18912" avgMicrosecondsPerInvocation="182" maxMicrosecondsPerInvocation="43476" standardDeviationMicrosecondsPerInvocation="1018"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="3203" invocations="20602" avgMicrosecondsPerInvocation="155" maxMicrosecondsPerInvocation="34879" standardDeviationMicrosecondsPerInvocation="681"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="3048" invocations="19689" avgMicrosecondsPerInvocation="154" maxMicrosecondsPerInvocation="94258" standardDeviationMicrosecondsPerInvocation="1232"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="2951" invocations="20987" avgMicrosecondsPerInvocation="140" maxMicrosecondsPerInvocation="84887" standardDeviationMicrosecondsPerInvocation="1197"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="2420" invocations="20857" avgMicrosecondsPerInvocation="116" maxMicrosecondsPerInvocation="28776" standardDeviationMicrosecondsPerInvocation="474"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="1763" invocations="17875" avgMicrosecondsPerInvocation="98" maxMicrosecondsPerInvocation="35547" standardDeviationMicrosecondsPerInvocation="442"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1421" invocations="22074" avgMicrosecondsPerInvocation="64" maxMicrosecondsPerInvocation="17454" standardDeviationMicrosecondsPerInvocation="184"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1363" invocations="24199" avgMicrosecondsPerInvocation="56" maxMicrosecondsPerInvocation="42816" standardDeviationMicrosecondsPerInvocation="444"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1103" invocations="4691" avgMicrosecondsPerInvocation="235" maxMicrosecondsPerInvocation="52356" standardDeviationMicrosecondsPerInvocation="1150"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="957" invocations="20602" avgMicrosecondsPerInvocation="46" maxMicrosecondsPerInvocation="59921" standardDeviationMicrosecondsPerInvocation="672"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="945" invocations="3427" avgMicrosecondsPerInvocation="275" maxMicrosecondsPerInvocation="17513" standardDeviationMicrosecondsPerInvocation="693"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="881" invocations="3427" avgMicrosecondsPerInvocation="257" maxMicrosecondsPerInvocation="33685" standardDeviationMicrosecondsPerInvocation="874"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="702" invocations="2976" avgMicrosecondsPerInvocation="236" maxMicrosecondsPerInvocation="93331" standardDeviationMicrosecondsPerInvocation="1816"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="682" invocations="2976" avgMicrosecondsPerInvocation="229" maxMicrosecondsPerInvocation="25879" standardDeviationMicrosecondsPerInvocation="768"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="591" invocations="986865" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="1896" standardDeviationMicrosecondsPerInvocation="4"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="543" invocations="2976" avgMicrosecondsPerInvocation="182" maxMicrosecondsPerInvocation="9444" standardDeviationMicrosecondsPerInvocation="488"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector" totalMilliseconds="500" invocations="2976" avgMicrosecondsPerInvocation="168" maxMicrosecondsPerInvocation="15130" standardDeviationMicrosecondsPerInvocation="528"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="473" invocations="22074" avgMicrosecondsPerInvocation="21" maxMicrosecondsPerInvocation="35189" standardDeviationMicrosecondsPerInvocation="249"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="465" invocations="18464" avgMicrosecondsPerInvocation="25" maxMicrosecondsPerInvocation="5317" standardDeviationMicrosecondsPerInvocation="106"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="430" invocations="2976" avgMicrosecondsPerInvocation="144" maxMicrosecondsPerInvocation="55517" standardDeviationMicrosecondsPerInvocation="1150"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="406" invocations="2976" avgMicrosecondsPerInvocation="136" maxMicrosecondsPerInvocation="46681" standardDeviationMicrosecondsPerInvocation="918"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="394" invocations="2976" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="11045" standardDeviationMicrosecondsPerInvocation="468"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="373" invocations="18912" avgMicrosecondsPerInvocation="19" maxMicrosecondsPerInvocation="2735" standardDeviationMicrosecondsPerInvocation="55"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="366" invocations="2976" avgMicrosecondsPerInvocation="122" maxMicrosecondsPerInvocation="6113" standardDeviationMicrosecondsPerInvocation="289"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="359" invocations="5033" avgMicrosecondsPerInvocation="71" maxMicrosecondsPerInvocation="59936" standardDeviationMicrosecondsPerInvocation="1089"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="359" invocations="2976" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="5788" standardDeviationMicrosecondsPerInvocation="312"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="352" invocations="2976" avgMicrosecondsPerInvocation="118" maxMicrosecondsPerInvocation="29466" standardDeviationMicrosecondsPerInvocation="621"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="349" invocations="2976" avgMicrosecondsPerInvocation="117" maxMicrosecondsPerInvocation="8255" standardDeviationMicrosecondsPerInvocation="365"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="348" invocations="2976" avgMicrosecondsPerInvocation="116" maxMicrosecondsPerInvocation="5123" standardDeviationMicrosecondsPerInvocation="300"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="347" invocations="2976" avgMicrosecondsPerInvocation="116" maxMicrosecondsPerInvocation="10162" standardDeviationMicrosecondsPerInvocation="355"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="327" invocations="2976" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="6483" standardDeviationMicrosecondsPerInvocation="338"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="326" invocations="2976" avgMicrosecondsPerInvocation="109" maxMicrosecondsPerInvocation="6849" standardDeviationMicrosecondsPerInvocation="315"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="324" invocations="2976" avgMicrosecondsPerInvocation="108" maxMicrosecondsPerInvocation="9983" standardDeviationMicrosecondsPerInvocation="344"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="323" invocations="2976" avgMicrosecondsPerInvocation="108" maxMicrosecondsPerInvocation="3070" standardDeviationMicrosecondsPerInvocation="196"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BadSyntaxForRegularExpression" totalMilliseconds="321" invocations="2976" avgMicrosecondsPerInvocation="107" maxMicrosecondsPerInvocation="36544" standardDeviationMicrosecondsPerInvocation="726"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="318" invocations="2976" avgMicrosecondsPerInvocation="107" maxMicrosecondsPerInvocation="10973" standardDeviationMicrosecondsPerInvocation="388"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="316" invocations="4700" avgMicrosecondsPerInvocation="67" maxMicrosecondsPerInvocation="5552" standardDeviationMicrosecondsPerInvocation="175"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="305" invocations="2976" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="5703" standardDeviationMicrosecondsPerInvocation="293"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="304" invocations="3427" avgMicrosecondsPerInvocation="88" maxMicrosecondsPerInvocation="3547" standardDeviationMicrosecondsPerInvocation="213"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="303" invocations="2976" avgMicrosecondsPerInvocation="101" maxMicrosecondsPerInvocation="22266" standardDeviationMicrosecondsPerInvocation="468"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="302" invocations="2976" avgMicrosecondsPerInvocation="101" maxMicrosecondsPerInvocation="16134" standardDeviationMicrosecondsPerInvocation="395"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="299" invocations="2976" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="6810" standardDeviationMicrosecondsPerInvocation="314"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="296" invocations="388233" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="2638" standardDeviationMicrosecondsPerInvocation="5"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1534814215000" analysisTimestamp="1534814216806" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534888078000" analysisTimestamp="1534888080081" release="">
   <Project projectName="">
     <Jar>tmp/rest-schemagen</Jar>
   </Project>
@@ -21,6 +21,83 @@
       <SourceLine classname="com.mercateo.common.rest.schemagen.Benchmarks" start="23" end="24" startBytecode="0" endBytecode="73" sourcefile="Benchmarks.java" sourcepath="com/mercateo/common/rest/schemagen/Benchmarks.java"/>
     </Method>
     <SourceLine classname="com.mercateo.common.rest.schemagen.Benchmarks" start="23" end="23" startBytecode="0" endBytecode="0" sourcefile="Benchmarks.java" sourcepath="com/mercateo/common/rest/schemagen/Benchmarks.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="com.mercateo.common.rest.schemagen.Benchmarks">
+      <SourceLine classname="com.mercateo.common.rest.schemagen.Benchmarks" start="15" end="40" sourcefile="Benchmarks.java" sourcepath="com/mercateo/common/rest/schemagen/Benchmarks.java"/>
+    </Class>
+    <Method classname="com.mercateo.common.rest.schemagen.Benchmarks" name="createLink" signature="()V" isStatic="true">
+      <SourceLine classname="com.mercateo.common.rest.schemagen.Benchmarks" start="28" end="29" startBytecode="0" endBytecode="5" sourcefile="Benchmarks.java" sourcepath="com/mercateo/common/rest/schemagen/Benchmarks.java"/>
+    </Method>
+    <LocalVariable name="link" register="0" pc="15" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.mercateo.common.rest.schemagen.Benchmarks" start="28" end="28" startBytecode="14" endBytecode="14" sourcefile="Benchmarks.java" sourcepath="com/mercateo/common/rest/schemagen/Benchmarks.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="com.mercateo.common.rest.schemagen.Benchmarks">
+      <SourceLine classname="com.mercateo.common.rest.schemagen.Benchmarks" start="15" end="40" sourcefile="Benchmarks.java" sourcepath="com/mercateo/common/rest/schemagen/Benchmarks.java"/>
+    </Class>
+    <Method classname="com.mercateo.common.rest.schemagen.Benchmarks" name="createLinkFactory" signature="()V" isStatic="true">
+      <SourceLine classname="com.mercateo.common.rest.schemagen.Benchmarks" start="23" end="24" startBytecode="0" endBytecode="4" sourcefile="Benchmarks.java" sourcepath="com/mercateo/common/rest/schemagen/Benchmarks.java"/>
+    </Method>
+    <LocalVariable name="linkFactory" register="0" pc="9" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.mercateo.common.rest.schemagen.Benchmarks" start="23" end="23" startBytecode="8" endBytecode="8" sourcefile="Benchmarks.java" sourcepath="com/mercateo/common/rest/schemagen/Benchmarks.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_UNSINKED_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="com.mercateo.common.rest.schemagen.Benchmarks">
+      <SourceLine classname="com.mercateo.common.rest.schemagen.Benchmarks" start="15" end="40" sourcefile="Benchmarks.java" sourcepath="com/mercateo/common/rest/schemagen/Benchmarks.java"/>
+    </Class>
+    <Method classname="com.mercateo.common.rest.schemagen.Benchmarks" name="createLink" signature="()V" isStatic="true">
+      <SourceLine classname="com.mercateo.common.rest.schemagen.Benchmarks" start="28" end="29" startBytecode="0" endBytecode="79" sourcefile="Benchmarks.java" sourcepath="com/mercateo/common/rest/schemagen/Benchmarks.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="JMH_UNSINKED_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="com.mercateo.common.rest.schemagen.Benchmarks">
+      <SourceLine classname="com.mercateo.common.rest.schemagen.Benchmarks" start="15" end="40" sourcefile="Benchmarks.java" sourcepath="com/mercateo/common/rest/schemagen/Benchmarks.java"/>
+    </Class>
+    <Method classname="com.mercateo.common.rest.schemagen.Benchmarks" name="createLinkFactory" signature="()V" isStatic="true">
+      <SourceLine classname="com.mercateo.common.rest.schemagen.Benchmarks" start="23" end="24" startBytecode="0" endBytecode="73" sourcefile="Benchmarks.java" sourcepath="com/mercateo/common/rest/schemagen/Benchmarks.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="com.mercateo.common.rest.schemagen.SchemaPropertyGenerator$1">
+      <SourceLine classname="com.mercateo.common.rest.schemagen.SchemaPropertyGenerator$1" start="193" end="196" sourcefile="SchemaPropertyGenerator.java" sourcepath="com/mercateo/common/rest/schemagen/SchemaPropertyGenerator.java"/>
+    </Class>
+    <Method classname="com.mercateo.common.rest.schemagen.SchemaPropertyGenerator$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
+      <SourceLine classname="com.mercateo.common.rest.schemagen.SchemaPropertyGenerator$1" start="193" end="196" startBytecode="0" endBytecode="29" sourcefile="SchemaPropertyGenerator.java" sourcepath="com/mercateo/common/rest/schemagen/SchemaPropertyGenerator.java"/>
+    </Method>
+    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="com.mercateo.common.rest.schemagen.SchemaPropertyGenerator$1" start="193" end="193" startBytecode="23" endBytecode="23" sourcefile="SchemaPropertyGenerator.java" sourcepath="com/mercateo/common/rest/schemagen/SchemaPropertyGenerator.java"/>
+    <SourceLine classname="com.mercateo.common.rest.schemagen.SchemaPropertyGenerator$1" start="196" end="196" startBytecode="62" endBytecode="62" sourcefile="SchemaPropertyGenerator.java" sourcepath="com/mercateo/common/rest/schemagen/SchemaPropertyGenerator.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="com.mercateo.common.rest.schemagen.types.ListResponseTest">
+      <SourceLine classname="com.mercateo.common.rest.schemagen.types.ListResponseTest" start="20" end="87" sourcefile="ListResponseTest.java" sourcepath="com/mercateo/common/rest/schemagen/types/ListResponseTest.java"/>
+    </Class>
+    <Method classname="com.mercateo.common.rest.schemagen.types.ListResponseTest" name="shouldDeserialize" signature="()V" isStatic="false">
+      <SourceLine classname="com.mercateo.common.rest.schemagen.types.ListResponseTest" start="74" end="87" startBytecode="0" endBytecode="37" sourcefile="ListResponseTest.java" sourcepath="com/mercateo/common/rest/schemagen/types/ListResponseTest.java"/>
+    </Method>
+    <LocalVariable name="content" register="2" pc="16" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.mercateo.common.rest.schemagen.types.ListResponseTest" start="77" end="77" startBytecode="15" endBytecode="15" sourcefile="ListResponseTest.java" sourcepath="com/mercateo/common/rest/schemagen/types/ListResponseTest.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="com.mercateo.common.rest.schemagen.types.WrappedListTest">
+      <SourceLine classname="com.mercateo.common.rest.schemagen.types.WrappedListTest" start="13" end="48" sourcefile="WrappedListTest.java" sourcepath="com/mercateo/common/rest/schemagen/types/WrappedListTest.java"/>
+    </Class>
+    <Method classname="com.mercateo.common.rest.schemagen.types.WrappedListTest" name="shouldDeserialize" signature="()V" isStatic="false">
+      <SourceLine classname="com.mercateo.common.rest.schemagen.types.WrappedListTest" start="35" end="48" startBytecode="0" endBytecode="39" sourcefile="WrappedListTest.java" sourcepath="com/mercateo/common/rest/schemagen/types/WrappedListTest.java"/>
+    </Method>
+    <LocalVariable name="content" register="3" pc="16" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.mercateo.common.rest.schemagen.types.WrappedListTest" start="38" end="38" startBytecode="15" endBytecode="15" sourcefile="WrappedListTest.java" sourcepath="com/mercateo/common/rest/schemagen/types/WrappedListTest.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="com.mercateo.common.rest.schemagen.types.WrappedListTest">
+      <SourceLine classname="com.mercateo.common.rest.schemagen.types.WrappedListTest" start="13" end="48" sourcefile="WrappedListTest.java" sourcepath="com/mercateo/common/rest/schemagen/types/WrappedListTest.java"/>
+    </Class>
+    <Method classname="com.mercateo.common.rest.schemagen.types.WrappedListTest" name="shouldDeserialize" signature="()V" isStatic="false">
+      <SourceLine classname="com.mercateo.common.rest.schemagen.types.WrappedListTest" start="35" end="48" startBytecode="0" endBytecode="39" sourcefile="WrappedListTest.java" sourcepath="com/mercateo/common/rest/schemagen/types/WrappedListTest.java"/>
+    </Method>
+    <LocalVariable name="typeFactory" register="2" pc="13" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.mercateo.common.rest.schemagen.types.WrappedListTest" start="36" end="36" startBytecode="12" endBytecode="12" sourcefile="WrappedListTest.java" sourcepath="com/mercateo/common/rest/schemagen/types/WrappedListTest.java"/>
   </BugInstance>
   <Errors errors="0" missingClasses="110">
     <MissingClass>com.fasterxml.jackson.annotation.JsonView</MissingClass>
@@ -134,9 +211,9 @@
     <MissingClass>org.slf4j.Logger</MissingClass>
     <MissingClass>org.slf4j.LoggerFactory</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Tue, 21 Aug 2018 03:16:55 +0200" total_classes="279" referenced_classes="418" total_bugs="2" total_size="7595" num_packages="17" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="22.01" clock_seconds="6.47" peak_mbytes="564.85" alloc_mbytes="3641.00" gc_seconds="0.13" priority_2="2">
-    <PackageStats package="com.mercateo.common.rest.schemagen" total_bugs="2" total_types="100" total_size="2524" priority_2="2">
-      <ClassStats class="com.mercateo.common.rest.schemagen.Benchmarks" sourceFile="Benchmarks.java" interface="false" size="23" bugs="2" priority_2="2"/>
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 23:47:58 +0200" total_classes="279" referenced_classes="425" total_bugs="10" total_size="7595" num_packages="17" java_version="9.0.4" vm_version="9.0.4+11" cpu_seconds="26.34" clock_seconds="7.90" peak_mbytes="334.95" alloc_mbytes="4096.00" gc_seconds="0.14" priority_2="2" priority_1="8">
+    <PackageStats package="com.mercateo.common.rest.schemagen" total_bugs="7" total_types="100" total_size="2524" priority_2="2" priority_1="5">
+      <ClassStats class="com.mercateo.common.rest.schemagen.Benchmarks" sourceFile="Benchmarks.java" interface="false" size="23" bugs="6" priority_2="2" priority_1="4"/>
       <ClassStats class="com.mercateo.common.rest.schemagen.GenericResource" sourceFile="GenericResource.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="com.mercateo.common.rest.schemagen.GenericTypeTest" sourceFile="GenericTypeTest.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="com.mercateo.common.rest.schemagen.IgnoreInRestSchema" sourceFile="IgnoreInRestSchema.java" interface="true" size="1" bugs="0"/>
@@ -223,7 +300,7 @@
       <ClassStats class="com.mercateo.common.rest.schemagen.SchemaJsonPropertyGeneratorTest$WrappedObject" sourceFile="SchemaJsonPropertyGeneratorTest.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="com.mercateo.common.rest.schemagen.SchemaPropertyContext" sourceFile="SchemaPropertyContext.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="com.mercateo.common.rest.schemagen.SchemaPropertyGenerator" sourceFile="SchemaPropertyGenerator.java" interface="false" size="103" bugs="0"/>
-      <ClassStats class="com.mercateo.common.rest.schemagen.SchemaPropertyGenerator$1" sourceFile="SchemaPropertyGenerator.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.mercateo.common.rest.schemagen.SchemaPropertyGenerator$1" sourceFile="SchemaPropertyGenerator.java" interface="false" size="6" bugs="1" priority_1="1"/>
       <ClassStats class="com.mercateo.common.rest.schemagen.SizeConstraints" sourceFile="SizeConstraints.java" interface="false" size="30" bugs="0"/>
       <ClassStats class="com.mercateo.common.rest.schemagen.SizeConstraintsTest" sourceFile="SizeConstraintsTest.java" interface="false" size="36" bugs="0"/>
       <ClassStats class="com.mercateo.common.rest.schemagen.Something" sourceFile="Something.java" interface="false" size="21" bugs="0"/>
@@ -394,13 +471,13 @@
       <ClassStats class="com.mercateo.common.rest.schemagen.plugin.common.MethodCheckerForLinkFactoryTest" sourceFile="MethodCheckerForLinkFactoryTest.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="com.mercateo.common.rest.schemagen.plugin.common.RolesAllowedChecker" sourceFile="RolesAllowedChecker.java" interface="false" size="26" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.mercateo.common.rest.schemagen.types" total_bugs="0" total_types="36" total_size="613">
+    <PackageStats package="com.mercateo.common.rest.schemagen.types" total_bugs="3" total_types="36" total_size="613" priority_1="3">
       <ClassStats class="com.mercateo.common.rest.schemagen.types.HyperSchemaCreator" sourceFile="HyperSchemaCreator.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="com.mercateo.common.rest.schemagen.types.HyperSchemaCreatorTest" sourceFile="HyperSchemaCreatorTest.java" interface="false" size="29" bugs="0"/>
       <ClassStats class="com.mercateo.common.rest.schemagen.types.ListResponse" sourceFile="ListResponse.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="com.mercateo.common.rest.schemagen.types.ListResponseBuilder" sourceFile="ListResponseBuilder.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="com.mercateo.common.rest.schemagen.types.ListResponseBuilderCreator" sourceFile="ListResponseBuilderCreator.java" interface="false" size="5" bugs="0"/>
-      <ClassStats class="com.mercateo.common.rest.schemagen.types.ListResponseTest" sourceFile="ListResponseTest.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="com.mercateo.common.rest.schemagen.types.ListResponseTest" sourceFile="ListResponseTest.java" interface="false" size="47" bugs="1" priority_1="1"/>
       <ClassStats class="com.mercateo.common.rest.schemagen.types.ListResponseTest$1" sourceFile="ListResponseTest.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="com.mercateo.common.rest.schemagen.types.ListResponseTest$Payload" sourceFile="ListResponseTest.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="com.mercateo.common.rest.schemagen.types.Message" sourceFile="Message.java" interface="false" size="19" bugs="0"/>
@@ -428,7 +505,7 @@
       <ClassStats class="com.mercateo.common.rest.schemagen.types.WithIdTest" sourceFile="WithIdTest.java" interface="false" size="49" bugs="0"/>
       <ClassStats class="com.mercateo.common.rest.schemagen.types.WithIdTest$Payload" sourceFile="WithIdTest.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="com.mercateo.common.rest.schemagen.types.WrappedList" sourceFile="WrappedList.java" interface="false" size="8" bugs="0"/>
-      <ClassStats class="com.mercateo.common.rest.schemagen.types.WrappedListTest" sourceFile="WrappedListTest.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="com.mercateo.common.rest.schemagen.types.WrappedListTest" sourceFile="WrappedListTest.java" interface="false" size="23" bugs="2" priority_1="2"/>
       <ClassStats class="com.mercateo.common.rest.schemagen.types.WrappedListTest$1" sourceFile="WrappedListTest.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="com.mercateo.common.rest.schemagen.types.WrappedListTest$Payload" sourceFile="WrappedListTest.java" interface="false" size="4" bugs="0"/>
     </PackageStats>
@@ -449,46 +526,44 @@
       <ClassStats class="com.mercateo.common.rest.schemagen.validation.ValidationErrors$ValidationErrorCodeContainer" sourceFile="ValidationErrors.java" interface="true" size="2" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="325" invocations="1266" avgMicrosecondsPerInvocation="257" maxMicrosecondsPerInvocation="17647" standardDeviationMicrosecondsPerInvocation="820"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="316" invocations="1319" avgMicrosecondsPerInvocation="239" maxMicrosecondsPerInvocation="4976" standardDeviationMicrosecondsPerInvocation="452"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="284" invocations="1344" avgMicrosecondsPerInvocation="211" maxMicrosecondsPerInvocation="11084" standardDeviationMicrosecondsPerInvocation="517"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="267" invocations="1331" avgMicrosecondsPerInvocation="200" maxMicrosecondsPerInvocation="32833" standardDeviationMicrosecondsPerInvocation="982"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="263" invocations="1422" avgMicrosecondsPerInvocation="184" maxMicrosecondsPerInvocation="22245" standardDeviationMicrosecondsPerInvocation="833"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="254" invocations="1356" avgMicrosecondsPerInvocation="187" maxMicrosecondsPerInvocation="8757" standardDeviationMicrosecondsPerInvocation="461"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="210" invocations="279" avgMicrosecondsPerInvocation="755" maxMicrosecondsPerInvocation="104211" standardDeviationMicrosecondsPerInvocation="6658"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="199" invocations="1272" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="1153" standardDeviationMicrosecondsPerInvocation="124"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="197" invocations="1344" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="11525" standardDeviationMicrosecondsPerInvocation="412"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="182" invocations="1115" avgMicrosecondsPerInvocation="164" maxMicrosecondsPerInvocation="5404" standardDeviationMicrosecondsPerInvocation="329"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="176" invocations="418" avgMicrosecondsPerInvocation="422" maxMicrosecondsPerInvocation="9522" standardDeviationMicrosecondsPerInvocation="1077"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="164" invocations="418" avgMicrosecondsPerInvocation="393" maxMicrosecondsPerInvocation="12826" standardDeviationMicrosecondsPerInvocation="1089"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="124" invocations="1771" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="4714" standardDeviationMicrosecondsPerInvocation="195"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="86" invocations="1400" avgMicrosecondsPerInvocation="61" maxMicrosecondsPerInvocation="33212" standardDeviationMicrosecondsPerInvocation="888"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="74" invocations="1344" avgMicrosecondsPerInvocation="55" maxMicrosecondsPerInvocation="6927" standardDeviationMicrosecondsPerInvocation="223"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="73" invocations="418" avgMicrosecondsPerInvocation="176" maxMicrosecondsPerInvocation="7279" standardDeviationMicrosecondsPerInvocation="533"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="66" invocations="546" avgMicrosecondsPerInvocation="122" maxMicrosecondsPerInvocation="14300" standardDeviationMicrosecondsPerInvocation="656"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="63" invocations="279" avgMicrosecondsPerInvocation="227" maxMicrosecondsPerInvocation="3831" standardDeviationMicrosecondsPerInvocation="420"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="63" invocations="279" avgMicrosecondsPerInvocation="226" maxMicrosecondsPerInvocation="29123" standardDeviationMicrosecondsPerInvocation="2220"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="62" invocations="418" avgMicrosecondsPerInvocation="150" maxMicrosecondsPerInvocation="5174" standardDeviationMicrosecondsPerInvocation="388"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="59" invocations="279" avgMicrosecondsPerInvocation="213" maxMicrosecondsPerInvocation="6308" standardDeviationMicrosecondsPerInvocation="609"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="58" invocations="279" avgMicrosecondsPerInvocation="207" maxMicrosecondsPerInvocation="2560" standardDeviationMicrosecondsPerInvocation="400"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="56" invocations="1021" avgMicrosecondsPerInvocation="54" maxMicrosecondsPerInvocation="1432" standardDeviationMicrosecondsPerInvocation="103"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="55" invocations="279" avgMicrosecondsPerInvocation="198" maxMicrosecondsPerInvocation="4755" standardDeviationMicrosecondsPerInvocation="420"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadForLoop" totalMilliseconds="51" invocations="279" avgMicrosecondsPerInvocation="184" maxMicrosecondsPerInvocation="30871" standardDeviationMicrosecondsPerInvocation="1845"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="50" invocations="279" avgMicrosecondsPerInvocation="181" maxMicrosecondsPerInvocation="8663" standardDeviationMicrosecondsPerInvocation="573"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="49" invocations="418" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="5855" standardDeviationMicrosecondsPerInvocation="436"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="47" invocations="1319" avgMicrosecondsPerInvocation="36" maxMicrosecondsPerInvocation="2055" standardDeviationMicrosecondsPerInvocation="82"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="47" invocations="418" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="1541" standardDeviationMicrosecondsPerInvocation="210"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="45" invocations="418" avgMicrosecondsPerInvocation="109" maxMicrosecondsPerInvocation="23381" standardDeviationMicrosecondsPerInvocation="1145"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="45" invocations="20408" avgMicrosecondsPerInvocation="2" maxMicrosecondsPerInvocation="520" standardDeviationMicrosecondsPerInvocation="8"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="45" invocations="279" avgMicrosecondsPerInvocation="161" maxMicrosecondsPerInvocation="4524" standardDeviationMicrosecondsPerInvocation="342"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="41" invocations="279" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="2961" standardDeviationMicrosecondsPerInvocation="273"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="40" invocations="1156" avgMicrosecondsPerInvocation="35" maxMicrosecondsPerInvocation="3695" standardDeviationMicrosecondsPerInvocation="124"/>
-      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="40" invocations="35571" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="86" standardDeviationMicrosecondsPerInvocation="0"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="37" invocations="279" avgMicrosecondsPerInvocation="133" maxMicrosecondsPerInvocation="3641" standardDeviationMicrosecondsPerInvocation="300"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="36" invocations="279" avgMicrosecondsPerInvocation="130" maxMicrosecondsPerInvocation="6809" standardDeviationMicrosecondsPerInvocation="466"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="35" invocations="279" avgMicrosecondsPerInvocation="127" maxMicrosecondsPerInvocation="4632" standardDeviationMicrosecondsPerInvocation="393"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="35" invocations="418" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="5173" standardDeviationMicrosecondsPerInvocation="296"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="35" invocations="279" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="3202" standardDeviationMicrosecondsPerInvocation="261"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="465" invocations="1349" avgMicrosecondsPerInvocation="344" maxMicrosecondsPerInvocation="15941" standardDeviationMicrosecondsPerInvocation="850"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="383" invocations="279" avgMicrosecondsPerInvocation="1373" maxMicrosecondsPerInvocation="34143" standardDeviationMicrosecondsPerInvocation="5454"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="361" invocations="1319" avgMicrosecondsPerInvocation="273" maxMicrosecondsPerInvocation="25493" standardDeviationMicrosecondsPerInvocation="816"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="304" invocations="1344" avgMicrosecondsPerInvocation="226" maxMicrosecondsPerInvocation="6388" standardDeviationMicrosecondsPerInvocation="412"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="288" invocations="1331" avgMicrosecondsPerInvocation="216" maxMicrosecondsPerInvocation="20848" standardDeviationMicrosecondsPerInvocation="698"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="270" invocations="1356" avgMicrosecondsPerInvocation="199" maxMicrosecondsPerInvocation="8317" standardDeviationMicrosecondsPerInvocation="411"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="256" invocations="1422" avgMicrosecondsPerInvocation="180" maxMicrosecondsPerInvocation="14548" standardDeviationMicrosecondsPerInvocation="603"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="254" invocations="279" avgMicrosecondsPerInvocation="911" maxMicrosecondsPerInvocation="131983" standardDeviationMicrosecondsPerInvocation="8382"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="226" invocations="425" avgMicrosecondsPerInvocation="533" maxMicrosecondsPerInvocation="12932" standardDeviationMicrosecondsPerInvocation="1363"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="206" invocations="1400" avgMicrosecondsPerInvocation="147" maxMicrosecondsPerInvocation="7949" standardDeviationMicrosecondsPerInvocation="313"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="186" invocations="425" avgMicrosecondsPerInvocation="439" maxMicrosecondsPerInvocation="11858" standardDeviationMicrosecondsPerInvocation="1058"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="170" invocations="1115" avgMicrosecondsPerInvocation="152" maxMicrosecondsPerInvocation="2957" standardDeviationMicrosecondsPerInvocation="244"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="154" invocations="1357" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="12329" standardDeviationMicrosecondsPerInvocation="401"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="150" invocations="1761" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="4286" standardDeviationMicrosecondsPerInvocation="229"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="99" invocations="425" avgMicrosecondsPerInvocation="232" maxMicrosecondsPerInvocation="9030" standardDeviationMicrosecondsPerInvocation="708"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="95" invocations="425" avgMicrosecondsPerInvocation="223" maxMicrosecondsPerInvocation="34211" standardDeviationMicrosecondsPerInvocation="1709"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="93" invocations="425" avgMicrosecondsPerInvocation="220" maxMicrosecondsPerInvocation="6444" standardDeviationMicrosecondsPerInvocation="599"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="89" invocations="555" avgMicrosecondsPerInvocation="161" maxMicrosecondsPerInvocation="13110" standardDeviationMicrosecondsPerInvocation="678"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="89" invocations="279" avgMicrosecondsPerInvocation="321" maxMicrosecondsPerInvocation="6704" standardDeviationMicrosecondsPerInvocation="700"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="82" invocations="1400" avgMicrosecondsPerInvocation="58" maxMicrosecondsPerInvocation="30836" standardDeviationMicrosecondsPerInvocation="824"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="73" invocations="1344" avgMicrosecondsPerInvocation="54" maxMicrosecondsPerInvocation="2448" standardDeviationMicrosecondsPerInvocation="121"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="72" invocations="1103" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="10999" standardDeviationMicrosecondsPerInvocation="349"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="66" invocations="279" avgMicrosecondsPerInvocation="240" maxMicrosecondsPerInvocation="5580" standardDeviationMicrosecondsPerInvocation="548"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="63" invocations="425" avgMicrosecondsPerInvocation="150" maxMicrosecondsPerInvocation="4668" standardDeviationMicrosecondsPerInvocation="352"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="58" invocations="425" avgMicrosecondsPerInvocation="136" maxMicrosecondsPerInvocation="22203" standardDeviationMicrosecondsPerInvocation="1174"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="55" invocations="279" avgMicrosecondsPerInvocation="199" maxMicrosecondsPerInvocation="3034" standardDeviationMicrosecondsPerInvocation="379"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="54" invocations="36708" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="351" standardDeviationMicrosecondsPerInvocation="2"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="54" invocations="279" avgMicrosecondsPerInvocation="193" maxMicrosecondsPerInvocation="2657" standardDeviationMicrosecondsPerInvocation="357"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="52" invocations="20606" avgMicrosecondsPerInvocation="2" maxMicrosecondsPerInvocation="878" standardDeviationMicrosecondsPerInvocation="11"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="50" invocations="279" avgMicrosecondsPerInvocation="181" maxMicrosecondsPerInvocation="4104" standardDeviationMicrosecondsPerInvocation="358"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="47" invocations="279" avgMicrosecondsPerInvocation="170" maxMicrosecondsPerInvocation="20462" standardDeviationMicrosecondsPerInvocation="1231"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="46" invocations="1319" avgMicrosecondsPerInvocation="35" maxMicrosecondsPerInvocation="1233" standardDeviationMicrosecondsPerInvocation="68"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="45" invocations="279" avgMicrosecondsPerInvocation="162" maxMicrosecondsPerInvocation="4958" standardDeviationMicrosecondsPerInvocation="356"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="44" invocations="279" avgMicrosecondsPerInvocation="158" maxMicrosecondsPerInvocation="3582" standardDeviationMicrosecondsPerInvocation="325"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="44" invocations="1161" avgMicrosecondsPerInvocation="37" maxMicrosecondsPerInvocation="1517" standardDeviationMicrosecondsPerInvocation="76"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="42" invocations="425" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="5935" standardDeviationMicrosecondsPerInvocation="343"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="41" invocations="425" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="3063" standardDeviationMicrosecondsPerInvocation="260"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="35" invocations="279" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="3368" standardDeviationMicrosecondsPerInvocation="257"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

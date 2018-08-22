@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1534806477000" analysisTimestamp="1534806479156" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534806477000" analysisTimestamp="1534880317447" release="">
   <Project projectName="">
     <Jar>tmp/template-benchmark</Jar>
   </Project>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="com.github.jknack.handlebars.io.URLTemplateSource">
+      <SourceLine classname="com.github.jknack.handlebars.io.URLTemplateSource" start="63" end="149" sourcefile="URLTemplateSource.java" sourcepath="com/github/jknack/handlebars/io/URLTemplateSource.java"/>
+    </Class>
+    <Method classname="com.github.jknack.handlebars.io.URLTemplateSource" name="content" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="com.github.jknack.handlebars.io.URLTemplateSource" start="70" end="83" startBytecode="0" endBytecode="46" sourcefile="URLTemplateSource.java" sourcepath="com/github/jknack/handlebars/io/URLTemplateSource.java"/>
+    </Method>
+    <LocalVariable name="bufferSize" register="2" pc="6" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.github.jknack.handlebars.io.URLTemplateSource" start="71" end="71" startBytecode="5" endBytecode="5" sourcefile="URLTemplateSource.java" sourcepath="com/github/jknack/handlebars/io/URLTemplateSource.java"/>
+  </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="com.mitchellbosecke.benchmark.Freemarker">
       <SourceLine classname="com.mitchellbosecke.benchmark.Freemarker" start="16" end="34" sourcefile="Freemarker.java" sourcepath="com/mitchellbosecke/benchmark/Freemarker.java"/>
@@ -30,24 +40,6 @@
       <SourceLine classname="com.mitchellbosecke.benchmark.Mustache" start="44" end="49" startBytecode="0" endBytecode="153" sourcefile="Mustache.java" sourcepath="com/mitchellbosecke/benchmark/Mustache.java"/>
     </Method>
     <SourceLine classname="com.mitchellbosecke.benchmark.Mustache" start="44" end="44" startBytecode="0" endBytecode="0" sourcefile="Mustache.java" sourcepath="com/mitchellbosecke/benchmark/Mustache.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.Mustache">
-      <SourceLine classname="com.mitchellbosecke.benchmark.Mustache" start="19" end="49" sourcefile="Mustache.java" sourcepath="com/mitchellbosecke/benchmark/Mustache.java"/>
-    </Class>
-    <Method classname="com.mitchellbosecke.benchmark.Mustache" name="benchmark" signature="()Ljava/lang/String;" isStatic="false">
-      <SourceLine classname="com.mitchellbosecke.benchmark.Mustache" start="44" end="49" startBytecode="0" endBytecode="153" sourcefile="Mustache.java" sourcepath="com/mitchellbosecke/benchmark/Mustache.java"/>
-    </Method>
-    <SourceLine classname="com.mitchellbosecke.benchmark.Mustache" start="45" end="45" startBytecode="27" endBytecode="27" sourcefile="Mustache.java" sourcepath="com/mitchellbosecke/benchmark/Mustache.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.Mustache">
-      <SourceLine classname="com.mitchellbosecke.benchmark.Mustache" start="19" end="49" sourcefile="Mustache.java" sourcepath="com/mitchellbosecke/benchmark/Mustache.java"/>
-    </Class>
-    <Method classname="com.mitchellbosecke.benchmark.Mustache" name="benchmark" signature="()Ljava/lang/String;" isStatic="false">
-      <SourceLine classname="com.mitchellbosecke.benchmark.Mustache" start="44" end="49" startBytecode="0" endBytecode="153" sourcefile="Mustache.java" sourcepath="com/mitchellbosecke/benchmark/Mustache.java"/>
-    </Method>
-    <SourceLine classname="com.mitchellbosecke.benchmark.Mustache" start="48" end="48" startBytecode="47" endBytecode="47" sourcefile="Mustache.java" sourcepath="com/mitchellbosecke/benchmark/Mustache.java"/>
   </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="com.mitchellbosecke.benchmark.Pebble">
@@ -94,468 +86,508 @@
     </Method>
     <SourceLine classname="com.mitchellbosecke.benchmark.Velocity" start="33" end="33" startBytecode="0" endBytecode="0" sourcefile="Velocity.java" sourcepath="com/mitchellbosecke/benchmark/Velocity.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2" start="3" end="17" sourcefile="Freemarker_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Freemarker_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="freemarker.cache.WebappTemplateLoader">
+      <SourceLine classname="freemarker.cache.WebappTemplateLoader" start="42" end="216" sourcefile="WebappTemplateLoader.java" sourcepath="freemarker/cache/WebappTemplateLoader.java"/>
     </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2" sourcefile="Freemarker_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Freemarker_jmhType_B2.java"/>
-    </Field>
+    <Method classname="freemarker.cache.WebappTemplateLoader" name="getContextPath" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="freemarker.cache.WebappTemplateLoader" start="187" end="190" startBytecode="0" endBytecode="16" sourcefile="WebappTemplateLoader.java" sourcepath="freemarker/cache/WebappTemplateLoader.java"/>
+    </Method>
+    <LocalVariable name="e" register="1" pc="32" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemarker.cache.WebappTemplateLoader" start="189" end="189" startBytecode="31" endBytecode="31" sourcefile="WebappTemplateLoader.java" sourcepath="freemarker/cache/WebappTemplateLoader.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2" start="3" end="17" sourcefile="Freemarker_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Freemarker_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="freemarker.core.TemplateObject">
+      <SourceLine classname="freemarker.core.TemplateObject" start="31" end="181" sourcefile="TemplateObject.java" sourcepath="freemarker/core/TemplateObject.java"/>
     </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2" sourcefile="Freemarker_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Freemarker_jmhType_B2.java"/>
-    </Field>
+    <Method classname="freemarker.core.TemplateObject" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="freemarker.core.TemplateObject" start="139" end="143" startBytecode="0" endBytecode="13" sourcefile="TemplateObject.java" sourcepath="freemarker/core/TemplateObject.java"/>
+    </Method>
+    <LocalVariable name="e" register="2" pc="9" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemarker.core.TemplateObject" start="140" end="140" startBytecode="8" endBytecode="8" sourcefile="TemplateObject.java" sourcepath="freemarker/core/TemplateObject.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2" start="3" end="17" sourcefile="Freemarker_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Freemarker_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="freemarker.ext.dom.AttributeNodeModel">
+      <SourceLine classname="freemarker.ext.dom.AttributeNodeModel" start="27" end="61" sourcefile="AttributeNodeModel.java" sourcepath="freemarker/ext/dom/AttributeNodeModel.java"/>
     </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2" sourcefile="Freemarker_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Freemarker_jmhType_B2.java"/>
-    </Field>
+    <Method classname="freemarker.ext.dom.AttributeNodeModel" name="getQualifiedName" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="freemarker.ext.dom.AttributeNodeModel" start="47" end="61" startBytecode="0" endBytecode="48" sourcefile="AttributeNodeModel.java" sourcepath="freemarker/ext/dom/AttributeNodeModel.java"/>
+    </Method>
+    <LocalVariable name="prefix" register="4" pc="45" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="freemarker.ext.dom.AttributeNodeModel" start="52" end="52" startBytecode="43" endBytecode="43" sourcefile="AttributeNodeModel.java" sourcepath="freemarker/ext/dom/AttributeNodeModel.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2" start="3" end="17" sourcefile="Freemarker_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Freemarker_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="javassist.CtField$MethodInitializer">
+      <SourceLine classname="javassist.CtField$MethodInitializer" start="1085" end="1151" sourcefile="CtField.java" sourcepath="javassist/CtField.java"/>
     </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2" sourcefile="Freemarker_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Freemarker_jmhType_B2.java"/>
-    </Field>
+    <Method classname="javassist.CtField$MethodInitializer" name="getDescriptor" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="javassist.CtField$MethodInitializer" start="1117" end="1129" startBytecode="0" endBytecode="18" sourcefile="CtField.java" sourcepath="javassist/CtField.java"/>
+    </Method>
+    <LocalVariable name="desc3" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="javassist.CtField$MethodInitializer" start="1117" end="1117" startBytecode="2" endBytecode="2" sourcefile="CtField.java" sourcepath="javassist/CtField.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2" start="3" end="17" sourcefile="Freemarker_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Freemarker_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="javassist.CtField$NewInitializer">
+      <SourceLine classname="javassist.CtField$NewInitializer" start="989" end="1073" sourcefile="CtField.java" sourcepath="javassist/CtField.java"/>
     </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2" sourcefile="Freemarker_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Freemarker_jmhType_B2.java"/>
-    </Field>
+    <Method classname="javassist.CtField$NewInitializer" name="getDescriptor" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="javassist.CtField$NewInitializer" start="1021" end="1033" startBytecode="0" endBytecode="18" sourcefile="CtField.java" sourcepath="javassist/CtField.java"/>
+    </Method>
+    <LocalVariable name="desc3" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="javassist.CtField$NewInitializer" start="1021" end="1021" startBytecode="2" endBytecode="2" sourcefile="CtField.java" sourcepath="javassist/CtField.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2" start="3" end="17" sourcefile="Freemarker_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Freemarker_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.apache.commons.math3.complex.Quaternion">
+      <SourceLine classname="org.apache.commons.math3.complex.Quaternion" start="39" end="463" sourcefile="Quaternion.java" sourcepath="org/apache/commons/math3/complex/Quaternion.java"/>
     </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2" sourcefile="Freemarker_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Freemarker_jmhType_B2.java"/>
-    </Field>
+    <Method classname="org.apache.commons.math3.complex.Quaternion" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="org.apache.commons.math3.complex.Quaternion" start="454" end="463" startBytecode="0" endBytecode="32" sourcefile="Quaternion.java" sourcepath="org/apache/commons/math3/complex/Quaternion.java"/>
+    </Method>
+    <LocalVariable name="sp" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.apache.commons.math3.complex.Quaternion" start="454" end="454" startBytecode="2" endBytecode="2" sourcefile="Quaternion.java" sourcepath="org/apache/commons/math3/complex/Quaternion.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2" start="3" end="17" sourcefile="Handlebars_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Handlebars_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.apache.commons.math3.fraction.BigFraction">
+      <SourceLine classname="org.apache.commons.math3.fraction.BigFraction" start="40" end="1139" sourcefile="BigFraction.java" sourcepath="org/apache/commons/math3/fraction/BigFraction.java"/>
     </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2" sourcefile="Handlebars_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Handlebars_jmhType_B2.java"/>
-    </Field>
+    <Method classname="org.apache.commons.math3.fraction.BigFraction" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="org.apache.commons.math3.fraction.BigFraction" start="1126" end="1134" startBytecode="0" endBytecode="34" sourcefile="BigFraction.java" sourcepath="org/apache/commons/math3/fraction/BigFraction.java"/>
+    </Method>
+    <LocalVariable name="str" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.apache.commons.math3.fraction.BigFraction" start="1126" end="1126" startBytecode="1" endBytecode="1" sourcefile="BigFraction.java" sourcepath="org/apache/commons/math3/fraction/BigFraction.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2" start="3" end="17" sourcefile="Handlebars_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Handlebars_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.apache.commons.math3.fraction.Fraction">
+      <SourceLine classname="org.apache.commons.math3.fraction.Fraction" start="37" end="663" sourcefile="Fraction.java" sourcepath="org/apache/commons/math3/fraction/Fraction.java"/>
     </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2" sourcefile="Handlebars_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Handlebars_jmhType_B2.java"/>
-    </Field>
+    <Method classname="org.apache.commons.math3.fraction.Fraction" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="org.apache.commons.math3.fraction.Fraction" start="650" end="658" startBytecode="0" endBytecode="31" sourcefile="Fraction.java" sourcepath="org/apache/commons/math3/fraction/Fraction.java"/>
+    </Method>
+    <LocalVariable name="str" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.apache.commons.math3.fraction.Fraction" start="650" end="650" startBytecode="1" endBytecode="1" sourcefile="Fraction.java" sourcepath="org/apache/commons/math3/fraction/Fraction.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2" start="3" end="17" sourcefile="Handlebars_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Handlebars_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.apache.commons.math3.stat.descriptive.DescriptiveStatistics">
+      <SourceLine classname="org.apache.commons.math3.stat.descriptive.DescriptiveStatistics" start="77" end="762" sourcefile="DescriptiveStatistics.java" sourcepath="org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java"/>
     </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2" sourcefile="Handlebars_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Handlebars_jmhType_B2.java"/>
-    </Field>
+    <Method classname="org.apache.commons.math3.stat.descriptive.DescriptiveStatistics" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="org.apache.commons.math3.stat.descriptive.DescriptiveStatistics" start="458" end="475" startBytecode="0" endBytecode="95" sourcefile="DescriptiveStatistics.java" sourcepath="org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java"/>
+    </Method>
+    <LocalVariable name="ex" register="3" pc="137" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.apache.commons.math3.stat.descriptive.DescriptiveStatistics" start="470" end="470" startBytecode="136" endBytecode="136" sourcefile="DescriptiveStatistics.java" sourcepath="org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2" start="3" end="17" sourcefile="Handlebars_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Handlebars_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatistics">
+      <SourceLine classname="org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatistics" start="82" end="635" sourcefile="MultivariateSummaryStatistics.java" sourcepath="org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.java"/>
     </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2" sourcefile="Handlebars_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Handlebars_jmhType_B2.java"/>
-    </Field>
+    <Method classname="org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatistics" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatistics" start="309" end="322" startBytecode="0" endBytecode="107" sourcefile="MultivariateSummaryStatistics.java" sourcepath="org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.java"/>
+    </Method>
+    <LocalVariable name="separator" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatistics" start="309" end="309" startBytecode="2" endBytecode="2" sourcefile="MultivariateSummaryStatistics.java" sourcepath="org/apache/commons/math3/stat/descriptive/MultivariateSummaryStatistics.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2" start="3" end="17" sourcefile="Handlebars_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Handlebars_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.apache.velocity.runtime.parser.node.ASTReference">
+      <SourceLine classname="org.apache.velocity.runtime.parser.node.ASTReference" start="67" end="1016" sourcefile="ASTReference.java" sourcepath="org/apache/velocity/runtime/parser/node/ASTReference.java"/>
     </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2" sourcefile="Handlebars_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Handlebars_jmhType_B2.java"/>
-    </Field>
+    <Method classname="org.apache.velocity.runtime.parser.node.ASTReference" name="getRoot" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="org.apache.velocity.runtime.parser.node.ASTReference" start="775" end="975" startBytecode="0" endBytecode="266" sourcefile="ASTReference.java" sourcepath="org/apache/velocity/runtime/parser/node/ASTReference.java"/>
+    </Method>
+    <LocalVariable name="i" register="3" pc="47" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.apache.velocity.runtime.parser.node.ASTReference" start="811" end="811" startBytecode="46" endBytecode="46" sourcefile="ASTReference.java" sourcepath="org/apache/velocity/runtime/parser/node/ASTReference.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2" start="3" end="17" sourcefile="Handlebars_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Handlebars_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.mozilla.javascript.JavaScriptException">
+      <SourceLine classname="org.mozilla.javascript.JavaScriptException" start="28" end="97" sourcefile="JavaScriptException.java" sourcepath="org/mozilla/javascript/JavaScriptException.java"/>
     </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2" sourcefile="Handlebars_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Handlebars_jmhType_B2.java"/>
-    </Field>
+    <Method classname="org.mozilla.javascript.JavaScriptException" name="details" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="org.mozilla.javascript.JavaScriptException" start="59" end="71" startBytecode="0" endBytecode="30" sourcefile="JavaScriptException.java" sourcepath="org/mozilla/javascript/JavaScriptException.java"/>
+    </Method>
+    <LocalVariable name="rte" register="1" pc="37" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.mozilla.javascript.JavaScriptException" start="66" end="66" startBytecode="36" endBytecode="36" sourcefile="JavaScriptException.java" sourcepath="org/mozilla/javascript/JavaScriptException.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2" start="3" end="17" sourcefile="Mustache_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Mustache_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.mozilla.javascript.TokenStream">
+      <SourceLine classname="org.mozilla.javascript.TokenStream" start="37" end="1608" sourcefile="TokenStream.java" sourcepath="org/mozilla/javascript/TokenStream.java"/>
     </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2" sourcefile="Mustache_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Mustache_jmhType_B2.java"/>
-    </Field>
+    <Method classname="org.mozilla.javascript.TokenStream" name="getLine" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="org.mozilla.javascript.TokenStream" start="1402" end="1442" startBytecode="0" endBytecode="84" sourcefile="TokenStream.java" sourcepath="org/mozilla/javascript/TokenStream.java"/>
+    </Method>
+    <LocalVariable name="ioe" register="3" pc="123" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.mozilla.javascript.TokenStream" start="1428" end="1428" startBytecode="122" endBytecode="122" sourcefile="TokenStream.java" sourcepath="org/mozilla/javascript/TokenStream.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2" start="3" end="17" sourcefile="Mustache_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Mustache_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.mozilla.javascript.json.JsonParser">
+      <SourceLine classname="org.mozilla.javascript.json.JsonParser" start="32" end="324" sourcefile="JsonParser.java" sourcepath="org/mozilla/javascript/json/JsonParser.java"/>
     </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2" sourcefile="Mustache_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Mustache_jmhType_B2.java"/>
-    </Field>
+    <Method classname="org.mozilla.javascript.json.JsonParser" name="readString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="org.mozilla.javascript.json.JsonParser" start="160" end="219" startBytecode="0" endBytecode="185" sourcefile="JsonParser.java" sourcepath="org/mozilla/javascript/json/JsonParser.java"/>
+    </Method>
+    <LocalVariable name="nfx" register="3" pc="376" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.mozilla.javascript.json.JsonParser" start="204" end="204" startBytecode="375" endBytecode="375" sourcefile="JsonParser.java" sourcepath="org/mozilla/javascript/json/JsonParser.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2" start="3" end="17" sourcefile="Mustache_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Mustache_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2" sourcefile="Mustache_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Mustache_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2" start="3" end="17" sourcefile="Mustache_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Mustache_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2" sourcefile="Mustache_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Mustache_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2" start="3" end="17" sourcefile="Mustache_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Mustache_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2" sourcefile="Mustache_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Mustache_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2" start="3" end="17" sourcefile="Mustache_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Mustache_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2" sourcefile="Mustache_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Mustache_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2" start="3" end="17" sourcefile="Pebble_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Pebble_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2" sourcefile="Pebble_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Pebble_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2" start="3" end="17" sourcefile="Pebble_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Pebble_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2" sourcefile="Pebble_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Pebble_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2" start="3" end="17" sourcefile="Pebble_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Pebble_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2" sourcefile="Pebble_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Pebble_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2" start="3" end="17" sourcefile="Pebble_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Pebble_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2" sourcefile="Pebble_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Pebble_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2" start="3" end="17" sourcefile="Pebble_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Pebble_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2" sourcefile="Pebble_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Pebble_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2" start="3" end="17" sourcefile="Pebble_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Pebble_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2" sourcefile="Pebble_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Pebble_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2" start="3" end="17" sourcefile="Rocker_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Rocker_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2" sourcefile="Rocker_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Rocker_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2" start="3" end="17" sourcefile="Rocker_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Rocker_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2" sourcefile="Rocker_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Rocker_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2" start="3" end="17" sourcefile="Rocker_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Rocker_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2" sourcefile="Rocker_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Rocker_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2" start="3" end="17" sourcefile="Rocker_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Rocker_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2" sourcefile="Rocker_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Rocker_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2" start="3" end="17" sourcefile="Rocker_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Rocker_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2" sourcefile="Rocker_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Rocker_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2" start="3" end="17" sourcefile="Rocker_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Rocker_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2" sourcefile="Rocker_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Rocker_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2" start="3" end="17" sourcefile="Thymeleaf_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Thymeleaf_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2" sourcefile="Thymeleaf_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Thymeleaf_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2" start="3" end="17" sourcefile="Thymeleaf_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Thymeleaf_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2" sourcefile="Thymeleaf_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Thymeleaf_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2" start="3" end="17" sourcefile="Thymeleaf_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Thymeleaf_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2" sourcefile="Thymeleaf_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Thymeleaf_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2" start="3" end="17" sourcefile="Thymeleaf_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Thymeleaf_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2" sourcefile="Thymeleaf_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Thymeleaf_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2" start="3" end="17" sourcefile="Thymeleaf_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Thymeleaf_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2" sourcefile="Thymeleaf_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Thymeleaf_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2" start="3" end="17" sourcefile="Thymeleaf_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Thymeleaf_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2" sourcefile="Thymeleaf_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Thymeleaf_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2" start="3" end="17" sourcefile="Trimou_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Trimou_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2" sourcefile="Trimou_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Trimou_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2" start="3" end="17" sourcefile="Trimou_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Trimou_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2" sourcefile="Trimou_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Trimou_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2" start="3" end="17" sourcefile="Trimou_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Trimou_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2" sourcefile="Trimou_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Trimou_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2" start="3" end="17" sourcefile="Trimou_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Trimou_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2" sourcefile="Trimou_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Trimou_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2" start="3" end="17" sourcefile="Trimou_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Trimou_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2" sourcefile="Trimou_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Trimou_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2" start="3" end="17" sourcefile="Trimou_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Trimou_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2" sourcefile="Trimou_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Trimou_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2" start="3" end="17" sourcefile="Velocity_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Velocity_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2" sourcefile="Velocity_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Velocity_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2" start="3" end="17" sourcefile="Velocity_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Velocity_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2" sourcefile="Velocity_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Velocity_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2" start="3" end="17" sourcefile="Velocity_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Velocity_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2" sourcefile="Velocity_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Velocity_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2" start="3" end="17" sourcefile="Velocity_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Velocity_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2" sourcefile="Velocity_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Velocity_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2" start="3" end="17" sourcefile="Velocity_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Velocity_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2" sourcefile="Velocity_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Velocity_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2" start="3" end="17" sourcefile="Velocity_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Velocity_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2" sourcefile="Velocity_jmhType_B2.java" sourcepath="com/mitchellbosecke/benchmark/generated/Velocity_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.BenchmarkParams">
-      <SourceLine classname="org.openjdk.jmh.infra.BenchmarkParams" start="52" end="86" sourcefile="BenchmarkParams.java" sourcepath="org/openjdk/jmh/infra/BenchmarkParams.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.BenchmarkParams" name="serialVersionUID" signature="J" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.BenchmarkParams" sourcefile="BenchmarkParams.java" sourcepath="org/openjdk/jmh/infra/BenchmarkParams.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.IterationParams">
-      <SourceLine classname="org.openjdk.jmh.infra.IterationParams" start="49" end="63" sourcefile="IterationParams.java" sourcepath="org/openjdk/jmh/infra/IterationParams.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.IterationParams" name="serialVersionUID" signature="J" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.IterationParams" sourcefile="IterationParams.java" sourcepath="org/openjdk/jmh/infra/IterationParams.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" start="3" end="17" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" start="3" end="17" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" start="3" end="17" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" start="3" end="17" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" start="3" end="17" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" start="3" end="17" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <Errors errors="0" missingClasses="156">
-    <MissingClass>com.sun.jdi.Bootstrap</MissingClass>
-    <MissingClass>com.sun.jdi.ReferenceType</MissingClass>
-    <MissingClass>com.sun.jdi.VirtualMachine</MissingClass>
-    <MissingClass>com.sun.jdi.VirtualMachineManager</MissingClass>
-    <MissingClass>com.sun.jdi.connect.AttachingConnector</MissingClass>
-    <MissingClass>com.sun.jdi.connect.Connector</MissingClass>
-    <MissingClass>com.sun.jdi.connect.Connector$Argument</MissingClass>
-    <MissingClass>com.sun.jdi.event.Event</MissingClass>
-    <MissingClass>com.sun.jdi.event.EventIterator</MissingClass>
-    <MissingClass>com.sun.jdi.event.EventQueue</MissingClass>
-    <MissingClass>com.sun.jdi.event.EventSet</MissingClass>
-    <MissingClass>com.sun.jdi.request.EventRequestManager</MissingClass>
-    <MissingClass>com.sun.jdi.request.MethodEntryRequest</MissingClass>
+  <Errors errors="19" missingClasses="143">
+    <Error>
+      <ErrorMessage>Exception analyzing javassist.bytecode.stackmap.TypeData using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing org.antlr.v4.runtime.Recognizer using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing javassist.bytecode.MemberrefInfo using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing javassist.CtMember using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing freemarker.core.ISOLikeTemplateDateFormat using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing org.mozilla.javascript.ScriptableObject using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing javassist.compiler.CodeGen using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing org.thymeleaf.standard.expression.Expression using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing com.google.common.base.Optional using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing freemarker.core.TemplateObject using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing org.apache.velocity.runtime.directive.Directive using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing org.mozilla.javascript.xml.impl.xmlbeans.XMLObjectImpl using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing javassist.CtBehavior using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing com.google.common.collect.ArrayTable$ArrayMap using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing org.mozilla.javascript.xmlimpl.XMLObjectImpl using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing org.openjdk.jmh.profile.AbstractPerfAsmProfiler using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing ognl.ComparisonExpression using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing org.apache.velocity.app.event.implement.EscapeReference using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing org.thymeleaf.processor.attr.AbstractRemovalAttrProcessor using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
     <MissingClass>com.werken.xpath.XPath</MissingClass>
     <MissingClass>javax.el.ArrayELResolver</MissingClass>
     <MissingClass>javax.el.BeanELResolver</MissingClass>
@@ -700,7 +732,7 @@
     <MissingClass>org.zeroturnaround.javarebel.Reloader</MissingClass>
     <MissingClass>org.zeroturnaround.javarebel.ReloaderFactory</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Tue, 21 Aug 2018 01:07:57 +0200" total_classes="7606" referenced_classes="8792" total_bugs="66" total_size="372818" num_packages="331" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="321.00" clock_seconds="107.21" peak_mbytes="1736.46" alloc_mbytes="3641.00" gc_seconds="4.48" priority_2="66">
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 01:07:57 +0200" total_classes="7606" referenced_classes="8856" total_bugs="23" total_size="372818" num_packages="331" java_version="9.0.4" vm_version="9.0.4+11" cpu_seconds="365.55" clock_seconds="142.80" peak_mbytes="1530.05" alloc_mbytes="4096.00" gc_seconds="4.64" priority_2="8" priority_1="15">
     <PackageStats package="com.coverity.security" total_bugs="0" total_types="4" total_size="383">
       <ClassStats class="com.coverity.security.Escape" sourceFile="Escape.java" interface="false" size="281" bugs="0"/>
       <ClassStats class="com.coverity.security.EscapeEL" sourceFile="EscapeEL.java" interface="false" size="17" bugs="0"/>
@@ -971,7 +1003,7 @@
       <ClassStats class="com.github.jknack.handlebars.internal.path.ResolveThisPath" sourceFile="ResolveThisPath.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="com.github.jknack.handlebars.internal.path.ThisPath" sourceFile="ThisPath.java" interface="false" size="12" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.github.jknack.handlebars.io" total_bugs="0" total_types="13" total_size="242">
+    <PackageStats package="com.github.jknack.handlebars.io" total_bugs="1" total_types="13" total_size="242" priority_1="1">
       <ClassStats class="com.github.jknack.handlebars.io.AbstractTemplateLoader" sourceFile="AbstractTemplateLoader.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="com.github.jknack.handlebars.io.AbstractTemplateSource" sourceFile="AbstractTemplateSource.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="com.github.jknack.handlebars.io.ClassPathTemplateLoader" sourceFile="ClassPathTemplateLoader.java" interface="false" size="14" bugs="0"/>
@@ -984,7 +1016,7 @@
       <ClassStats class="com.github.jknack.handlebars.io.TemplateLoader" sourceFile="TemplateLoader.java" interface="true" size="9" bugs="0"/>
       <ClassStats class="com.github.jknack.handlebars.io.TemplateSource" sourceFile="TemplateSource.java" interface="true" size="4" bugs="0"/>
       <ClassStats class="com.github.jknack.handlebars.io.URLTemplateLoader" sourceFile="URLTemplateLoader.java" interface="false" size="11" bugs="0"/>
-      <ClassStats class="com.github.jknack.handlebars.io.URLTemplateSource" sourceFile="URLTemplateSource.java" interface="false" size="52" bugs="0"/>
+      <ClassStats class="com.github.jknack.handlebars.io.URLTemplateSource" sourceFile="URLTemplateSource.java" interface="false" size="52" bugs="1" priority_1="1"/>
     </PackageStats>
     <PackageStats package="com.github.jknack.handlebars.js" total_bugs="0" total_types="2" total_size="18">
       <ClassStats class="com.github.jknack.handlebars.js.HandlebarsJs" sourceFile="HandlebarsJs.java" interface="false" size="12" bugs="0"/>
@@ -2795,13 +2827,13 @@
       <ClassStats class="com.google.thirdparty.publicsuffix.PublicSuffixType" sourceFile="PublicSuffixType.java" interface="false" size="28" bugs="0"/>
       <ClassStats class="com.google.thirdparty.publicsuffix.TrieParser" sourceFile="TrieParser.java" interface="false" size="51" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.mitchellbosecke.benchmark" total_bugs="10" total_types="16" total_size="253" priority_2="10">
+    <PackageStats package="com.mitchellbosecke.benchmark" total_bugs="8" total_types="16" total_size="253" priority_2="8">
       <ClassStats class="com.mitchellbosecke.benchmark.BaseBenchmark" sourceFile="BaseBenchmark.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.ExpectedOutputTest" sourceFile="ExpectedOutputTest.java" interface="false" size="59" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.Freemarker" sourceFile="Freemarker.java" interface="false" size="15" bugs="1" priority_2="1"/>
       <ClassStats class="com.mitchellbosecke.benchmark.Handlebars" sourceFile="Handlebars.java" interface="false" size="13" bugs="1" priority_2="1"/>
       <ClassStats class="com.mitchellbosecke.benchmark.Handlebars$1" sourceFile="Handlebars.java" interface="false" size="7" bugs="0"/>
-      <ClassStats class="com.mitchellbosecke.benchmark.Mustache" sourceFile="Mustache.java" interface="false" size="14" bugs="3" priority_2="3"/>
+      <ClassStats class="com.mitchellbosecke.benchmark.Mustache" sourceFile="Mustache.java" interface="false" size="14" bugs="1" priority_2="1"/>
       <ClassStats class="com.mitchellbosecke.benchmark.Mustache$1" sourceFile="Mustache.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.Mustache$StockCollection" sourceFile="Mustache.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.Mustache$StockCollection$1" sourceFile="Mustache.java" interface="false" size="16" bugs="0"/>
@@ -2813,46 +2845,46 @@
       <ClassStats class="com.mitchellbosecke.benchmark.Trimou$1" sourceFile="Trimou.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.Velocity" sourceFile="Velocity.java" interface="false" size="17" bugs="1" priority_2="1"/>
     </PackageStats>
-    <PackageStats package="com.mitchellbosecke.benchmark.generated" total_bugs="48" total_types="40" total_size="8440" priority_2="48">
+    <PackageStats package="com.mitchellbosecke.benchmark.generated" total_bugs="0" total_types="40" total_size="8440">
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Freemarker_benchmark_jmhTest" sourceFile="Freemarker_benchmark_jmhTest.java" interface="false" size="509" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType" sourceFile="Freemarker_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B1" sourceFile="Freemarker_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2" sourceFile="Freemarker_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B2" sourceFile="Freemarker_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Freemarker_jmhType_B3" sourceFile="Freemarker_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Handlebars_benchmark_jmhTest" sourceFile="Handlebars_benchmark_jmhTest.java" interface="false" size="509" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType" sourceFile="Handlebars_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B1" sourceFile="Handlebars_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2" sourceFile="Handlebars_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B2" sourceFile="Handlebars_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Handlebars_jmhType_B3" sourceFile="Handlebars_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Mustache_benchmark_jmhTest" sourceFile="Mustache_benchmark_jmhTest.java" interface="false" size="509" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Mustache_jmhType" sourceFile="Mustache_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B1" sourceFile="Mustache_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2" sourceFile="Mustache_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B2" sourceFile="Mustache_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Mustache_jmhType_B3" sourceFile="Mustache_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Pebble_benchmark_jmhTest" sourceFile="Pebble_benchmark_jmhTest.java" interface="false" size="509" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Pebble_jmhType" sourceFile="Pebble_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B1" sourceFile="Pebble_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2" sourceFile="Pebble_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B2" sourceFile="Pebble_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Pebble_jmhType_B3" sourceFile="Pebble_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Rocker_benchmark_jmhTest" sourceFile="Rocker_benchmark_jmhTest.java" interface="false" size="509" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Rocker_jmhType" sourceFile="Rocker_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B1" sourceFile="Rocker_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2" sourceFile="Rocker_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B2" sourceFile="Rocker_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Rocker_jmhType_B3" sourceFile="Rocker_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Thymeleaf_benchmark_jmhTest" sourceFile="Thymeleaf_benchmark_jmhTest.java" interface="false" size="509" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType" sourceFile="Thymeleaf_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B1" sourceFile="Thymeleaf_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2" sourceFile="Thymeleaf_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B2" sourceFile="Thymeleaf_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Thymeleaf_jmhType_B3" sourceFile="Thymeleaf_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Trimou_benchmark_jmhTest" sourceFile="Trimou_benchmark_jmhTest.java" interface="false" size="509" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Trimou_jmhType" sourceFile="Trimou_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B1" sourceFile="Trimou_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2" sourceFile="Trimou_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B2" sourceFile="Trimou_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Trimou_jmhType_B3" sourceFile="Trimou_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Velocity_benchmark_jmhTest" sourceFile="Velocity_benchmark_jmhTest.java" interface="false" size="509" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Velocity_jmhType" sourceFile="Velocity_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B1" sourceFile="Velocity_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2" sourceFile="Velocity_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B2" sourceFile="Velocity_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.benchmark.generated.Velocity_jmhType_B3" sourceFile="Velocity_jmhType_B3.java" interface="false" size="259" bugs="0"/>
     </PackageStats>
     <PackageStats package="com.mitchellbosecke.benchmark.model" total_bugs="0" total_types="1" total_size="55">
@@ -3106,7 +3138,7 @@
       <ClassStats class="com.mitchellbosecke.pebble.utils.StringLengthComparator" sourceFile="StringLengthComparator.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="com.mitchellbosecke.pebble.utils.StringUtils" sourceFile="StringUtils.java" interface="false" size="13" bugs="0"/>
     </PackageStats>
-    <PackageStats package="freemarker.cache" total_bugs="0" total_types="45" total_size="1547">
+    <PackageStats package="freemarker.cache" total_bugs="1" total_types="45" total_size="1547" priority_1="1">
       <ClassStats class="freemarker.cache.CacheStorage" sourceFile="CacheStorage.java" interface="true" size="5" bugs="0"/>
       <ClassStats class="freemarker.cache.CacheStorageWithGetSize" sourceFile="CacheStorageWithGetSize.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="freemarker.cache.ClassTemplateLoader" sourceFile="ClassTemplateLoader.java" interface="false" size="59" bugs="0"/>
@@ -3150,10 +3182,10 @@
       <ClassStats class="freemarker.cache.TemplateNameFormat$Default020400" sourceFile="TemplateNameFormat.java" interface="false" size="115" bugs="0"/>
       <ClassStats class="freemarker.cache.URLTemplateLoader" sourceFile="URLTemplateLoader.java" interface="false" size="26" bugs="0"/>
       <ClassStats class="freemarker.cache.URLTemplateSource" sourceFile="URLTemplateSource.java" interface="false" size="61" bugs="0"/>
-      <ClassStats class="freemarker.cache.WebappTemplateLoader" sourceFile="WebappTemplateLoader.java" interface="false" size="76" bugs="0"/>
+      <ClassStats class="freemarker.cache.WebappTemplateLoader" sourceFile="WebappTemplateLoader.java" interface="false" size="76" bugs="1" priority_1="1"/>
       <ClassStats class="freemarker.cache._CacheAPI" sourceFile="_CacheAPI.java" interface="false" size="6" bugs="0"/>
     </PackageStats>
-    <PackageStats package="freemarker.core" total_bugs="0" total_types="416" total_size="20278">
+    <PackageStats package="freemarker.core" total_bugs="1" total_types="416" total_size="20278" priority_1="1">
       <ClassStats class="freemarker.core.APINotSupportedTemplateException" sourceFile="APINotSupportedTemplateException.java" interface="false" size="21" bugs="0"/>
       <ClassStats class="freemarker.core.AddConcatExpression" sourceFile="AddConcatExpression.java" interface="false" size="55" bugs="0"/>
       <ClassStats class="freemarker.core.AddConcatExpression$ConcatenatedHash" sourceFile="AddConcatExpression.java" interface="false" size="13" bugs="0"/>
@@ -3512,7 +3544,7 @@
       <ClassStats class="freemarker.core.TemplateDateFormat" sourceFile="TemplateDateFormat.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="freemarker.core.TemplateDateFormatFactory" sourceFile="TemplateDateFormatFactory.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="freemarker.core.TemplateElement" sourceFile="TemplateElement.java" interface="false" size="229" bugs="0"/>
-      <ClassStats class="freemarker.core.TemplateObject" sourceFile="TemplateObject.java" interface="false" size="79" bugs="0"/>
+      <ClassStats class="freemarker.core.TemplateObject" sourceFile="TemplateObject.java" interface="false" size="79" bugs="1" priority_1="1"/>
       <ClassStats class="freemarker.core.TemplatePostProcessor" sourceFile="TemplatePostProcessor.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="freemarker.core.TemplatePostProcessorException" sourceFile="TemplatePostProcessorException.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="freemarker.core.TextBlock" sourceFile="TextBlock.java" interface="false" size="212" bugs="0"/>
@@ -3743,8 +3775,8 @@
       <ClassStats class="freemarker.ext.beans._MethodUtil" sourceFile="_MethodUtil.java" interface="false" size="157" bugs="0"/>
       <ClassStats class="freemarker.ext.beans._MethodUtil$1" sourceFile="_MethodUtil.java" interface="false" size="5" bugs="0"/>
     </PackageStats>
-    <PackageStats package="freemarker.ext.dom" total_bugs="0" total_types="23" total_size="1205">
-      <ClassStats class="freemarker.ext.dom.AttributeNodeModel" sourceFile="AttributeNodeModel.java" interface="false" size="26" bugs="0"/>
+    <PackageStats package="freemarker.ext.dom" total_bugs="1" total_types="23" total_size="1205" priority_1="1">
+      <ClassStats class="freemarker.ext.dom.AttributeNodeModel" sourceFile="AttributeNodeModel.java" interface="false" size="26" bugs="1" priority_1="1"/>
       <ClassStats class="freemarker.ext.dom.CharacterDataNodeModel" sourceFile="CharacterDataNodeModel.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="freemarker.ext.dom.DocumentModel" sourceFile="DocumentModel.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="freemarker.ext.dom.DocumentTypeModel" sourceFile="DocumentTypeModel.java" interface="false" size="14" bugs="0"/>
@@ -4111,7 +4143,7 @@
       <ClassStats class="freemarker.template.utility.XmlEscape" sourceFile="XmlEscape.java" interface="false" size="21" bugs="0"/>
       <ClassStats class="freemarker.template.utility.XmlEscape$1" sourceFile="XmlEscape.java" interface="false" size="33" bugs="0"/>
     </PackageStats>
-    <PackageStats package="javassist" total_bugs="0" total_types="63" total_size="4381">
+    <PackageStats package="javassist" total_bugs="2" total_types="63" total_size="4381" priority_1="2">
       <ClassStats class="javassist.ByteArrayClassPath" sourceFile="ByteArrayClassPath.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="javassist.CannotCompileException" sourceFile="CannotCompileException.java" interface="false" size="38" bugs="0"/>
       <ClassStats class="javassist.ClassClassPath" sourceFile="ClassClassPath.java" interface="false" size="19" bugs="0"/>
@@ -4140,9 +4172,9 @@
       <ClassStats class="javassist.CtField$Initializer" sourceFile="CtField.java" interface="false" size="85" bugs="0"/>
       <ClassStats class="javassist.CtField$IntInitializer" sourceFile="CtField.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="javassist.CtField$LongInitializer" sourceFile="CtField.java" interface="false" size="21" bugs="0"/>
-      <ClassStats class="javassist.CtField$MethodInitializer" sourceFile="CtField.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="javassist.CtField$MethodInitializer" sourceFile="CtField.java" interface="false" size="36" bugs="1" priority_1="1"/>
       <ClassStats class="javassist.CtField$MultiArrayInitializer" sourceFile="CtField.java" interface="false" size="18" bugs="0"/>
-      <ClassStats class="javassist.CtField$NewInitializer" sourceFile="CtField.java" interface="false" size="49" bugs="0"/>
+      <ClassStats class="javassist.CtField$NewInitializer" sourceFile="CtField.java" interface="false" size="49" bugs="1" priority_1="1"/>
       <ClassStats class="javassist.CtField$ParamInitializer" sourceFile="CtField.java" interface="false" size="26" bugs="0"/>
       <ClassStats class="javassist.CtField$PtreeInitializer" sourceFile="CtField.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="javassist.CtField$StringInitializer" sourceFile="CtField.java" interface="false" size="17" bugs="0"/>
@@ -6007,14 +6039,14 @@
       <ClassStats class="org.apache.commons.math3.analysis.solvers.UnivariateSolver" sourceFile="UnivariateSolver.java" interface="true" size="1" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.analysis.solvers.UnivariateSolverUtils" sourceFile="UnivariateSolverUtils.java" interface="false" size="92" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.apache.commons.math3.complex" total_bugs="0" total_types="8" total_size="617">
+    <PackageStats package="org.apache.commons.math3.complex" total_bugs="1" total_types="8" total_size="617" priority_1="1">
       <ClassStats class="org.apache.commons.math3.complex.Complex" sourceFile="Complex.java" interface="false" size="268" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.complex.ComplexField" sourceFile="ComplexField.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.complex.ComplexField$1" sourceFile="ComplexField.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.complex.ComplexField$LazyHolder" sourceFile="ComplexField.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.complex.ComplexFormat" sourceFile="ComplexFormat.java" interface="false" size="134" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.complex.ComplexUtils" sourceFile="ComplexUtils.java" interface="false" size="12" bugs="0"/>
-      <ClassStats class="org.apache.commons.math3.complex.Quaternion" sourceFile="Quaternion.java" interface="false" size="121" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.complex.Quaternion" sourceFile="Quaternion.java" interface="false" size="121" bugs="1" priority_1="1"/>
       <ClassStats class="org.apache.commons.math3.complex.RootsOfUnity" sourceFile="RootsOfUnity.java" interface="false" size="55" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.apache.commons.math3.dfp" total_bugs="0" total_types="10" total_size="2271">
@@ -6126,14 +6158,14 @@
       <ClassStats class="org.apache.commons.math3.fitting.PolynomialFitter" sourceFile="PolynomialFitter.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.fitting.WeightedObservedPoint" sourceFile="WeightedObservedPoint.java" interface="false" size="17" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.apache.commons.math3.fraction" total_bugs="0" total_types="14" total_size="963">
+    <PackageStats package="org.apache.commons.math3.fraction" total_bugs="2" total_types="14" total_size="963" priority_1="2">
       <ClassStats class="org.apache.commons.math3.fraction.AbstractFormat" sourceFile="AbstractFormat.java" interface="false" size="55" bugs="0"/>
-      <ClassStats class="org.apache.commons.math3.fraction.BigFraction" sourceFile="BigFraction.java" interface="false" size="313" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.fraction.BigFraction" sourceFile="BigFraction.java" interface="false" size="313" bugs="1" priority_1="1"/>
       <ClassStats class="org.apache.commons.math3.fraction.BigFractionField" sourceFile="BigFractionField.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.fraction.BigFractionField$1" sourceFile="BigFractionField.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.fraction.BigFractionField$LazyHolder" sourceFile="BigFractionField.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.fraction.BigFractionFormat" sourceFile="BigFractionFormat.java" interface="false" size="80" bugs="0"/>
-      <ClassStats class="org.apache.commons.math3.fraction.Fraction" sourceFile="Fraction.java" interface="false" size="229" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.fraction.Fraction" sourceFile="Fraction.java" interface="false" size="229" bugs="1" priority_1="1"/>
       <ClassStats class="org.apache.commons.math3.fraction.FractionConversionException" sourceFile="FractionConversionException.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.fraction.FractionField" sourceFile="FractionField.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.fraction.FractionField$1" sourceFile="FractionField.java" interface="false" size="1" bugs="0"/>
@@ -6777,13 +6809,13 @@
       <ClassStats class="org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance" sourceFile="StorelessBivariateCovariance.java" interface="false" size="32" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.stat.correlation.StorelessCovariance" sourceFile="StorelessCovariance.java" interface="false" size="44" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.apache.commons.math3.stat.descriptive" total_bugs="0" total_types="16" total_size="1179">
+    <PackageStats package="org.apache.commons.math3.stat.descriptive" total_bugs="2" total_types="16" total_size="1179" priority_1="2">
       <ClassStats class="org.apache.commons.math3.stat.descriptive.AbstractStorelessUnivariateStatistic" sourceFile="AbstractStorelessUnivariateStatistic.java" interface="false" size="37" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.stat.descriptive.AbstractUnivariateStatistic" sourceFile="AbstractUnivariateStatistic.java" interface="false" size="64" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics" sourceFile="AggregateSummaryStatistics.java" interface="false" size="100" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics$AggregatingSummaryStatistics" sourceFile="AggregateSummaryStatistics.java" interface="false" size="22" bugs="0"/>
-      <ClassStats class="org.apache.commons.math3.stat.descriptive.DescriptiveStatistics" sourceFile="DescriptiveStatistics.java" interface="false" size="217" bugs="0"/>
-      <ClassStats class="org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatistics" sourceFile="MultivariateSummaryStatistics.java" interface="false" size="184" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.stat.descriptive.DescriptiveStatistics" sourceFile="DescriptiveStatistics.java" interface="false" size="217" bugs="1" priority_1="1"/>
+      <ClassStats class="org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatistics" sourceFile="MultivariateSummaryStatistics.java" interface="false" size="184" bugs="1" priority_1="1"/>
       <ClassStats class="org.apache.commons.math3.stat.descriptive.StatisticalMultivariateSummary" sourceFile="StatisticalMultivariateSummary.java" interface="true" size="12" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.stat.descriptive.StatisticalSummary" sourceFile="StatisticalSummary.java" interface="true" size="8" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.stat.descriptive.StatisticalSummaryValues" sourceFile="StatisticalSummaryValues.java" interface="false" size="58" bugs="0"/>
@@ -7088,7 +7120,7 @@
       <ClassStats class="org.apache.velocity.runtime.parser.TokenMgrError" sourceFile="TokenMgrError.java" interface="false" size="46" bugs="0"/>
       <ClassStats class="org.apache.velocity.runtime.parser.VelocityCharStream" sourceFile="VelocityCharStream.java" interface="false" size="211" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.apache.velocity.runtime.parser.node" total_bugs="0" total_types="60" total_size="2114">
+    <PackageStats package="org.apache.velocity.runtime.parser.node" total_bugs="1" total_types="60" total_size="2114" priority_1="1">
       <ClassStats class="org.apache.velocity.runtime.parser.node.ASTAddNode" sourceFile="ASTAddNode.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="org.apache.velocity.runtime.parser.node.ASTAndNode" sourceFile="ASTAndNode.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="org.apache.velocity.runtime.parser.node.ASTAssignment" sourceFile="ASTAssignment.java" interface="false" size="9" bugs="0"/>
@@ -7125,7 +7157,7 @@
       <ClassStats class="org.apache.velocity.runtime.parser.node.ASTObjectArray" sourceFile="ASTObjectArray.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="org.apache.velocity.runtime.parser.node.ASTOrNode" sourceFile="ASTOrNode.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="org.apache.velocity.runtime.parser.node.ASTParameters" sourceFile="ASTParameters.java" interface="false" size="9" bugs="0"/>
-      <ClassStats class="org.apache.velocity.runtime.parser.node.ASTReference" sourceFile="ASTReference.java" interface="false" size="303" bugs="0"/>
+      <ClassStats class="org.apache.velocity.runtime.parser.node.ASTReference" sourceFile="ASTReference.java" interface="false" size="303" bugs="1" priority_1="1"/>
       <ClassStats class="org.apache.velocity.runtime.parser.node.ASTSetDirective" sourceFile="ASTSetDirective.java" interface="false" size="66" bugs="0"/>
       <ClassStats class="org.apache.velocity.runtime.parser.node.ASTStringLiteral" sourceFile="ASTStringLiteral.java" interface="false" size="96" bugs="0"/>
       <ClassStats class="org.apache.velocity.runtime.parser.node.ASTSubtractNode" sourceFile="ASTSubtractNode.java" interface="false" size="9" bugs="0"/>
@@ -7247,7 +7279,7 @@
       <ClassStats class="org.mozilla.classfile.SuperBlock" sourceFile="ClassFileWriter.java" interface="false" size="80" bugs="0"/>
       <ClassStats class="org.mozilla.classfile.TypeInfo" sourceFile="ClassFileWriter.java" interface="false" size="113" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.mozilla.javascript" total_bugs="0" total_types="170" total_size="24155">
+    <PackageStats package="org.mozilla.javascript" total_bugs="2" total_types="170" total_size="24155" priority_1="2">
       <ClassStats class="org.mozilla.javascript.Arguments" sourceFile="Arguments.java" interface="false" size="201" bugs="0"/>
       <ClassStats class="org.mozilla.javascript.BaseFunction" sourceFile="BaseFunction.java" interface="false" size="279" bugs="0"/>
       <ClassStats class="org.mozilla.javascript.BeanProperty" sourceFile="JavaMembers.java" interface="false" size="10" bugs="0"/>
@@ -7307,7 +7339,7 @@
       <ClassStats class="org.mozilla.javascript.JavaAdapter$JavaAdapterSignature" sourceFile="JavaAdapter.java" interface="false" size="33" bugs="0"/>
       <ClassStats class="org.mozilla.javascript.JavaMembers" sourceFile="JavaMembers.java" interface="false" size="435" bugs="0"/>
       <ClassStats class="org.mozilla.javascript.JavaMembers$MethodSignature" sourceFile="JavaMembers.java" interface="false" size="18" bugs="0"/>
-      <ClassStats class="org.mozilla.javascript.JavaScriptException" sourceFile="JavaScriptException.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="org.mozilla.javascript.JavaScriptException" sourceFile="JavaScriptException.java" interface="false" size="34" bugs="1" priority_1="1"/>
       <ClassStats class="org.mozilla.javascript.Kit" sourceFile="Kit.java" interface="false" size="175" bugs="0"/>
       <ClassStats class="org.mozilla.javascript.Kit$ComplexKey" sourceFile="Kit.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="org.mozilla.javascript.LazilyLoadedCtor" sourceFile="LazilyLoadedCtor.java" interface="false" size="69" bugs="0"/>
@@ -7408,7 +7440,7 @@
       <ClassStats class="org.mozilla.javascript.Synchronizer" sourceFile="Synchronizer.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="org.mozilla.javascript.Token" sourceFile="Token.java" interface="false" size="380" bugs="0"/>
       <ClassStats class="org.mozilla.javascript.Token$CommentType" sourceFile="Token.java" interface="false" size="12" bugs="0"/>
-      <ClassStats class="org.mozilla.javascript.TokenStream" sourceFile="TokenStream.java" interface="false" size="939" bugs="0"/>
+      <ClassStats class="org.mozilla.javascript.TokenStream" sourceFile="TokenStream.java" interface="false" size="939" bugs="1" priority_1="1"/>
       <ClassStats class="org.mozilla.javascript.TopLevel" sourceFile="TopLevel.java" interface="false" size="37" bugs="0"/>
       <ClassStats class="org.mozilla.javascript.TopLevel$Builtins" sourceFile="TopLevel.java" interface="false" size="23" bugs="0"/>
       <ClassStats class="org.mozilla.javascript.UintMap" sourceFile="UintMap.java" interface="false" size="236" bugs="0"/>
@@ -7539,8 +7571,8 @@
     <PackageStats package="org.mozilla.javascript.jdk15" total_bugs="0" total_types="1" total_size="24">
       <ClassStats class="org.mozilla.javascript.jdk15.VMBridge_jdk15" sourceFile="VMBridge_jdk15.java" interface="false" size="24" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.mozilla.javascript.json" total_bugs="0" total_types="2" total_size="187">
-      <ClassStats class="org.mozilla.javascript.json.JsonParser" sourceFile="JsonParser.java" interface="false" size="179" bugs="0"/>
+    <PackageStats package="org.mozilla.javascript.json" total_bugs="1" total_types="2" total_size="187" priority_1="1">
+      <ClassStats class="org.mozilla.javascript.json.JsonParser" sourceFile="JsonParser.java" interface="false" size="179" bugs="1" priority_1="1"/>
       <ClassStats class="org.mozilla.javascript.json.JsonParser$ParseException" sourceFile="JsonParser.java" interface="false" size="8" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.mozilla.javascript.optimizer" total_bugs="0" total_types="15" total_size="3618">
@@ -7797,8 +7829,8 @@
       <ClassStats class="org.openjdk.jmh.generators.core.StateObjectHandler" sourceFile="StateObjectHandler.java" interface="false" size="572" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.generators.core.StateObjectHandler$1" sourceFile="StateObjectHandler.java" interface="false" size="4" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.openjdk.jmh.infra" total_bugs="2" total_types="30" total_size="1844" priority_2="2">
-      <ClassStats class="org.openjdk.jmh.infra.BenchmarkParams" sourceFile="BenchmarkParams.java" interface="false" size="38" bugs="1" priority_2="1"/>
+    <PackageStats package="org.openjdk.jmh.infra" total_bugs="0" total_types="30" total_size="1844">
+      <ClassStats class="org.openjdk.jmh.infra.BenchmarkParams" sourceFile="BenchmarkParams.java" interface="false" size="38" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.BenchmarkParamsL0" sourceFile="BenchmarkParams.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.BenchmarkParamsL1" sourceFile="BenchmarkParams.java" interface="false" size="131" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.BenchmarkParamsL2" sourceFile="BenchmarkParams.java" interface="false" size="126" bugs="0"/>
@@ -7816,7 +7848,7 @@
       <ClassStats class="org.openjdk.jmh.infra.ControlL2" sourceFile="Control.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.ControlL3" sourceFile="Control.java" interface="false" size="131" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.ControlL4" sourceFile="Control.java" interface="false" size="4" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.infra.IterationParams" sourceFile="IterationParams.java" interface="false" size="19" bugs="1" priority_2="1"/>
+      <ClassStats class="org.openjdk.jmh.infra.IterationParams" sourceFile="IterationParams.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.IterationParamsL0" sourceFile="IterationParams.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.IterationParamsL1" sourceFile="IterationParams.java" interface="false" size="131" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.IterationParamsL2" sourceFile="IterationParams.java" interface="false" size="43" bugs="0"/>
@@ -7829,10 +7861,10 @@
       <ClassStats class="org.openjdk.jmh.infra.ThreadParamsL3" sourceFile="ThreadParams.java" interface="false" size="135" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.ThreadParamsL4" sourceFile="ThreadParams.java" interface="false" size="8" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.openjdk.jmh.infra.generated" total_bugs="6" total_types="4" total_size="543" priority_2="6">
+    <PackageStats package="org.openjdk.jmh.infra.generated" total_bugs="0" total_types="4" total_size="543">
       <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmhType" sourceFile="Blackhole_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B1" sourceFile="Blackhole_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" sourceFile="Blackhole_jmhType_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" sourceFile="Blackhole_jmhType_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B3" sourceFile="Blackhole_jmhType_B3.java" interface="false" size="259" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.openjdk.jmh.profile" total_bugs="0" total_types="49" total_size="2123">
@@ -8970,51 +9002,50 @@
       <ClassStats class="templates.stocks$Template" sourceFile="stocks.java" interface="false" size="126" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="7709" invocations="57801" avgMicrosecondsPerInvocation="133" maxMicrosecondsPerInvocation="48382" standardDeviationMicrosecondsPerInvocation="538"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="7356" invocations="55412" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="89838" standardDeviationMicrosecondsPerInvocation="735"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="6319" invocations="56473" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="141341" standardDeviationMicrosecondsPerInvocation="903"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="6126" invocations="59944" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="77812" standardDeviationMicrosecondsPerInvocation="886"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="5322" invocations="58976" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="70418" standardDeviationMicrosecondsPerInvocation="424"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="3844" invocations="48522" avgMicrosecondsPerInvocation="79" maxMicrosecondsPerInvocation="94796" standardDeviationMicrosecondsPerInvocation="547"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="3048" invocations="57813" avgMicrosecondsPerInvocation="52" maxMicrosecondsPerInvocation="50675" standardDeviationMicrosecondsPerInvocation="240"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="2320" invocations="66346" avgMicrosecondsPerInvocation="34" maxMicrosecondsPerInvocation="14103" standardDeviationMicrosecondsPerInvocation="154"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="2035" invocations="31764" avgMicrosecondsPerInvocation="64" maxMicrosecondsPerInvocation="25060" standardDeviationMicrosecondsPerInvocation="187"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1873" invocations="11551" avgMicrosecondsPerInvocation="162" maxMicrosecondsPerInvocation="78414" standardDeviationMicrosecondsPerInvocation="1287"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1847" invocations="8792" avgMicrosecondsPerInvocation="210" maxMicrosecondsPerInvocation="15509" standardDeviationMicrosecondsPerInvocation="616"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="1745" invocations="3823483" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="2533" standardDeviationMicrosecondsPerInvocation="2"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="1701" invocations="57798" avgMicrosecondsPerInvocation="29" maxMicrosecondsPerInvocation="110294" standardDeviationMicrosecondsPerInvocation="471"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1555" invocations="8792" avgMicrosecondsPerInvocation="176" maxMicrosecondsPerInvocation="16065" standardDeviationMicrosecondsPerInvocation="519"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="1487" invocations="7606" avgMicrosecondsPerInvocation="195" maxMicrosecondsPerInvocation="815407" standardDeviationMicrosecondsPerInvocation="9350"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="1353" invocations="7606" avgMicrosecondsPerInvocation="177" maxMicrosecondsPerInvocation="27078" standardDeviationMicrosecondsPerInvocation="576"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="1258" invocations="7606" avgMicrosecondsPerInvocation="165" maxMicrosecondsPerInvocation="19268" standardDeviationMicrosecondsPerInvocation="506"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="1192" invocations="7606" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="11667" standardDeviationMicrosecondsPerInvocation="433"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="960" invocations="55412" avgMicrosecondsPerInvocation="17" maxMicrosecondsPerInvocation="104982" standardDeviationMicrosecondsPerInvocation="448"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.ReadOfInstanceFieldInMethodInvokedByConstructorInSuperclass" totalMilliseconds="930" invocations="7606" avgMicrosecondsPerInvocation="122" maxMicrosecondsPerInvocation="450761" standardDeviationMicrosecondsPerInvocation="5170"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="930" invocations="8792" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="514523" standardDeviationMicrosecondsPerInvocation="5487"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="906" invocations="7606" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="14029" standardDeviationMicrosecondsPerInvocation="390"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="894" invocations="54185" avgMicrosecondsPerInvocation="16" maxMicrosecondsPerInvocation="6179" standardDeviationMicrosecondsPerInvocation="67"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="865" invocations="61194" avgMicrosecondsPerInvocation="14" maxMicrosecondsPerInvocation="30059" standardDeviationMicrosecondsPerInvocation="129"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="863" invocations="27954" avgMicrosecondsPerInvocation="30" maxMicrosecondsPerInvocation="13558" standardDeviationMicrosecondsPerInvocation="102"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="833" invocations="7606" avgMicrosecondsPerInvocation="109" maxMicrosecondsPerInvocation="41313" standardDeviationMicrosecondsPerInvocation="929"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="787" invocations="7606" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="21053" standardDeviationMicrosecondsPerInvocation="478"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="749" invocations="7606" avgMicrosecondsPerInvocation="98" maxMicrosecondsPerInvocation="10047" standardDeviationMicrosecondsPerInvocation="330"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="742" invocations="7606" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="36711" standardDeviationMicrosecondsPerInvocation="491"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="726" invocations="7606" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="35798" standardDeviationMicrosecondsPerInvocation="487"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="725" invocations="7606" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="24408" standardDeviationMicrosecondsPerInvocation="399"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="725" invocations="7606" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="47682" standardDeviationMicrosecondsPerInvocation="618"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="720" invocations="7606" avgMicrosecondsPerInvocation="94" maxMicrosecondsPerInvocation="7758" standardDeviationMicrosecondsPerInvocation="263"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="710" invocations="7606" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="7635" standardDeviationMicrosecondsPerInvocation="281"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="700" invocations="6559" avgMicrosecondsPerInvocation="106" maxMicrosecondsPerInvocation="6727" standardDeviationMicrosecondsPerInvocation="265"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="694" invocations="7606" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="4710" standardDeviationMicrosecondsPerInvocation="217"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="688" invocations="7606" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="34085" standardDeviationMicrosecondsPerInvocation="1249"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="683" invocations="7606" avgMicrosecondsPerInvocation="89" maxMicrosecondsPerInvocation="10280" standardDeviationMicrosecondsPerInvocation="286"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="654" invocations="7606" avgMicrosecondsPerInvocation="86" maxMicrosecondsPerInvocation="10757" standardDeviationMicrosecondsPerInvocation="270"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="645" invocations="61194" avgMicrosecondsPerInvocation="10" maxMicrosecondsPerInvocation="8631" standardDeviationMicrosecondsPerInvocation="102"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="638" invocations="7606" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="39641" standardDeviationMicrosecondsPerInvocation="568"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.BenchmarkMethodDetector" totalMilliseconds="634" invocations="7606" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="95328" standardDeviationMicrosecondsPerInvocation="1114"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="620" invocations="7606" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="10260" standardDeviationMicrosecondsPerInvocation="257"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="618" invocations="7606" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="8218" standardDeviationMicrosecondsPerInvocation="254"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="612" invocations="7606" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="51309" standardDeviationMicrosecondsPerInvocation="610"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="19790" invocations="7606" avgMicrosecondsPerInvocation="2601" maxMicrosecondsPerInvocation="1183867" standardDeviationMicrosecondsPerInvocation="17649"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="8308" invocations="55412" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="122313" standardDeviationMicrosecondsPerInvocation="1108"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="8245" invocations="57801" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="100575" standardDeviationMicrosecondsPerInvocation="781"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="6740" invocations="56473" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="91888" standardDeviationMicrosecondsPerInvocation="855"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="6492" invocations="59944" avgMicrosecondsPerInvocation="108" maxMicrosecondsPerInvocation="80350" standardDeviationMicrosecondsPerInvocation="835"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="5640" invocations="58976" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="74991" standardDeviationMicrosecondsPerInvocation="496"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="4165" invocations="48522" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="90894" standardDeviationMicrosecondsPerInvocation="773"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="3346" invocations="61194" avgMicrosecondsPerInvocation="54" maxMicrosecondsPerInvocation="41528" standardDeviationMicrosecondsPerInvocation="219"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="3143" invocations="66468" avgMicrosecondsPerInvocation="47" maxMicrosecondsPerInvocation="101546" standardDeviationMicrosecondsPerInvocation="563"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="2533" invocations="8856" avgMicrosecondsPerInvocation="286" maxMicrosecondsPerInvocation="56363" standardDeviationMicrosecondsPerInvocation="988"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="2167" invocations="8856" avgMicrosecondsPerInvocation="244" maxMicrosecondsPerInvocation="91674" standardDeviationMicrosecondsPerInvocation="1184"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="2080" invocations="11761" avgMicrosecondsPerInvocation="176" maxMicrosecondsPerInvocation="84989" standardDeviationMicrosecondsPerInvocation="1079"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="1994" invocations="57798" avgMicrosecondsPerInvocation="34" maxMicrosecondsPerInvocation="84869" standardDeviationMicrosecondsPerInvocation="557"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="1887" invocations="3921506" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="52200" standardDeviationMicrosecondsPerInvocation="26"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1711" invocations="32161" avgMicrosecondsPerInvocation="53" maxMicrosecondsPerInvocation="43629" standardDeviationMicrosecondsPerInvocation="309"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="1536" invocations="7606" avgMicrosecondsPerInvocation="202" maxMicrosecondsPerInvocation="67778" standardDeviationMicrosecondsPerInvocation="1107"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="1471" invocations="7606" avgMicrosecondsPerInvocation="193" maxMicrosecondsPerInvocation="34398" standardDeviationMicrosecondsPerInvocation="706"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="1358" invocations="7606" avgMicrosecondsPerInvocation="178" maxMicrosecondsPerInvocation="49885" standardDeviationMicrosecondsPerInvocation="757"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="998" invocations="54283" avgMicrosecondsPerInvocation="18" maxMicrosecondsPerInvocation="4888" standardDeviationMicrosecondsPerInvocation="66"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="982" invocations="7606" avgMicrosecondsPerInvocation="129" maxMicrosecondsPerInvocation="79980" standardDeviationMicrosecondsPerInvocation="1111"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="963" invocations="7606" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="67788" standardDeviationMicrosecondsPerInvocation="855"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="950" invocations="7606" avgMicrosecondsPerInvocation="124" maxMicrosecondsPerInvocation="60790" standardDeviationMicrosecondsPerInvocation="804"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="947" invocations="61194" avgMicrosecondsPerInvocation="15" maxMicrosecondsPerInvocation="41667" standardDeviationMicrosecondsPerInvocation="178"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="936" invocations="28082" avgMicrosecondsPerInvocation="33" maxMicrosecondsPerInvocation="43948" standardDeviationMicrosecondsPerInvocation="274"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="930" invocations="7606" avgMicrosecondsPerInvocation="122" maxMicrosecondsPerInvocation="95938" standardDeviationMicrosecondsPerInvocation="1695"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="913" invocations="55412" avgMicrosecondsPerInvocation="16" maxMicrosecondsPerInvocation="6407" standardDeviationMicrosecondsPerInvocation="61"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="862" invocations="7606" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="11093" standardDeviationMicrosecondsPerInvocation="372"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="862" invocations="7606" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="71096" standardDeviationMicrosecondsPerInvocation="1239"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector" totalMilliseconds="856" invocations="7606" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="41834" standardDeviationMicrosecondsPerInvocation="573"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="852" invocations="7606" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="8660" standardDeviationMicrosecondsPerInvocation="341"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="833" invocations="7606" avgMicrosecondsPerInvocation="109" maxMicrosecondsPerInvocation="10926" standardDeviationMicrosecondsPerInvocation="370"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="825" invocations="7606" avgMicrosecondsPerInvocation="108" maxMicrosecondsPerInvocation="24226" standardDeviationMicrosecondsPerInvocation="449"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="816" invocations="7606" avgMicrosecondsPerInvocation="107" maxMicrosecondsPerInvocation="39818" standardDeviationMicrosecondsPerInvocation="598"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="812" invocations="7606" avgMicrosecondsPerInvocation="106" maxMicrosecondsPerInvocation="7253" standardDeviationMicrosecondsPerInvocation="284"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="793" invocations="7606" avgMicrosecondsPerInvocation="104" maxMicrosecondsPerInvocation="7392" standardDeviationMicrosecondsPerInvocation="280"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="791" invocations="7606" avgMicrosecondsPerInvocation="104" maxMicrosecondsPerInvocation="45554" standardDeviationMicrosecondsPerInvocation="607"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="789" invocations="61194" avgMicrosecondsPerInvocation="12" maxMicrosecondsPerInvocation="67418" standardDeviationMicrosecondsPerInvocation="300"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.BenchmarkMethodDetector" totalMilliseconds="778" invocations="7606" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="81022" standardDeviationMicrosecondsPerInvocation="1096"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="777" invocations="7606" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="14795" standardDeviationMicrosecondsPerInvocation="301"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="763" invocations="7606" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="7494" standardDeviationMicrosecondsPerInvocation="321"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="759" invocations="7606" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="8558" standardDeviationMicrosecondsPerInvocation="297"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="725" invocations="7606" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="37502" standardDeviationMicrosecondsPerInvocation="503"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="721" invocations="7606" avgMicrosecondsPerInvocation="94" maxMicrosecondsPerInvocation="9736" standardDeviationMicrosecondsPerInvocation="336"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BadSyntaxForRegularExpression" totalMilliseconds="709" invocations="7606" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="9109" standardDeviationMicrosecondsPerInvocation="327"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

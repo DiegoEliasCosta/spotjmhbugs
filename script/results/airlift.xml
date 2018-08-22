@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1534797000000" analysisTimestamp="1534797003025" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534870534000" analysisTimestamp="1534870536985" release="">
   <Project projectName="">
     <Jar>tmp/airlift</Jar>
   </Project>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="io.airlift.bootstrap.ExecutedInstance">
+      <SourceLine classname="io.airlift.bootstrap.ExecutedInstance" start="25" end="65" sourcefile="ExecutedInstance.java" sourcepath="io/airlift/bootstrap/ExecutedInstance.java"/>
+    </Class>
+    <Method classname="io.airlift.bootstrap.ExecutedInstance" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="io.airlift.bootstrap.ExecutedInstance" start="48" end="65" startBytecode="0" endBytecode="27" sourcefile="ExecutedInstance.java" sourcepath="io/airlift/bootstrap/ExecutedInstance.java"/>
+    </Method>
+    <LocalVariable name="e" register="1" pc="28" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="io.airlift.bootstrap.ExecutedInstance" start="56" end="56" startBytecode="27" endBytecode="27" sourcefile="ExecutedInstance.java" sourcepath="io/airlift/bootstrap/ExecutedInstance.java"/>
+  </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers">
       <SourceLine classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers" start="47" end="83" sourcefile="BenchmarkWhenAnyCompleteCancelOthers.java" sourcepath="io/airlift/concurrent/BenchmarkWhenAnyCompleteCancelOthers.java"/>
@@ -12,33 +22,6 @@
       <SourceLine classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers" start="60" end="72" startBytecode="0" endBytecode="295" sourcefile="BenchmarkWhenAnyCompleteCancelOthers.java" sourcepath="io/airlift/concurrent/BenchmarkWhenAnyCompleteCancelOthers.java"/>
     </Method>
     <SourceLine classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers" start="60" end="60" startBytecode="0" endBytecode="0" sourcefile="BenchmarkWhenAnyCompleteCancelOthers.java" sourcepath="io/airlift/concurrent/BenchmarkWhenAnyCompleteCancelOthers.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers">
-      <SourceLine classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers" start="47" end="83" sourcefile="BenchmarkWhenAnyCompleteCancelOthers.java" sourcepath="io/airlift/concurrent/BenchmarkWhenAnyCompleteCancelOthers.java"/>
-    </Class>
-    <Method classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers" name="benchmark" signature="()V" isStatic="false">
-      <SourceLine classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers" start="60" end="72" startBytecode="0" endBytecode="295" sourcefile="BenchmarkWhenAnyCompleteCancelOthers.java" sourcepath="io/airlift/concurrent/BenchmarkWhenAnyCompleteCancelOthers.java"/>
-    </Method>
-    <SourceLine classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers" start="66" end="66" startBytecode="52" endBytecode="52" sourcefile="BenchmarkWhenAnyCompleteCancelOthers.java" sourcepath="io/airlift/concurrent/BenchmarkWhenAnyCompleteCancelOthers.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers">
-      <SourceLine classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers" start="47" end="83" sourcefile="BenchmarkWhenAnyCompleteCancelOthers.java" sourcepath="io/airlift/concurrent/BenchmarkWhenAnyCompleteCancelOthers.java"/>
-    </Class>
-    <Method classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers" name="benchmark" signature="()V" isStatic="false">
-      <SourceLine classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers" start="60" end="72" startBytecode="0" endBytecode="295" sourcefile="BenchmarkWhenAnyCompleteCancelOthers.java" sourcepath="io/airlift/concurrent/BenchmarkWhenAnyCompleteCancelOthers.java"/>
-    </Method>
-    <SourceLine classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers" start="69" end="69" startBytecode="81" endBytecode="81" sourcefile="BenchmarkWhenAnyCompleteCancelOthers.java" sourcepath="io/airlift/concurrent/BenchmarkWhenAnyCompleteCancelOthers.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers">
-      <SourceLine classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers" start="47" end="83" sourcefile="BenchmarkWhenAnyCompleteCancelOthers.java" sourcepath="io/airlift/concurrent/BenchmarkWhenAnyCompleteCancelOthers.java"/>
-    </Class>
-    <Method classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers" name="benchmark" signature="()V" isStatic="false">
-      <SourceLine classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers" start="60" end="72" startBytecode="0" endBytecode="295" sourcefile="BenchmarkWhenAnyCompleteCancelOthers.java" sourcepath="io/airlift/concurrent/BenchmarkWhenAnyCompleteCancelOthers.java"/>
-    </Method>
-    <SourceLine classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers" start="71" end="71" startBytecode="94" endBytecode="94" sourcefile="BenchmarkWhenAnyCompleteCancelOthers.java" sourcepath="io/airlift/concurrent/BenchmarkWhenAnyCompleteCancelOthers.java"/>
   </BugInstance>
   <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers">
@@ -49,53 +32,224 @@
     </Method>
     <SourceLine classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers" start="63" end="63" startBytecode="59" endBytecode="59" sourcefile="BenchmarkWhenAnyCompleteCancelOthers.java" sourcepath="io/airlift/concurrent/BenchmarkWhenAnyCompleteCancelOthers.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2">
-      <SourceLine classname="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2" start="3" end="17" sourcefile="BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java" sourcepath="io/airlift/concurrent/generated/BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java"/>
+  <BugInstance type="JMH_UNSINKED_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers">
+      <SourceLine classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers" start="47" end="83" sourcefile="BenchmarkWhenAnyCompleteCancelOthers.java" sourcepath="io/airlift/concurrent/BenchmarkWhenAnyCompleteCancelOthers.java"/>
     </Class>
-    <Field classname="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2" sourcefile="BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java" sourcepath="io/airlift/concurrent/generated/BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java"/>
-    </Field>
+    <Method classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers" name="benchmark" signature="()V" isStatic="false">
+      <SourceLine classname="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers" start="60" end="72" startBytecode="0" endBytecode="295" sourcefile="BenchmarkWhenAnyCompleteCancelOthers.java" sourcepath="io/airlift/concurrent/BenchmarkWhenAnyCompleteCancelOthers.java"/>
+    </Method>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2">
-      <SourceLine classname="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2" start="3" end="17" sourcefile="BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java" sourcepath="io/airlift/concurrent/generated/BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="io.airlift.concurrent.TestBoundedExecutor">
+      <SourceLine classname="io.airlift.concurrent.TestBoundedExecutor" start="22" end="196" sourcefile="TestBoundedExecutor.java" sourcepath="io/airlift/concurrent/TestBoundedExecutor.java"/>
     </Class>
-    <Field classname="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2" sourcefile="BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java" sourcepath="io/airlift/concurrent/generated/BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java"/>
-    </Field>
+    <Method classname="io.airlift.concurrent.TestBoundedExecutor" name="testExecutorCorruptionDetection" signature="()V" isStatic="false">
+      <SourceLine classname="io.airlift.concurrent.TestBoundedExecutor" start="117" end="143" startBytecode="0" endBytecode="34" sourcefile="TestBoundedExecutor.java" sourcepath="io/airlift/concurrent/TestBoundedExecutor.java"/>
+    </Method>
+    <LocalVariable name="?" register="4" pc="48" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="io.airlift.concurrent.TestBoundedExecutor" start="132" end="132" startBytecode="48" endBytecode="48" sourcefile="TestBoundedExecutor.java" sourcepath="io/airlift/concurrent/TestBoundedExecutor.java"/>
+    <SourceLine classname="io.airlift.concurrent.TestBoundedExecutor" start="141" end="141" startBytecode="72" endBytecode="72" sourcefile="TestBoundedExecutor.java" sourcepath="io/airlift/concurrent/TestBoundedExecutor.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2">
-      <SourceLine classname="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2" start="3" end="17" sourcefile="BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java" sourcepath="io/airlift/concurrent/generated/BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="io.airlift.configuration.ConfigurationFactoryTest">
+      <SourceLine classname="io.airlift.configuration.ConfigurationFactoryTest" start="41" end="344" sourcefile="ConfigurationFactoryTest.java" sourcepath="io/airlift/configuration/ConfigurationFactoryTest.java"/>
     </Class>
-    <Field classname="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2" sourcefile="BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java" sourcepath="io/airlift/concurrent/generated/BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java"/>
-    </Field>
+    <Method classname="io.airlift.configuration.ConfigurationFactoryTest" name="testDefunctPropertyInConfigThrows" signature="()V" isStatic="false">
+      <SourceLine classname="io.airlift.configuration.ConfigurationFactoryTest" start="218" end="231" startBytecode="0" endBytecode="45" sourcefile="ConfigurationFactoryTest.java" sourcepath="io/airlift/configuration/ConfigurationFactoryTest.java"/>
+    </Method>
+    <LocalVariable name="e" register="3" pc="58" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="io.airlift.configuration.ConfigurationFactoryTest" start="226" end="226" startBytecode="57" endBytecode="57" sourcefile="ConfigurationFactoryTest.java" sourcepath="io/airlift/configuration/ConfigurationFactoryTest.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2">
-      <SourceLine classname="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2" start="3" end="17" sourcefile="BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java" sourcepath="io/airlift/concurrent/generated/BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="io.airlift.configuration.ConfigurationFactoryTest">
+      <SourceLine classname="io.airlift.configuration.ConfigurationFactoryTest" start="41" end="344" sourcefile="ConfigurationFactoryTest.java" sourcepath="io/airlift/configuration/ConfigurationFactoryTest.java"/>
     </Class>
-    <Field classname="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2" sourcefile="BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java" sourcepath="io/airlift/concurrent/generated/BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java"/>
-    </Field>
+    <Method classname="io.airlift.configuration.ConfigurationFactoryTest" name="testDefunctPropertyWithPrefixInConfigThrows" signature="()V" isStatic="false">
+      <SourceLine classname="io.airlift.configuration.ConfigurationFactoryTest" start="236" end="249" startBytecode="0" endBytecode="45" sourcefile="ConfigurationFactoryTest.java" sourcepath="io/airlift/configuration/ConfigurationFactoryTest.java"/>
+    </Method>
+    <LocalVariable name="e" register="3" pc="58" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="io.airlift.configuration.ConfigurationFactoryTest" start="244" end="244" startBytecode="57" endBytecode="57" sourcefile="ConfigurationFactoryTest.java" sourcepath="io/airlift/configuration/ConfigurationFactoryTest.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2">
-      <SourceLine classname="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2" start="3" end="17" sourcefile="BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java" sourcepath="io/airlift/concurrent/generated/BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="io.airlift.configuration.ConfigurationFactoryTest">
+      <SourceLine classname="io.airlift.configuration.ConfigurationFactoryTest" start="41" end="344" sourcefile="ConfigurationFactoryTest.java" sourcepath="io/airlift/configuration/ConfigurationFactoryTest.java"/>
     </Class>
-    <Field classname="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2" sourcefile="BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java" sourcepath="io/airlift/concurrent/generated/BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java"/>
-    </Field>
+    <Method classname="io.airlift.configuration.ConfigurationFactoryTest" name="testFailedBeanValidation" signature="()V" isStatic="false">
+      <SourceLine classname="io.airlift.configuration.ConfigurationFactoryTest" start="270" end="284" startBytecode="0" endBytecode="52" sourcefile="ConfigurationFactoryTest.java" sourcepath="io/airlift/configuration/ConfigurationFactoryTest.java"/>
+    </Method>
+    <LocalVariable name="e" register="3" pc="47" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="io.airlift.configuration.ConfigurationFactoryTest" start="278" end="278" startBytecode="46" endBytecode="46" sourcefile="ConfigurationFactoryTest.java" sourcepath="io/airlift/configuration/ConfigurationFactoryTest.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2">
-      <SourceLine classname="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2" start="3" end="17" sourcefile="BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java" sourcepath="io/airlift/concurrent/generated/BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="io.airlift.configuration.ConfigurationFactoryTest">
+      <SourceLine classname="io.airlift.configuration.ConfigurationFactoryTest" start="41" end="344" sourcefile="ConfigurationFactoryTest.java" sourcepath="io/airlift/configuration/ConfigurationFactoryTest.java"/>
     </Class>
-    <Field classname="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2" sourcefile="BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java" sourcepath="io/airlift/concurrent/generated/BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java"/>
-    </Field>
+    <Method classname="io.airlift.configuration.ConfigurationFactoryTest" name="testFailedBeanValidationPrefix" signature="()V" isStatic="false">
+      <SourceLine classname="io.airlift.configuration.ConfigurationFactoryTest" start="289" end="303" startBytecode="0" endBytecode="52" sourcefile="ConfigurationFactoryTest.java" sourcepath="io/airlift/configuration/ConfigurationFactoryTest.java"/>
+    </Method>
+    <LocalVariable name="e" register="3" pc="47" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="io.airlift.configuration.ConfigurationFactoryTest" start="297" end="297" startBytecode="46" endBytecode="46" sourcefile="ConfigurationFactoryTest.java" sourcepath="io/airlift/configuration/ConfigurationFactoryTest.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="io.airlift.configuration.ConfigurationFactoryTest">
+      <SourceLine classname="io.airlift.configuration.ConfigurationFactoryTest" start="41" end="344" sourcefile="ConfigurationFactoryTest.java" sourcepath="io/airlift/configuration/ConfigurationFactoryTest.java"/>
+    </Class>
+    <Method classname="io.airlift.configuration.ConfigurationFactoryTest" name="testFailedCoercion" signature="()V" isStatic="false">
+      <SourceLine classname="io.airlift.configuration.ConfigurationFactoryTest" start="308" end="320" startBytecode="0" endBytecode="40" sourcefile="ConfigurationFactoryTest.java" sourcepath="io/airlift/configuration/ConfigurationFactoryTest.java"/>
+    </Method>
+    <LocalVariable name="e" register="3" pc="47" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="io.airlift.configuration.ConfigurationFactoryTest" start="315" end="315" startBytecode="46" endBytecode="46" sourcefile="ConfigurationFactoryTest.java" sourcepath="io/airlift/configuration/ConfigurationFactoryTest.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="io.airlift.configuration.ConfigurationFactoryTest">
+      <SourceLine classname="io.airlift.configuration.ConfigurationFactoryTest" start="41" end="344" sourcefile="ConfigurationFactoryTest.java" sourcepath="io/airlift/configuration/ConfigurationFactoryTest.java"/>
+    </Class>
+    <Method classname="io.airlift.configuration.ConfigurationFactoryTest" name="testFailedCoercionPrefix" signature="()V" isStatic="false">
+      <SourceLine classname="io.airlift.configuration.ConfigurationFactoryTest" start="325" end="337" startBytecode="0" endBytecode="40" sourcefile="ConfigurationFactoryTest.java" sourcepath="io/airlift/configuration/ConfigurationFactoryTest.java"/>
+    </Method>
+    <LocalVariable name="e" register="3" pc="47" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="io.airlift.configuration.ConfigurationFactoryTest" start="332" end="332" startBytecode="46" endBytecode="46" sourcefile="ConfigurationFactoryTest.java" sourcepath="io/airlift/configuration/ConfigurationFactoryTest.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="io.airlift.configuration.TestConfig">
+      <SourceLine classname="io.airlift.configuration.TestConfig" start="51" end="295" sourcefile="TestConfig.java" sourcepath="io/airlift/configuration/TestConfig.java"/>
+    </Class>
+    <Method classname="io.airlift.configuration.TestConfig" name="testDetectsNoConfigAnnotations" signature="()V" isStatic="false">
+      <SourceLine classname="io.airlift.configuration.TestConfig" start="195" end="202" startBytecode="0" endBytecode="18" sourcefile="TestConfig.java" sourcepath="io/airlift/configuration/TestConfig.java"/>
+    </Method>
+    <LocalVariable name="injector" register="1" pc="39" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="io.airlift.configuration.TestConfig" start="199" end="199" startBytecode="39" endBytecode="39" sourcefile="TestConfig.java" sourcepath="io/airlift/configuration/TestConfig.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="io.airlift.dbpool.ManagedDataSourceTest">
+      <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="51" end="492" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java"/>
+    </Class>
+    <Method classname="io.airlift.dbpool.ManagedDataSourceTest" name="testGetConnectionUsernamePassword" signature="()V" isStatic="false">
+      <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="485" end="492" startBytecode="0" endBytecode="19" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java"/>
+    </Method>
+    <LocalVariable name="?" register="2" pc="39" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="490" end="490" startBytecode="39" endBytecode="39" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="io.airlift.dbpool.ManagedDataSourceTest">
+      <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="51" end="492" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java"/>
+    </Class>
+    <Method classname="io.airlift.dbpool.ManagedDataSourceTest" name="testMaxConnectionWaitMillis" signature="()V" isStatic="false">
+      <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="86" end="138" startBytecode="0" endBytecode="110" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java"/>
+    </Method>
+    <LocalVariable name="?" register="6" pc="138" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="113" end="113" startBytecode="138" endBytecode="138" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java"/>
+    <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="124" end="124" startBytecode="185" endBytecode="185" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="132" end="132" startBytecode="219" endBytecode="219" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="io.airlift.dbpool.ManagedDataSourceTest">
+      <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="51" end="492" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java"/>
+    </Class>
+    <Method classname="io.airlift.dbpool.ManagedDataSourceTest" name="testMaxConnectionWaitMillis" signature="()V" isStatic="false">
+      <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="86" end="138" startBytecode="0" endBytecode="110" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java"/>
+    </Method>
+    <LocalVariable name="duration" register="5" pc="61" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="99" end="99" startBytecode="61" endBytecode="61" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="io.airlift.dbpool.ManagedDataSourceTest">
+      <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="51" end="492" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java"/>
+    </Class>
+    <Method classname="io.airlift.dbpool.ManagedDataSourceTest" name="testMaxConnections" signature="()V" isStatic="false">
+      <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="154" end="237" startBytecode="0" endBytecode="163" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java"/>
+    </Method>
+    <LocalVariable name="?" register="3" pc="68" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="167" end="167" startBytecode="68" endBytecode="68" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java"/>
+    <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="182" end="182" startBytecode="125" endBytecode="125" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="196" end="196" startBytecode="172" endBytecode="172" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="207" end="207" startBytecode="220" endBytecode="220" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="221" end="221" startBytecode="279" endBytecode="279" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="228" end="228" startBytecode="311" endBytecode="311" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="io.airlift.dbpool.ManagedDataSourceTest">
+      <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="51" end="492" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java"/>
+    </Class>
+    <Method classname="io.airlift.dbpool.ManagedDataSourceTest" name="testWrapper" signature="()V" isStatic="false">
+      <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="443" end="479" startBytecode="0" endBytecode="77" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java"/>
+    </Method>
+    <LocalVariable name="?" register="2" pc="81" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="453" end="453" startBytecode="81" endBytecode="81" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java"/>
+    <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="459" end="459" startBytecode="96" endBytecode="96" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="470" end="470" startBytecode="142" endBytecode="142" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="io.airlift.dbpool.ManagedDataSourceTest" start="477" end="477" startBytecode="158" endBytecode="158" sourcefile="ManagedDataSourceTest.java" sourcepath="io/airlift/dbpool/ManagedDataSourceTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="io.airlift.dbpool.PooledDataSource">
+      <SourceLine classname="io.airlift.dbpool.PooledDataSource" start="35" end="93" sourcefile="PooledDataSource.java" sourcepath="io/airlift/dbpool/PooledDataSource.java"/>
+    </Class>
+    <Method classname="io.airlift.dbpool.PooledDataSource" name="dispose" signature="()V" isStatic="false">
+      <SourceLine classname="io.airlift.dbpool.PooledDataSource" start="45" end="55" startBytecode="0" endBytecode="21" sourcefile="PooledDataSource.java" sourcepath="io/airlift/dbpool/PooledDataSource.java"/>
+    </Method>
+    <LocalVariable name="?" register="2" pc="34" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="io.airlift.dbpool.PooledDataSource" start="52" end="52" startBytecode="34" endBytecode="34" sourcefile="PooledDataSource.java" sourcepath="io/airlift/dbpool/PooledDataSource.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="io.airlift.discovery.client.TestAnnouncer">
+      <SourceLine classname="io.airlift.discovery.client.TestAnnouncer" start="39" end="174" sourcefile="TestAnnouncer.java" sourcepath="io/airlift/discovery/client/TestAnnouncer.java"/>
+    </Class>
+    <Method classname="io.airlift.discovery.client.TestAnnouncer" name="startAfterDestroy" signature="()V" isStatic="false">
+      <SourceLine classname="io.airlift.discovery.client.TestAnnouncer" start="81" end="90" startBytecode="0" endBytecode="13" sourcefile="TestAnnouncer.java" sourcepath="io/airlift/discovery/client/TestAnnouncer.java"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="29" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="io.airlift.discovery.client.TestAnnouncer" start="88" end="88" startBytecode="29" endBytecode="29" sourcefile="TestAnnouncer.java" sourcepath="io/airlift/discovery/client/TestAnnouncer.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="io.airlift.http.client.TestingSocksProxy$SocksProxyAcceptor">
+      <SourceLine classname="io.airlift.http.client.TestingSocksProxy$SocksProxyAcceptor" start="100" end="126" sourcefile="TestingSocksProxy.java" sourcepath="io/airlift/http/client/TestingSocksProxy.java"/>
+    </Class>
+    <Method classname="io.airlift.http.client.TestingSocksProxy$SocksProxyAcceptor" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="io.airlift.http.client.TestingSocksProxy$SocksProxyAcceptor" start="116" end="126" startBytecode="0" endBytecode="31" sourcefile="TestingSocksProxy.java" sourcepath="io/airlift/http/client/TestingSocksProxy.java"/>
+    </Method>
+    <LocalVariable name="socket" register="1" pc="62" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="io.airlift.http.client.TestingSocksProxy$SocksProxyAcceptor" start="121" end="121" startBytecode="62" endBytecode="62" sourcefile="TestingSocksProxy.java" sourcepath="io/airlift/http/client/TestingSocksProxy.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="io.airlift.http.server.AsyncResponseHandler">
+      <SourceLine classname="io.airlift.http.server.AsyncResponseHandler" start="42" end="96" sourcefile="AsyncResponseHandler.java" sourcepath="io/airlift/http/server/AsyncResponseHandler.java"/>
+    </Class>
+    <Method classname="io.airlift.http.server.AsyncResponseHandler" name="cancelFuture" signature="()V" isStatic="false">
+      <SourceLine classname="io.airlift.http.server.AsyncResponseHandler" start="82" end="92" startBytecode="0" endBytecode="13" sourcefile="AsyncResponseHandler.java" sourcepath="io/airlift/http/server/AsyncResponseHandler.java"/>
+    </Method>
+    <LocalVariable name="?" register="2" pc="26" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="io.airlift.http.server.AsyncResponseHandler" start="89" end="89" startBytecode="26" endBytecode="26" sourcefile="AsyncResponseHandler.java" sourcepath="io/airlift/http/server/AsyncResponseHandler.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="io.airlift.jaxrs.TestOverrideMethodFilterInHttpServer">
+      <SourceLine classname="io.airlift.jaxrs.TestOverrideMethodFilterInHttpServer" start="55" end="307" sourcefile="TestOverrideMethodFilterInHttpServer.java" sourcepath="io/airlift/jaxrs/TestOverrideMethodFilterInHttpServer.java"/>
+    </Class>
+    <Method classname="io.airlift.jaxrs.TestOverrideMethodFilterInHttpServer" name="teardown" signature="()V" isStatic="false">
+      <SourceLine classname="io.airlift.jaxrs.TestOverrideMethodFilterInHttpServer" start="82" end="89" startBytecode="0" endBytecode="16" sourcefile="TestOverrideMethodFilterInHttpServer.java" sourcepath="io/airlift/jaxrs/TestOverrideMethodFilterInHttpServer.java"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="17" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="io.airlift.jaxrs.TestOverrideMethodFilterInHttpServer" start="86" end="86" startBytecode="17" endBytecode="17" sourcefile="TestOverrideMethodFilterInHttpServer.java" sourcepath="io/airlift/jaxrs/TestOverrideMethodFilterInHttpServer.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="io.airlift.log.TestLoggingMBean">
+      <SourceLine classname="io.airlift.log.TestLoggingMBean" start="28" end="84" sourcefile="TestLoggingMBean.java" sourcepath="io/airlift/log/TestLoggingMBean.java"/>
+    </Class>
+    <Method classname="io.airlift.log.TestLoggingMBean" name="testSetInvalidLevel" signature="()V" isStatic="false">
+      <SourceLine classname="io.airlift.log.TestLoggingMBean" start="76" end="84" startBytecode="0" endBytecode="18" sourcefile="TestLoggingMBean.java" sourcepath="io/airlift/log/TestLoggingMBean.java"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="29" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="io.airlift.log.TestLoggingMBean" start="81" end="81" startBytecode="29" endBytecode="29" sourcefile="TestLoggingMBean.java" sourcepath="io/airlift/log/TestLoggingMBean.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="io.airlift.node.NodeInfo$1">
+      <SourceLine classname="io.airlift.node.NodeInfo$1" start="266" end="266" sourcefile="NodeInfo.java" sourcepath="io/airlift/node/NodeInfo.java"/>
+    </Class>
+    <Method classname="io.airlift.node.NodeInfo$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
+      <SourceLine classname="io.airlift.node.NodeInfo$1" start="266" end="266" startBytecode="0" endBytecode="25" sourcefile="NodeInfo.java" sourcepath="io/airlift/node/NodeInfo.java"/>
+    </Method>
+    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="io.airlift.node.NodeInfo$1" start="266" end="266" startBytecode="23" endBytecode="23" sourcefile="NodeInfo.java" sourcepath="io/airlift/node/NodeInfo.java"/>
   </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="io.airlift.stats.BenchmarkQuantileDigest">
@@ -151,22 +305,6 @@
     </Method>
     <SourceLine classname="io.airlift.stats.cardinality.BenchmarkDenseHll" start="44" end="44" startBytecode="35" endBytecode="35" sourcefile="BenchmarkDenseHll.java" sourcepath="io/airlift/stats/cardinality/BenchmarkDenseHll.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.BenchmarkDenseHll$Data">
-      <SourceLine classname="io.airlift.stats.cardinality.BenchmarkDenseHll$Data" start="52" end="63" sourcefile="BenchmarkDenseHll.java" sourcepath="io/airlift/stats/cardinality/BenchmarkDenseHll.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.BenchmarkDenseHll$Data" name="hashes" signature="[J" isStatic="false">
-      <SourceLine classname="io.airlift.stats.cardinality.BenchmarkDenseHll$Data" sourcefile="BenchmarkDenseHll.java" sourcepath="io/airlift/stats/cardinality/BenchmarkDenseHll.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.BenchmarkDenseHll$Data">
-      <SourceLine classname="io.airlift.stats.cardinality.BenchmarkDenseHll$Data" start="52" end="63" sourcefile="BenchmarkDenseHll.java" sourcepath="io/airlift/stats/cardinality/BenchmarkDenseHll.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.BenchmarkDenseHll$Data" name="instance" signature="Lio/airlift/stats/cardinality/DenseHll;" isStatic="false">
-      <SourceLine classname="io.airlift.stats.cardinality.BenchmarkDenseHll$Data" sourcefile="BenchmarkDenseHll.java" sourcepath="io/airlift/stats/cardinality/BenchmarkDenseHll.java"/>
-    </Field>
-  </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="io.airlift.stats.cardinality.BenchmarkSparseHll">
       <SourceLine classname="io.airlift.stats.cardinality.BenchmarkSparseHll" start="39" end="75" sourcefile="BenchmarkSparseHll.java" sourcepath="io/airlift/stats/cardinality/BenchmarkSparseHll.java"/>
@@ -184,294 +322,6 @@
       <SourceLine classname="io.airlift.stats.cardinality.BenchmarkSparseHll" start="44" end="48" startBytecode="0" endBytecode="135" sourcefile="BenchmarkSparseHll.java" sourcepath="io/airlift/stats/cardinality/BenchmarkSparseHll.java"/>
     </Method>
     <SourceLine classname="io.airlift.stats.cardinality.BenchmarkSparseHll" start="44" end="44" startBytecode="35" endBytecode="35" sourcefile="BenchmarkSparseHll.java" sourcepath="io/airlift/stats/cardinality/BenchmarkSparseHll.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2" start="3" end="17" sourcefile="BenchmarkDenseHll_Data_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkDenseHll_Data_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2" sourcefile="BenchmarkDenseHll_Data_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkDenseHll_Data_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2" start="3" end="17" sourcefile="BenchmarkDenseHll_Data_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkDenseHll_Data_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2" sourcefile="BenchmarkDenseHll_Data_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkDenseHll_Data_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2" start="3" end="17" sourcefile="BenchmarkDenseHll_Data_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkDenseHll_Data_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2" sourcefile="BenchmarkDenseHll_Data_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkDenseHll_Data_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2" start="3" end="17" sourcefile="BenchmarkDenseHll_Data_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkDenseHll_Data_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2" sourcefile="BenchmarkDenseHll_Data_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkDenseHll_Data_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2" start="3" end="17" sourcefile="BenchmarkDenseHll_Data_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkDenseHll_Data_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2" sourcefile="BenchmarkDenseHll_Data_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkDenseHll_Data_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2" start="3" end="17" sourcefile="BenchmarkDenseHll_Data_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkDenseHll_Data_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2" sourcefile="BenchmarkDenseHll_Data_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkDenseHll_Data_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2" start="3" end="17" sourcefile="BenchmarkDenseHll_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkDenseHll_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2" sourcefile="BenchmarkDenseHll_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkDenseHll_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2" start="3" end="17" sourcefile="BenchmarkDenseHll_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkDenseHll_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2" sourcefile="BenchmarkDenseHll_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkDenseHll_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2" start="3" end="17" sourcefile="BenchmarkDenseHll_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkDenseHll_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2" sourcefile="BenchmarkDenseHll_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkDenseHll_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2" start="3" end="17" sourcefile="BenchmarkDenseHll_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkDenseHll_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2" sourcefile="BenchmarkDenseHll_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkDenseHll_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2" start="3" end="17" sourcefile="BenchmarkDenseHll_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkDenseHll_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2" sourcefile="BenchmarkDenseHll_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkDenseHll_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2" start="3" end="17" sourcefile="BenchmarkDenseHll_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkDenseHll_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2" sourcefile="BenchmarkDenseHll_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkDenseHll_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2" start="3" end="17" sourcefile="BenchmarkSparseHll_Data_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkSparseHll_Data_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2" sourcefile="BenchmarkSparseHll_Data_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkSparseHll_Data_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2" start="3" end="17" sourcefile="BenchmarkSparseHll_Data_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkSparseHll_Data_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2" sourcefile="BenchmarkSparseHll_Data_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkSparseHll_Data_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2" start="3" end="17" sourcefile="BenchmarkSparseHll_Data_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkSparseHll_Data_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2" sourcefile="BenchmarkSparseHll_Data_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkSparseHll_Data_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2" start="3" end="17" sourcefile="BenchmarkSparseHll_Data_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkSparseHll_Data_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2" sourcefile="BenchmarkSparseHll_Data_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkSparseHll_Data_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2" start="3" end="17" sourcefile="BenchmarkSparseHll_Data_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkSparseHll_Data_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2" sourcefile="BenchmarkSparseHll_Data_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkSparseHll_Data_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2" start="3" end="17" sourcefile="BenchmarkSparseHll_Data_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkSparseHll_Data_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2" sourcefile="BenchmarkSparseHll_Data_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkSparseHll_Data_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2" start="3" end="17" sourcefile="BenchmarkSparseHll_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkSparseHll_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2" sourcefile="BenchmarkSparseHll_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkSparseHll_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2" start="3" end="17" sourcefile="BenchmarkSparseHll_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkSparseHll_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2" sourcefile="BenchmarkSparseHll_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkSparseHll_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2" start="3" end="17" sourcefile="BenchmarkSparseHll_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkSparseHll_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2" sourcefile="BenchmarkSparseHll_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkSparseHll_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2" start="3" end="17" sourcefile="BenchmarkSparseHll_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkSparseHll_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2" sourcefile="BenchmarkSparseHll_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkSparseHll_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2" start="3" end="17" sourcefile="BenchmarkSparseHll_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkSparseHll_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2" sourcefile="BenchmarkSparseHll_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkSparseHll_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2" start="3" end="17" sourcefile="BenchmarkSparseHll_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkSparseHll_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2" sourcefile="BenchmarkSparseHll_jmhType_B2.java" sourcepath="io/airlift/stats/cardinality/generated/BenchmarkSparseHll_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2" start="3" end="17" sourcefile="BenchmarkQuantileDigest_Data_jmhType_B2.java" sourcepath="io/airlift/stats/generated/BenchmarkQuantileDigest_Data_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2" sourcefile="BenchmarkQuantileDigest_Data_jmhType_B2.java" sourcepath="io/airlift/stats/generated/BenchmarkQuantileDigest_Data_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2" start="3" end="17" sourcefile="BenchmarkQuantileDigest_Data_jmhType_B2.java" sourcepath="io/airlift/stats/generated/BenchmarkQuantileDigest_Data_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2" sourcefile="BenchmarkQuantileDigest_Data_jmhType_B2.java" sourcepath="io/airlift/stats/generated/BenchmarkQuantileDigest_Data_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2" start="3" end="17" sourcefile="BenchmarkQuantileDigest_Data_jmhType_B2.java" sourcepath="io/airlift/stats/generated/BenchmarkQuantileDigest_Data_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2" sourcefile="BenchmarkQuantileDigest_Data_jmhType_B2.java" sourcepath="io/airlift/stats/generated/BenchmarkQuantileDigest_Data_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2" start="3" end="17" sourcefile="BenchmarkQuantileDigest_Data_jmhType_B2.java" sourcepath="io/airlift/stats/generated/BenchmarkQuantileDigest_Data_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2" sourcefile="BenchmarkQuantileDigest_Data_jmhType_B2.java" sourcepath="io/airlift/stats/generated/BenchmarkQuantileDigest_Data_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2" start="3" end="17" sourcefile="BenchmarkQuantileDigest_Data_jmhType_B2.java" sourcepath="io/airlift/stats/generated/BenchmarkQuantileDigest_Data_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2" sourcefile="BenchmarkQuantileDigest_Data_jmhType_B2.java" sourcepath="io/airlift/stats/generated/BenchmarkQuantileDigest_Data_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2" start="3" end="17" sourcefile="BenchmarkQuantileDigest_Data_jmhType_B2.java" sourcepath="io/airlift/stats/generated/BenchmarkQuantileDigest_Data_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2" sourcefile="BenchmarkQuantileDigest_Data_jmhType_B2.java" sourcepath="io/airlift/stats/generated/BenchmarkQuantileDigest_Data_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2" start="3" end="17" sourcefile="BenchmarkQuantileDigest_Digest_jmhType_B2.java" sourcepath="io/airlift/stats/generated/BenchmarkQuantileDigest_Digest_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2" sourcefile="BenchmarkQuantileDigest_Digest_jmhType_B2.java" sourcepath="io/airlift/stats/generated/BenchmarkQuantileDigest_Digest_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2" start="3" end="17" sourcefile="BenchmarkQuantileDigest_Digest_jmhType_B2.java" sourcepath="io/airlift/stats/generated/BenchmarkQuantileDigest_Digest_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2" sourcefile="BenchmarkQuantileDigest_Digest_jmhType_B2.java" sourcepath="io/airlift/stats/generated/BenchmarkQuantileDigest_Digest_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2" start="3" end="17" sourcefile="BenchmarkQuantileDigest_Digest_jmhType_B2.java" sourcepath="io/airlift/stats/generated/BenchmarkQuantileDigest_Digest_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2" sourcefile="BenchmarkQuantileDigest_Digest_jmhType_B2.java" sourcepath="io/airlift/stats/generated/BenchmarkQuantileDigest_Digest_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2" start="3" end="17" sourcefile="BenchmarkQuantileDigest_Digest_jmhType_B2.java" sourcepath="io/airlift/stats/generated/BenchmarkQuantileDigest_Digest_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2" sourcefile="BenchmarkQuantileDigest_Digest_jmhType_B2.java" sourcepath="io/airlift/stats/generated/BenchmarkQuantileDigest_Digest_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2" start="3" end="17" sourcefile="BenchmarkQuantileDigest_Digest_jmhType_B2.java" sourcepath="io/airlift/stats/generated/BenchmarkQuantileDigest_Digest_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2" sourcefile="BenchmarkQuantileDigest_Digest_jmhType_B2.java" sourcepath="io/airlift/stats/generated/BenchmarkQuantileDigest_Digest_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2">
-      <SourceLine classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2" start="3" end="17" sourcefile="BenchmarkQuantileDigest_Digest_jmhType_B2.java" sourcepath="io/airlift/stats/generated/BenchmarkQuantileDigest_Digest_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2" sourcefile="BenchmarkQuantileDigest_Digest_jmhType_B2.java" sourcepath="io/airlift/stats/generated/BenchmarkQuantileDigest_Digest_jmhType_B2.java"/>
-    </Field>
   </BugInstance>
   <Errors errors="0" missingClasses="363">
     <MissingClass>ch.qos.logback.core.AsyncAppenderBase</MissingClass>
@@ -637,7 +487,6 @@
     <MissingClass>com.google.inject.spi.TypeEncounter</MissingClass>
     <MissingClass>com.google.inject.spi.TypeListener</MissingClass>
     <MissingClass>com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource</MissingClass>
-    <MissingClass>com.sun.tools.attach.VirtualMachine</MissingClass>
     <MissingClass>io.airlift.slice.BasicSliceInput</MissingClass>
     <MissingClass>io.airlift.slice.DynamicSliceOutput</MissingClass>
     <MissingClass>io.airlift.slice.Murmur3Hash128</MissingClass>
@@ -837,9 +686,10 @@
     <MissingClass>org.weakref.jmx.guice.NamedExportBinder</MissingClass>
     <MissingClass>org.weakref.jmx.testing.TestingMBeanModule</MissingClass>
     <MissingClass>org.weakref.jmx.testing.TestingMBeanServer</MissingClass>
+    <MissingClass>sun.management.Agent</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Mon, 20 Aug 2018 22:30:00 +0200" total_classes="985" referenced_classes="1479" total_bugs="57" total_size="39076" num_packages="36" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="62.81" clock_seconds="22.16" peak_mbytes="1200.43" alloc_mbytes="3641.00" gc_seconds="0.38" priority_2="57">
-    <PackageStats package="io.airlift.bootstrap" total_bugs="0" total_types="37" total_size="704">
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 18:55:34 +0200" total_classes="985" referenced_classes="1499" total_bugs="33" total_size="39076" num_packages="36" java_version="9.0.4" vm_version="9.0.4+11" cpu_seconds="64.16" clock_seconds="20.22" peak_mbytes="606.85" alloc_mbytes="4096.00" gc_seconds="0.50" priority_2="10" priority_1="23">
+    <PackageStats package="io.airlift.bootstrap" total_bugs="1" total_types="37" total_size="704" priority_1="1">
       <ClassStats class="io.airlift.bootstrap.AnInstance" sourceFile="AnInstance.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="io.airlift.bootstrap.AnotherInstance" sourceFile="AnotherInstance.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="io.airlift.bootstrap.BaseOneWithFooMethod" sourceFile="BaseOneWithFooMethod.java" interface="true" size="2" bugs="0"/>
@@ -850,7 +700,7 @@
       <ClassStats class="io.airlift.bootstrap.DependentInstance" sourceFile="DependentInstance.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="io.airlift.bootstrap.DependentInstanceImpl" sourceFile="DependentInstanceImpl.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="io.airlift.bootstrap.Executed" sourceFile="Executed.java" interface="false" size="11" bugs="0"/>
-      <ClassStats class="io.airlift.bootstrap.ExecutedInstance" sourceFile="ExecutedInstance.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="io.airlift.bootstrap.ExecutedInstance" sourceFile="ExecutedInstance.java" interface="false" size="26" bugs="1" priority_1="1"/>
       <ClassStats class="io.airlift.bootstrap.FooTestInstance" sourceFile="FooTestInstance.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="io.airlift.bootstrap.IllegalInstance" sourceFile="IllegalInstance.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="io.airlift.bootstrap.InstanceOne" sourceFile="InstanceOne.java" interface="false" size="9" bugs="0"/>
@@ -878,11 +728,11 @@
       <ClassStats class="io.airlift.bootstrap.TestLifeCycleManager$2" sourceFile="TestLifeCycleManager.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="io.airlift.bootstrap.TestLifeCycleManager$3" sourceFile="TestLifeCycleManager.java" interface="false" size="7" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.airlift.concurrent" total_bugs="5" total_types="28" total_size="1552" priority_2="5">
+    <PackageStats package="io.airlift.concurrent" total_bugs="5" total_types="28" total_size="1552" priority_2="2" priority_1="3">
       <ClassStats class="io.airlift.concurrent.AsyncSemaphore" sourceFile="AsyncSemaphore.java" interface="false" size="44" bugs="0"/>
       <ClassStats class="io.airlift.concurrent.AsyncSemaphore$1" sourceFile="AsyncSemaphore.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="io.airlift.concurrent.AsyncSemaphore$QueuedTask" sourceFile="AsyncSemaphore.java" interface="false" size="20" bugs="0"/>
-      <ClassStats class="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers" sourceFile="BenchmarkWhenAnyCompleteCancelOthers.java" interface="false" size="24" bugs="5" priority_2="5"/>
+      <ClassStats class="io.airlift.concurrent.BenchmarkWhenAnyCompleteCancelOthers" sourceFile="BenchmarkWhenAnyCompleteCancelOthers.java" interface="false" size="24" bugs="4" priority_2="2" priority_1="2"/>
       <ClassStats class="io.airlift.concurrent.BoundedExecutor" sourceFile="BoundedExecutor.java" interface="false" size="38" bugs="0"/>
       <ClassStats class="io.airlift.concurrent.ExecutorServiceAdapter" sourceFile="ExecutorServiceAdapter.java" interface="false" size="37" bugs="0"/>
       <ClassStats class="io.airlift.concurrent.ExtendedSettableFuture" sourceFile="ExtendedSettableFuture.java" interface="false" size="29" bugs="0"/>
@@ -896,7 +746,7 @@
       <ClassStats class="io.airlift.concurrent.SetThreadName" sourceFile="SetThreadName.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="io.airlift.concurrent.TestAsyncSemaphore" sourceFile="TestAsyncSemaphore.java" interface="false" size="165" bugs="0"/>
       <ClassStats class="io.airlift.concurrent.TestAsyncSemaphore$1" sourceFile="TestAsyncSemaphore.java" interface="false" size="14" bugs="0"/>
-      <ClassStats class="io.airlift.concurrent.TestBoundedExecutor" sourceFile="TestBoundedExecutor.java" interface="false" size="108" bugs="0"/>
+      <ClassStats class="io.airlift.concurrent.TestBoundedExecutor" sourceFile="TestBoundedExecutor.java" interface="false" size="108" bugs="1" priority_1="1"/>
       <ClassStats class="io.airlift.concurrent.TestExtendedSettableFuture" sourceFile="TestExtendedSettableFuture.java" interface="false" size="59" bugs="0"/>
       <ClassStats class="io.airlift.concurrent.TestMoreFutures" sourceFile="TestMoreFutures.java" interface="false" size="582" bugs="0"/>
       <ClassStats class="io.airlift.concurrent.TestMoreFutures$Thrower" sourceFile="TestMoreFutures.java" interface="true" size="2" bugs="0"/>
@@ -908,14 +758,14 @@
       <ClassStats class="io.airlift.concurrent.Threads" sourceFile="Threads.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="io.airlift.concurrent.Threads$ContextClassLoaderThreadFactory" sourceFile="Threads.java" interface="false" size="12" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.airlift.concurrent.generated" total_bugs="6" total_types="5" total_size="1021" priority_2="6">
+    <PackageStats package="io.airlift.concurrent.generated" total_bugs="0" total_types="5" total_size="1021">
       <ClassStats class="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_benchmark_jmhTest" sourceFile="BenchmarkWhenAnyCompleteCancelOthers_benchmark_jmhTest.java" interface="false" size="478" bugs="0"/>
       <ClassStats class="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType" sourceFile="BenchmarkWhenAnyCompleteCancelOthers_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B1" sourceFile="BenchmarkWhenAnyCompleteCancelOthers_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2" sourceFile="BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2" sourceFile="BenchmarkWhenAnyCompleteCancelOthers_jmhType_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="io.airlift.concurrent.generated.BenchmarkWhenAnyCompleteCancelOthers_jmhType_B3" sourceFile="BenchmarkWhenAnyCompleteCancelOthers_jmhType_B3.java" interface="false" size="259" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.airlift.configuration" total_bugs="0" total_types="121" total_size="3280">
+    <PackageStats package="io.airlift.configuration" total_bugs="7" total_types="121" total_size="3280" priority_1="7">
       <ClassStats class="io.airlift.configuration.AbstractConfigurationAwareModule" sourceFile="AbstractConfigurationAwareModule.java" interface="false" size="27" bugs="0"/>
       <ClassStats class="io.airlift.configuration.ConditionalModule" sourceFile="ConditionalModule.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="io.airlift.configuration.Config" sourceFile="Config.java" interface="true" size="2" bugs="0"/>
@@ -940,7 +790,7 @@
       <ClassStats class="io.airlift.configuration.ConfigurationFactory$2" sourceFile="ConfigurationFactory.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="io.airlift.configuration.ConfigurationFactory$ConfigurationHolder" sourceFile="ConfigurationFactory.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="io.airlift.configuration.ConfigurationFactory$ConfigurationProviderConsumer" sourceFile="ConfigurationFactory.java" interface="false" size="14" bugs="0"/>
-      <ClassStats class="io.airlift.configuration.ConfigurationFactoryTest" sourceFile="ConfigurationFactoryTest.java" interface="false" size="250" bugs="0"/>
+      <ClassStats class="io.airlift.configuration.ConfigurationFactoryTest" sourceFile="ConfigurationFactoryTest.java" interface="false" size="250" bugs="6" priority_1="6"/>
       <ClassStats class="io.airlift.configuration.ConfigurationFactoryTest$AnnotatedGetter" sourceFile="ConfigurationFactoryTest.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="io.airlift.configuration.ConfigurationFactoryTest$AnnotatedSetter" sourceFile="ConfigurationFactoryTest.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="io.airlift.configuration.ConfigurationFactoryTest$BeanValidationClass" sourceFile="ConfigurationFactoryTest.java" interface="false" size="15" bugs="0"/>
@@ -1027,7 +877,7 @@
       <ClassStats class="io.airlift.configuration.ProblemsTest" sourceFile="ProblemsTest.java" interface="false" size="114" bugs="0"/>
       <ClassStats class="io.airlift.configuration.ProblemsTest$1" sourceFile="ProblemsTest.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="io.airlift.configuration.ProblemsTest$SimpleMonitor" sourceFile="ProblemsTest.java" interface="false" size="14" bugs="0"/>
-      <ClassStats class="io.airlift.configuration.TestConfig" sourceFile="TestConfig.java" interface="false" size="163" bugs="0"/>
+      <ClassStats class="io.airlift.configuration.TestConfig" sourceFile="TestConfig.java" interface="false" size="163" bugs="1" priority_1="1"/>
       <ClassStats class="io.airlift.configuration.TestConfig$1" sourceFile="TestConfig.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="io.airlift.configuration.TestConfig$AnotherConfig" sourceFile="TestConfig.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="io.airlift.configuration.TestConfig$MyAnnotation" sourceFile="TestConfig.java" interface="true" size="1" bugs="0"/>
@@ -1047,7 +897,7 @@
       <ClassStats class="io.airlift.configuration.testing.TestConfigAssertions$NoDeprecatedConfig" sourceFile="TestConfigAssertions.java" interface="false" size="30" bugs="0"/>
       <ClassStats class="io.airlift.configuration.testing.TestConfigAssertions$PersonConfig" sourceFile="TestConfigAssertions.java" interface="false" size="35" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.airlift.dbpool" total_bugs="0" total_types="45" total_size="1641">
+    <PackageStats package="io.airlift.dbpool" total_bugs="6" total_types="45" total_size="1641" priority_1="6">
       <ClassStats class="io.airlift.dbpool.DatabaseIpAddressUtil" sourceFile="DatabaseIpAddressUtil.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="io.airlift.dbpool.DatabaseIpAddressUtilTest" sourceFile="DatabaseIpAddressUtilTest.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="io.airlift.dbpool.H2EmbeddedDataSource" sourceFile="H2EmbeddedDataSource.java" interface="false" size="70" bugs="0"/>
@@ -1063,7 +913,7 @@
       <ClassStats class="io.airlift.dbpool.ManagedDataSource$NoPoolConnectionEventListener" sourceFile="ManagedDataSource.java" interface="false" size="30" bugs="0"/>
       <ClassStats class="io.airlift.dbpool.ManagedDataSourceConfig" sourceFile="ManagedDataSourceConfig.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="io.airlift.dbpool.ManagedDataSourceStats" sourceFile="ManagedDataSourceStats.java" interface="false" size="38" bugs="0"/>
-      <ClassStats class="io.airlift.dbpool.ManagedDataSourceTest" sourceFile="ManagedDataSourceTest.java" interface="false" size="259" bugs="0"/>
+      <ClassStats class="io.airlift.dbpool.ManagedDataSourceTest" sourceFile="ManagedDataSourceTest.java" interface="false" size="259" bugs="5" priority_1="5"/>
       <ClassStats class="io.airlift.dbpool.ManagedDataSourceTest$1" sourceFile="ManagedDataSourceTest.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="io.airlift.dbpool.ManagedSemaphore" sourceFile="ManagedSemaphore.java" interface="false" size="70" bugs="0"/>
       <ClassStats class="io.airlift.dbpool.MockConnectionPoolDataSource" sourceFile="MockConnectionPoolDataSource.java" interface="false" size="33" bugs="0"/>
@@ -1075,7 +925,7 @@
       <ClassStats class="io.airlift.dbpool.MySqlDataSourceModule" sourceFile="MySqlDataSourceModule.java" interface="false" size="27" bugs="0"/>
       <ClassStats class="io.airlift.dbpool.MySqlDataSourceModule$1" sourceFile="MySqlDataSourceModule.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="io.airlift.dbpool.MySqlDataSourceModule$MySqlDataSourceProvider" sourceFile="MySqlDataSourceModule.java" interface="false" size="19" bugs="0"/>
-      <ClassStats class="io.airlift.dbpool.PooledDataSource" sourceFile="PooledDataSource.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="io.airlift.dbpool.PooledDataSource" sourceFile="PooledDataSource.java" interface="false" size="30" bugs="1" priority_1="1"/>
       <ClassStats class="io.airlift.dbpool.PostgreSqlDataSource" sourceFile="PostgreSqlDataSource.java" interface="false" size="41" bugs="0"/>
       <ClassStats class="io.airlift.dbpool.PostgreSqlDataSourceConfig" sourceFile="PostgreSqlDataSourceConfig.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="io.airlift.dbpool.PostgreSqlDataSourceModule" sourceFile="PostgreSqlDataSourceModule.java" interface="false" size="23" bugs="0"/>
@@ -1094,7 +944,7 @@
       <ClassStats class="io.airlift.dbpool.TestMySqlDataSourceConfig" sourceFile="TestMySqlDataSourceConfig.java" interface="false" size="21" bugs="0"/>
       <ClassStats class="io.airlift.dbpool.TestPostgreSqlDataSourceConfig" sourceFile="TestPostgreSqlDataSourceConfig.java" interface="false" size="21" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.airlift.discovery.client" total_bugs="0" total_types="96" total_size="2151">
+    <PackageStats package="io.airlift.discovery.client" total_bugs="1" total_types="96" total_size="2151" priority_1="1">
       <ClassStats class="io.airlift.discovery.client.AbstractTestDiscoveryModule" sourceFile="AbstractTestDiscoveryModule.java" interface="false" size="32" bugs="0"/>
       <ClassStats class="io.airlift.discovery.client.AbstractTestDiscoveryModule$1" sourceFile="AbstractTestDiscoveryModule.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="io.airlift.discovery.client.Announcement" sourceFile="Announcement.java" interface="false" size="48" bugs="0"/>
@@ -1149,7 +999,7 @@
       <ClassStats class="io.airlift.discovery.client.ServiceTypes" sourceFile="ServiceTypes.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="io.airlift.discovery.client.StaticAnnouncementHttpServerInfoImpl" sourceFile="StaticAnnouncementHttpServerInfoImpl.java" interface="false" size="29" bugs="0"/>
       <ClassStats class="io.airlift.discovery.client.TestAnnouncement" sourceFile="TestAnnouncement.java" interface="false" size="43" bugs="0"/>
-      <ClassStats class="io.airlift.discovery.client.TestAnnouncer" sourceFile="TestAnnouncer.java" interface="false" size="86" bugs="0"/>
+      <ClassStats class="io.airlift.discovery.client.TestAnnouncer" sourceFile="TestAnnouncer.java" interface="false" size="86" bugs="1" priority_1="1"/>
       <ClassStats class="io.airlift.discovery.client.TestCachingServiceSelector" sourceFile="TestCachingServiceSelector.java" interface="false" size="60" bugs="0"/>
       <ClassStats class="io.airlift.discovery.client.TestDiscoveryBinder" sourceFile="TestDiscoveryBinder.java" interface="false" size="46" bugs="0"/>
       <ClassStats class="io.airlift.discovery.client.TestDiscoveryBinder$1" sourceFile="TestDiscoveryBinder.java" interface="false" size="7" bugs="0"/>
@@ -1305,7 +1155,7 @@
       <ClassStats class="io.airlift.event.client.privateclass.TestSerializingPrivateEvent$1" sourceFile="TestSerializingPrivateEvent.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="io.airlift.event.client.privateclass.TestSerializingPrivateEvent$PrivateEvent" sourceFile="TestSerializingPrivateEvent.java" interface="false" size="6" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.airlift.http.client" total_bugs="0" total_types="82" total_size="3574">
+    <PackageStats package="io.airlift.http.client" total_bugs="1" total_types="82" total_size="3574" priority_1="1">
       <ClassStats class="io.airlift.http.client.AbstractHttpClientTest" sourceFile="AbstractHttpClientTest.java" interface="false" size="494" bugs="0"/>
       <ClassStats class="io.airlift.http.client.AbstractHttpClientTest$1" sourceFile="AbstractHttpClientTest.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="io.airlift.http.client.AbstractHttpClientTest$BackloggedServer" sourceFile="AbstractHttpClientTest.java" interface="false" size="34" bugs="0"/>
@@ -1383,7 +1233,7 @@
       <ClassStats class="io.airlift.http.client.TestingSocksProxy" sourceFile="TestingSocksProxy.java" interface="false" size="50" bugs="0"/>
       <ClassStats class="io.airlift.http.client.TestingSocksProxy$1" sourceFile="TestingSocksProxy.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="io.airlift.http.client.TestingSocksProxy$Pipe" sourceFile="TestingSocksProxy.java" interface="false" size="17" bugs="0"/>
-      <ClassStats class="io.airlift.http.client.TestingSocksProxy$SocksProxyAcceptor" sourceFile="TestingSocksProxy.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="io.airlift.http.client.TestingSocksProxy$SocksProxyAcceptor" sourceFile="TestingSocksProxy.java" interface="false" size="20" bugs="1" priority_1="1"/>
       <ClassStats class="io.airlift.http.client.TestingSocksProxy$SocksProxyWorker" sourceFile="TestingSocksProxy.java" interface="false" size="127" bugs="0"/>
       <ClassStats class="io.airlift.http.client.TestingSocksProxy$SocksProxyWorker$1" sourceFile="TestingSocksProxy.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="io.airlift.http.client.TraceTokenRequestFilter" sourceFile="TraceTokenRequestFilter.java" interface="false" size="24" bugs="0"/>
@@ -1459,8 +1309,8 @@
       <ClassStats class="io.airlift.http.client.testing.TestingHttpClient$TestingHttpResponseFuture" sourceFile="TestingHttpClient.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="io.airlift.http.client.testing.TestingResponse" sourceFile="TestingResponse.java" interface="false" size="39" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.airlift.http.server" total_bugs="0" total_types="48" total_size="2759">
-      <ClassStats class="io.airlift.http.server.AsyncResponseHandler" sourceFile="AsyncResponseHandler.java" interface="false" size="36" bugs="0"/>
+    <PackageStats package="io.airlift.http.server" total_bugs="1" total_types="48" total_size="2759" priority_1="1">
+      <ClassStats class="io.airlift.http.server.AsyncResponseHandler" sourceFile="AsyncResponseHandler.java" interface="false" size="36" bugs="1" priority_1="1"/>
       <ClassStats class="io.airlift.http.server.AsyncResponseHandler$1" sourceFile="AsyncResponseHandler.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="io.airlift.http.server.ClassPathResourceHandler" sourceFile="ClassPathResourceHandler.java" interface="false" size="83" bugs="0"/>
       <ClassStats class="io.airlift.http.server.ConnectionStats" sourceFile="ConnectionStats.java" interface="false" size="26" bugs="0"/>
@@ -1519,7 +1369,7 @@
       <ClassStats class="io.airlift.http.server.testing.TestingHttpServer" sourceFile="TestingHttpServer.java" interface="false" size="21" bugs="0"/>
       <ClassStats class="io.airlift.http.server.testing.TestingHttpServerModule" sourceFile="TestingHttpServerModule.java" interface="false" size="25" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.airlift.jaxrs" total_bugs="0" total_types="23" total_size="676">
+    <PackageStats package="io.airlift.jaxrs" total_bugs="1" total_types="23" total_size="676" priority_1="1">
       <ClassStats class="io.airlift.jaxrs.JaxrsBinder" sourceFile="JaxrsBinder.java" interface="false" size="33" bugs="0"/>
       <ClassStats class="io.airlift.jaxrs.JaxrsBinding" sourceFile="JaxrsBinding.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="io.airlift.jaxrs.JaxrsModule" sourceFile="JaxrsModule.java" interface="false" size="64" bugs="0"/>
@@ -1541,7 +1391,7 @@
       <ClassStats class="io.airlift.jaxrs.TestOverrideMethodFilter$1" sourceFile="TestOverrideMethodFilter.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="io.airlift.jaxrs.TestOverrideMethodFilter$MockPropertiesDelegate" sourceFile="TestOverrideMethodFilter.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="io.airlift.jaxrs.TestOverrideMethodFilter$MockSecurityContext" sourceFile="TestOverrideMethodFilter.java" interface="false" size="12" bugs="0"/>
-      <ClassStats class="io.airlift.jaxrs.TestOverrideMethodFilterInHttpServer" sourceFile="TestOverrideMethodFilterInHttpServer.java" interface="false" size="120" bugs="0"/>
+      <ClassStats class="io.airlift.jaxrs.TestOverrideMethodFilterInHttpServer" sourceFile="TestOverrideMethodFilterInHttpServer.java" interface="false" size="120" bugs="1" priority_1="1"/>
       <ClassStats class="io.airlift.jaxrs.TestOverrideMethodFilterInHttpServer$TestResource" sourceFile="TestOverrideMethodFilterInHttpServer.java" interface="false" size="33" bugs="0"/>
     </PackageStats>
     <PackageStats package="io.airlift.jaxrs.testing" total_bugs="0" total_types="12" total_size="445">
@@ -1674,7 +1524,7 @@
       <ClassStats class="io.airlift.json.isolated.TestJsonCodecBinder" sourceFile="TestJsonCodecBinder.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="io.airlift.json.isolated.TestJsonCodecBinder$1" sourceFile="TestJsonCodecBinder.java" interface="false" size="10" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.airlift.log" total_bugs="0" total_types="20" total_size="812">
+    <PackageStats package="io.airlift.log" total_bugs="1" total_types="20" total_size="812" priority_1="1">
       <ClassStats class="io.airlift.log.Level" sourceFile="Level.java" interface="false" size="34" bugs="0"/>
       <ClassStats class="io.airlift.log.LogJmxModule" sourceFile="LogJmxModule.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="io.airlift.log.Logger" sourceFile="Logger.java" interface="false" size="95" bugs="0"/>
@@ -1694,13 +1544,13 @@
       <ClassStats class="io.airlift.log.TestLogger$MockHandler" sourceFile="TestLogger.java" interface="false" size="21" bugs="0"/>
       <ClassStats class="io.airlift.log.TestLogging" sourceFile="TestLogging.java" interface="false" size="70" bugs="0"/>
       <ClassStats class="io.airlift.log.TestLoggingConfiguration" sourceFile="TestLoggingConfiguration.java" interface="false" size="30" bugs="0"/>
-      <ClassStats class="io.airlift.log.TestLoggingMBean" sourceFile="TestLoggingMBean.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="io.airlift.log.TestLoggingMBean" sourceFile="TestLoggingMBean.java" interface="false" size="38" bugs="1" priority_1="1"/>
     </PackageStats>
-    <PackageStats package="io.airlift.node" total_bugs="0" total_types="8" total_size="414">
+    <PackageStats package="io.airlift.node" total_bugs="1" total_types="8" total_size="414" priority_1="1">
       <ClassStats class="io.airlift.node.NodeConfig" sourceFile="NodeConfig.java" interface="false" size="72" bugs="0"/>
       <ClassStats class="io.airlift.node.NodeConfig$AddressSource" sourceFile="NodeConfig.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="io.airlift.node.NodeInfo" sourceFile="NodeInfo.java" interface="false" size="148" bugs="0"/>
-      <ClassStats class="io.airlift.node.NodeInfo$1" sourceFile="NodeInfo.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="io.airlift.node.NodeInfo$1" sourceFile="NodeInfo.java" interface="false" size="4" bugs="1" priority_1="1"/>
       <ClassStats class="io.airlift.node.NodeModule" sourceFile="NodeModule.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="io.airlift.node.TestNodeConfig" sourceFile="TestNodeConfig.java" interface="false" size="51" bugs="0"/>
       <ClassStats class="io.airlift.node.TestNodeInfo" sourceFile="TestNodeInfo.java" interface="false" size="61" bugs="0"/>
@@ -1796,9 +1646,9 @@
       <ClassStats class="io.airlift.stats.TimedStatTest" sourceFile="TimedStatTest.java" interface="false" size="63" bugs="0"/>
       <ClassStats class="io.airlift.stats.TimedStatTest$1" sourceFile="TimedStatTest.java" interface="false" size="8" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.airlift.stats.cardinality" total_bugs="6" total_types="19" total_size="1120" priority_2="6">
+    <PackageStats package="io.airlift.stats.cardinality" total_bugs="4" total_types="19" total_size="1120" priority_2="4">
       <ClassStats class="io.airlift.stats.cardinality.BenchmarkDenseHll" sourceFile="BenchmarkDenseHll.java" interface="false" size="14" bugs="2" priority_2="2"/>
-      <ClassStats class="io.airlift.stats.cardinality.BenchmarkDenseHll$Data" sourceFile="BenchmarkDenseHll.java" interface="false" size="11" bugs="2" priority_2="2"/>
+      <ClassStats class="io.airlift.stats.cardinality.BenchmarkDenseHll$Data" sourceFile="BenchmarkDenseHll.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="io.airlift.stats.cardinality.BenchmarkSparseHll" sourceFile="BenchmarkSparseHll.java" interface="false" size="14" bugs="2" priority_2="2"/>
       <ClassStats class="io.airlift.stats.cardinality.BenchmarkSparseHll$Data" sourceFile="BenchmarkSparseHll.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="io.airlift.stats.cardinality.BiasCorrection" sourceFile="BiasCorrection.java" interface="false" size="8" bugs="0"/>
@@ -1817,34 +1667,34 @@
       <ClassStats class="io.airlift.stats.cardinality.TestingHll" sourceFile="TestingHll.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="io.airlift.stats.cardinality.Utils" sourceFile="Utils.java" interface="false" size="27" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.airlift.stats.cardinality.generated" total_bugs="24" total_types="18" total_size="3162" priority_2="24">
+    <PackageStats package="io.airlift.stats.cardinality.generated" total_bugs="0" total_types="18" total_size="3162">
       <ClassStats class="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType" sourceFile="BenchmarkDenseHll_Data_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B1" sourceFile="BenchmarkDenseHll_Data_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2" sourceFile="BenchmarkDenseHll_Data_jmhType_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B2" sourceFile="BenchmarkDenseHll_Data_jmhType_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_Data_jmhType_B3" sourceFile="BenchmarkDenseHll_Data_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_benchmarkInsert_jmhTest" sourceFile="BenchmarkDenseHll_benchmarkInsert_jmhTest.java" interface="false" size="495" bugs="0"/>
       <ClassStats class="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType" sourceFile="BenchmarkDenseHll_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B1" sourceFile="BenchmarkDenseHll_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2" sourceFile="BenchmarkDenseHll_jmhType_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B2" sourceFile="BenchmarkDenseHll_jmhType_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="io.airlift.stats.cardinality.generated.BenchmarkDenseHll_jmhType_B3" sourceFile="BenchmarkDenseHll_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType" sourceFile="BenchmarkSparseHll_Data_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B1" sourceFile="BenchmarkSparseHll_Data_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2" sourceFile="BenchmarkSparseHll_Data_jmhType_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B2" sourceFile="BenchmarkSparseHll_Data_jmhType_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_Data_jmhType_B3" sourceFile="BenchmarkSparseHll_Data_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_benchmarkInsert_jmhTest" sourceFile="BenchmarkSparseHll_benchmarkInsert_jmhTest.java" interface="false" size="495" bugs="0"/>
       <ClassStats class="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType" sourceFile="BenchmarkSparseHll_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B1" sourceFile="BenchmarkSparseHll_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2" sourceFile="BenchmarkSparseHll_jmhType_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B2" sourceFile="BenchmarkSparseHll_jmhType_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="io.airlift.stats.cardinality.generated.BenchmarkSparseHll_jmhType_B3" sourceFile="BenchmarkSparseHll_jmhType_B3.java" interface="false" size="259" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.airlift.stats.generated" total_bugs="12" total_types="15" total_size="3139" priority_2="12">
+    <PackageStats package="io.airlift.stats.generated" total_bugs="0" total_types="15" total_size="3139">
       <ClassStats class="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType" sourceFile="BenchmarkQuantileDigest_Data_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B1" sourceFile="BenchmarkQuantileDigest_Data_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2" sourceFile="BenchmarkQuantileDigest_Data_jmhType_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B2" sourceFile="BenchmarkQuantileDigest_Data_jmhType_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="io.airlift.stats.generated.BenchmarkQuantileDigest_Data_jmhType_B3" sourceFile="BenchmarkQuantileDigest_Data_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType" sourceFile="BenchmarkQuantileDigest_Digest_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B1" sourceFile="BenchmarkQuantileDigest_Digest_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2" sourceFile="BenchmarkQuantileDigest_Digest_jmhType_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B2" sourceFile="BenchmarkQuantileDigest_Digest_jmhType_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="io.airlift.stats.generated.BenchmarkQuantileDigest_Digest_jmhType_B3" sourceFile="BenchmarkQuantileDigest_Digest_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="io.airlift.stats.generated.BenchmarkQuantileDigest_benchmarkCopy_jmhTest" sourceFile="BenchmarkQuantileDigest_benchmarkCopy_jmhTest.java" interface="false" size="509" bugs="0"/>
       <ClassStats class="io.airlift.stats.generated.BenchmarkQuantileDigest_benchmarkInserts_jmhTest" sourceFile="BenchmarkQuantileDigest_benchmarkInserts_jmhTest.java" interface="false" size="492" bugs="0"/>
@@ -1897,42 +1747,55 @@
       <ClassStats class="io.airlift.tracetoken.TraceTokenModule" sourceFile="TraceTokenModule.java" interface="false" size="6" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="2907" invocations="985" avgMicrosecondsPerInvocation="2951" maxMicrosecondsPerInvocation="396254" standardDeviationMicrosecondsPerInvocation="16570"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="1110" invocations="5631" avgMicrosecondsPerInvocation="197" maxMicrosecondsPerInvocation="41891" standardDeviationMicrosecondsPerInvocation="935"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="948" invocations="5712" avgMicrosecondsPerInvocation="166" maxMicrosecondsPerInvocation="18174" standardDeviationMicrosecondsPerInvocation="492"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="832" invocations="5684" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="24189" standardDeviationMicrosecondsPerInvocation="566"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.FixtureWithInvocationScopeDetector" totalMilliseconds="824" invocations="985" avgMicrosecondsPerInvocation="836" maxMicrosecondsPerInvocation="54940" standardDeviationMicrosecondsPerInvocation="5433"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="776" invocations="5816" avgMicrosecondsPerInvocation="133" maxMicrosecondsPerInvocation="11853" standardDeviationMicrosecondsPerInvocation="394"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="767" invocations="6018" avgMicrosecondsPerInvocation="127" maxMicrosecondsPerInvocation="12186" standardDeviationMicrosecondsPerInvocation="385"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="718" invocations="3379" avgMicrosecondsPerInvocation="212" maxMicrosecondsPerInvocation="50516" standardDeviationMicrosecondsPerInvocation="998"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="657" invocations="3371" avgMicrosecondsPerInvocation="195" maxMicrosecondsPerInvocation="31699" standardDeviationMicrosecondsPerInvocation="1011"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="551" invocations="4570" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="16856" standardDeviationMicrosecondsPerInvocation="371"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="551" invocations="5713" avgMicrosecondsPerInvocation="96" maxMicrosecondsPerInvocation="16537" standardDeviationMicrosecondsPerInvocation="334"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="485" invocations="1479" avgMicrosecondsPerInvocation="328" maxMicrosecondsPerInvocation="20924" standardDeviationMicrosecondsPerInvocation="1003"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="482" invocations="1479" avgMicrosecondsPerInvocation="325" maxMicrosecondsPerInvocation="22373" standardDeviationMicrosecondsPerInvocation="1049"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="422" invocations="7033" avgMicrosecondsPerInvocation="60" maxMicrosecondsPerInvocation="7590" standardDeviationMicrosecondsPerInvocation="194"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="287" invocations="985" avgMicrosecondsPerInvocation="291" maxMicrosecondsPerInvocation="41724" standardDeviationMicrosecondsPerInvocation="1830"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="224" invocations="5712" avgMicrosecondsPerInvocation="39" maxMicrosecondsPerInvocation="5514" standardDeviationMicrosecondsPerInvocation="130"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="215" invocations="1479" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="14660" standardDeviationMicrosecondsPerInvocation="548"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="211" invocations="985" avgMicrosecondsPerInvocation="214" maxMicrosecondsPerInvocation="8761" standardDeviationMicrosecondsPerInvocation="492"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="196" invocations="985" avgMicrosecondsPerInvocation="199" maxMicrosecondsPerInvocation="5770" standardDeviationMicrosecondsPerInvocation="431"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="192" invocations="985" avgMicrosecondsPerInvocation="194" maxMicrosecondsPerInvocation="3254" standardDeviationMicrosecondsPerInvocation="335"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="184" invocations="5807" avgMicrosecondsPerInvocation="31" maxMicrosecondsPerInvocation="37661" standardDeviationMicrosecondsPerInvocation="495"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="160" invocations="116888" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="4163" standardDeviationMicrosecondsPerInvocation="15"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="155" invocations="5631" avgMicrosecondsPerInvocation="27" maxMicrosecondsPerInvocation="3625" standardDeviationMicrosecondsPerInvocation="73"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="153" invocations="1479" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="17158" standardDeviationMicrosecondsPerInvocation="521"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="152" invocations="1479" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="9697" standardDeviationMicrosecondsPerInvocation="348"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="147" invocations="1479" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="26734" standardDeviationMicrosecondsPerInvocation="932"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="135" invocations="1910" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="14960" standardDeviationMicrosecondsPerInvocation="393"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="132" invocations="985" avgMicrosecondsPerInvocation="134" maxMicrosecondsPerInvocation="15892" standardDeviationMicrosecondsPerInvocation="558"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="123" invocations="985" avgMicrosecondsPerInvocation="125" maxMicrosecondsPerInvocation="4191" standardDeviationMicrosecondsPerInvocation="249"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="119" invocations="985" avgMicrosecondsPerInvocation="121" maxMicrosecondsPerInvocation="25401" standardDeviationMicrosecondsPerInvocation="850"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="119" invocations="5242" avgMicrosecondsPerInvocation="22" maxMicrosecondsPerInvocation="1675" standardDeviationMicrosecondsPerInvocation="55"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="118" invocations="985" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="4390" standardDeviationMicrosecondsPerInvocation="260"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="117" invocations="985" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="3812" standardDeviationMicrosecondsPerInvocation="269"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="113" invocations="1479" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="6319" standardDeviationMicrosecondsPerInvocation="315"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="113" invocations="985" avgMicrosecondsPerInvocation="115" maxMicrosecondsPerInvocation="6852" standardDeviationMicrosecondsPerInvocation="314"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="103" invocations="985" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="5623" standardDeviationMicrosecondsPerInvocation="407"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="1022" invocations="5631" avgMicrosecondsPerInvocation="181" maxMicrosecondsPerInvocation="36834" standardDeviationMicrosecondsPerInvocation="605"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="1009" invocations="5712" avgMicrosecondsPerInvocation="176" maxMicrosecondsPerInvocation="20021" standardDeviationMicrosecondsPerInvocation="533"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="876" invocations="6018" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="36426" standardDeviationMicrosecondsPerInvocation="796"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="859" invocations="5684" avgMicrosecondsPerInvocation="151" maxMicrosecondsPerInvocation="40364" standardDeviationMicrosecondsPerInvocation="681"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="840" invocations="5816" avgMicrosecondsPerInvocation="144" maxMicrosecondsPerInvocation="11965" standardDeviationMicrosecondsPerInvocation="398"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="710" invocations="3510" avgMicrosecondsPerInvocation="202" maxMicrosecondsPerInvocation="29883" standardDeviationMicrosecondsPerInvocation="890"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="706" invocations="4570" avgMicrosecondsPerInvocation="154" maxMicrosecondsPerInvocation="50534" standardDeviationMicrosecondsPerInvocation="992"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="583" invocations="5807" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="10297" standardDeviationMicrosecondsPerInvocation="219"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="462" invocations="1499" avgMicrosecondsPerInvocation="308" maxMicrosecondsPerInvocation="45920" standardDeviationMicrosecondsPerInvocation="1369"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="413" invocations="1499" avgMicrosecondsPerInvocation="275" maxMicrosecondsPerInvocation="12240" standardDeviationMicrosecondsPerInvocation="661"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="410" invocations="7062" avgMicrosecondsPerInvocation="58" maxMicrosecondsPerInvocation="5967" standardDeviationMicrosecondsPerInvocation="162"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="373" invocations="3520" avgMicrosecondsPerInvocation="106" maxMicrosecondsPerInvocation="37607" standardDeviationMicrosecondsPerInvocation="642"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="356" invocations="985" avgMicrosecondsPerInvocation="361" maxMicrosecondsPerInvocation="32454" standardDeviationMicrosecondsPerInvocation="2067"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="282" invocations="5712" avgMicrosecondsPerInvocation="49" maxMicrosecondsPerInvocation="33778" standardDeviationMicrosecondsPerInvocation="464"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="256" invocations="985" avgMicrosecondsPerInvocation="260" maxMicrosecondsPerInvocation="18977" standardDeviationMicrosecondsPerInvocation="1328"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="232" invocations="985" avgMicrosecondsPerInvocation="235" maxMicrosecondsPerInvocation="7478" standardDeviationMicrosecondsPerInvocation="590"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="218" invocations="985" avgMicrosecondsPerInvocation="221" maxMicrosecondsPerInvocation="10809" standardDeviationMicrosecondsPerInvocation="522"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector" totalMilliseconds="213" invocations="985" avgMicrosecondsPerInvocation="216" maxMicrosecondsPerInvocation="6325" standardDeviationMicrosecondsPerInvocation="459"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="204" invocations="985" avgMicrosecondsPerInvocation="207" maxMicrosecondsPerInvocation="4988" standardDeviationMicrosecondsPerInvocation="419"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.FixtureWithInvocationScopeDetector" totalMilliseconds="196" invocations="985" avgMicrosecondsPerInvocation="199" maxMicrosecondsPerInvocation="26634" standardDeviationMicrosecondsPerInvocation="1424"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="191" invocations="1499" avgMicrosecondsPerInvocation="127" maxMicrosecondsPerInvocation="4589" standardDeviationMicrosecondsPerInvocation="289"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="188" invocations="5807" avgMicrosecondsPerInvocation="32" maxMicrosecondsPerInvocation="36914" standardDeviationMicrosecondsPerInvocation="486"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="173" invocations="120206" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="6368" standardDeviationMicrosecondsPerInvocation="21"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="163" invocations="985" avgMicrosecondsPerInvocation="165" maxMicrosecondsPerInvocation="22561" standardDeviationMicrosecondsPerInvocation="1100"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="150" invocations="985" avgMicrosecondsPerInvocation="152" maxMicrosecondsPerInvocation="25964" standardDeviationMicrosecondsPerInvocation="928"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="149" invocations="5260" avgMicrosecondsPerInvocation="28" maxMicrosecondsPerInvocation="6291" standardDeviationMicrosecondsPerInvocation="107"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="149" invocations="5631" avgMicrosecondsPerInvocation="26" maxMicrosecondsPerInvocation="2149" standardDeviationMicrosecondsPerInvocation="57"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="148" invocations="1499" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="5157" standardDeviationMicrosecondsPerInvocation="246"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="141" invocations="985" avgMicrosecondsPerInvocation="143" maxMicrosecondsPerInvocation="33202" standardDeviationMicrosecondsPerInvocation="1251"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="140" invocations="985" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="6318" standardDeviationMicrosecondsPerInvocation="377"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="140" invocations="1499" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="37655" standardDeviationMicrosecondsPerInvocation="1003"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="138" invocations="985" avgMicrosecondsPerInvocation="140" maxMicrosecondsPerInvocation="3803" standardDeviationMicrosecondsPerInvocation="305"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="132" invocations="1499" avgMicrosecondsPerInvocation="88" maxMicrosecondsPerInvocation="2880" standardDeviationMicrosecondsPerInvocation="193"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="130" invocations="985" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="2743" standardDeviationMicrosecondsPerInvocation="252"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="129" invocations="985" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="6701" standardDeviationMicrosecondsPerInvocation="533"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="126" invocations="985" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="3369" standardDeviationMicrosecondsPerInvocation="256"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadForLoop" totalMilliseconds="125" invocations="985" avgMicrosecondsPerInvocation="127" maxMicrosecondsPerInvocation="41234" standardDeviationMicrosecondsPerInvocation="1322"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="123" invocations="985" avgMicrosecondsPerInvocation="125" maxMicrosecondsPerInvocation="3276" standardDeviationMicrosecondsPerInvocation="254"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="116" invocations="1928" avgMicrosecondsPerInvocation="60" maxMicrosecondsPerInvocation="12252" standardDeviationMicrosecondsPerInvocation="304"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="115" invocations="129592" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="1726" standardDeviationMicrosecondsPerInvocation="7"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="111" invocations="985" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="3102" standardDeviationMicrosecondsPerInvocation="234"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="109" invocations="985" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="3899" standardDeviationMicrosecondsPerInvocation="228"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="106" invocations="985" avgMicrosecondsPerInvocation="108" maxMicrosecondsPerInvocation="4095" standardDeviationMicrosecondsPerInvocation="266"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="102" invocations="985" avgMicrosecondsPerInvocation="104" maxMicrosecondsPerInvocation="5766" standardDeviationMicrosecondsPerInvocation="271"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="99" invocations="985" avgMicrosecondsPerInvocation="101" maxMicrosecondsPerInvocation="7178" standardDeviationMicrosecondsPerInvocation="300"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="99" invocations="985" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="19860" standardDeviationMicrosecondsPerInvocation="638"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="98" invocations="985" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="5056" standardDeviationMicrosecondsPerInvocation="288"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="97" invocations="985" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="5382" standardDeviationMicrosecondsPerInvocation="261"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="96" invocations="985" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="2945" standardDeviationMicrosecondsPerInvocation="236"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

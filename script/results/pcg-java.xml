@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1534816343000" analysisTimestamp="1534816344763" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534890570000" analysisTimestamp="1534890572431" release="">
   <Project projectName="">
     <Jar>tmp/pcg-java</Jar>
   </Project>
@@ -40,123 +40,31 @@
     </Method>
     <SourceLine classname="com.github.alexeyr.pcg.benchmarks.Pcg32Benchmarks" start="35" end="35" startBytecode="0" endBytecode="0" sourcefile="Pcg32Benchmarks.java" sourcepath="com/github/alexeyr/pcg/benchmarks/Pcg32Benchmarks.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2">
-      <SourceLine classname="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2" start="3" end="17" sourcefile="Pcg32Benchmarks_jmh_B2.java" sourcepath="com/github/alexeyr/pcg/benchmarks/generated/Pcg32Benchmarks_jmh_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.apache.commons.math3.linear.SparseFieldVector">
+      <SourceLine classname="org.apache.commons.math3.linear.SparseFieldVector" start="65" end="603" sourcefile="SparseFieldVector.java" sourcepath="org/apache/commons/math3/linear/SparseFieldVector.java"/>
     </Class>
-    <Field classname="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2" sourcefile="Pcg32Benchmarks_jmh_B2.java" sourcepath="com/github/alexeyr/pcg/benchmarks/generated/Pcg32Benchmarks_jmh_B2.java"/>
-    </Field>
+    <Method classname="org.apache.commons.math3.linear.SparseFieldVector" name="hashCode" signature="()I" isStatic="false">
+      <SourceLine classname="org.apache.commons.math3.linear.SparseFieldVector" start="547" end="557" startBytecode="0" endBytecode="45" sourcefile="SparseFieldVector.java" sourcepath="org/apache/commons/math3/linear/SparseFieldVector.java"/>
+    </Method>
+    <LocalVariable name="prime" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.apache.commons.math3.linear.SparseFieldVector" start="547" end="547" startBytecode="2" endBytecode="2" sourcefile="SparseFieldVector.java" sourcepath="org/apache/commons/math3/linear/SparseFieldVector.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2">
-      <SourceLine classname="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2" start="3" end="17" sourcefile="Pcg32Benchmarks_jmh_B2.java" sourcepath="com/github/alexeyr/pcg/benchmarks/generated/Pcg32Benchmarks_jmh_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.apache.commons.math3.stat.Frequency">
+      <SourceLine classname="org.apache.commons.math3.stat.Frequency" start="64" end="591" sourcefile="Frequency.java" sourcepath="org/apache/commons/math3/stat/Frequency.java"/>
     </Class>
-    <Field classname="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2" sourcefile="Pcg32Benchmarks_jmh_B2.java" sourcepath="com/github/alexeyr/pcg/benchmarks/generated/Pcg32Benchmarks_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2">
-      <SourceLine classname="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2" start="3" end="17" sourcefile="Pcg32Benchmarks_jmh_B2.java" sourcepath="com/github/alexeyr/pcg/benchmarks/generated/Pcg32Benchmarks_jmh_B2.java"/>
-    </Class>
-    <Field classname="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2" sourcefile="Pcg32Benchmarks_jmh_B2.java" sourcepath="com/github/alexeyr/pcg/benchmarks/generated/Pcg32Benchmarks_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2">
-      <SourceLine classname="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2" start="3" end="17" sourcefile="Pcg32Benchmarks_jmh_B2.java" sourcepath="com/github/alexeyr/pcg/benchmarks/generated/Pcg32Benchmarks_jmh_B2.java"/>
-    </Class>
-    <Field classname="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2" sourcefile="Pcg32Benchmarks_jmh_B2.java" sourcepath="com/github/alexeyr/pcg/benchmarks/generated/Pcg32Benchmarks_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2">
-      <SourceLine classname="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2" start="3" end="17" sourcefile="Pcg32Benchmarks_jmh_B2.java" sourcepath="com/github/alexeyr/pcg/benchmarks/generated/Pcg32Benchmarks_jmh_B2.java"/>
-    </Class>
-    <Field classname="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2" sourcefile="Pcg32Benchmarks_jmh_B2.java" sourcepath="com/github/alexeyr/pcg/benchmarks/generated/Pcg32Benchmarks_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2">
-      <SourceLine classname="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2" start="3" end="17" sourcefile="Pcg32Benchmarks_jmh_B2.java" sourcepath="com/github/alexeyr/pcg/benchmarks/generated/Pcg32Benchmarks_jmh_B2.java"/>
-    </Class>
-    <Field classname="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2" sourcefile="Pcg32Benchmarks_jmh_B2.java" sourcepath="com/github/alexeyr/pcg/benchmarks/generated/Pcg32Benchmarks_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.BenchmarkParams">
-      <SourceLine classname="org.openjdk.jmh.infra.BenchmarkParams" start="52" end="86" sourcefile="BenchmarkParams.java" sourcepath="org/openjdk/jmh/infra/BenchmarkParams.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.BenchmarkParams" name="serialVersionUID" signature="J" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.BenchmarkParams" sourcefile="BenchmarkParams.java" sourcepath="org/openjdk/jmh/infra/BenchmarkParams.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.IterationParams">
-      <SourceLine classname="org.openjdk.jmh.infra.IterationParams" start="49" end="63" sourcefile="IterationParams.java" sourcepath="org/openjdk/jmh/infra/IterationParams.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.IterationParams" name="serialVersionUID" signature="J" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.IterationParams" sourcefile="IterationParams.java" sourcepath="org/openjdk/jmh/infra/IterationParams.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" start="3" end="17" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" start="3" end="17" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" start="3" end="17" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" start="3" end="17" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" start="3" end="17" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" start="3" end="17" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Field>
+    <Method classname="org.apache.commons.math3.stat.Frequency" name="hashCode" signature="()I" isStatic="false">
+      <SourceLine classname="org.apache.commons.math3.stat.Frequency" start="567" end="571" startBytecode="0" endBytecode="18" sourcefile="Frequency.java" sourcepath="org/apache/commons/math3/stat/Frequency.java"/>
+    </Method>
+    <LocalVariable name="prime" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.apache.commons.math3.stat.Frequency" start="567" end="567" startBytecode="2" endBytecode="2" sourcefile="Frequency.java" sourcepath="org/apache/commons/math3/stat/Frequency.java"/>
   </BugInstance>
   <Errors errors="0" missingClasses="2">
     <MissingClass>org.junit.Assert</MissingClass>
     <MissingClass>org.junit.Assume</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Tue, 21 Aug 2018 03:52:23 +0200" total_classes="1344" referenced_classes="1628" total_bugs="18" total_size="68832" num_packages="80" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="87.05" clock_seconds="28.33" peak_mbytes="1490.35" alloc_mbytes="3641.00" gc_seconds="0.51" priority_2="18">
+  <FindBugsSummary timestamp="Wed, 22 Aug 2018 00:29:30 +0200" total_classes="1344" referenced_classes="1630" total_bugs="6" total_size="68832" num_packages="80" java_version="9.0.4" vm_version="9.0.4+11" cpu_seconds="120.15" clock_seconds="47.56" peak_mbytes="780.77" alloc_mbytes="4096.00" gc_seconds="1.25" priority_2="4" priority_1="2">
     <PackageStats package="com.github.alexeyr.pcg" total_bugs="0" total_types="3" total_size="160">
       <ClassStats class="com.github.alexeyr.pcg.Pcg32" sourceFile="Pcg32.java" interface="false" size="83" bugs="0"/>
       <ClassStats class="com.github.alexeyr.pcg.Pcg32CComparisonTest" sourceFile="Pcg32CComparisonTest.java" interface="false" size="54" bugs="0"/>
@@ -165,10 +73,10 @@
     <PackageStats package="com.github.alexeyr.pcg.benchmarks" total_bugs="4" total_types="1" total_size="26" priority_2="4">
       <ClassStats class="com.github.alexeyr.pcg.benchmarks.Pcg32Benchmarks" sourceFile="Pcg32Benchmarks.java" interface="false" size="26" bugs="4" priority_2="4"/>
     </PackageStats>
-    <PackageStats package="com.github.alexeyr.pcg.benchmarks.generated" total_bugs="6" total_types="8" total_size="2235" priority_2="6">
+    <PackageStats package="com.github.alexeyr.pcg.benchmarks.generated" total_bugs="0" total_types="8" total_size="2235">
       <ClassStats class="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh" sourceFile="Pcg32Benchmarks_jmh.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B1" sourceFile="Pcg32Benchmarks_jmh_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2" sourceFile="Pcg32Benchmarks_jmh_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B2" sourceFile="Pcg32Benchmarks_jmh_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jmh_B3" sourceFile="Pcg32Benchmarks_jmh_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jurCreation" sourceFile="Pcg32Benchmarks_jurCreation.java" interface="false" size="423" bugs="0"/>
       <ClassStats class="com.github.alexeyr.pcg.benchmarks.generated.Pcg32Benchmarks_jurInt" sourceFile="Pcg32Benchmarks_jurInt.java" interface="false" size="423" bugs="0"/>
@@ -708,7 +616,7 @@
       <ClassStats class="org.apache.commons.math3.geometry.partitioning.utilities.AVLTree$Skew" sourceFile="AVLTree.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.geometry.partitioning.utilities.OrderedTuple" sourceFile="OrderedTuple.java" interface="false" size="149" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.apache.commons.math3.linear" total_bugs="0" total_types="102" total_size="8808">
+    <PackageStats package="org.apache.commons.math3.linear" total_bugs="1" total_types="102" total_size="8808" priority_1="1">
       <ClassStats class="org.apache.commons.math3.linear.AbstractFieldMatrix" sourceFile="AbstractFieldMatrix.java" interface="false" size="483" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.linear.AbstractFieldMatrix$1" sourceFile="AbstractFieldMatrix.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.linear.AbstractFieldMatrix$2" sourceFile="AbstractFieldMatrix.java" interface="false" size="14" bugs="0"/>
@@ -805,7 +713,7 @@
       <ClassStats class="org.apache.commons.math3.linear.SingularValueDecomposition$1" sourceFile="SingularValueDecomposition.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.linear.SingularValueDecomposition$Solver" sourceFile="SingularValueDecomposition.java" interface="false" size="26" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.linear.SparseFieldMatrix" sourceFile="SparseFieldMatrix.java" interface="false" size="70" bugs="0"/>
-      <ClassStats class="org.apache.commons.math3.linear.SparseFieldVector" sourceFile="SparseFieldVector.java" interface="false" size="292" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.linear.SparseFieldVector" sourceFile="SparseFieldVector.java" interface="false" size="292" bugs="1" priority_1="1"/>
       <ClassStats class="org.apache.commons.math3.linear.SparseRealMatrix" sourceFile="SparseRealMatrix.java" interface="true" size="1" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.linear.SparseRealVector" sourceFile="SparseRealVector.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.linear.SymmLQ" sourceFile="SymmLQ.java" interface="false" size="73" bugs="0"/>
@@ -1191,8 +1099,8 @@
       <ClassStats class="org.apache.commons.math3.special.Gamma" sourceFile="Gamma.java" interface="false" size="218" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.special.Gamma$1" sourceFile="Gamma.java" interface="false" size="8" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.apache.commons.math3.stat" total_bugs="0" total_types="4" total_size="290">
-      <ClassStats class="org.apache.commons.math3.stat.Frequency" sourceFile="Frequency.java" interface="false" size="168" bugs="0"/>
+    <PackageStats package="org.apache.commons.math3.stat" total_bugs="1" total_types="4" total_size="290" priority_1="1">
+      <ClassStats class="org.apache.commons.math3.stat.Frequency" sourceFile="Frequency.java" interface="false" size="168" bugs="1" priority_1="1"/>
       <ClassStats class="org.apache.commons.math3.stat.Frequency$1" sourceFile="Frequency.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.stat.Frequency$NaturalComparator" sourceFile="Frequency.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.stat.StatUtils" sourceFile="StatUtils.java" interface="false" size="113" bugs="0"/>
@@ -1413,8 +1321,8 @@
       <ClassStats class="org.openjdk.jmh.generators.core.StateObjectHandler" sourceFile="StateObjectHandler.java" interface="false" size="541" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.generators.core.StateObjectHandler$1" sourceFile="StateObjectHandler.java" interface="false" size="4" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.openjdk.jmh.infra" total_bugs="2" total_types="30" total_size="1843" priority_2="2">
-      <ClassStats class="org.openjdk.jmh.infra.BenchmarkParams" sourceFile="BenchmarkParams.java" interface="false" size="38" bugs="1" priority_2="1"/>
+    <PackageStats package="org.openjdk.jmh.infra" total_bugs="0" total_types="30" total_size="1843">
+      <ClassStats class="org.openjdk.jmh.infra.BenchmarkParams" sourceFile="BenchmarkParams.java" interface="false" size="38" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.BenchmarkParamsL0" sourceFile="BenchmarkParams.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.BenchmarkParamsL1" sourceFile="BenchmarkParams.java" interface="false" size="131" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.BenchmarkParamsL2" sourceFile="BenchmarkParams.java" interface="false" size="126" bugs="0"/>
@@ -1432,7 +1340,7 @@
       <ClassStats class="org.openjdk.jmh.infra.ControlL2" sourceFile="Control.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.ControlL3" sourceFile="Control.java" interface="false" size="131" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.ControlL4" sourceFile="Control.java" interface="false" size="4" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.infra.IterationParams" sourceFile="IterationParams.java" interface="false" size="19" bugs="1" priority_2="1"/>
+      <ClassStats class="org.openjdk.jmh.infra.IterationParams" sourceFile="IterationParams.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.IterationParamsL0" sourceFile="IterationParams.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.IterationParamsL1" sourceFile="IterationParams.java" interface="false" size="131" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.IterationParamsL2" sourceFile="IterationParams.java" interface="false" size="43" bugs="0"/>
@@ -1445,10 +1353,10 @@
       <ClassStats class="org.openjdk.jmh.infra.ThreadParamsL3" sourceFile="ThreadParams.java" interface="false" size="135" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.ThreadParamsL4" sourceFile="ThreadParams.java" interface="false" size="8" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.openjdk.jmh.infra.generated" total_bugs="6" total_types="4" total_size="543" priority_2="6">
+    <PackageStats package="org.openjdk.jmh.infra.generated" total_bugs="0" total_types="4" total_size="543">
       <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmh" sourceFile="Blackhole_jmh.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmh_B1" sourceFile="Blackhole_jmh_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourceFile="Blackhole_jmh_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourceFile="Blackhole_jmh_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmh_B3" sourceFile="Blackhole_jmh_B3.java" interface="false" size="259" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.openjdk.jmh.profile" total_bugs="0" total_types="41" total_size="1443">
@@ -1662,48 +1570,42 @@
       <ClassStats class="org.openjdk.jmh.util.Version" sourceFile="Version.java" interface="false" size="36" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="2089" invocations="8714" avgMicrosecondsPerInvocation="239" maxMicrosecondsPerInvocation="45884" standardDeviationMicrosecondsPerInvocation="1037"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="1968" invocations="8968" avgMicrosecondsPerInvocation="219" maxMicrosecondsPerInvocation="83013" standardDeviationMicrosecondsPerInvocation="1424"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="1867" invocations="9437" avgMicrosecondsPerInvocation="197" maxMicrosecondsPerInvocation="53453" standardDeviationMicrosecondsPerInvocation="1119"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="1804" invocations="9271" avgMicrosecondsPerInvocation="194" maxMicrosecondsPerInvocation="39998" standardDeviationMicrosecondsPerInvocation="869"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="1411" invocations="9365" avgMicrosecondsPerInvocation="150" maxMicrosecondsPerInvocation="43462" standardDeviationMicrosecondsPerInvocation="716"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="1076" invocations="7792" avgMicrosecondsPerInvocation="138" maxMicrosecondsPerInvocation="56037" standardDeviationMicrosecondsPerInvocation="764"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="858" invocations="11550" avgMicrosecondsPerInvocation="74" maxMicrosecondsPerInvocation="18874" standardDeviationMicrosecondsPerInvocation="327"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="818" invocations="9275" avgMicrosecondsPerInvocation="88" maxMicrosecondsPerInvocation="15155" standardDeviationMicrosecondsPerInvocation="231"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="590" invocations="9271" avgMicrosecondsPerInvocation="63" maxMicrosecondsPerInvocation="45134" standardDeviationMicrosecondsPerInvocation="556"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="556" invocations="2682" avgMicrosecondsPerInvocation="207" maxMicrosecondsPerInvocation="16941" standardDeviationMicrosecondsPerInvocation="674"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="541" invocations="1628" avgMicrosecondsPerInvocation="332" maxMicrosecondsPerInvocation="43638" standardDeviationMicrosecondsPerInvocation="1335"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="509" invocations="1628" avgMicrosecondsPerInvocation="313" maxMicrosecondsPerInvocation="14144" standardDeviationMicrosecondsPerInvocation="799"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="399" invocations="1344" avgMicrosecondsPerInvocation="296" maxMicrosecondsPerInvocation="14295" standardDeviationMicrosecondsPerInvocation="899"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="398" invocations="1344" avgMicrosecondsPerInvocation="296" maxMicrosecondsPerInvocation="59490" standardDeviationMicrosecondsPerInvocation="2078"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="326" invocations="2687" avgMicrosecondsPerInvocation="121" maxMicrosecondsPerInvocation="3249" standardDeviationMicrosecondsPerInvocation="142"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="298" invocations="1344" avgMicrosecondsPerInvocation="221" maxMicrosecondsPerInvocation="8052" standardDeviationMicrosecondsPerInvocation="578"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="288" invocations="8541" avgMicrosecondsPerInvocation="33" maxMicrosecondsPerInvocation="3233" standardDeviationMicrosecondsPerInvocation="116"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="273" invocations="10136" avgMicrosecondsPerInvocation="27" maxMicrosecondsPerInvocation="27951" standardDeviationMicrosecondsPerInvocation="296"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="242" invocations="1344" avgMicrosecondsPerInvocation="180" maxMicrosecondsPerInvocation="17300" standardDeviationMicrosecondsPerInvocation="703"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="235" invocations="8714" avgMicrosecondsPerInvocation="26" maxMicrosecondsPerInvocation="2218" standardDeviationMicrosecondsPerInvocation="68"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="222" invocations="204514" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="7672" standardDeviationMicrosecondsPerInvocation="18"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="221" invocations="1344" avgMicrosecondsPerInvocation="165" maxMicrosecondsPerInvocation="9777" standardDeviationMicrosecondsPerInvocation="494"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="206" invocations="1344" avgMicrosecondsPerInvocation="153" maxMicrosecondsPerInvocation="44231" standardDeviationMicrosecondsPerInvocation="1256"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="194" invocations="1344" avgMicrosecondsPerInvocation="144" maxMicrosecondsPerInvocation="4917" standardDeviationMicrosecondsPerInvocation="337"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="194" invocations="1344" avgMicrosecondsPerInvocation="144" maxMicrosecondsPerInvocation="6295" standardDeviationMicrosecondsPerInvocation="405"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="189" invocations="1344" avgMicrosecondsPerInvocation="141" maxMicrosecondsPerInvocation="6503" standardDeviationMicrosecondsPerInvocation="405"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="186" invocations="1344" avgMicrosecondsPerInvocation="138" maxMicrosecondsPerInvocation="9429" standardDeviationMicrosecondsPerInvocation="404"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="186" invocations="1344" avgMicrosecondsPerInvocation="138" maxMicrosecondsPerInvocation="19918" standardDeviationMicrosecondsPerInvocation="595"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="185" invocations="1344" avgMicrosecondsPerInvocation="138" maxMicrosecondsPerInvocation="7117" standardDeviationMicrosecondsPerInvocation="389"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SynchronizationOnSharedBuiltinConstant" totalMilliseconds="185" invocations="1344" avgMicrosecondsPerInvocation="137" maxMicrosecondsPerInvocation="54690" standardDeviationMicrosecondsPerInvocation="1509"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="183" invocations="1344" avgMicrosecondsPerInvocation="136" maxMicrosecondsPerInvocation="5548" standardDeviationMicrosecondsPerInvocation="348"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="181" invocations="1344" avgMicrosecondsPerInvocation="134" maxMicrosecondsPerInvocation="29080" standardDeviationMicrosecondsPerInvocation="838"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="180" invocations="1344" avgMicrosecondsPerInvocation="134" maxMicrosecondsPerInvocation="4800" standardDeviationMicrosecondsPerInvocation="350"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="179" invocations="1344" avgMicrosecondsPerInvocation="133" maxMicrosecondsPerInvocation="5478" standardDeviationMicrosecondsPerInvocation="374"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="176" invocations="1344" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="9994" standardDeviationMicrosecondsPerInvocation="430"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="175" invocations="1344" avgMicrosecondsPerInvocation="130" maxMicrosecondsPerInvocation="5126" standardDeviationMicrosecondsPerInvocation="348"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="175" invocations="1628" avgMicrosecondsPerInvocation="107" maxMicrosecondsPerInvocation="46297" standardDeviationMicrosecondsPerInvocation="1365"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="175" invocations="1344" avgMicrosecondsPerInvocation="130" maxMicrosecondsPerInvocation="11464" standardDeviationMicrosecondsPerInvocation="432"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="166" invocations="1344" avgMicrosecondsPerInvocation="123" maxMicrosecondsPerInvocation="28522" standardDeviationMicrosecondsPerInvocation="1105"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadForLoop" totalMilliseconds="158" invocations="1344" avgMicrosecondsPerInvocation="117" maxMicrosecondsPerInvocation="9019" standardDeviationMicrosecondsPerInvocation="411"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="158" invocations="10136" avgMicrosecondsPerInvocation="15" maxMicrosecondsPerInvocation="3645" standardDeviationMicrosecondsPerInvocation="87"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindFloatEquality" totalMilliseconds="157" invocations="1344" avgMicrosecondsPerInvocation="117" maxMicrosecondsPerInvocation="13249" standardDeviationMicrosecondsPerInvocation="465"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="8243" invocations="1344" avgMicrosecondsPerInvocation="6133" maxMicrosecondsPerInvocation="563998" standardDeviationMicrosecondsPerInvocation="28697"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="2926" invocations="8714" avgMicrosecondsPerInvocation="335" maxMicrosecondsPerInvocation="122996" standardDeviationMicrosecondsPerInvocation="2215"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="2621" invocations="8968" avgMicrosecondsPerInvocation="292" maxMicrosecondsPerInvocation="81565" standardDeviationMicrosecondsPerInvocation="1970"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="2485" invocations="9437" avgMicrosecondsPerInvocation="263" maxMicrosecondsPerInvocation="88367" standardDeviationMicrosecondsPerInvocation="1891"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="2150" invocations="9271" avgMicrosecondsPerInvocation="231" maxMicrosecondsPerInvocation="34995" standardDeviationMicrosecondsPerInvocation="1038"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="1702" invocations="9365" avgMicrosecondsPerInvocation="181" maxMicrosecondsPerInvocation="67525" standardDeviationMicrosecondsPerInvocation="957"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1356" invocations="11618" avgMicrosecondsPerInvocation="116" maxMicrosecondsPerInvocation="53136" standardDeviationMicrosecondsPerInvocation="786"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="1192" invocations="7792" avgMicrosecondsPerInvocation="153" maxMicrosecondsPerInvocation="22132" standardDeviationMicrosecondsPerInvocation="531"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1114" invocations="2793" avgMicrosecondsPerInvocation="398" maxMicrosecondsPerInvocation="33578" standardDeviationMicrosecondsPerInvocation="1684"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1013" invocations="10136" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="29128" standardDeviationMicrosecondsPerInvocation="384"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="877" invocations="1630" avgMicrosecondsPerInvocation="538" maxMicrosecondsPerInvocation="55519" standardDeviationMicrosecondsPerInvocation="2062"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="834" invocations="1630" avgMicrosecondsPerInvocation="511" maxMicrosecondsPerInvocation="19242" standardDeviationMicrosecondsPerInvocation="1456"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="689" invocations="9271" avgMicrosecondsPerInvocation="74" maxMicrosecondsPerInvocation="39471" standardDeviationMicrosecondsPerInvocation="591"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="539" invocations="1344" avgMicrosecondsPerInvocation="401" maxMicrosecondsPerInvocation="71682" standardDeviationMicrosecondsPerInvocation="2134"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="507" invocations="1344" avgMicrosecondsPerInvocation="377" maxMicrosecondsPerInvocation="88907" standardDeviationMicrosecondsPerInvocation="2706"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="386" invocations="1344" avgMicrosecondsPerInvocation="287" maxMicrosecondsPerInvocation="32679" standardDeviationMicrosecondsPerInvocation="1293"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="362" invocations="8541" avgMicrosecondsPerInvocation="42" maxMicrosecondsPerInvocation="18969" standardDeviationMicrosecondsPerInvocation="264"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="345" invocations="2800" avgMicrosecondsPerInvocation="123" maxMicrosecondsPerInvocation="38222" standardDeviationMicrosecondsPerInvocation="849"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="319" invocations="10136" avgMicrosecondsPerInvocation="31" maxMicrosecondsPerInvocation="32726" standardDeviationMicrosecondsPerInvocation="347"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="290" invocations="218437" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="10245" standardDeviationMicrosecondsPerInvocation="31"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="287" invocations="1344" avgMicrosecondsPerInvocation="213" maxMicrosecondsPerInvocation="21215" standardDeviationMicrosecondsPerInvocation="917"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector" totalMilliseconds="286" invocations="1344" avgMicrosecondsPerInvocation="212" maxMicrosecondsPerInvocation="7155" standardDeviationMicrosecondsPerInvocation="532"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="264" invocations="1344" avgMicrosecondsPerInvocation="196" maxMicrosecondsPerInvocation="12142" standardDeviationMicrosecondsPerInvocation="627"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="263" invocations="1344" avgMicrosecondsPerInvocation="196" maxMicrosecondsPerInvocation="10774" standardDeviationMicrosecondsPerInvocation="698"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="258" invocations="8714" avgMicrosecondsPerInvocation="29" maxMicrosecondsPerInvocation="2990" standardDeviationMicrosecondsPerInvocation="82"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteRecursiveLoop" totalMilliseconds="254" invocations="1344" avgMicrosecondsPerInvocation="189" maxMicrosecondsPerInvocation="62160" standardDeviationMicrosecondsPerInvocation="1742"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="246" invocations="1344" avgMicrosecondsPerInvocation="183" maxMicrosecondsPerInvocation="19406" standardDeviationMicrosecondsPerInvocation="687"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="243" invocations="1630" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="7090" standardDeviationMicrosecondsPerInvocation="448"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="236" invocations="1344" avgMicrosecondsPerInvocation="176" maxMicrosecondsPerInvocation="17016" standardDeviationMicrosecondsPerInvocation="781"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="236" invocations="1344" avgMicrosecondsPerInvocation="175" maxMicrosecondsPerInvocation="9109" standardDeviationMicrosecondsPerInvocation="520"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="234" invocations="1344" avgMicrosecondsPerInvocation="174" maxMicrosecondsPerInvocation="9478" standardDeviationMicrosecondsPerInvocation="526"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="234" invocations="1344" avgMicrosecondsPerInvocation="174" maxMicrosecondsPerInvocation="10829" standardDeviationMicrosecondsPerInvocation="517"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="233" invocations="1344" avgMicrosecondsPerInvocation="173" maxMicrosecondsPerInvocation="6433" standardDeviationMicrosecondsPerInvocation="450"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="233" invocations="1630" avgMicrosecondsPerInvocation="143" maxMicrosecondsPerInvocation="38706" standardDeviationMicrosecondsPerInvocation="1014"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="232" invocations="1344" avgMicrosecondsPerInvocation="172" maxMicrosecondsPerInvocation="6609" standardDeviationMicrosecondsPerInvocation="504"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="228" invocations="1344" avgMicrosecondsPerInvocation="169" maxMicrosecondsPerInvocation="8721" standardDeviationMicrosecondsPerInvocation="534"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

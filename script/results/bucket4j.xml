@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1534804333000" analysisTimestamp="1534804334597" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534877709000" analysisTimestamp="1534877711759" release="">
   <Project projectName="">
     <Jar>tmp/bucket4j</Jar>
   </Project>
@@ -58,33 +58,6 @@
     </Method>
     <SourceLine classname="io.github.bucket4j.ConsumeMostlySuccess" start="45" end="45" startBytecode="0" endBytecode="0" sourcefile="ConsumeMostlySuccess.java" sourcepath="io/github/bucket4j/ConsumeMostlySuccess.java"/>
   </BugInstance>
-  <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.ConsumeMostlySuccess">
-      <SourceLine classname="io.github.bucket4j.ConsumeMostlySuccess" start="36" end="87" sourcefile="ConsumeMostlySuccess.java" sourcepath="io/github/bucket4j/ConsumeMostlySuccess.java"/>
-    </Class>
-    <Method classname="io.github.bucket4j.ConsumeMostlySuccess" name="consumeOneToken_mostlySuccess_GuavaLimiter" signature="(Lio/github/bucket4j/state/GuavaLimiterState;)V" isStatic="false">
-      <SourceLine classname="io.github.bucket4j.ConsumeMostlySuccess" start="50" end="51" startBytecode="0" endBytecode="64" sourcefile="ConsumeMostlySuccess.java" sourcepath="io/github/bucket4j/ConsumeMostlySuccess.java"/>
-    </Method>
-    <SourceLine classname="io.github.bucket4j.ConsumeMostlySuccess" start="50" end="50" startBytecode="4" endBytecode="4" sourcefile="ConsumeMostlySuccess.java" sourcepath="io/github/bucket4j/ConsumeMostlySuccess.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.ConsumeMostlySuccess">
-      <SourceLine classname="io.github.bucket4j.ConsumeMostlySuccess" start="36" end="87" sourcefile="ConsumeMostlySuccess.java" sourcepath="io/github/bucket4j/ConsumeMostlySuccess.java"/>
-    </Class>
-    <Method classname="io.github.bucket4j.ConsumeMostlySuccess" name="consumeOneToken_mostlySuccess_LockFree" signature="(Lio/github/bucket4j/state/LocalLockFreeState;)V" isStatic="false">
-      <SourceLine classname="io.github.bucket4j.ConsumeMostlySuccess" start="40" end="41" startBytecode="0" endBytecode="82" sourcefile="ConsumeMostlySuccess.java" sourcepath="io/github/bucket4j/ConsumeMostlySuccess.java"/>
-    </Method>
-    <SourceLine classname="io.github.bucket4j.ConsumeMostlySuccess" start="40" end="40" startBytecode="20" endBytecode="20" sourcefile="ConsumeMostlySuccess.java" sourcepath="io/github/bucket4j/ConsumeMostlySuccess.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.ConsumeMostlySuccess">
-      <SourceLine classname="io.github.bucket4j.ConsumeMostlySuccess" start="36" end="87" sourcefile="ConsumeMostlySuccess.java" sourcepath="io/github/bucket4j/ConsumeMostlySuccess.java"/>
-    </Class>
-    <Method classname="io.github.bucket4j.ConsumeMostlySuccess" name="consumeOneToken_mostlySuccess_Synchronized" signature="(Lio/github/bucket4j/state/LocalSynchronizedState;)V" isStatic="false">
-      <SourceLine classname="io.github.bucket4j.ConsumeMostlySuccess" start="45" end="46" startBytecode="0" endBytecode="82" sourcefile="ConsumeMostlySuccess.java" sourcepath="io/github/bucket4j/ConsumeMostlySuccess.java"/>
-    </Method>
-    <SourceLine classname="io.github.bucket4j.ConsumeMostlySuccess" start="45" end="45" startBytecode="20" endBytecode="20" sourcefile="ConsumeMostlySuccess.java" sourcepath="io/github/bucket4j/ConsumeMostlySuccess.java"/>
-  </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="io.github.bucket4j.TryConsumeMostlySuccess">
       <SourceLine classname="io.github.bucket4j.TryConsumeMostlySuccess" start="36" end="87" sourcefile="TryConsumeMostlySuccess.java" sourcepath="io/github/bucket4j/TryConsumeMostlySuccess.java"/>
@@ -112,263 +85,236 @@
     </Method>
     <SourceLine classname="io.github.bucket4j.TryConsumeMostlySuccess" start="45" end="45" startBytecode="0" endBytecode="0" sourcefile="TryConsumeMostlySuccess.java" sourcepath="io/github/bucket4j/TryConsumeMostlySuccess.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.GuavaLimiterState">
-      <SourceLine classname="io.github.bucket4j.state.GuavaLimiterState" start="25" end="29" sourcefile="GuavaLimiterState.java" sourcepath="io/github/bucket4j/state/GuavaLimiterState.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.openjdk.jmh.util.Utils">
+      <SourceLine classname="org.openjdk.jmh.util.Utils" start="44" end="485" sourcefile="Utils.java" sourcepath="org/openjdk/jmh/util/Utils.java"/>
     </Class>
-    <Field classname="io.github.bucket4j.state.GuavaLimiterState" name="_10_milion_rps_RateLimiter" signature="Lcom/google/common/util/concurrent/RateLimiter;" isStatic="false">
-      <SourceLine classname="io.github.bucket4j.state.GuavaLimiterState" sourcefile="GuavaLimiterState.java" sourcepath="io/github/bucket4j/state/GuavaLimiterState.java"/>
-    </Field>
+    <Method classname="org.openjdk.jmh.util.Utils" name="getPid" signature="()J" isStatic="true">
+      <SourceLine classname="org.openjdk.jmh.util.Utils" start="400" end="416" startBytecode="0" endBytecode="49" sourcefile="Utils.java" sourcepath="org/openjdk/jmh/util/Utils.java"/>
+    </Method>
+    <LocalVariable name="DELIM" register="0" pc="3" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.openjdk.jmh.util.Utils" start="400" end="400" startBytecode="2" endBytecode="2" sourcefile="Utils.java" sourcepath="org/openjdk/jmh/util/Utils.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.GuavaLimiterState">
-      <SourceLine classname="io.github.bucket4j.state.GuavaLimiterState" start="25" end="29" sourcefile="GuavaLimiterState.java" sourcepath="io/github/bucket4j/state/GuavaLimiterState.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.openjdk.jmh.util.Utils">
+      <SourceLine classname="org.openjdk.jmh.util.Utils" start="44" end="485" sourcefile="Utils.java" sourcepath="org/openjdk/jmh/util/Utils.java"/>
     </Class>
-    <Field classname="io.github.bucket4j.state.GuavaLimiterState" name="guavaRateLimiter" signature="Lcom/google/common/util/concurrent/RateLimiter;" isStatic="false">
-      <SourceLine classname="io.github.bucket4j.state.GuavaLimiterState" sourcefile="GuavaLimiterState.java" sourcepath="io/github/bucket4j/state/GuavaLimiterState.java"/>
-    </Field>
+    <Method classname="org.openjdk.jmh.util.Utils" name="getPid" signature="()J" isStatic="true">
+      <SourceLine classname="org.openjdk.jmh.util.Utils" start="400" end="416" startBytecode="0" endBytecode="49" sourcefile="Utils.java" sourcepath="org/openjdk/jmh/util/Utils.java"/>
+    </Method>
+    <LocalVariable name="nfe" register="4" pc="50" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.openjdk.jmh.util.Utils" start="411" end="411" startBytecode="48" endBytecode="48" sourcefile="Utils.java" sourcepath="org/openjdk/jmh/util/Utils.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.LocalLockFreeState">
-      <SourceLine classname="io.github.bucket4j.state.LocalLockFreeState" start="29" end="38" sourcefile="LocalLockFreeState.java" sourcepath="io/github/bucket4j/state/LocalLockFreeState.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.LocalLockFreeState" name="_10_milion_rps_Bucket" signature="Lio/github/bucket4j/Bucket;" isStatic="false">
-      <SourceLine classname="io.github.bucket4j.state.LocalLockFreeState" sourcefile="LocalLockFreeState.java" sourcepath="io/github/bucket4j/state/LocalLockFreeState.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.LocalLockFreeState">
-      <SourceLine classname="io.github.bucket4j.state.LocalLockFreeState" start="29" end="38" sourcefile="LocalLockFreeState.java" sourcepath="io/github/bucket4j/state/LocalLockFreeState.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.LocalLockFreeState" name="unlimitedBucket" signature="Lio/github/bucket4j/Bucket;" isStatic="false">
-      <SourceLine classname="io.github.bucket4j.state.LocalLockFreeState" sourcefile="LocalLockFreeState.java" sourcepath="io/github/bucket4j/state/LocalLockFreeState.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.LocalSynchronizedState">
-      <SourceLine classname="io.github.bucket4j.state.LocalSynchronizedState" start="30" end="43" sourcefile="LocalSynchronizedState.java" sourcepath="io/github/bucket4j/state/LocalSynchronizedState.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.LocalSynchronizedState" name="_10_milion_rps_Bucket" signature="Lio/github/bucket4j/Bucket;" isStatic="false">
-      <SourceLine classname="io.github.bucket4j.state.LocalSynchronizedState" sourcefile="LocalSynchronizedState.java" sourcepath="io/github/bucket4j/state/LocalSynchronizedState.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.LocalSynchronizedState">
-      <SourceLine classname="io.github.bucket4j.state.LocalSynchronizedState" start="30" end="43" sourcefile="LocalSynchronizedState.java" sourcepath="io/github/bucket4j/state/LocalSynchronizedState.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.LocalSynchronizedState" name="unlimitedBucket" signature="Lio/github/bucket4j/Bucket;" isStatic="false">
-      <SourceLine classname="io.github.bucket4j.state.LocalSynchronizedState" sourcefile="LocalSynchronizedState.java" sourcepath="io/github/bucket4j/state/LocalSynchronizedState.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.LocalUnsafeState">
-      <SourceLine classname="io.github.bucket4j.state.LocalUnsafeState" start="30" end="48" sourcefile="LocalUnsafeState.java" sourcepath="io/github/bucket4j/state/LocalUnsafeState.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.LocalUnsafeState" name="bucket" signature="Lio/github/bucket4j/Bucket;" isStatic="false">
-      <SourceLine classname="io.github.bucket4j.state.LocalUnsafeState" sourcefile="LocalUnsafeState.java" sourcepath="io/github/bucket4j/state/LocalUnsafeState.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.LocalUnsafeState">
-      <SourceLine classname="io.github.bucket4j.state.LocalUnsafeState" start="30" end="48" sourcefile="LocalUnsafeState.java" sourcepath="io/github/bucket4j/state/LocalUnsafeState.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.LocalUnsafeState" name="bucketWithoutRefill" signature="Lio/github/bucket4j/Bucket;" isStatic="false">
-      <SourceLine classname="io.github.bucket4j.state.LocalUnsafeState" sourcefile="LocalUnsafeState.java" sourcepath="io/github/bucket4j/state/LocalUnsafeState.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2">
-      <SourceLine classname="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2" start="3" end="17" sourcefile="GuavaLimiterState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/GuavaLimiterState_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2" sourcefile="GuavaLimiterState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/GuavaLimiterState_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2">
-      <SourceLine classname="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2" start="3" end="17" sourcefile="GuavaLimiterState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/GuavaLimiterState_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2" sourcefile="GuavaLimiterState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/GuavaLimiterState_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2">
-      <SourceLine classname="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2" start="3" end="17" sourcefile="GuavaLimiterState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/GuavaLimiterState_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2" sourcefile="GuavaLimiterState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/GuavaLimiterState_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2">
-      <SourceLine classname="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2" start="3" end="17" sourcefile="GuavaLimiterState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/GuavaLimiterState_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2" sourcefile="GuavaLimiterState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/GuavaLimiterState_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2">
-      <SourceLine classname="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2" start="3" end="17" sourcefile="GuavaLimiterState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/GuavaLimiterState_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2" sourcefile="GuavaLimiterState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/GuavaLimiterState_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2">
-      <SourceLine classname="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2" start="3" end="17" sourcefile="GuavaLimiterState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/GuavaLimiterState_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2" sourcefile="GuavaLimiterState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/GuavaLimiterState_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2" start="3" end="17" sourcefile="LocalLockFreeState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalLockFreeState_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2" sourcefile="LocalLockFreeState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalLockFreeState_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2" start="3" end="17" sourcefile="LocalLockFreeState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalLockFreeState_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2" sourcefile="LocalLockFreeState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalLockFreeState_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2" start="3" end="17" sourcefile="LocalLockFreeState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalLockFreeState_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2" sourcefile="LocalLockFreeState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalLockFreeState_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2" start="3" end="17" sourcefile="LocalLockFreeState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalLockFreeState_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2" sourcefile="LocalLockFreeState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalLockFreeState_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2" start="3" end="17" sourcefile="LocalLockFreeState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalLockFreeState_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2" sourcefile="LocalLockFreeState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalLockFreeState_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2" start="3" end="17" sourcefile="LocalLockFreeState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalLockFreeState_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2" sourcefile="LocalLockFreeState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalLockFreeState_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2" start="3" end="17" sourcefile="LocalSynchronizedState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalSynchronizedState_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2" sourcefile="LocalSynchronizedState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalSynchronizedState_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2" start="3" end="17" sourcefile="LocalSynchronizedState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalSynchronizedState_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2" sourcefile="LocalSynchronizedState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalSynchronizedState_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2" start="3" end="17" sourcefile="LocalSynchronizedState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalSynchronizedState_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2" sourcefile="LocalSynchronizedState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalSynchronizedState_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2" start="3" end="17" sourcefile="LocalSynchronizedState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalSynchronizedState_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2" sourcefile="LocalSynchronizedState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalSynchronizedState_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2" start="3" end="17" sourcefile="LocalSynchronizedState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalSynchronizedState_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2" sourcefile="LocalSynchronizedState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalSynchronizedState_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2" start="3" end="17" sourcefile="LocalSynchronizedState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalSynchronizedState_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2" sourcefile="LocalSynchronizedState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalSynchronizedState_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2" start="3" end="17" sourcefile="LocalUnsafeState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalUnsafeState_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2" sourcefile="LocalUnsafeState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalUnsafeState_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2" start="3" end="17" sourcefile="LocalUnsafeState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalUnsafeState_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2" sourcefile="LocalUnsafeState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalUnsafeState_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2" start="3" end="17" sourcefile="LocalUnsafeState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalUnsafeState_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2" sourcefile="LocalUnsafeState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalUnsafeState_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2" start="3" end="17" sourcefile="LocalUnsafeState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalUnsafeState_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2" sourcefile="LocalUnsafeState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalUnsafeState_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2" start="3" end="17" sourcefile="LocalUnsafeState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalUnsafeState_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2" sourcefile="LocalUnsafeState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalUnsafeState_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2" start="3" end="17" sourcefile="LocalUnsafeState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalUnsafeState_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2" sourcefile="LocalUnsafeState_jmhType_B2.java" sourcepath="io/github/bucket4j/state/generated/LocalUnsafeState_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <Errors errors="0" missingClasses="55">
+  <Errors errors="11" missingClasses="55">
+    <Error>
+      <ErrorMessage>Exception analyzing com.google.common.cache.LongAddable using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing org.apache.commons.math3.RealFieldElement using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing com.google.common.cache.Cache using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing org.openjdk.jmh.util.Multiset using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing com.google.common.util.concurrent.RateLimiter$SleepingStopwatch using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing com.google.common.io.ByteArrayDataInput using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing com.google.common.cache.LocalCache$ReferenceEntry using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing org.apache.commons.math3.stat.regression.UpdatingMultipleLinearRegression using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing com.google.common.base.Ticker using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing org.apache.commons.math3.stat.descriptive.StatisticalSummary using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing com.google.common.hash.HashCode using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
     <MissingClass>com.hazelcast.config.CacheSimpleConfig</MissingClass>
     <MissingClass>com.hazelcast.config.Config</MissingClass>
     <MissingClass>com.hazelcast.core.ExecutionCallback</MissingClass>
@@ -425,7 +371,7 @@
     <MissingClass>org.testcontainers.containers.GenericContainer</MissingClass>
     <MissingClass>spock.lang.Specification</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Tue, 21 Aug 2018 00:32:13 +0200" total_classes="3229" referenced_classes="3705" total_bugs="44" total_size="127747" num_packages="112" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="147.96" clock_seconds="47.80" peak_mbytes="1489.77" alloc_mbytes="3641.00" gc_seconds="1.35" priority_2="44">
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 20:55:09 +0200" total_classes="3229" referenced_classes="3728" total_bugs="11" total_size="127747" num_packages="112" java_version="9.0.4" vm_version="9.0.4+11" cpu_seconds="188.94" clock_seconds="65.83" peak_mbytes="898.05" alloc_mbytes="4096.00" gc_seconds="1.83" priority_2="9" priority_1="2">
     <PackageStats package="" total_bugs="0" total_types="1" total_size="43">
       <ClassStats class="HazelcastTest" sourceFile="HazelcastTest.java" interface="false" size="43" bugs="0"/>
     </PackageStats>
@@ -2156,7 +2102,7 @@
     <PackageStats package="compatibility_test" total_bugs="0" total_types="1" total_size="49">
       <ClassStats class="compatibility_test.LuaScriptIsolationTest" sourceFile="LuaScriptIsolationTest.java" interface="false" size="49" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.github.bucket4j" total_bugs="12" total_types="55" total_size="2377" priority_2="12">
+    <PackageStats package="io.github.bucket4j" total_bugs="9" total_types="55" total_size="2377" priority_2="9">
       <ClassStats class="io.github.bucket4j.AbstractBucket" sourceFile="AbstractBucket.java" interface="false" size="150" bugs="0"/>
       <ClassStats class="io.github.bucket4j.AbstractBucket$1" sourceFile="AbstractBucket.java" interface="false" size="97" bugs="0"/>
       <ClassStats class="io.github.bucket4j.AbstractBucket$AsyncScheduledBucketImpl" sourceFile="AbstractBucket.java" interface="true" size="1" bugs="0"/>
@@ -2184,7 +2130,7 @@
       <ClassStats class="io.github.bucket4j.BucketStateSpecification" sourceFile="BucketStateSpecification.groovy" interface="false" size="163" bugs="0"/>
       <ClassStats class="io.github.bucket4j.ConfigurationBuilder" sourceFile="ConfigurationBuilder.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="io.github.bucket4j.ConfigurationReplacementSpecification" sourceFile="ConfigurationReplacementSpecification.groovy" interface="false" size="95" bugs="0"/>
-      <ClassStats class="io.github.bucket4j.ConsumeMostlySuccess" sourceFile="ConsumeMostlySuccess.java" interface="false" size="23" bugs="6" priority_2="6"/>
+      <ClassStats class="io.github.bucket4j.ConsumeMostlySuccess" sourceFile="ConsumeMostlySuccess.java" interface="false" size="23" bugs="3" priority_2="3"/>
       <ClassStats class="io.github.bucket4j.ConsumeMostlySuccess$FourThreads" sourceFile="ConsumeMostlySuccess.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="io.github.bucket4j.ConsumeMostlySuccess$OneThread" sourceFile="ConsumeMostlySuccess.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="io.github.bucket4j.ConsumeMostlySuccess$TwoThreads" sourceFile="ConsumeMostlySuccess.java" interface="false" size="6" bugs="0"/>
@@ -2328,28 +2274,28 @@
       <ClassStats class="io.github.bucket4j.mock.SchedulerMock" sourceFile="SchedulerMock.java" interface="false" size="56" bugs="0"/>
       <ClassStats class="io.github.bucket4j.mock.TimeMeterMock" sourceFile="TimeMeterMock.java" interface="false" size="18" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.github.bucket4j.state" total_bugs="8" total_types="4" total_size="53" priority_2="8">
-      <ClassStats class="io.github.bucket4j.state.GuavaLimiterState" sourceFile="GuavaLimiterState.java" interface="false" size="7" bugs="2" priority_2="2"/>
-      <ClassStats class="io.github.bucket4j.state.LocalLockFreeState" sourceFile="LocalLockFreeState.java" interface="false" size="12" bugs="2" priority_2="2"/>
-      <ClassStats class="io.github.bucket4j.state.LocalSynchronizedState" sourceFile="LocalSynchronizedState.java" interface="false" size="15" bugs="2" priority_2="2"/>
-      <ClassStats class="io.github.bucket4j.state.LocalUnsafeState" sourceFile="LocalUnsafeState.java" interface="false" size="19" bugs="2" priority_2="2"/>
+    <PackageStats package="io.github.bucket4j.state" total_bugs="0" total_types="4" total_size="53">
+      <ClassStats class="io.github.bucket4j.state.GuavaLimiterState" sourceFile="GuavaLimiterState.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="io.github.bucket4j.state.LocalLockFreeState" sourceFile="LocalLockFreeState.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="io.github.bucket4j.state.LocalSynchronizedState" sourceFile="LocalSynchronizedState.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="io.github.bucket4j.state.LocalUnsafeState" sourceFile="LocalUnsafeState.java" interface="false" size="19" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.github.bucket4j.state.generated" total_bugs="24" total_types="16" total_size="2184" priority_2="24">
+    <PackageStats package="io.github.bucket4j.state.generated" total_bugs="0" total_types="16" total_size="2184">
       <ClassStats class="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType" sourceFile="GuavaLimiterState_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B1" sourceFile="GuavaLimiterState_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2" sourceFile="GuavaLimiterState_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B2" sourceFile="GuavaLimiterState_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="io.github.bucket4j.state.generated.GuavaLimiterState_jmhType_B3" sourceFile="GuavaLimiterState_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType" sourceFile="LocalLockFreeState_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B1" sourceFile="LocalLockFreeState_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2" sourceFile="LocalLockFreeState_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B2" sourceFile="LocalLockFreeState_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="io.github.bucket4j.state.generated.LocalLockFreeState_jmhType_B3" sourceFile="LocalLockFreeState_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType" sourceFile="LocalSynchronizedState_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B1" sourceFile="LocalSynchronizedState_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2" sourceFile="LocalSynchronizedState_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B2" sourceFile="LocalSynchronizedState_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="io.github.bucket4j.state.generated.LocalSynchronizedState_jmhType_B3" sourceFile="LocalSynchronizedState_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType" sourceFile="LocalUnsafeState_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B1" sourceFile="LocalUnsafeState_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2" sourceFile="LocalUnsafeState_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B2" sourceFile="LocalUnsafeState_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="io.github.bucket4j.state.generated.LocalUnsafeState_jmhType_B3" sourceFile="LocalUnsafeState_jmhType_B3.java" interface="false" size="259" bugs="0"/>
     </PackageStats>
     <PackageStats package="io.github.bucket4j.util" total_bugs="0" total_types="3" total_size="72">
@@ -3832,7 +3778,7 @@
       <ClassStats class="org.openjdk.jmh.runner.options.VerboseMode" sourceFile="VerboseMode.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.options.WarmupMode" sourceFile="WarmupMode.java" interface="false" size="23" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.openjdk.jmh.util" total_bugs="0" total_types="40" total_size="1299">
+    <PackageStats package="org.openjdk.jmh.util" total_bugs="2" total_types="40" total_size="1299" priority_1="2">
       <ClassStats class="org.openjdk.jmh.util.AbstractStatistics" sourceFile="AbstractStatistics.java" interface="false" size="40" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.util.BoundedPriorityQueue" sourceFile="BoundedPriorityQueue.java" interface="false" size="35" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.util.ClassUtils" sourceFile="ClassUtils.java" interface="false" size="76" bugs="0"/>
@@ -3869,7 +3815,7 @@
       <ClassStats class="org.openjdk.jmh.util.TreeMultimap" sourceFile="TreeMultimap.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.util.TreeMultiset" sourceFile="TreeMultiset.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.util.UnCloseablePrintStream" sourceFile="UnCloseablePrintStream.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.util.Utils" sourceFile="Utils.java" interface="false" size="267" bugs="0"/>
+      <ClassStats class="org.openjdk.jmh.util.Utils" sourceFile="Utils.java" interface="false" size="267" bugs="2" priority_1="2"/>
       <ClassStats class="org.openjdk.jmh.util.Utils$1" sourceFile="Utils.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.util.Utils$BurningTask" sourceFile="Utils.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.util.Version" sourceFile="Version.java" interface="false" size="44" bugs="0"/>
@@ -3880,50 +3826,53 @@
       <ClassStats class="org.openjdk.jmh.util.lines.TestLineWriter" sourceFile="TestLineWriter.java" interface="false" size="80" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="3298" invocations="23309" avgMicrosecondsPerInvocation="141" maxMicrosecondsPerInvocation="507028" standardDeviationMicrosecondsPerInvocation="3467"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="3282" invocations="20946" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="52209" standardDeviationMicrosecondsPerInvocation="728"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="3196" invocations="22899" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="39642" standardDeviationMicrosecondsPerInvocation="643"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="2976" invocations="21809" avgMicrosecondsPerInvocation="136" maxMicrosecondsPerInvocation="59321" standardDeviationMicrosecondsPerInvocation="853"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="2339" invocations="23114" avgMicrosecondsPerInvocation="101" maxMicrosecondsPerInvocation="20003" standardDeviationMicrosecondsPerInvocation="379"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="1804" invocations="19889" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="17065" standardDeviationMicrosecondsPerInvocation="349"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1413" invocations="22903" avgMicrosecondsPerInvocation="61" maxMicrosecondsPerInvocation="36784" standardDeviationMicrosecondsPerInvocation="299"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1181" invocations="26522" avgMicrosecondsPerInvocation="44" maxMicrosecondsPerInvocation="43235" standardDeviationMicrosecondsPerInvocation="338"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="977" invocations="3705" avgMicrosecondsPerInvocation="263" maxMicrosecondsPerInvocation="77785" standardDeviationMicrosecondsPerInvocation="1709"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="817" invocations="5119" avgMicrosecondsPerInvocation="159" maxMicrosecondsPerInvocation="35801" standardDeviationMicrosecondsPerInvocation="785"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="804" invocations="22899" avgMicrosecondsPerInvocation="35" maxMicrosecondsPerInvocation="42109" standardDeviationMicrosecondsPerInvocation="363"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="750" invocations="3705" avgMicrosecondsPerInvocation="202" maxMicrosecondsPerInvocation="12300" standardDeviationMicrosecondsPerInvocation="589"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="733" invocations="3229" avgMicrosecondsPerInvocation="227" maxMicrosecondsPerInvocation="95081" standardDeviationMicrosecondsPerInvocation="2269"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="647" invocations="1045989" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="3914" standardDeviationMicrosecondsPerInvocation="6"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="635" invocations="3229" avgMicrosecondsPerInvocation="196" maxMicrosecondsPerInvocation="110575" standardDeviationMicrosecondsPerInvocation="1995"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="632" invocations="3229" avgMicrosecondsPerInvocation="195" maxMicrosecondsPerInvocation="19985" standardDeviationMicrosecondsPerInvocation="710"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="518" invocations="3229" avgMicrosecondsPerInvocation="160" maxMicrosecondsPerInvocation="92531" standardDeviationMicrosecondsPerInvocation="1868"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="492" invocations="5251" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="6275" standardDeviationMicrosecondsPerInvocation="137"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="423" invocations="20066" avgMicrosecondsPerInvocation="21" maxMicrosecondsPerInvocation="5005" standardDeviationMicrosecondsPerInvocation="98"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="415" invocations="24482" avgMicrosecondsPerInvocation="16" maxMicrosecondsPerInvocation="26427" standardDeviationMicrosecondsPerInvocation="178"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="380" invocations="20946" avgMicrosecondsPerInvocation="18" maxMicrosecondsPerInvocation="4030" standardDeviationMicrosecondsPerInvocation="60"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="363" invocations="3229" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="6382" standardDeviationMicrosecondsPerInvocation="289"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="360" invocations="3229" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="41370" standardDeviationMicrosecondsPerInvocation="770"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="332" invocations="3229" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="4238" standardDeviationMicrosecondsPerInvocation="225"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="332" invocations="3229" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="8713" standardDeviationMicrosecondsPerInvocation="336"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="324" invocations="3229" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="38931" standardDeviationMicrosecondsPerInvocation="729"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="318" invocations="3229" avgMicrosecondsPerInvocation="98" maxMicrosecondsPerInvocation="6337" standardDeviationMicrosecondsPerInvocation="316"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="317" invocations="3229" avgMicrosecondsPerInvocation="98" maxMicrosecondsPerInvocation="5742" standardDeviationMicrosecondsPerInvocation="289"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="311" invocations="3229" avgMicrosecondsPerInvocation="96" maxMicrosecondsPerInvocation="33394" standardDeviationMicrosecondsPerInvocation="633"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="310" invocations="3229" avgMicrosecondsPerInvocation="96" maxMicrosecondsPerInvocation="4287" standardDeviationMicrosecondsPerInvocation="226"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="307" invocations="3229" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="5639" standardDeviationMicrosecondsPerInvocation="314"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="307" invocations="3229" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="5662" standardDeviationMicrosecondsPerInvocation="289"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="306" invocations="3229" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="6460" standardDeviationMicrosecondsPerInvocation="289"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="303" invocations="3229" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="7349" standardDeviationMicrosecondsPerInvocation="312"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="293" invocations="3229" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="8079" standardDeviationMicrosecondsPerInvocation="281"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="281" invocations="6225" avgMicrosecondsPerInvocation="45" maxMicrosecondsPerInvocation="12885" standardDeviationMicrosecondsPerInvocation="206"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="279" invocations="3229" avgMicrosecondsPerInvocation="86" maxMicrosecondsPerInvocation="42338" standardDeviationMicrosecondsPerInvocation="997"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="270" invocations="3229" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="10334" standardDeviationMicrosecondsPerInvocation="315"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="266" invocations="3229" avgMicrosecondsPerInvocation="82" maxMicrosecondsPerInvocation="12278" standardDeviationMicrosecondsPerInvocation="314"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="265" invocations="3229" avgMicrosecondsPerInvocation="82" maxMicrosecondsPerInvocation="4790" standardDeviationMicrosecondsPerInvocation="247"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BadSyntaxForRegularExpression" totalMilliseconds="263" invocations="3229" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="5434" standardDeviationMicrosecondsPerInvocation="276"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="262" invocations="3229" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="3262" standardDeviationMicrosecondsPerInvocation="183"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNonShortCircuit" totalMilliseconds="261" invocations="3229" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="4760" standardDeviationMicrosecondsPerInvocation="258"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.LoopInsideBenchmarkDetector" totalMilliseconds="258" invocations="3229" avgMicrosecondsPerInvocation="79" maxMicrosecondsPerInvocation="7093" standardDeviationMicrosecondsPerInvocation="278"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="4392" invocations="20946" avgMicrosecondsPerInvocation="209" maxMicrosecondsPerInvocation="54940" standardDeviationMicrosecondsPerInvocation="1146"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="3897" invocations="22899" avgMicrosecondsPerInvocation="170" maxMicrosecondsPerInvocation="39575" standardDeviationMicrosecondsPerInvocation="772"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="3814" invocations="21809" avgMicrosecondsPerInvocation="174" maxMicrosecondsPerInvocation="105982" standardDeviationMicrosecondsPerInvocation="1321"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="3453" invocations="23309" avgMicrosecondsPerInvocation="148" maxMicrosecondsPerInvocation="72967" standardDeviationMicrosecondsPerInvocation="1085"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="2987" invocations="23114" avgMicrosecondsPerInvocation="129" maxMicrosecondsPerInvocation="46008" standardDeviationMicrosecondsPerInvocation="562"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="2374" invocations="19889" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="60586" standardDeviationMicrosecondsPerInvocation="781"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="1881" invocations="3229" avgMicrosecondsPerInvocation="582" maxMicrosecondsPerInvocation="42816" standardDeviationMicrosecondsPerInvocation="2636"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1795" invocations="24482" avgMicrosecondsPerInvocation="73" maxMicrosecondsPerInvocation="47090" standardDeviationMicrosecondsPerInvocation="380"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1521" invocations="26628" avgMicrosecondsPerInvocation="57" maxMicrosecondsPerInvocation="18963" standardDeviationMicrosecondsPerInvocation="300"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1209" invocations="3728" avgMicrosecondsPerInvocation="324" maxMicrosecondsPerInvocation="59478" standardDeviationMicrosecondsPerInvocation="1638"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1175" invocations="5268" avgMicrosecondsPerInvocation="223" maxMicrosecondsPerInvocation="35965" standardDeviationMicrosecondsPerInvocation="870"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="1107" invocations="22899" avgMicrosecondsPerInvocation="48" maxMicrosecondsPerInvocation="68840" standardDeviationMicrosecondsPerInvocation="667"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="988" invocations="3728" avgMicrosecondsPerInvocation="265" maxMicrosecondsPerInvocation="14197" standardDeviationMicrosecondsPerInvocation="783"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="864" invocations="1086906" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="17542" standardDeviationMicrosecondsPerInvocation="23"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="796" invocations="3229" avgMicrosecondsPerInvocation="246" maxMicrosecondsPerInvocation="31064" standardDeviationMicrosecondsPerInvocation="946"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="751" invocations="3229" avgMicrosecondsPerInvocation="232" maxMicrosecondsPerInvocation="23055" standardDeviationMicrosecondsPerInvocation="745"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="661" invocations="3229" avgMicrosecondsPerInvocation="204" maxMicrosecondsPerInvocation="17748" standardDeviationMicrosecondsPerInvocation="651"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="645" invocations="20946" avgMicrosecondsPerInvocation="30" maxMicrosecondsPerInvocation="77472" standardDeviationMicrosecondsPerInvocation="675"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="596" invocations="24482" avgMicrosecondsPerInvocation="24" maxMicrosecondsPerInvocation="47826" standardDeviationMicrosecondsPerInvocation="382"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector" totalMilliseconds="558" invocations="3229" avgMicrosecondsPerInvocation="172" maxMicrosecondsPerInvocation="38376" standardDeviationMicrosecondsPerInvocation="787"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="540" invocations="20081" avgMicrosecondsPerInvocation="26" maxMicrosecondsPerInvocation="5872" standardDeviationMicrosecondsPerInvocation="116"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="512" invocations="3229" avgMicrosecondsPerInvocation="158" maxMicrosecondsPerInvocation="54164" standardDeviationMicrosecondsPerInvocation="1424"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="476" invocations="3229" avgMicrosecondsPerInvocation="147" maxMicrosecondsPerInvocation="38284" standardDeviationMicrosecondsPerInvocation="878"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="457" invocations="3229" avgMicrosecondsPerInvocation="141" maxMicrosecondsPerInvocation="12402" standardDeviationMicrosecondsPerInvocation="473"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="445" invocations="3229" avgMicrosecondsPerInvocation="137" maxMicrosecondsPerInvocation="10985" standardDeviationMicrosecondsPerInvocation="410"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="440" invocations="3229" avgMicrosecondsPerInvocation="136" maxMicrosecondsPerInvocation="9738" standardDeviationMicrosecondsPerInvocation="399"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="440" invocations="3229" avgMicrosecondsPerInvocation="136" maxMicrosecondsPerInvocation="14514" standardDeviationMicrosecondsPerInvocation="408"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="438" invocations="3229" avgMicrosecondsPerInvocation="135" maxMicrosecondsPerInvocation="11628" standardDeviationMicrosecondsPerInvocation="419"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="435" invocations="3229" avgMicrosecondsPerInvocation="134" maxMicrosecondsPerInvocation="7695" standardDeviationMicrosecondsPerInvocation="368"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="433" invocations="3229" avgMicrosecondsPerInvocation="134" maxMicrosecondsPerInvocation="7579" standardDeviationMicrosecondsPerInvocation="369"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="431" invocations="3229" avgMicrosecondsPerInvocation="133" maxMicrosecondsPerInvocation="81762" standardDeviationMicrosecondsPerInvocation="1497"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="429" invocations="5615" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="45254" standardDeviationMicrosecondsPerInvocation="622"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="409" invocations="3229" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="10454" standardDeviationMicrosecondsPerInvocation="433"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BadSyntaxForRegularExpression" totalMilliseconds="401" invocations="3229" avgMicrosecondsPerInvocation="124" maxMicrosecondsPerInvocation="34071" standardDeviationMicrosecondsPerInvocation="714"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="399" invocations="3229" avgMicrosecondsPerInvocation="123" maxMicrosecondsPerInvocation="6944" standardDeviationMicrosecondsPerInvocation="359"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="399" invocations="3229" avgMicrosecondsPerInvocation="123" maxMicrosecondsPerInvocation="10579" standardDeviationMicrosecondsPerInvocation="409"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredStaticMethodReturnDetector" totalMilliseconds="398" invocations="3229" avgMicrosecondsPerInvocation="123" maxMicrosecondsPerInvocation="31576" standardDeviationMicrosecondsPerInvocation="789"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="396" invocations="3229" avgMicrosecondsPerInvocation="122" maxMicrosecondsPerInvocation="8158" standardDeviationMicrosecondsPerInvocation="366"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadForLoop" totalMilliseconds="389" invocations="3229" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="35906" standardDeviationMicrosecondsPerInvocation="713"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="381" invocations="3229" avgMicrosecondsPerInvocation="118" maxMicrosecondsPerInvocation="9433" standardDeviationMicrosecondsPerInvocation="386"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="376" invocations="421267" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="30194" standardDeviationMicrosecondsPerInvocation="47"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="376" invocations="3229" avgMicrosecondsPerInvocation="116" maxMicrosecondsPerInvocation="10836" standardDeviationMicrosecondsPerInvocation="440"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.LoopInsideBenchmarkDetector" totalMilliseconds="375" invocations="3229" avgMicrosecondsPerInvocation="116" maxMicrosecondsPerInvocation="41376" standardDeviationMicrosecondsPerInvocation="810"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="374" invocations="3229" avgMicrosecondsPerInvocation="115" maxMicrosecondsPerInvocation="6665" standardDeviationMicrosecondsPerInvocation="331"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="366" invocations="3229" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="8086" standardDeviationMicrosecondsPerInvocation="350"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteRecursiveLoop" totalMilliseconds="360" invocations="3229" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="9296" standardDeviationMicrosecondsPerInvocation="383"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindFloatEquality" totalMilliseconds="357" invocations="3229" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="14705" standardDeviationMicrosecondsPerInvocation="425"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

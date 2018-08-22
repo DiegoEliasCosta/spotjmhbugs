@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1534841835000" analysisTimestamp="1534841836849" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534875946000" analysisTimestamp="1534875948491" release="">
   <Project projectName="">
     <Jar>tmp/reactivesocket-java</Jar>
   </Project>
@@ -49,61 +49,21 @@
     </Method>
     <SourceLine classname="io.rsocket.RSocketPerf" start="66" end="66" startBytecode="19" endBytecode="19" sourcefile="RSocketPerf.java" sourcepath="io/rsocket/RSocketPerf.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.RSocketPerf$Input">
-      <SourceLine classname="io.rsocket.RSocketPerf$Input" start="76" end="178" sourcefile="RSocketPerf.java" sourcepath="io/rsocket/RSocketPerf.java"/>
+  <BugInstance type="JMH_UNSINKED_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="io.rsocket.RSocketPerf">
+      <SourceLine classname="io.rsocket.RSocketPerf" start="49" end="73" sourcefile="RSocketPerf.java" sourcepath="io/rsocket/RSocketPerf.java"/>
     </Class>
-    <Field classname="io.rsocket.RSocketPerf$Input" name="HELLO" signature="Ljava/nio/ByteBuffer;" isStatic="true">
-      <SourceLine classname="io.rsocket.RSocketPerf$Input" sourcefile="RSocketPerf.java" sourcepath="io/rsocket/RSocketPerf.java"/>
-    </Field>
+    <Method classname="io.rsocket.RSocketPerf" name="requestResponseHello" signature="(Lio/rsocket/RSocketPerf$Input;)V" isStatic="false">
+      <SourceLine classname="io.rsocket.RSocketPerf" start="54" end="58" startBytecode="0" endBytecode="126" sourcefile="RSocketPerf.java" sourcepath="io/rsocket/RSocketPerf.java"/>
+    </Method>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.RSocketPerf$Input">
-      <SourceLine classname="io.rsocket.RSocketPerf$Input" start="76" end="178" sourcefile="RSocketPerf.java" sourcepath="io/rsocket/RSocketPerf.java"/>
+  <BugInstance type="JMH_UNSINKED_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="io.rsocket.RSocketPerf">
+      <SourceLine classname="io.rsocket.RSocketPerf" start="49" end="73" sourcefile="RSocketPerf.java" sourcepath="io/rsocket/RSocketPerf.java"/>
     </Class>
-    <Field classname="io.rsocket.RSocketPerf$Input" name="HELLO_PAYLOAD" signature="Lio/rsocket/Payload;" isStatic="true">
-      <SourceLine classname="io.rsocket.RSocketPerf$Input" sourcefile="RSocketPerf.java" sourcepath="io/rsocket/RSocketPerf.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.RSocketPerf$Input">
-      <SourceLine classname="io.rsocket.RSocketPerf$Input" start="76" end="178" sourcefile="RSocketPerf.java" sourcepath="io/rsocket/RSocketPerf.java"/>
-    </Class>
-    <Field classname="io.rsocket.RSocketPerf$Input" name="clientConnection" signature="Lio/rsocket/perfutil/TestDuplexConnection;" isStatic="true">
-      <SourceLine classname="io.rsocket.RSocketPerf$Input" sourcefile="RSocketPerf.java" sourcepath="io/rsocket/RSocketPerf.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.RSocketPerf$Input">
-      <SourceLine classname="io.rsocket.RSocketPerf$Input" start="76" end="178" sourcefile="RSocketPerf.java" sourcepath="io/rsocket/RSocketPerf.java"/>
-    </Class>
-    <Field classname="io.rsocket.RSocketPerf$Input" name="clientReceive" signature="Lreactor/core/publisher/DirectProcessor;" isStatic="true">
-      <SourceLine classname="io.rsocket.RSocketPerf$Input" sourcefile="RSocketPerf.java" sourcepath="io/rsocket/RSocketPerf.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.RSocketPerf$Input">
-      <SourceLine classname="io.rsocket.RSocketPerf$Input" start="76" end="178" sourcefile="RSocketPerf.java" sourcepath="io/rsocket/RSocketPerf.java"/>
-    </Class>
-    <Field classname="io.rsocket.RSocketPerf$Input" name="server" signature="Lio/rsocket/RSocketFactory$Start;" isStatic="true">
-      <SourceLine classname="io.rsocket.RSocketPerf$Input" sourcefile="RSocketPerf.java" sourcepath="io/rsocket/RSocketPerf.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.RSocketPerf$Input">
-      <SourceLine classname="io.rsocket.RSocketPerf$Input" start="76" end="178" sourcefile="RSocketPerf.java" sourcepath="io/rsocket/RSocketPerf.java"/>
-    </Class>
-    <Field classname="io.rsocket.RSocketPerf$Input" name="serverConnection" signature="Lio/rsocket/perfutil/TestDuplexConnection;" isStatic="true">
-      <SourceLine classname="io.rsocket.RSocketPerf$Input" sourcefile="RSocketPerf.java" sourcepath="io/rsocket/RSocketPerf.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.RSocketPerf$Input">
-      <SourceLine classname="io.rsocket.RSocketPerf$Input" start="76" end="178" sourcefile="RSocketPerf.java" sourcepath="io/rsocket/RSocketPerf.java"/>
-    </Class>
-    <Field classname="io.rsocket.RSocketPerf$Input" name="serverReceive" signature="Lreactor/core/publisher/DirectProcessor;" isStatic="true">
-      <SourceLine classname="io.rsocket.RSocketPerf$Input" sourcefile="RSocketPerf.java" sourcepath="io/rsocket/RSocketPerf.java"/>
-    </Field>
+    <Method classname="io.rsocket.RSocketPerf" name="requestStreamHello1000" signature="(Lio/rsocket/RSocketPerf$Input;)V" isStatic="false">
+      <SourceLine classname="io.rsocket.RSocketPerf" start="63" end="67" startBytecode="0" endBytecode="126" sourcefile="RSocketPerf.java" sourcepath="io/rsocket/RSocketPerf.java"/>
+    </Method>
   </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="io.rsocket.fragmentation.FragmentationPerformanceTest">
@@ -141,202 +101,7 @@
     </Method>
     <SourceLine classname="io.rsocket.fragmentation.FragmentationPerformanceTest" start="75" end="75" startBytecode="0" endBytecode="0" sourcefile="FragmentationPerformanceTest.java" sourcepath="io/rsocket/fragmentation/FragmentationPerformanceTest.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2">
-      <SourceLine classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2" start="3" end="17" sourcefile="FragmentationPerformanceTest_Input_jmhType_B2.java" sourcepath="io/rsocket/fragmentation/generated/FragmentationPerformanceTest_Input_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2" sourcefile="FragmentationPerformanceTest_Input_jmhType_B2.java" sourcepath="io/rsocket/fragmentation/generated/FragmentationPerformanceTest_Input_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2">
-      <SourceLine classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2" start="3" end="17" sourcefile="FragmentationPerformanceTest_Input_jmhType_B2.java" sourcepath="io/rsocket/fragmentation/generated/FragmentationPerformanceTest_Input_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2" sourcefile="FragmentationPerformanceTest_Input_jmhType_B2.java" sourcepath="io/rsocket/fragmentation/generated/FragmentationPerformanceTest_Input_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2">
-      <SourceLine classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2" start="3" end="17" sourcefile="FragmentationPerformanceTest_Input_jmhType_B2.java" sourcepath="io/rsocket/fragmentation/generated/FragmentationPerformanceTest_Input_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2" sourcefile="FragmentationPerformanceTest_Input_jmhType_B2.java" sourcepath="io/rsocket/fragmentation/generated/FragmentationPerformanceTest_Input_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2">
-      <SourceLine classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2" start="3" end="17" sourcefile="FragmentationPerformanceTest_Input_jmhType_B2.java" sourcepath="io/rsocket/fragmentation/generated/FragmentationPerformanceTest_Input_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2" sourcefile="FragmentationPerformanceTest_Input_jmhType_B2.java" sourcepath="io/rsocket/fragmentation/generated/FragmentationPerformanceTest_Input_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2">
-      <SourceLine classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2" start="3" end="17" sourcefile="FragmentationPerformanceTest_Input_jmhType_B2.java" sourcepath="io/rsocket/fragmentation/generated/FragmentationPerformanceTest_Input_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2" sourcefile="FragmentationPerformanceTest_Input_jmhType_B2.java" sourcepath="io/rsocket/fragmentation/generated/FragmentationPerformanceTest_Input_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2">
-      <SourceLine classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2" start="3" end="17" sourcefile="FragmentationPerformanceTest_Input_jmhType_B2.java" sourcepath="io/rsocket/fragmentation/generated/FragmentationPerformanceTest_Input_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2" sourcefile="FragmentationPerformanceTest_Input_jmhType_B2.java" sourcepath="io/rsocket/fragmentation/generated/FragmentationPerformanceTest_Input_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2">
-      <SourceLine classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2" start="3" end="17" sourcefile="FragmentationPerformanceTest_jmhType_B2.java" sourcepath="io/rsocket/fragmentation/generated/FragmentationPerformanceTest_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2" sourcefile="FragmentationPerformanceTest_jmhType_B2.java" sourcepath="io/rsocket/fragmentation/generated/FragmentationPerformanceTest_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2">
-      <SourceLine classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2" start="3" end="17" sourcefile="FragmentationPerformanceTest_jmhType_B2.java" sourcepath="io/rsocket/fragmentation/generated/FragmentationPerformanceTest_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2" sourcefile="FragmentationPerformanceTest_jmhType_B2.java" sourcepath="io/rsocket/fragmentation/generated/FragmentationPerformanceTest_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2">
-      <SourceLine classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2" start="3" end="17" sourcefile="FragmentationPerformanceTest_jmhType_B2.java" sourcepath="io/rsocket/fragmentation/generated/FragmentationPerformanceTest_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2" sourcefile="FragmentationPerformanceTest_jmhType_B2.java" sourcepath="io/rsocket/fragmentation/generated/FragmentationPerformanceTest_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2">
-      <SourceLine classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2" start="3" end="17" sourcefile="FragmentationPerformanceTest_jmhType_B2.java" sourcepath="io/rsocket/fragmentation/generated/FragmentationPerformanceTest_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2" sourcefile="FragmentationPerformanceTest_jmhType_B2.java" sourcepath="io/rsocket/fragmentation/generated/FragmentationPerformanceTest_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2">
-      <SourceLine classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2" start="3" end="17" sourcefile="FragmentationPerformanceTest_jmhType_B2.java" sourcepath="io/rsocket/fragmentation/generated/FragmentationPerformanceTest_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2" sourcefile="FragmentationPerformanceTest_jmhType_B2.java" sourcepath="io/rsocket/fragmentation/generated/FragmentationPerformanceTest_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2">
-      <SourceLine classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2" start="3" end="17" sourcefile="FragmentationPerformanceTest_jmhType_B2.java" sourcepath="io/rsocket/fragmentation/generated/FragmentationPerformanceTest_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2" sourcefile="FragmentationPerformanceTest_jmhType_B2.java" sourcepath="io/rsocket/fragmentation/generated/FragmentationPerformanceTest_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.generated.RSocketPerf_Input_jmhType_B2">
-      <SourceLine classname="io.rsocket.generated.RSocketPerf_Input_jmhType_B2" start="3" end="17" sourcefile="RSocketPerf_Input_jmhType_B2.java" sourcepath="io/rsocket/generated/RSocketPerf_Input_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.rsocket.generated.RSocketPerf_Input_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.rsocket.generated.RSocketPerf_Input_jmhType_B2" sourcefile="RSocketPerf_Input_jmhType_B2.java" sourcepath="io/rsocket/generated/RSocketPerf_Input_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.generated.RSocketPerf_Input_jmhType_B2">
-      <SourceLine classname="io.rsocket.generated.RSocketPerf_Input_jmhType_B2" start="3" end="17" sourcefile="RSocketPerf_Input_jmhType_B2.java" sourcepath="io/rsocket/generated/RSocketPerf_Input_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.rsocket.generated.RSocketPerf_Input_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.rsocket.generated.RSocketPerf_Input_jmhType_B2" sourcefile="RSocketPerf_Input_jmhType_B2.java" sourcepath="io/rsocket/generated/RSocketPerf_Input_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.generated.RSocketPerf_Input_jmhType_B2">
-      <SourceLine classname="io.rsocket.generated.RSocketPerf_Input_jmhType_B2" start="3" end="17" sourcefile="RSocketPerf_Input_jmhType_B2.java" sourcepath="io/rsocket/generated/RSocketPerf_Input_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.rsocket.generated.RSocketPerf_Input_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.rsocket.generated.RSocketPerf_Input_jmhType_B2" sourcefile="RSocketPerf_Input_jmhType_B2.java" sourcepath="io/rsocket/generated/RSocketPerf_Input_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.generated.RSocketPerf_Input_jmhType_B2">
-      <SourceLine classname="io.rsocket.generated.RSocketPerf_Input_jmhType_B2" start="3" end="17" sourcefile="RSocketPerf_Input_jmhType_B2.java" sourcepath="io/rsocket/generated/RSocketPerf_Input_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.rsocket.generated.RSocketPerf_Input_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.rsocket.generated.RSocketPerf_Input_jmhType_B2" sourcefile="RSocketPerf_Input_jmhType_B2.java" sourcepath="io/rsocket/generated/RSocketPerf_Input_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.generated.RSocketPerf_Input_jmhType_B2">
-      <SourceLine classname="io.rsocket.generated.RSocketPerf_Input_jmhType_B2" start="3" end="17" sourcefile="RSocketPerf_Input_jmhType_B2.java" sourcepath="io/rsocket/generated/RSocketPerf_Input_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.rsocket.generated.RSocketPerf_Input_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.rsocket.generated.RSocketPerf_Input_jmhType_B2" sourcefile="RSocketPerf_Input_jmhType_B2.java" sourcepath="io/rsocket/generated/RSocketPerf_Input_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.generated.RSocketPerf_Input_jmhType_B2">
-      <SourceLine classname="io.rsocket.generated.RSocketPerf_Input_jmhType_B2" start="3" end="17" sourcefile="RSocketPerf_Input_jmhType_B2.java" sourcepath="io/rsocket/generated/RSocketPerf_Input_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.rsocket.generated.RSocketPerf_Input_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.rsocket.generated.RSocketPerf_Input_jmhType_B2" sourcefile="RSocketPerf_Input_jmhType_B2.java" sourcepath="io/rsocket/generated/RSocketPerf_Input_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.generated.RSocketPerf_jmhType_B2">
-      <SourceLine classname="io.rsocket.generated.RSocketPerf_jmhType_B2" start="3" end="17" sourcefile="RSocketPerf_jmhType_B2.java" sourcepath="io/rsocket/generated/RSocketPerf_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.rsocket.generated.RSocketPerf_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.rsocket.generated.RSocketPerf_jmhType_B2" sourcefile="RSocketPerf_jmhType_B2.java" sourcepath="io/rsocket/generated/RSocketPerf_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.generated.RSocketPerf_jmhType_B2">
-      <SourceLine classname="io.rsocket.generated.RSocketPerf_jmhType_B2" start="3" end="17" sourcefile="RSocketPerf_jmhType_B2.java" sourcepath="io/rsocket/generated/RSocketPerf_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.rsocket.generated.RSocketPerf_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.rsocket.generated.RSocketPerf_jmhType_B2" sourcefile="RSocketPerf_jmhType_B2.java" sourcepath="io/rsocket/generated/RSocketPerf_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.generated.RSocketPerf_jmhType_B2">
-      <SourceLine classname="io.rsocket.generated.RSocketPerf_jmhType_B2" start="3" end="17" sourcefile="RSocketPerf_jmhType_B2.java" sourcepath="io/rsocket/generated/RSocketPerf_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.rsocket.generated.RSocketPerf_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.rsocket.generated.RSocketPerf_jmhType_B2" sourcefile="RSocketPerf_jmhType_B2.java" sourcepath="io/rsocket/generated/RSocketPerf_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.generated.RSocketPerf_jmhType_B2">
-      <SourceLine classname="io.rsocket.generated.RSocketPerf_jmhType_B2" start="3" end="17" sourcefile="RSocketPerf_jmhType_B2.java" sourcepath="io/rsocket/generated/RSocketPerf_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.rsocket.generated.RSocketPerf_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.rsocket.generated.RSocketPerf_jmhType_B2" sourcefile="RSocketPerf_jmhType_B2.java" sourcepath="io/rsocket/generated/RSocketPerf_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.generated.RSocketPerf_jmhType_B2">
-      <SourceLine classname="io.rsocket.generated.RSocketPerf_jmhType_B2" start="3" end="17" sourcefile="RSocketPerf_jmhType_B2.java" sourcepath="io/rsocket/generated/RSocketPerf_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.rsocket.generated.RSocketPerf_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.rsocket.generated.RSocketPerf_jmhType_B2" sourcefile="RSocketPerf_jmhType_B2.java" sourcepath="io/rsocket/generated/RSocketPerf_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="io.rsocket.generated.RSocketPerf_jmhType_B2">
-      <SourceLine classname="io.rsocket.generated.RSocketPerf_jmhType_B2" start="3" end="17" sourcefile="RSocketPerf_jmhType_B2.java" sourcepath="io/rsocket/generated/RSocketPerf_jmhType_B2.java"/>
-    </Class>
-    <Field classname="io.rsocket.generated.RSocketPerf_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="io.rsocket.generated.RSocketPerf_jmhType_B2" sourcefile="RSocketPerf_jmhType_B2.java" sourcepath="io/rsocket/generated/RSocketPerf_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <Errors errors="0" missingClasses="53">
-    <MissingClass>java.util.concurrent.Flow$Publisher</MissingClass>
-    <MissingClass>java.util.concurrent.Flow$Subscriber</MissingClass>
-    <MissingClass>java.util.concurrent.Flow$Subscription</MissingClass>
+  <Errors errors="0" missingClasses="50">
     <MissingClass>kotlin.TypeCastException</MissingClass>
     <MissingClass>kotlin.collections.ArraysKt</MissingClass>
     <MissingClass>kotlin.jvm.JvmClassMappingKt</MissingClass>
@@ -388,7 +153,7 @@
     <MissingClass>reactor.test.StepVerifier$FirstStep</MissingClass>
     <MissingClass>reactor.test.StepVerifier$Step</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Tue, 21 Aug 2018 10:57:15 +0200" total_classes="3357" referenced_classes="3958" total_bugs="40" total_size="167721" num_packages="137" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="173.60" clock_seconds="60.13" peak_mbytes="1506.73" alloc_mbytes="3641.00" gc_seconds="1.69" priority_2="40">
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 20:25:46 +0200" total_classes="3357" referenced_classes="3995" total_bugs="11" total_size="167726" num_packages="137" java_version="9.0.4" vm_version="9.0.4+11" cpu_seconds="203.11" clock_seconds="67.06" peak_mbytes="939.69" alloc_mbytes="4096.00" gc_seconds="1.93" priority_2="9" priority_1="2">
     <PackageStats package="io.netty.buffer" total_bugs="0" total_types="114" total_size="13132">
       <ClassStats class="io.netty.buffer.AbstractByteBuf" sourceFile="AbstractByteBuf.java" interface="false" size="776" bugs="0"/>
       <ClassStats class="io.netty.buffer.AbstractByteBufAllocator" sourceFile="AbstractByteBufAllocator.java" interface="false" size="124" bugs="0"/>
@@ -960,7 +725,7 @@
       <ClassStats class="io.netty.util.internal.shaded.org.jctools.util.UnsafeAccess" sourceFile="UnsafeAccess.java" interface="false" size="26" bugs="0"/>
       <ClassStats class="io.netty.util.internal.shaded.org.jctools.util.UnsafeRefArrayAccess" sourceFile="UnsafeRefArrayAccess.java" interface="false" size="26" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.rsocket" total_bugs="12" total_types="56" total_size="1843" priority_2="12">
+    <PackageStats package="io.rsocket" total_bugs="7" total_types="56" total_size="1846" priority_2="5" priority_1="2">
       <ClassStats class="io.rsocket.AbstractRSocket" sourceFile="AbstractRSocket.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="io.rsocket.AbstractSocketRule" sourceFile="AbstractSocketRule.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="io.rsocket.AbstractSocketRule$1" sourceFile="AbstractSocketRule.java" interface="false" size="12" bugs="0"/>
@@ -977,9 +742,9 @@
       <ClassStats class="io.rsocket.Frame$Keepalive" sourceFile="Frame.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="io.rsocket.Frame$Lease" sourceFile="Frame.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="io.rsocket.Frame$PayloadFrame" sourceFile="Frame.java" interface="false" size="20" bugs="0"/>
-      <ClassStats class="io.rsocket.Frame$Request" sourceFile="Frame.java" interface="false" size="57" bugs="0"/>
+      <ClassStats class="io.rsocket.Frame$Request" sourceFile="Frame.java" interface="false" size="58" bugs="0"/>
       <ClassStats class="io.rsocket.Frame$RequestN" sourceFile="Frame.java" interface="false" size="16" bugs="0"/>
-      <ClassStats class="io.rsocket.Frame$Setup" sourceFile="Frame.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="io.rsocket.Frame$Setup" sourceFile="Frame.java" interface="false" size="35" bugs="0"/>
       <ClassStats class="io.rsocket.FrameTest" sourceFile="FrameTest.java" interface="false" size="23" bugs="0"/>
       <ClassStats class="io.rsocket.Payload" sourceFile="Payload.java" interface="true" size="21" bugs="0"/>
       <ClassStats class="io.rsocket.RSocket" sourceFile="RSocket.java" interface="true" size="8" bugs="0"/>
@@ -998,8 +763,8 @@
       <ClassStats class="io.rsocket.RSocketFactory$ServerRSocketFactory$ServerStart" sourceFile="RSocketFactory.java" interface="false" size="54" bugs="0"/>
       <ClassStats class="io.rsocket.RSocketFactory$ServerTransportAcceptor" sourceFile="RSocketFactory.java" interface="true" size="5" bugs="0"/>
       <ClassStats class="io.rsocket.RSocketFactory$Start" sourceFile="RSocketFactory.java" interface="true" size="2" bugs="0"/>
-      <ClassStats class="io.rsocket.RSocketPerf" sourceFile="RSocketPerf.java" interface="false" size="18" bugs="5" priority_2="5"/>
-      <ClassStats class="io.rsocket.RSocketPerf$Input" sourceFile="RSocketPerf.java" interface="false" size="42" bugs="7" priority_2="7"/>
+      <ClassStats class="io.rsocket.RSocketPerf" sourceFile="RSocketPerf.java" interface="false" size="18" bugs="7" priority_2="5" priority_1="2"/>
+      <ClassStats class="io.rsocket.RSocketPerf$Input" sourceFile="RSocketPerf.java" interface="false" size="42" bugs="0"/>
       <ClassStats class="io.rsocket.RSocketPerf$Input$1" sourceFile="RSocketPerf.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="io.rsocket.RSocketPerf$Input$2" sourceFile="RSocketPerf.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="io.rsocket.RSocketPerf$Input$3" sourceFile="RSocketPerf.java" interface="false" size="16" bugs="0"/>
@@ -1011,7 +776,7 @@
       <ClassStats class="io.rsocket.RSocketServerTest$ServerSocketRule$1" sourceFile="RSocketServerTest.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="io.rsocket.RSocketTest" sourceFile="RSocketTest.java" interface="false" size="37" bugs="0"/>
       <ClassStats class="io.rsocket.RSocketTest$1" sourceFile="RSocketTest.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="io.rsocket.RSocketTest$SocketRule" sourceFile="RSocketTest.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="io.rsocket.RSocketTest$SocketRule" sourceFile="RSocketTest.java" interface="false" size="54" bugs="0"/>
       <ClassStats class="io.rsocket.RSocketTest$SocketRule$1" sourceFile="RSocketTest.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="io.rsocket.RSocketTest$SocketRule$2" sourceFile="RSocketTest.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="io.rsocket.SocketAcceptor" sourceFile="SocketAcceptor.java" interface="true" size="2" bugs="0"/>
@@ -1061,14 +826,14 @@
       <ClassStats class="io.rsocket.fragmentation.FrameReassemblerTest" sourceFile="FrameReassemblerTest.java" interface="false" size="65" bugs="0"/>
       <ClassStats class="io.rsocket.fragmentation.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.rsocket.fragmentation.generated" total_bugs="12" total_types="12" total_size="3373" priority_2="12">
+    <PackageStats package="io.rsocket.fragmentation.generated" total_bugs="0" total_types="12" total_size="3373">
       <ClassStats class="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType" sourceFile="FragmentationPerformanceTest_Input_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B1" sourceFile="FragmentationPerformanceTest_Input_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2" sourceFile="FragmentationPerformanceTest_Input_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B2" sourceFile="FragmentationPerformanceTest_Input_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_Input_jmhType_B3" sourceFile="FragmentationPerformanceTest_Input_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType" sourceFile="FragmentationPerformanceTest_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B1" sourceFile="FragmentationPerformanceTest_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2" sourceFile="FragmentationPerformanceTest_jmhType_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B2" sourceFile="FragmentationPerformanceTest_jmhType_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_jmhType_B3" sourceFile="FragmentationPerformanceTest_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_largeFragmentation_jmhTest" sourceFile="FragmentationPerformanceTest_largeFragmentation_jmhTest.java" interface="false" size="571" bugs="0"/>
       <ClassStats class="io.rsocket.fragmentation.generated.FragmentationPerformanceTest_largeReassembly_jmhTest" sourceFile="FragmentationPerformanceTest_largeReassembly_jmhTest.java" interface="false" size="571" bugs="0"/>
@@ -1162,15 +927,15 @@
       <ClassStats class="io.rsocket.framing.TestFrames$TestFrame" sourceFile="TestFrames.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="io.rsocket.framing.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.rsocket.generated" total_bugs="12" total_types="11" total_size="2802" priority_2="12">
+    <PackageStats package="io.rsocket.generated" total_bugs="0" total_types="11" total_size="2802">
       <ClassStats class="io.rsocket.generated.RSocketPerf_Input_jmhType" sourceFile="RSocketPerf_Input_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="io.rsocket.generated.RSocketPerf_Input_jmhType_B1" sourceFile="RSocketPerf_Input_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="io.rsocket.generated.RSocketPerf_Input_jmhType_B2" sourceFile="RSocketPerf_Input_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="io.rsocket.generated.RSocketPerf_Input_jmhType_B2" sourceFile="RSocketPerf_Input_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="io.rsocket.generated.RSocketPerf_Input_jmhType_B3" sourceFile="RSocketPerf_Input_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="io.rsocket.generated.RSocketPerf_fireAndForgetHello_jmhTest" sourceFile="RSocketPerf_fireAndForgetHello_jmhTest.java" interface="false" size="571" bugs="0"/>
       <ClassStats class="io.rsocket.generated.RSocketPerf_jmhType" sourceFile="RSocketPerf_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="io.rsocket.generated.RSocketPerf_jmhType_B1" sourceFile="RSocketPerf_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="io.rsocket.generated.RSocketPerf_jmhType_B2" sourceFile="RSocketPerf_jmhType_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="io.rsocket.generated.RSocketPerf_jmhType_B2" sourceFile="RSocketPerf_jmhType_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="io.rsocket.generated.RSocketPerf_jmhType_B3" sourceFile="RSocketPerf_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="io.rsocket.generated.RSocketPerf_requestResponseHello_jmhTest" sourceFile="RSocketPerf_requestResponseHello_jmhTest.java" interface="false" size="571" bugs="0"/>
       <ClassStats class="io.rsocket.generated.RSocketPerf_requestStreamHello1000_jmhTest" sourceFile="RSocketPerf_requestStreamHello1000_jmhTest.java" interface="false" size="571" bugs="0"/>
@@ -1237,9 +1002,9 @@
       <ClassStats class="io.rsocket.uri.UriTransportRegistry" sourceFile="UriTransportRegistry.java" interface="false" size="39" bugs="0"/>
       <ClassStats class="io.rsocket.uri.UriTransportRegistryTest" sourceFile="UriTransportRegistryTest.java" interface="false" size="12" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.rsocket.util" total_bugs="0" total_types="14" total_size="433">
+    <PackageStats package="io.rsocket.util" total_bugs="0" total_types="14" total_size="435">
       <ClassStats class="io.rsocket.util.AbstractionLeakingFrameUtils" sourceFile="AbstractionLeakingFrameUtils.java" interface="false" size="25" bugs="0"/>
-      <ClassStats class="io.rsocket.util.ByteBufPayload" sourceFile="ByteBufPayload.java" interface="false" size="85" bugs="0"/>
+      <ClassStats class="io.rsocket.util.ByteBufPayload" sourceFile="ByteBufPayload.java" interface="false" size="87" bugs="0"/>
       <ClassStats class="io.rsocket.util.ByteBufPayload$1" sourceFile="ByteBufPayload.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="io.rsocket.util.Clock" sourceFile="Clock.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="io.rsocket.util.DefaultPayload" sourceFile="DefaultPayload.java" interface="false" size="66" bugs="0"/>
@@ -4021,51 +3786,55 @@
       <ClassStats class="reactor.util.function.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="4204" invocations="25527" avgMicrosecondsPerInvocation="164" maxMicrosecondsPerInvocation="35572" standardDeviationMicrosecondsPerInvocation="655"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="3991" invocations="27002" avgMicrosecondsPerInvocation="147" maxMicrosecondsPerInvocation="140799" standardDeviationMicrosecondsPerInvocation="1062"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="3847" invocations="26189" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="144906" standardDeviationMicrosecondsPerInvocation="1354"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="3709" invocations="30077" avgMicrosecondsPerInvocation="123" maxMicrosecondsPerInvocation="113217" standardDeviationMicrosecondsPerInvocation="1091"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="3011" invocations="27322" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="76421" standardDeviationMicrosecondsPerInvocation="748"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="2798" invocations="23358" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="491454" standardDeviationMicrosecondsPerInvocation="3281"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1784" invocations="27006" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="33425" standardDeviationMicrosecondsPerInvocation="298"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1568" invocations="31010" avgMicrosecondsPerInvocation="50" maxMicrosecondsPerInvocation="114692" standardDeviationMicrosecondsPerInvocation="702"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1133" invocations="5479" avgMicrosecondsPerInvocation="206" maxMicrosecondsPerInvocation="32978" standardDeviationMicrosecondsPerInvocation="930"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1015" invocations="3958" avgMicrosecondsPerInvocation="256" maxMicrosecondsPerInvocation="16461" standardDeviationMicrosecondsPerInvocation="639"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="981" invocations="3958" avgMicrosecondsPerInvocation="248" maxMicrosecondsPerInvocation="17444" standardDeviationMicrosecondsPerInvocation="709"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="943" invocations="27002" avgMicrosecondsPerInvocation="34" maxMicrosecondsPerInvocation="13853" standardDeviationMicrosecondsPerInvocation="190"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="780" invocations="3357" avgMicrosecondsPerInvocation="232" maxMicrosecondsPerInvocation="26178" standardDeviationMicrosecondsPerInvocation="905"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="765" invocations="876190" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="23564" standardDeviationMicrosecondsPerInvocation="28"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="712" invocations="3357" avgMicrosecondsPerInvocation="212" maxMicrosecondsPerInvocation="20684" standardDeviationMicrosecondsPerInvocation="665"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="702" invocations="6288" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="11969" standardDeviationMicrosecondsPerInvocation="220"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="681" invocations="3357" avgMicrosecondsPerInvocation="202" maxMicrosecondsPerInvocation="21160" standardDeviationMicrosecondsPerInvocation="594"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="547" invocations="3357" avgMicrosecondsPerInvocation="163" maxMicrosecondsPerInvocation="109890" standardDeviationMicrosecondsPerInvocation="1919"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="547" invocations="25527" avgMicrosecondsPerInvocation="21" maxMicrosecondsPerInvocation="9402" standardDeviationMicrosecondsPerInvocation="93"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="530" invocations="28820" avgMicrosecondsPerInvocation="18" maxMicrosecondsPerInvocation="28355" standardDeviationMicrosecondsPerInvocation="182"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="494" invocations="3357" avgMicrosecondsPerInvocation="147" maxMicrosecondsPerInvocation="30920" standardDeviationMicrosecondsPerInvocation="1086"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="491" invocations="24574" avgMicrosecondsPerInvocation="20" maxMicrosecondsPerInvocation="5918" standardDeviationMicrosecondsPerInvocation="89"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="486" invocations="3357" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="8453" standardDeviationMicrosecondsPerInvocation="383"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="421" invocations="3357" avgMicrosecondsPerInvocation="125" maxMicrosecondsPerInvocation="53588" standardDeviationMicrosecondsPerInvocation="1059"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="415" invocations="7234" avgMicrosecondsPerInvocation="57" maxMicrosecondsPerInvocation="76419" standardDeviationMicrosecondsPerInvocation="919"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="409" invocations="3357" avgMicrosecondsPerInvocation="122" maxMicrosecondsPerInvocation="9771" standardDeviationMicrosecondsPerInvocation="361"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="403" invocations="3357" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="5485" standardDeviationMicrosecondsPerInvocation="319"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="392" invocations="3357" avgMicrosecondsPerInvocation="116" maxMicrosecondsPerInvocation="6121" standardDeviationMicrosecondsPerInvocation="275"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="391" invocations="3357" avgMicrosecondsPerInvocation="116" maxMicrosecondsPerInvocation="6660" standardDeviationMicrosecondsPerInvocation="302"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="388" invocations="3357" avgMicrosecondsPerInvocation="115" maxMicrosecondsPerInvocation="23600" standardDeviationMicrosecondsPerInvocation="497"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="380" invocations="3357" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="4406" standardDeviationMicrosecondsPerInvocation="296"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="375" invocations="3357" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="7487" standardDeviationMicrosecondsPerInvocation="314"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="375" invocations="3357" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="4027" standardDeviationMicrosecondsPerInvocation="249"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="360" invocations="3357" avgMicrosecondsPerInvocation="107" maxMicrosecondsPerInvocation="5268" standardDeviationMicrosecondsPerInvocation="299"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="359" invocations="3357" avgMicrosecondsPerInvocation="107" maxMicrosecondsPerInvocation="5857" standardDeviationMicrosecondsPerInvocation="286"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="355" invocations="3357" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="19664" standardDeviationMicrosecondsPerInvocation="529"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.LoopInsideBenchmarkDetector" totalMilliseconds="345" invocations="3357" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="47065" standardDeviationMicrosecondsPerInvocation="845"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="345" invocations="3357" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="7124" standardDeviationMicrosecondsPerInvocation="275"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IntCast2LongAsInstant" totalMilliseconds="337" invocations="3357" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="35777" standardDeviationMicrosecondsPerInvocation="691"/>
-      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="334" invocations="424785" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="8330" standardDeviationMicrosecondsPerInvocation="15"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="333" invocations="3357" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="5655" standardDeviationMicrosecondsPerInvocation="233"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SynchronizationOnSharedBuiltinConstant" totalMilliseconds="329" invocations="3357" avgMicrosecondsPerInvocation="98" maxMicrosecondsPerInvocation="40913" standardDeviationMicrosecondsPerInvocation="740"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="328" invocations="3357" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="5610" standardDeviationMicrosecondsPerInvocation="268"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="328" invocations="3357" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="10520" standardDeviationMicrosecondsPerInvocation="330"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="327" invocations="3357" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="5488" standardDeviationMicrosecondsPerInvocation="272"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="4369" invocations="25527" avgMicrosecondsPerInvocation="171" maxMicrosecondsPerInvocation="58170" standardDeviationMicrosecondsPerInvocation="847"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="4114" invocations="27002" avgMicrosecondsPerInvocation="152" maxMicrosecondsPerInvocation="40624" standardDeviationMicrosecondsPerInvocation="744"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="3934" invocations="26189" avgMicrosecondsPerInvocation="150" maxMicrosecondsPerInvocation="109198" standardDeviationMicrosecondsPerInvocation="1184"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="3900" invocations="30077" avgMicrosecondsPerInvocation="129" maxMicrosecondsPerInvocation="115908" standardDeviationMicrosecondsPerInvocation="1154"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="3004" invocations="27322" avgMicrosecondsPerInvocation="109" maxMicrosecondsPerInvocation="63243" standardDeviationMicrosecondsPerInvocation="612"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="2285" invocations="23357" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="59742" standardDeviationMicrosecondsPerInvocation="679"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="1910" invocations="3357" avgMicrosecondsPerInvocation="569" maxMicrosecondsPerInvocation="83724" standardDeviationMicrosecondsPerInvocation="3100"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1868" invocations="28820" avgMicrosecondsPerInvocation="64" maxMicrosecondsPerInvocation="10379" standardDeviationMicrosecondsPerInvocation="158"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1673" invocations="31101" avgMicrosecondsPerInvocation="53" maxMicrosecondsPerInvocation="46040" standardDeviationMicrosecondsPerInvocation="329"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1275" invocations="3995" avgMicrosecondsPerInvocation="319" maxMicrosecondsPerInvocation="52665" standardDeviationMicrosecondsPerInvocation="1093"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1141" invocations="5666" avgMicrosecondsPerInvocation="201" maxMicrosecondsPerInvocation="37952" standardDeviationMicrosecondsPerInvocation="947"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1093" invocations="3995" avgMicrosecondsPerInvocation="273" maxMicrosecondsPerInvocation="11789" standardDeviationMicrosecondsPerInvocation="661"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="952" invocations="27002" avgMicrosecondsPerInvocation="35" maxMicrosecondsPerInvocation="10531" standardDeviationMicrosecondsPerInvocation="168"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="865" invocations="3357" avgMicrosecondsPerInvocation="257" maxMicrosecondsPerInvocation="30094" standardDeviationMicrosecondsPerInvocation="953"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="845" invocations="3357" avgMicrosecondsPerInvocation="251" maxMicrosecondsPerInvocation="22044" standardDeviationMicrosecondsPerInvocation="799"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="729" invocations="904484" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="10385" standardDeviationMicrosecondsPerInvocation="14"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="677" invocations="3357" avgMicrosecondsPerInvocation="201" maxMicrosecondsPerInvocation="7764" standardDeviationMicrosecondsPerInvocation="469"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="605" invocations="28820" avgMicrosecondsPerInvocation="21" maxMicrosecondsPerInvocation="42569" standardDeviationMicrosecondsPerInvocation="333"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector" totalMilliseconds="536" invocations="3357" avgMicrosecondsPerInvocation="159" maxMicrosecondsPerInvocation="51000" standardDeviationMicrosecondsPerInvocation="948"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="530" invocations="25527" avgMicrosecondsPerInvocation="20" maxMicrosecondsPerInvocation="3505" standardDeviationMicrosecondsPerInvocation="67"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="529" invocations="24574" avgMicrosecondsPerInvocation="21" maxMicrosecondsPerInvocation="4139" standardDeviationMicrosecondsPerInvocation="84"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="528" invocations="3357" avgMicrosecondsPerInvocation="157" maxMicrosecondsPerInvocation="48318" standardDeviationMicrosecondsPerInvocation="901"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="504" invocations="3357" avgMicrosecondsPerInvocation="150" maxMicrosecondsPerInvocation="10527" standardDeviationMicrosecondsPerInvocation="427"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="476" invocations="3357" avgMicrosecondsPerInvocation="141" maxMicrosecondsPerInvocation="39290" standardDeviationMicrosecondsPerInvocation="1254"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="471" invocations="3357" avgMicrosecondsPerInvocation="140" maxMicrosecondsPerInvocation="30369" standardDeviationMicrosecondsPerInvocation="604"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="462" invocations="3357" avgMicrosecondsPerInvocation="137" maxMicrosecondsPerInvocation="7145" standardDeviationMicrosecondsPerInvocation="345"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="461" invocations="3357" avgMicrosecondsPerInvocation="137" maxMicrosecondsPerInvocation="28963" standardDeviationMicrosecondsPerInvocation="570"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="455" invocations="6969" avgMicrosecondsPerInvocation="65" maxMicrosecondsPerInvocation="2486" standardDeviationMicrosecondsPerInvocation="89"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="455" invocations="3357" avgMicrosecondsPerInvocation="135" maxMicrosecondsPerInvocation="5701" standardDeviationMicrosecondsPerInvocation="320"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="442" invocations="3357" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="8787" standardDeviationMicrosecondsPerInvocation="305"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="434" invocations="3357" avgMicrosecondsPerInvocation="129" maxMicrosecondsPerInvocation="56088" standardDeviationMicrosecondsPerInvocation="1034"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="432" invocations="3357" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="9415" standardDeviationMicrosecondsPerInvocation="344"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="425" invocations="3357" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="8098" standardDeviationMicrosecondsPerInvocation="353"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="424" invocations="3357" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="4660" standardDeviationMicrosecondsPerInvocation="302"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="423" invocations="3357" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="7158" standardDeviationMicrosecondsPerInvocation="346"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="423" invocations="3357" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="6711" standardDeviationMicrosecondsPerInvocation="332"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="411" invocations="3357" avgMicrosecondsPerInvocation="122" maxMicrosecondsPerInvocation="5672" standardDeviationMicrosecondsPerInvocation="308"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindFloatEquality" totalMilliseconds="406" invocations="3357" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="37711" standardDeviationMicrosecondsPerInvocation="728"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="404" invocations="3995" avgMicrosecondsPerInvocation="101" maxMicrosecondsPerInvocation="4924" standardDeviationMicrosecondsPerInvocation="232"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="404" invocations="3995" avgMicrosecondsPerInvocation="101" maxMicrosecondsPerInvocation="65931" standardDeviationMicrosecondsPerInvocation="1370"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="396" invocations="3357" avgMicrosecondsPerInvocation="118" maxMicrosecondsPerInvocation="4287" standardDeviationMicrosecondsPerInvocation="299"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="390" invocations="7362" avgMicrosecondsPerInvocation="53" maxMicrosecondsPerInvocation="11892" standardDeviationMicrosecondsPerInvocation="164"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="386" invocations="3357" avgMicrosecondsPerInvocation="115" maxMicrosecondsPerInvocation="7124" standardDeviationMicrosecondsPerInvocation="326"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadForLoop" totalMilliseconds="383" invocations="3357" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="6056" standardDeviationMicrosecondsPerInvocation="301"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SynchronizationOnSharedBuiltinConstant" totalMilliseconds="378" invocations="3357" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="39957" standardDeviationMicrosecondsPerInvocation="731"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="377" invocations="28820" avgMicrosecondsPerInvocation="13" maxMicrosecondsPerInvocation="40460" standardDeviationMicrosecondsPerInvocation="256"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SynchronizingOnContentsOfFieldToProtectField" totalMilliseconds="373" invocations="3357" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="7382" standardDeviationMicrosecondsPerInvocation="336"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNonShortCircuit" totalMilliseconds="370" invocations="3357" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="6956" standardDeviationMicrosecondsPerInvocation="288"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteRecursiveLoop" totalMilliseconds="370" invocations="3357" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="6178" standardDeviationMicrosecondsPerInvocation="306"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1534811492000" analysisTimestamp="1534811493664" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534884985000" analysisTimestamp="1534884987434" release="">
   <Project projectName="">
     <Jar>tmp/zipkin-reporter-java</Jar>
   </Project>
@@ -30,30 +30,6 @@
       <SourceLine classname="zipkin2.reporter.AsyncReporterBenchmarks" start="95" end="96" startBytecode="0" endBytecode="66" sourcefile="AsyncReporterBenchmarks.java" sourcepath="zipkin2/reporter/AsyncReporterBenchmarks.java"/>
     </Method>
     <SourceLine classname="zipkin2.reporter.AsyncReporterBenchmarks" start="95" end="95" startBytecode="0" endBytecode="0" sourcefile="AsyncReporterBenchmarks.java" sourcepath="zipkin2/reporter/AsyncReporterBenchmarks.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.AsyncReporterBenchmarks">
-      <SourceLine classname="zipkin2.reporter.AsyncReporterBenchmarks" start="44" end="111" sourcefile="AsyncReporterBenchmarks.java" sourcepath="zipkin2/reporter/AsyncReporterBenchmarks.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.AsyncReporterBenchmarks" name="clientSpan" signature="Lzipkin2/Span;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.AsyncReporterBenchmarks" sourcefile="AsyncReporterBenchmarks.java" sourcepath="zipkin2/reporter/AsyncReporterBenchmarks.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.AsyncReporterBenchmarks">
-      <SourceLine classname="zipkin2.reporter.AsyncReporterBenchmarks" start="44" end="111" sourcefile="AsyncReporterBenchmarks.java" sourcepath="zipkin2/reporter/AsyncReporterBenchmarks.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.AsyncReporterBenchmarks" name="metrics" signature="Lzipkin2/reporter/InMemoryReporterMetrics;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.AsyncReporterBenchmarks" sourcefile="AsyncReporterBenchmarks.java" sourcepath="zipkin2/reporter/AsyncReporterBenchmarks.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.AsyncReporterBenchmarks">
-      <SourceLine classname="zipkin2.reporter.AsyncReporterBenchmarks" start="44" end="111" sourcefile="AsyncReporterBenchmarks.java" sourcepath="zipkin2/reporter/AsyncReporterBenchmarks.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.AsyncReporterBenchmarks" name="spanBacklog" signature="Ljava/util/concurrent/atomic/AtomicLong;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.AsyncReporterBenchmarks" sourcefile="AsyncReporterBenchmarks.java" sourcepath="zipkin2/reporter/AsyncReporterBenchmarks.java"/>
-    </Field>
   </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="zipkin2.reporter.ByteBoundedQueueBenchmarks">
@@ -109,33 +85,6 @@
     </Method>
     <SourceLine classname="zipkin2.reporter.ByteBoundedQueueBenchmarks" start="87" end="87" startBytecode="0" endBytecode="0" sourcefile="ByteBoundedQueueBenchmarks.java" sourcepath="zipkin2/reporter/ByteBoundedQueueBenchmarks.java"/>
   </BugInstance>
-  <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.ByteBoundedQueueBenchmarks">
-      <SourceLine classname="zipkin2.reporter.ByteBoundedQueueBenchmarks" start="43" end="150" sourcefile="ByteBoundedQueueBenchmarks.java" sourcepath="zipkin2/reporter/ByteBoundedQueueBenchmarks.java"/>
-    </Class>
-    <Method classname="zipkin2.reporter.ByteBoundedQueueBenchmarks" name="high_contention_drain" signature="(Lzipkin2/reporter/ByteBoundedQueueBenchmarks$DrainCounters;Lzipkin2/reporter/ByteBoundedQueueBenchmarks$ConsumerMarker;)V" isStatic="false">
-      <SourceLine classname="zipkin2.reporter.ByteBoundedQueueBenchmarks" start="130" end="134" startBytecode="0" endBytecode="83" sourcefile="ByteBoundedQueueBenchmarks.java" sourcepath="zipkin2/reporter/ByteBoundedQueueBenchmarks.java"/>
-    </Method>
-    <SourceLine classname="zipkin2.reporter.ByteBoundedQueueBenchmarks" start="130" end="130" startBytecode="13" endBytecode="13" sourcefile="ByteBoundedQueueBenchmarks.java" sourcepath="zipkin2/reporter/ByteBoundedQueueBenchmarks.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.ByteBoundedQueueBenchmarks">
-      <SourceLine classname="zipkin2.reporter.ByteBoundedQueueBenchmarks" start="43" end="150" sourcefile="ByteBoundedQueueBenchmarks.java" sourcepath="zipkin2/reporter/ByteBoundedQueueBenchmarks.java"/>
-    </Class>
-    <Method classname="zipkin2.reporter.ByteBoundedQueueBenchmarks" name="mild_contention_drain" signature="(Lzipkin2/reporter/ByteBoundedQueueBenchmarks$DrainCounters;Lzipkin2/reporter/ByteBoundedQueueBenchmarks$ConsumerMarker;)V" isStatic="false">
-      <SourceLine classname="zipkin2.reporter.ByteBoundedQueueBenchmarks" start="113" end="117" startBytecode="0" endBytecode="83" sourcefile="ByteBoundedQueueBenchmarks.java" sourcepath="zipkin2/reporter/ByteBoundedQueueBenchmarks.java"/>
-    </Method>
-    <SourceLine classname="zipkin2.reporter.ByteBoundedQueueBenchmarks" start="113" end="113" startBytecode="13" endBytecode="13" sourcefile="ByteBoundedQueueBenchmarks.java" sourcepath="zipkin2/reporter/ByteBoundedQueueBenchmarks.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.ByteBoundedQueueBenchmarks">
-      <SourceLine classname="zipkin2.reporter.ByteBoundedQueueBenchmarks" start="43" end="150" sourcefile="ByteBoundedQueueBenchmarks.java" sourcepath="zipkin2/reporter/ByteBoundedQueueBenchmarks.java"/>
-    </Class>
-    <Method classname="zipkin2.reporter.ByteBoundedQueueBenchmarks" name="no_contention_drain" signature="(Lzipkin2/reporter/ByteBoundedQueueBenchmarks$DrainCounters;Lzipkin2/reporter/ByteBoundedQueueBenchmarks$ConsumerMarker;)V" isStatic="false">
-      <SourceLine classname="zipkin2.reporter.ByteBoundedQueueBenchmarks" start="96" end="100" startBytecode="0" endBytecode="83" sourcefile="ByteBoundedQueueBenchmarks.java" sourcepath="zipkin2/reporter/ByteBoundedQueueBenchmarks.java"/>
-    </Method>
-    <SourceLine classname="zipkin2.reporter.ByteBoundedQueueBenchmarks" start="96" end="96" startBytecode="13" endBytecode="13" sourcefile="ByteBoundedQueueBenchmarks.java" sourcepath="zipkin2/reporter/ByteBoundedQueueBenchmarks.java"/>
-  </BugInstance>
   <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="zipkin2.reporter.ByteBoundedQueueBenchmarks">
       <SourceLine classname="zipkin2.reporter.ByteBoundedQueueBenchmarks" start="43" end="150" sourcefile="ByteBoundedQueueBenchmarks.java" sourcepath="zipkin2/reporter/ByteBoundedQueueBenchmarks.java"/>
@@ -163,14 +112,6 @@
     </Method>
     <SourceLine classname="zipkin2.reporter.ByteBoundedQueueBenchmarks" start="88" end="88" startBytecode="25" endBytecode="25" sourcefile="ByteBoundedQueueBenchmarks.java" sourcepath="zipkin2/reporter/ByteBoundedQueueBenchmarks.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.ByteBoundedQueueBenchmarks">
-      <SourceLine classname="zipkin2.reporter.ByteBoundedQueueBenchmarks" start="43" end="150" sourcefile="ByteBoundedQueueBenchmarks.java" sourcepath="zipkin2/reporter/ByteBoundedQueueBenchmarks.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.ByteBoundedQueueBenchmarks" name="ONE" signature="B" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.ByteBoundedQueueBenchmarks" sourcefile="ByteBoundedQueueBenchmarks.java" sourcepath="zipkin2/reporter/ByteBoundedQueueBenchmarks.java"/>
-    </Field>
-  </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="zipkin2.reporter.SenderBenchmarks">
       <SourceLine classname="zipkin2.reporter.SenderBenchmarks" start="50" end="141" sourcefile="SenderBenchmarks.java" sourcepath="zipkin2/reporter/SenderBenchmarks.java"/>
@@ -188,566 +129,6 @@
       <SourceLine classname="zipkin2.reporter.SenderBenchmarks" start="120" end="125" startBytecode="0" endBytecode="110" sourcefile="SenderBenchmarks.java" sourcepath="zipkin2/reporter/SenderBenchmarks.java"/>
     </Method>
     <SourceLine classname="zipkin2.reporter.SenderBenchmarks" start="121" end="121" startBytecode="27" endBytecode="27" sourcefile="SenderBenchmarks.java" sourcepath="zipkin2/reporter/SenderBenchmarks.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.SenderBenchmarks">
-      <SourceLine classname="zipkin2.reporter.SenderBenchmarks" start="50" end="141" sourcefile="SenderBenchmarks.java" sourcepath="zipkin2/reporter/SenderBenchmarks.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.SenderBenchmarks" name="TARGET_BACKLOG" signature="I" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.SenderBenchmarks" sourcefile="SenderBenchmarks.java" sourcepath="zipkin2/reporter/SenderBenchmarks.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.SenderBenchmarks">
-      <SourceLine classname="zipkin2.reporter.SenderBenchmarks" start="50" end="141" sourcefile="SenderBenchmarks.java" sourcepath="zipkin2/reporter/SenderBenchmarks.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.SenderBenchmarks" name="clientSpan" signature="Lzipkin2/Span;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.SenderBenchmarks" sourcefile="SenderBenchmarks.java" sourcepath="zipkin2/reporter/SenderBenchmarks.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.SenderBenchmarks">
-      <SourceLine classname="zipkin2.reporter.SenderBenchmarks" start="50" end="141" sourcefile="SenderBenchmarks.java" sourcepath="zipkin2/reporter/SenderBenchmarks.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.SenderBenchmarks" name="clientSpanBytes" signature="[B" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.SenderBenchmarks" sourcefile="SenderBenchmarks.java" sourcepath="zipkin2/reporter/SenderBenchmarks.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.SenderBenchmarks">
-      <SourceLine classname="zipkin2.reporter.SenderBenchmarks" start="50" end="141" sourcefile="SenderBenchmarks.java" sourcepath="zipkin2/reporter/SenderBenchmarks.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.SenderBenchmarks" name="metrics" signature="Lzipkin2/reporter/InMemoryReporterMetrics;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.SenderBenchmarks" sourcefile="SenderBenchmarks.java" sourcepath="zipkin2/reporter/SenderBenchmarks.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2" start="3" end="17" sourcefile="RabbitMQSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/amqp/generated/RabbitMQSenderBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2" sourcefile="RabbitMQSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/amqp/generated/RabbitMQSenderBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2" start="3" end="17" sourcefile="RabbitMQSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/amqp/generated/RabbitMQSenderBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2" sourcefile="RabbitMQSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/amqp/generated/RabbitMQSenderBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2" start="3" end="17" sourcefile="RabbitMQSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/amqp/generated/RabbitMQSenderBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2" sourcefile="RabbitMQSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/amqp/generated/RabbitMQSenderBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2" start="3" end="17" sourcefile="RabbitMQSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/amqp/generated/RabbitMQSenderBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2" sourcefile="RabbitMQSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/amqp/generated/RabbitMQSenderBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2" start="3" end="17" sourcefile="RabbitMQSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/amqp/generated/RabbitMQSenderBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2" sourcefile="RabbitMQSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/amqp/generated/RabbitMQSenderBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2" start="3" end="17" sourcefile="RabbitMQSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/amqp/generated/RabbitMQSenderBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2" sourcefile="RabbitMQSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/amqp/generated/RabbitMQSenderBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" start="3" end="17" sourcefile="AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" sourcefile="AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" start="3" end="17" sourcefile="AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" sourcefile="AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" start="3" end="17" sourcefile="AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" sourcefile="AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" start="3" end="17" sourcefile="AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" sourcefile="AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" start="3" end="17" sourcefile="AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" sourcefile="AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" start="3" end="17" sourcefile="AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" sourcefile="AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2" start="3" end="17" sourcefile="AsyncReporterBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/AsyncReporterBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2" sourcefile="AsyncReporterBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/AsyncReporterBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2" start="3" end="17" sourcefile="AsyncReporterBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/AsyncReporterBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2" sourcefile="AsyncReporterBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/AsyncReporterBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2" start="3" end="17" sourcefile="AsyncReporterBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/AsyncReporterBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2" sourcefile="AsyncReporterBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/AsyncReporterBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2" start="3" end="17" sourcefile="AsyncReporterBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/AsyncReporterBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2" sourcefile="AsyncReporterBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/AsyncReporterBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2" start="3" end="17" sourcefile="AsyncReporterBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/AsyncReporterBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2" sourcefile="AsyncReporterBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/AsyncReporterBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2" start="3" end="17" sourcefile="AsyncReporterBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/AsyncReporterBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2" sourcefile="AsyncReporterBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/AsyncReporterBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2" start="3" end="17" sourcefile="ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2" sourcefile="ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2" start="3" end="17" sourcefile="ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2" sourcefile="ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2" start="3" end="17" sourcefile="ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2" sourcefile="ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2" start="3" end="17" sourcefile="ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2" sourcefile="ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2" start="3" end="17" sourcefile="ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2" sourcefile="ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2" start="3" end="17" sourcefile="ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2" sourcefile="ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2" start="3" end="17" sourcefile="ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2" sourcefile="ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2" start="3" end="17" sourcefile="ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2" sourcefile="ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2" start="3" end="17" sourcefile="ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2" sourcefile="ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2" start="3" end="17" sourcefile="ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2" sourcefile="ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2" start="3" end="17" sourcefile="ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2" sourcefile="ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2" start="3" end="17" sourcefile="ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2" sourcefile="ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2" start="3" end="17" sourcefile="ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2" sourcefile="ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2" start="3" end="17" sourcefile="ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2" sourcefile="ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2" start="3" end="17" sourcefile="ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2" sourcefile="ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2" start="3" end="17" sourcefile="ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2" sourcefile="ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2" start="3" end="17" sourcefile="ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2" sourcefile="ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2" start="3" end="17" sourcefile="ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2" sourcefile="ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2" start="3" end="17" sourcefile="ByteBoundedQueueBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2" sourcefile="ByteBoundedQueueBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2" start="3" end="17" sourcefile="ByteBoundedQueueBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2" sourcefile="ByteBoundedQueueBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2" start="3" end="17" sourcefile="ByteBoundedQueueBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2" sourcefile="ByteBoundedQueueBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2" start="3" end="17" sourcefile="ByteBoundedQueueBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2" sourcefile="ByteBoundedQueueBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2" start="3" end="17" sourcefile="ByteBoundedQueueBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2" sourcefile="ByteBoundedQueueBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2" start="3" end="17" sourcefile="ByteBoundedQueueBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2" sourcefile="ByteBoundedQueueBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/ByteBoundedQueueBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2" start="3" end="17" sourcefile="KafkaSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/KafkaSenderBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2" sourcefile="KafkaSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/KafkaSenderBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2" start="3" end="17" sourcefile="KafkaSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/KafkaSenderBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2" sourcefile="KafkaSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/KafkaSenderBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2" start="3" end="17" sourcefile="KafkaSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/KafkaSenderBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2" sourcefile="KafkaSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/KafkaSenderBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2" start="3" end="17" sourcefile="KafkaSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/KafkaSenderBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2" sourcefile="KafkaSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/KafkaSenderBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2" start="3" end="17" sourcefile="KafkaSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/KafkaSenderBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2" sourcefile="KafkaSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/KafkaSenderBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2" start="3" end="17" sourcefile="KafkaSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/KafkaSenderBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2" sourcefile="KafkaSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/KafkaSenderBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2" start="3" end="17" sourcefile="OkHttpSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/OkHttpSenderBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2" sourcefile="OkHttpSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/OkHttpSenderBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2" start="3" end="17" sourcefile="OkHttpSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/OkHttpSenderBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2" sourcefile="OkHttpSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/OkHttpSenderBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2" start="3" end="17" sourcefile="OkHttpSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/OkHttpSenderBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2" sourcefile="OkHttpSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/OkHttpSenderBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2" start="3" end="17" sourcefile="OkHttpSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/OkHttpSenderBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2" sourcefile="OkHttpSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/OkHttpSenderBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2" start="3" end="17" sourcefile="OkHttpSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/OkHttpSenderBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2" sourcefile="OkHttpSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/OkHttpSenderBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2" start="3" end="17" sourcefile="OkHttpSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/OkHttpSenderBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2" sourcefile="OkHttpSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/OkHttpSenderBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" start="3" end="17" sourcefile="SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" sourcefile="SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" start="3" end="17" sourcefile="SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" sourcefile="SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" start="3" end="17" sourcefile="SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" sourcefile="SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" start="3" end="17" sourcefile="SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" sourcefile="SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" start="3" end="17" sourcefile="SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" sourcefile="SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" start="3" end="17" sourcefile="SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" sourcefile="SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2" start="3" end="17" sourcefile="URLConnectionSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/URLConnectionSenderBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2" sourcefile="URLConnectionSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/URLConnectionSenderBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2" start="3" end="17" sourcefile="URLConnectionSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/URLConnectionSenderBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2" sourcefile="URLConnectionSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/URLConnectionSenderBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2" start="3" end="17" sourcefile="URLConnectionSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/URLConnectionSenderBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2" sourcefile="URLConnectionSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/URLConnectionSenderBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2" start="3" end="17" sourcefile="URLConnectionSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/URLConnectionSenderBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2" sourcefile="URLConnectionSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/URLConnectionSenderBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2" start="3" end="17" sourcefile="URLConnectionSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/URLConnectionSenderBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2" sourcefile="URLConnectionSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/URLConnectionSenderBenchmarks_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2">
-      <SourceLine classname="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2" start="3" end="17" sourcefile="URLConnectionSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/URLConnectionSenderBenchmarks_jmhType_B2.java"/>
-    </Class>
-    <Field classname="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2" sourcefile="URLConnectionSenderBenchmarks_jmhType_B2.java" sourcepath="zipkin2/reporter/generated/URLConnectionSenderBenchmarks_jmhType_B2.java"/>
-    </Field>
   </BugInstance>
   <Errors errors="0" missingClasses="101">
     <MissingClass>com.github.charithe.kafka.EphemeralKafkaBroker</MissingClass>
@@ -852,7 +233,7 @@
     <MissingClass>zipkin2.codec.SpanBytesDecoder</MissingClass>
     <MissingClass>zipkin2.codec.SpanBytesEncoder</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Tue, 21 Aug 2018 02:31:32 +0200" total_classes="337" referenced_classes="657" total_bugs="91" total_size="27553" num_packages="37" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="44.38" clock_seconds="13.45" peak_mbytes="952.93" alloc_mbytes="3641.00" gc_seconds="0.28" priority_2="91">
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 22:56:25 +0200" total_classes="337" referenced_classes="671" total_bugs="14" total_size="27553" num_packages="37" java_version="9.0.4" vm_version="9.0.4+11" cpu_seconds="50.12" clock_seconds="15.26" peak_mbytes="510.18" alloc_mbytes="4096.00" gc_seconds="0.42" priority_2="14">
     <PackageStats package="net.orfjackal.retrolambda" total_bugs="0" total_types="15" total_size="531">
       <ClassStats class="net.orfjackal.retrolambda.ClassAnalyzer" sourceFile="ClassAnalyzer.java" interface="false" size="106" bugs="0"/>
       <ClassStats class="net.orfjackal.retrolambda.ClassAnalyzer$1" sourceFile="ClassAnalyzer.java" interface="false" size="17" bugs="0"/>
@@ -1092,14 +473,14 @@
       <ClassStats class="zipkin2.internal.Platform$Jre7" sourceFile="Platform.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="zipkin2.internal.Platform$Jre8" sourceFile="Platform.java" interface="false" size="10" bugs="0"/>
     </PackageStats>
-    <PackageStats package="zipkin2.reporter" total_bugs="25" total_types="47" total_size="1540" priority_2="25">
+    <PackageStats package="zipkin2.reporter" total_bugs="14" total_types="47" total_size="1540" priority_2="14">
       <ClassStats class="zipkin2.reporter.AsyncReporter" sourceFile="AsyncReporter.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="zipkin2.reporter.AsyncReporter$1" sourceFile="AsyncReporter.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="zipkin2.reporter.AsyncReporter$BoundedAsyncReporter" sourceFile="AsyncReporter.java" interface="false" size="78" bugs="0"/>
       <ClassStats class="zipkin2.reporter.AsyncReporter$BoundedAsyncReporter$1" sourceFile="AsyncReporter.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="zipkin2.reporter.AsyncReporter$Builder" sourceFile="AsyncReporter.java" interface="false" size="65" bugs="0"/>
       <ClassStats class="zipkin2.reporter.AsyncReporter$Builder$1" sourceFile="AsyncReporter.java" interface="false" size="19" bugs="0"/>
-      <ClassStats class="zipkin2.reporter.AsyncReporterBenchmarks" sourceFile="AsyncReporterBenchmarks.java" interface="false" size="30" bugs="6" priority_2="6"/>
+      <ClassStats class="zipkin2.reporter.AsyncReporterBenchmarks" sourceFile="AsyncReporterBenchmarks.java" interface="false" size="30" bugs="3" priority_2="3"/>
       <ClassStats class="zipkin2.reporter.AsyncReporterBenchmarks$InMemoryReporterMetricsAsCounters" sourceFile="AsyncReporterBenchmarks.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="zipkin2.reporter.AsyncReporterTest" sourceFile="AsyncReporterTest.java" interface="false" size="294" bugs="0"/>
       <ClassStats class="zipkin2.reporter.AsyncReporterTest$1" sourceFile="AsyncReporterTest.java" interface="false" size="14" bugs="0"/>
@@ -1112,7 +493,7 @@
       <ClassStats class="zipkin2.reporter.BufferNextMessage$BufferNextProto3Message" sourceFile="BufferNextMessage.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="zipkin2.reporter.BufferNextMessageTest" sourceFile="BufferNextMessageTest.java" interface="false" size="119" bugs="0"/>
       <ClassStats class="zipkin2.reporter.ByteBoundedQueue" sourceFile="ByteBoundedQueue.java" interface="false" size="65" bugs="0"/>
-      <ClassStats class="zipkin2.reporter.ByteBoundedQueueBenchmarks" sourceFile="ByteBoundedQueueBenchmarks.java" interface="false" size="55" bugs="13" priority_2="13"/>
+      <ClassStats class="zipkin2.reporter.ByteBoundedQueueBenchmarks" sourceFile="ByteBoundedQueueBenchmarks.java" interface="false" size="55" bugs="9" priority_2="9"/>
       <ClassStats class="zipkin2.reporter.ByteBoundedQueueBenchmarks$ConsumerMarker" sourceFile="ByteBoundedQueueBenchmarks.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="zipkin2.reporter.ByteBoundedQueueBenchmarks$DrainCounters" sourceFile="ByteBoundedQueueBenchmarks.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="zipkin2.reporter.ByteBoundedQueueBenchmarks$OfferCounters" sourceFile="ByteBoundedQueueBenchmarks.java" interface="false" size="8" bugs="0"/>
@@ -1135,7 +516,7 @@
       <ClassStats class="zipkin2.reporter.ReporterMetrics" sourceFile="ReporterMetrics.java" interface="true" size="12" bugs="0"/>
       <ClassStats class="zipkin2.reporter.ReporterMetrics$1" sourceFile="ReporterMetrics.java" interface="false" size="21" bugs="0"/>
       <ClassStats class="zipkin2.reporter.Sender" sourceFile="Sender.java" interface="false" size="9" bugs="0"/>
-      <ClassStats class="zipkin2.reporter.SenderBenchmarks" sourceFile="SenderBenchmarks.java" interface="false" size="46" bugs="6" priority_2="6"/>
+      <ClassStats class="zipkin2.reporter.SenderBenchmarks" sourceFile="SenderBenchmarks.java" interface="false" size="46" bugs="2" priority_2="2"/>
       <ClassStats class="zipkin2.reporter.SenderBenchmarks$InMemoryReporterMetricsAsCounters" sourceFile="SenderBenchmarks.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="zipkin2.reporter.SpanWithSizeConsumer" sourceFile="ByteBoundedQueue.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="zipkin2.reporter.TestObjects" sourceFile="TestObjects.java" interface="false" size="46" bugs="0"/>
@@ -1150,10 +531,10 @@
       <ClassStats class="zipkin2.reporter.amqp.RabbitMQSenderTest" sourceFile="RabbitMQSenderTest.java" interface="false" size="83" bugs="0"/>
       <ClassStats class="zipkin2.reporter.amqp.RabbitMQSenderTest$1" sourceFile="RabbitMQSenderTest.java" interface="false" size="10" bugs="0"/>
     </PackageStats>
-    <PackageStats package="zipkin2.reporter.amqp.generated" total_bugs="6" total_types="5" total_size="1238" priority_2="6">
+    <PackageStats package="zipkin2.reporter.amqp.generated" total_bugs="0" total_types="5" total_size="1238">
       <ClassStats class="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType" sourceFile="RabbitMQSenderBenchmarks_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B1" sourceFile="RabbitMQSenderBenchmarks_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2" sourceFile="RabbitMQSenderBenchmarks_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B2" sourceFile="RabbitMQSenderBenchmarks_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_jmhType_B3" sourceFile="RabbitMQSenderBenchmarks_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="zipkin2.reporter.amqp.generated.RabbitMQSenderBenchmarks_report_jmhTest" sourceFile="RabbitMQSenderBenchmarks_report_jmhTest.java" interface="false" size="692" bugs="0"/>
     </PackageStats>
@@ -1170,54 +551,54 @@
       <ClassStats class="zipkin2.reporter.beans.URLConnectionSenderFactoryBeanTest" sourceFile="URLConnectionSenderFactoryBeanTest.java" interface="false" size="52" bugs="0"/>
       <ClassStats class="zipkin2.reporter.beans.XmlBeans" sourceFile="XmlBeans.java" interface="false" size="21" bugs="0"/>
     </PackageStats>
-    <PackageStats package="zipkin2.reporter.generated" total_bugs="60" total_types="49" total_size="12828" priority_2="60">
+    <PackageStats package="zipkin2.reporter.generated" total_bugs="0" total_types="49" total_size="12828">
       <ClassStats class="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType" sourceFile="AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B1" sourceFile="AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" sourceFile="AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" sourceFile="AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B3" sourceFile="AsyncReporterBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.AsyncReporterBenchmarks_high_contention_jmhTest" sourceFile="AsyncReporterBenchmarks_high_contention_jmhTest.java" interface="false" size="691" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType" sourceFile="AsyncReporterBenchmarks_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B1" sourceFile="AsyncReporterBenchmarks_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2" sourceFile="AsyncReporterBenchmarks_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B2" sourceFile="AsyncReporterBenchmarks_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.AsyncReporterBenchmarks_jmhType_B3" sourceFile="AsyncReporterBenchmarks_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.AsyncReporterBenchmarks_mild_contention_jmhTest" sourceFile="AsyncReporterBenchmarks_mild_contention_jmhTest.java" interface="false" size="691" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.AsyncReporterBenchmarks_no_contention_jmhTest" sourceFile="AsyncReporterBenchmarks_no_contention_jmhTest.java" interface="false" size="691" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType" sourceFile="ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B1" sourceFile="ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2" sourceFile="ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2" sourceFile="ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B3" sourceFile="ByteBoundedQueueBenchmarks_ConsumerMarker_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType" sourceFile="ByteBoundedQueueBenchmarks_DrainCounters_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B1" sourceFile="ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2" sourceFile="ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2" sourceFile="ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B3" sourceFile="ByteBoundedQueueBenchmarks_DrainCounters_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType" sourceFile="ByteBoundedQueueBenchmarks_OfferCounters_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B1" sourceFile="ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2" sourceFile="ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2" sourceFile="ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B3" sourceFile="ByteBoundedQueueBenchmarks_OfferCounters_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_high_contention_jmhTest" sourceFile="ByteBoundedQueueBenchmarks_high_contention_jmhTest.java" interface="false" size="1078" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType" sourceFile="ByteBoundedQueueBenchmarks_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B1" sourceFile="ByteBoundedQueueBenchmarks_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2" sourceFile="ByteBoundedQueueBenchmarks_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B2" sourceFile="ByteBoundedQueueBenchmarks_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_jmhType_B3" sourceFile="ByteBoundedQueueBenchmarks_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_mild_contention_jmhTest" sourceFile="ByteBoundedQueueBenchmarks_mild_contention_jmhTest.java" interface="false" size="1078" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.ByteBoundedQueueBenchmarks_no_contention_jmhTest" sourceFile="ByteBoundedQueueBenchmarks_no_contention_jmhTest.java" interface="false" size="1078" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType" sourceFile="KafkaSenderBenchmarks_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B1" sourceFile="KafkaSenderBenchmarks_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2" sourceFile="KafkaSenderBenchmarks_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B2" sourceFile="KafkaSenderBenchmarks_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.KafkaSenderBenchmarks_jmhType_B3" sourceFile="KafkaSenderBenchmarks_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.KafkaSenderBenchmarks_report_jmhTest" sourceFile="KafkaSenderBenchmarks_report_jmhTest.java" interface="false" size="692" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType" sourceFile="OkHttpSenderBenchmarks_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B1" sourceFile="OkHttpSenderBenchmarks_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2" sourceFile="OkHttpSenderBenchmarks_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B2" sourceFile="OkHttpSenderBenchmarks_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.OkHttpSenderBenchmarks_jmhType_B3" sourceFile="OkHttpSenderBenchmarks_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.OkHttpSenderBenchmarks_report_jmhTest" sourceFile="OkHttpSenderBenchmarks_report_jmhTest.java" interface="false" size="692" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType" sourceFile="SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B1" sourceFile="SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" sourceFile="SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2" sourceFile="SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B3" sourceFile="SenderBenchmarks_InMemoryReporterMetricsAsCounters_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType" sourceFile="URLConnectionSenderBenchmarks_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B1" sourceFile="URLConnectionSenderBenchmarks_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2" sourceFile="URLConnectionSenderBenchmarks_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B2" sourceFile="URLConnectionSenderBenchmarks_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_jmhType_B3" sourceFile="URLConnectionSenderBenchmarks_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="zipkin2.reporter.generated.URLConnectionSenderBenchmarks_report_jmhTest" sourceFile="URLConnectionSenderBenchmarks_report_jmhTest.java" interface="false" size="692" bugs="0"/>
     </PackageStats>
@@ -1265,44 +646,48 @@
       <ClassStats class="zipkin2.reporter.urlconnection.URLConnectionSenderTest$1" sourceFile="URLConnectionSenderTest.java" interface="false" size="9" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="888" invocations="2074" avgMicrosecondsPerInvocation="428" maxMicrosecondsPerInvocation="98217" standardDeviationMicrosecondsPerInvocation="2599"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="758" invocations="2056" avgMicrosecondsPerInvocation="368" maxMicrosecondsPerInvocation="26935" standardDeviationMicrosecondsPerInvocation="1241"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="746" invocations="2092" avgMicrosecondsPerInvocation="356" maxMicrosecondsPerInvocation="42851" standardDeviationMicrosecondsPerInvocation="1453"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="716" invocations="2142" avgMicrosecondsPerInvocation="334" maxMicrosecondsPerInvocation="44007" standardDeviationMicrosecondsPerInvocation="1496"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="547" invocations="2117" avgMicrosecondsPerInvocation="258" maxMicrosecondsPerInvocation="43895" standardDeviationMicrosecondsPerInvocation="1245"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="449" invocations="1808" avgMicrosecondsPerInvocation="248" maxMicrosecondsPerInvocation="49296" standardDeviationMicrosecondsPerInvocation="1396"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="442" invocations="3159" avgMicrosecondsPerInvocation="140" maxMicrosecondsPerInvocation="9360" standardDeviationMicrosecondsPerInvocation="367"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="424" invocations="1887" avgMicrosecondsPerInvocation="224" maxMicrosecondsPerInvocation="13646" standardDeviationMicrosecondsPerInvocation="642"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="398" invocations="657" avgMicrosecondsPerInvocation="606" maxMicrosecondsPerInvocation="19907" standardDeviationMicrosecondsPerInvocation="1424"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="324" invocations="657" avgMicrosecondsPerInvocation="494" maxMicrosecondsPerInvocation="7589" standardDeviationMicrosecondsPerInvocation="974"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="320" invocations="2092" avgMicrosecondsPerInvocation="153" maxMicrosecondsPerInvocation="11455" standardDeviationMicrosecondsPerInvocation="378"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="309" invocations="1895" avgMicrosecondsPerInvocation="163" maxMicrosecondsPerInvocation="1167" standardDeviationMicrosecondsPerInvocation="115"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LazyInit" totalMilliseconds="213" invocations="337" avgMicrosecondsPerInvocation="633" maxMicrosecondsPerInvocation="70981" standardDeviationMicrosecondsPerInvocation="5847"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="194" invocations="2092" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="8044" standardDeviationMicrosecondsPerInvocation="341"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="164" invocations="337" avgMicrosecondsPerInvocation="487" maxMicrosecondsPerInvocation="16940" standardDeviationMicrosecondsPerInvocation="1949"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="157" invocations="657" avgMicrosecondsPerInvocation="239" maxMicrosecondsPerInvocation="9053" standardDeviationMicrosecondsPerInvocation="770"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="147" invocations="2147" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="40254" standardDeviationMicrosecondsPerInvocation="886"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="141" invocations="337" avgMicrosecondsPerInvocation="419" maxMicrosecondsPerInvocation="7387" standardDeviationMicrosecondsPerInvocation="859"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="138" invocations="337" avgMicrosecondsPerInvocation="409" maxMicrosecondsPerInvocation="21851" standardDeviationMicrosecondsPerInvocation="2261"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="135" invocations="337" avgMicrosecondsPerInvocation="401" maxMicrosecondsPerInvocation="10848" standardDeviationMicrosecondsPerInvocation="1247"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="129" invocations="657" avgMicrosecondsPerInvocation="197" maxMicrosecondsPerInvocation="3805" standardDeviationMicrosecondsPerInvocation="395"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="121" invocations="337" avgMicrosecondsPerInvocation="359" maxMicrosecondsPerInvocation="7787" standardDeviationMicrosecondsPerInvocation="900"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="115" invocations="1665" avgMicrosecondsPerInvocation="69" maxMicrosecondsPerInvocation="38961" standardDeviationMicrosecondsPerInvocation="958"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="111" invocations="2147" avgMicrosecondsPerInvocation="52" maxMicrosecondsPerInvocation="5514" standardDeviationMicrosecondsPerInvocation="268"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="108" invocations="1977" avgMicrosecondsPerInvocation="54" maxMicrosecondsPerInvocation="2863" standardDeviationMicrosecondsPerInvocation="174"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BadSyntaxForRegularExpression" totalMilliseconds="105" invocations="337" avgMicrosecondsPerInvocation="314" maxMicrosecondsPerInvocation="60019" standardDeviationMicrosecondsPerInvocation="3272"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="98" invocations="657" avgMicrosecondsPerInvocation="150" maxMicrosecondsPerInvocation="22889" standardDeviationMicrosecondsPerInvocation="930"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="97" invocations="337" avgMicrosecondsPerInvocation="288" maxMicrosecondsPerInvocation="6552" standardDeviationMicrosecondsPerInvocation="681"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="92" invocations="2056" avgMicrosecondsPerInvocation="45" maxMicrosecondsPerInvocation="2937" standardDeviationMicrosecondsPerInvocation="126"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="90" invocations="657" avgMicrosecondsPerInvocation="138" maxMicrosecondsPerInvocation="4765" standardDeviationMicrosecondsPerInvocation="297"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteRecursiveLoop" totalMilliseconds="87" invocations="337" avgMicrosecondsPerInvocation="259" maxMicrosecondsPerInvocation="41787" standardDeviationMicrosecondsPerInvocation="2288"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="86" invocations="337" avgMicrosecondsPerInvocation="257" maxMicrosecondsPerInvocation="6369" standardDeviationMicrosecondsPerInvocation="761"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="85" invocations="817" avgMicrosecondsPerInvocation="104" maxMicrosecondsPerInvocation="11565" standardDeviationMicrosecondsPerInvocation="430"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="82" invocations="657" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="4520" standardDeviationMicrosecondsPerInvocation="293"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="79" invocations="53880" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="1043" standardDeviationMicrosecondsPerInvocation="8"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="77" invocations="337" avgMicrosecondsPerInvocation="229" maxMicrosecondsPerInvocation="5876" standardDeviationMicrosecondsPerInvocation="640"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="74" invocations="337" avgMicrosecondsPerInvocation="219" maxMicrosecondsPerInvocation="3107" standardDeviationMicrosecondsPerInvocation="451"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="72" invocations="657" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="8179" standardDeviationMicrosecondsPerInvocation="358"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="972" invocations="2074" avgMicrosecondsPerInvocation="468" maxMicrosecondsPerInvocation="110085" standardDeviationMicrosecondsPerInvocation="3117"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="791" invocations="2142" avgMicrosecondsPerInvocation="369" maxMicrosecondsPerInvocation="40956" standardDeviationMicrosecondsPerInvocation="1759"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="764" invocations="2056" avgMicrosecondsPerInvocation="371" maxMicrosecondsPerInvocation="30520" standardDeviationMicrosecondsPerInvocation="1366"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="721" invocations="2092" avgMicrosecondsPerInvocation="344" maxMicrosecondsPerInvocation="35674" standardDeviationMicrosecondsPerInvocation="1270"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="577" invocations="2020" avgMicrosecondsPerInvocation="285" maxMicrosecondsPerInvocation="19504" standardDeviationMicrosecondsPerInvocation="893"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="519" invocations="2117" avgMicrosecondsPerInvocation="245" maxMicrosecondsPerInvocation="16706" standardDeviationMicrosecondsPerInvocation="810"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="436" invocations="1808" avgMicrosecondsPerInvocation="241" maxMicrosecondsPerInvocation="27906" standardDeviationMicrosecondsPerInvocation="955"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="427" invocations="3231" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="6587" standardDeviationMicrosecondsPerInvocation="315"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="389" invocations="671" avgMicrosecondsPerInvocation="580" maxMicrosecondsPerInvocation="14081" standardDeviationMicrosecondsPerInvocation="1331"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="329" invocations="2147" avgMicrosecondsPerInvocation="153" maxMicrosecondsPerInvocation="10144" standardDeviationMicrosecondsPerInvocation="356"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="324" invocations="671" avgMicrosecondsPerInvocation="483" maxMicrosecondsPerInvocation="9993" standardDeviationMicrosecondsPerInvocation="1002"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="299" invocations="337" avgMicrosecondsPerInvocation="890" maxMicrosecondsPerInvocation="65285" standardDeviationMicrosecondsPerInvocation="4759"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="245" invocations="2092" avgMicrosecondsPerInvocation="117" maxMicrosecondsPerInvocation="53026" standardDeviationMicrosecondsPerInvocation="1211"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="206" invocations="337" avgMicrosecondsPerInvocation="611" maxMicrosecondsPerInvocation="82646" standardDeviationMicrosecondsPerInvocation="4937"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="196" invocations="2030" avgMicrosecondsPerInvocation="96" maxMicrosecondsPerInvocation="12848" standardDeviationMicrosecondsPerInvocation="317"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LazyInit" totalMilliseconds="190" invocations="337" avgMicrosecondsPerInvocation="566" maxMicrosecondsPerInvocation="62289" standardDeviationMicrosecondsPerInvocation="5188"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="171" invocations="337" avgMicrosecondsPerInvocation="510" maxMicrosecondsPerInvocation="20022" standardDeviationMicrosecondsPerInvocation="1987"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="170" invocations="671" avgMicrosecondsPerInvocation="254" maxMicrosecondsPerInvocation="28740" standardDeviationMicrosecondsPerInvocation="1180"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector" totalMilliseconds="157" invocations="337" avgMicrosecondsPerInvocation="466" maxMicrosecondsPerInvocation="20528" standardDeviationMicrosecondsPerInvocation="1306"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="146" invocations="337" avgMicrosecondsPerInvocation="435" maxMicrosecondsPerInvocation="12914" standardDeviationMicrosecondsPerInvocation="1187"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="145" invocations="337" avgMicrosecondsPerInvocation="433" maxMicrosecondsPerInvocation="8543" standardDeviationMicrosecondsPerInvocation="874"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="142" invocations="671" avgMicrosecondsPerInvocation="212" maxMicrosecondsPerInvocation="7618" standardDeviationMicrosecondsPerInvocation="597"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="133" invocations="337" avgMicrosecondsPerInvocation="396" maxMicrosecondsPerInvocation="10588" standardDeviationMicrosecondsPerInvocation="1164"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="127" invocations="2147" avgMicrosecondsPerInvocation="59" maxMicrosecondsPerInvocation="34051" standardDeviationMicrosecondsPerInvocation="738"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="127" invocations="671" avgMicrosecondsPerInvocation="189" maxMicrosecondsPerInvocation="37346" standardDeviationMicrosecondsPerInvocation="1483"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="115" invocations="1977" avgMicrosecondsPerInvocation="58" maxMicrosecondsPerInvocation="4789" standardDeviationMicrosecondsPerInvocation="195"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="113" invocations="2147" avgMicrosecondsPerInvocation="52" maxMicrosecondsPerInvocation="5209" standardDeviationMicrosecondsPerInvocation="265"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="109" invocations="337" avgMicrosecondsPerInvocation="325" maxMicrosecondsPerInvocation="56587" standardDeviationMicrosecondsPerInvocation="3098"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="107" invocations="671" avgMicrosecondsPerInvocation="160" maxMicrosecondsPerInvocation="7731" standardDeviationMicrosecondsPerInvocation="431"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="105" invocations="337" avgMicrosecondsPerInvocation="312" maxMicrosecondsPerInvocation="39314" standardDeviationMicrosecondsPerInvocation="2189"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="98" invocations="337" avgMicrosecondsPerInvocation="293" maxMicrosecondsPerInvocation="10105" standardDeviationMicrosecondsPerInvocation="777"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="95" invocations="2056" avgMicrosecondsPerInvocation="46" maxMicrosecondsPerInvocation="3700" standardDeviationMicrosecondsPerInvocation="151"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="94" invocations="337" avgMicrosecondsPerInvocation="281" maxMicrosecondsPerInvocation="12160" standardDeviationMicrosecondsPerInvocation="956"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredStaticMethodReturnDetector" totalMilliseconds="93" invocations="337" avgMicrosecondsPerInvocation="277" maxMicrosecondsPerInvocation="38429" standardDeviationMicrosecondsPerInvocation="2127"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="91" invocations="835" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="10124" standardDeviationMicrosecondsPerInvocation="395"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="88" invocations="337" avgMicrosecondsPerInvocation="261" maxMicrosecondsPerInvocation="21381" standardDeviationMicrosecondsPerInvocation="1261"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="87" invocations="55425" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="2658" standardDeviationMicrosecondsPerInvocation="14"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="85" invocations="337" avgMicrosecondsPerInvocation="254" maxMicrosecondsPerInvocation="5693" standardDeviationMicrosecondsPerInvocation="703"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="84" invocations="337" avgMicrosecondsPerInvocation="251" maxMicrosecondsPerInvocation="4555" standardDeviationMicrosecondsPerInvocation="555"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="80" invocations="671" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="3836" standardDeviationMicrosecondsPerInvocation="322"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="78" invocations="337" avgMicrosecondsPerInvocation="232" maxMicrosecondsPerInvocation="7733" standardDeviationMicrosecondsPerInvocation="709"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="77" invocations="337" avgMicrosecondsPerInvocation="229" maxMicrosecondsPerInvocation="5523" standardDeviationMicrosecondsPerInvocation="556"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

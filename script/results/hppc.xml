@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1534780682000" analysisTimestamp="1534780684278" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534866547000" analysisTimestamp="1534866550016" release="">
   <Project projectName="">
     <Jar>tmp/hppc</Jar>
   </Project>
@@ -76,197 +76,145 @@
     </Method>
     <SourceLine classname="com.carrotsearch.hppc.benchmarks.B004_HashSet_CollisionAvalanche" start="57" end="57" startBytecode="0" endBytecode="0" sourcefile="B004_HashSet_CollisionAvalanche.java" sourcepath="com/carrotsearch/hppc/benchmarks/B004_HashSet_CollisionAvalanche.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2" start="3" end="17" sourcefile="B001_ModXor_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B001_ModXor_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="it.unimi.dsi.fastutil.bytes.Byte2BooleanOpenHashMap">
+      <SourceLine classname="it.unimi.dsi.fastutil.bytes.Byte2BooleanOpenHashMap" start="65" end="903" sourcefile="Byte2BooleanOpenHashMap.java" sourcepath="it/unimi/dsi/fastutil/bytes/Byte2BooleanOpenHashMap.java"/>
     </Class>
-    <Field classname="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2" sourcefile="B001_ModXor_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B001_ModXor_jmhType_B2.java"/>
-    </Field>
+    <Method classname="it.unimi.dsi.fastutil.bytes.Byte2BooleanOpenHashMap" name="hashCode" signature="()I" isStatic="false">
+      <SourceLine classname="it.unimi.dsi.fastutil.bytes.Byte2BooleanOpenHashMap" start="850" end="861" startBytecode="0" endBytecode="57" sourcefile="Byte2BooleanOpenHashMap.java" sourcepath="it/unimi/dsi/fastutil/bytes/Byte2BooleanOpenHashMap.java"/>
+    </Method>
+    <LocalVariable name="t" register="4" pc="12" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="it.unimi.dsi.fastutil.bytes.Byte2BooleanOpenHashMap" start="851" end="851" startBytecode="10" endBytecode="10" sourcefile="Byte2BooleanOpenHashMap.java" sourcepath="it/unimi/dsi/fastutil/bytes/Byte2BooleanOpenHashMap.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2" start="3" end="17" sourcefile="B001_ModXor_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B001_ModXor_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="it.unimi.dsi.fastutil.bytes.Byte2CharLinkedOpenHashMap">
+      <SourceLine classname="it.unimi.dsi.fastutil.bytes.Byte2CharLinkedOpenHashMap" start="84" end="1549" sourcefile="Byte2CharLinkedOpenHashMap.java" sourcepath="it/unimi/dsi/fastutil/bytes/Byte2CharLinkedOpenHashMap.java"/>
     </Class>
-    <Field classname="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2" sourcefile="B001_ModXor_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B001_ModXor_jmhType_B2.java"/>
-    </Field>
+    <Method classname="it.unimi.dsi.fastutil.bytes.Byte2CharLinkedOpenHashMap" name="hashCode" signature="()I" isStatic="false">
+      <SourceLine classname="it.unimi.dsi.fastutil.bytes.Byte2CharLinkedOpenHashMap" start="1479" end="1490" startBytecode="0" endBytecode="49" sourcefile="Byte2CharLinkedOpenHashMap.java" sourcepath="it/unimi/dsi/fastutil/bytes/Byte2CharLinkedOpenHashMap.java"/>
+    </Method>
+    <LocalVariable name="t" register="4" pc="12" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="it.unimi.dsi.fastutil.bytes.Byte2CharLinkedOpenHashMap" start="1480" end="1480" startBytecode="10" endBytecode="10" sourcefile="Byte2CharLinkedOpenHashMap.java" sourcepath="it/unimi/dsi/fastutil/bytes/Byte2CharLinkedOpenHashMap.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2" start="3" end="17" sourcefile="B001_ModXor_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B001_ModXor_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="it.unimi.dsi.fastutil.chars.Char2ReferenceLinkedOpenHashMap">
+      <SourceLine classname="it.unimi.dsi.fastutil.chars.Char2ReferenceLinkedOpenHashMap" start="82" end="1532" sourcefile="Char2ReferenceLinkedOpenHashMap.java" sourcepath="it/unimi/dsi/fastutil/chars/Char2ReferenceLinkedOpenHashMap.java"/>
     </Class>
-    <Field classname="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2" sourcefile="B001_ModXor_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B001_ModXor_jmhType_B2.java"/>
-    </Field>
+    <Method classname="it.unimi.dsi.fastutil.chars.Char2ReferenceLinkedOpenHashMap" name="hashCode" signature="()I" isStatic="false">
+      <SourceLine classname="it.unimi.dsi.fastutil.chars.Char2ReferenceLinkedOpenHashMap" start="1461" end="1472" startBytecode="0" endBytecode="72" sourcefile="Char2ReferenceLinkedOpenHashMap.java" sourcepath="it/unimi/dsi/fastutil/chars/Char2ReferenceLinkedOpenHashMap.java"/>
+    </Method>
+    <LocalVariable name="t" register="4" pc="12" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="it.unimi.dsi.fastutil.chars.Char2ReferenceLinkedOpenHashMap" start="1462" end="1462" startBytecode="10" endBytecode="10" sourcefile="Char2ReferenceLinkedOpenHashMap.java" sourcepath="it/unimi/dsi/fastutil/chars/Char2ReferenceLinkedOpenHashMap.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2" start="3" end="17" sourcefile="B001_ModXor_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B001_ModXor_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="it.unimi.dsi.fastutil.doubles.Double2ObjectOpenHashMap">
+      <SourceLine classname="it.unimi.dsi.fastutil.doubles.Double2ObjectOpenHashMap" start="63" end="900" sourcefile="Double2ObjectOpenHashMap.java" sourcepath="it/unimi/dsi/fastutil/doubles/Double2ObjectOpenHashMap.java"/>
     </Class>
-    <Field classname="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2" sourcefile="B001_ModXor_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B001_ModXor_jmhType_B2.java"/>
-    </Field>
+    <Method classname="it.unimi.dsi.fastutil.doubles.Double2ObjectOpenHashMap" name="hashCode" signature="()I" isStatic="false">
+      <SourceLine classname="it.unimi.dsi.fastutil.doubles.Double2ObjectOpenHashMap" start="846" end="857" startBytecode="0" endBytecode="76" sourcefile="Double2ObjectOpenHashMap.java" sourcepath="it/unimi/dsi/fastutil/doubles/Double2ObjectOpenHashMap.java"/>
+    </Method>
+    <LocalVariable name="t" register="4" pc="12" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="it.unimi.dsi.fastutil.doubles.Double2ObjectOpenHashMap" start="847" end="847" startBytecode="10" endBytecode="10" sourcefile="Double2ObjectOpenHashMap.java" sourcepath="it/unimi/dsi/fastutil/doubles/Double2ObjectOpenHashMap.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2" start="3" end="17" sourcefile="B001_ModXor_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B001_ModXor_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="it.unimi.dsi.fastutil.floats.Float2FloatOpenHashMap">
+      <SourceLine classname="it.unimi.dsi.fastutil.floats.Float2FloatOpenHashMap" start="65" end="942" sourcefile="Float2FloatOpenHashMap.java" sourcepath="it/unimi/dsi/fastutil/floats/Float2FloatOpenHashMap.java"/>
     </Class>
-    <Field classname="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2" sourcefile="B001_ModXor_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B001_ModXor_jmhType_B2.java"/>
-    </Field>
+    <Method classname="it.unimi.dsi.fastutil.floats.Float2FloatOpenHashMap" name="hashCode" signature="()I" isStatic="false">
+      <SourceLine classname="it.unimi.dsi.fastutil.floats.Float2FloatOpenHashMap" start="889" end="900" startBytecode="0" endBytecode="53" sourcefile="Float2FloatOpenHashMap.java" sourcepath="it/unimi/dsi/fastutil/floats/Float2FloatOpenHashMap.java"/>
+    </Method>
+    <LocalVariable name="t" register="4" pc="12" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="it.unimi.dsi.fastutil.floats.Float2FloatOpenHashMap" start="890" end="890" startBytecode="10" endBytecode="10" sourcefile="Float2FloatOpenHashMap.java" sourcepath="it/unimi/dsi/fastutil/floats/Float2FloatOpenHashMap.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2" start="3" end="17" sourcefile="B001_ModXor_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B001_ModXor_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="it.unimi.dsi.fastutil.floats.Float2LongOpenCustomHashMap">
+      <SourceLine classname="it.unimi.dsi.fastutil.floats.Float2LongOpenCustomHashMap" start="65" end="963" sourcefile="Float2LongOpenCustomHashMap.java" sourcepath="it/unimi/dsi/fastutil/floats/Float2LongOpenCustomHashMap.java"/>
     </Class>
-    <Field classname="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2" sourcefile="B001_ModXor_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B001_ModXor_jmhType_B2.java"/>
-    </Field>
+    <Method classname="it.unimi.dsi.fastutil.floats.Float2LongOpenCustomHashMap" name="hashCode" signature="()I" isStatic="false">
+      <SourceLine classname="it.unimi.dsi.fastutil.floats.Float2LongOpenCustomHashMap" start="910" end="921" startBytecode="0" endBytecode="55" sourcefile="Float2LongOpenCustomHashMap.java" sourcepath="it/unimi/dsi/fastutil/floats/Float2LongOpenCustomHashMap.java"/>
+    </Method>
+    <LocalVariable name="t" register="4" pc="12" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="it.unimi.dsi.fastutil.floats.Float2LongOpenCustomHashMap" start="911" end="911" startBytecode="10" endBytecode="10" sourcefile="Float2LongOpenCustomHashMap.java" sourcepath="it/unimi/dsi/fastutil/floats/Float2LongOpenCustomHashMap.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2" start="3" end="17" sourcefile="B002_HashSet_Add_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B002_HashSet_Add_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="it.unimi.dsi.fastutil.ints.Int2BooleanOpenCustomHashMap">
+      <SourceLine classname="it.unimi.dsi.fastutil.ints.Int2BooleanOpenCustomHashMap" start="65" end="924" sourcefile="Int2BooleanOpenCustomHashMap.java" sourcepath="it/unimi/dsi/fastutil/ints/Int2BooleanOpenCustomHashMap.java"/>
     </Class>
-    <Field classname="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2" sourcefile="B002_HashSet_Add_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B002_HashSet_Add_jmhType_B2.java"/>
-    </Field>
+    <Method classname="it.unimi.dsi.fastutil.ints.Int2BooleanOpenCustomHashMap" name="hashCode" signature="()I" isStatic="false">
+      <SourceLine classname="it.unimi.dsi.fastutil.ints.Int2BooleanOpenCustomHashMap" start="871" end="882" startBytecode="0" endBytecode="60" sourcefile="Int2BooleanOpenCustomHashMap.java" sourcepath="it/unimi/dsi/fastutil/ints/Int2BooleanOpenCustomHashMap.java"/>
+    </Method>
+    <LocalVariable name="t" register="4" pc="12" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="it.unimi.dsi.fastutil.ints.Int2BooleanOpenCustomHashMap" start="872" end="872" startBytecode="10" endBytecode="10" sourcefile="Int2BooleanOpenCustomHashMap.java" sourcepath="it/unimi/dsi/fastutil/ints/Int2BooleanOpenCustomHashMap.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2" start="3" end="17" sourcefile="B002_HashSet_Add_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B002_HashSet_Add_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="it.unimi.dsi.fastutil.ints.Int2DoubleOpenCustomHashMap">
+      <SourceLine classname="it.unimi.dsi.fastutil.ints.Int2DoubleOpenCustomHashMap" start="65" end="962" sourcefile="Int2DoubleOpenCustomHashMap.java" sourcepath="it/unimi/dsi/fastutil/ints/Int2DoubleOpenCustomHashMap.java"/>
     </Class>
-    <Field classname="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2" sourcefile="B002_HashSet_Add_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B002_HashSet_Add_jmhType_B2.java"/>
-    </Field>
+    <Method classname="it.unimi.dsi.fastutil.ints.Int2DoubleOpenCustomHashMap" name="hashCode" signature="()I" isStatic="false">
+      <SourceLine classname="it.unimi.dsi.fastutil.ints.Int2DoubleOpenCustomHashMap" start="909" end="920" startBytecode="0" endBytecode="54" sourcefile="Int2DoubleOpenCustomHashMap.java" sourcepath="it/unimi/dsi/fastutil/ints/Int2DoubleOpenCustomHashMap.java"/>
+    </Method>
+    <LocalVariable name="t" register="4" pc="12" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="it.unimi.dsi.fastutil.ints.Int2DoubleOpenCustomHashMap" start="910" end="910" startBytecode="10" endBytecode="10" sourcefile="Int2DoubleOpenCustomHashMap.java" sourcepath="it/unimi/dsi/fastutil/ints/Int2DoubleOpenCustomHashMap.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2" start="3" end="17" sourcefile="B002_HashSet_Add_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B002_HashSet_Add_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="it.unimi.dsi.fastutil.ints.Int2IntOpenCustomHashMap">
+      <SourceLine classname="it.unimi.dsi.fastutil.ints.Int2IntOpenCustomHashMap" start="65" end="962" sourcefile="Int2IntOpenCustomHashMap.java" sourcepath="it/unimi/dsi/fastutil/ints/Int2IntOpenCustomHashMap.java"/>
     </Class>
-    <Field classname="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2" sourcefile="B002_HashSet_Add_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B002_HashSet_Add_jmhType_B2.java"/>
-    </Field>
+    <Method classname="it.unimi.dsi.fastutil.ints.Int2IntOpenCustomHashMap" name="hashCode" signature="()I" isStatic="false">
+      <SourceLine classname="it.unimi.dsi.fastutil.ints.Int2IntOpenCustomHashMap" start="909" end="920" startBytecode="0" endBytecode="52" sourcefile="Int2IntOpenCustomHashMap.java" sourcepath="it/unimi/dsi/fastutil/ints/Int2IntOpenCustomHashMap.java"/>
+    </Method>
+    <LocalVariable name="t" register="4" pc="12" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="it.unimi.dsi.fastutil.ints.Int2IntOpenCustomHashMap" start="910" end="910" startBytecode="10" endBytecode="10" sourcefile="Int2IntOpenCustomHashMap.java" sourcepath="it/unimi/dsi/fastutil/ints/Int2IntOpenCustomHashMap.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2" start="3" end="17" sourcefile="B002_HashSet_Add_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B002_HashSet_Add_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="it.unimi.dsi.fastutil.ints.Int2LongOpenCustomHashMap">
+      <SourceLine classname="it.unimi.dsi.fastutil.ints.Int2LongOpenCustomHashMap" start="65" end="962" sourcefile="Int2LongOpenCustomHashMap.java" sourcepath="it/unimi/dsi/fastutil/ints/Int2LongOpenCustomHashMap.java"/>
     </Class>
-    <Field classname="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2" sourcefile="B002_HashSet_Add_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B002_HashSet_Add_jmhType_B2.java"/>
-    </Field>
+    <Method classname="it.unimi.dsi.fastutil.ints.Int2LongOpenCustomHashMap" name="hashCode" signature="()I" isStatic="false">
+      <SourceLine classname="it.unimi.dsi.fastutil.ints.Int2LongOpenCustomHashMap" start="909" end="920" startBytecode="0" endBytecode="54" sourcefile="Int2LongOpenCustomHashMap.java" sourcepath="it/unimi/dsi/fastutil/ints/Int2LongOpenCustomHashMap.java"/>
+    </Method>
+    <LocalVariable name="t" register="4" pc="12" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="it.unimi.dsi.fastutil.ints.Int2LongOpenCustomHashMap" start="910" end="910" startBytecode="10" endBytecode="10" sourcefile="Int2LongOpenCustomHashMap.java" sourcepath="it/unimi/dsi/fastutil/ints/Int2LongOpenCustomHashMap.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2" start="3" end="17" sourcefile="B002_HashSet_Add_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B002_HashSet_Add_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="it.unimi.dsi.fastutil.ints.Int2LongOpenHashMap">
+      <SourceLine classname="it.unimi.dsi.fastutil.ints.Int2LongOpenHashMap" start="65" end="941" sourcefile="Int2LongOpenHashMap.java" sourcepath="it/unimi/dsi/fastutil/ints/Int2LongOpenHashMap.java"/>
     </Class>
-    <Field classname="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2" sourcefile="B002_HashSet_Add_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B002_HashSet_Add_jmhType_B2.java"/>
-    </Field>
+    <Method classname="it.unimi.dsi.fastutil.ints.Int2LongOpenHashMap" name="hashCode" signature="()I" isStatic="false">
+      <SourceLine classname="it.unimi.dsi.fastutil.ints.Int2LongOpenHashMap" start="888" end="899" startBytecode="0" endBytecode="51" sourcefile="Int2LongOpenHashMap.java" sourcepath="it/unimi/dsi/fastutil/ints/Int2LongOpenHashMap.java"/>
+    </Method>
+    <LocalVariable name="t" register="4" pc="12" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="it.unimi.dsi.fastutil.ints.Int2LongOpenHashMap" start="889" end="889" startBytecode="10" endBytecode="10" sourcefile="Int2LongOpenHashMap.java" sourcepath="it/unimi/dsi/fastutil/ints/Int2LongOpenHashMap.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2" start="3" end="17" sourcefile="B002_HashSet_Add_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B002_HashSet_Add_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="it.unimi.dsi.fastutil.longs.Long2LongOpenCustomHashMap">
+      <SourceLine classname="it.unimi.dsi.fastutil.longs.Long2LongOpenCustomHashMap" start="65" end="962" sourcefile="Long2LongOpenCustomHashMap.java" sourcepath="it/unimi/dsi/fastutil/longs/Long2LongOpenCustomHashMap.java"/>
     </Class>
-    <Field classname="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2" sourcefile="B002_HashSet_Add_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B002_HashSet_Add_jmhType_B2.java"/>
-    </Field>
+    <Method classname="it.unimi.dsi.fastutil.longs.Long2LongOpenCustomHashMap" name="hashCode" signature="()I" isStatic="false">
+      <SourceLine classname="it.unimi.dsi.fastutil.longs.Long2LongOpenCustomHashMap" start="909" end="920" startBytecode="0" endBytecode="56" sourcefile="Long2LongOpenCustomHashMap.java" sourcepath="it/unimi/dsi/fastutil/longs/Long2LongOpenCustomHashMap.java"/>
+    </Method>
+    <LocalVariable name="t" register="4" pc="12" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="it.unimi.dsi.fastutil.longs.Long2LongOpenCustomHashMap" start="910" end="910" startBytecode="10" endBytecode="10" sourcefile="Long2LongOpenCustomHashMap.java" sourcepath="it/unimi/dsi/fastutil/longs/Long2LongOpenCustomHashMap.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2" start="3" end="17" sourcefile="B003_HashSet_Contains_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B003_HashSet_Contains_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="it.unimi.dsi.fastutil.longs.Long2ReferenceOpenHashMap">
+      <SourceLine classname="it.unimi.dsi.fastutil.longs.Long2ReferenceOpenHashMap" start="63" end="896" sourcefile="Long2ReferenceOpenHashMap.java" sourcepath="it/unimi/dsi/fastutil/longs/Long2ReferenceOpenHashMap.java"/>
     </Class>
-    <Field classname="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2" sourcefile="B003_HashSet_Contains_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B003_HashSet_Contains_jmhType_B2.java"/>
-    </Field>
+    <Method classname="it.unimi.dsi.fastutil.longs.Long2ReferenceOpenHashMap" name="hashCode" signature="()I" isStatic="false">
+      <SourceLine classname="it.unimi.dsi.fastutil.longs.Long2ReferenceOpenHashMap" start="842" end="853" startBytecode="0" endBytecode="75" sourcefile="Long2ReferenceOpenHashMap.java" sourcepath="it/unimi/dsi/fastutil/longs/Long2ReferenceOpenHashMap.java"/>
+    </Method>
+    <LocalVariable name="t" register="4" pc="12" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="it.unimi.dsi.fastutil.longs.Long2ReferenceOpenHashMap" start="843" end="843" startBytecode="10" endBytecode="10" sourcefile="Long2ReferenceOpenHashMap.java" sourcepath="it/unimi/dsi/fastutil/longs/Long2ReferenceOpenHashMap.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2" start="3" end="17" sourcefile="B003_HashSet_Contains_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B003_HashSet_Contains_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="it.unimi.dsi.fastutil.shorts.Short2ReferenceOpenHashMap">
+      <SourceLine classname="it.unimi.dsi.fastutil.shorts.Short2ReferenceOpenHashMap" start="63" end="896" sourcefile="Short2ReferenceOpenHashMap.java" sourcepath="it/unimi/dsi/fastutil/shorts/Short2ReferenceOpenHashMap.java"/>
     </Class>
-    <Field classname="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2" sourcefile="B003_HashSet_Contains_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B003_HashSet_Contains_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2" start="3" end="17" sourcefile="B003_HashSet_Contains_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B003_HashSet_Contains_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2" sourcefile="B003_HashSet_Contains_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B003_HashSet_Contains_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2" start="3" end="17" sourcefile="B003_HashSet_Contains_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B003_HashSet_Contains_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2" sourcefile="B003_HashSet_Contains_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B003_HashSet_Contains_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2" start="3" end="17" sourcefile="B003_HashSet_Contains_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B003_HashSet_Contains_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2" sourcefile="B003_HashSet_Contains_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B003_HashSet_Contains_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2" start="3" end="17" sourcefile="B003_HashSet_Contains_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B003_HashSet_Contains_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2" sourcefile="B003_HashSet_Contains_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B003_HashSet_Contains_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2" start="3" end="17" sourcefile="B004_HashSet_CollisionAvalanche_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B004_HashSet_CollisionAvalanche_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2" sourcefile="B004_HashSet_CollisionAvalanche_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B004_HashSet_CollisionAvalanche_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2" start="3" end="17" sourcefile="B004_HashSet_CollisionAvalanche_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B004_HashSet_CollisionAvalanche_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2" sourcefile="B004_HashSet_CollisionAvalanche_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B004_HashSet_CollisionAvalanche_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2" start="3" end="17" sourcefile="B004_HashSet_CollisionAvalanche_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B004_HashSet_CollisionAvalanche_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2" sourcefile="B004_HashSet_CollisionAvalanche_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B004_HashSet_CollisionAvalanche_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2" start="3" end="17" sourcefile="B004_HashSet_CollisionAvalanche_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B004_HashSet_CollisionAvalanche_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2" sourcefile="B004_HashSet_CollisionAvalanche_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B004_HashSet_CollisionAvalanche_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2" start="3" end="17" sourcefile="B004_HashSet_CollisionAvalanche_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B004_HashSet_CollisionAvalanche_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2" sourcefile="B004_HashSet_CollisionAvalanche_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B004_HashSet_CollisionAvalanche_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2" start="3" end="17" sourcefile="B004_HashSet_CollisionAvalanche_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B004_HashSet_CollisionAvalanche_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2" sourcefile="B004_HashSet_CollisionAvalanche_jmhType_B2.java" sourcepath="com/carrotsearch/hppc/benchmarks/generated/B004_HashSet_CollisionAvalanche_jmhType_B2.java"/>
-    </Field>
+    <Method classname="it.unimi.dsi.fastutil.shorts.Short2ReferenceOpenHashMap" name="hashCode" signature="()I" isStatic="false">
+      <SourceLine classname="it.unimi.dsi.fastutil.shorts.Short2ReferenceOpenHashMap" start="842" end="853" startBytecode="0" endBytecode="72" sourcefile="Short2ReferenceOpenHashMap.java" sourcepath="it/unimi/dsi/fastutil/shorts/Short2ReferenceOpenHashMap.java"/>
+    </Method>
+    <LocalVariable name="t" register="4" pc="12" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="it.unimi.dsi.fastutil.shorts.Short2ReferenceOpenHashMap" start="843" end="843" startBytecode="10" endBytecode="10" sourcefile="Short2ReferenceOpenHashMap.java" sourcepath="it/unimi/dsi/fastutil/shorts/Short2ReferenceOpenHashMap.java"/>
   </BugInstance>
   <Errors errors="0" missingClasses="66">
     <MissingClass>com.carrotsearch.randomizedtesting.RandomizedContext</MissingClass>
@@ -336,7 +284,7 @@
     <MissingClass>org.junit.rules.MethodRule</MissingClass>
     <MissingClass>org.junit.rules.RuleChain</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Mon, 20 Aug 2018 17:58:02 +0200" total_classes="23162" referenced_classes="23532" total_bugs="32" total_size="1548149" num_packages="114" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="773.84" clock_seconds="492.13" peak_mbytes="2218.58" alloc_mbytes="3641.00" gc_seconds="23.61" priority_2="32">
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 17:49:07 +0200" total_classes="23162" referenced_classes="23551" total_bugs="22" total_size="1548151" num_packages="114" java_version="9.0.4" vm_version="9.0.4+11" cpu_seconds="820.45" clock_seconds="502.68" peak_mbytes="3365.64" alloc_mbytes="4096.00" gc_seconds="23.15" priority_2="8" priority_1="14">
     <PackageStats package="com.carrotsearch.hppc" total_bugs="0" total_types="1541" total_size="68163">
       <ClassStats class="com.carrotsearch.hppc.APIExpectationsTest" sourceFile="APIExpectationsTest.java" interface="false" size="146" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.APIExpectationsTest$1IntegerIdentityDeque" sourceFile="APIExpectationsTest.java" interface="false" size="6" bugs="0"/>
@@ -1898,26 +1846,26 @@
       <ClassStats class="com.carrotsearch.hppc.benchmarks.Library$3" sourceFile="Library.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.benchmarks.Library$4" sourceFile="Library.java" interface="false" size="5" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.carrotsearch.hppc.benchmarks.generated" total_bugs="24" total_types="21" total_size="5020" priority_2="24">
+    <PackageStats package="com.carrotsearch.hppc.benchmarks.generated" total_bugs="0" total_types="21" total_size="5020">
       <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType" sourceFile="B001_ModXor_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B1" sourceFile="B001_ModXor_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2" sourceFile="B001_ModXor_jmhType_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B2" sourceFile="B001_ModXor_jmhType_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_jmhType_B3" sourceFile="B001_ModXor_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_modOp_jmhTest" sourceFile="B001_ModXor_modOp_jmhTest.java" interface="false" size="475" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B001_ModXor_xorOp_jmhTest" sourceFile="B001_ModXor_xorOp_jmhTest.java" interface="false" size="475" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_bulk_jmhTest" sourceFile="B002_HashSet_Add_bulk_jmhTest.java" interface="false" size="664" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType" sourceFile="B002_HashSet_Add_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B1" sourceFile="B002_HashSet_Add_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2" sourceFile="B002_HashSet_Add_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B2" sourceFile="B002_HashSet_Add_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B002_HashSet_Add_jmhType_B3" sourceFile="B002_HashSet_Add_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_bulk_jmhTest" sourceFile="B003_HashSet_Contains_bulk_jmhTest.java" interface="false" size="564" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType" sourceFile="B003_HashSet_Contains_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B1" sourceFile="B003_HashSet_Contains_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2" sourceFile="B003_HashSet_Contains_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B2" sourceFile="B003_HashSet_Contains_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B003_HashSet_Contains_jmhType_B3" sourceFile="B003_HashSet_Contains_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType" sourceFile="B004_HashSet_CollisionAvalanche_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B1" sourceFile="B004_HashSet_CollisionAvalanche_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2" sourceFile="B004_HashSet_CollisionAvalanche_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B2" sourceFile="B004_HashSet_CollisionAvalanche_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_jmhType_B3" sourceFile="B004_HashSet_CollisionAvalanche_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.benchmarks.generated.B004_HashSet_CollisionAvalanche_run_jmhTest" sourceFile="B004_HashSet_CollisionAvalanche_run_jmhTest.java" interface="false" size="661" bugs="0"/>
     </PackageStats>
@@ -2022,7 +1970,7 @@
       <ClassStats class="com.carrotsearch.hppc.generator.intrinsics.NewArray" sourceFile="NewArray.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.generator.intrinsics.NewArray$1" sourceFile="NewArray.java" interface="false" size="4" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.carrotsearch.hppc.generator.parser" total_bugs="0" total_types="119" total_size="7321">
+    <PackageStats package="com.carrotsearch.hppc.generator.parser" total_bugs="0" total_types="119" total_size="7323">
       <ClassStats class="com.carrotsearch.hppc.generator.parser.Channels" sourceFile="Channels.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.generator.parser.Java7Lexer" sourceFile="Java7Lexer.java" interface="false" size="176" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.generator.parser.Java7Parser" sourceFile="Java7Parser.java" interface="false" size="3557" bugs="0"/>
@@ -2139,7 +2087,7 @@
       <ClassStats class="com.carrotsearch.hppc.generator.parser.Replacement" sourceFile="Replacement.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.generator.parser.SignatureProcessor" sourceFile="SignatureProcessor.java" interface="false" size="53" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.generator.parser.SignatureProcessor$1" sourceFile="SignatureProcessor.java" interface="false" size="7" bugs="0"/>
-      <ClassStats class="com.carrotsearch.hppc.generator.parser.SignatureReplacementVisitor" sourceFile="SignatureReplacementVisitor.java" interface="false" size="265" bugs="0"/>
+      <ClassStats class="com.carrotsearch.hppc.generator.parser.SignatureReplacementVisitor" sourceFile="SignatureReplacementVisitor.java" interface="false" size="267" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.generator.parser.SignatureReplacementVisitor$TypeBound" sourceFile="SignatureReplacementVisitor.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="com.carrotsearch.hppc.generator.parser.TestSignatureProcessor" sourceFile="TestSignatureProcessor.java" interface="false" size="143" bugs="0"/>
     </PackageStats>
@@ -2432,7 +2380,7 @@
       <ClassStats class="it.unimi.dsi.fastutil.booleans.BooleanSets$UnmodifiableSet" sourceFile="BooleanSets.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.booleans.BooleanStack" sourceFile="BooleanStack.java" interface="true" size="5" bugs="0"/>
     </PackageStats>
-    <PackageStats package="it.unimi.dsi.fastutil.bytes" total_bugs="0" total_types="1216" total_size="63666">
+    <PackageStats package="it.unimi.dsi.fastutil.bytes" total_bugs="2" total_types="1216" total_size="63666" priority_1="2">
       <ClassStats class="it.unimi.dsi.fastutil.bytes.AbstractByte2BooleanFunction" sourceFile="AbstractByte2BooleanFunction.java" interface="false" size="35" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.bytes.AbstractByte2BooleanMap" sourceFile="AbstractByte2BooleanMap.java" interface="false" size="61" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.bytes.AbstractByte2BooleanMap$1" sourceFile="AbstractByte2BooleanMap.java" interface="false" size="14" bugs="0"/>
@@ -2630,7 +2578,7 @@
       <ClassStats class="it.unimi.dsi.fastutil.bytes.Byte2BooleanOpenCustomHashMap$MapEntrySet" sourceFile="Byte2BooleanOpenCustomHashMap.java" interface="false" size="47" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.bytes.Byte2BooleanOpenCustomHashMap$MapIterator" sourceFile="Byte2BooleanOpenCustomHashMap.java" interface="false" size="61" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.bytes.Byte2BooleanOpenCustomHashMap$ValueIterator" sourceFile="Byte2BooleanOpenCustomHashMap.java" interface="false" size="12" bugs="0"/>
-      <ClassStats class="it.unimi.dsi.fastutil.bytes.Byte2BooleanOpenHashMap" sourceFile="Byte2BooleanOpenHashMap.java" interface="false" size="290" bugs="0"/>
+      <ClassStats class="it.unimi.dsi.fastutil.bytes.Byte2BooleanOpenHashMap" sourceFile="Byte2BooleanOpenHashMap.java" interface="false" size="290" bugs="1" priority_1="1"/>
       <ClassStats class="it.unimi.dsi.fastutil.bytes.Byte2BooleanOpenHashMap$1" sourceFile="Byte2BooleanOpenHashMap.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.bytes.Byte2BooleanOpenHashMap$EntryIterator" sourceFile="Byte2BooleanOpenHashMap.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.bytes.Byte2BooleanOpenHashMap$FastEntryIterator" sourceFile="Byte2BooleanOpenHashMap.java" interface="false" size="11" bugs="0"/>
@@ -2793,7 +2741,7 @@
       <ClassStats class="it.unimi.dsi.fastutil.bytes.Byte2CharFunctions$Singleton" sourceFile="Byte2CharFunctions.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.bytes.Byte2CharFunctions$SynchronizedFunction" sourceFile="Byte2CharFunctions.java" interface="false" size="74" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.bytes.Byte2CharFunctions$UnmodifiableFunction" sourceFile="Byte2CharFunctions.java" interface="false" size="28" bugs="0"/>
-      <ClassStats class="it.unimi.dsi.fastutil.bytes.Byte2CharLinkedOpenHashMap" sourceFile="Byte2CharLinkedOpenHashMap.java" interface="false" size="535" bugs="0"/>
+      <ClassStats class="it.unimi.dsi.fastutil.bytes.Byte2CharLinkedOpenHashMap" sourceFile="Byte2CharLinkedOpenHashMap.java" interface="false" size="535" bugs="1" priority_1="1"/>
       <ClassStats class="it.unimi.dsi.fastutil.bytes.Byte2CharLinkedOpenHashMap$1" sourceFile="Byte2CharLinkedOpenHashMap.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.bytes.Byte2CharLinkedOpenHashMap$EntryIterator" sourceFile="Byte2CharLinkedOpenHashMap.java" interface="false" size="26" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.bytes.Byte2CharLinkedOpenHashMap$FastEntryIterator" sourceFile="Byte2CharLinkedOpenHashMap.java" interface="false" size="25" bugs="0"/>
@@ -3650,7 +3598,7 @@
       <ClassStats class="it.unimi.dsi.fastutil.bytes.ByteSortedSets$UnmodifiableSortedSet" sourceFile="ByteSortedSets.java" interface="false" size="45" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.bytes.ByteStack" sourceFile="ByteStack.java" interface="true" size="5" bugs="0"/>
     </PackageStats>
-    <PackageStats package="it.unimi.dsi.fastutil.chars" total_bugs="0" total_types="1216" total_size="63653">
+    <PackageStats package="it.unimi.dsi.fastutil.chars" total_bugs="1" total_types="1216" total_size="63653" priority_1="1">
       <ClassStats class="it.unimi.dsi.fastutil.chars.AbstractChar2BooleanFunction" sourceFile="AbstractChar2BooleanFunction.java" interface="false" size="35" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.chars.AbstractChar2BooleanMap" sourceFile="AbstractChar2BooleanMap.java" interface="false" size="61" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.chars.AbstractChar2BooleanMap$1" sourceFile="AbstractChar2BooleanMap.java" interface="false" size="14" bugs="0"/>
@@ -4587,7 +4535,7 @@
       <ClassStats class="it.unimi.dsi.fastutil.chars.Char2ReferenceFunctions$Singleton" sourceFile="Char2ReferenceFunctions.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.chars.Char2ReferenceFunctions$SynchronizedFunction" sourceFile="Char2ReferenceFunctions.java" interface="false" size="72" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.chars.Char2ReferenceFunctions$UnmodifiableFunction" sourceFile="Char2ReferenceFunctions.java" interface="false" size="32" bugs="0"/>
-      <ClassStats class="it.unimi.dsi.fastutil.chars.Char2ReferenceLinkedOpenHashMap" sourceFile="Char2ReferenceLinkedOpenHashMap.java" interface="false" size="540" bugs="0"/>
+      <ClassStats class="it.unimi.dsi.fastutil.chars.Char2ReferenceLinkedOpenHashMap" sourceFile="Char2ReferenceLinkedOpenHashMap.java" interface="false" size="540" bugs="1" priority_1="1"/>
       <ClassStats class="it.unimi.dsi.fastutil.chars.Char2ReferenceLinkedOpenHashMap$1" sourceFile="Char2ReferenceLinkedOpenHashMap.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.chars.Char2ReferenceLinkedOpenHashMap$EntryIterator" sourceFile="Char2ReferenceLinkedOpenHashMap.java" interface="false" size="26" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.chars.Char2ReferenceLinkedOpenHashMap$FastEntryIterator" sourceFile="Char2ReferenceLinkedOpenHashMap.java" interface="false" size="25" bugs="0"/>
@@ -4868,7 +4816,7 @@
       <ClassStats class="it.unimi.dsi.fastutil.chars.CharSortedSets$UnmodifiableSortedSet" sourceFile="CharSortedSets.java" interface="false" size="45" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.chars.CharStack" sourceFile="CharStack.java" interface="true" size="5" bugs="0"/>
     </PackageStats>
-    <PackageStats package="it.unimi.dsi.fastutil.doubles" total_bugs="0" total_types="1220" total_size="63848">
+    <PackageStats package="it.unimi.dsi.fastutil.doubles" total_bugs="1" total_types="1220" total_size="63848" priority_1="1">
       <ClassStats class="it.unimi.dsi.fastutil.doubles.AbstractDouble2BooleanFunction" sourceFile="AbstractDouble2BooleanFunction.java" interface="false" size="35" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.doubles.AbstractDouble2BooleanMap" sourceFile="AbstractDouble2BooleanMap.java" interface="false" size="61" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.doubles.AbstractDouble2BooleanMap$1" sourceFile="AbstractDouble2BooleanMap.java" interface="false" size="14" bugs="0"/>
@@ -5738,7 +5686,7 @@
       <ClassStats class="it.unimi.dsi.fastutil.doubles.Double2ObjectOpenCustomHashMap$MapEntrySet" sourceFile="Double2ObjectOpenCustomHashMap.java" interface="false" size="49" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.doubles.Double2ObjectOpenCustomHashMap$MapIterator" sourceFile="Double2ObjectOpenCustomHashMap.java" interface="false" size="63" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.doubles.Double2ObjectOpenCustomHashMap$ValueIterator" sourceFile="Double2ObjectOpenCustomHashMap.java" interface="false" size="8" bugs="0"/>
-      <ClassStats class="it.unimi.dsi.fastutil.doubles.Double2ObjectOpenHashMap" sourceFile="Double2ObjectOpenHashMap.java" interface="false" size="294" bugs="0"/>
+      <ClassStats class="it.unimi.dsi.fastutil.doubles.Double2ObjectOpenHashMap" sourceFile="Double2ObjectOpenHashMap.java" interface="false" size="294" bugs="1" priority_1="1"/>
       <ClassStats class="it.unimi.dsi.fastutil.doubles.Double2ObjectOpenHashMap$1" sourceFile="Double2ObjectOpenHashMap.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.doubles.Double2ObjectOpenHashMap$EntryIterator" sourceFile="Double2ObjectOpenHashMap.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.doubles.Double2ObjectOpenHashMap$FastEntryIterator" sourceFile="Double2ObjectOpenHashMap.java" interface="false" size="11" bugs="0"/>
@@ -6090,7 +6038,7 @@
       <ClassStats class="it.unimi.dsi.fastutil.doubles.DoubleSortedSets$UnmodifiableSortedSet" sourceFile="DoubleSortedSets.java" interface="false" size="45" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.doubles.DoubleStack" sourceFile="DoubleStack.java" interface="true" size="5" bugs="0"/>
     </PackageStats>
-    <PackageStats package="it.unimi.dsi.fastutil.floats" total_bugs="0" total_types="1218" total_size="63794">
+    <PackageStats package="it.unimi.dsi.fastutil.floats" total_bugs="2" total_types="1218" total_size="63794" priority_1="2">
       <ClassStats class="it.unimi.dsi.fastutil.floats.AbstractFloat2BooleanFunction" sourceFile="AbstractFloat2BooleanFunction.java" interface="false" size="35" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.floats.AbstractFloat2BooleanMap" sourceFile="AbstractFloat2BooleanMap.java" interface="false" size="61" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.floats.AbstractFloat2BooleanMap$1" sourceFile="AbstractFloat2BooleanMap.java" interface="false" size="14" bugs="0"/>
@@ -6672,7 +6620,7 @@
       <ClassStats class="it.unimi.dsi.fastutil.floats.Float2FloatOpenCustomHashMap$MapEntrySet" sourceFile="Float2FloatOpenCustomHashMap.java" interface="false" size="47" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.floats.Float2FloatOpenCustomHashMap$MapIterator" sourceFile="Float2FloatOpenCustomHashMap.java" interface="false" size="61" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.floats.Float2FloatOpenCustomHashMap$ValueIterator" sourceFile="Float2FloatOpenCustomHashMap.java" interface="false" size="12" bugs="0"/>
-      <ClassStats class="it.unimi.dsi.fastutil.floats.Float2FloatOpenHashMap" sourceFile="Float2FloatOpenHashMap.java" interface="false" size="309" bugs="0"/>
+      <ClassStats class="it.unimi.dsi.fastutil.floats.Float2FloatOpenHashMap" sourceFile="Float2FloatOpenHashMap.java" interface="false" size="309" bugs="1" priority_1="1"/>
       <ClassStats class="it.unimi.dsi.fastutil.floats.Float2FloatOpenHashMap$1" sourceFile="Float2FloatOpenHashMap.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.floats.Float2FloatOpenHashMap$EntryIterator" sourceFile="Float2FloatOpenHashMap.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.floats.Float2FloatOpenHashMap$FastEntryIterator" sourceFile="Float2FloatOpenHashMap.java" interface="false" size="11" bugs="0"/>
@@ -6854,7 +6802,7 @@
       <ClassStats class="it.unimi.dsi.fastutil.floats.Float2LongMaps$Singleton$SingletonEntry" sourceFile="Float2LongMaps.java" interface="false" size="28" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.floats.Float2LongMaps$SynchronizedMap" sourceFile="Float2LongMaps.java" interface="false" size="103" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.floats.Float2LongMaps$UnmodifiableMap" sourceFile="Float2LongMaps.java" interface="false" size="56" bugs="0"/>
-      <ClassStats class="it.unimi.dsi.fastutil.floats.Float2LongOpenCustomHashMap" sourceFile="Float2LongOpenCustomHashMap.java" interface="false" size="314" bugs="0"/>
+      <ClassStats class="it.unimi.dsi.fastutil.floats.Float2LongOpenCustomHashMap" sourceFile="Float2LongOpenCustomHashMap.java" interface="false" size="314" bugs="1" priority_1="1"/>
       <ClassStats class="it.unimi.dsi.fastutil.floats.Float2LongOpenCustomHashMap$1" sourceFile="Float2LongOpenCustomHashMap.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.floats.Float2LongOpenCustomHashMap$EntryIterator" sourceFile="Float2LongOpenCustomHashMap.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.floats.Float2LongOpenCustomHashMap$FastEntryIterator" sourceFile="Float2LongOpenCustomHashMap.java" interface="false" size="11" bugs="0"/>
@@ -7310,7 +7258,7 @@
       <ClassStats class="it.unimi.dsi.fastutil.floats.FloatSortedSets$UnmodifiableSortedSet" sourceFile="FloatSortedSets.java" interface="false" size="45" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.floats.FloatStack" sourceFile="FloatStack.java" interface="true" size="5" bugs="0"/>
     </PackageStats>
-    <PackageStats package="it.unimi.dsi.fastutil.ints" total_bugs="0" total_types="1221" total_size="63981">
+    <PackageStats package="it.unimi.dsi.fastutil.ints" total_bugs="5" total_types="1221" total_size="63981" priority_1="5">
       <ClassStats class="it.unimi.dsi.fastutil.ints.AbstractInt2BooleanFunction" sourceFile="AbstractInt2BooleanFunction.java" interface="false" size="35" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.AbstractInt2BooleanMap" sourceFile="AbstractInt2BooleanMap.java" interface="false" size="61" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.AbstractInt2BooleanMap$1" sourceFile="AbstractInt2BooleanMap.java" interface="false" size="14" bugs="0"/>
@@ -7498,7 +7446,7 @@
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2BooleanMaps$Singleton$SingletonEntry" sourceFile="Int2BooleanMaps.java" interface="false" size="27" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2BooleanMaps$SynchronizedMap" sourceFile="Int2BooleanMaps.java" interface="false" size="103" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2BooleanMaps$UnmodifiableMap" sourceFile="Int2BooleanMaps.java" interface="false" size="56" bugs="0"/>
-      <ClassStats class="it.unimi.dsi.fastutil.ints.Int2BooleanOpenCustomHashMap" sourceFile="Int2BooleanOpenCustomHashMap.java" interface="false" size="295" bugs="0"/>
+      <ClassStats class="it.unimi.dsi.fastutil.ints.Int2BooleanOpenCustomHashMap" sourceFile="Int2BooleanOpenCustomHashMap.java" interface="false" size="295" bugs="1" priority_1="1"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2BooleanOpenCustomHashMap$1" sourceFile="Int2BooleanOpenCustomHashMap.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2BooleanOpenCustomHashMap$EntryIterator" sourceFile="Int2BooleanOpenCustomHashMap.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2BooleanOpenCustomHashMap$FastEntryIterator" sourceFile="Int2BooleanOpenCustomHashMap.java" interface="false" size="11" bugs="0"/>
@@ -7786,7 +7734,7 @@
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2DoubleMaps$Singleton$SingletonEntry" sourceFile="Int2DoubleMaps.java" interface="false" size="27" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2DoubleMaps$SynchronizedMap" sourceFile="Int2DoubleMaps.java" interface="false" size="103" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2DoubleMaps$UnmodifiableMap" sourceFile="Int2DoubleMaps.java" interface="false" size="56" bugs="0"/>
-      <ClassStats class="it.unimi.dsi.fastutil.ints.Int2DoubleOpenCustomHashMap" sourceFile="Int2DoubleOpenCustomHashMap.java" interface="false" size="313" bugs="0"/>
+      <ClassStats class="it.unimi.dsi.fastutil.ints.Int2DoubleOpenCustomHashMap" sourceFile="Int2DoubleOpenCustomHashMap.java" interface="false" size="313" bugs="1" priority_1="1"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2DoubleOpenCustomHashMap$1" sourceFile="Int2DoubleOpenCustomHashMap.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2DoubleOpenCustomHashMap$EntryIterator" sourceFile="Int2DoubleOpenCustomHashMap.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2DoubleOpenCustomHashMap$FastEntryIterator" sourceFile="Int2DoubleOpenCustomHashMap.java" interface="false" size="11" bugs="0"/>
@@ -7978,7 +7926,7 @@
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2IntMaps$Singleton$SingletonEntry" sourceFile="Int2IntMaps.java" interface="false" size="27" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2IntMaps$SynchronizedMap" sourceFile="Int2IntMaps.java" interface="false" size="103" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2IntMaps$UnmodifiableMap" sourceFile="Int2IntMaps.java" interface="false" size="56" bugs="0"/>
-      <ClassStats class="it.unimi.dsi.fastutil.ints.Int2IntOpenCustomHashMap" sourceFile="Int2IntOpenCustomHashMap.java" interface="false" size="313" bugs="0"/>
+      <ClassStats class="it.unimi.dsi.fastutil.ints.Int2IntOpenCustomHashMap" sourceFile="Int2IntOpenCustomHashMap.java" interface="false" size="313" bugs="1" priority_1="1"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2IntOpenCustomHashMap$1" sourceFile="Int2IntOpenCustomHashMap.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2IntOpenCustomHashMap$EntryIterator" sourceFile="Int2IntOpenCustomHashMap.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2IntOpenCustomHashMap$FastEntryIterator" sourceFile="Int2IntOpenCustomHashMap.java" interface="false" size="11" bugs="0"/>
@@ -8074,7 +8022,7 @@
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2LongMaps$Singleton$SingletonEntry" sourceFile="Int2LongMaps.java" interface="false" size="27" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2LongMaps$SynchronizedMap" sourceFile="Int2LongMaps.java" interface="false" size="103" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2LongMaps$UnmodifiableMap" sourceFile="Int2LongMaps.java" interface="false" size="56" bugs="0"/>
-      <ClassStats class="it.unimi.dsi.fastutil.ints.Int2LongOpenCustomHashMap" sourceFile="Int2LongOpenCustomHashMap.java" interface="false" size="313" bugs="0"/>
+      <ClassStats class="it.unimi.dsi.fastutil.ints.Int2LongOpenCustomHashMap" sourceFile="Int2LongOpenCustomHashMap.java" interface="false" size="313" bugs="1" priority_1="1"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2LongOpenCustomHashMap$1" sourceFile="Int2LongOpenCustomHashMap.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2LongOpenCustomHashMap$EntryIterator" sourceFile="Int2LongOpenCustomHashMap.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2LongOpenCustomHashMap$FastEntryIterator" sourceFile="Int2LongOpenCustomHashMap.java" interface="false" size="11" bugs="0"/>
@@ -8084,7 +8032,7 @@
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2LongOpenCustomHashMap$MapEntrySet" sourceFile="Int2LongOpenCustomHashMap.java" interface="false" size="47" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2LongOpenCustomHashMap$MapIterator" sourceFile="Int2LongOpenCustomHashMap.java" interface="false" size="61" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2LongOpenCustomHashMap$ValueIterator" sourceFile="Int2LongOpenCustomHashMap.java" interface="false" size="12" bugs="0"/>
-      <ClassStats class="it.unimi.dsi.fastutil.ints.Int2LongOpenHashMap" sourceFile="Int2LongOpenHashMap.java" interface="false" size="308" bugs="0"/>
+      <ClassStats class="it.unimi.dsi.fastutil.ints.Int2LongOpenHashMap" sourceFile="Int2LongOpenHashMap.java" interface="false" size="308" bugs="1" priority_1="1"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2LongOpenHashMap$1" sourceFile="Int2LongOpenHashMap.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2LongOpenHashMap$EntryIterator" sourceFile="Int2LongOpenHashMap.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.ints.Int2LongOpenHashMap$FastEntryIterator" sourceFile="Int2LongOpenHashMap.java" interface="false" size="11" bugs="0"/>
@@ -8593,7 +8541,7 @@
       <ClassStats class="it.unimi.dsi.fastutil.io.TextIO$LongReaderWrapper" sourceFile="TextIO.java" interface="false" size="23" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.io.TextIO$ShortReaderWrapper" sourceFile="TextIO.java" interface="false" size="23" bugs="0"/>
     </PackageStats>
-    <PackageStats package="it.unimi.dsi.fastutil.longs" total_bugs="0" total_types="1222" total_size="63999">
+    <PackageStats package="it.unimi.dsi.fastutil.longs" total_bugs="2" total_types="1222" total_size="63999" priority_1="2">
       <ClassStats class="it.unimi.dsi.fastutil.longs.AbstractLong2BooleanFunction" sourceFile="AbstractLong2BooleanFunction.java" interface="false" size="35" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.longs.AbstractLong2BooleanMap" sourceFile="AbstractLong2BooleanMap.java" interface="false" size="61" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.longs.AbstractLong2BooleanMap$1" sourceFile="AbstractLong2BooleanMap.java" interface="false" size="14" bugs="0"/>
@@ -9357,7 +9305,7 @@
       <ClassStats class="it.unimi.dsi.fastutil.longs.Long2LongMaps$Singleton$SingletonEntry" sourceFile="Long2LongMaps.java" interface="false" size="27" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.longs.Long2LongMaps$SynchronizedMap" sourceFile="Long2LongMaps.java" interface="false" size="103" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.longs.Long2LongMaps$UnmodifiableMap" sourceFile="Long2LongMaps.java" interface="false" size="56" bugs="0"/>
-      <ClassStats class="it.unimi.dsi.fastutil.longs.Long2LongOpenCustomHashMap" sourceFile="Long2LongOpenCustomHashMap.java" interface="false" size="313" bugs="0"/>
+      <ClassStats class="it.unimi.dsi.fastutil.longs.Long2LongOpenCustomHashMap" sourceFile="Long2LongOpenCustomHashMap.java" interface="false" size="313" bugs="1" priority_1="1"/>
       <ClassStats class="it.unimi.dsi.fastutil.longs.Long2LongOpenCustomHashMap$1" sourceFile="Long2LongOpenCustomHashMap.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.longs.Long2LongOpenCustomHashMap$EntryIterator" sourceFile="Long2LongOpenCustomHashMap.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.longs.Long2LongOpenCustomHashMap$FastEntryIterator" sourceFile="Long2LongOpenCustomHashMap.java" interface="false" size="11" bugs="0"/>
@@ -9559,7 +9507,7 @@
       <ClassStats class="it.unimi.dsi.fastutil.longs.Long2ReferenceOpenCustomHashMap$MapEntrySet" sourceFile="Long2ReferenceOpenCustomHashMap.java" interface="false" size="47" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.longs.Long2ReferenceOpenCustomHashMap$MapIterator" sourceFile="Long2ReferenceOpenCustomHashMap.java" interface="false" size="63" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.longs.Long2ReferenceOpenCustomHashMap$ValueIterator" sourceFile="Long2ReferenceOpenCustomHashMap.java" interface="false" size="8" bugs="0"/>
-      <ClassStats class="it.unimi.dsi.fastutil.longs.Long2ReferenceOpenHashMap" sourceFile="Long2ReferenceOpenHashMap.java" interface="false" size="293" bugs="0"/>
+      <ClassStats class="it.unimi.dsi.fastutil.longs.Long2ReferenceOpenHashMap" sourceFile="Long2ReferenceOpenHashMap.java" interface="false" size="293" bugs="1" priority_1="1"/>
       <ClassStats class="it.unimi.dsi.fastutil.longs.Long2ReferenceOpenHashMap$1" sourceFile="Long2ReferenceOpenHashMap.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.longs.Long2ReferenceOpenHashMap$EntryIterator" sourceFile="Long2ReferenceOpenHashMap.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.longs.Long2ReferenceOpenHashMap$FastEntryIterator" sourceFile="Long2ReferenceOpenHashMap.java" interface="false" size="11" bugs="0"/>
@@ -11857,7 +11805,7 @@
       <ClassStats class="it.unimi.dsi.fastutil.objects.ReferenceSortedSets$SynchronizedSortedSet" sourceFile="ReferenceSortedSets.java" interface="false" size="42" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.objects.ReferenceSortedSets$UnmodifiableSortedSet" sourceFile="ReferenceSortedSets.java" interface="false" size="32" bugs="0"/>
     </PackageStats>
-    <PackageStats package="it.unimi.dsi.fastutil.shorts" total_bugs="0" total_types="1217" total_size="63675">
+    <PackageStats package="it.unimi.dsi.fastutil.shorts" total_bugs="1" total_types="1217" total_size="63675" priority_1="1">
       <ClassStats class="it.unimi.dsi.fastutil.shorts.AbstractShort2BooleanFunction" sourceFile="AbstractShort2BooleanFunction.java" interface="false" size="35" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.shorts.AbstractShort2BooleanMap" sourceFile="AbstractShort2BooleanMap.java" interface="false" size="61" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.shorts.AbstractShort2BooleanMap$1" sourceFile="AbstractShort2BooleanMap.java" interface="false" size="14" bugs="0"/>
@@ -12823,7 +12771,7 @@
       <ClassStats class="it.unimi.dsi.fastutil.shorts.Short2ReferenceOpenCustomHashMap$MapEntrySet" sourceFile="Short2ReferenceOpenCustomHashMap.java" interface="false" size="47" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.shorts.Short2ReferenceOpenCustomHashMap$MapIterator" sourceFile="Short2ReferenceOpenCustomHashMap.java" interface="false" size="63" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.shorts.Short2ReferenceOpenCustomHashMap$ValueIterator" sourceFile="Short2ReferenceOpenCustomHashMap.java" interface="false" size="8" bugs="0"/>
-      <ClassStats class="it.unimi.dsi.fastutil.shorts.Short2ReferenceOpenHashMap" sourceFile="Short2ReferenceOpenHashMap.java" interface="false" size="293" bugs="0"/>
+      <ClassStats class="it.unimi.dsi.fastutil.shorts.Short2ReferenceOpenHashMap" sourceFile="Short2ReferenceOpenHashMap.java" interface="false" size="293" bugs="1" priority_1="1"/>
       <ClassStats class="it.unimi.dsi.fastutil.shorts.Short2ReferenceOpenHashMap$1" sourceFile="Short2ReferenceOpenHashMap.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.shorts.Short2ReferenceOpenHashMap$EntryIterator" sourceFile="Short2ReferenceOpenHashMap.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="it.unimi.dsi.fastutil.shorts.Short2ReferenceOpenHashMap$FastEntryIterator" sourceFile="Short2ReferenceOpenHashMap.java" interface="false" size="11" bugs="0"/>
@@ -23728,38 +23676,42 @@
       <ClassStats class="org.openjdk.jmh.util.lines.TestLineWriter" sourceFile="TestLineWriter.java" interface="false" size="80" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="78126" invocations="279874" avgMicrosecondsPerInvocation="279" maxMicrosecondsPerInvocation="427173" standardDeviationMicrosecondsPerInvocation="2304"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="37760" invocations="226776" avgMicrosecondsPerInvocation="166" maxMicrosecondsPerInvocation="124211" standardDeviationMicrosecondsPerInvocation="1088"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="28685" invocations="251322" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="104260" standardDeviationMicrosecondsPerInvocation="748"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="28608" invocations="285622" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="119748" standardDeviationMicrosecondsPerInvocation="899"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="26959" invocations="254140" avgMicrosecondsPerInvocation="106" maxMicrosecondsPerInvocation="2539407" standardDeviationMicrosecondsPerInvocation="6249"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="23195" invocations="287719" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="104726" standardDeviationMicrosecondsPerInvocation="645"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="22199" invocations="52876966" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="113741" standardDeviationMicrosecondsPerInvocation="18"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="10977" invocations="279883" avgMicrosecondsPerInvocation="39" maxMicrosecondsPerInvocation="145442" standardDeviationMicrosecondsPerInvocation="452"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="9611" invocations="122610" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="32542" standardDeviationMicrosecondsPerInvocation="249"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="9206" invocations="322277" avgMicrosecondsPerInvocation="28" maxMicrosecondsPerInvocation="884005" standardDeviationMicrosecondsPerInvocation="1567"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="6732" invocations="23532" avgMicrosecondsPerInvocation="286" maxMicrosecondsPerInvocation="98181" standardDeviationMicrosecondsPerInvocation="1176"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="6572" invocations="23162" avgMicrosecondsPerInvocation="283" maxMicrosecondsPerInvocation="93526" standardDeviationMicrosecondsPerInvocation="1440"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="6286" invocations="279874" avgMicrosecondsPerInvocation="22" maxMicrosecondsPerInvocation="88913" standardDeviationMicrosecondsPerInvocation="271"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="5216" invocations="114116" avgMicrosecondsPerInvocation="45" maxMicrosecondsPerInvocation="1049492" standardDeviationMicrosecondsPerInvocation="3154"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="4956" invocations="23162" avgMicrosecondsPerInvocation="214" maxMicrosecondsPerInvocation="71393" standardDeviationMicrosecondsPerInvocation="697"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="4734" invocations="24823" avgMicrosecondsPerInvocation="190" maxMicrosecondsPerInvocation="415295" standardDeviationMicrosecondsPerInvocation="2854"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="4568" invocations="23162" avgMicrosecondsPerInvocation="197" maxMicrosecondsPerInvocation="95528" standardDeviationMicrosecondsPerInvocation="1032"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="4534" invocations="23162" avgMicrosecondsPerInvocation="195" maxMicrosecondsPerInvocation="112254" standardDeviationMicrosecondsPerInvocation="974"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="4282" invocations="23162" avgMicrosecondsPerInvocation="184" maxMicrosecondsPerInvocation="127809" standardDeviationMicrosecondsPerInvocation="1254"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="4213" invocations="23532" avgMicrosecondsPerInvocation="179" maxMicrosecondsPerInvocation="164702" standardDeviationMicrosecondsPerInvocation="1412"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="4138" invocations="23162" avgMicrosecondsPerInvocation="178" maxMicrosecondsPerInvocation="1021450" standardDeviationMicrosecondsPerInvocation="7062"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="3689" invocations="226776" avgMicrosecondsPerInvocation="16" maxMicrosecondsPerInvocation="134337" standardDeviationMicrosecondsPerInvocation="361"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="3300" invocations="223289" avgMicrosecondsPerInvocation="14" maxMicrosecondsPerInvocation="48605" standardDeviationMicrosecondsPerInvocation="115"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="3258" invocations="301240" avgMicrosecondsPerInvocation="10" maxMicrosecondsPerInvocation="72839" standardDeviationMicrosecondsPerInvocation="194"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="3137" invocations="23162" avgMicrosecondsPerInvocation="135" maxMicrosecondsPerInvocation="107328" standardDeviationMicrosecondsPerInvocation="1028"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="2953" invocations="23162" avgMicrosecondsPerInvocation="127" maxMicrosecondsPerInvocation="104417" standardDeviationMicrosecondsPerInvocation="1032"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="2847" invocations="23162" avgMicrosecondsPerInvocation="122" maxMicrosecondsPerInvocation="14557" standardDeviationMicrosecondsPerInvocation="288"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="2777" invocations="23162" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="9078" standardDeviationMicrosecondsPerInvocation="250"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="2774" invocations="23162" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="27442" standardDeviationMicrosecondsPerInvocation="373"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="2740" invocations="23162" avgMicrosecondsPerInvocation="118" maxMicrosecondsPerInvocation="56150" standardDeviationMicrosecondsPerInvocation="477"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="2718" invocations="23162" avgMicrosecondsPerInvocation="117" maxMicrosecondsPerInvocation="81598" standardDeviationMicrosecondsPerInvocation="757"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="2695" invocations="23162" avgMicrosecondsPerInvocation="116" maxMicrosecondsPerInvocation="10559" standardDeviationMicrosecondsPerInvocation="287"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="70951" invocations="279874" avgMicrosecondsPerInvocation="253" maxMicrosecondsPerInvocation="349791" standardDeviationMicrosecondsPerInvocation="2091"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="35190" invocations="226776" avgMicrosecondsPerInvocation="155" maxMicrosecondsPerInvocation="110341" standardDeviationMicrosecondsPerInvocation="1117"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="27227" invocations="285622" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="135003" standardDeviationMicrosecondsPerInvocation="860"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="27198" invocations="251322" avgMicrosecondsPerInvocation="108" maxMicrosecondsPerInvocation="144612" standardDeviationMicrosecondsPerInvocation="845"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="23341" invocations="287719" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="115470" standardDeviationMicrosecondsPerInvocation="665"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="20681" invocations="52980967" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="101940" standardDeviationMicrosecondsPerInvocation="20"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="20417" invocations="254140" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="108846" standardDeviationMicrosecondsPerInvocation="702"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="13661" invocations="23162" avgMicrosecondsPerInvocation="589" maxMicrosecondsPerInvocation="102333" standardDeviationMicrosecondsPerInvocation="3241"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="11161" invocations="301240" avgMicrosecondsPerInvocation="37" maxMicrosecondsPerInvocation="89571" standardDeviationMicrosecondsPerInvocation="361"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="9253" invocations="322372" avgMicrosecondsPerInvocation="28" maxMicrosecondsPerInvocation="141301" standardDeviationMicrosecondsPerInvocation="453"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="8631" invocations="122778" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="194686" standardDeviationMicrosecondsPerInvocation="732"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="7904" invocations="23551" avgMicrosecondsPerInvocation="335" maxMicrosecondsPerInvocation="142592" standardDeviationMicrosecondsPerInvocation="1732"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="6000" invocations="279874" avgMicrosecondsPerInvocation="21" maxMicrosecondsPerInvocation="98100" standardDeviationMicrosecondsPerInvocation="311"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="5899" invocations="23162" avgMicrosecondsPerInvocation="254" maxMicrosecondsPerInvocation="86224" standardDeviationMicrosecondsPerInvocation="1225"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="5744" invocations="114145" avgMicrosecondsPerInvocation="50" maxMicrosecondsPerInvocation="176541" standardDeviationMicrosecondsPerInvocation="1270"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="5363" invocations="24950" avgMicrosecondsPerInvocation="214" maxMicrosecondsPerInvocation="93234" standardDeviationMicrosecondsPerInvocation="1042"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="5267" invocations="23162" avgMicrosecondsPerInvocation="227" maxMicrosecondsPerInvocation="103676" standardDeviationMicrosecondsPerInvocation="1378"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="4915" invocations="23551" avgMicrosecondsPerInvocation="208" maxMicrosecondsPerInvocation="160106" standardDeviationMicrosecondsPerInvocation="1506"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="4164" invocations="23162" avgMicrosecondsPerInvocation="179" maxMicrosecondsPerInvocation="95060" standardDeviationMicrosecondsPerInvocation="725"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="4069" invocations="23162" avgMicrosecondsPerInvocation="175" maxMicrosecondsPerInvocation="66624" standardDeviationMicrosecondsPerInvocation="805"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="3827" invocations="23162" avgMicrosecondsPerInvocation="165" maxMicrosecondsPerInvocation="80268" standardDeviationMicrosecondsPerInvocation="668"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="3428" invocations="226776" avgMicrosecondsPerInvocation="15" maxMicrosecondsPerInvocation="96825" standardDeviationMicrosecondsPerInvocation="307"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="3364" invocations="224430" avgMicrosecondsPerInvocation="14" maxMicrosecondsPerInvocation="93337" standardDeviationMicrosecondsPerInvocation="203"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="3199" invocations="301240" avgMicrosecondsPerInvocation="10" maxMicrosecondsPerInvocation="88345" standardDeviationMicrosecondsPerInvocation="183"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="3055" invocations="23162" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="74813" standardDeviationMicrosecondsPerInvocation="711"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="2919" invocations="23162" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="82600" standardDeviationMicrosecondsPerInvocation="1049"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="2883" invocations="23162" avgMicrosecondsPerInvocation="124" maxMicrosecondsPerInvocation="53113" standardDeviationMicrosecondsPerInvocation="429"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="2836" invocations="23162" avgMicrosecondsPerInvocation="122" maxMicrosecondsPerInvocation="83523" standardDeviationMicrosecondsPerInvocation="847"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="2795" invocations="23162" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="112917" standardDeviationMicrosecondsPerInvocation="815"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="2790" invocations="23162" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="17709" standardDeviationMicrosecondsPerInvocation="277"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="2786" invocations="23162" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="75370" standardDeviationMicrosecondsPerInvocation="793"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="2768" invocations="23162" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="144440" standardDeviationMicrosecondsPerInvocation="999"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="2749" invocations="23162" avgMicrosecondsPerInvocation="118" maxMicrosecondsPerInvocation="118760" standardDeviationMicrosecondsPerInvocation="868"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="2673" invocations="23162" avgMicrosecondsPerInvocation="115" maxMicrosecondsPerInvocation="71300" standardDeviationMicrosecondsPerInvocation="572"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="2659" invocations="23162" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="144063" standardDeviationMicrosecondsPerInvocation="1022"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="2634" invocations="23162" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="70150" standardDeviationMicrosecondsPerInvocation="534"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

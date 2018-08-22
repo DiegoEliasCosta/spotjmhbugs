@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1534818876000" analysisTimestamp="1534818877991" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534818876000" analysisTimestamp="1534893520750" release="">
   <Project projectName="">
     <Jar>tmp/fast-rng-java</Jar>
   </Project>
@@ -193,360 +193,190 @@
     </Method>
     <SourceLine classname="biz.k11i.rng.GaussianBenchmark" start="21" end="21" startBytecode="0" endBytecode="0" sourcefile="GaussianBenchmark.java" sourcepath="biz/k11i/rng/GaussianBenchmark.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2" start="3" end="17" sourcefile="BetaBenchmark_ArbitraryParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/BetaBenchmark_ArbitraryParameters_jmhType_B2.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.apache.commons.math3.random.ValueServer">
+      <SourceLine classname="org.apache.commons.math3.random.ValueServer" start="72" end="455" sourcefile="ValueServer.java" sourcepath="org/apache/commons/math3/random/ValueServer.java"/>
     </Class>
-    <Field classname="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2" sourcefile="BetaBenchmark_ArbitraryParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/BetaBenchmark_ArbitraryParameters_jmhType_B2.java"/>
-    </Field>
+    <Method classname="org.apache.commons.math3.random.ValueServer" name="getNextReplay" signature="()D" isStatic="false">
+      <SourceLine classname="org.apache.commons.math3.random.ValueServer" start="411" end="424" startBytecode="0" endBytecode="37" sourcefile="ValueServer.java" sourcepath="org/apache/commons/math3/random/ValueServer.java"/>
+    </Method>
+    <LocalVariable name="str" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.apache.commons.math3.random.ValueServer" start="411" end="411" startBytecode="1" endBytecode="1" sourcefile="ValueServer.java" sourcepath="org/apache/commons/math3/random/ValueServer.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2" start="3" end="17" sourcefile="BetaBenchmark_ArbitraryParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/BetaBenchmark_ArbitraryParameters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2" sourcefile="BetaBenchmark_ArbitraryParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/BetaBenchmark_ArbitraryParameters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2" start="3" end="17" sourcefile="BetaBenchmark_ArbitraryParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/BetaBenchmark_ArbitraryParameters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2" sourcefile="BetaBenchmark_ArbitraryParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/BetaBenchmark_ArbitraryParameters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2" start="3" end="17" sourcefile="BetaBenchmark_ArbitraryParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/BetaBenchmark_ArbitraryParameters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2" sourcefile="BetaBenchmark_ArbitraryParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/BetaBenchmark_ArbitraryParameters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2" start="3" end="17" sourcefile="BetaBenchmark_ArbitraryParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/BetaBenchmark_ArbitraryParameters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2" sourcefile="BetaBenchmark_ArbitraryParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/BetaBenchmark_ArbitraryParameters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2" start="3" end="17" sourcefile="BetaBenchmark_ArbitraryParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/BetaBenchmark_ArbitraryParameters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2" sourcefile="BetaBenchmark_ArbitraryParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/BetaBenchmark_ArbitraryParameters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2" start="3" end="17" sourcefile="BetaBenchmark_FixedParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/BetaBenchmark_FixedParameters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2" sourcefile="BetaBenchmark_FixedParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/BetaBenchmark_FixedParameters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2" start="3" end="17" sourcefile="BetaBenchmark_FixedParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/BetaBenchmark_FixedParameters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2" sourcefile="BetaBenchmark_FixedParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/BetaBenchmark_FixedParameters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2" start="3" end="17" sourcefile="BetaBenchmark_FixedParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/BetaBenchmark_FixedParameters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2" sourcefile="BetaBenchmark_FixedParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/BetaBenchmark_FixedParameters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2" start="3" end="17" sourcefile="BetaBenchmark_FixedParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/BetaBenchmark_FixedParameters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2" sourcefile="BetaBenchmark_FixedParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/BetaBenchmark_FixedParameters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2" start="3" end="17" sourcefile="BetaBenchmark_FixedParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/BetaBenchmark_FixedParameters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2" sourcefile="BetaBenchmark_FixedParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/BetaBenchmark_FixedParameters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2" start="3" end="17" sourcefile="BetaBenchmark_FixedParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/BetaBenchmark_FixedParameters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2" sourcefile="BetaBenchmark_FixedParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/BetaBenchmark_FixedParameters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2" start="3" end="17" sourcefile="ExponentialBenchmark_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/ExponentialBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2" sourcefile="ExponentialBenchmark_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/ExponentialBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2" start="3" end="17" sourcefile="ExponentialBenchmark_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/ExponentialBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2" sourcefile="ExponentialBenchmark_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/ExponentialBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2" start="3" end="17" sourcefile="ExponentialBenchmark_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/ExponentialBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2" sourcefile="ExponentialBenchmark_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/ExponentialBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2" start="3" end="17" sourcefile="ExponentialBenchmark_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/ExponentialBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2" sourcefile="ExponentialBenchmark_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/ExponentialBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2" start="3" end="17" sourcefile="ExponentialBenchmark_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/ExponentialBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2" sourcefile="ExponentialBenchmark_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/ExponentialBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2" start="3" end="17" sourcefile="ExponentialBenchmark_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/ExponentialBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2" sourcefile="ExponentialBenchmark_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/ExponentialBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2" start="3" end="17" sourcefile="GammaBenchmark_ArbitraryParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GammaBenchmark_ArbitraryParameters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2" sourcefile="GammaBenchmark_ArbitraryParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GammaBenchmark_ArbitraryParameters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2" start="3" end="17" sourcefile="GammaBenchmark_ArbitraryParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GammaBenchmark_ArbitraryParameters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2" sourcefile="GammaBenchmark_ArbitraryParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GammaBenchmark_ArbitraryParameters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2" start="3" end="17" sourcefile="GammaBenchmark_ArbitraryParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GammaBenchmark_ArbitraryParameters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2" sourcefile="GammaBenchmark_ArbitraryParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GammaBenchmark_ArbitraryParameters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2" start="3" end="17" sourcefile="GammaBenchmark_ArbitraryParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GammaBenchmark_ArbitraryParameters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2" sourcefile="GammaBenchmark_ArbitraryParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GammaBenchmark_ArbitraryParameters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2" start="3" end="17" sourcefile="GammaBenchmark_ArbitraryParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GammaBenchmark_ArbitraryParameters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2" sourcefile="GammaBenchmark_ArbitraryParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GammaBenchmark_ArbitraryParameters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2" start="3" end="17" sourcefile="GammaBenchmark_ArbitraryParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GammaBenchmark_ArbitraryParameters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2" sourcefile="GammaBenchmark_ArbitraryParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GammaBenchmark_ArbitraryParameters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2" start="3" end="17" sourcefile="GammaBenchmark_FixedParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GammaBenchmark_FixedParameters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2" sourcefile="GammaBenchmark_FixedParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GammaBenchmark_FixedParameters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2" start="3" end="17" sourcefile="GammaBenchmark_FixedParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GammaBenchmark_FixedParameters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2" sourcefile="GammaBenchmark_FixedParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GammaBenchmark_FixedParameters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2" start="3" end="17" sourcefile="GammaBenchmark_FixedParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GammaBenchmark_FixedParameters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2" sourcefile="GammaBenchmark_FixedParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GammaBenchmark_FixedParameters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2" start="3" end="17" sourcefile="GammaBenchmark_FixedParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GammaBenchmark_FixedParameters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2" sourcefile="GammaBenchmark_FixedParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GammaBenchmark_FixedParameters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2" start="3" end="17" sourcefile="GammaBenchmark_FixedParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GammaBenchmark_FixedParameters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2" sourcefile="GammaBenchmark_FixedParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GammaBenchmark_FixedParameters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2" start="3" end="17" sourcefile="GammaBenchmark_FixedParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GammaBenchmark_FixedParameters_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2" sourcefile="GammaBenchmark_FixedParameters_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GammaBenchmark_FixedParameters_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2" start="3" end="17" sourcefile="GaussianBenchmark_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GaussianBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2" sourcefile="GaussianBenchmark_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GaussianBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2" start="3" end="17" sourcefile="GaussianBenchmark_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GaussianBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2" sourcefile="GaussianBenchmark_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GaussianBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2" start="3" end="17" sourcefile="GaussianBenchmark_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GaussianBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2" sourcefile="GaussianBenchmark_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GaussianBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2" start="3" end="17" sourcefile="GaussianBenchmark_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GaussianBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2" sourcefile="GaussianBenchmark_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GaussianBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2" start="3" end="17" sourcefile="GaussianBenchmark_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GaussianBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2" sourcefile="GaussianBenchmark_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GaussianBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2">
-      <SourceLine classname="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2" start="3" end="17" sourcefile="GaussianBenchmark_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GaussianBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2" sourcefile="GaussianBenchmark_jmhType_B2.java" sourcepath="biz/k11i/rng/generated/GaussianBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.BenchmarkParams">
-      <SourceLine classname="org.openjdk.jmh.infra.BenchmarkParams" start="52" end="86" sourcefile="BenchmarkParams.java" sourcepath="org/openjdk/jmh/infra/BenchmarkParams.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.BenchmarkParams" name="serialVersionUID" signature="J" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.BenchmarkParams" sourcefile="BenchmarkParams.java" sourcepath="org/openjdk/jmh/infra/BenchmarkParams.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.IterationParams">
-      <SourceLine classname="org.openjdk.jmh.infra.IterationParams" start="49" end="63" sourcefile="IterationParams.java" sourcepath="org/openjdk/jmh/infra/IterationParams.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.IterationParams" name="serialVersionUID" signature="J" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.IterationParams" sourcefile="IterationParams.java" sourcepath="org/openjdk/jmh/infra/IterationParams.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" start="3" end="17" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" start="3" end="17" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" start="3" end="17" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" start="3" end="17" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" start="3" end="17" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" start="3" end="17" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" sourcefile="Blackhole_jmhType_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Tue, 21 Aug 2018 04:34:36 +0200" total_classes="1822" referenced_classes="2146" total_bugs="65" total_size="101474" num_packages="102" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="114.37" clock_seconds="37.73" peak_mbytes="1517.53" alloc_mbytes="3641.00" gc_seconds="1.21" priority_2="65">
+  <Errors errors="9" missingClasses="0">
+    <Error>
+      <ErrorMessage>Exception analyzing org.apache.commons.math3.linear.RealMatrix using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing org.apache.commons.math3.stat.descriptive.rank.PSquarePercentile$PSquareMarkers using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing org.apache.commons.math3.stat.descriptive.StatisticalSummary using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing org.apache.commons.math3.linear.RealMatrixChangingVisitor using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing org.apache.commons.math3.linear.IterativeLinearSolverEvent using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing org.apache.commons.math3.analysis.solvers.BaseAbstractUnivariateSolver using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing org.apache.commons.math3.analysis.integration.BaseAbstractUnivariateIntegrator using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing org.apache.commons.math3.stat.descriptive.AbstractStorelessUnivariateStatistic using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+    <Error>
+      <ErrorMessage>Exception analyzing org.apache.commons.math3.random.AbstractRandomGenerator using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 04:34:36 +0200" total_classes="1822" referenced_classes="2158" total_bugs="22" total_size="101474" num_packages="102" java_version="9.0.4" vm_version="9.0.4+11" cpu_seconds="142.85" clock_seconds="47.55" peak_mbytes="884.77" alloc_mbytes="4096.00" gc_seconds="1.29" priority_2="21" priority_1="1">
     <PackageStats package="biz.k11i.rng" total_bugs="21" total_types="33" total_size="600" priority_2="21">
       <ClassStats class="biz.k11i.rng.BetaBenchmark" sourceFile="BetaBenchmark.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="biz.k11i.rng.BetaBenchmark$ArbitraryParameters" sourceFile="BetaBenchmark.java" interface="false" size="17" bugs="3" priority_2="3"/>
@@ -582,41 +412,41 @@
       <ClassStats class="biz.k11i.rng.GaussianRNG$ZigguratFast" sourceFile="GaussianRNG.java" interface="false" size="58" bugs="0"/>
       <ClassStats class="biz.k11i.rng.GaussianRNG$ZigguratGeneral" sourceFile="GaussianRNG.java" interface="false" size="50" bugs="0"/>
     </PackageStats>
-    <PackageStats package="biz.k11i.rng.generated" total_bugs="36" total_types="45" total_size="13398" priority_2="36">
+    <PackageStats package="biz.k11i.rng.generated" total_bugs="0" total_types="45" total_size="13398">
       <ClassStats class="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_commonsMath_jmhTest" sourceFile="BetaBenchmark_ArbitraryParameters_commonsMath_jmhTest.java" interface="false" size="468" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_fastRng_jmhTest" sourceFile="BetaBenchmark_ArbitraryParameters_fastRng_jmhTest.java" interface="false" size="468" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_generalRng_jmhTest" sourceFile="BetaBenchmark_ArbitraryParameters_generalRng_jmhTest.java" interface="false" size="468" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType" sourceFile="BetaBenchmark_ArbitraryParameters_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B1" sourceFile="BetaBenchmark_ArbitraryParameters_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2" sourceFile="BetaBenchmark_ArbitraryParameters_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B2" sourceFile="BetaBenchmark_ArbitraryParameters_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.BetaBenchmark_ArbitraryParameters_jmhType_B3" sourceFile="BetaBenchmark_ArbitraryParameters_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_commonsMath_jmhTest" sourceFile="BetaBenchmark_FixedParameters_commonsMath_jmhTest.java" interface="false" size="512" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_fastRng_jmhTest" sourceFile="BetaBenchmark_FixedParameters_fastRng_jmhTest.java" interface="false" size="512" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_generalRng_jmhTest" sourceFile="BetaBenchmark_FixedParameters_generalRng_jmhTest.java" interface="false" size="512" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType" sourceFile="BetaBenchmark_FixedParameters_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B1" sourceFile="BetaBenchmark_FixedParameters_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2" sourceFile="BetaBenchmark_FixedParameters_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B2" sourceFile="BetaBenchmark_FixedParameters_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.BetaBenchmark_FixedParameters_jmhType_B3" sourceFile="BetaBenchmark_FixedParameters_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.ExponentialBenchmark_commonsMath3_algorithmSA_jmhTest" sourceFile="ExponentialBenchmark_commonsMath3_algorithmSA_jmhTest.java" interface="false" size="509" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.ExponentialBenchmark_fastRng_fast_jmhTest" sourceFile="ExponentialBenchmark_fastRng_fast_jmhTest.java" interface="false" size="509" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.ExponentialBenchmark_fastRng_general_jmhTest" sourceFile="ExponentialBenchmark_fastRng_general_jmhTest.java" interface="false" size="509" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.ExponentialBenchmark_jmhType" sourceFile="ExponentialBenchmark_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B1" sourceFile="ExponentialBenchmark_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2" sourceFile="ExponentialBenchmark_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B2" sourceFile="ExponentialBenchmark_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.ExponentialBenchmark_jmhType_B3" sourceFile="ExponentialBenchmark_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_commonsMath3_jmhTest" sourceFile="GammaBenchmark_ArbitraryParameters_commonsMath3_jmhTest.java" interface="false" size="468" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_fastRng_jmhTest" sourceFile="GammaBenchmark_ArbitraryParameters_fastRng_jmhTest.java" interface="false" size="468" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_generalRng_jmhTest" sourceFile="GammaBenchmark_ArbitraryParameters_generalRng_jmhTest.java" interface="false" size="468" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType" sourceFile="GammaBenchmark_ArbitraryParameters_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B1" sourceFile="GammaBenchmark_ArbitraryParameters_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2" sourceFile="GammaBenchmark_ArbitraryParameters_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B2" sourceFile="GammaBenchmark_ArbitraryParameters_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.GammaBenchmark_ArbitraryParameters_jmhType_B3" sourceFile="GammaBenchmark_ArbitraryParameters_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_commonsMath3_jmhTest" sourceFile="GammaBenchmark_FixedParameters_commonsMath3_jmhTest.java" interface="false" size="512" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_fastRng_jmhTest" sourceFile="GammaBenchmark_FixedParameters_fastRng_jmhTest.java" interface="false" size="512" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_generalRng_jmhTest" sourceFile="GammaBenchmark_FixedParameters_generalRng_jmhTest.java" interface="false" size="512" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType" sourceFile="GammaBenchmark_FixedParameters_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B1" sourceFile="GammaBenchmark_FixedParameters_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2" sourceFile="GammaBenchmark_FixedParameters_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B2" sourceFile="GammaBenchmark_FixedParameters_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.GammaBenchmark_FixedParameters_jmhType_B3" sourceFile="GammaBenchmark_FixedParameters_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.GaussianBenchmark_fastRngWithJavaUtilRandom_jmhTest" sourceFile="GaussianBenchmark_fastRngWithJavaUtilRandom_jmhTest.java" interface="false" size="453" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.GaussianBenchmark_fastRngWithThreadLocalRandom_jmhTest" sourceFile="GaussianBenchmark_fastRngWithThreadLocalRandom_jmhTest.java" interface="false" size="453" bugs="0"/>
@@ -625,7 +455,7 @@
       <ClassStats class="biz.k11i.rng.generated.GaussianBenchmark_javaUtilRandom_jmhTest" sourceFile="GaussianBenchmark_javaUtilRandom_jmhTest.java" interface="false" size="453" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.GaussianBenchmark_jmhType" sourceFile="GaussianBenchmark_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B1" sourceFile="GaussianBenchmark_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2" sourceFile="GaussianBenchmark_jmhType_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B2" sourceFile="GaussianBenchmark_jmhType_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.GaussianBenchmark_jmhType_B3" sourceFile="GaussianBenchmark_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="biz.k11i.rng.generated.GaussianBenchmark_threadLocalRandom_jmhTest" sourceFile="GaussianBenchmark_threadLocalRandom_jmhTest.java" interface="false" size="453" bugs="0"/>
     </PackageStats>
@@ -1886,7 +1716,7 @@
       <ClassStats class="org.apache.commons.math3.primes.Primes" sourceFile="Primes.java" interface="false" size="36" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.primes.SmallPrimes" sourceFile="SmallPrimes.java" interface="false" size="68" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.apache.commons.math3.random" total_bugs="0" total_types="36" total_size="1799">
+    <PackageStats package="org.apache.commons.math3.random" total_bugs="1" total_types="36" total_size="1799" priority_1="1">
       <ClassStats class="org.apache.commons.math3.random.AbstractRandomGenerator" sourceFile="AbstractRandomGenerator.java" interface="false" size="62" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.random.AbstractWell" sourceFile="AbstractWell.java" interface="false" size="56" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.random.BitsStreamGenerator" sourceFile="BitsStreamGenerator.java" interface="false" size="84" bugs="0"/>
@@ -1916,7 +1746,7 @@
       <ClassStats class="org.apache.commons.math3.random.UncorrelatedRandomVectorGenerator" sourceFile="UncorrelatedRandomVectorGenerator.java" interface="false" size="24" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.random.UniformRandomGenerator" sourceFile="UniformRandomGenerator.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.random.UnitSphereRandomVectorGenerator" sourceFile="UnitSphereRandomVectorGenerator.java" interface="false" size="22" bugs="0"/>
-      <ClassStats class="org.apache.commons.math3.random.ValueServer" sourceFile="ValueServer.java" interface="false" size="120" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.random.ValueServer" sourceFile="ValueServer.java" interface="false" size="120" bugs="1" priority_1="1"/>
       <ClassStats class="org.apache.commons.math3.random.Well1024a" sourceFile="Well1024a.java" interface="false" size="33" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.random.Well19937a" sourceFile="Well19937a.java" interface="false" size="35" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.random.Well19937c" sourceFile="Well19937c.java" interface="false" size="37" bugs="0"/>
@@ -2305,8 +2135,8 @@
       <ClassStats class="org.openjdk.jmh.generators.reflection.RFMethodInfo" sourceFile="RFMethodInfo.java" interface="false" size="37" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.generators.reflection.RFParameterInfo" sourceFile="RFParameterInfo.java" interface="false" size="8" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.openjdk.jmh.infra" total_bugs="2" total_types="30" total_size="1843" priority_2="2">
-      <ClassStats class="org.openjdk.jmh.infra.BenchmarkParams" sourceFile="BenchmarkParams.java" interface="false" size="38" bugs="1" priority_2="1"/>
+    <PackageStats package="org.openjdk.jmh.infra" total_bugs="0" total_types="30" total_size="1843">
+      <ClassStats class="org.openjdk.jmh.infra.BenchmarkParams" sourceFile="BenchmarkParams.java" interface="false" size="38" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.BenchmarkParamsL0" sourceFile="BenchmarkParams.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.BenchmarkParamsL1" sourceFile="BenchmarkParams.java" interface="false" size="131" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.BenchmarkParamsL2" sourceFile="BenchmarkParams.java" interface="false" size="126" bugs="0"/>
@@ -2324,7 +2154,7 @@
       <ClassStats class="org.openjdk.jmh.infra.ControlL2" sourceFile="Control.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.ControlL3" sourceFile="Control.java" interface="false" size="131" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.ControlL4" sourceFile="Control.java" interface="false" size="4" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.infra.IterationParams" sourceFile="IterationParams.java" interface="false" size="19" bugs="1" priority_2="1"/>
+      <ClassStats class="org.openjdk.jmh.infra.IterationParams" sourceFile="IterationParams.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.IterationParamsL0" sourceFile="IterationParams.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.IterationParamsL1" sourceFile="IterationParams.java" interface="false" size="131" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.IterationParamsL2" sourceFile="IterationParams.java" interface="false" size="43" bugs="0"/>
@@ -2337,10 +2167,10 @@
       <ClassStats class="org.openjdk.jmh.infra.ThreadParamsL3" sourceFile="ThreadParams.java" interface="false" size="135" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.ThreadParamsL4" sourceFile="ThreadParams.java" interface="false" size="8" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.openjdk.jmh.infra.generated" total_bugs="6" total_types="4" total_size="543" priority_2="6">
+    <PackageStats package="org.openjdk.jmh.infra.generated" total_bugs="0" total_types="4" total_size="543">
       <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmhType" sourceFile="Blackhole_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B1" sourceFile="Blackhole_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" sourceFile="Blackhole_jmhType_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B2" sourceFile="Blackhole_jmhType_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B3" sourceFile="Blackhole_jmhType_B3.java" interface="false" size="259" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.openjdk.jmh.profile" total_bugs="0" total_types="49" total_size="2036">
@@ -2574,47 +2404,48 @@
       <ClassStats class="org.openjdk.jmh.util.Version" sourceFile="Version.java" interface="false" size="42" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="2834" invocations="11672" avgMicrosecondsPerInvocation="242" maxMicrosecondsPerInvocation="47802" standardDeviationMicrosecondsPerInvocation="1046"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="2584" invocations="11995" avgMicrosecondsPerInvocation="215" maxMicrosecondsPerInvocation="69216" standardDeviationMicrosecondsPerInvocation="1234"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="2549" invocations="12359" avgMicrosecondsPerInvocation="206" maxMicrosecondsPerInvocation="88613" standardDeviationMicrosecondsPerInvocation="1226"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="2446" invocations="12618" avgMicrosecondsPerInvocation="193" maxMicrosecondsPerInvocation="53449" standardDeviationMicrosecondsPerInvocation="1044"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="1823" invocations="12527" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="33456" standardDeviationMicrosecondsPerInvocation="553"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="1331" invocations="10364" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="14685" standardDeviationMicrosecondsPerInvocation="447"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1301" invocations="15285" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="72704" standardDeviationMicrosecondsPerInvocation="898"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1040" invocations="12365" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="13630" standardDeviationMicrosecondsPerInvocation="208"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="879" invocations="3322" avgMicrosecondsPerInvocation="264" maxMicrosecondsPerInvocation="32614" standardDeviationMicrosecondsPerInvocation="1148"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="736" invocations="560" avgMicrosecondsPerInvocation="1315" maxMicrosecondsPerInvocation="624460" standardDeviationMicrosecondsPerInvocation="26361"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="731" invocations="2146" avgMicrosecondsPerInvocation="340" maxMicrosecondsPerInvocation="45728" standardDeviationMicrosecondsPerInvocation="1767"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="698" invocations="12359" avgMicrosecondsPerInvocation="56" maxMicrosecondsPerInvocation="9699" standardDeviationMicrosecondsPerInvocation="245"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="676" invocations="2146" avgMicrosecondsPerInvocation="315" maxMicrosecondsPerInvocation="20850" standardDeviationMicrosecondsPerInvocation="975"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="486" invocations="3328" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="19150" standardDeviationMicrosecondsPerInvocation="558"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="461" invocations="1822" avgMicrosecondsPerInvocation="253" maxMicrosecondsPerInvocation="17557" standardDeviationMicrosecondsPerInvocation="739"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="438" invocations="1822" avgMicrosecondsPerInvocation="240" maxMicrosecondsPerInvocation="22648" standardDeviationMicrosecondsPerInvocation="826"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="401" invocations="1822" avgMicrosecondsPerInvocation="220" maxMicrosecondsPerInvocation="10705" standardDeviationMicrosecondsPerInvocation="591"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="352" invocations="11402" avgMicrosecondsPerInvocation="30" maxMicrosecondsPerInvocation="4130" standardDeviationMicrosecondsPerInvocation="107"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="340" invocations="13361" avgMicrosecondsPerInvocation="25" maxMicrosecondsPerInvocation="31648" standardDeviationMicrosecondsPerInvocation="287"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="313" invocations="325660" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="4541" standardDeviationMicrosecondsPerInvocation="12"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="302" invocations="11672" avgMicrosecondsPerInvocation="25" maxMicrosecondsPerInvocation="2271" standardDeviationMicrosecondsPerInvocation="66"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="279" invocations="1822" avgMicrosecondsPerInvocation="153" maxMicrosecondsPerInvocation="7184" standardDeviationMicrosecondsPerInvocation="401"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="258" invocations="1822" avgMicrosecondsPerInvocation="141" maxMicrosecondsPerInvocation="9766" standardDeviationMicrosecondsPerInvocation="549"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="242" invocations="1822" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="6473" standardDeviationMicrosecondsPerInvocation="349"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="242" invocations="1822" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="6448" standardDeviationMicrosecondsPerInvocation="371"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="241" invocations="1822" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="6431" standardDeviationMicrosecondsPerInvocation="348"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="240" invocations="1822" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="8786" standardDeviationMicrosecondsPerInvocation="376"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="239" invocations="1822" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="6946" standardDeviationMicrosecondsPerInvocation="394"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="238" invocations="1822" avgMicrosecondsPerInvocation="130" maxMicrosecondsPerInvocation="6804" standardDeviationMicrosecondsPerInvocation="401"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="236" invocations="1822" avgMicrosecondsPerInvocation="129" maxMicrosecondsPerInvocation="5354" standardDeviationMicrosecondsPerInvocation="287"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="231" invocations="1822" avgMicrosecondsPerInvocation="127" maxMicrosecondsPerInvocation="5233" standardDeviationMicrosecondsPerInvocation="322"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="230" invocations="1822" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="5646" standardDeviationMicrosecondsPerInvocation="285"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="222" invocations="1822" avgMicrosecondsPerInvocation="122" maxMicrosecondsPerInvocation="3532" standardDeviationMicrosecondsPerInvocation="277"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="221" invocations="1822" avgMicrosecondsPerInvocation="121" maxMicrosecondsPerInvocation="5332" standardDeviationMicrosecondsPerInvocation="318"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="217" invocations="1822" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="27634" standardDeviationMicrosecondsPerInvocation="993"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="216" invocations="2146" avgMicrosecondsPerInvocation="101" maxMicrosecondsPerInvocation="14457" standardDeviationMicrosecondsPerInvocation="499"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="215" invocations="1822" avgMicrosecondsPerInvocation="118" maxMicrosecondsPerInvocation="12058" standardDeviationMicrosecondsPerInvocation="394"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="210" invocations="1822" avgMicrosecondsPerInvocation="115" maxMicrosecondsPerInvocation="4640" standardDeviationMicrosecondsPerInvocation="294"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="210" invocations="1822" avgMicrosecondsPerInvocation="115" maxMicrosecondsPerInvocation="16236" standardDeviationMicrosecondsPerInvocation="470"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="197" invocations="1822" avgMicrosecondsPerInvocation="108" maxMicrosecondsPerInvocation="5966" standardDeviationMicrosecondsPerInvocation="298"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNonShortCircuit" totalMilliseconds="192" invocations="1822" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="7327" standardDeviationMicrosecondsPerInvocation="349"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="4368" invocations="1822" avgMicrosecondsPerInvocation="2397" maxMicrosecondsPerInvocation="130639" standardDeviationMicrosecondsPerInvocation="9202"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="3155" invocations="11672" avgMicrosecondsPerInvocation="270" maxMicrosecondsPerInvocation="87919" standardDeviationMicrosecondsPerInvocation="1529"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="2933" invocations="11995" avgMicrosecondsPerInvocation="244" maxMicrosecondsPerInvocation="114614" standardDeviationMicrosecondsPerInvocation="1709"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="2759" invocations="12618" avgMicrosecondsPerInvocation="218" maxMicrosecondsPerInvocation="87544" standardDeviationMicrosecondsPerInvocation="1414"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="2556" invocations="12359" avgMicrosecondsPerInvocation="206" maxMicrosecondsPerInvocation="29745" standardDeviationMicrosecondsPerInvocation="834"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="2091" invocations="12527" avgMicrosecondsPerInvocation="166" maxMicrosecondsPerInvocation="53286" standardDeviationMicrosecondsPerInvocation="898"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="1509" invocations="10364" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="41717" standardDeviationMicrosecondsPerInvocation="681"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1390" invocations="15362" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="42075" standardDeviationMicrosecondsPerInvocation="569"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1148" invocations="13361" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="11195" standardDeviationMicrosecondsPerInvocation="195"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="957" invocations="3450" avgMicrosecondsPerInvocation="277" maxMicrosecondsPerInvocation="21702" standardDeviationMicrosecondsPerInvocation="921"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="805" invocations="2158" avgMicrosecondsPerInvocation="373" maxMicrosecondsPerInvocation="34686" standardDeviationMicrosecondsPerInvocation="1195"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="797" invocations="12359" avgMicrosecondsPerInvocation="64" maxMicrosecondsPerInvocation="39194" standardDeviationMicrosecondsPerInvocation="446"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="758" invocations="2158" avgMicrosecondsPerInvocation="351" maxMicrosecondsPerInvocation="16673" standardDeviationMicrosecondsPerInvocation="955"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="631" invocations="1822" avgMicrosecondsPerInvocation="346" maxMicrosecondsPerInvocation="72907" standardDeviationMicrosecondsPerInvocation="2079"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="582" invocations="1822" avgMicrosecondsPerInvocation="319" maxMicrosecondsPerInvocation="19357" standardDeviationMicrosecondsPerInvocation="1026"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="452" invocations="1822" avgMicrosecondsPerInvocation="248" maxMicrosecondsPerInvocation="41218" standardDeviationMicrosecondsPerInvocation="1158"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="433" invocations="11412" avgMicrosecondsPerInvocation="37" maxMicrosecondsPerInvocation="12207" standardDeviationMicrosecondsPerInvocation="176"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector" totalMilliseconds="414" invocations="1822" avgMicrosecondsPerInvocation="227" maxMicrosecondsPerInvocation="7802" standardDeviationMicrosecondsPerInvocation="607"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="362" invocations="345719" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="45858" standardDeviationMicrosecondsPerInvocation="78"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="360" invocations="13361" avgMicrosecondsPerInvocation="27" maxMicrosecondsPerInvocation="34346" standardDeviationMicrosecondsPerInvocation="306"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="322" invocations="11672" avgMicrosecondsPerInvocation="27" maxMicrosecondsPerInvocation="1783" standardDeviationMicrosecondsPerInvocation="69"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="315" invocations="1822" avgMicrosecondsPerInvocation="173" maxMicrosecondsPerInvocation="26055" standardDeviationMicrosecondsPerInvocation="735"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="300" invocations="1822" avgMicrosecondsPerInvocation="165" maxMicrosecondsPerInvocation="11656" standardDeviationMicrosecondsPerInvocation="479"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="294" invocations="1822" avgMicrosecondsPerInvocation="161" maxMicrosecondsPerInvocation="8892" standardDeviationMicrosecondsPerInvocation="511"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="293" invocations="1822" avgMicrosecondsPerInvocation="161" maxMicrosecondsPerInvocation="5459" standardDeviationMicrosecondsPerInvocation="420"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="287" invocations="1822" avgMicrosecondsPerInvocation="157" maxMicrosecondsPerInvocation="14248" standardDeviationMicrosecondsPerInvocation="523"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="285" invocations="1822" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="12050" standardDeviationMicrosecondsPerInvocation="444"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="280" invocations="1822" avgMicrosecondsPerInvocation="154" maxMicrosecondsPerInvocation="5036" standardDeviationMicrosecondsPerInvocation="369"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="279" invocations="1822" avgMicrosecondsPerInvocation="153" maxMicrosecondsPerInvocation="6683" standardDeviationMicrosecondsPerInvocation="428"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="274" invocations="1822" avgMicrosecondsPerInvocation="150" maxMicrosecondsPerInvocation="10493" standardDeviationMicrosecondsPerInvocation="450"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="272" invocations="1822" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="21006" standardDeviationMicrosecondsPerInvocation="655"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="271" invocations="1822" avgMicrosecondsPerInvocation="148" maxMicrosecondsPerInvocation="5606" standardDeviationMicrosecondsPerInvocation="396"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="263" invocations="1822" avgMicrosecondsPerInvocation="144" maxMicrosecondsPerInvocation="5921" standardDeviationMicrosecondsPerInvocation="402"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="262" invocations="1822" avgMicrosecondsPerInvocation="144" maxMicrosecondsPerInvocation="4606" standardDeviationMicrosecondsPerInvocation="317"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteRecursiveLoop" totalMilliseconds="261" invocations="1822" avgMicrosecondsPerInvocation="143" maxMicrosecondsPerInvocation="33927" standardDeviationMicrosecondsPerInvocation="862"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="258" invocations="1822" avgMicrosecondsPerInvocation="141" maxMicrosecondsPerInvocation="5237" standardDeviationMicrosecondsPerInvocation="357"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="256" invocations="3458" avgMicrosecondsPerInvocation="74" maxMicrosecondsPerInvocation="3206" standardDeviationMicrosecondsPerInvocation="121"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="254" invocations="1822" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="6827" standardDeviationMicrosecondsPerInvocation="333"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDerefsInvolvingNonShortCircuitEvaluation" totalMilliseconds="253" invocations="1822" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="27475" standardDeviationMicrosecondsPerInvocation="742"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BadSyntaxForRegularExpression" totalMilliseconds="251" invocations="1822" avgMicrosecondsPerInvocation="137" maxMicrosecondsPerInvocation="19991" standardDeviationMicrosecondsPerInvocation="574"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SynchronizingOnContentsOfFieldToProtectField" totalMilliseconds="249" invocations="1822" avgMicrosecondsPerInvocation="137" maxMicrosecondsPerInvocation="21924" standardDeviationMicrosecondsPerInvocation="618"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="247" invocations="1822" avgMicrosecondsPerInvocation="135" maxMicrosecondsPerInvocation="12498" standardDeviationMicrosecondsPerInvocation="442"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

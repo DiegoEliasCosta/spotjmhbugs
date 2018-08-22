@@ -1,72 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1534819363000" analysisTimestamp="1534819364650" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534894086000" analysisTimestamp="1534894088618" release="">
   <Project projectName="">
     <Jar>tmp/dispatching</Jar>
   </Project>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.BenchmarkParams">
-      <SourceLine classname="org.openjdk.jmh.infra.BenchmarkParams" start="52" end="86" sourcefile="BenchmarkParams.java" sourcepath="org/openjdk/jmh/infra/BenchmarkParams.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="ch.qos.logback.classic.gaffer.ConfigurationDelegate">
+      <SourceLine classname="ch.qos.logback.classic.gaffer.ConfigurationDelegate" start="44" end="241" sourcefile="ConfigurationDelegate.groovy" sourcepath="ch/qos/logback/classic/gaffer/ConfigurationDelegate.groovy"/>
     </Class>
-    <Field classname="org.openjdk.jmh.infra.BenchmarkParams" name="serialVersionUID" signature="J" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.BenchmarkParams" sourcefile="BenchmarkParams.java" sourcepath="org/openjdk/jmh/infra/BenchmarkParams.java"/>
-    </Field>
+    <Method classname="ch.qos.logback.classic.gaffer.ConfigurationDelegate" name="getDeclaredOrigin" signature="()Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="ch.qos.logback.classic.gaffer.ConfigurationDelegate" start="47" end="47" startBytecode="0" endBytecode="5" sourcefile="ConfigurationDelegate.groovy" sourcepath="ch/qos/logback/classic/gaffer/ConfigurationDelegate.groovy"/>
+    </Method>
+    <LocalVariable name="?" register="1" pc="3" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="ch.qos.logback.classic.gaffer.ConfigurationDelegate" startBytecode="3" endBytecode="3" sourcefile="ConfigurationDelegate.groovy" sourcepath="ch/qos/logback/classic/gaffer/ConfigurationDelegate.groovy"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.IterationParams">
-      <SourceLine classname="org.openjdk.jmh.infra.IterationParams" start="49" end="63" sourcefile="IterationParams.java" sourcepath="org/openjdk/jmh/infra/IterationParams.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="com.google.common.util.concurrent.Futures$WrappedCombiner">
+      <SourceLine classname="com.google.common.util.concurrent.Futures$WrappedCombiner" start="1034" end="1048" sourcefile="Futures.java" sourcepath="com/google/common/util/concurrent/Futures.java"/>
     </Class>
-    <Field classname="org.openjdk.jmh.infra.IterationParams" name="serialVersionUID" signature="J" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.IterationParams" sourcefile="IterationParams.java" sourcepath="org/openjdk/jmh/infra/IterationParams.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" start="3" end="17" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" start="3" end="17" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" start="3" end="17" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" start="3" end="17" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" start="3" end="17" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" start="3" end="17" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Class>
-    <Field classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourcefile="Blackhole_jmh_B2.java" sourcepath="org/openjdk/jmh/infra/generated/Blackhole_jmh_B2.java"/>
-    </Field>
+    <Method classname="com.google.common.util.concurrent.Futures$WrappedCombiner" name="call" signature="()Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="com.google.common.util.concurrent.Futures$WrappedCombiner" start="1040" end="1048" startBytecode="0" endBytecode="18" sourcefile="Futures.java" sourcepath="com/google/common/util/concurrent/Futures.java"/>
+    </Method>
+    <LocalVariable name="e" register="1" pc="26" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.google.common.util.concurrent.Futures$WrappedCombiner" start="1043" end="1043" startBytecode="25" endBytecode="25" sourcefile="Futures.java" sourcepath="com/google/common/util/concurrent/Futures.java"/>
   </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="vibneiro.CaffeinedDispatcherBenchmark">
@@ -95,38 +51,6 @@
     </Method>
     <SourceLine classname="vibneiro.CaffeinedDispatcherBenchmark" start="105" end="105" startBytecode="0" endBytecode="0" sourcefile="CaffeinedDispatcherBenchmark.java" sourcepath="vibneiro/CaffeinedDispatcherBenchmark.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.CaffeinedDispatcherBenchmark">
-      <SourceLine classname="vibneiro.CaffeinedDispatcherBenchmark" start="38" end="110" sourcefile="CaffeinedDispatcherBenchmark.java" sourcepath="vibneiro/CaffeinedDispatcherBenchmark.java"/>
-    </Class>
-    <Field classname="vibneiro.CaffeinedDispatcherBenchmark" name="BOUNDED" signature="Ljava/lang/String;" isStatic="true">
-      <SourceLine classname="vibneiro.CaffeinedDispatcherBenchmark" sourcefile="CaffeinedDispatcherBenchmark.java" sourcepath="vibneiro/CaffeinedDispatcherBenchmark.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.CaffeinedDispatcherBenchmark">
-      <SourceLine classname="vibneiro.CaffeinedDispatcherBenchmark" start="38" end="110" sourcefile="CaffeinedDispatcherBenchmark.java" sourcepath="vibneiro/CaffeinedDispatcherBenchmark.java"/>
-    </Class>
-    <Field classname="vibneiro.CaffeinedDispatcherBenchmark" name="MASK" signature="I" isStatic="true">
-      <SourceLine classname="vibneiro.CaffeinedDispatcherBenchmark" sourcefile="CaffeinedDispatcherBenchmark.java" sourcepath="vibneiro/CaffeinedDispatcherBenchmark.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.CaffeinedDispatcherBenchmark">
-      <SourceLine classname="vibneiro.CaffeinedDispatcherBenchmark" start="38" end="110" sourcefile="CaffeinedDispatcherBenchmark.java" sourcepath="vibneiro/CaffeinedDispatcherBenchmark.java"/>
-    </Class>
-    <Field classname="vibneiro.CaffeinedDispatcherBenchmark" name="SIZE" signature="I" isStatic="true">
-      <SourceLine classname="vibneiro.CaffeinedDispatcherBenchmark" sourcefile="CaffeinedDispatcherBenchmark.java" sourcepath="vibneiro/CaffeinedDispatcherBenchmark.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.CaffeinedDispatcherBenchmark">
-      <SourceLine classname="vibneiro.CaffeinedDispatcherBenchmark" start="38" end="110" sourcefile="CaffeinedDispatcherBenchmark.java" sourcepath="vibneiro/CaffeinedDispatcherBenchmark.java"/>
-    </Class>
-    <Field classname="vibneiro.CaffeinedDispatcherBenchmark" name="UNBOUNDED" signature="Ljava/lang/String;" isStatic="true">
-      <SourceLine classname="vibneiro.CaffeinedDispatcherBenchmark" sourcefile="CaffeinedDispatcherBenchmark.java" sourcepath="vibneiro/CaffeinedDispatcherBenchmark.java"/>
-    </Field>
-  </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="vibneiro.ThreadBoundHashDispatcherBenchmark">
       <SourceLine classname="vibneiro.ThreadBoundHashDispatcherBenchmark" start="27" end="88" sourcefile="ThreadBoundHashDispatcherBenchmark.java" sourcepath="vibneiro/ThreadBoundHashDispatcherBenchmark.java"/>
@@ -153,30 +77,6 @@
       <SourceLine classname="vibneiro.ThreadBoundHashDispatcherBenchmark" start="83" end="83" startBytecode="0" endBytecode="58" sourcefile="ThreadBoundHashDispatcherBenchmark.java" sourcepath="vibneiro/ThreadBoundHashDispatcherBenchmark.java"/>
     </Method>
     <SourceLine classname="vibneiro.ThreadBoundHashDispatcherBenchmark" start="83" end="83" startBytecode="0" endBytecode="0" sourcefile="ThreadBoundHashDispatcherBenchmark.java" sourcepath="vibneiro/ThreadBoundHashDispatcherBenchmark.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.ThreadBoundHashDispatcherBenchmark">
-      <SourceLine classname="vibneiro.ThreadBoundHashDispatcherBenchmark" start="27" end="88" sourcefile="ThreadBoundHashDispatcherBenchmark.java" sourcepath="vibneiro/ThreadBoundHashDispatcherBenchmark.java"/>
-    </Class>
-    <Field classname="vibneiro.ThreadBoundHashDispatcherBenchmark" name="MASK" signature="I" isStatic="true">
-      <SourceLine classname="vibneiro.ThreadBoundHashDispatcherBenchmark" sourcefile="ThreadBoundHashDispatcherBenchmark.java" sourcepath="vibneiro/ThreadBoundHashDispatcherBenchmark.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.ThreadBoundHashDispatcherBenchmark">
-      <SourceLine classname="vibneiro.ThreadBoundHashDispatcherBenchmark" start="27" end="88" sourcefile="ThreadBoundHashDispatcherBenchmark.java" sourcepath="vibneiro/ThreadBoundHashDispatcherBenchmark.java"/>
-    </Class>
-    <Field classname="vibneiro.ThreadBoundHashDispatcherBenchmark" name="SIZE" signature="I" isStatic="true">
-      <SourceLine classname="vibneiro.ThreadBoundHashDispatcherBenchmark" sourcefile="ThreadBoundHashDispatcherBenchmark.java" sourcepath="vibneiro/ThreadBoundHashDispatcherBenchmark.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.ThreadBoundHashDispatcherBenchmark$ThreadState">
-      <SourceLine classname="vibneiro.ThreadBoundHashDispatcherBenchmark$ThreadState" start="40" end="42" sourcefile="ThreadBoundHashDispatcherBenchmark.java" sourcepath="vibneiro/ThreadBoundHashDispatcherBenchmark.java"/>
-    </Class>
-    <Field classname="vibneiro.ThreadBoundHashDispatcherBenchmark$ThreadState" name="random" signature="Ljava/util/Random;" isStatic="true">
-      <SourceLine classname="vibneiro.ThreadBoundHashDispatcherBenchmark$ThreadState" sourcefile="ThreadBoundHashDispatcherBenchmark.java" sourcepath="vibneiro/ThreadBoundHashDispatcherBenchmark.java"/>
-    </Field>
   </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="vibneiro.WorkStealingDispatcherBenchmark">
@@ -205,351 +105,26 @@
     </Method>
     <SourceLine classname="vibneiro.WorkStealingDispatcherBenchmark" start="139" end="139" startBytecode="0" endBytecode="0" sourcefile="WorkStealingDispatcherBenchmark.java" sourcepath="vibneiro/WorkStealingDispatcherBenchmark.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.WorkStealingDispatcherBenchmark">
-      <SourceLine classname="vibneiro.WorkStealingDispatcherBenchmark" start="38" end="144" sourcefile="WorkStealingDispatcherBenchmark.java" sourcepath="vibneiro/WorkStealingDispatcherBenchmark.java"/>
-    </Class>
-    <Field classname="vibneiro.WorkStealingDispatcherBenchmark" name="BOUNDED" signature="Ljava/lang/String;" isStatic="true">
-      <SourceLine classname="vibneiro.WorkStealingDispatcherBenchmark" sourcefile="WorkStealingDispatcherBenchmark.java" sourcepath="vibneiro/WorkStealingDispatcherBenchmark.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.WorkStealingDispatcherBenchmark">
-      <SourceLine classname="vibneiro.WorkStealingDispatcherBenchmark" start="38" end="144" sourcefile="WorkStealingDispatcherBenchmark.java" sourcepath="vibneiro/WorkStealingDispatcherBenchmark.java"/>
-    </Class>
-    <Field classname="vibneiro.WorkStealingDispatcherBenchmark" name="FIXEDTPOOL" signature="Ljava/lang/String;" isStatic="true">
-      <SourceLine classname="vibneiro.WorkStealingDispatcherBenchmark" sourcefile="WorkStealingDispatcherBenchmark.java" sourcepath="vibneiro/WorkStealingDispatcherBenchmark.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.WorkStealingDispatcherBenchmark">
-      <SourceLine classname="vibneiro.WorkStealingDispatcherBenchmark" start="38" end="144" sourcefile="WorkStealingDispatcherBenchmark.java" sourcepath="vibneiro/WorkStealingDispatcherBenchmark.java"/>
-    </Class>
-    <Field classname="vibneiro.WorkStealingDispatcherBenchmark" name="FJPOOL" signature="Ljava/lang/String;" isStatic="true">
-      <SourceLine classname="vibneiro.WorkStealingDispatcherBenchmark" sourcefile="WorkStealingDispatcherBenchmark.java" sourcepath="vibneiro/WorkStealingDispatcherBenchmark.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.WorkStealingDispatcherBenchmark">
-      <SourceLine classname="vibneiro.WorkStealingDispatcherBenchmark" start="38" end="144" sourcefile="WorkStealingDispatcherBenchmark.java" sourcepath="vibneiro/WorkStealingDispatcherBenchmark.java"/>
-    </Class>
-    <Field classname="vibneiro.WorkStealingDispatcherBenchmark" name="MASK" signature="I" isStatic="true">
-      <SourceLine classname="vibneiro.WorkStealingDispatcherBenchmark" sourcefile="WorkStealingDispatcherBenchmark.java" sourcepath="vibneiro/WorkStealingDispatcherBenchmark.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.WorkStealingDispatcherBenchmark">
-      <SourceLine classname="vibneiro.WorkStealingDispatcherBenchmark" start="38" end="144" sourcefile="WorkStealingDispatcherBenchmark.java" sourcepath="vibneiro/WorkStealingDispatcherBenchmark.java"/>
-    </Class>
-    <Field classname="vibneiro.WorkStealingDispatcherBenchmark" name="SIZE" signature="I" isStatic="true">
-      <SourceLine classname="vibneiro.WorkStealingDispatcherBenchmark" sourcefile="WorkStealingDispatcherBenchmark.java" sourcepath="vibneiro/WorkStealingDispatcherBenchmark.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.WorkStealingDispatcherBenchmark">
-      <SourceLine classname="vibneiro.WorkStealingDispatcherBenchmark" start="38" end="144" sourcefile="WorkStealingDispatcherBenchmark.java" sourcepath="vibneiro/WorkStealingDispatcherBenchmark.java"/>
-    </Class>
-    <Field classname="vibneiro.WorkStealingDispatcherBenchmark" name="UNBOUNDED" signature="Ljava/lang/String;" isStatic="true">
-      <SourceLine classname="vibneiro.WorkStealingDispatcherBenchmark" sourcefile="WorkStealingDispatcherBenchmark.java" sourcepath="vibneiro/WorkStealingDispatcherBenchmark.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.WorkStealingDispatcherBenchmark$ThreadState">
-      <SourceLine classname="vibneiro.WorkStealingDispatcherBenchmark$ThreadState" start="63" end="65" sourcefile="WorkStealingDispatcherBenchmark.java" sourcepath="vibneiro/WorkStealingDispatcherBenchmark.java"/>
-    </Class>
-    <Field classname="vibneiro.WorkStealingDispatcherBenchmark$ThreadState" name="random" signature="Ljava/util/Random;" isStatic="true">
-      <SourceLine classname="vibneiro.WorkStealingDispatcherBenchmark$ThreadState" sourcefile="WorkStealingDispatcherBenchmark.java" sourcepath="vibneiro/WorkStealingDispatcherBenchmark.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2">
-      <SourceLine classname="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2" start="3" end="17" sourcefile="CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2" sourcefile="CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2">
-      <SourceLine classname="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2" start="3" end="17" sourcefile="CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2" sourcefile="CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2">
-      <SourceLine classname="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2" start="3" end="17" sourcefile="CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2" sourcefile="CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2">
-      <SourceLine classname="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2" start="3" end="17" sourcefile="CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2" sourcefile="CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2">
-      <SourceLine classname="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2" start="3" end="17" sourcefile="CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2" sourcefile="CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2">
-      <SourceLine classname="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2" start="3" end="17" sourcefile="CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2" sourcefile="CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2">
-      <SourceLine classname="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2" start="3" end="17" sourcefile="CaffeinedDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/CaffeinedDispatcherBenchmark_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2" sourcefile="CaffeinedDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/CaffeinedDispatcherBenchmark_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2">
-      <SourceLine classname="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2" start="3" end="17" sourcefile="CaffeinedDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/CaffeinedDispatcherBenchmark_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2" sourcefile="CaffeinedDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/CaffeinedDispatcherBenchmark_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2">
-      <SourceLine classname="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2" start="3" end="17" sourcefile="CaffeinedDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/CaffeinedDispatcherBenchmark_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2" sourcefile="CaffeinedDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/CaffeinedDispatcherBenchmark_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2">
-      <SourceLine classname="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2" start="3" end="17" sourcefile="CaffeinedDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/CaffeinedDispatcherBenchmark_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2" sourcefile="CaffeinedDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/CaffeinedDispatcherBenchmark_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2">
-      <SourceLine classname="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2" start="3" end="17" sourcefile="CaffeinedDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/CaffeinedDispatcherBenchmark_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2" sourcefile="CaffeinedDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/CaffeinedDispatcherBenchmark_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2">
-      <SourceLine classname="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2" start="3" end="17" sourcefile="CaffeinedDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/CaffeinedDispatcherBenchmark_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2" sourcefile="CaffeinedDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/CaffeinedDispatcherBenchmark_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2">
-      <SourceLine classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2" start="3" end="17" sourcefile="ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2" sourcefile="ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2">
-      <SourceLine classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2" start="3" end="17" sourcefile="ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2" sourcefile="ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2">
-      <SourceLine classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2" start="3" end="17" sourcefile="ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2" sourcefile="ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2">
-      <SourceLine classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2" start="3" end="17" sourcefile="ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2" sourcefile="ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2">
-      <SourceLine classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2" start="3" end="17" sourcefile="ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2" sourcefile="ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2">
-      <SourceLine classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2" start="3" end="17" sourcefile="ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2" sourcefile="ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2">
-      <SourceLine classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2" start="3" end="17" sourcefile="ThreadBoundHashDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/ThreadBoundHashDispatcherBenchmark_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2" sourcefile="ThreadBoundHashDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/ThreadBoundHashDispatcherBenchmark_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2">
-      <SourceLine classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2" start="3" end="17" sourcefile="ThreadBoundHashDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/ThreadBoundHashDispatcherBenchmark_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2" sourcefile="ThreadBoundHashDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/ThreadBoundHashDispatcherBenchmark_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2">
-      <SourceLine classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2" start="3" end="17" sourcefile="ThreadBoundHashDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/ThreadBoundHashDispatcherBenchmark_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2" sourcefile="ThreadBoundHashDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/ThreadBoundHashDispatcherBenchmark_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2">
-      <SourceLine classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2" start="3" end="17" sourcefile="ThreadBoundHashDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/ThreadBoundHashDispatcherBenchmark_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2" sourcefile="ThreadBoundHashDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/ThreadBoundHashDispatcherBenchmark_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2">
-      <SourceLine classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2" start="3" end="17" sourcefile="ThreadBoundHashDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/ThreadBoundHashDispatcherBenchmark_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2" sourcefile="ThreadBoundHashDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/ThreadBoundHashDispatcherBenchmark_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2">
-      <SourceLine classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2" start="3" end="17" sourcefile="ThreadBoundHashDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/ThreadBoundHashDispatcherBenchmark_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2" sourcefile="ThreadBoundHashDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/ThreadBoundHashDispatcherBenchmark_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2">
-      <SourceLine classname="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2" start="3" end="17" sourcefile="WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2" sourcefile="WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2">
-      <SourceLine classname="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2" start="3" end="17" sourcefile="WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2" sourcefile="WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2">
-      <SourceLine classname="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2" start="3" end="17" sourcefile="WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2" sourcefile="WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2">
-      <SourceLine classname="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2" start="3" end="17" sourcefile="WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2" sourcefile="WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2">
-      <SourceLine classname="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2" start="3" end="17" sourcefile="WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2" sourcefile="WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2">
-      <SourceLine classname="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2" start="3" end="17" sourcefile="WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2" sourcefile="WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java" sourcepath="vibneiro/generated/WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2">
-      <SourceLine classname="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2" start="3" end="17" sourcefile="WorkStealingDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/WorkStealingDispatcherBenchmark_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2" sourcefile="WorkStealingDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/WorkStealingDispatcherBenchmark_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2">
-      <SourceLine classname="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2" start="3" end="17" sourcefile="WorkStealingDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/WorkStealingDispatcherBenchmark_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2" sourcefile="WorkStealingDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/WorkStealingDispatcherBenchmark_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2">
-      <SourceLine classname="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2" start="3" end="17" sourcefile="WorkStealingDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/WorkStealingDispatcherBenchmark_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2" sourcefile="WorkStealingDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/WorkStealingDispatcherBenchmark_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2">
-      <SourceLine classname="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2" start="3" end="17" sourcefile="WorkStealingDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/WorkStealingDispatcherBenchmark_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2" sourcefile="WorkStealingDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/WorkStealingDispatcherBenchmark_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2">
-      <SourceLine classname="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2" start="3" end="17" sourcefile="WorkStealingDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/WorkStealingDispatcherBenchmark_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2" sourcefile="WorkStealingDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/WorkStealingDispatcherBenchmark_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2">
-      <SourceLine classname="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2" start="3" end="17" sourcefile="WorkStealingDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/WorkStealingDispatcherBenchmark_jmh_B2.java"/>
-    </Class>
-    <Field classname="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2" sourcefile="WorkStealingDispatcherBenchmark_jmh_B2.java" sourcepath="vibneiro/generated/WorkStealingDispatcherBenchmark_jmh_B2.java"/>
-    </Field>
-  </BugInstance>
-  <Errors errors="0" missingClasses="52">
+  <Errors errors="1" missingClasses="52">
+    <Error>
+      <ErrorMessage>Exception analyzing com.google.common.collect.AbstractMapEntry using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
+      <Exception>java.lang.NullPointerException</Exception>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
+      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
+    </Error>
     <MissingClass>accept</MissingClass>
     <MissingClass>apply</MissingClass>
     <MissingClass>groovy.lang.Closure</MissingClass>
@@ -603,7 +178,7 @@
     <MissingClass>org.junit.Assert</MissingClass>
     <MissingClass>run</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Tue, 21 Aug 2018 04:42:43 +0200" total_classes="5692" referenced_classes="6281" total_bugs="67" total_size="181098" num_packages="174" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="191.78" clock_seconds="64.35" peak_mbytes="1571.41" alloc_mbytes="3641.00" gc_seconds="2.06" priority_2="67">
+  <FindBugsSummary timestamp="Wed, 22 Aug 2018 01:28:06 +0200" total_classes="5692" referenced_classes="6312" total_bugs="11" total_size="181098" num_packages="174" java_version="9.0.4" vm_version="9.0.4+11" cpu_seconds="248.26" clock_seconds="92.92" peak_mbytes="1139.62" alloc_mbytes="4096.00" gc_seconds="2.59" priority_2="9" priority_1="2">
     <PackageStats package="ch.qos.logback.classic" total_bugs="0" total_types="8" total_size="875">
       <ClassStats class="ch.qos.logback.classic.AsyncAppender" sourceFile="AsyncAppender.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.BasicConfigurator" sourceFile="BasicConfigurator.java" interface="false" size="27" bugs="0"/>
@@ -641,13 +216,13 @@
       <ClassStats class="ch.qos.logback.classic.filter.LevelFilter" sourceFile="LevelFilter.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.filter.ThresholdFilter" sourceFile="ThresholdFilter.java" interface="false" size="18" bugs="0"/>
     </PackageStats>
-    <PackageStats package="ch.qos.logback.classic.gaffer" total_bugs="0" total_types="14" total_size="828">
+    <PackageStats package="ch.qos.logback.classic.gaffer" total_bugs="1" total_types="14" total_size="828" priority_1="1">
       <ClassStats class="ch.qos.logback.classic.gaffer.AppenderDelegate" sourceFile="AppenderDelegate.groovy" interface="false" size="48" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.gaffer.AsyncAppenderDelegate" sourceFile="AsyncAppenderDelegate.groovy" interface="false" size="51" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.gaffer.AsyncAppenderDelegate$_closure1" sourceFile="AsyncAppenderDelegate.groovy" interface="false" size="15" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.gaffer.ComponentDelegate" sourceFile="ComponentDelegate.groovy" interface="false" size="126" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.gaffer.ConfigurationContributor" sourceFile="ConfigurationContributor.groovy" interface="true" size="2" bugs="0"/>
-      <ClassStats class="ch.qos.logback.classic.gaffer.ConfigurationDelegate" sourceFile="ConfigurationDelegate.groovy" interface="false" size="184" bugs="0"/>
+      <ClassStats class="ch.qos.logback.classic.gaffer.ConfigurationDelegate" sourceFile="ConfigurationDelegate.groovy" interface="false" size="184" bugs="1" priority_1="1"/>
       <ClassStats class="ch.qos.logback.classic.gaffer.ConfigurationDelegate$_copyContributions_closure2" sourceFile="ConfigurationDelegate.groovy" interface="false" size="19" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.gaffer.ConfigurationDelegate$_logger_closure1" sourceFile="ConfigurationDelegate.groovy" interface="false" size="16" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.gaffer.GafferConfigurator" sourceFile="GafferConfigurator.groovy" interface="false" size="77" bugs="0"/>
@@ -4743,7 +4318,7 @@
       <ClassStats class="com.google.common.reflect.Types$WildcardTypeImpl" sourceFile="Types.java" interface="false" size="31" bugs="0"/>
       <ClassStats class="com.google.common.reflect.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.google.common.util.concurrent" total_bugs="0" total_types="205" total_size="4443">
+    <PackageStats package="com.google.common.util.concurrent" total_bugs="1" total_types="205" total_size="4443" priority_1="1">
       <ClassStats class="com.google.common.util.concurrent.AbstractCheckedFuture" sourceFile="AbstractCheckedFuture.java" interface="false" size="23" bugs="0"/>
       <ClassStats class="com.google.common.util.concurrent.AbstractExecutionThreadService" sourceFile="AbstractExecutionThreadService.java" interface="false" size="50" bugs="0"/>
       <ClassStats class="com.google.common.util.concurrent.AbstractExecutionThreadService$1" sourceFile="AbstractExecutionThreadService.java" interface="false" size="11" bugs="0"/>
@@ -4859,7 +4434,7 @@
       <ClassStats class="com.google.common.util.concurrent.Futures$MappingCheckedFuture" sourceFile="Futures.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="com.google.common.util.concurrent.Futures$NonCancellationPropagatingFuture" sourceFile="Futures.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="com.google.common.util.concurrent.Futures$NonCancellationPropagatingFuture$1" sourceFile="Futures.java" interface="false" size="13" bugs="0"/>
-      <ClassStats class="com.google.common.util.concurrent.Futures$WrappedCombiner" sourceFile="Futures.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.google.common.util.concurrent.Futures$WrappedCombiner" sourceFile="Futures.java" interface="false" size="15" bugs="1" priority_1="1"/>
       <ClassStats class="com.google.common.util.concurrent.JdkFutureAdapters" sourceFile="JdkFutureAdapters.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="com.google.common.util.concurrent.JdkFutureAdapters$ListenableFutureAdapter" sourceFile="JdkFutureAdapters.java" interface="false" size="34" bugs="0"/>
       <ClassStats class="com.google.common.util.concurrent.JdkFutureAdapters$ListenableFutureAdapter$1" sourceFile="JdkFutureAdapters.java" interface="false" size="12" bugs="0"/>
@@ -6263,8 +5838,8 @@
       <ClassStats class="org.openjdk.jmh.generators.core.StateObjectHandler" sourceFile="StateObjectHandler.java" interface="false" size="552" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.generators.core.StateObjectHandler$1" sourceFile="StateObjectHandler.java" interface="false" size="4" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.openjdk.jmh.infra" total_bugs="2" total_types="30" total_size="1843" priority_2="2">
-      <ClassStats class="org.openjdk.jmh.infra.BenchmarkParams" sourceFile="BenchmarkParams.java" interface="false" size="38" bugs="1" priority_2="1"/>
+    <PackageStats package="org.openjdk.jmh.infra" total_bugs="0" total_types="30" total_size="1843">
+      <ClassStats class="org.openjdk.jmh.infra.BenchmarkParams" sourceFile="BenchmarkParams.java" interface="false" size="38" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.BenchmarkParamsL0" sourceFile="BenchmarkParams.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.BenchmarkParamsL1" sourceFile="BenchmarkParams.java" interface="false" size="131" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.BenchmarkParamsL2" sourceFile="BenchmarkParams.java" interface="false" size="126" bugs="0"/>
@@ -6282,7 +5857,7 @@
       <ClassStats class="org.openjdk.jmh.infra.ControlL2" sourceFile="Control.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.ControlL3" sourceFile="Control.java" interface="false" size="131" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.ControlL4" sourceFile="Control.java" interface="false" size="4" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.infra.IterationParams" sourceFile="IterationParams.java" interface="false" size="19" bugs="1" priority_2="1"/>
+      <ClassStats class="org.openjdk.jmh.infra.IterationParams" sourceFile="IterationParams.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.IterationParamsL0" sourceFile="IterationParams.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.IterationParamsL1" sourceFile="IterationParams.java" interface="false" size="131" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.IterationParamsL2" sourceFile="IterationParams.java" interface="false" size="43" bugs="0"/>
@@ -6295,10 +5870,10 @@
       <ClassStats class="org.openjdk.jmh.infra.ThreadParamsL3" sourceFile="ThreadParams.java" interface="false" size="135" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.ThreadParamsL4" sourceFile="ThreadParams.java" interface="false" size="8" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.openjdk.jmh.infra.generated" total_bugs="6" total_types="4" total_size="543" priority_2="6">
+    <PackageStats package="org.openjdk.jmh.infra.generated" total_bugs="0" total_types="4" total_size="543">
       <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmh" sourceFile="Blackhole_jmh.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmh_B1" sourceFile="Blackhole_jmh_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourceFile="Blackhole_jmh_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourceFile="Blackhole_jmh_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmh_B3" sourceFile="Blackhole_jmh_B3.java" interface="false" size="259" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.openjdk.jmh.profile" total_bugs="0" total_types="45" total_size="1769">
@@ -6554,16 +6129,16 @@
       <ClassStats class="org.slf4j.spi.MDCAdapter" sourceFile="MDCAdapter.java" interface="true" size="7" bugs="0"/>
       <ClassStats class="org.slf4j.spi.MarkerFactoryBinder" sourceFile="MarkerFactoryBinder.java" interface="true" size="3" bugs="0"/>
     </PackageStats>
-    <PackageStats package="vibneiro" total_bugs="23" total_types="9" total_size="166" priority_2="23">
-      <ClassStats class="vibneiro.CaffeinedDispatcherBenchmark" sourceFile="CaffeinedDispatcherBenchmark.java" interface="false" size="38" bugs="7" priority_2="7"/>
+    <PackageStats package="vibneiro" total_bugs="9" total_types="9" total_size="166" priority_2="9">
+      <ClassStats class="vibneiro.CaffeinedDispatcherBenchmark" sourceFile="CaffeinedDispatcherBenchmark.java" interface="false" size="38" bugs="3" priority_2="3"/>
       <ClassStats class="vibneiro.CaffeinedDispatcherBenchmark$1" sourceFile="CaffeinedDispatcherBenchmark.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="vibneiro.CaffeinedDispatcherBenchmark$ThreadState" sourceFile="CaffeinedDispatcherBenchmark.java" interface="false" size="5" bugs="0"/>
-      <ClassStats class="vibneiro.ThreadBoundHashDispatcherBenchmark" sourceFile="ThreadBoundHashDispatcherBenchmark.java" interface="false" size="31" bugs="5" priority_2="5"/>
+      <ClassStats class="vibneiro.ThreadBoundHashDispatcherBenchmark" sourceFile="ThreadBoundHashDispatcherBenchmark.java" interface="false" size="31" bugs="3" priority_2="3"/>
       <ClassStats class="vibneiro.ThreadBoundHashDispatcherBenchmark$1" sourceFile="ThreadBoundHashDispatcherBenchmark.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="vibneiro.ThreadBoundHashDispatcherBenchmark$ThreadState" sourceFile="ThreadBoundHashDispatcherBenchmark.java" interface="false" size="8" bugs="1" priority_2="1"/>
-      <ClassStats class="vibneiro.WorkStealingDispatcherBenchmark" sourceFile="WorkStealingDispatcherBenchmark.java" interface="false" size="58" bugs="9" priority_2="9"/>
+      <ClassStats class="vibneiro.ThreadBoundHashDispatcherBenchmark$ThreadState" sourceFile="ThreadBoundHashDispatcherBenchmark.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="vibneiro.WorkStealingDispatcherBenchmark" sourceFile="WorkStealingDispatcherBenchmark.java" interface="false" size="58" bugs="3" priority_2="3"/>
       <ClassStats class="vibneiro.WorkStealingDispatcherBenchmark$1" sourceFile="WorkStealingDispatcherBenchmark.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="vibneiro.WorkStealingDispatcherBenchmark$ThreadState" sourceFile="WorkStealingDispatcherBenchmark.java" interface="false" size="8" bugs="1" priority_2="1"/>
+      <ClassStats class="vibneiro.WorkStealingDispatcherBenchmark$ThreadState" sourceFile="WorkStealingDispatcherBenchmark.java" interface="false" size="8" bugs="0"/>
     </PackageStats>
     <PackageStats package="vibneiro.cache" total_bugs="0" total_types="1" total_size="17">
       <ClassStats class="vibneiro.cache.WeakReferenceByValue" sourceFile="WeakReferenceByValue.java" interface="false" size="17" bugs="0"/>
@@ -6602,39 +6177,39 @@
       <ClassStats class="vibneiro.dispatchers.WorkStealingDispatcherTest$Callback" sourceFile="WorkStealingDispatcherTest.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="vibneiro.dispatchers.WorkStealingDispatcherTest$TestTask" sourceFile="WorkStealingDispatcherTest.java" interface="false" size="14" bugs="0"/>
     </PackageStats>
-    <PackageStats package="vibneiro.generated" total_bugs="36" total_types="33" total_size="7956" priority_2="36">
+    <PackageStats package="vibneiro.generated" total_bugs="0" total_types="33" total_size="7956">
       <ClassStats class="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh" sourceFile="CaffeinedDispatcherBenchmark_ThreadState_jmh.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B1" sourceFile="CaffeinedDispatcherBenchmark_ThreadState_jmh_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2" sourceFile="CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B2" sourceFile="CaffeinedDispatcherBenchmark_ThreadState_jmh_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="vibneiro.generated.CaffeinedDispatcherBenchmark_ThreadState_jmh_B3" sourceFile="CaffeinedDispatcherBenchmark_ThreadState_jmh_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="vibneiro.generated.CaffeinedDispatcherBenchmark_dispatchRandomly" sourceFile="CaffeinedDispatcherBenchmark_dispatchRandomly.java" interface="false" size="531" bugs="0"/>
       <ClassStats class="vibneiro.generated.CaffeinedDispatcherBenchmark_dispatchSameKey" sourceFile="CaffeinedDispatcherBenchmark_dispatchSameKey.java" interface="false" size="516" bugs="0"/>
       <ClassStats class="vibneiro.generated.CaffeinedDispatcherBenchmark_dispatchUniqueId" sourceFile="CaffeinedDispatcherBenchmark_dispatchUniqueId.java" interface="false" size="516" bugs="0"/>
       <ClassStats class="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh" sourceFile="CaffeinedDispatcherBenchmark_jmh.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B1" sourceFile="CaffeinedDispatcherBenchmark_jmh_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2" sourceFile="CaffeinedDispatcherBenchmark_jmh_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B2" sourceFile="CaffeinedDispatcherBenchmark_jmh_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="vibneiro.generated.CaffeinedDispatcherBenchmark_jmh_B3" sourceFile="CaffeinedDispatcherBenchmark_jmh_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh" sourceFile="ThreadBoundHashDispatcherBenchmark_ThreadState_jmh.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B1" sourceFile="ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2" sourceFile="ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2" sourceFile="ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B3" sourceFile="ThreadBoundHashDispatcherBenchmark_ThreadState_jmh_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_dispatcSameKey" sourceFile="ThreadBoundHashDispatcherBenchmark_dispatcSameKey.java" interface="false" size="513" bugs="0"/>
       <ClassStats class="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_dispatchRandomly" sourceFile="ThreadBoundHashDispatcherBenchmark_dispatchRandomly.java" interface="false" size="528" bugs="0"/>
       <ClassStats class="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_dispatchUniqueId" sourceFile="ThreadBoundHashDispatcherBenchmark_dispatchUniqueId.java" interface="false" size="513" bugs="0"/>
       <ClassStats class="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh" sourceFile="ThreadBoundHashDispatcherBenchmark_jmh.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B1" sourceFile="ThreadBoundHashDispatcherBenchmark_jmh_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2" sourceFile="ThreadBoundHashDispatcherBenchmark_jmh_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B2" sourceFile="ThreadBoundHashDispatcherBenchmark_jmh_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="vibneiro.generated.ThreadBoundHashDispatcherBenchmark_jmh_B3" sourceFile="ThreadBoundHashDispatcherBenchmark_jmh_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh" sourceFile="WorkStealingDispatcherBenchmark_ThreadState_jmh.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B1" sourceFile="WorkStealingDispatcherBenchmark_ThreadState_jmh_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2" sourceFile="WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B2" sourceFile="WorkStealingDispatcherBenchmark_ThreadState_jmh_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="vibneiro.generated.WorkStealingDispatcherBenchmark_ThreadState_jmh_B3" sourceFile="WorkStealingDispatcherBenchmark_ThreadState_jmh_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="vibneiro.generated.WorkStealingDispatcherBenchmark_dispatchRandomly" sourceFile="WorkStealingDispatcherBenchmark_dispatchRandomly.java" interface="false" size="534" bugs="0"/>
       <ClassStats class="vibneiro.generated.WorkStealingDispatcherBenchmark_dispatchSameKey" sourceFile="WorkStealingDispatcherBenchmark_dispatchSameKey.java" interface="false" size="519" bugs="0"/>
       <ClassStats class="vibneiro.generated.WorkStealingDispatcherBenchmark_dispatchUniqueId" sourceFile="WorkStealingDispatcherBenchmark_dispatchUniqueId.java" interface="false" size="519" bugs="0"/>
       <ClassStats class="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh" sourceFile="WorkStealingDispatcherBenchmark_jmh.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B1" sourceFile="WorkStealingDispatcherBenchmark_jmh_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2" sourceFile="WorkStealingDispatcherBenchmark_jmh_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B2" sourceFile="WorkStealingDispatcherBenchmark_jmh_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="vibneiro.generated.WorkStealingDispatcherBenchmark_jmh_B3" sourceFile="WorkStealingDispatcherBenchmark_jmh_B3.java" interface="false" size="259" bugs="0"/>
     </PackageStats>
     <PackageStats package="vibneiro.idgenerators" total_bugs="0" total_types="1" total_size="12">
@@ -6645,51 +6220,50 @@
       <ClassStats class="vibneiro.idgenerators.time.SystemDateSource" sourceFile="SystemDateSource.java" interface="false" size="5" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="4296" invocations="36507" avgMicrosecondsPerInvocation="117" maxMicrosecondsPerInvocation="46855" standardDeviationMicrosecondsPerInvocation="650"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="4183" invocations="33880" avgMicrosecondsPerInvocation="123" maxMicrosecondsPerInvocation="118845" standardDeviationMicrosecondsPerInvocation="885"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="3425" invocations="34952" avgMicrosecondsPerInvocation="98" maxMicrosecondsPerInvocation="84670" standardDeviationMicrosecondsPerInvocation="829"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="3192" invocations="36800" avgMicrosecondsPerInvocation="86" maxMicrosecondsPerInvocation="68924" standardDeviationMicrosecondsPerInvocation="618"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="3134" invocations="36978" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="64287" standardDeviationMicrosecondsPerInvocation="824"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="2309" invocations="26420" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="103699" standardDeviationMicrosecondsPerInvocation="719"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1730" invocations="36513" avgMicrosecondsPerInvocation="47" maxMicrosecondsPerInvocation="15415" standardDeviationMicrosecondsPerInvocation="134"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckTypeQualifiers" totalMilliseconds="1723" invocations="5692" avgMicrosecondsPerInvocation="302" maxMicrosecondsPerInvocation="78379" standardDeviationMicrosecondsPerInvocation="1425"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1644" invocations="40496" avgMicrosecondsPerInvocation="40" maxMicrosecondsPerInvocation="424993" standardDeviationMicrosecondsPerInvocation="2117"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1540" invocations="17668" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="149799" standardDeviationMicrosecondsPerInvocation="1450"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1099" invocations="6281" avgMicrosecondsPerInvocation="174" maxMicrosecondsPerInvocation="23839" standardDeviationMicrosecondsPerInvocation="586"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1058" invocations="7871" avgMicrosecondsPerInvocation="134" maxMicrosecondsPerInvocation="68812" standardDeviationMicrosecondsPerInvocation="851"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="1022" invocations="36507" avgMicrosecondsPerInvocation="28" maxMicrosecondsPerInvocation="86455" standardDeviationMicrosecondsPerInvocation="549"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="928" invocations="6281" avgMicrosecondsPerInvocation="147" maxMicrosecondsPerInvocation="17881" standardDeviationMicrosecondsPerInvocation="471"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="823" invocations="1275918" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="2429" standardDeviationMicrosecondsPerInvocation="4"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="821" invocations="5692" avgMicrosecondsPerInvocation="144" maxMicrosecondsPerInvocation="30778" standardDeviationMicrosecondsPerInvocation="587"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="788" invocations="5692" avgMicrosecondsPerInvocation="138" maxMicrosecondsPerInvocation="22032" standardDeviationMicrosecondsPerInvocation="492"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="784" invocations="5692" avgMicrosecondsPerInvocation="137" maxMicrosecondsPerInvocation="20896" standardDeviationMicrosecondsPerInvocation="486"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="612" invocations="38504" avgMicrosecondsPerInvocation="15" maxMicrosecondsPerInvocation="35588" standardDeviationMicrosecondsPerInvocation="189"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="569" invocations="17231" avgMicrosecondsPerInvocation="33" maxMicrosecondsPerInvocation="12050" standardDeviationMicrosecondsPerInvocation="110"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="518" invocations="5692" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="8467" standardDeviationMicrosecondsPerInvocation="244"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="511" invocations="32963" avgMicrosecondsPerInvocation="15" maxMicrosecondsPerInvocation="4700" standardDeviationMicrosecondsPerInvocation="71"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="487" invocations="5692" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="101074" standardDeviationMicrosecondsPerInvocation="1351"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="487" invocations="33880" avgMicrosecondsPerInvocation="14" maxMicrosecondsPerInvocation="3663" standardDeviationMicrosecondsPerInvocation="54"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="460" invocations="5692" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="29642" standardDeviationMicrosecondsPerInvocation="420"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="428" invocations="5692" avgMicrosecondsPerInvocation="75" maxMicrosecondsPerInvocation="9398" standardDeviationMicrosecondsPerInvocation="212"/>
-      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="426" invocations="718959" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="6765" standardDeviationMicrosecondsPerInvocation="9"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="420" invocations="5692" avgMicrosecondsPerInvocation="73" maxMicrosecondsPerInvocation="7837" standardDeviationMicrosecondsPerInvocation="248"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="409" invocations="5692" avgMicrosecondsPerInvocation="71" maxMicrosecondsPerInvocation="3667" standardDeviationMicrosecondsPerInvocation="183"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="403" invocations="5692" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="9392" standardDeviationMicrosecondsPerInvocation="242"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="394" invocations="5692" avgMicrosecondsPerInvocation="69" maxMicrosecondsPerInvocation="11326" standardDeviationMicrosecondsPerInvocation="236"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="394" invocations="5692" avgMicrosecondsPerInvocation="69" maxMicrosecondsPerInvocation="62145" standardDeviationMicrosecondsPerInvocation="839"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="393" invocations="5692" avgMicrosecondsPerInvocation="69" maxMicrosecondsPerInvocation="10479" standardDeviationMicrosecondsPerInvocation="222"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="392" invocations="5692" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="12082" standardDeviationMicrosecondsPerInvocation="257"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="384" invocations="5692" avgMicrosecondsPerInvocation="67" maxMicrosecondsPerInvocation="7331" standardDeviationMicrosecondsPerInvocation="223"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="370" invocations="5692" avgMicrosecondsPerInvocation="65" maxMicrosecondsPerInvocation="10035" standardDeviationMicrosecondsPerInvocation="299"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="370" invocations="5692" avgMicrosecondsPerInvocation="65" maxMicrosecondsPerInvocation="10178" standardDeviationMicrosecondsPerInvocation="208"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="367" invocations="5692" avgMicrosecondsPerInvocation="64" maxMicrosecondsPerInvocation="2864" standardDeviationMicrosecondsPerInvocation="115"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="361" invocations="5692" avgMicrosecondsPerInvocation="63" maxMicrosecondsPerInvocation="11575" standardDeviationMicrosecondsPerInvocation="235"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindFieldSelfAssignment" totalMilliseconds="360" invocations="5692" avgMicrosecondsPerInvocation="63" maxMicrosecondsPerInvocation="65327" standardDeviationMicrosecondsPerInvocation="888"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="360" invocations="5692" avgMicrosecondsPerInvocation="63" maxMicrosecondsPerInvocation="9470" standardDeviationMicrosecondsPerInvocation="211"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SynchronizingOnContentsOfFieldToProtectField" totalMilliseconds="355" invocations="5692" avgMicrosecondsPerInvocation="62" maxMicrosecondsPerInvocation="68970" standardDeviationMicrosecondsPerInvocation="925"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="351" invocations="5692" avgMicrosecondsPerInvocation="61" maxMicrosecondsPerInvocation="10216" standardDeviationMicrosecondsPerInvocation="207"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="350" invocations="6281" avgMicrosecondsPerInvocation="55" maxMicrosecondsPerInvocation="9293" standardDeviationMicrosecondsPerInvocation="186"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="342" invocations="5692" avgMicrosecondsPerInvocation="60" maxMicrosecondsPerInvocation="8377" standardDeviationMicrosecondsPerInvocation="195"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="12373" invocations="5692" avgMicrosecondsPerInvocation="2173" maxMicrosecondsPerInvocation="418240" standardDeviationMicrosecondsPerInvocation="13541"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="4565" invocations="36507" avgMicrosecondsPerInvocation="125" maxMicrosecondsPerInvocation="58118" standardDeviationMicrosecondsPerInvocation="760"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="4503" invocations="33880" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="110216" standardDeviationMicrosecondsPerInvocation="1058"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="3655" invocations="34952" avgMicrosecondsPerInvocation="104" maxMicrosecondsPerInvocation="68465" standardDeviationMicrosecondsPerInvocation="897"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="3459" invocations="36978" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="71074" standardDeviationMicrosecondsPerInvocation="975"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="3312" invocations="36800" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="53304" standardDeviationMicrosecondsPerInvocation="574"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="2526" invocations="26420" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="65308" standardDeviationMicrosecondsPerInvocation="689"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="2180" invocations="6312" avgMicrosecondsPerInvocation="345" maxMicrosecondsPerInvocation="44942" standardDeviationMicrosecondsPerInvocation="1462"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="2032" invocations="40619" avgMicrosecondsPerInvocation="50" maxMicrosecondsPerInvocation="74403" standardDeviationMicrosecondsPerInvocation="519"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1968" invocations="38504" avgMicrosecondsPerInvocation="51" maxMicrosecondsPerInvocation="42095" standardDeviationMicrosecondsPerInvocation="308"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1822" invocations="8044" avgMicrosecondsPerInvocation="226" maxMicrosecondsPerInvocation="52017" standardDeviationMicrosecondsPerInvocation="1382"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1714" invocations="6312" avgMicrosecondsPerInvocation="271" maxMicrosecondsPerInvocation="112240" standardDeviationMicrosecondsPerInvocation="1672"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckTypeQualifiers" totalMilliseconds="1678" invocations="5692" avgMicrosecondsPerInvocation="294" maxMicrosecondsPerInvocation="50136" standardDeviationMicrosecondsPerInvocation="1004"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1140" invocations="18050" avgMicrosecondsPerInvocation="63" maxMicrosecondsPerInvocation="13953" standardDeviationMicrosecondsPerInvocation="176"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="935" invocations="36507" avgMicrosecondsPerInvocation="25" maxMicrosecondsPerInvocation="17570" standardDeviationMicrosecondsPerInvocation="157"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="904" invocations="5692" avgMicrosecondsPerInvocation="158" maxMicrosecondsPerInvocation="74055" standardDeviationMicrosecondsPerInvocation="1140"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="902" invocations="5692" avgMicrosecondsPerInvocation="158" maxMicrosecondsPerInvocation="29870" standardDeviationMicrosecondsPerInvocation="631"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="862" invocations="5692" avgMicrosecondsPerInvocation="151" maxMicrosecondsPerInvocation="30917" standardDeviationMicrosecondsPerInvocation="587"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="846" invocations="1317001" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="4756" standardDeviationMicrosecondsPerInvocation="8"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="799" invocations="17302" avgMicrosecondsPerInvocation="46" maxMicrosecondsPerInvocation="44661" standardDeviationMicrosecondsPerInvocation="463"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="722" invocations="6312" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="40783" standardDeviationMicrosecondsPerInvocation="853"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="707" invocations="38504" avgMicrosecondsPerInvocation="18" maxMicrosecondsPerInvocation="59737" standardDeviationMicrosecondsPerInvocation="356"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="567" invocations="6312" avgMicrosecondsPerInvocation="89" maxMicrosecondsPerInvocation="16605" standardDeviationMicrosecondsPerInvocation="457"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="530" invocations="33093" avgMicrosecondsPerInvocation="16" maxMicrosecondsPerInvocation="15017" standardDeviationMicrosecondsPerInvocation="108"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="525" invocations="5692" avgMicrosecondsPerInvocation="92" maxMicrosecondsPerInvocation="134323" standardDeviationMicrosecondsPerInvocation="2685"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="525" invocations="5692" avgMicrosecondsPerInvocation="92" maxMicrosecondsPerInvocation="8552" standardDeviationMicrosecondsPerInvocation="249"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="520" invocations="5692" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="15293" standardDeviationMicrosecondsPerInvocation="324"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="519" invocations="33880" avgMicrosecondsPerInvocation="15" maxMicrosecondsPerInvocation="18440" standardDeviationMicrosecondsPerInvocation="113"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="511" invocations="741820" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="7400" standardDeviationMicrosecondsPerInvocation="14"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="506" invocations="5692" avgMicrosecondsPerInvocation="88" maxMicrosecondsPerInvocation="18929" standardDeviationMicrosecondsPerInvocation="406"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="495" invocations="5692" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="9369" standardDeviationMicrosecondsPerInvocation="282"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="483" invocations="5692" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="26394" standardDeviationMicrosecondsPerInvocation="438"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="479" invocations="6312" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="31830" standardDeviationMicrosecondsPerInvocation="584"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="479" invocations="5692" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="15385" standardDeviationMicrosecondsPerInvocation="290"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="476" invocations="5692" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="24744" standardDeviationMicrosecondsPerInvocation="401"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="462" invocations="5692" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="11168" standardDeviationMicrosecondsPerInvocation="282"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="459" invocations="5692" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="10737" standardDeviationMicrosecondsPerInvocation="220"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="441" invocations="5692" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="53724" standardDeviationMicrosecondsPerInvocation="786"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="432" invocations="5692" avgMicrosecondsPerInvocation="75" maxMicrosecondsPerInvocation="15031" standardDeviationMicrosecondsPerInvocation="322"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="431" invocations="5692" avgMicrosecondsPerInvocation="75" maxMicrosecondsPerInvocation="12310" standardDeviationMicrosecondsPerInvocation="249"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="422" invocations="5692" avgMicrosecondsPerInvocation="74" maxMicrosecondsPerInvocation="12319" standardDeviationMicrosecondsPerInvocation="277"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="421" invocations="5692" avgMicrosecondsPerInvocation="74" maxMicrosecondsPerInvocation="14350" standardDeviationMicrosecondsPerInvocation="336"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="417" invocations="5692" avgMicrosecondsPerInvocation="73" maxMicrosecondsPerInvocation="11129" standardDeviationMicrosecondsPerInvocation="265"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredStaticMethodReturnDetector" totalMilliseconds="416" invocations="5692" avgMicrosecondsPerInvocation="73" maxMicrosecondsPerInvocation="49263" standardDeviationMicrosecondsPerInvocation="711"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

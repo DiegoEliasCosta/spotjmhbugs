@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1534780617000" analysisTimestamp="1534780619274" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534866493000" analysisTimestamp="1534866495788" release="">
   <Project projectName="">
     <Jar>tmp/rtree</Jar>
   </Project>
@@ -382,230 +382,15 @@
     </Method>
     <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="147" end="147" startBytecode="0" endBytecode="0" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
   </BugInstance>
-  <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.BenchmarksRTree">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="25" end="442" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="com.github.davidmoten.rtree.SplitterRStar$6">
+      <SourceLine classname="com.github.davidmoten.rtree.SplitterRStar$6" start="64" end="64" sourcefile="SplitterRStar.java" sourcepath="com/github/davidmoten/rtree/SplitterRStar.java"/>
     </Class>
-    <Method classname="com.github.davidmoten.rtree.BenchmarksRTree" name="rStarTreeDeleteOneEveryOccurrenceFromGreekDataChildren010" signature="()V" isStatic="false">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="338" end="339" startBytecode="0" endBytecode="55" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
+    <Method classname="com.github.davidmoten.rtree.SplitterRStar$6" name="&lt;clinit&gt;" signature="()V" isStatic="true">
+      <SourceLine classname="com.github.davidmoten.rtree.SplitterRStar$6" start="64" end="64" startBytecode="0" endBytecode="32" sourcefile="SplitterRStar.java" sourcepath="com/github/davidmoten/rtree/SplitterRStar.java"/>
     </Method>
-    <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="338" end="338" startBytecode="5" endBytecode="5" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.BenchmarksRTree">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="25" end="442" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.BenchmarksRTree" name="byteArrayGreek" signature="[B" isStatic="false">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.BenchmarksRTree">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="25" end="442" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.BenchmarksRTree" name="defaultTreeM10" signature="Lcom/github/davidmoten/rtree/RTree;" isStatic="false">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.BenchmarksRTree">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="25" end="442" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.BenchmarksRTree" name="defaultTreeM128" signature="Lcom/github/davidmoten/rtree/RTree;" isStatic="false">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.BenchmarksRTree">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="25" end="442" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.BenchmarksRTree" name="defaultTreeM32" signature="Lcom/github/davidmoten/rtree/RTree;" isStatic="false">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.BenchmarksRTree">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="25" end="442" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.BenchmarksRTree" name="defaultTreeM4" signature="Lcom/github/davidmoten/rtree/RTree;" isStatic="false">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.BenchmarksRTree">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="25" end="442" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.BenchmarksRTree" name="entries" signature="Ljava/util/List;" isStatic="false">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.BenchmarksRTree">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="25" end="442" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.BenchmarksRTree" name="precision" signature="Lcom/github/davidmoten/rtree/Precision;" isStatic="true">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.BenchmarksRTree">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="25" end="442" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.BenchmarksRTree" name="smallDefaultTreeM10" signature="Lcom/github/davidmoten/rtree/RTree;" isStatic="false">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.BenchmarksRTree">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="25" end="442" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.BenchmarksRTree" name="smallDefaultTreeM128" signature="Lcom/github/davidmoten/rtree/RTree;" isStatic="false">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.BenchmarksRTree">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="25" end="442" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.BenchmarksRTree" name="smallDefaultTreeM32" signature="Lcom/github/davidmoten/rtree/RTree;" isStatic="false">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.BenchmarksRTree">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="25" end="442" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.BenchmarksRTree" name="smallDefaultTreeM4" signature="Lcom/github/davidmoten/rtree/RTree;" isStatic="false">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.BenchmarksRTree">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="25" end="442" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.BenchmarksRTree" name="smallStarTreeM10" signature="Lcom/github/davidmoten/rtree/RTree;" isStatic="false">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.BenchmarksRTree">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="25" end="442" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.BenchmarksRTree" name="smallStarTreeM128" signature="Lcom/github/davidmoten/rtree/RTree;" isStatic="false">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.BenchmarksRTree">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="25" end="442" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.BenchmarksRTree" name="smallStarTreeM32" signature="Lcom/github/davidmoten/rtree/RTree;" isStatic="false">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.BenchmarksRTree">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="25" end="442" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.BenchmarksRTree" name="smallStarTreeM4" signature="Lcom/github/davidmoten/rtree/RTree;" isStatic="false">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.BenchmarksRTree">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="25" end="442" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.BenchmarksRTree" name="some" signature="Ljava/util/List;" isStatic="false">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.BenchmarksRTree">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="25" end="442" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.BenchmarksRTree" name="starTreeM10" signature="Lcom/github/davidmoten/rtree/RTree;" isStatic="false">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.BenchmarksRTree">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="25" end="442" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.BenchmarksRTree" name="starTreeM10FlatBuffers" signature="Lcom/github/davidmoten/rtree/RTree;" isStatic="false">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.BenchmarksRTree">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="25" end="442" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.BenchmarksRTree" name="starTreeM128" signature="Lcom/github/davidmoten/rtree/RTree;" isStatic="false">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.BenchmarksRTree">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="25" end="442" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.BenchmarksRTree" name="starTreeM32" signature="Lcom/github/davidmoten/rtree/RTree;" isStatic="false">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.BenchmarksRTree">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" start="25" end="442" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.BenchmarksRTree" name="starTreeM4" signature="Lcom/github/davidmoten/rtree/RTree;" isStatic="false">
-      <SourceLine classname="com.github.davidmoten.rtree.BenchmarksRTree" sourcefile="BenchmarksRTree.java" sourcepath="com/github/davidmoten/rtree/BenchmarksRTree.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2">
-      <SourceLine classname="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2" start="3" end="17" sourcefile="BenchmarksRTree_jmhType_B2.java" sourcepath="com/github/davidmoten/rtree/generated/BenchmarksRTree_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2" sourcefile="BenchmarksRTree_jmhType_B2.java" sourcepath="com/github/davidmoten/rtree/generated/BenchmarksRTree_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2">
-      <SourceLine classname="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2" start="3" end="17" sourcefile="BenchmarksRTree_jmhType_B2.java" sourcepath="com/github/davidmoten/rtree/generated/BenchmarksRTree_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2" sourcefile="BenchmarksRTree_jmhType_B2.java" sourcepath="com/github/davidmoten/rtree/generated/BenchmarksRTree_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2">
-      <SourceLine classname="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2" start="3" end="17" sourcefile="BenchmarksRTree_jmhType_B2.java" sourcepath="com/github/davidmoten/rtree/generated/BenchmarksRTree_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2" sourcefile="BenchmarksRTree_jmhType_B2.java" sourcepath="com/github/davidmoten/rtree/generated/BenchmarksRTree_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2">
-      <SourceLine classname="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2" start="3" end="17" sourcefile="BenchmarksRTree_jmhType_B2.java" sourcepath="com/github/davidmoten/rtree/generated/BenchmarksRTree_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2" sourcefile="BenchmarksRTree_jmhType_B2.java" sourcepath="com/github/davidmoten/rtree/generated/BenchmarksRTree_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2">
-      <SourceLine classname="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2" start="3" end="17" sourcefile="BenchmarksRTree_jmhType_B2.java" sourcepath="com/github/davidmoten/rtree/generated/BenchmarksRTree_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2" sourcefile="BenchmarksRTree_jmhType_B2.java" sourcepath="com/github/davidmoten/rtree/generated/BenchmarksRTree_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2">
-      <SourceLine classname="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2" start="3" end="17" sourcefile="BenchmarksRTree_jmhType_B2.java" sourcepath="com/github/davidmoten/rtree/generated/BenchmarksRTree_jmhType_B2.java"/>
-    </Class>
-    <Field classname="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2" sourcefile="BenchmarksRTree_jmhType_B2.java" sourcepath="com/github/davidmoten/rtree/generated/BenchmarksRTree_jmhType_B2.java"/>
-    </Field>
+    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="com.github.davidmoten.rtree.SplitterRStar$6" start="64" end="64" startBytecode="23" endBytecode="23" sourcefile="SplitterRStar.java" sourcepath="com/github/davidmoten/rtree/SplitterRStar.java"/>
   </BugInstance>
   <Errors errors="0" missingClasses="43">
     <MissingClass>com.esotericsoftware.kryo.Kryo</MissingClass>
@@ -652,7 +437,7 @@
     <MissingClass>rx.observables.StringObservable</MissingClass>
     <MissingClass>rx.observers.AssertableSubscriber</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Mon, 20 Aug 2018 17:56:57 +0200" total_classes="291" referenced_classes="401" total_bugs="70" total_size="27763" num_packages="12" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="34.51" clock_seconds="10.54" peak_mbytes="931.34" alloc_mbytes="3641.00" gc_seconds="0.24" priority_2="70">
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 17:48:13 +0200" total_classes="291" referenced_classes="403" total_bugs="43" total_size="27763" num_packages="12" java_version="9.0.4" vm_version="9.0.4+11" cpu_seconds="42.87" clock_seconds="13.84" peak_mbytes="436.31" alloc_mbytes="4096.00" gc_seconds="0.30" priority_2="42" priority_1="1">
     <PackageStats package="com.github.davidmoten.internal.operators" total_bugs="0" total_types="9" total_size="163">
       <ClassStats class="com.github.davidmoten.internal.operators.OperatorBoundedPriorityQueueTest" sourceFile="OperatorBoundedPriorityQueueTest.java" interface="false" size="59" bugs="0"/>
       <ClassStats class="com.github.davidmoten.internal.operators.OperatorBoundedPriorityQueueTest$1" sourceFile="OperatorBoundedPriorityQueueTest.java" interface="false" size="6" bugs="0"/>
@@ -664,7 +449,7 @@
       <ClassStats class="com.github.davidmoten.internal.operators.OperatorBoundedPriorityQueueTest$7" sourceFile="OperatorBoundedPriorityQueueTest.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="com.github.davidmoten.internal.operators.OperatorBoundedPriorityQueueTest$8" sourceFile="OperatorBoundedPriorityQueueTest.java" interface="false" size="12" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.github.davidmoten.rtree" total_bugs="64" total_types="122" total_size="3041" priority_2="64">
+    <PackageStats package="com.github.davidmoten.rtree" total_bugs="43" total_types="122" total_size="3041" priority_2="42" priority_1="1">
       <ClassStats class="com.github.davidmoten.rtree.Backpressure" sourceFile="Backpressure.java" interface="false" size="42" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rtree.Backpressure$StackAndRequest" sourceFile="Backpressure.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rtree.BackpressureTest" sourceFile="BackpressureTest.java" interface="false" size="106" bugs="0"/>
@@ -675,7 +460,7 @@
       <ClassStats class="com.github.davidmoten.rtree.BackpressureTest$5" sourceFile="BackpressureTest.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rtree.BackpressureTest$6" sourceFile="BackpressureTest.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rtree.BackpressureTest$7" sourceFile="BackpressureTest.java" interface="false" size="16" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rtree.BenchmarksRTree" sourceFile="BenchmarksRTree.java" interface="false" size="228" bugs="64" priority_2="64"/>
+      <ClassStats class="com.github.davidmoten.rtree.BenchmarksRTree" sourceFile="BenchmarksRTree.java" interface="false" size="228" bugs="42" priority_2="42"/>
       <ClassStats class="com.github.davidmoten.rtree.BenchmarksRTree$1" sourceFile="BenchmarksRTree.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rtree.BenchmarksRTree$2" sourceFile="BenchmarksRTree.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rtree.BenchmarksRTree$3" sourceFile="BenchmarksRTree.java" interface="false" size="7" bugs="0"/>
@@ -779,7 +564,7 @@
       <ClassStats class="com.github.davidmoten.rtree.SplitterRStar$3" sourceFile="SplitterRStar.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rtree.SplitterRStar$4" sourceFile="SplitterRStar.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rtree.SplitterRStar$5" sourceFile="SplitterRStar.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rtree.SplitterRStar$6" sourceFile="SplitterRStar.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.github.davidmoten.rtree.SplitterRStar$6" sourceFile="SplitterRStar.java" interface="false" size="4" bugs="1" priority_1="1"/>
       <ClassStats class="com.github.davidmoten.rtree.SplitterRStar$SortType" sourceFile="SplitterRStar.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rtree.SplitterRStarTest" sourceFile="SplitterRStarTest.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rtree.StringSplitTest" sourceFile="StringSplitTest.java" interface="false" size="16" bugs="0"/>
@@ -818,7 +603,7 @@
       <ClassStats class="com.github.davidmoten.rtree.fbs.generated.PointFloat_" sourceFile="PointFloat_.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rtree.fbs.generated.Tree_" sourceFile="Tree_.java" interface="false" size="38" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.github.davidmoten.rtree.generated" total_bugs="6" total_types="46" total_size="20582" priority_2="6">
+    <PackageStats package="com.github.davidmoten.rtree.generated" total_bugs="0" total_types="46" total_size="20582">
       <ClassStats class="com.github.davidmoten.rtree.generated.BenchmarksRTree_bulkLoadingFullRTreeCreation010_jmhTest" sourceFile="BenchmarksRTree_bulkLoadingFullRTreeCreation010_jmhTest.java" interface="false" size="468" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rtree.generated.BenchmarksRTree_bulkLoadingRTreeCreation010_jmhTest" sourceFile="BenchmarksRTree_bulkLoadingRTreeCreation010_jmhTest.java" interface="false" size="468" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rtree.generated.BenchmarksRTree_defaultRTreeCreation010_jmhTest" sourceFile="BenchmarksRTree_defaultRTreeCreation010_jmhTest.java" interface="false" size="468" bugs="0"/>
@@ -841,7 +626,7 @@
       <ClassStats class="com.github.davidmoten.rtree.generated.BenchmarksRTree_flatBufferRTreeCreation010_jmhTest" sourceFile="BenchmarksRTree_flatBufferRTreeCreation010_jmhTest.java" interface="false" size="468" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType" sourceFile="BenchmarksRTree_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B1" sourceFile="BenchmarksRTree_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2" sourceFile="BenchmarksRTree_jmhType_B2.java" interface="false" size="25" bugs="6" priority_2="6"/>
+      <ClassStats class="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B2" sourceFile="BenchmarksRTree_jmhType_B2.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rtree.generated.BenchmarksRTree_jmhType_B3" sourceFile="BenchmarksRTree_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rtree.generated.BenchmarksRTree_rStarTreeDeleteOneEveryOccurrenceFromGreekDataChildren010_jmhTest" sourceFile="BenchmarksRTree_rStarTreeDeleteOneEveryOccurrenceFromGreekDataChildren010_jmhTest.java" interface="false" size="468" bugs="0"/>
       <ClassStats class="com.github.davidmoten.rtree.generated.BenchmarksRTree_rStarTreeInsertOneEntryInto1000EntriesMaxChildren004_jmhTest" sourceFile="BenchmarksRTree_rStarTreeInsertOneEntryInto1000EntriesMaxChildren004_jmhTest.java" interface="false" size="468" bugs="0"/>
@@ -969,50 +754,53 @@
       <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmhType_B3" sourceFile="Blackhole_jmhType_B3.java" interface="false" size="259" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="593" invocations="2153" avgMicrosecondsPerInvocation="275" maxMicrosecondsPerInvocation="31571" standardDeviationMicrosecondsPerInvocation="818"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="590" invocations="1933" avgMicrosecondsPerInvocation="305" maxMicrosecondsPerInvocation="9580" standardDeviationMicrosecondsPerInvocation="497"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="587" invocations="2012" avgMicrosecondsPerInvocation="291" maxMicrosecondsPerInvocation="27041" standardDeviationMicrosecondsPerInvocation="795"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="582" invocations="2244" avgMicrosecondsPerInvocation="259" maxMicrosecondsPerInvocation="31668" standardDeviationMicrosecondsPerInvocation="799"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="530" invocations="2021" avgMicrosecondsPerInvocation="262" maxMicrosecondsPerInvocation="5683" standardDeviationMicrosecondsPerInvocation="431"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="420" invocations="1152" avgMicrosecondsPerInvocation="364" maxMicrosecondsPerInvocation="22158" standardDeviationMicrosecondsPerInvocation="1174"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="348" invocations="1816" avgMicrosecondsPerInvocation="191" maxMicrosecondsPerInvocation="3873" standardDeviationMicrosecondsPerInvocation="328"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="321" invocations="2021" avgMicrosecondsPerInvocation="159" maxMicrosecondsPerInvocation="11765" standardDeviationMicrosecondsPerInvocation="328"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="252" invocations="2679" avgMicrosecondsPerInvocation="94" maxMicrosecondsPerInvocation="5195" standardDeviationMicrosecondsPerInvocation="212"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="205" invocations="1155" avgMicrosecondsPerInvocation="178" maxMicrosecondsPerInvocation="2585" standardDeviationMicrosecondsPerInvocation="183"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="199" invocations="401" avgMicrosecondsPerInvocation="496" maxMicrosecondsPerInvocation="11300" standardDeviationMicrosecondsPerInvocation="1059"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="175" invocations="291" avgMicrosecondsPerInvocation="602" maxMicrosecondsPerInvocation="4555" standardDeviationMicrosecondsPerInvocation="972"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="173" invocations="401" avgMicrosecondsPerInvocation="432" maxMicrosecondsPerInvocation="7105" standardDeviationMicrosecondsPerInvocation="822"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="157" invocations="2021" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="1549" standardDeviationMicrosecondsPerInvocation="136"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="147" invocations="291" avgMicrosecondsPerInvocation="507" maxMicrosecondsPerInvocation="4973" standardDeviationMicrosecondsPerInvocation="873"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="121" invocations="291" avgMicrosecondsPerInvocation="418" maxMicrosecondsPerInvocation="65480" standardDeviationMicrosecondsPerInvocation="3982"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="117" invocations="2069" avgMicrosecondsPerInvocation="56" maxMicrosecondsPerInvocation="29670" standardDeviationMicrosecondsPerInvocation="654"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="117" invocations="291" avgMicrosecondsPerInvocation="404" maxMicrosecondsPerInvocation="7615" standardDeviationMicrosecondsPerInvocation="780"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="99" invocations="2069" avgMicrosecondsPerInvocation="48" maxMicrosecondsPerInvocation="37507" standardDeviationMicrosecondsPerInvocation="832"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="93" invocations="291" avgMicrosecondsPerInvocation="321" maxMicrosecondsPerInvocation="3512" standardDeviationMicrosecondsPerInvocation="576"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="93" invocations="1917" avgMicrosecondsPerInvocation="48" maxMicrosecondsPerInvocation="1458" standardDeviationMicrosecondsPerInvocation="94"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="91" invocations="401" avgMicrosecondsPerInvocation="228" maxMicrosecondsPerInvocation="6325" standardDeviationMicrosecondsPerInvocation="571"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="87" invocations="485" avgMicrosecondsPerInvocation="181" maxMicrosecondsPerInvocation="23902" standardDeviationMicrosecondsPerInvocation="1226"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="75" invocations="1933" avgMicrosecondsPerInvocation="39" maxMicrosecondsPerInvocation="2298" standardDeviationMicrosecondsPerInvocation="75"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="75" invocations="291" avgMicrosecondsPerInvocation="260" maxMicrosecondsPerInvocation="6654" standardDeviationMicrosecondsPerInvocation="545"/>
-      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="72" invocations="36996" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="5526" standardDeviationMicrosecondsPerInvocation="40"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="72" invocations="291" avgMicrosecondsPerInvocation="248" maxMicrosecondsPerInvocation="9137" standardDeviationMicrosecondsPerInvocation="671"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.Naming" totalMilliseconds="71" invocations="291" avgMicrosecondsPerInvocation="244" maxMicrosecondsPerInvocation="39211" standardDeviationMicrosecondsPerInvocation="2290"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="69" invocations="291" avgMicrosecondsPerInvocation="238" maxMicrosecondsPerInvocation="5331" standardDeviationMicrosecondsPerInvocation="432"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="67" invocations="33360" avgMicrosecondsPerInvocation="2" maxMicrosecondsPerInvocation="1134" standardDeviationMicrosecondsPerInvocation="10"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="66" invocations="401" avgMicrosecondsPerInvocation="164" maxMicrosecondsPerInvocation="3552" standardDeviationMicrosecondsPerInvocation="326"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="65" invocations="1048" avgMicrosecondsPerInvocation="62" maxMicrosecondsPerInvocation="2288" standardDeviationMicrosecondsPerInvocation="139"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="63" invocations="291" avgMicrosecondsPerInvocation="219" maxMicrosecondsPerInvocation="4479" standardDeviationMicrosecondsPerInvocation="358"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="62" invocations="291" avgMicrosecondsPerInvocation="213" maxMicrosecondsPerInvocation="4922" standardDeviationMicrosecondsPerInvocation="391"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="59" invocations="401" avgMicrosecondsPerInvocation="148" maxMicrosecondsPerInvocation="2573" standardDeviationMicrosecondsPerInvocation="239"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindFieldSelfAssignment" totalMilliseconds="57" invocations="291" avgMicrosecondsPerInvocation="199" maxMicrosecondsPerInvocation="7697" standardDeviationMicrosecondsPerInvocation="535"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="57" invocations="291" avgMicrosecondsPerInvocation="199" maxMicrosecondsPerInvocation="2388" standardDeviationMicrosecondsPerInvocation="258"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="57" invocations="291" avgMicrosecondsPerInvocation="196" maxMicrosecondsPerInvocation="3038" standardDeviationMicrosecondsPerInvocation="319"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="56" invocations="291" avgMicrosecondsPerInvocation="195" maxMicrosecondsPerInvocation="2339" standardDeviationMicrosecondsPerInvocation="299"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="56" invocations="291" avgMicrosecondsPerInvocation="193" maxMicrosecondsPerInvocation="2248" standardDeviationMicrosecondsPerInvocation="277"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="56" invocations="291" avgMicrosecondsPerInvocation="193" maxMicrosecondsPerInvocation="5520" standardDeviationMicrosecondsPerInvocation="401"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="56" invocations="291" avgMicrosecondsPerInvocation="193" maxMicrosecondsPerInvocation="1749" standardDeviationMicrosecondsPerInvocation="288"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.LoopInsideBenchmarkDetector" totalMilliseconds="55" invocations="291" avgMicrosecondsPerInvocation="190" maxMicrosecondsPerInvocation="8061" standardDeviationMicrosecondsPerInvocation="522"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="54" invocations="401" avgMicrosecondsPerInvocation="136" maxMicrosecondsPerInvocation="10127" standardDeviationMicrosecondsPerInvocation="708"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="710" invocations="2153" avgMicrosecondsPerInvocation="330" maxMicrosecondsPerInvocation="17054" standardDeviationMicrosecondsPerInvocation="674"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="700" invocations="1933" avgMicrosecondsPerInvocation="362" maxMicrosecondsPerInvocation="22848" standardDeviationMicrosecondsPerInvocation="847"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="677" invocations="2244" avgMicrosecondsPerInvocation="301" maxMicrosecondsPerInvocation="41033" standardDeviationMicrosecondsPerInvocation="1135"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="666" invocations="2021" avgMicrosecondsPerInvocation="329" maxMicrosecondsPerInvocation="30620" standardDeviationMicrosecondsPerInvocation="937"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="663" invocations="1207" avgMicrosecondsPerInvocation="549" maxMicrosecondsPerInvocation="44309" standardDeviationMicrosecondsPerInvocation="1755"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="653" invocations="2012" avgMicrosecondsPerInvocation="325" maxMicrosecondsPerInvocation="13613" standardDeviationMicrosecondsPerInvocation="694"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="413" invocations="1816" avgMicrosecondsPerInvocation="227" maxMicrosecondsPerInvocation="8231" standardDeviationMicrosecondsPerInvocation="443"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="396" invocations="2069" avgMicrosecondsPerInvocation="191" maxMicrosecondsPerInvocation="9035" standardDeviationMicrosecondsPerInvocation="389"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="339" invocations="2689" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="12065" standardDeviationMicrosecondsPerInvocation="345"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="253" invocations="403" avgMicrosecondsPerInvocation="630" maxMicrosecondsPerInvocation="8743" standardDeviationMicrosecondsPerInvocation="1238"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="226" invocations="291" avgMicrosecondsPerInvocation="777" maxMicrosecondsPerInvocation="16872" standardDeviationMicrosecondsPerInvocation="1557"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="222" invocations="403" avgMicrosecondsPerInvocation="552" maxMicrosecondsPerInvocation="8798" standardDeviationMicrosecondsPerInvocation="997"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="196" invocations="291" avgMicrosecondsPerInvocation="674" maxMicrosecondsPerInvocation="24726" standardDeviationMicrosecondsPerInvocation="1872"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="192" invocations="2021" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="3665" standardDeviationMicrosecondsPerInvocation="195"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="186" invocations="291" avgMicrosecondsPerInvocation="641" maxMicrosecondsPerInvocation="24035" standardDeviationMicrosecondsPerInvocation="2430"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="157" invocations="291" avgMicrosecondsPerInvocation="540" maxMicrosecondsPerInvocation="90042" standardDeviationMicrosecondsPerInvocation="5388"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="154" invocations="2069" avgMicrosecondsPerInvocation="74" maxMicrosecondsPerInvocation="30171" standardDeviationMicrosecondsPerInvocation="752"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="146" invocations="291" avgMicrosecondsPerInvocation="502" maxMicrosecondsPerInvocation="6636" standardDeviationMicrosecondsPerInvocation="842"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="142" invocations="1211" avgMicrosecondsPerInvocation="117" maxMicrosecondsPerInvocation="3383" standardDeviationMicrosecondsPerInvocation="185"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector" totalMilliseconds="138" invocations="291" avgMicrosecondsPerInvocation="475" maxMicrosecondsPerInvocation="6627" standardDeviationMicrosecondsPerInvocation="1097"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="130" invocations="403" avgMicrosecondsPerInvocation="323" maxMicrosecondsPerInvocation="5491" standardDeviationMicrosecondsPerInvocation="667"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="127" invocations="1917" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="5894" standardDeviationMicrosecondsPerInvocation="184"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="126" invocations="291" avgMicrosecondsPerInvocation="435" maxMicrosecondsPerInvocation="4989" standardDeviationMicrosecondsPerInvocation="839"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="118" invocations="291" avgMicrosecondsPerInvocation="406" maxMicrosecondsPerInvocation="30080" standardDeviationMicrosecondsPerInvocation="1972"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="106" invocations="38166" avgMicrosecondsPerInvocation="2" maxMicrosecondsPerInvocation="24358" standardDeviationMicrosecondsPerInvocation="130"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="100" invocations="291" avgMicrosecondsPerInvocation="344" maxMicrosecondsPerInvocation="16425" standardDeviationMicrosecondsPerInvocation="1606"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="99" invocations="403" avgMicrosecondsPerInvocation="246" maxMicrosecondsPerInvocation="3012" standardDeviationMicrosecondsPerInvocation="424"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="95" invocations="291" avgMicrosecondsPerInvocation="328" maxMicrosecondsPerInvocation="11608" standardDeviationMicrosecondsPerInvocation="805"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="92" invocations="403" avgMicrosecondsPerInvocation="228" maxMicrosecondsPerInvocation="28213" standardDeviationMicrosecondsPerInvocation="1493"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="89" invocations="33541" avgMicrosecondsPerInvocation="2" maxMicrosecondsPerInvocation="4936" standardDeviationMicrosecondsPerInvocation="37"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindFloatEquality" totalMilliseconds="88" invocations="291" avgMicrosecondsPerInvocation="305" maxMicrosecondsPerInvocation="25200" standardDeviationMicrosecondsPerInvocation="1512"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="86" invocations="291" avgMicrosecondsPerInvocation="297" maxMicrosecondsPerInvocation="9888" standardDeviationMicrosecondsPerInvocation="710"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="85" invocations="291" avgMicrosecondsPerInvocation="293" maxMicrosecondsPerInvocation="4755" standardDeviationMicrosecondsPerInvocation="516"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="83" invocations="291" avgMicrosecondsPerInvocation="288" maxMicrosecondsPerInvocation="3651" standardDeviationMicrosecondsPerInvocation="450"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="83" invocations="291" avgMicrosecondsPerInvocation="287" maxMicrosecondsPerInvocation="7522" standardDeviationMicrosecondsPerInvocation="600"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="80" invocations="291" avgMicrosecondsPerInvocation="277" maxMicrosecondsPerInvocation="8472" standardDeviationMicrosecondsPerInvocation="614"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="80" invocations="1933" avgMicrosecondsPerInvocation="41" maxMicrosecondsPerInvocation="2901" standardDeviationMicrosecondsPerInvocation="88"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="78" invocations="291" avgMicrosecondsPerInvocation="269" maxMicrosecondsPerInvocation="3784" standardDeviationMicrosecondsPerInvocation="376"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="78" invocations="403" avgMicrosecondsPerInvocation="194" maxMicrosecondsPerInvocation="2434" standardDeviationMicrosecondsPerInvocation="320"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="78" invocations="291" avgMicrosecondsPerInvocation="269" maxMicrosecondsPerInvocation="3358" standardDeviationMicrosecondsPerInvocation="411"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="76" invocations="291" avgMicrosecondsPerInvocation="263" maxMicrosecondsPerInvocation="3932" standardDeviationMicrosecondsPerInvocation="434"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="76" invocations="291" avgMicrosecondsPerInvocation="261" maxMicrosecondsPerInvocation="6334" standardDeviationMicrosecondsPerInvocation="582"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="75" invocations="291" avgMicrosecondsPerInvocation="257" maxMicrosecondsPerInvocation="2476" standardDeviationMicrosecondsPerInvocation="388"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="74" invocations="486" avgMicrosecondsPerInvocation="153" maxMicrosecondsPerInvocation="11243" standardDeviationMicrosecondsPerInvocation="555"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="74" invocations="291" avgMicrosecondsPerInvocation="254" maxMicrosecondsPerInvocation="3614" standardDeviationMicrosecondsPerInvocation="440"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="73" invocations="2069" avgMicrosecondsPerInvocation="35" maxMicrosecondsPerInvocation="5767" standardDeviationMicrosecondsPerInvocation="168"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="73" invocations="403" avgMicrosecondsPerInvocation="181" maxMicrosecondsPerInvocation="8859" standardDeviationMicrosecondsPerInvocation="651"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

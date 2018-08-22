@@ -1,9 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1511121417000" analysisTimestamp="1511121418626" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534886562000" analysisTimestamp="1534886564001" release="">
   <Project projectName="">
     <Jar>tmp/cryptolib</Jar>
   </Project>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.cryptomator.cryptolib.CryptorsTest">
+      <SourceLine classname="org.cryptomator.cryptolib.CryptorsTest" start="30" end="140" sourcefile="CryptorsTest.java" sourcepath="org/cryptomator/cryptolib/CryptorsTest.java"/>
+    </Class>
+    <Method classname="org.cryptomator.cryptolib.CryptorsTest" name="testCleartextSizeWithInvalidCiphertextSize" signature="()V" isStatic="false">
+      <SourceLine classname="org.cryptomator.cryptolib.CryptorsTest" start="90" end="105" startBytecode="0" endBytecode="93" sourcefile="CryptorsTest.java" sourcepath="org/cryptomator/cryptolib/CryptorsTest.java"/>
+    </Method>
+    <LocalVariable name="e" register="6" pc="205" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.cryptomator.cryptolib.CryptorsTest" start="101" end="101" startBytecode="203" endBytecode="203" sourcefile="CryptorsTest.java" sourcepath="org/cryptomator/cryptolib/CryptorsTest.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.cryptomator.cryptolib.api.KeyFileTest">
+      <SourceLine classname="org.cryptomator.cryptolib.api.KeyFileTest" start="19" end="48" sourcefile="KeyFileTest.java" sourcepath="org/cryptomator/cryptolib/api/KeyFileTest.java"/>
+    </Class>
+    <Method classname="org.cryptomator.cryptolib.api.KeyFileTest" name="testParse" signature="()V" isStatic="false">
+      <SourceLine classname="org.cryptomator.cryptolib.api.KeyFileTest" start="25" end="32" startBytecode="0" endBytecode="29" sourcefile="KeyFileTest.java" sourcepath="org/cryptomator/cryptolib/api/KeyFileTest.java"/>
+    </Method>
+    <LocalVariable name="serialized" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.cryptomator.cryptolib.api.KeyFileTest" start="25" end="25" startBytecode="2" endBytecode="2" sourcefile="KeyFileTest.java" sourcepath="org/cryptomator/cryptolib/api/KeyFileTest.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.cryptomator.cryptolib.api.KeyFileTest">
+      <SourceLine classname="org.cryptomator.cryptolib.api.KeyFileTest" start="19" end="48" sourcefile="KeyFileTest.java" sourcepath="org/cryptomator/cryptolib/api/KeyFileTest.java"/>
+    </Class>
+    <Method classname="org.cryptomator.cryptolib.api.KeyFileTest" name="testParseInvalid1" signature="()V" isStatic="false">
+      <SourceLine classname="org.cryptomator.cryptolib.api.KeyFileTest" start="36" end="38" startBytecode="0" endBytecode="6" sourcefile="KeyFileTest.java" sourcepath="org/cryptomator/cryptolib/api/KeyFileTest.java"/>
+    </Method>
+    <LocalVariable name="serialized" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.cryptomator.cryptolib.api.KeyFileTest" start="36" end="36" startBytecode="2" endBytecode="2" sourcefile="KeyFileTest.java" sourcepath="org/cryptomator/cryptolib/api/KeyFileTest.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest">
+      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="24" end="188" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
+    </Class>
+    <Method classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" name="testCreateFromKeyWithCorrectPassphrase" signature="()V" isStatic="false">
+      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="46" end="53" startBytecode="0" endBytecode="15" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
+    </Method>
+    <LocalVariable name="testMasterKey" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="46" end="46" startBytecode="2" endBytecode="2" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest">
+      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="24" end="188" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
+    </Class>
+    <Method classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" name="testCreateFromKeyWithMissingVersionMac" signature="()V" isStatic="false">
+      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="123" end="153" startBytecode="0" endBytecode="37" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
+    </Method>
+    <LocalVariable name="testMasterKey" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="123" end="123" startBytecode="2" endBytecode="2" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest">
+      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="24" end="188" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
+    </Class>
+    <Method classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" name="testCreateFromKeyWithPepper" signature="()V" isStatic="false">
+      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="67" end="74" startBytecode="0" endBytecode="21" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
+    </Method>
+    <LocalVariable name="testMasterKey" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="67" end="67" startBytecode="2" endBytecode="2" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest">
+      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="24" end="188" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
+    </Class>
+    <Method classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" name="testCreateFromKeyWithWrongPassphrase" signature="()V" isStatic="false">
+      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="57" end="63" startBytecode="0" endBytecode="13" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
+    </Method>
+    <LocalVariable name="testMasterKey" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="57" end="57" startBytecode="2" endBytecode="2" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest">
+      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="24" end="188" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
+    </Class>
+    <Method classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" name="testCreateFromKeyWithWrongPepper" signature="()V" isStatic="false">
+      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="78" end="84" startBytecode="0" endBytecode="19" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
+    </Method>
+    <LocalVariable name="testMasterKey" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="78" end="78" startBytecode="2" endBytecode="2" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest">
+      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="24" end="188" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
+    </Class>
+    <Method classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" name="testCreateFromKeyWithWrongVaultFormat" signature="()V" isStatic="false">
+      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="88" end="119" startBytecode="0" endBytecode="37" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
+    </Method>
+    <LocalVariable name="testMasterKey" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="88" end="88" startBytecode="2" endBytecode="2" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
+  </BugInstance>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest">
+      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="24" end="188" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
+    </Class>
+    <Method classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" name="testCreateFromKeyWithWrongVersionMac" signature="()V" isStatic="false">
+      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="157" end="188" startBytecode="0" endBytecode="37" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
+    </Method>
+    <LocalVariable name="testMasterKey" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="157" end="157" startBytecode="2" endBytecode="2" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
+  </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark">
       <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" start="37" end="71" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
@@ -40,243 +140,82 @@
     </Method>
     <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" start="54" end="54" startBytecode="47" endBytecode="47" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
   </BugInstance>
-  <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" start="37" end="71" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
-    </Class>
-    <Method classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" name="benchmarkAuthentication" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" start="65" end="66" startBytecode="0" endBytecode="66" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
-    </Method>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" start="65" end="65" startBytecode="16" endBytecode="16" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" start="37" end="71" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
-    </Class>
-    <Method classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" name="benchmarkDecryption" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" start="70" end="71" startBytecode="0" endBytecode="61" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
-    </Method>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" start="70" end="70" startBytecode="11" endBytecode="11" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" start="37" end="71" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
-    </Class>
-    <Method classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" name="benchmarkEncryption" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" start="60" end="61" startBytecode="0" endBytecode="69" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
-    </Method>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" start="60" end="60" startBytecode="19" endBytecode="19" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" start="37" end="71" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" name="ENC_KEY" signature="Ljavax/crypto/SecretKey;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" start="37" end="71" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" name="MAC_KEY" signature="Ljavax/crypto/SecretKey;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" start="37" end="71" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" name="RANDOM_MOCK" signature="Ljava/security/SecureRandom;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" start="37" end="71" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" name="ciphertextChunk" signature="Ljava/nio/ByteBuffer;" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" start="37" end="71" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" name="cleartextChunk" signature="Ljava/nio/ByteBuffer;" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" start="37" end="71" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" name="fileContentCryptor" signature="Lorg/cryptomator/cryptolib/v1/FileContentCryptorImpl;" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" start="37" end="71" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" name="headerNonce" signature="[B" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
-    </Field>
-  </BugInstance>
   <BugInstance type="JMH_BENCHMARKMODE_SINGLESHOT" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="40" end="82" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
+      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="41" end="83" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
     </Class>
   </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="40" end="82" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
+      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="41" end="83" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
     </Class>
     <Method classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" name="benchmark100MegabytesEncryption" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="55" end="62" startBytecode="0" endBytecode="374" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
+      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="56" end="63" startBytecode="0" endBytecode="257" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
     </Method>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="55" end="55" startBytecode="0" endBytecode="0" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
+    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="56" end="56" startBytecode="0" endBytecode="0" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
   </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="40" end="82" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
+      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="41" end="83" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
     </Class>
     <Method classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" name="benchmark10MegabytesEncryption" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="66" end="73" startBytecode="0" endBytecode="374" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
+      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="67" end="74" startBytecode="0" endBytecode="257" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
     </Method>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="66" end="66" startBytecode="0" endBytecode="0" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
+    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="67" end="67" startBytecode="0" endBytecode="0" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
   </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="40" end="82" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
+      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="41" end="83" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
     </Class>
     <Method classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" name="benchmark1MegabytesEncryption" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="77" end="82" startBytecode="0" endBytecode="335" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
+      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="78" end="83" startBytecode="0" endBytecode="218" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
     </Method>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="77" end="77" startBytecode="0" endBytecode="0" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
+    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="78" end="78" startBytecode="0" endBytecode="0" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
   </BugInstance>
-  <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="40" end="82" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
+      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="41" end="83" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
     </Class>
     <Method classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" name="benchmark100MegabytesEncryption" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="55" end="62" startBytecode="0" endBytecode="374" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
+      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="56" end="63" startBytecode="0" endBytecode="257" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
     </Method>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="58" end="58" startBytecode="40" endBytecode="40" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
+    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="58" end="58" startBytecode="54" endBytecode="54" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
   </BugInstance>
-  <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="40" end="82" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
+      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="41" end="83" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
     </Class>
     <Method classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" name="benchmark100MegabytesEncryption" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="55" end="62" startBytecode="0" endBytecode="374" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
+      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="56" end="63" startBytecode="0" endBytecode="257" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
     </Method>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="59" end="59" startBytecode="47" endBytecode="47" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
+    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="62" end="62" startBytecode="62" endBytecode="62" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
   </BugInstance>
-  <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="40" end="82" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
+      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="41" end="83" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
     </Class>
     <Method classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" name="benchmark10MegabytesEncryption" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="66" end="73" startBytecode="0" endBytecode="374" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
+      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="67" end="74" startBytecode="0" endBytecode="257" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
     </Method>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="69" end="69" startBytecode="40" endBytecode="40" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
+    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="69" end="69" startBytecode="54" endBytecode="54" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
   </BugInstance>
-  <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="40" end="82" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
+      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="41" end="83" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
     </Class>
     <Method classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" name="benchmark10MegabytesEncryption" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="66" end="73" startBytecode="0" endBytecode="374" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
+      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="67" end="74" startBytecode="0" endBytecode="257" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
     </Method>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="70" end="70" startBytecode="47" endBytecode="47" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
+    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="73" end="73" startBytecode="62" endBytecode="62" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
   </BugInstance>
-  <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
+  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="40" end="82" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
+      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="41" end="83" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
     </Class>
     <Method classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" name="benchmark1MegabytesEncryption" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="77" end="82" startBytecode="0" endBytecode="335" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
+      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="78" end="83" startBytecode="0" endBytecode="218" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
     </Method>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="79" end="79" startBytecode="30" endBytecode="30" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="40" end="82" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-    </Class>
-    <Method classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" name="benchmark1MegabytesEncryption" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="77" end="82" startBytecode="0" endBytecode="335" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-    </Method>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="80" end="80" startBytecode="37" endBytecode="37" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="40" end="82" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-    </Class>
-    <Method classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" name="benchmark100MegabytesEncryption" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="55" end="62" startBytecode="0" endBytecode="374" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-    </Method>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="57" end="57" startBytecode="54" endBytecode="54" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="40" end="82" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-    </Class>
-    <Method classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" name="benchmark100MegabytesEncryption" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="55" end="62" startBytecode="0" endBytecode="374" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-    </Method>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="61" end="61" startBytecode="71" endBytecode="71" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="40" end="82" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-    </Class>
-    <Method classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" name="benchmark10MegabytesEncryption" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="66" end="73" startBytecode="0" endBytecode="374" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-    </Method>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="68" end="68" startBytecode="54" endBytecode="54" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="40" end="82" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-    </Class>
-    <Method classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" name="benchmark10MegabytesEncryption" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="66" end="73" startBytecode="0" endBytecode="374" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-    </Method>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="72" end="72" startBytecode="71" endBytecode="71" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_LOOP_INSIDE_BENCHMARK" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="40" end="82" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-    </Class>
-    <Method classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" name="benchmark1MegabytesEncryption" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="77" end="82" startBytecode="0" endBytecode="335" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-    </Method>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="81" end="81" startBytecode="55" endBytecode="55" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="40" end="82" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" name="ENC_KEY" signature="Ljavax/crypto/SecretKey;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="40" end="82" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" name="MAC_KEY" signature="Ljavax/crypto/SecretKey;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="40" end="82" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" name="RANDOM_MOCK" signature="Ljava/security/SecureRandom;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
-    </Field>
+    <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" start="82" end="82" startBytecode="46" endBytecode="46" sourcefile="FileContentEncryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentEncryptorBenchmark.java"/>
   </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark">
@@ -296,201 +235,28 @@
     </Method>
     <SourceLine classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" start="56" end="56" startBytecode="0" endBytecode="0" sourcefile="FileHeaderCryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileHeaderCryptorBenchmark.java"/>
   </BugInstance>
-  <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" start="39" end="62" sourcefile="FileHeaderCryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileHeaderCryptorBenchmark.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorImplTest">
+      <SourceLine classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorImplTest" start="26" end="89" sourcefile="FileHeaderCryptorImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/FileHeaderCryptorImplTest.java"/>
     </Class>
-    <Method classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" name="benchmarkDecryption" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" start="61" end="62" startBytecode="0" endBytecode="57" sourcefile="FileHeaderCryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileHeaderCryptorBenchmark.java"/>
+    <Method classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorImplTest" name="testEncryption" signature="()V" isStatic="false">
+      <SourceLine classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorImplTest" start="42" end="57" startBytecode="0" endBytecode="17" sourcefile="FileHeaderCryptorImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/FileHeaderCryptorImplTest.java"/>
     </Method>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" start="61" end="61" startBytecode="7" endBytecode="7" sourcefile="FileHeaderCryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileHeaderCryptorBenchmark.java"/>
+    <LocalVariable name="expected" register="2" pc="11" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorImplTest" start="52" end="52" startBytecode="10" endBytecode="10" sourcefile="FileHeaderCryptorImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/FileHeaderCryptorImplTest.java"/>
   </BugInstance>
-  <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" start="39" end="62" sourcefile="FileHeaderCryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileHeaderCryptorBenchmark.java"/>
+  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
+    <Class classname="org.cryptomator.cryptolib.v1.FileNameCryptorImplTest">
+      <SourceLine classname="org.cryptomator.cryptolib.v1.FileNameCryptorImplTest" start="22" end="113" sourcefile="FileNameCryptorImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/FileNameCryptorImplTest.java"/>
     </Class>
-    <Method classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" name="benchmarkEncryption" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" start="56" end="57" startBytecode="0" endBytecode="57" sourcefile="FileHeaderCryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileHeaderCryptorBenchmark.java"/>
+    <Method classname="org.cryptomator.cryptolib.v1.FileNameCryptorImplTest" name="testDeterministicEncryptionOfFilenames" signature="()V" isStatic="false">
+      <SourceLine classname="org.cryptomator.cryptolib.v1.FileNameCryptorImplTest" start="28" end="50" startBytecode="0" endBytecode="81" sourcefile="FileNameCryptorImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/FileNameCryptorImplTest.java"/>
     </Method>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" start="56" end="56" startBytecode="7" endBytecode="7" sourcefile="FileHeaderCryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileHeaderCryptorBenchmark.java"/>
+    <LocalVariable name="originalPath3" register="5" pc="120" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.cryptomator.cryptolib.v1.FileNameCryptorImplTest" start="44" end="44" startBytecode="118" endBytecode="118" sourcefile="FileNameCryptorImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/FileNameCryptorImplTest.java"/>
   </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" start="39" end="62" sourcefile="FileHeaderCryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileHeaderCryptorBenchmark.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" name="ENC_KEY" signature="Ljavax/crypto/SecretKey;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" sourcefile="FileHeaderCryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileHeaderCryptorBenchmark.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" start="39" end="62" sourcefile="FileHeaderCryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileHeaderCryptorBenchmark.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" name="HEADER_CRYPTOR" signature="Lorg/cryptomator/cryptolib/v1/FileHeaderCryptorImpl;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" sourcefile="FileHeaderCryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileHeaderCryptorBenchmark.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" start="39" end="62" sourcefile="FileHeaderCryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileHeaderCryptorBenchmark.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" name="MAC_KEY" signature="Ljavax/crypto/SecretKey;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" sourcefile="FileHeaderCryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileHeaderCryptorBenchmark.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" start="39" end="62" sourcefile="FileHeaderCryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileHeaderCryptorBenchmark.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" name="RANDOM_MOCK" signature="Ljava/security/SecureRandom;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" sourcefile="FileHeaderCryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileHeaderCryptorBenchmark.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2" start="3" end="17" sourcefile="FileContentCryptorImplBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileContentCryptorImplBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2" sourcefile="FileContentCryptorImplBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileContentCryptorImplBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2" start="3" end="17" sourcefile="FileContentCryptorImplBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileContentCryptorImplBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2" sourcefile="FileContentCryptorImplBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileContentCryptorImplBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2" start="3" end="17" sourcefile="FileContentCryptorImplBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileContentCryptorImplBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2" sourcefile="FileContentCryptorImplBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileContentCryptorImplBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2" start="3" end="17" sourcefile="FileContentCryptorImplBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileContentCryptorImplBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2" sourcefile="FileContentCryptorImplBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileContentCryptorImplBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2" start="3" end="17" sourcefile="FileContentCryptorImplBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileContentCryptorImplBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2" sourcefile="FileContentCryptorImplBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileContentCryptorImplBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2" start="3" end="17" sourcefile="FileContentCryptorImplBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileContentCryptorImplBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2" sourcefile="FileContentCryptorImplBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileContentCryptorImplBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2" start="3" end="17" sourcefile="FileContentEncryptorBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileContentEncryptorBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2" sourcefile="FileContentEncryptorBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileContentEncryptorBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2" start="3" end="17" sourcefile="FileContentEncryptorBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileContentEncryptorBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2" sourcefile="FileContentEncryptorBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileContentEncryptorBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2" start="3" end="17" sourcefile="FileContentEncryptorBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileContentEncryptorBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2" sourcefile="FileContentEncryptorBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileContentEncryptorBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2" start="3" end="17" sourcefile="FileContentEncryptorBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileContentEncryptorBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2" sourcefile="FileContentEncryptorBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileContentEncryptorBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2" start="3" end="17" sourcefile="FileContentEncryptorBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileContentEncryptorBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2" sourcefile="FileContentEncryptorBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileContentEncryptorBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2" start="3" end="17" sourcefile="FileContentEncryptorBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileContentEncryptorBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2" sourcefile="FileContentEncryptorBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileContentEncryptorBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2" start="3" end="17" sourcefile="FileHeaderCryptorBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileHeaderCryptorBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2" name="setupInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2" sourcefile="FileHeaderCryptorBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileHeaderCryptorBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2" start="3" end="17" sourcefile="FileHeaderCryptorBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileHeaderCryptorBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2" name="setupIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2" sourcefile="FileHeaderCryptorBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileHeaderCryptorBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2" start="3" end="17" sourcefile="FileHeaderCryptorBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileHeaderCryptorBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2" name="setupTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2" sourcefile="FileHeaderCryptorBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileHeaderCryptorBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2" start="3" end="17" sourcefile="FileHeaderCryptorBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileHeaderCryptorBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2" name="tearInvocationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2" sourcefile="FileHeaderCryptorBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileHeaderCryptorBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2" start="3" end="17" sourcefile="FileHeaderCryptorBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileHeaderCryptorBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2" name="tearIterationMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2" sourcefile="FileHeaderCryptorBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileHeaderCryptorBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <BugInstance type="JMH_STATE_FINAL_FIELD" priority="2" rank="2" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2" start="3" end="17" sourcefile="FileHeaderCryptorBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileHeaderCryptorBenchmark_jmhType_B2.java"/>
-    </Class>
-    <Field classname="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2" name="tearTrialMutexUpdater" signature="Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;" isStatic="true">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2" sourcefile="FileHeaderCryptorBenchmark_jmhType_B2.java" sourcepath="org/cryptomator/cryptolib/v1/generated/FileHeaderCryptorBenchmark_jmhType_B2.java"/>
-    </Field>
-  </BugInstance>
-  <Errors errors="0" missingClasses="44">
+  <Errors errors="0" missingClasses="41">
+    <MissingClass>com.google.common.base.Preconditions</MissingClass>
     <MissingClass>com.google.common.io.BaseEncoding</MissingClass>
     <MissingClass>com.google.gson.Gson</MissingClass>
     <MissingClass>com.google.gson.GsonBuilder</MissingClass>
@@ -499,10 +265,6 @@
     <MissingClass>com.google.gson.JsonParser</MissingClass>
     <MissingClass>com.google.gson.JsonPrimitive</MissingClass>
     <MissingClass>com.google.gson.JsonSerializer</MissingClass>
-    <MissingClass>com.google.gson.stream.JsonReader</MissingClass>
-    <MissingClass>dagger.internal.Factory</MissingClass>
-    <MissingClass>dagger.internal.Preconditions</MissingClass>
-    <MissingClass>javax.inject.Provider</MissingClass>
     <MissingClass>org.cryptomator.siv.SivMode</MissingClass>
     <MissingClass>org.cryptomator.siv.UnauthenticCiphertextException</MissingClass>
     <MissingClass>org.hamcrest.CoreMatchers</MissingClass>
@@ -536,22 +298,21 @@
     <MissingClass>org.slf4j.Logger</MissingClass>
     <MissingClass>org.slf4j.LoggerFactory</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Sun, 19 Nov 2017 20:56:57 +0100" total_classes="129" referenced_classes="308" total_bugs="70" total_size="7865" num_packages="5" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="18.52" clock_seconds="5.62" peak_mbytes="342.06" alloc_mbytes="3641.00" gc_seconds="0.12" priority_2="70">
-    <PackageStats package="org.cryptomator.cryptolib" total_bugs="0" total_types="8" total_size="178">
-      <ClassStats class="org.cryptomator.cryptolib.CryptoLibComponent" sourceFile="CryptoLibComponent.java" interface="true" size="2" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.CryptoLibModule" sourceFile="CryptoLibModule.java" interface="false" size="3" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.Cryptors" sourceFile="Cryptors.java" interface="false" size="34" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.CryptorsTest" sourceFile="CryptorsTest.java" interface="false" size="78" bugs="0"/>
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 23:22:42 +0200" total_classes="114" referenced_classes="300" total_bugs="27" total_size="7726" num_packages="5" java_version="9.0.4" vm_version="9.0.4+11" cpu_seconds="21.00" clock_seconds="6.12" peak_mbytes="310.63" alloc_mbytes="4096.00" gc_seconds="0.12" priority_2="15" priority_1="12">
+    <PackageStats package="org.cryptomator.cryptolib" total_bugs="1" total_types="9" total_size="323" priority_1="1">
+      <ClassStats class="org.cryptomator.cryptolib.Cryptors" sourceFile="Cryptors.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="org.cryptomator.cryptolib.CryptorsTest" sourceFile="CryptorsTest.java" interface="false" size="86" bugs="1" priority_1="1"/>
       <ClassStats class="org.cryptomator.cryptolib.CryptorsTest$1" sourceFile="CryptorsTest.java" interface="false" size="7" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.DaggerCryptoLibComponent" sourceFile="DaggerCryptoLibComponent.java" interface="false" size="28" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.DaggerCryptoLibComponent$1" sourceFile="DaggerCryptoLibComponent.java" interface="false" size="1" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.DaggerCryptoLibComponent$Builder" sourceFile="DaggerCryptoLibComponent.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="org.cryptomator.cryptolib.DecryptingReadableByteChannel" sourceFile="DecryptingReadableByteChannel.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="org.cryptomator.cryptolib.DecryptingReadableByteChannelTest" sourceFile="DecryptingReadableByteChannelTest.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="org.cryptomator.cryptolib.DecryptingReadableByteChannelTest$1" sourceFile="DecryptingReadableByteChannelTest.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.cryptomator.cryptolib.EncryptingWritableByteChannel" sourceFile="EncryptingWritableByteChannel.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="org.cryptomator.cryptolib.EncryptingWritableByteChannelTest" sourceFile="EncryptingWritableByteChannelTest.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="org.cryptomator.cryptolib.EncryptingWritableByteChannelTest$1" sourceFile="EncryptingWritableByteChannelTest.java" interface="false" size="9" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.cryptomator.cryptolib.api" total_bugs="0" total_types="19" total_size="162">
+    <PackageStats package="org.cryptomator.cryptolib.api" total_bugs="2" total_types="17" total_size="152" priority_1="2">
       <ClassStats class="org.cryptomator.cryptolib.api.AuthenticationFailedException" sourceFile="AuthenticationFailedException.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.api.CryptoException" sourceFile="CryptoException.java" interface="false" size="10" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.api.CryptoLibVersion" sourceFile="CryptoLibVersion.java" interface="true" size="2" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.api.CryptoLibVersion$Version" sourceFile="CryptoLibVersion.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.api.Cryptor" sourceFile="Cryptor.java" interface="true" size="8" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.api.CryptorProvider" sourceFile="CryptorProvider.java" interface="true" size="4" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.api.FileContentCryptor" sourceFile="FileContentCryptor.java" interface="true" size="5" bugs="0"/>
@@ -559,16 +320,16 @@
       <ClassStats class="org.cryptomator.cryptolib.api.FileHeaderCryptor" sourceFile="FileHeaderCryptor.java" interface="true" size="5" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.api.FileNameCryptor" sourceFile="FileNameCryptor.java" interface="true" size="4" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.api.InvalidPassphraseException" sourceFile="InvalidPassphraseException.java" interface="false" size="3" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.api.KeyFile" sourceFile="KeyFile.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="org.cryptomator.cryptolib.api.KeyFile" sourceFile="KeyFile.java" interface="false" size="36" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.api.KeyFile$1" sourceFile="KeyFile.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.api.KeyFile$ByteArrayJsonAdapter" sourceFile="KeyFile.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.api.KeyFile$GenericKeyFile" sourceFile="KeyFile.java" interface="false" size="3" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.api.KeyFileTest" sourceFile="KeyFileTest.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="org.cryptomator.cryptolib.api.KeyFileTest" sourceFile="KeyFileTest.java" interface="false" size="27" bugs="2" priority_1="2"/>
       <ClassStats class="org.cryptomator.cryptolib.api.KeyFileTest$1" sourceFile="KeyFileTest.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.api.KeyFileTest$KeyFileImpl" sourceFile="KeyFileTest.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.api.UnsupportedVaultFormatException" sourceFile="UnsupportedVaultFormatException.java" interface="false" size="16" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.cryptomator.cryptolib.common" total_bugs="0" total_types="29" total_size="582">
+    <PackageStats package="org.cryptomator.cryptolib.common" total_bugs="0" total_types="25" total_size="582">
       <ClassStats class="org.cryptomator.cryptolib.common.AesKeyWrap" sourceFile="AesKeyWrap.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.common.AesKeyWrapTest" sourceFile="AesKeyWrapTest.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.common.ByteBuffers" sourceFile="ByteBuffers.java" interface="false" size="10" bugs="0"/>
@@ -585,7 +346,7 @@
       <ClassStats class="org.cryptomator.cryptolib.common.MessageDigestSupplier$1" sourceFile="MessageDigestSupplier.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.common.MessageDigestSupplier$Provider" sourceFile="MessageDigestSupplier.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.common.MessageDigestSupplierTest" sourceFile="MessageDigestSupplierTest.java" interface="false" size="16" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.common.ReseedingSecureRandom" sourceFile="ReseedingSecureRandom.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.cryptomator.cryptolib.common.ReseedingSecureRandom" sourceFile="ReseedingSecureRandom.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.common.ReseedingSecureRandom$ReseedingSecureRandomProvider" sourceFile="ReseedingSecureRandom.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.common.ReseedingSecureRandom$ReseedingSecureRandomSpi" sourceFile="ReseedingSecureRandom.java" interface="false" size="31" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.common.ReseedingSecureRandomTest" sourceFile="ReseedingSecureRandomTest.java" interface="false" size="20" bugs="0"/>
@@ -593,20 +354,16 @@
       <ClassStats class="org.cryptomator.cryptolib.common.Scrypt" sourceFile="Scrypt.java" interface="false" size="144" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.common.Scrypt$CascadingDestroyableSecretKey" sourceFile="Scrypt.java" interface="false" size="29" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.common.ScryptTest" sourceFile="ScryptTest.java" interface="false" size="16" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.common.SecureRandomModule" sourceFile="SecureRandomModule.java" interface="false" size="12" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.common.SecureRandomModule$FastSecureRandom" sourceFile="SecureRandomModule.java" interface="true" size="1" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.common.SecureRandomModule$NativeSecureRandom" sourceFile="SecureRandomModule.java" interface="true" size="1" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.common.SecureRandomModule_ProvideFastSecureRandomFactory" sourceFile="SecureRandomModule_ProvideFastSecureRandomFactory.java" interface="false" size="19" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.common.SecureRandomModule_ProvideNativeSecureRandomFactory" sourceFile="SecureRandomModule_ProvideNativeSecureRandomFactory.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.cryptomator.cryptolib.common.SeekableByteChannelMock" sourceFile="SeekableByteChannelMock.java" interface="false" size="45" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.cryptomator.cryptolib.v1" total_bugs="52" total_types="53" total_size="1440" priority_2="52">
+    <PackageStats package="org.cryptomator.cryptolib.v1" total_bugs="24" total_types="43" total_size="1166" priority_2="15" priority_1="9">
       <ClassStats class="org.cryptomator.cryptolib.v1.BenchmarkTest" sourceFile="BenchmarkTest.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.Constants" sourceFile="Constants.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.CryptorImpl" sourceFile="CryptorImpl.java" interface="false" size="76" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.CryptorImplTest" sourceFile="CryptorImplTest.java" interface="false" size="70" bugs="0"/>
+      <ClassStats class="org.cryptomator.cryptolib.v1.CryptorImplTest" sourceFile="CryptorImplTest.java" interface="false" size="71" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.CryptorImplTest$DestroyableSecretKey" sourceFile="CryptorImplTest.java" interface="true" size="1" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.CryptorProviderImpl" sourceFile="CryptorProviderImpl.java" interface="false" size="47" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" sourceFile="CryptorProviderImplTest.java" interface="false" size="57" bugs="0"/>
+      <ClassStats class="org.cryptomator.cryptolib.v1.CryptorProviderImpl" sourceFile="CryptorProviderImpl.java" interface="false" size="62" bugs="0"/>
+      <ClassStats class="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" sourceFile="CryptorProviderImplTest.java" interface="false" size="57" bugs="7" priority_1="7"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.CryptorProviderImplTest$1" sourceFile="CryptorProviderImplTest.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.CryptorProviderImplTest$10" sourceFile="CryptorProviderImplTest.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.CryptorProviderImplTest$11" sourceFile="CryptorProviderImplTest.java" interface="false" size="7" bugs="0"/>
@@ -619,103 +376,89 @@
       <ClassStats class="org.cryptomator.cryptolib.v1.CryptorProviderImplTest$7" sourceFile="CryptorProviderImplTest.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.CryptorProviderImplTest$8" sourceFile="CryptorProviderImplTest.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.CryptorProviderImplTest$9" sourceFile="CryptorProviderImplTest.java" interface="false" size="7" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.DecryptingReadableByteChannel" sourceFile="DecryptingReadableByteChannel.java" interface="false" size="56" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.DecryptingReadableByteChannelTest" sourceFile="DecryptingReadableByteChannelTest.java" interface="false" size="35" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.DecryptingReadableByteChannelTest$1" sourceFile="DecryptingReadableByteChannelTest.java" interface="false" size="9" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.EncryptingWritableByteChannel" sourceFile="EncryptingWritableByteChannel.java" interface="false" size="43" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.EncryptingWritableByteChannelTest" sourceFile="EncryptingWritableByteChannelTest.java" interface="false" size="41" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.EncryptingWritableByteChannelTest$1" sourceFile="EncryptingWritableByteChannelTest.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.FileContentCryptorImpl" sourceFile="FileContentCryptorImpl.java" interface="false" size="84" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" sourceFile="FileContentCryptorImplBenchmark.java" interface="false" size="36" bugs="14" priority_2="14"/>
+      <ClassStats class="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" sourceFile="FileContentCryptorImplBenchmark.java" interface="false" size="36" bugs="4" priority_2="4"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.FileContentCryptorImplTest" sourceFile="FileContentCryptorImplTest.java" interface="false" size="36" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.FileContentCryptorImplTest$Decryption" sourceFile="FileContentCryptorImplTest.java" interface="false" size="90" bugs="0"/>
+      <ClassStats class="org.cryptomator.cryptolib.v1.FileContentCryptorImplTest$Decryption" sourceFile="FileContentCryptorImplTest.java" interface="false" size="91" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.FileContentCryptorImplTest$Encryption" sourceFile="FileContentCryptorImplTest.java" interface="false" size="30" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" sourceFile="FileContentEncryptorBenchmark.java" interface="false" size="37" bugs="30" priority_2="30"/>
+      <ClassStats class="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark" sourceFile="FileContentEncryptorBenchmark.java" interface="false" size="38" bugs="9" priority_2="9"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark$1" sourceFile="FileContentEncryptorBenchmark.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.FileContentEncryptorBenchmark$NullSeekableByteChannel" sourceFile="FileContentEncryptorBenchmark.java" interface="false" size="24" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.FileContentEncryptorTest" sourceFile="FileContentEncryptorTest.java" interface="false" size="64" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" sourceFile="FileHeaderCryptorBenchmark.java" interface="false" size="24" bugs="8" priority_2="8"/>
+      <ClassStats class="org.cryptomator.cryptolib.v1.FileContentEncryptorTest" sourceFile="FileContentEncryptorTest.java" interface="false" size="65" bugs="0"/>
+      <ClassStats class="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" sourceFile="FileHeaderCryptorBenchmark.java" interface="false" size="24" bugs="2" priority_2="2"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.FileHeaderCryptorImpl" sourceFile="FileHeaderCryptorImpl.java" interface="false" size="81" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.FileHeaderCryptorImplTest" sourceFile="FileHeaderCryptorImplTest.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="org.cryptomator.cryptolib.v1.FileHeaderCryptorImplTest" sourceFile="FileHeaderCryptorImplTest.java" interface="false" size="39" bugs="1" priority_1="1"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.FileHeaderImpl" sourceFile="FileHeaderImpl.java" interface="false" size="35" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.FileHeaderImpl$1" sourceFile="FileHeaderImpl.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.FileHeaderImpl$Payload" sourceFile="FileHeaderImpl.java" interface="false" size="38" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.FileHeaderImplTest" sourceFile="FileHeaderImplTest.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.FileNameCryptorImpl" sourceFile="FileNameCryptorImpl.java" interface="false" size="30" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.FileNameCryptorImpl$1" sourceFile="FileNameCryptorImpl.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.FileNameCryptorImplTest" sourceFile="FileNameCryptorImplTest.java" interface="false" size="71" bugs="0"/>
+      <ClassStats class="org.cryptomator.cryptolib.v1.FileNameCryptorImplTest" sourceFile="FileNameCryptorImplTest.java" interface="false" size="71" bugs="1" priority_1="1"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.KeyFileImpl" sourceFile="KeyFileImpl.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.SecureRandomMock" sourceFile="SecureRandomMock.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.SecureRandomMock$1" sourceFile="SecureRandomMock.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.SecureRandomMock$2" sourceFile="SecureRandomMock.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.SecureRandomMock$ByteFiller" sourceFile="SecureRandomMock.java" interface="true" size="2" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.SeekableByteChannelMock" sourceFile="SeekableByteChannelMock.java" interface="false" size="45" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.Version1CryptorModule" sourceFile="Version1CryptorModule.java" interface="false" size="20" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.Version1CryptorModuleTest" sourceFile="Version1CryptorModuleTest.java" interface="false" size="16" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.Version1CryptorModule_ProvideCryptorProviderFactory" sourceFile="Version1CryptorModule_ProvideCryptorProviderFactory.java" interface="false" size="19" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.cryptomator.cryptolib.v1.generated" total_bugs="18" total_types="20" total_size="5503" priority_2="18">
+    <PackageStats package="org.cryptomator.cryptolib.v1.generated" total_bugs="0" total_types="20" total_size="5503">
       <ClassStats class="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_benchmarkAuthentication_jmhTest" sourceFile="FileContentCryptorImplBenchmark_benchmarkAuthentication_jmhTest.java" interface="false" size="493" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_benchmarkDecryption_jmhTest" sourceFile="FileContentCryptorImplBenchmark_benchmarkDecryption_jmhTest.java" interface="false" size="493" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_benchmarkEncryption_jmhTest" sourceFile="FileContentCryptorImplBenchmark_benchmarkEncryption_jmhTest.java" interface="false" size="493" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType" sourceFile="FileContentCryptorImplBenchmark_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B1" sourceFile="FileContentCryptorImplBenchmark_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2" sourceFile="FileContentCryptorImplBenchmark_jmhType_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B2" sourceFile="FileContentCryptorImplBenchmark_jmhType_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.generated.FileContentCryptorImplBenchmark_jmhType_B3" sourceFile="FileContentCryptorImplBenchmark_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_benchmark100MegabytesEncryption_jmhTest" sourceFile="FileContentEncryptorBenchmark_benchmark100MegabytesEncryption_jmhTest.java" interface="false" size="479" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_benchmark10MegabytesEncryption_jmhTest" sourceFile="FileContentEncryptorBenchmark_benchmark10MegabytesEncryption_jmhTest.java" interface="false" size="479" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_benchmark1MegabytesEncryption_jmhTest" sourceFile="FileContentEncryptorBenchmark_benchmark1MegabytesEncryption_jmhTest.java" interface="false" size="479" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType" sourceFile="FileContentEncryptorBenchmark_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B1" sourceFile="FileContentEncryptorBenchmark_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2" sourceFile="FileContentEncryptorBenchmark_jmhType_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B2" sourceFile="FileContentEncryptorBenchmark_jmhType_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.generated.FileContentEncryptorBenchmark_jmhType_B3" sourceFile="FileContentEncryptorBenchmark_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_benchmarkDecryption_jmhTest" sourceFile="FileHeaderCryptorBenchmark_benchmarkDecryption_jmhTest.java" interface="false" size="479" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_benchmarkEncryption_jmhTest" sourceFile="FileHeaderCryptorBenchmark_benchmarkEncryption_jmhTest.java" interface="false" size="479" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType" sourceFile="FileHeaderCryptorBenchmark_jmhType.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B1" sourceFile="FileHeaderCryptorBenchmark_jmhType_B1.java" interface="false" size="259" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2" sourceFile="FileHeaderCryptorBenchmark_jmhType_B2.java" interface="false" size="22" bugs="6" priority_2="6"/>
+      <ClassStats class="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B2" sourceFile="FileHeaderCryptorBenchmark_jmhType_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B3" sourceFile="FileHeaderCryptorBenchmark_jmhType_B3.java" interface="false" size="259" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="279" invocations="506" avgMicrosecondsPerInvocation="552" maxMicrosecondsPerInvocation="25398" standardDeviationMicrosecondsPerInvocation="1484"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="268" invocations="537" avgMicrosecondsPerInvocation="500" maxMicrosecondsPerInvocation="25752" standardDeviationMicrosecondsPerInvocation="1516"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="263" invocations="1070" avgMicrosecondsPerInvocation="246" maxMicrosecondsPerInvocation="17995" standardDeviationMicrosecondsPerInvocation="803"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="253" invocations="601" avgMicrosecondsPerInvocation="421" maxMicrosecondsPerInvocation="11628" standardDeviationMicrosecondsPerInvocation="942"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="243" invocations="526" avgMicrosecondsPerInvocation="463" maxMicrosecondsPerInvocation="9157" standardDeviationMicrosecondsPerInvocation="1059"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="206" invocations="585" avgMicrosecondsPerInvocation="353" maxMicrosecondsPerInvocation="11958" standardDeviationMicrosecondsPerInvocation="778"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="206" invocations="1074" avgMicrosecondsPerInvocation="192" maxMicrosecondsPerInvocation="3042" standardDeviationMicrosecondsPerInvocation="198"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="189" invocations="129" avgMicrosecondsPerInvocation="1465" maxMicrosecondsPerInvocation="57134" standardDeviationMicrosecondsPerInvocation="6624"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="170" invocations="308" avgMicrosecondsPerInvocation="552" maxMicrosecondsPerInvocation="10598" standardDeviationMicrosecondsPerInvocation="1154"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="146" invocations="1043" avgMicrosecondsPerInvocation="140" maxMicrosecondsPerInvocation="7080" standardDeviationMicrosecondsPerInvocation="297"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="136" invocations="537" avgMicrosecondsPerInvocation="253" maxMicrosecondsPerInvocation="12944" standardDeviationMicrosecondsPerInvocation="659"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="134" invocations="308" avgMicrosecondsPerInvocation="435" maxMicrosecondsPerInvocation="8758" standardDeviationMicrosecondsPerInvocation="876"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="128" invocations="494" avgMicrosecondsPerInvocation="259" maxMicrosecondsPerInvocation="7348" standardDeviationMicrosecondsPerInvocation="686"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.FixtureWithInvocationScopeDetector" totalMilliseconds="85" invocations="129" avgMicrosecondsPerInvocation="665" maxMicrosecondsPerInvocation="33040" standardDeviationMicrosecondsPerInvocation="3961"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="76" invocations="537" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="6618" standardDeviationMicrosecondsPerInvocation="445"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="72" invocations="396" avgMicrosecondsPerInvocation="183" maxMicrosecondsPerInvocation="19499" standardDeviationMicrosecondsPerInvocation="1201"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="64" invocations="563" avgMicrosecondsPerInvocation="115" maxMicrosecondsPerInvocation="27676" standardDeviationMicrosecondsPerInvocation="1170"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="60" invocations="308" avgMicrosecondsPerInvocation="197" maxMicrosecondsPerInvocation="3066" standardDeviationMicrosecondsPerInvocation="361"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="56" invocations="952" avgMicrosecondsPerInvocation="59" maxMicrosecondsPerInvocation="12387" standardDeviationMicrosecondsPerInvocation="411"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="56" invocations="129" avgMicrosecondsPerInvocation="436" maxMicrosecondsPerInvocation="5970" standardDeviationMicrosecondsPerInvocation="830"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="53" invocations="129" avgMicrosecondsPerInvocation="412" maxMicrosecondsPerInvocation="10100" standardDeviationMicrosecondsPerInvocation="1059"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="52" invocations="308" avgMicrosecondsPerInvocation="171" maxMicrosecondsPerInvocation="3129" standardDeviationMicrosecondsPerInvocation="368"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="49" invocations="129" avgMicrosecondsPerInvocation="382" maxMicrosecondsPerInvocation="7095" standardDeviationMicrosecondsPerInvocation="914"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="47" invocations="129" avgMicrosecondsPerInvocation="370" maxMicrosecondsPerInvocation="8514" standardDeviationMicrosecondsPerInvocation="1136"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="45" invocations="308" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="3258" standardDeviationMicrosecondsPerInvocation="308"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IntCast2LongAsInstant" totalMilliseconds="44" invocations="129" avgMicrosecondsPerInvocation="348" maxMicrosecondsPerInvocation="29071" standardDeviationMicrosecondsPerInvocation="2551"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="44" invocations="483" avgMicrosecondsPerInvocation="92" maxMicrosecondsPerInvocation="5171" standardDeviationMicrosecondsPerInvocation="293"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="41" invocations="506" avgMicrosecondsPerInvocation="82" maxMicrosecondsPerInvocation="10724" standardDeviationMicrosecondsPerInvocation="488"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="40" invocations="129" avgMicrosecondsPerInvocation="313" maxMicrosecondsPerInvocation="3658" standardDeviationMicrosecondsPerInvocation="685"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="40" invocations="308" avgMicrosecondsPerInvocation="130" maxMicrosecondsPerInvocation="7462" standardDeviationMicrosecondsPerInvocation="489"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="39" invocations="129" avgMicrosecondsPerInvocation="304" maxMicrosecondsPerInvocation="16299" standardDeviationMicrosecondsPerInvocation="2003"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="38" invocations="308" avgMicrosecondsPerInvocation="123" maxMicrosecondsPerInvocation="3420" standardDeviationMicrosecondsPerInvocation="296"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SynchronizeOnClassLiteralNotGetClass" totalMilliseconds="33" invocations="129" avgMicrosecondsPerInvocation="261" maxMicrosecondsPerInvocation="25726" standardDeviationMicrosecondsPerInvocation="2252"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="31" invocations="308" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="2094" standardDeviationMicrosecondsPerInvocation="234"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="31" invocations="563" avgMicrosecondsPerInvocation="56" maxMicrosecondsPerInvocation="3906" standardDeviationMicrosecondsPerInvocation="228"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="30" invocations="129" avgMicrosecondsPerInvocation="239" maxMicrosecondsPerInvocation="5908" standardDeviationMicrosecondsPerInvocation="640"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="27" invocations="129" avgMicrosecondsPerInvocation="214" maxMicrosecondsPerInvocation="2494" standardDeviationMicrosecondsPerInvocation="417"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="26" invocations="308" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="1335" standardDeviationMicrosecondsPerInvocation="162"/>
-      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="26" invocations="16791" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="981" standardDeviationMicrosecondsPerInvocation="9"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="444" invocations="1189" avgMicrosecondsPerInvocation="373" maxMicrosecondsPerInvocation="16814" standardDeviationMicrosecondsPerInvocation="823"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="298" invocations="475" avgMicrosecondsPerInvocation="628" maxMicrosecondsPerInvocation="31542" standardDeviationMicrosecondsPerInvocation="1720"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="289" invocations="563" avgMicrosecondsPerInvocation="513" maxMicrosecondsPerInvocation="22361" standardDeviationMicrosecondsPerInvocation="1391"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="248" invocations="503" avgMicrosecondsPerInvocation="493" maxMicrosecondsPerInvocation="12457" standardDeviationMicrosecondsPerInvocation="1099"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="241" invocations="495" avgMicrosecondsPerInvocation="488" maxMicrosecondsPerInvocation="7427" standardDeviationMicrosecondsPerInvocation="1033"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="229" invocations="547" avgMicrosecondsPerInvocation="419" maxMicrosecondsPerInvocation="9490" standardDeviationMicrosecondsPerInvocation="835"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="188" invocations="300" avgMicrosecondsPerInvocation="627" maxMicrosecondsPerInvocation="12335" standardDeviationMicrosecondsPerInvocation="1433"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="173" invocations="1115" avgMicrosecondsPerInvocation="155" maxMicrosecondsPerInvocation="3600" standardDeviationMicrosecondsPerInvocation="274"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="169" invocations="300" avgMicrosecondsPerInvocation="564" maxMicrosecondsPerInvocation="18194" standardDeviationMicrosecondsPerInvocation="1410"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="153" invocations="114" avgMicrosecondsPerInvocation="1348" maxMicrosecondsPerInvocation="70553" standardDeviationMicrosecondsPerInvocation="7648"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="143" invocations="527" avgMicrosecondsPerInvocation="271" maxMicrosecondsPerInvocation="13489" standardDeviationMicrosecondsPerInvocation="671"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="127" invocations="114" avgMicrosecondsPerInvocation="1115" maxMicrosecondsPerInvocation="37819" standardDeviationMicrosecondsPerInvocation="4832"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="125" invocations="463" avgMicrosecondsPerInvocation="271" maxMicrosecondsPerInvocation="4037" standardDeviationMicrosecondsPerInvocation="482"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="114" invocations="1194" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="3138" standardDeviationMicrosecondsPerInvocation="134"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="93" invocations="392" avgMicrosecondsPerInvocation="237" maxMicrosecondsPerInvocation="26084" standardDeviationMicrosecondsPerInvocation="1514"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="82" invocations="300" avgMicrosecondsPerInvocation="276" maxMicrosecondsPerInvocation="13250" standardDeviationMicrosecondsPerInvocation="908"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="82" invocations="503" avgMicrosecondsPerInvocation="163" maxMicrosecondsPerInvocation="3664" standardDeviationMicrosecondsPerInvocation="378"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="77" invocations="527" avgMicrosecondsPerInvocation="147" maxMicrosecondsPerInvocation="39192" standardDeviationMicrosecondsPerInvocation="1705"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="72" invocations="300" avgMicrosecondsPerInvocation="242" maxMicrosecondsPerInvocation="5911" standardDeviationMicrosecondsPerInvocation="591"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="72" invocations="300" avgMicrosecondsPerInvocation="241" maxMicrosecondsPerInvocation="25779" standardDeviationMicrosecondsPerInvocation="1592"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="62" invocations="300" avgMicrosecondsPerInvocation="207" maxMicrosecondsPerInvocation="10854" standardDeviationMicrosecondsPerInvocation="696"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="54" invocations="114" avgMicrosecondsPerInvocation="477" maxMicrosecondsPerInvocation="4735" standardDeviationMicrosecondsPerInvocation="852"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="53" invocations="114" avgMicrosecondsPerInvocation="464" maxMicrosecondsPerInvocation="5641" standardDeviationMicrosecondsPerInvocation="785"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="52" invocations="114" avgMicrosecondsPerInvocation="457" maxMicrosecondsPerInvocation="6611" standardDeviationMicrosecondsPerInvocation="916"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="51" invocations="1080" avgMicrosecondsPerInvocation="47" maxMicrosecondsPerInvocation="1652" standardDeviationMicrosecondsPerInvocation="94"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="46" invocations="114" avgMicrosecondsPerInvocation="410" maxMicrosecondsPerInvocation="5494" standardDeviationMicrosecondsPerInvocation="1048"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="45" invocations="300" avgMicrosecondsPerInvocation="150" maxMicrosecondsPerInvocation="3474" standardDeviationMicrosecondsPerInvocation="383"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="42" invocations="456" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="1235" standardDeviationMicrosecondsPerInvocation="169"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="40" invocations="527" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="13268" standardDeviationMicrosecondsPerInvocation="589"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="38" invocations="114" avgMicrosecondsPerInvocation="337" maxMicrosecondsPerInvocation="3132" standardDeviationMicrosecondsPerInvocation="650"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="36" invocations="300" avgMicrosecondsPerInvocation="122" maxMicrosecondsPerInvocation="10381" standardDeviationMicrosecondsPerInvocation="644"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="35" invocations="300" avgMicrosecondsPerInvocation="117" maxMicrosecondsPerInvocation="3034" standardDeviationMicrosecondsPerInvocation="307"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="32" invocations="300" avgMicrosecondsPerInvocation="108" maxMicrosecondsPerInvocation="2173" standardDeviationMicrosecondsPerInvocation="250"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="31" invocations="475" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="1414" standardDeviationMicrosecondsPerInvocation="127"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="30" invocations="114" avgMicrosecondsPerInvocation="266" maxMicrosecondsPerInvocation="11245" standardDeviationMicrosecondsPerInvocation="1503"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

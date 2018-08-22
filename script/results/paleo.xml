@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1534808414000" analysisTimestamp="1534808415751" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534808414000" analysisTimestamp="1534882478762" release="">
   <Project projectName="">
     <Jar>tmp/paleo</Jar>
   </Project>
@@ -13,14 +13,13 @@
     </Method>
     <SourceLine classname="ch.netzwerg.paleo.CategoryColumnBenchmarks" start="36" end="36" startBytecode="0" endBytecode="0" sourcefile="CategoryColumnBenchmarks.java" sourcepath="ch/netzwerg/paleo/CategoryColumnBenchmarks.java"/>
   </BugInstance>
-  <BugInstance type="JMH_IGNORED_METHOD_RETURN" priority="2" rank="2" abbrev="" category="JMH">
+  <BugInstance type="JMH_UNSINKED_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
     <Class classname="ch.netzwerg.paleo.CategoryColumnBenchmarks">
       <SourceLine classname="ch.netzwerg.paleo.CategoryColumnBenchmarks" start="29" end="42" sourcefile="CategoryColumnBenchmarks.java" sourcepath="ch/netzwerg/paleo/CategoryColumnBenchmarks.java"/>
     </Class>
     <Method classname="ch.netzwerg.paleo.CategoryColumnBenchmarks" name="buildCategoryColumn" signature="()V" isStatic="false">
       <SourceLine classname="ch.netzwerg.paleo.CategoryColumnBenchmarks" start="36" end="42" startBytecode="0" endBytecode="151" sourcefile="CategoryColumnBenchmarks.java" sourcepath="ch/netzwerg/paleo/CategoryColumnBenchmarks.java"/>
     </Method>
-    <SourceLine classname="ch.netzwerg.paleo.CategoryColumnBenchmarks" start="37" end="37" startBytecode="14" endBytecode="14" sourcefile="CategoryColumnBenchmarks.java" sourcepath="ch/netzwerg/paleo/CategoryColumnBenchmarks.java"/>
   </BugInstance>
   <Errors errors="0" missingClasses="27">
     <MissingClass>io.vavr.Tuple</MissingClass>
@@ -51,8 +50,8 @@
     <MissingClass>org.openjdk.jmh.runner.InfraControl</MissingClass>
     <MissingClass>org.openjdk.jmh.util.SampleBuffer</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Tue, 21 Aug 2018 01:40:14 +0200" total_classes="85" referenced_classes="220" total_bugs="2" total_size="2890" num_packages="5" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="14.36" clock_seconds="4.18" peak_mbytes="310.28" alloc_mbytes="3641.00" gc_seconds="0.08" priority_2="2">
-    <PackageStats package="ch.netzwerg.paleo" total_bugs="2" total_types="38" total_size="692" priority_2="2">
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 01:40:14 +0200" total_classes="85" referenced_classes="224" total_bugs="3" total_size="2890" num_packages="5" java_version="9.0.4" vm_version="9.0.4+11" cpu_seconds="17.80" clock_seconds="5.24" peak_mbytes="269.06" alloc_mbytes="4096.00" gc_seconds="0.09" priority_2="1" priority_1="2">
+    <PackageStats package="ch.netzwerg.paleo" total_bugs="3" total_types="38" total_size="692" priority_2="1" priority_1="2">
       <ClassStats class="ch.netzwerg.paleo.AbstractColumn" sourceFile="AbstractColumn.java" interface="false" size="24" bugs="0"/>
       <ClassStats class="ch.netzwerg.paleo.BooleanColumn" sourceFile="BooleanColumn.java" interface="false" size="33" bugs="0"/>
       <ClassStats class="ch.netzwerg.paleo.BooleanColumn$1" sourceFile="BooleanColumn.java" interface="false" size="1" bugs="0"/>
@@ -60,7 +59,7 @@
       <ClassStats class="ch.netzwerg.paleo.CategoryColumn" sourceFile="CategoryColumn.java" interface="false" size="35" bugs="0"/>
       <ClassStats class="ch.netzwerg.paleo.CategoryColumn$1" sourceFile="CategoryColumn.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="ch.netzwerg.paleo.CategoryColumn$Builder" sourceFile="CategoryColumn.java" interface="false" size="41" bugs="0"/>
-      <ClassStats class="ch.netzwerg.paleo.CategoryColumnBenchmarks" sourceFile="CategoryColumnBenchmarks.java" interface="false" size="15" bugs="2" priority_2="2"/>
+      <ClassStats class="ch.netzwerg.paleo.CategoryColumnBenchmarks" sourceFile="CategoryColumnBenchmarks.java" interface="false" size="15" bugs="3" priority_2="1" priority_1="2"/>
       <ClassStats class="ch.netzwerg.paleo.Column" sourceFile="Column.java" interface="true" size="4" bugs="0"/>
       <ClassStats class="ch.netzwerg.paleo.Column$Builder" sourceFile="Column.java" interface="true" size="5" bugs="0"/>
       <ClassStats class="ch.netzwerg.paleo.ColumnId" sourceFile="ColumnId.java" interface="true" size="3" bugs="0"/>
@@ -148,37 +147,36 @@
       <ClassStats class="org.gradle.wrapper.WrapperExecutor" sourceFile="WrapperExecutor.java" interface="false" size="71" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="360" invocations="1119" avgMicrosecondsPerInvocation="322" maxMicrosecondsPerInvocation="25872" standardDeviationMicrosecondsPerInvocation="1156"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="225" invocations="1122" avgMicrosecondsPerInvocation="201" maxMicrosecondsPerInvocation="1326" standardDeviationMicrosecondsPerInvocation="126"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="195" invocations="220" avgMicrosecondsPerInvocation="888" maxMicrosecondsPerInvocation="10976" standardDeviationMicrosecondsPerInvocation="1644"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="161" invocations="220" avgMicrosecondsPerInvocation="736" maxMicrosecondsPerInvocation="9808" standardDeviationMicrosecondsPerInvocation="1359"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="158" invocations="471" avgMicrosecondsPerInvocation="336" maxMicrosecondsPerInvocation="11957" standardDeviationMicrosecondsPerInvocation="912"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="157" invocations="974" avgMicrosecondsPerInvocation="161" maxMicrosecondsPerInvocation="7039" standardDeviationMicrosecondsPerInvocation="333"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="149" invocations="431" avgMicrosecondsPerInvocation="347" maxMicrosecondsPerInvocation="8420" standardDeviationMicrosecondsPerInvocation="765"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="148" invocations="478" avgMicrosecondsPerInvocation="311" maxMicrosecondsPerInvocation="12741" standardDeviationMicrosecondsPerInvocation="974"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="137" invocations="478" avgMicrosecondsPerInvocation="288" maxMicrosecondsPerInvocation="8715" standardDeviationMicrosecondsPerInvocation="898"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="136" invocations="456" avgMicrosecondsPerInvocation="299" maxMicrosecondsPerInvocation="7834" standardDeviationMicrosecondsPerInvocation="825"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="110" invocations="471" avgMicrosecondsPerInvocation="234" maxMicrosecondsPerInvocation="11380" standardDeviationMicrosecondsPerInvocation="632"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="86" invocations="399" avgMicrosecondsPerInvocation="217" maxMicrosecondsPerInvocation="6408" standardDeviationMicrosecondsPerInvocation="562"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="63" invocations="495" avgMicrosecondsPerInvocation="127" maxMicrosecondsPerInvocation="27504" standardDeviationMicrosecondsPerInvocation="1235"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="62" invocations="220" avgMicrosecondsPerInvocation="285" maxMicrosecondsPerInvocation="3049" standardDeviationMicrosecondsPerInvocation="516"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="57" invocations="220" avgMicrosecondsPerInvocation="262" maxMicrosecondsPerInvocation="5529" standardDeviationMicrosecondsPerInvocation="639"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="53" invocations="1030" avgMicrosecondsPerInvocation="51" maxMicrosecondsPerInvocation="2714" standardDeviationMicrosecondsPerInvocation="123"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="51" invocations="297" avgMicrosecondsPerInvocation="172" maxMicrosecondsPerInvocation="9864" standardDeviationMicrosecondsPerInvocation="626"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="50" invocations="220" avgMicrosecondsPerInvocation="229" maxMicrosecondsPerInvocation="3051" standardDeviationMicrosecondsPerInvocation="379"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="48" invocations="85" avgMicrosecondsPerInvocation="569" maxMicrosecondsPerInvocation="10064" standardDeviationMicrosecondsPerInvocation="1442"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="47" invocations="220" avgMicrosecondsPerInvocation="215" maxMicrosecondsPerInvocation="4206" standardDeviationMicrosecondsPerInvocation="456"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="40" invocations="220" avgMicrosecondsPerInvocation="185" maxMicrosecondsPerInvocation="9361" standardDeviationMicrosecondsPerInvocation="900"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="40" invocations="220" avgMicrosecondsPerInvocation="182" maxMicrosecondsPerInvocation="8608" standardDeviationMicrosecondsPerInvocation="631"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="39" invocations="471" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="3720" standardDeviationMicrosecondsPerInvocation="242"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="36" invocations="220" avgMicrosecondsPerInvocation="165" maxMicrosecondsPerInvocation="2892" standardDeviationMicrosecondsPerInvocation="341"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="33" invocations="85" avgMicrosecondsPerInvocation="398" maxMicrosecondsPerInvocation="22476" standardDeviationMicrosecondsPerInvocation="2418"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="30" invocations="220" avgMicrosecondsPerInvocation="136" maxMicrosecondsPerInvocation="4463" standardDeviationMicrosecondsPerInvocation="363"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="28" invocations="6696" avgMicrosecondsPerInvocation="4" maxMicrosecondsPerInvocation="1026" standardDeviationMicrosecondsPerInvocation="24"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="28" invocations="85" avgMicrosecondsPerInvocation="336" maxMicrosecondsPerInvocation="3305" standardDeviationMicrosecondsPerInvocation="524"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="28" invocations="220" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="4946" standardDeviationMicrosecondsPerInvocation="389"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="27" invocations="68" avgMicrosecondsPerInvocation="410" maxMicrosecondsPerInvocation="5933" standardDeviationMicrosecondsPerInvocation="880"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="25" invocations="85" avgMicrosecondsPerInvocation="296" maxMicrosecondsPerInvocation="2713" standardDeviationMicrosecondsPerInvocation="447"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="491" invocations="1227" avgMicrosecondsPerInvocation="400" maxMicrosecondsPerInvocation="23982" standardDeviationMicrosecondsPerInvocation="1064"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="240" invocations="224" avgMicrosecondsPerInvocation="1072" maxMicrosecondsPerInvocation="12753" standardDeviationMicrosecondsPerInvocation="1951"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="214" invocations="85" avgMicrosecondsPerInvocation="2529" maxMicrosecondsPerInvocation="113356" standardDeviationMicrosecondsPerInvocation="12872"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="199" invocations="986" avgMicrosecondsPerInvocation="201" maxMicrosecondsPerInvocation="25715" standardDeviationMicrosecondsPerInvocation="878"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="197" invocations="224" avgMicrosecondsPerInvocation="880" maxMicrosecondsPerInvocation="11774" standardDeviationMicrosecondsPerInvocation="1555"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="176" invocations="478" avgMicrosecondsPerInvocation="370" maxMicrosecondsPerInvocation="35438" standardDeviationMicrosecondsPerInvocation="1882"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="168" invocations="471" avgMicrosecondsPerInvocation="358" maxMicrosecondsPerInvocation="12643" standardDeviationMicrosecondsPerInvocation="1000"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="158" invocations="478" avgMicrosecondsPerInvocation="332" maxMicrosecondsPerInvocation="17976" standardDeviationMicrosecondsPerInvocation="1108"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="149" invocations="1231" avgMicrosecondsPerInvocation="121" maxMicrosecondsPerInvocation="8699" standardDeviationMicrosecondsPerInvocation="362"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="149" invocations="431" avgMicrosecondsPerInvocation="346" maxMicrosecondsPerInvocation="5566" standardDeviationMicrosecondsPerInvocation="750"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="140" invocations="456" avgMicrosecondsPerInvocation="308" maxMicrosecondsPerInvocation="8622" standardDeviationMicrosecondsPerInvocation="880"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="112" invocations="495" avgMicrosecondsPerInvocation="227" maxMicrosecondsPerInvocation="10382" standardDeviationMicrosecondsPerInvocation="552"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="85" invocations="399" avgMicrosecondsPerInvocation="213" maxMicrosecondsPerInvocation="5992" standardDeviationMicrosecondsPerInvocation="540"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="77" invocations="224" avgMicrosecondsPerInvocation="347" maxMicrosecondsPerInvocation="5467" standardDeviationMicrosecondsPerInvocation="654"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="74" invocations="495" avgMicrosecondsPerInvocation="151" maxMicrosecondsPerInvocation="36761" standardDeviationMicrosecondsPerInvocation="1652"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="70" invocations="224" avgMicrosecondsPerInvocation="313" maxMicrosecondsPerInvocation="8458" standardDeviationMicrosecondsPerInvocation="890"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="66" invocations="224" avgMicrosecondsPerInvocation="297" maxMicrosecondsPerInvocation="6423" standardDeviationMicrosecondsPerInvocation="633"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="65" invocations="1138" avgMicrosecondsPerInvocation="57" maxMicrosecondsPerInvocation="1503" standardDeviationMicrosecondsPerInvocation="114"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="65" invocations="224" avgMicrosecondsPerInvocation="291" maxMicrosecondsPerInvocation="5272" standardDeviationMicrosecondsPerInvocation="543"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="64" invocations="304" avgMicrosecondsPerInvocation="210" maxMicrosecondsPerInvocation="12545" standardDeviationMicrosecondsPerInvocation="783"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="55" invocations="224" avgMicrosecondsPerInvocation="247" maxMicrosecondsPerInvocation="14814" standardDeviationMicrosecondsPerInvocation="1247"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="49" invocations="224" avgMicrosecondsPerInvocation="221" maxMicrosecondsPerInvocation="2973" standardDeviationMicrosecondsPerInvocation="450"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="47" invocations="85" avgMicrosecondsPerInvocation="560" maxMicrosecondsPerInvocation="5567" standardDeviationMicrosecondsPerInvocation="1203"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="47" invocations="224" avgMicrosecondsPerInvocation="212" maxMicrosecondsPerInvocation="7377" standardDeviationMicrosecondsPerInvocation="585"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="47" invocations="471" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="8223" standardDeviationMicrosecondsPerInvocation="432"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="39" invocations="224" avgMicrosecondsPerInvocation="175" maxMicrosecondsPerInvocation="9436" standardDeviationMicrosecondsPerInvocation="674"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="37" invocations="224" avgMicrosecondsPerInvocation="166" maxMicrosecondsPerInvocation="7338" standardDeviationMicrosecondsPerInvocation="535"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="32" invocations="85" avgMicrosecondsPerInvocation="381" maxMicrosecondsPerInvocation="3450" standardDeviationMicrosecondsPerInvocation="553"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="31" invocations="85" avgMicrosecondsPerInvocation="365" maxMicrosecondsPerInvocation="3541" standardDeviationMicrosecondsPerInvocation="581"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="31" invocations="85" avgMicrosecondsPerInvocation="365" maxMicrosecondsPerInvocation="6536" standardDeviationMicrosecondsPerInvocation="814"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
