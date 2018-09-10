@@ -29,5 +29,13 @@ public class DeadStoreBenchmarkDetectorTest {
 		assertThat(bugCollection, containsExactly(bugTypeMatcher, 1));
 	}
 	
-	
+	@Test
+	public void testFalsePositives() throws Exception {
+		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.examples".replace('.', '/'),
+				"DeadCodeFalsePositives.class");
+		BugCollection bugCollection = spotbugs.performAnalysis(path);
+
+		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_DEAD_STORE_VARIABLE").build();
+		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
+	}
 }

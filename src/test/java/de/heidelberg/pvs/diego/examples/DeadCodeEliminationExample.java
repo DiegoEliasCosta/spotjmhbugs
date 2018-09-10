@@ -10,12 +10,9 @@ public class DeadCodeEliminationExample {
 	
 	private StringBuilder str;
 
-	
-
 	@Benchmark
 	public StringBuilder stringBuilderDead() {
 		StringBuilder str = new StringBuilder();
-		
 		if(str == this.str) {
 			return null;
 		}
@@ -43,5 +40,6 @@ public class DeadCodeEliminationExample {
 		this.str = str2.append("Another Blah");
 		return str2;
 	}
+	
 	
 }

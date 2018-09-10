@@ -44,6 +44,7 @@ public class UnsinkedVariableBenchmarkDetector extends AbstractJMHBenchmarkMetho
 		boolean sinkedByReturned;
 		boolean sinkedByComparison;
 		boolean sinkedByMethodCall;
+		boolean sinkByArrayCall;
 		
 		public VarStatus() {
 			super();
@@ -53,14 +54,14 @@ public class UnsinkedVariableBenchmarkDetector extends AbstractJMHBenchmarkMetho
 		public boolean isSinked() {
 			// Add here the dependency
 			return sinkedIntoBlackhole || sinkedIntoAField || sinkedByReturned || sinkedFromDependents
-					|| sinkedByMethodCall || sinkedByComparison;
+					|| sinkedByMethodCall || sinkedByComparison || sinkByArrayCall;
 		}
 
 		@Override
 		public String toString() {
 			String format = String.format(
-					"blackhole: %s | field: %s | return: %s | call: %s | comp: %s | dependent: %s", sinkedIntoBlackhole,
-					sinkedIntoAField, sinkedByReturned, sinkedByMethodCall, sinkedByComparison, sinkedFromDependents);
+					"blackhole: %s | field: %s | return: %s | call: %s | comp: %s | array: %s | dependent: %s", sinkedIntoBlackhole,
+					sinkedIntoAField, sinkedByReturned, sinkedByMethodCall, sinkedByComparison, sinkByArrayCall, sinkedFromDependents);
 			return format;
 
 		}
@@ -246,8 +247,28 @@ public class UnsinkedVariableBenchmarkDetector extends AbstractJMHBenchmarkMetho
 		case Const.IFNULL:
 			analyzeComparison(0);
 			break;
+			
+			
+		case Const.AALOAD:
+			analyzeArrayLoad();
+			break;
+		
 		}
 
+	}
+
+	private void analyzeArrayLoad() {
+		
+		Item stackItem = stack.getStackItem(1);
+		LocalVariable localVariable = varTable.getLocalVariable(stackItem.getRegisterNumber(), getPC());
+		
+		// Add dependency between Reference -> local var
+		if(monitoredVariables.containsKey(localVariable)) {
+			VarStatus varStatus = monitoredVariables.get(localVariable);
+			varStatus.sinkByArrayCall = true;
+		}
+		
+		
 	}
 
 	private void analyzeComparison(int index) {
@@ -292,6 +313,7 @@ public class UnsinkedVariableBenchmarkDetector extends AbstractJMHBenchmarkMetho
 
 		// Get the variable in stack
 		Item stackItem = stack.getStackItem(0);
+		
 		LocalVariable local = varTable.getLocalVariable(stackItem.getRegisterNumber(), getPC());
 
 		// Get the variable where it will be stored
@@ -303,7 +325,19 @@ public class UnsinkedVariableBenchmarkDetector extends AbstractJMHBenchmarkMetho
 			VarStatus varStatus = monitoredVariables.get(newLocal);
 			varStatus.addDependent(local);
 		}
+		
+		int fieldLoadedFromRegister = stackItem.getFieldLoadedFromRegister();
+		if(loadedFromAField(fieldLoadedFromRegister)) {
+			if (monitoredVariables.containsKey(newLocal)) {
+				VarStatus varStatus = monitoredVariables.get(newLocal);
+				varStatus.sinkedIntoAField = true;
+			}
+		}
 
+	}
+
+	private boolean loadedFromAField(int fieldLoadedFromRegister) {
+		return fieldLoadedFromRegister != -1;
 	}
 
 	private void analyzeMethodCall() {

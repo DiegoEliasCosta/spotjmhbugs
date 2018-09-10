@@ -17,7 +17,8 @@
   <Detector
     class="de.heidelberg.pvs.diego.detectors.IgnoredStaticMethodReturnDetector">
     <Details>
-      Detector of the JMH_IGNORED_STATIC_METHOD_RETURN bug pattern.
+      Detector of the JMH_IGNORED_STATIC_METHOD_RETURN and JMH_IGNORED_STATIC_PRIMITIVE_METHOD_RETURN
+       bug pattern.
     </Details>
   </Detector>
 
@@ -112,6 +113,17 @@ by a Blackhole to avoid	dead-code optimization.</p>
 	</BugPattern>
   
 <BugPattern type="JMH_IGNORED_STATIC_METHOD_RETURN">
+    <ShortDescription>Static method return not used or consumed by a Blackhole.</ShortDescription>
+    <LongDescription>Static method return not used or consumed in {1}</LongDescription>
+    <Details>
+<![CDATA[
+<p>Each static non-void method call should have its return either used in the benchmark or consumed 
+by a Blackhole to avoid dead-code optimization.</p>
+]]>
+    </Details>
+  </BugPattern>
+  
+  <BugPattern type="JMH_IGNORED_STATIC_PRIMITIVE_METHOD_RETURN">
     <ShortDescription>Static method return not used or consumed by a Blackhole.</ShortDescription>
     <LongDescription>Static method return not used or consumed in {1}</LongDescription>
     <Details>
