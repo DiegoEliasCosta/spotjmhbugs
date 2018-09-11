@@ -1,132 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1534878791000" analysisTimestamp="1534878793634" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534878791000" analysisTimestamp="1536619002689" release="">
   <Project projectName="">
     <Jar>tmp/Trident</Jar>
   </Project>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="io.netty.channel.epoll.Epoll">
-      <SourceLine classname="io.netty.channel.epoll.Epoll" start="29" end="93" sourcefile="Epoll.java" sourcepath="io/netty/channel/epoll/Epoll.java"/>
-    </Class>
-    <Method classname="io.netty.channel.epoll.Epoll" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="io.netty.channel.epoll.Epoll" start="29" end="60" startBytecode="0" endBytecode="68" sourcefile="Epoll.java" sourcepath="io/netty/channel/epoll/Epoll.java"/>
-    </Method>
-    <LocalVariable name="t" register="3" pc="55" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="io.netty.channel.epoll.Epoll" start="41" end="41" startBytecode="55" endBytecode="55" sourcefile="Epoll.java" sourcepath="io/netty/channel/epoll/Epoll.java"/>
-    <SourceLine classname="io.netty.channel.epoll.Epoll" start="48" end="48" startBytecode="67" endBytecode="67" sourcefile="Epoll.java" sourcepath="io/netty/channel/epoll/Epoll.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="io.netty.channel.epoll.EpollDomainSocketChannel$1">
-      <SourceLine classname="io.netty.channel.epoll.EpollDomainSocketChannel$1" start="148" end="148" sourcefile="EpollDomainSocketChannel.java" sourcepath="io/netty/channel/epoll/EpollDomainSocketChannel.java"/>
-    </Class>
-    <Method classname="io.netty.channel.epoll.EpollDomainSocketChannel$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="io.netty.channel.epoll.EpollDomainSocketChannel$1" start="148" end="148" startBytecode="0" endBytecode="18" sourcefile="EpollDomainSocketChannel.java" sourcepath="io/netty/channel/epoll/EpollDomainSocketChannel.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="io.netty.channel.epoll.EpollDomainSocketChannel$1" start="148" end="148" startBytecode="23" endBytecode="23" sourcefile="EpollDomainSocketChannel.java" sourcepath="io/netty/channel/epoll/EpollDomainSocketChannel.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="io.netty.channel.local.LocalChannel$6">
-      <SourceLine classname="io.netty.channel.local.LocalChannel$6" start="338" end="338" sourcefile="LocalChannel.java" sourcepath="io/netty/channel/local/LocalChannel.java"/>
-    </Class>
-    <Method classname="io.netty.channel.local.LocalChannel$6" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="io.netty.channel.local.LocalChannel$6" start="338" end="338" startBytecode="0" endBytecode="32" sourcefile="LocalChannel.java" sourcepath="io/netty/channel/local/LocalChannel.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="io.netty.channel.local.LocalChannel$6" start="338" end="338" startBytecode="23" endBytecode="23" sourcefile="LocalChannel.java" sourcepath="io/netty/channel/local/LocalChannel.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="io.netty.channel.pool.FixedChannelPool$6">
-      <SourceLine classname="io.netty.channel.pool.FixedChannelPool$6" start="164" end="164" sourcefile="FixedChannelPool.java" sourcepath="io/netty/channel/pool/FixedChannelPool.java"/>
-    </Class>
-    <Method classname="io.netty.channel.pool.FixedChannelPool$6" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="io.netty.channel.pool.FixedChannelPool$6" start="164" end="164" startBytecode="0" endBytecode="18" sourcefile="FixedChannelPool.java" sourcepath="io/netty/channel/pool/FixedChannelPool.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="io.netty.channel.pool.FixedChannelPool$6" start="164" end="164" startBytecode="23" endBytecode="23" sourcefile="FixedChannelPool.java" sourcepath="io/netty/channel/pool/FixedChannelPool.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="io.netty.handler.codec.AsciiHeadersEncoder$1">
-      <SourceLine classname="io.netty.handler.codec.AsciiHeadersEncoder$1" start="92" end="107" sourcefile="AsciiHeadersEncoder.java" sourcepath="io/netty/handler/codec/AsciiHeadersEncoder.java"/>
-    </Class>
-    <Method classname="io.netty.handler.codec.AsciiHeadersEncoder$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="io.netty.handler.codec.AsciiHeadersEncoder$1" start="107" end="92" startBytecode="0" endBytecode="36" sourcefile="AsciiHeadersEncoder.java" sourcepath="io/netty/handler/codec/AsciiHeadersEncoder.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="io.netty.handler.codec.AsciiHeadersEncoder$1" start="107" end="107" startBytecode="23" endBytecode="23" sourcefile="AsciiHeadersEncoder.java" sourcepath="io/netty/handler/codec/AsciiHeadersEncoder.java"/>
-    <SourceLine classname="io.netty.handler.codec.AsciiHeadersEncoder$1" start="92" end="92" startBytecode="62" endBytecode="62" sourcefile="AsciiHeadersEncoder.java" sourcepath="io/netty/handler/codec/AsciiHeadersEncoder.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="io.netty.handler.codec.compression.Bzip2Encoder$4">
-      <SourceLine classname="io.netty.handler.codec.compression.Bzip2Encoder$4" start="110" end="110" sourcefile="Bzip2Encoder.java" sourcepath="io/netty/handler/codec/compression/Bzip2Encoder.java"/>
-    </Class>
-    <Method classname="io.netty.handler.codec.compression.Bzip2Encoder$4" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="io.netty.handler.codec.compression.Bzip2Encoder$4" start="110" end="110" startBytecode="0" endBytecode="32" sourcefile="Bzip2Encoder.java" sourcepath="io/netty/handler/codec/compression/Bzip2Encoder.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="io.netty.handler.codec.compression.Bzip2Encoder$4" start="110" end="110" startBytecode="23" endBytecode="23" sourcefile="Bzip2Encoder.java" sourcepath="io/netty/handler/codec/compression/Bzip2Encoder.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="io.netty.handler.codec.compression.JdkZlibDecoder$1">
-      <SourceLine classname="io.netty.handler.codec.compression.JdkZlibDecoder$1" start="91" end="145" sourcefile="JdkZlibDecoder.java" sourcepath="io/netty/handler/codec/compression/JdkZlibDecoder.java"/>
-    </Class>
-    <Method classname="io.netty.handler.codec.compression.JdkZlibDecoder$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="io.netty.handler.codec.compression.JdkZlibDecoder$1" start="145" end="91" startBytecode="0" endBytecode="92" sourcefile="JdkZlibDecoder.java" sourcepath="io/netty/handler/codec/compression/JdkZlibDecoder.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="io.netty.handler.codec.compression.JdkZlibDecoder$1" start="145" end="145" startBytecode="23" endBytecode="23" sourcefile="JdkZlibDecoder.java" sourcepath="io/netty/handler/codec/compression/JdkZlibDecoder.java"/>
-    <SourceLine classname="io.netty.handler.codec.compression.JdkZlibDecoder$1" start="91" end="91" startBytecode="155" endBytecode="155" sourcefile="JdkZlibDecoder.java" sourcepath="io/netty/handler/codec/compression/JdkZlibDecoder.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="io.netty.util.HashedWheelTimer">
-      <SourceLine classname="io.netty.util.HashedWheelTimer" start="76" end="400" sourcefile="HashedWheelTimer.java" sourcepath="io/netty/util/HashedWheelTimer.java"/>
-    </Class>
-    <Method classname="io.netty.util.HashedWheelTimer" name="start" signature="()V" isStatic="false">
-      <SourceLine classname="io.netty.util.HashedWheelTimer" start="305" end="327" startBytecode="0" endBytecode="36" sourcefile="HashedWheelTimer.java" sourcepath="io/netty/util/HashedWheelTimer.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="98" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="io.netty.util.HashedWheelTimer" start="323" end="323" startBytecode="98" endBytecode="98" sourcefile="HashedWheelTimer.java" sourcepath="io/netty/util/HashedWheelTimer.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="io.netty.util.concurrent.NonStickyEventExecutorGroup$NonStickyOrderedEventExecutor">
-      <SourceLine classname="io.netty.util.concurrent.NonStickyEventExecutorGroup$NonStickyOrderedEventExecutor" start="217" end="329" sourcefile="NonStickyEventExecutorGroup.java" sourcepath="io/netty/util/concurrent/NonStickyEventExecutorGroup.java"/>
-    </Class>
-    <Method classname="io.netty.util.concurrent.NonStickyEventExecutorGroup$NonStickyOrderedEventExecutor" name="run" signature="()V" isStatic="false">
-      <SourceLine classname="io.netty.util.concurrent.NonStickyEventExecutorGroup$NonStickyOrderedEventExecutor" start="234" end="265" startBytecode="0" endBytecode="76" sourcefile="NonStickyEventExecutorGroup.java" sourcepath="io/netty/util/concurrent/NonStickyEventExecutorGroup.java"/>
-    </Method>
-    <LocalVariable name="ignore" register="2" pc="81" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="io.netty.util.concurrent.NonStickyEventExecutorGroup$NonStickyOrderedEventExecutor" start="253" end="253" startBytecode="80" endBytecode="80" sourcefile="NonStickyEventExecutorGroup.java" sourcepath="io/netty/util/concurrent/NonStickyEventExecutorGroup.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="io.netty.util.internal.Cleaner0">
-      <SourceLine classname="io.netty.util.internal.Cleaner0" start="32" end="96" sourcefile="Cleaner0.java" sourcepath="io/netty/util/internal/Cleaner0.java"/>
-    </Class>
-    <Method classname="io.netty.util.internal.Cleaner0" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="io.netty.util.internal.Cleaner0" start="32" end="74" startBytecode="0" endBytecode="84" sourcefile="Cleaner0.java" sourcepath="io/netty/util/internal/Cleaner0.java"/>
-    </Method>
-    <LocalVariable name="ignored" register="7" pc="97" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="io.netty.util.internal.Cleaner0" start="56" end="56" startBytecode="95" endBytecode="95" sourcefile="Cleaner0.java" sourcepath="io/netty/util/internal/Cleaner0.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="io.netty.util.internal.Cleaner0">
-      <SourceLine classname="io.netty.util.internal.Cleaner0" start="32" end="96" sourcefile="Cleaner0.java" sourcepath="io/netty/util/internal/Cleaner0.java"/>
-    </Class>
-    <Method classname="io.netty.util.internal.Cleaner0" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="io.netty.util.internal.Cleaner0" start="32" end="74" startBytecode="0" endBytecode="84" sourcefile="Cleaner0.java" sourcepath="io/netty/util/internal/Cleaner0.java"/>
-    </Method>
-    <LocalVariable name="t" register="6" pc="128" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="io.netty.util.internal.Cleaner0" start="60" end="60" startBytecode="126" endBytecode="126" sourcefile="Cleaner0.java" sourcepath="io/netty/util/internal/Cleaner0.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="io.netty.util.internal.logging.AbstractInternalLogger$1">
-      <SourceLine classname="io.netty.util.internal.logging.AbstractInternalLogger$1" start="53" end="53" sourcefile="AbstractInternalLogger.java" sourcepath="io/netty/util/internal/logging/AbstractInternalLogger.java"/>
-    </Class>
-    <Method classname="io.netty.util.internal.logging.AbstractInternalLogger$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="io.netty.util.internal.logging.AbstractInternalLogger$1" start="53" end="53" startBytecode="0" endBytecode="39" sourcefile="AbstractInternalLogger.java" sourcepath="io/netty/util/internal/logging/AbstractInternalLogger.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="24" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="io.netty.util.internal.logging.AbstractInternalLogger$1" start="53" end="53" startBytecode="23" endBytecode="23" sourcefile="AbstractInternalLogger.java" sourcepath="io/netty/util/internal/logging/AbstractInternalLogger.java"/>
-  </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="net.tridentsdk.server.BlockBenchmark">
       <SourceLine classname="net.tridentsdk.server.BlockBenchmark" start="212" end="274" sourcefile="BlockBenchmark.java" sourcepath="net/tridentsdk/server/BlockBenchmark.java"/>
@@ -187,26 +64,6 @@
     </Method>
     <SourceLine classname="net.tridentsdk.server.command.LoggerTest" start="108" end="108" startBytecode="0" endBytecode="0" sourcefile="LoggerTest.java" sourcepath="net/tridentsdk/server/command/LoggerTest.java"/>
   </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="net.tridentsdk.server.config.ConfigIo$1">
-      <SourceLine classname="net.tridentsdk.server.config.ConfigIo$1" start="101" end="101" sourcefile="ConfigIo.java" sourcepath="net/tridentsdk/server/config/ConfigIo.java"/>
-    </Class>
-    <Method classname="net.tridentsdk.server.config.ConfigIo$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="net.tridentsdk.server.config.ConfigIo$1" start="101" end="101" startBytecode="0" endBytecode="46" sourcefile="ConfigIo.java" sourcepath="net/tridentsdk/server/config/ConfigIo.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="net.tridentsdk.server.config.ConfigIo$1" start="101" end="101" startBytecode="23" endBytecode="23" sourcefile="ConfigIo.java" sourcepath="net/tridentsdk/server/config/ConfigIo.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="net.tridentsdk.server.net.EntityMetadata$1">
-      <SourceLine classname="net.tridentsdk.server.net.EntityMetadata$1" start="62" end="62" sourcefile="EntityMetadata.java" sourcepath="net/tridentsdk/server/net/EntityMetadata.java"/>
-    </Class>
-    <Method classname="net.tridentsdk.server.net.EntityMetadata$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="net.tridentsdk.server.net.EntityMetadata$1" start="62" end="62" startBytecode="0" endBytecode="95" sourcefile="EntityMetadata.java" sourcepath="net/tridentsdk/server/net/EntityMetadata.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="net.tridentsdk.server.net.EntityMetadata$1" start="62" end="62" startBytecode="23" endBytecode="23" sourcefile="EntityMetadata.java" sourcepath="net/tridentsdk/server/net/EntityMetadata.java"/>
-  </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="net.tridentsdk.server.packet.InstantiationTest">
       <SourceLine classname="net.tridentsdk.server.packet.InstantiationTest" start="33" end="67" sourcefile="InstantiationTest.java" sourcepath="net/tridentsdk/server/packet/InstantiationTest.java"/>
@@ -243,32 +100,12 @@
     </Method>
     <SourceLine classname="net.tridentsdk.server.packet.InstantiationTest" start="67" end="67" startBytecode="0" endBytecode="0" sourcefile="InstantiationTest.java" sourcepath="net/tridentsdk/server/packet/InstantiationTest.java"/>
   </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.jline.terminal.impl.AbstractTerminal$1">
-      <SourceLine classname="org.jline.terminal.impl.AbstractTerminal$1" start="71" end="71" sourcefile="AbstractTerminal.java" sourcepath="org/jline/terminal/impl/AbstractTerminal.java"/>
-    </Class>
-    <Method classname="org.jline.terminal.impl.AbstractTerminal$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="org.jline.terminal.impl.AbstractTerminal$1" start="71" end="71" startBytecode="0" endBytecode="25" sourcefile="AbstractTerminal.java" sourcepath="org/jline/terminal/impl/AbstractTerminal.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.jline.terminal.impl.AbstractTerminal$1" start="71" end="71" startBytecode="23" endBytecode="23" sourcefile="AbstractTerminal.java" sourcepath="org/jline/terminal/impl/AbstractTerminal.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.jline.terminal.impl.MouseSupport$1">
-      <SourceLine classname="org.jline.terminal.impl.MouseSupport$1" start="29" end="29" sourcefile="MouseSupport.java" sourcepath="org/jline/terminal/impl/MouseSupport.java"/>
-    </Class>
-    <Method classname="org.jline.terminal.impl.MouseSupport$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="org.jline.terminal.impl.MouseSupport$1" start="29" end="29" startBytecode="0" endBytecode="32" sourcefile="MouseSupport.java" sourcepath="org/jline/terminal/impl/MouseSupport.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.jline.terminal.impl.MouseSupport$1" start="29" end="29" startBytecode="23" endBytecode="23" sourcefile="MouseSupport.java" sourcepath="org/jline/terminal/impl/MouseSupport.java"/>
-  </BugInstance>
-  <Errors errors="7" missingClasses="50">
+  <Errors errors="7" missingClasses="63">
     <Error>
       <ErrorMessage>Exception analyzing net.tridentsdk.inventory.Item using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
       <Exception>java.lang.NullPointerException</Exception>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:111)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:57)</StackTrace>
       <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
@@ -286,8 +123,8 @@
     <Error>
       <ErrorMessage>Exception analyzing net.tridentsdk.plugin.channel.PluginChannel using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
       <Exception>java.lang.NullPointerException</Exception>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:111)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:57)</StackTrace>
       <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
@@ -305,8 +142,8 @@
     <Error>
       <ErrorMessage>Exception analyzing org.fusesource.jansi.internal.Kernel32$CONSOLE_SCREEN_BUFFER_INFO using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
       <Exception>java.lang.NullPointerException</Exception>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:111)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:57)</StackTrace>
       <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
@@ -324,8 +161,8 @@
     <Error>
       <ErrorMessage>Exception analyzing org.fusesource.jansi.internal.Kernel32$SMALL_RECT using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
       <Exception>java.lang.NullPointerException</Exception>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:111)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:57)</StackTrace>
       <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
@@ -343,8 +180,8 @@
     <Error>
       <ErrorMessage>Exception analyzing org.fusesource.jansi.internal.CLibrary$WinSize using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
       <Exception>java.lang.NullPointerException</Exception>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:111)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:57)</StackTrace>
       <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
@@ -362,8 +199,8 @@
     <Error>
       <ErrorMessage>Exception analyzing org.fusesource.jansi.internal.Kernel32$CHAR_INFO using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
       <Exception>java.lang.NullPointerException</Exception>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:111)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:57)</StackTrace>
       <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
@@ -381,8 +218,8 @@
     <Error>
       <ErrorMessage>Exception analyzing org.fusesource.jansi.internal.CLibrary$Termios using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
       <Exception>java.lang.NullPointerException</Exception>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:111)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:57)</StackTrace>
       <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
@@ -412,6 +249,19 @@
     <MissingClass>com.ning.compress.lzf.LZFEncoder</MissingClass>
     <MissingClass>com.ning.compress.lzf.util.ChunkDecoderFactory</MissingClass>
     <MissingClass>com.ning.compress.lzf.util.ChunkEncoderFactory</MissingClass>
+    <MissingClass>com.sun.jdi.Bootstrap</MissingClass>
+    <MissingClass>com.sun.jdi.ReferenceType</MissingClass>
+    <MissingClass>com.sun.jdi.VirtualMachine</MissingClass>
+    <MissingClass>com.sun.jdi.VirtualMachineManager</MissingClass>
+    <MissingClass>com.sun.jdi.connect.AttachingConnector</MissingClass>
+    <MissingClass>com.sun.jdi.connect.Connector</MissingClass>
+    <MissingClass>com.sun.jdi.connect.Connector$Argument</MissingClass>
+    <MissingClass>com.sun.jdi.event.Event</MissingClass>
+    <MissingClass>com.sun.jdi.event.EventIterator</MissingClass>
+    <MissingClass>com.sun.jdi.event.EventQueue</MissingClass>
+    <MissingClass>com.sun.jdi.event.EventSet</MissingClass>
+    <MissingClass>com.sun.jdi.request.EventRequestManager</MissingClass>
+    <MissingClass>com.sun.jdi.request.MethodEntryRequest</MissingClass>
     <MissingClass>lzma.sdk.lzma.Encoder</MissingClass>
     <MissingClass>net.jpountz.lz4.LZ4Compressor</MissingClass>
     <MissingClass>net.jpountz.lz4.LZ4Factory</MissingClass>
@@ -448,7 +298,7 @@
     <MissingClass>org.slf4j.Logger</MissingClass>
     <MissingClass>org.slf4j.LoggerFactory</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Tue, 21 Aug 2018 21:13:11 +0200" total_classes="2329" referenced_classes="3000" total_bugs="29" total_size="132170" num_packages="127" java_version="9.0.4" vm_version="9.0.4+11" cpu_seconds="156.75" clock_seconds="53.68" peak_mbytes="881.79" alloc_mbytes="4096.00" gc_seconds="1.48" priority_2="8" priority_1="21">
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 21:13:11 +0200" total_classes="2329" referenced_classes="2950" total_bugs="13" total_size="132170" num_packages="127" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="131.13" clock_seconds="44.01" peak_mbytes="1549.15" alloc_mbytes="3641.00" gc_seconds="1.31" priority_2="8" priority_1="5">
     <PackageStats package="com.esotericsoftware.reflectasm" total_bugs="0" total_types="5" total_size="764">
       <ClassStats class="com.esotericsoftware.reflectasm.AccessClassLoader" sourceFile="AccessClassLoader.java" interface="false" size="77" bugs="0"/>
       <ClassStats class="com.esotericsoftware.reflectasm.ConstructorAccess" sourceFile="ConstructorAccess.java" interface="false" size="98" bugs="0"/>
@@ -760,7 +610,7 @@
       <ClassStats class="io.netty.channel.embedded.EmbeddedEventLoop" sourceFile="EmbeddedEventLoop.java" interface="false" size="62" bugs="0"/>
       <ClassStats class="io.netty.channel.embedded.EmbeddedSocketAddress" sourceFile="EmbeddedSocketAddress.java" interface="false" size="6" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.netty.channel.epoll" total_bugs="2" total_types="58" total_size="3516" priority_1="2">
+    <PackageStats package="io.netty.channel.epoll" total_bugs="0" total_types="58" total_size="3516">
       <ClassStats class="io.netty.channel.epoll.AbstractEpollChannel" sourceFile="AbstractEpollChannel.java" interface="false" size="155" bugs="0"/>
       <ClassStats class="io.netty.channel.epoll.AbstractEpollChannel$1" sourceFile="AbstractEpollChannel.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe" sourceFile="AbstractEpollChannel.java" interface="false" size="88" bugs="0"/>
@@ -784,7 +634,7 @@
       <ClassStats class="io.netty.channel.epoll.AbstractEpollStreamChannel$SpliceInChannelTask" sourceFile="AbstractEpollStreamChannel.java" interface="false" size="42" bugs="0"/>
       <ClassStats class="io.netty.channel.epoll.AbstractEpollStreamChannel$SpliceInTask" sourceFile="AbstractEpollStreamChannel.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="io.netty.channel.epoll.AbstractEpollStreamChannel$SpliceOutTask" sourceFile="AbstractEpollStreamChannel.java" interface="false" size="27" bugs="0"/>
-      <ClassStats class="io.netty.channel.epoll.Epoll" sourceFile="Epoll.java" interface="false" size="32" bugs="1" priority_1="1"/>
+      <ClassStats class="io.netty.channel.epoll.Epoll" sourceFile="Epoll.java" interface="false" size="32" bugs="0"/>
       <ClassStats class="io.netty.channel.epoll.EpollChannelConfig" sourceFile="EpollChannelConfig.java" interface="false" size="83" bugs="0"/>
       <ClassStats class="io.netty.channel.epoll.EpollChannelConfig$1" sourceFile="EpollChannelConfig.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="io.netty.channel.epoll.EpollChannelOption" sourceFile="EpollChannelOption.java" interface="false" size="33" bugs="0"/>
@@ -792,7 +642,7 @@
       <ClassStats class="io.netty.channel.epoll.EpollDatagramChannel$EpollDatagramChannelUnsafe" sourceFile="EpollDatagramChannel.java" interface="false" size="78" bugs="0"/>
       <ClassStats class="io.netty.channel.epoll.EpollDatagramChannelConfig" sourceFile="EpollDatagramChannelConfig.java" interface="false" size="214" bugs="0"/>
       <ClassStats class="io.netty.channel.epoll.EpollDomainSocketChannel" sourceFile="EpollDomainSocketChannel.java" interface="false" size="63" bugs="0"/>
-      <ClassStats class="io.netty.channel.epoll.EpollDomainSocketChannel$1" sourceFile="EpollDomainSocketChannel.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="io.netty.channel.epoll.EpollDomainSocketChannel$1" sourceFile="EpollDomainSocketChannel.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="io.netty.channel.epoll.EpollDomainSocketChannel$EpollDomainUnsafe" sourceFile="EpollDomainSocketChannel.java" interface="false" size="40" bugs="0"/>
       <ClassStats class="io.netty.channel.epoll.EpollDomainSocketChannelConfig" sourceFile="EpollDomainSocketChannelConfig.java" interface="false" size="96" bugs="0"/>
       <ClassStats class="io.netty.channel.epoll.EpollEventArray" sourceFile="EpollEventArray.java" interface="false" size="33" bugs="0"/>
@@ -840,7 +690,7 @@
       <ClassStats class="io.netty.channel.group.DefaultChannelGroupFuture$DefaultEntry" sourceFile="DefaultChannelGroupFuture.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="io.netty.channel.group.VoidChannelGroupFuture" sourceFile="VoidChannelGroupFuture.java" interface="false" size="76" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.netty.channel.local" total_bugs="1" total_types="16" total_size="536" priority_1="1">
+    <PackageStats package="io.netty.channel.local" total_bugs="0" total_types="16" total_size="536">
       <ClassStats class="io.netty.channel.local.LocalAddress" sourceFile="LocalAddress.java" interface="false" size="40" bugs="0"/>
       <ClassStats class="io.netty.channel.local.LocalChannel" sourceFile="LocalChannel.java" interface="false" size="220" bugs="0"/>
       <ClassStats class="io.netty.channel.local.LocalChannel$1" sourceFile="LocalChannel.java" interface="false" size="13" bugs="0"/>
@@ -848,7 +698,7 @@
       <ClassStats class="io.netty.channel.local.LocalChannel$3" sourceFile="LocalChannel.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="io.netty.channel.local.LocalChannel$4" sourceFile="LocalChannel.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="io.netty.channel.local.LocalChannel$5" sourceFile="LocalChannel.java" interface="false" size="8" bugs="0"/>
-      <ClassStats class="io.netty.channel.local.LocalChannel$6" sourceFile="LocalChannel.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="io.netty.channel.local.LocalChannel$6" sourceFile="LocalChannel.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="io.netty.channel.local.LocalChannel$LocalUnsafe" sourceFile="LocalChannel.java" interface="false" size="35" bugs="0"/>
       <ClassStats class="io.netty.channel.local.LocalChannel$State" sourceFile="LocalChannel.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="io.netty.channel.local.LocalChannelRegistry" sourceFile="LocalChannelRegistry.java" interface="false" size="24" bugs="0"/>
@@ -896,7 +746,7 @@
       <ClassStats class="io.netty.channel.oio.OioByteStreamChannel$2" sourceFile="OioByteStreamChannel.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="io.netty.channel.oio.OioEventLoopGroup" sourceFile="OioEventLoopGroup.java" interface="false" size="13" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.netty.channel.pool" total_bugs="1" total_types="25" total_size="541" priority_1="1">
+    <PackageStats package="io.netty.channel.pool" total_bugs="0" total_types="25" total_size="541">
       <ClassStats class="io.netty.channel.pool.AbstractChannelPoolHandler" sourceFile="AbstractChannelPoolHandler.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="io.netty.channel.pool.AbstractChannelPoolMap" sourceFile="AbstractChannelPoolMap.java" interface="false" size="34" bugs="0"/>
       <ClassStats class="io.netty.channel.pool.ChannelHealthChecker" sourceFile="ChannelHealthChecker.java" interface="true" size="5" bugs="0"/>
@@ -910,7 +760,7 @@
       <ClassStats class="io.netty.channel.pool.FixedChannelPool$3" sourceFile="FixedChannelPool.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="io.netty.channel.pool.FixedChannelPool$4" sourceFile="FixedChannelPool.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="io.netty.channel.pool.FixedChannelPool$5" sourceFile="FixedChannelPool.java" interface="false" size="19" bugs="0"/>
-      <ClassStats class="io.netty.channel.pool.FixedChannelPool$6" sourceFile="FixedChannelPool.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="io.netty.channel.pool.FixedChannelPool$6" sourceFile="FixedChannelPool.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="io.netty.channel.pool.FixedChannelPool$AcquireListener" sourceFile="FixedChannelPool.java" interface="false" size="29" bugs="0"/>
       <ClassStats class="io.netty.channel.pool.FixedChannelPool$AcquireTask" sourceFile="FixedChannelPool.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="io.netty.channel.pool.FixedChannelPool$AcquireTimeoutAction" sourceFile="FixedChannelPool.java" interface="false" size="11" bugs="0"/>
@@ -985,9 +835,9 @@
       <ClassStats class="io.netty.channel.unix.Socket" sourceFile="Socket.java" interface="false" size="243" bugs="0"/>
       <ClassStats class="io.netty.channel.unix.UnixChannel" sourceFile="UnixChannel.java" interface="true" size="2" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.netty.handler.codec" total_bugs="1" total_types="65" total_size="3492" priority_1="1">
+    <PackageStats package="io.netty.handler.codec" total_bugs="0" total_types="65" total_size="3492">
       <ClassStats class="io.netty.handler.codec.AsciiHeadersEncoder" sourceFile="AsciiHeadersEncoder.java" interface="false" size="62" bugs="0"/>
-      <ClassStats class="io.netty.handler.codec.AsciiHeadersEncoder$1" sourceFile="AsciiHeadersEncoder.java" interface="false" size="6" bugs="1" priority_1="1"/>
+      <ClassStats class="io.netty.handler.codec.AsciiHeadersEncoder$1" sourceFile="AsciiHeadersEncoder.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="io.netty.handler.codec.AsciiHeadersEncoder$NewlineType" sourceFile="AsciiHeadersEncoder.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="io.netty.handler.codec.AsciiHeadersEncoder$SeparatorType" sourceFile="AsciiHeadersEncoder.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="io.netty.handler.codec.ByteToMessageCodec" sourceFile="ByteToMessageCodec.java" interface="false" size="53" bugs="0"/>
@@ -1062,7 +912,7 @@
       <ClassStats class="io.netty.handler.codec.bytes.ByteArrayDecoder" sourceFile="ByteArrayDecoder.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="io.netty.handler.codec.bytes.ByteArrayEncoder" sourceFile="ByteArrayEncoder.java" interface="false" size="8" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.netty.handler.codec.compression" total_bugs="2" total_types="80" total_size="4905" priority_1="2">
+    <PackageStats package="io.netty.handler.codec.compression" total_bugs="0" total_types="80" total_size="4905">
       <ClassStats class="io.netty.handler.codec.compression.ByteBufChecksum" sourceFile="ByteBufChecksum.java" interface="false" size="32" bugs="0"/>
       <ClassStats class="io.netty.handler.codec.compression.ByteBufChecksum$1" sourceFile="ByteBufChecksum.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="io.netty.handler.codec.compression.ByteBufChecksum$ReflectiveByteBufChecksum" sourceFile="ByteBufChecksum.java" interface="false" size="14" bugs="0"/>
@@ -1084,7 +934,7 @@
       <ClassStats class="io.netty.handler.codec.compression.Bzip2Encoder$1" sourceFile="Bzip2Encoder.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="io.netty.handler.codec.compression.Bzip2Encoder$2" sourceFile="Bzip2Encoder.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="io.netty.handler.codec.compression.Bzip2Encoder$3" sourceFile="Bzip2Encoder.java" interface="false" size="9" bugs="0"/>
-      <ClassStats class="io.netty.handler.codec.compression.Bzip2Encoder$4" sourceFile="Bzip2Encoder.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="io.netty.handler.codec.compression.Bzip2Encoder$4" sourceFile="Bzip2Encoder.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="io.netty.handler.codec.compression.Bzip2Encoder$State" sourceFile="Bzip2Encoder.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="io.netty.handler.codec.compression.Bzip2HuffmanAllocator" sourceFile="Bzip2HuffmanAllocator.java" interface="false" size="79" bugs="0"/>
       <ClassStats class="io.netty.handler.codec.compression.Bzip2HuffmanStageDecoder" sourceFile="Bzip2HuffmanStageDecoder.java" interface="false" size="83" bugs="0"/>
@@ -1108,7 +958,7 @@
       <ClassStats class="io.netty.handler.codec.compression.JZlibEncoder$2" sourceFile="JZlibEncoder.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="io.netty.handler.codec.compression.JZlibEncoder$3" sourceFile="JZlibEncoder.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="io.netty.handler.codec.compression.JdkZlibDecoder" sourceFile="JdkZlibDecoder.java" interface="false" size="205" bugs="0"/>
-      <ClassStats class="io.netty.handler.codec.compression.JdkZlibDecoder$1" sourceFile="JdkZlibDecoder.java" interface="false" size="6" bugs="1" priority_1="1"/>
+      <ClassStats class="io.netty.handler.codec.compression.JdkZlibDecoder$1" sourceFile="JdkZlibDecoder.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="io.netty.handler.codec.compression.JdkZlibDecoder$GzipState" sourceFile="JdkZlibDecoder.java" interface="false" size="23" bugs="0"/>
       <ClassStats class="io.netty.handler.codec.compression.JdkZlibEncoder" sourceFile="JdkZlibEncoder.java" interface="false" size="142" bugs="0"/>
       <ClassStats class="io.netty.handler.codec.compression.JdkZlibEncoder$1" sourceFile="JdkZlibEncoder.java" interface="false" size="10" bugs="0"/>
@@ -1222,7 +1072,7 @@
       <ClassStats class="io.netty.resolver.RoundRobinInetAddressResolver$2" sourceFile="RoundRobinInetAddressResolver.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="io.netty.resolver.SimpleNameResolver" sourceFile="SimpleNameResolver.java" interface="false" size="32" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.netty.util" total_bugs="1" total_types="80" total_size="3308" priority_1="1">
+    <PackageStats package="io.netty.util" total_bugs="0" total_types="80" total_size="3308">
       <ClassStats class="io.netty.util.AbstractConstant" sourceFile="AbstractConstant.java" interface="false" size="37" bugs="0"/>
       <ClassStats class="io.netty.util.AbstractReferenceCounted" sourceFile="AbstractReferenceCounted.java" interface="false" size="43" bugs="0"/>
       <ClassStats class="io.netty.util.AsciiString" sourceFile="AsciiString.java" interface="false" size="729" bugs="0"/>
@@ -1257,7 +1107,7 @@
       <ClassStats class="io.netty.util.DomainNameMappingBuilder" sourceFile="DomainNameMappingBuilder.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="io.netty.util.DomainNameMappingBuilder$1" sourceFile="DomainNameMappingBuilder.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="io.netty.util.DomainNameMappingBuilder$ImmutableDomainNameMapping" sourceFile="DomainNameMappingBuilder.java" interface="false" size="64" bugs="0"/>
-      <ClassStats class="io.netty.util.HashedWheelTimer" sourceFile="HashedWheelTimer.java" interface="false" size="149" bugs="1" priority_1="1"/>
+      <ClassStats class="io.netty.util.HashedWheelTimer" sourceFile="HashedWheelTimer.java" interface="false" size="149" bugs="0"/>
       <ClassStats class="io.netty.util.HashedWheelTimer$1" sourceFile="HashedWheelTimer.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="io.netty.util.HashedWheelTimer$HashedWheelBucket" sourceFile="HashedWheelTimer.java" interface="false" size="72" bugs="0"/>
       <ClassStats class="io.netty.util.HashedWheelTimer$HashedWheelTimeout" sourceFile="HashedWheelTimer.java" interface="false" size="70" bugs="0"/>
@@ -1401,7 +1251,7 @@
       <ClassStats class="io.netty.util.collection.ShortObjectMap" sourceFile="ShortObjectMap.java" interface="true" size="6" bugs="0"/>
       <ClassStats class="io.netty.util.collection.ShortObjectMap$PrimitiveEntry" sourceFile="ShortObjectMap.java" interface="true" size="4" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.netty.util.concurrent" total_bugs="1" total_types="77" total_size="2694" priority_1="1">
+    <PackageStats package="io.netty.util.concurrent" total_bugs="0" total_types="77" total_size="2694">
       <ClassStats class="io.netty.util.concurrent.AbstractEventExecutor" sourceFile="AbstractEventExecutor.java" interface="false" size="70" bugs="0"/>
       <ClassStats class="io.netty.util.concurrent.AbstractEventExecutorGroup" sourceFile="AbstractEventExecutorGroup.java" interface="false" size="41" bugs="0"/>
       <ClassStats class="io.netty.util.concurrent.AbstractFuture" sourceFile="AbstractFuture.java" interface="false" size="20" bugs="0"/>
@@ -1449,7 +1299,7 @@
       <ClassStats class="io.netty.util.concurrent.MultithreadEventExecutorGroup$1" sourceFile="MultithreadEventExecutorGroup.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="io.netty.util.concurrent.NonStickyEventExecutorGroup" sourceFile="NonStickyEventExecutorGroup.java" interface="false" size="80" bugs="0"/>
       <ClassStats class="io.netty.util.concurrent.NonStickyEventExecutorGroup$1" sourceFile="NonStickyEventExecutorGroup.java" interface="false" size="13" bugs="0"/>
-      <ClassStats class="io.netty.util.concurrent.NonStickyEventExecutorGroup$NonStickyOrderedEventExecutor" sourceFile="NonStickyEventExecutorGroup.java" interface="false" size="63" bugs="1" priority_1="1"/>
+      <ClassStats class="io.netty.util.concurrent.NonStickyEventExecutorGroup$NonStickyOrderedEventExecutor" sourceFile="NonStickyEventExecutorGroup.java" interface="false" size="63" bugs="0"/>
       <ClassStats class="io.netty.util.concurrent.OrderedEventExecutor" sourceFile="OrderedEventExecutor.java" interface="true" size="1" bugs="0"/>
       <ClassStats class="io.netty.util.concurrent.ProgressiveFuture" sourceFile="ProgressiveFuture.java" interface="true" size="9" bugs="0"/>
       <ClassStats class="io.netty.util.concurrent.ProgressivePromise" sourceFile="ProgressivePromise.java" interface="true" size="13" bugs="0"/>
@@ -1480,9 +1330,9 @@
       <ClassStats class="io.netty.util.concurrent.UnorderedThreadPoolEventExecutor" sourceFile="UnorderedThreadPoolEventExecutor.java" interface="false" size="82" bugs="0"/>
       <ClassStats class="io.netty.util.concurrent.UnorderedThreadPoolEventExecutor$RunnableScheduledFutureTask" sourceFile="UnorderedThreadPoolEventExecutor.java" interface="false" size="28" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.netty.util.internal" total_bugs="2" total_types="69" total_size="2835" priority_1="2">
+    <PackageStats package="io.netty.util.internal" total_bugs="0" total_types="69" total_size="2835">
       <ClassStats class="io.netty.util.internal.AppendableCharSequence" sourceFile="AppendableCharSequence.java" interface="false" size="84" bugs="0"/>
-      <ClassStats class="io.netty.util.internal.Cleaner0" sourceFile="Cleaner0.java" interface="false" size="50" bugs="2" priority_1="2"/>
+      <ClassStats class="io.netty.util.internal.Cleaner0" sourceFile="Cleaner0.java" interface="false" size="50" bugs="0"/>
       <ClassStats class="io.netty.util.internal.ConcurrentSet" sourceFile="ConcurrentSet.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="io.netty.util.internal.ConstantTimeUtils" sourceFile="ConstantTimeUtils.java" interface="false" size="33" bugs="0"/>
       <ClassStats class="io.netty.util.internal.EmptyArrays" sourceFile="EmptyArrays.java" interface="false" size="26" bugs="0"/>
@@ -1644,9 +1494,9 @@
       <ClassStats class="io.netty.util.internal.chmv8.Striped64$1" sourceFile="Striped64.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="io.netty.util.internal.chmv8.Striped64$Cell" sourceFile="Striped64.java" interface="false" size="30" bugs="0"/>
     </PackageStats>
-    <PackageStats package="io.netty.util.internal.logging" total_bugs="1" total_types="17" total_size="1082" priority_1="1">
+    <PackageStats package="io.netty.util.internal.logging" total_bugs="0" total_types="17" total_size="1082">
       <ClassStats class="io.netty.util.internal.logging.AbstractInternalLogger" sourceFile="AbstractInternalLogger.java" interface="false" size="123" bugs="0"/>
-      <ClassStats class="io.netty.util.internal.logging.AbstractInternalLogger$1" sourceFile="AbstractInternalLogger.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="io.netty.util.internal.logging.AbstractInternalLogger$1" sourceFile="AbstractInternalLogger.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="io.netty.util.internal.logging.CommonsLogger" sourceFile="CommonsLogger.java" interface="false" size="124" bugs="0"/>
       <ClassStats class="io.netty.util.internal.logging.CommonsLoggerFactory" sourceFile="CommonsLoggerFactory.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="io.netty.util.internal.logging.FormattingTuple" sourceFile="FormattingTuple.java" interface="false" size="31" bugs="0"/>
@@ -2413,10 +2263,10 @@
       <ClassStats class="net.tridentsdk.server.concurrent.TridentScheduler" sourceFile="TridentScheduler.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="net.tridentsdk.server.concurrent.TridentTick" sourceFile="TridentTick.java" interface="false" size="31" bugs="0"/>
     </PackageStats>
-    <PackageStats package="net.tridentsdk.server.config" total_bugs="1" total_types="9" total_size="491" priority_1="1">
+    <PackageStats package="net.tridentsdk.server.config" total_bugs="0" total_types="9" total_size="491">
       <ClassStats class="net.tridentsdk.server.config.ConcurrentLinkedStringMap" sourceFile="ConcurrentLinkedStringMap.java" interface="false" size="51" bugs="0"/>
       <ClassStats class="net.tridentsdk.server.config.ConfigIo" sourceFile="ConfigIo.java" interface="false" size="51" bugs="0"/>
-      <ClassStats class="net.tridentsdk.server.config.ConfigIo$1" sourceFile="ConfigIo.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="net.tridentsdk.server.config.ConfigIo$1" sourceFile="ConfigIo.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="net.tridentsdk.server.config.OpsList" sourceFile="OpsList.java" interface="false" size="45" bugs="0"/>
       <ClassStats class="net.tridentsdk.server.config.OpsList$1" sourceFile="OpsList.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="net.tridentsdk.server.config.ServerConfig" sourceFile="ServerConfig.java" interface="false" size="46" bugs="0"/>
@@ -2478,9 +2328,9 @@
       <ClassStats class="net.tridentsdk.server.logger.NoDebugLogger" sourceFile="DebugLogger.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="net.tridentsdk.server.logger.PipelinedLogger" sourceFile="PipelinedLogger.java" interface="false" size="37" bugs="0"/>
     </PackageStats>
-    <PackageStats package="net.tridentsdk.server.net" total_bugs="1" total_types="29" total_size="808" priority_1="1">
+    <PackageStats package="net.tridentsdk.server.net" total_bugs="0" total_types="29" total_size="808">
       <ClassStats class="net.tridentsdk.server.net.EntityMetadata" sourceFile="EntityMetadata.java" interface="false" size="111" bugs="0"/>
-      <ClassStats class="net.tridentsdk.server.net.EntityMetadata$1" sourceFile="EntityMetadata.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="net.tridentsdk.server.net.EntityMetadata$1" sourceFile="EntityMetadata.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="net.tridentsdk.server.net.EntityMetadata$EntityMetadataItem" sourceFile="EntityMetadata.java" interface="false" size="58" bugs="0"/>
       <ClassStats class="net.tridentsdk.server.net.EntityMetadata$EntityMetadataType" sourceFile="EntityMetadata.java" interface="false" size="40" bugs="0"/>
       <ClassStats class="net.tridentsdk.server.net.EntityMetadata$EntityMetadataType$1" sourceFile="EntityMetadata.java" interface="false" size="5" bugs="0"/>
@@ -2951,10 +2801,10 @@
       <ClassStats class="org.jline.terminal.Terminal$SignalHandler" sourceFile="Terminal.java" interface="true" size="7" bugs="0"/>
       <ClassStats class="org.jline.terminal.TerminalBuilder" sourceFile="TerminalBuilder.java" interface="false" size="180" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.jline.terminal.impl" total_bugs="2" total_types="20" total_size="1032" priority_1="2">
+    <PackageStats package="org.jline.terminal.impl" total_bugs="0" total_types="20" total_size="1032">
       <ClassStats class="org.jline.terminal.impl.AbstractPosixTerminal" sourceFile="AbstractPosixTerminal.java" interface="false" size="40" bugs="0"/>
       <ClassStats class="org.jline.terminal.impl.AbstractTerminal" sourceFile="AbstractTerminal.java" interface="false" size="110" bugs="0"/>
-      <ClassStats class="org.jline.terminal.impl.AbstractTerminal$1" sourceFile="AbstractTerminal.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="org.jline.terminal.impl.AbstractTerminal$1" sourceFile="AbstractTerminal.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.jline.terminal.impl.AbstractWindowsTerminal" sourceFile="AbstractWindowsTerminal.java" interface="false" size="213" bugs="0"/>
       <ClassStats class="org.jline.terminal.impl.AbstractWindowsTerminal$1" sourceFile="AbstractWindowsTerminal.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.jline.terminal.impl.CursorSupport" sourceFile="CursorSupport.java" interface="false" size="55" bugs="0"/>
@@ -2966,7 +2816,7 @@
       <ClassStats class="org.jline.terminal.impl.LineDisciplineTerminal$1" sourceFile="LineDisciplineTerminal.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.jline.terminal.impl.LineDisciplineTerminal$FilteringOutputStream" sourceFile="LineDisciplineTerminal.java" interface="false" size="26" bugs="0"/>
       <ClassStats class="org.jline.terminal.impl.MouseSupport" sourceFile="MouseSupport.java" interface="false" size="59" bugs="0"/>
-      <ClassStats class="org.jline.terminal.impl.MouseSupport$1" sourceFile="MouseSupport.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="org.jline.terminal.impl.MouseSupport$1" sourceFile="MouseSupport.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.jline.terminal.impl.NativeSignalHandler" sourceFile="NativeSignalHandler.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.jline.terminal.impl.PosixPtyTerminal" sourceFile="PosixPtyTerminal.java" interface="false" size="36" bugs="0"/>
       <ClassStats class="org.jline.terminal.impl.PosixPtyTerminal$InputStreamWrapper" sourceFile="PosixPtyTerminal.java" interface="false" size="16" bugs="0"/>
@@ -3033,55 +2883,52 @@
       <ClassStats class="org.objectweb.asm.signature.SignatureWriter" sourceFile="&lt;Unknown&gt;" interface="false" size="68" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="3296" invocations="19333" avgMicrosecondsPerInvocation="170" maxMicrosecondsPerInvocation="74388" standardDeviationMicrosecondsPerInvocation="821"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="3251" invocations="20671" avgMicrosecondsPerInvocation="157" maxMicrosecondsPerInvocation="71746" standardDeviationMicrosecondsPerInvocation="929"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="2928" invocations="21853" avgMicrosecondsPerInvocation="134" maxMicrosecondsPerInvocation="137027" standardDeviationMicrosecondsPerInvocation="1167"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="2801" invocations="19892" avgMicrosecondsPerInvocation="140" maxMicrosecondsPerInvocation="53259" standardDeviationMicrosecondsPerInvocation="787"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="2347" invocations="21268" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="49597" standardDeviationMicrosecondsPerInvocation="452"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="2159" invocations="2329" avgMicrosecondsPerInvocation="927" maxMicrosecondsPerInvocation="103217" standardDeviationMicrosecondsPerInvocation="4084"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1771" invocations="22991" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="55525" standardDeviationMicrosecondsPerInvocation="483"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="1687" invocations="17696" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="47938" standardDeviationMicrosecondsPerInvocation="532"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1198" invocations="23965" avgMicrosecondsPerInvocation="50" maxMicrosecondsPerInvocation="17295" standardDeviationMicrosecondsPerInvocation="194"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1148" invocations="4677" avgMicrosecondsPerInvocation="245" maxMicrosecondsPerInvocation="41951" standardDeviationMicrosecondsPerInvocation="1255"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="983" invocations="3000" avgMicrosecondsPerInvocation="327" maxMicrosecondsPerInvocation="20034" standardDeviationMicrosecondsPerInvocation="817"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="899" invocations="3000" avgMicrosecondsPerInvocation="299" maxMicrosecondsPerInvocation="24108" standardDeviationMicrosecondsPerInvocation="811"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="712" invocations="20671" avgMicrosecondsPerInvocation="34" maxMicrosecondsPerInvocation="8454" standardDeviationMicrosecondsPerInvocation="126"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="711" invocations="2329" avgMicrosecondsPerInvocation="305" maxMicrosecondsPerInvocation="21427" standardDeviationMicrosecondsPerInvocation="854"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="624" invocations="2329" avgMicrosecondsPerInvocation="268" maxMicrosecondsPerInvocation="17171" standardDeviationMicrosecondsPerInvocation="674"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="556" invocations="503119" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="18691" standardDeviationMicrosecondsPerInvocation="28"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="552" invocations="2329" avgMicrosecondsPerInvocation="237" maxMicrosecondsPerInvocation="19895" standardDeviationMicrosecondsPerInvocation="661"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="483" invocations="22991" avgMicrosecondsPerInvocation="21" maxMicrosecondsPerInvocation="31259" standardDeviationMicrosecondsPerInvocation="221"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector" totalMilliseconds="478" invocations="2329" avgMicrosecondsPerInvocation="205" maxMicrosecondsPerInvocation="23876" standardDeviationMicrosecondsPerInvocation="751"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="445" invocations="18665" avgMicrosecondsPerInvocation="23" maxMicrosecondsPerInvocation="19105" standardDeviationMicrosecondsPerInvocation="160"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="440" invocations="2329" avgMicrosecondsPerInvocation="189" maxMicrosecondsPerInvocation="31772" standardDeviationMicrosecondsPerInvocation="1037"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="422" invocations="19333" avgMicrosecondsPerInvocation="21" maxMicrosecondsPerInvocation="21945" standardDeviationMicrosecondsPerInvocation="190"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="416" invocations="2329" avgMicrosecondsPerInvocation="178" maxMicrosecondsPerInvocation="13158" standardDeviationMicrosecondsPerInvocation="456"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="387" invocations="2329" avgMicrosecondsPerInvocation="166" maxMicrosecondsPerInvocation="9782" standardDeviationMicrosecondsPerInvocation="484"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="383" invocations="2329" avgMicrosecondsPerInvocation="164" maxMicrosecondsPerInvocation="34805" standardDeviationMicrosecondsPerInvocation="1011"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="373" invocations="2329" avgMicrosecondsPerInvocation="160" maxMicrosecondsPerInvocation="36173" standardDeviationMicrosecondsPerInvocation="822"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="368" invocations="2329" avgMicrosecondsPerInvocation="158" maxMicrosecondsPerInvocation="36583" standardDeviationMicrosecondsPerInvocation="945"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="365" invocations="2329" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="11066" standardDeviationMicrosecondsPerInvocation="403"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="363" invocations="2329" avgMicrosecondsPerInvocation="155" maxMicrosecondsPerInvocation="73392" standardDeviationMicrosecondsPerInvocation="1550"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="341" invocations="2329" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="9749" standardDeviationMicrosecondsPerInvocation="412"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="341" invocations="2329" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="6978" standardDeviationMicrosecondsPerInvocation="328"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="339" invocations="2329" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="10690" standardDeviationMicrosecondsPerInvocation="422"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="334" invocations="2329" avgMicrosecondsPerInvocation="143" maxMicrosecondsPerInvocation="11908" standardDeviationMicrosecondsPerInvocation="449"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="330" invocations="2329" avgMicrosecondsPerInvocation="141" maxMicrosecondsPerInvocation="4814" standardDeviationMicrosecondsPerInvocation="362"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="328" invocations="22991" avgMicrosecondsPerInvocation="14" maxMicrosecondsPerInvocation="6025" standardDeviationMicrosecondsPerInvocation="96"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="328" invocations="2329" avgMicrosecondsPerInvocation="141" maxMicrosecondsPerInvocation="41440" standardDeviationMicrosecondsPerInvocation="1017"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="328" invocations="2329" avgMicrosecondsPerInvocation="140" maxMicrosecondsPerInvocation="10190" standardDeviationMicrosecondsPerInvocation="366"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="325" invocations="2329" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="10463" standardDeviationMicrosecondsPerInvocation="413"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="307" invocations="4694" avgMicrosecondsPerInvocation="65" maxMicrosecondsPerInvocation="3712" standardDeviationMicrosecondsPerInvocation="103"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="304" invocations="4462" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="7855" standardDeviationMicrosecondsPerInvocation="207"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="303" invocations="2329" avgMicrosecondsPerInvocation="130" maxMicrosecondsPerInvocation="7489" standardDeviationMicrosecondsPerInvocation="318"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="301" invocations="3000" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="4306" standardDeviationMicrosecondsPerInvocation="237"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNonShortCircuit" totalMilliseconds="295" invocations="2329" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="14069" standardDeviationMicrosecondsPerInvocation="445"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="294" invocations="2329" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="12832" standardDeviationMicrosecondsPerInvocation="416"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="294" invocations="2329" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="10124" standardDeviationMicrosecondsPerInvocation="360"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadForLoop" totalMilliseconds="292" invocations="2329" avgMicrosecondsPerInvocation="125" maxMicrosecondsPerInvocation="8950" standardDeviationMicrosecondsPerInvocation="400"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.BenchmarkMethodDetector" totalMilliseconds="289" invocations="2329" avgMicrosecondsPerInvocation="124" maxMicrosecondsPerInvocation="11573" standardDeviationMicrosecondsPerInvocation="400"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="287" invocations="3000" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="45508" standardDeviationMicrosecondsPerInvocation="847"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IntCast2LongAsInstant" totalMilliseconds="286" invocations="2329" avgMicrosecondsPerInvocation="123" maxMicrosecondsPerInvocation="16923" standardDeviationMicrosecondsPerInvocation="503"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="3046" invocations="19333" avgMicrosecondsPerInvocation="157" maxMicrosecondsPerInvocation="440715" standardDeviationMicrosecondsPerInvocation="3214"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="2866" invocations="2329" avgMicrosecondsPerInvocation="1230" maxMicrosecondsPerInvocation="131862" standardDeviationMicrosecondsPerInvocation="5604"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="2450" invocations="20671" avgMicrosecondsPerInvocation="118" maxMicrosecondsPerInvocation="90834" standardDeviationMicrosecondsPerInvocation="730"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="2226" invocations="21853" avgMicrosecondsPerInvocation="101" maxMicrosecondsPerInvocation="34588" standardDeviationMicrosecondsPerInvocation="469"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="2165" invocations="19892" avgMicrosecondsPerInvocation="108" maxMicrosecondsPerInvocation="46621" standardDeviationMicrosecondsPerInvocation="524"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="1928" invocations="21268" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="32910" standardDeviationMicrosecondsPerInvocation="350"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="1328" invocations="17696" avgMicrosecondsPerInvocation="75" maxMicrosecondsPerInvocation="34426" standardDeviationMicrosecondsPerInvocation="338"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1295" invocations="22991" avgMicrosecondsPerInvocation="56" maxMicrosecondsPerInvocation="9423" standardDeviationMicrosecondsPerInvocation="135"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="963" invocations="23856" avgMicrosecondsPerInvocation="40" maxMicrosecondsPerInvocation="8760" standardDeviationMicrosecondsPerInvocation="159"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="918" invocations="2950" avgMicrosecondsPerInvocation="311" maxMicrosecondsPerInvocation="18698" standardDeviationMicrosecondsPerInvocation="793"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="863" invocations="4507" avgMicrosecondsPerInvocation="191" maxMicrosecondsPerInvocation="55398" standardDeviationMicrosecondsPerInvocation="1125"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="802" invocations="2950" avgMicrosecondsPerInvocation="272" maxMicrosecondsPerInvocation="18453" standardDeviationMicrosecondsPerInvocation="755"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="608" invocations="20671" avgMicrosecondsPerInvocation="29" maxMicrosecondsPerInvocation="3435" standardDeviationMicrosecondsPerInvocation="104"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="564" invocations="2329" avgMicrosecondsPerInvocation="242" maxMicrosecondsPerInvocation="75515" standardDeviationMicrosecondsPerInvocation="1628"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="527" invocations="2329" avgMicrosecondsPerInvocation="226" maxMicrosecondsPerInvocation="7492" standardDeviationMicrosecondsPerInvocation="527"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="524" invocations="4522" avgMicrosecondsPerInvocation="115" maxMicrosecondsPerInvocation="15845" standardDeviationMicrosecondsPerInvocation="296"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="452" invocations="2329" avgMicrosecondsPerInvocation="194" maxMicrosecondsPerInvocation="15187" standardDeviationMicrosecondsPerInvocation="550"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="436" invocations="490075" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="2003" standardDeviationMicrosecondsPerInvocation="6"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="386" invocations="22991" avgMicrosecondsPerInvocation="16" maxMicrosecondsPerInvocation="28918" standardDeviationMicrosecondsPerInvocation="198"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="363" invocations="2329" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="10560" standardDeviationMicrosecondsPerInvocation="402"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="346" invocations="2329" avgMicrosecondsPerInvocation="148" maxMicrosecondsPerInvocation="27636" standardDeviationMicrosecondsPerInvocation="867"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="339" invocations="18665" avgMicrosecondsPerInvocation="18" maxMicrosecondsPerInvocation="4128" standardDeviationMicrosecondsPerInvocation="68"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="339" invocations="19333" avgMicrosecondsPerInvocation="17" maxMicrosecondsPerInvocation="7085" standardDeviationMicrosecondsPerInvocation="79"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="331" invocations="2329" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="71928" standardDeviationMicrosecondsPerInvocation="1514"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="297" invocations="2329" avgMicrosecondsPerInvocation="127" maxMicrosecondsPerInvocation="6326" standardDeviationMicrosecondsPerInvocation="327"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="287" invocations="3510" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="83894" standardDeviationMicrosecondsPerInvocation="1430"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="280" invocations="2329" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="6448" standardDeviationMicrosecondsPerInvocation="296"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SynchronizationOnSharedBuiltinConstant" totalMilliseconds="278" invocations="2329" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="91589" standardDeviationMicrosecondsPerInvocation="1908"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="273" invocations="2329" avgMicrosecondsPerInvocation="117" maxMicrosecondsPerInvocation="7779" standardDeviationMicrosecondsPerInvocation="291"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="269" invocations="4462" avgMicrosecondsPerInvocation="60" maxMicrosecondsPerInvocation="3381" standardDeviationMicrosecondsPerInvocation="147"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="266" invocations="2329" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="8856" standardDeviationMicrosecondsPerInvocation="345"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="265" invocations="2329" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="7209" standardDeviationMicrosecondsPerInvocation="329"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="262" invocations="2950" avgMicrosecondsPerInvocation="88" maxMicrosecondsPerInvocation="6264" standardDeviationMicrosecondsPerInvocation="272"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="261" invocations="2329" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="8182" standardDeviationMicrosecondsPerInvocation="324"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="257" invocations="22991" avgMicrosecondsPerInvocation="11" maxMicrosecondsPerInvocation="6080" standardDeviationMicrosecondsPerInvocation="80"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="257" invocations="2329" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="6709" standardDeviationMicrosecondsPerInvocation="302"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="252" invocations="2329" avgMicrosecondsPerInvocation="108" maxMicrosecondsPerInvocation="7143" standardDeviationMicrosecondsPerInvocation="264"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="252" invocations="2329" avgMicrosecondsPerInvocation="108" maxMicrosecondsPerInvocation="72831" standardDeviationMicrosecondsPerInvocation="1523"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="246" invocations="2329" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="5745" standardDeviationMicrosecondsPerInvocation="286"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="243" invocations="2950" avgMicrosecondsPerInvocation="82" maxMicrosecondsPerInvocation="4341" standardDeviationMicrosecondsPerInvocation="171"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="242" invocations="2329" avgMicrosecondsPerInvocation="104" maxMicrosecondsPerInvocation="18607" standardDeviationMicrosecondsPerInvocation="463"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="241" invocations="2329" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="12020" standardDeviationMicrosecondsPerInvocation="412"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="239" invocations="2329" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="7425" standardDeviationMicrosecondsPerInvocation="307"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="235" invocations="2329" avgMicrosecondsPerInvocation="101" maxMicrosecondsPerInvocation="8482" standardDeviationMicrosecondsPerInvocation="284"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="231" invocations="2329" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="4188" standardDeviationMicrosecondsPerInvocation="199"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="230" invocations="2950" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="43616" standardDeviationMicrosecondsPerInvocation="843"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

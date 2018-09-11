@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1534808044000" analysisTimestamp="1534882063568" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534808044000" analysisTimestamp="1536621637823" release="">
   <Project projectName="">
     <Jar>tmp/unsafe</Jar>
   </Project>
@@ -13,66 +13,6 @@
     </Method>
     <LocalVariable name="newValue" register="1" pc="24" role="LOCAL_VARIABLE_NAMED"/>
     <SourceLine classname="com.google.common.cache.LocalCache$Segment$1" start="2331" end="2331" startBytecode="23" endBytecode="23" sourcefile="LocalCache.java" sourcepath="com/google/common/cache/LocalCache.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="com.google.common.collect.Cut$1">
-      <SourceLine classname="com.google.common.collect.Cut$1" start="253" end="253" sourcefile="Cut.java" sourcepath="com/google/common/collect/Cut.java"/>
-    </Class>
-    <Method classname="com.google.common.collect.Cut$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="com.google.common.collect.Cut$1" start="253" end="253" startBytecode="0" endBytecode="18" sourcefile="Cut.java" sourcepath="com/google/common/collect/Cut.java"/>
-    </Method>
-    <LocalVariable name="ex" register="0" pc="24" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="com.google.common.collect.Cut$1" start="253" end="253" startBytecode="23" endBytecode="23" sourcefile="Cut.java" sourcepath="com/google/common/collect/Cut.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="com.google.common.collect.Range$4">
-      <SourceLine classname="com.google.common.collect.Range$4" start="257" end="257" sourcefile="Range.java" sourcepath="com/google/common/collect/Range.java"/>
-    </Class>
-    <Method classname="com.google.common.collect.Range$4" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="com.google.common.collect.Range$4" start="257" end="257" startBytecode="0" endBytecode="18" sourcefile="Range.java" sourcepath="com/google/common/collect/Range.java"/>
-    </Method>
-    <LocalVariable name="ex" register="0" pc="24" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="com.google.common.collect.Range$4" start="257" end="257" startBytecode="23" endBytecode="23" sourcefile="Range.java" sourcepath="com/google/common/collect/Range.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="com.google.common.collect.TreeMultiset$4">
-      <SourceLine classname="com.google.common.collect.TreeMultiset$4" start="181" end="181" sourcefile="TreeMultiset.java" sourcepath="com/google/common/collect/TreeMultiset.java"/>
-    </Class>
-    <Method classname="com.google.common.collect.TreeMultiset$4" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="com.google.common.collect.TreeMultiset$4" start="181" end="181" startBytecode="0" endBytecode="18" sourcefile="TreeMultiset.java" sourcepath="com/google/common/collect/TreeMultiset.java"/>
-    </Method>
-    <LocalVariable name="ex" register="0" pc="24" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="com.google.common.collect.TreeMultiset$4" start="181" end="181" startBytecode="23" endBytecode="23" sourcefile="TreeMultiset.java" sourcepath="com/google/common/collect/TreeMultiset.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="com.google.common.util.concurrent.AbstractService$10">
-      <SourceLine classname="com.google.common.util.concurrent.AbstractService$10" start="192" end="192" sourcefile="AbstractService.java" sourcepath="com/google/common/util/concurrent/AbstractService.java"/>
-    </Class>
-    <Method classname="com.google.common.util.concurrent.AbstractService$10" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="com.google.common.util.concurrent.AbstractService$10" start="192" end="192" startBytecode="0" endBytecode="46" sourcefile="AbstractService.java" sourcepath="com/google/common/util/concurrent/AbstractService.java"/>
-    </Method>
-    <LocalVariable name="ex" register="0" pc="24" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="com.google.common.util.concurrent.AbstractService$10" start="192" end="192" startBytecode="23" endBytecode="23" sourcefile="AbstractService.java" sourcepath="com/google/common/util/concurrent/AbstractService.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="com.google.common.util.concurrent.Futures$ChainingListenableFuture$1">
-      <SourceLine classname="com.google.common.util.concurrent.Futures$ChainingListenableFuture$1" start="914" end="932" sourcefile="Futures.java" sourcepath="com/google/common/util/concurrent/Futures.java"/>
-    </Class>
-    <Method classname="com.google.common.util.concurrent.Futures$ChainingListenableFuture$1" name="run" signature="()V" isStatic="false">
-      <SourceLine classname="com.google.common.util.concurrent.Futures$ChainingListenableFuture$1" start="918" end="932" startBytecode="0" endBytecode="46" sourcefile="Futures.java" sourcepath="com/google/common/util/concurrent/Futures.java"/>
-    </Method>
-    <LocalVariable name="e" register="1" pc="28" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="com.google.common.util.concurrent.Futures$ChainingListenableFuture$1" start="919" end="919" startBytecode="27" endBytecode="27" sourcefile="Futures.java" sourcepath="com/google/common/util/concurrent/Futures.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="com.google.common.util.concurrent.JdkFutureAdapters$ListenableFutureAdapter$1">
-      <SourceLine classname="com.google.common.util.concurrent.JdkFutureAdapters$ListenableFutureAdapter$1" start="160" end="178" sourcefile="JdkFutureAdapters.java" sourcepath="com/google/common/util/concurrent/JdkFutureAdapters.java"/>
-    </Class>
-    <Method classname="com.google.common.util.concurrent.JdkFutureAdapters$ListenableFutureAdapter$1" name="run" signature="()V" isStatic="false">
-      <SourceLine classname="com.google.common.util.concurrent.JdkFutureAdapters$ListenableFutureAdapter$1" start="170" end="178" startBytecode="0" endBytecode="14" sourcefile="JdkFutureAdapters.java" sourcepath="com/google/common/util/concurrent/JdkFutureAdapters.java"/>
-    </Method>
-    <LocalVariable name="e" register="1" pc="18" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="com.google.common.util.concurrent.JdkFutureAdapters$ListenableFutureAdapter$1" start="173" end="173" startBytecode="17" endBytecode="17" sourcefile="JdkFutureAdapters.java" sourcepath="com/google/common/util/concurrent/JdkFutureAdapters.java"/>
   </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="net.bramp.unsafe.collection.ArrayListBenchmark">
@@ -120,326 +60,12 @@
     <LocalVariable name="size" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
     <SourceLine classname="net.bramp.unsafe.sort.QuickSortTest" start="33" end="33" startBytecode="2" endBytecode="2" sourcefile="QuickSortTest.java" sourcepath="net/bramp/unsafe/sort/QuickSortTest.java"/>
   </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="net.bytebuddy.implementation.bytecode.Duplication$2">
-      <SourceLine classname="net.bytebuddy.implementation.bytecode.Duplication$2" start="61" end="61" sourcefile="Duplication.java" sourcepath="net/bytebuddy/implementation/bytecode/Duplication.java"/>
-    </Class>
-    <Method classname="net.bytebuddy.implementation.bytecode.Duplication$2" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="net.bytebuddy.implementation.bytecode.Duplication$2" start="61" end="61" startBytecode="0" endBytecode="25" sourcefile="Duplication.java" sourcepath="net/bytebuddy/implementation/bytecode/Duplication.java"/>
-    </Method>
-    <LocalVariable name="ex" register="0" pc="24" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="net.bytebuddy.implementation.bytecode.Duplication$2" start="61" end="61" startBytecode="23" endBytecode="23" sourcefile="Duplication.java" sourcepath="net/bytebuddy/implementation/bytecode/Duplication.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="net.bytebuddy.implementation.bytecode.Removal$2">
-      <SourceLine classname="net.bytebuddy.implementation.bytecode.Removal$2" start="61" end="61" sourcefile="Removal.java" sourcepath="net/bytebuddy/implementation/bytecode/Removal.java"/>
-    </Class>
-    <Method classname="net.bytebuddy.implementation.bytecode.Removal$2" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="net.bytebuddy.implementation.bytecode.Removal$2" start="61" end="61" startBytecode="0" endBytecode="25" sourcefile="Removal.java" sourcepath="net/bytebuddy/implementation/bytecode/Removal.java"/>
-    </Method>
-    <LocalVariable name="ex" register="0" pc="24" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="net.bytebuddy.implementation.bytecode.Removal$2" start="61" end="61" startBytecode="23" endBytecode="23" sourcefile="Removal.java" sourcepath="net/bytebuddy/implementation/bytecode/Removal.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="net.bytebuddy.implementation.bytecode.StackSize$1">
-      <SourceLine classname="net.bytebuddy.implementation.bytecode.StackSize$1" start="109" end="109" sourcefile="StackSize.java" sourcepath="net/bytebuddy/implementation/bytecode/StackSize.java"/>
-    </Class>
-    <Method classname="net.bytebuddy.implementation.bytecode.StackSize$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="net.bytebuddy.implementation.bytecode.StackSize$1" start="109" end="109" startBytecode="0" endBytecode="25" sourcefile="StackSize.java" sourcepath="net/bytebuddy/implementation/bytecode/StackSize.java"/>
-    </Method>
-    <LocalVariable name="ex" register="0" pc="24" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="net.bytebuddy.implementation.bytecode.StackSize$1" start="109" end="109" startBytecode="23" endBytecode="23" sourcefile="StackSize.java" sourcepath="net/bytebuddy/implementation/bytecode/StackSize.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.apache.commons.math3.analysis.solvers.BaseSecantSolver$1">
-      <SourceLine classname="org.apache.commons.math3.analysis.solvers.BaseSecantSolver$1" start="186" end="213" sourcefile="BaseSecantSolver.java" sourcepath="org/apache/commons/math3/analysis/solvers/BaseSecantSolver.java"/>
-    </Class>
-    <Method classname="org.apache.commons.math3.analysis.solvers.BaseSecantSolver$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="org.apache.commons.math3.analysis.solvers.BaseSecantSolver$1" start="213" end="186" startBytecode="0" endBytecode="64" sourcefile="BaseSecantSolver.java" sourcepath="org/apache/commons/math3/analysis/solvers/BaseSecantSolver.java"/>
-    </Method>
-    <LocalVariable name="ex" register="0" pc="24" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.apache.commons.math3.analysis.solvers.BaseSecantSolver$1" start="213" end="213" startBytecode="23" endBytecode="23" sourcefile="BaseSecantSolver.java" sourcepath="org/apache/commons/math3/analysis/solvers/BaseSecantSolver.java"/>
-    <SourceLine classname="org.apache.commons.math3.analysis.solvers.BaseSecantSolver$1" start="186" end="186" startBytecode="107" endBytecode="107" sourcefile="BaseSecantSolver.java" sourcepath="org/apache/commons/math3/analysis/solvers/BaseSecantSolver.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver$1">
-      <SourceLine classname="org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver$1" start="218" end="218" sourcefile="BracketingNthOrderBrentSolver.java" sourcepath="org/apache/commons/math3/analysis/solvers/BracketingNthOrderBrentSolver.java"/>
-    </Class>
-    <Method classname="org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver$1" start="218" end="218" startBytecode="0" endBytecode="39" sourcefile="BracketingNthOrderBrentSolver.java" sourcepath="org/apache/commons/math3/analysis/solvers/BracketingNthOrderBrentSolver.java"/>
-    </Method>
-    <LocalVariable name="ex" register="0" pc="24" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver$1" start="218" end="218" startBytecode="23" endBytecode="23" sourcefile="BracketingNthOrderBrentSolver.java" sourcepath="org/apache/commons/math3/analysis/solvers/BracketingNthOrderBrentSolver.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.apache.commons.math3.dfp.Dfp$1">
-      <SourceLine classname="org.apache.commons.math3.dfp.Dfp$1" start="1094" end="1094" sourcefile="Dfp.java" sourcepath="org/apache/commons/math3/dfp/Dfp.java"/>
-    </Class>
-    <Method classname="org.apache.commons.math3.dfp.Dfp$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="org.apache.commons.math3.dfp.Dfp$1" start="1094" end="1094" startBytecode="0" endBytecode="60" sourcefile="Dfp.java" sourcepath="org/apache/commons/math3/dfp/Dfp.java"/>
-    </Method>
-    <LocalVariable name="ex" register="0" pc="24" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.apache.commons.math3.dfp.Dfp$1" start="1094" end="1094" startBytecode="23" endBytecode="23" sourcefile="Dfp.java" sourcepath="org/apache/commons/math3/dfp/Dfp.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.apache.commons.math3.geometry.partitioning.BSPTree$1">
-      <SourceLine classname="org.apache.commons.math3.geometry.partitioning.BSPTree$1" start="245" end="496" sourcefile="BSPTree.java" sourcepath="org/apache/commons/math3/geometry/partitioning/BSPTree.java"/>
-    </Class>
-    <Method classname="org.apache.commons.math3.geometry.partitioning.BSPTree$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="org.apache.commons.math3.geometry.partitioning.BSPTree$1" start="496" end="245" startBytecode="0" endBytecode="71" sourcefile="BSPTree.java" sourcepath="org/apache/commons/math3/geometry/partitioning/BSPTree.java"/>
-    </Method>
-    <LocalVariable name="ex" register="0" pc="24" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.apache.commons.math3.geometry.partitioning.BSPTree$1" start="496" end="496" startBytecode="23" endBytecode="23" sourcefile="BSPTree.java" sourcepath="org/apache/commons/math3/geometry/partitioning/BSPTree.java"/>
-    <SourceLine classname="org.apache.commons.math3.geometry.partitioning.BSPTree$1" start="245" end="245" startBytecode="77" endBytecode="77" sourcefile="BSPTree.java" sourcepath="org/apache/commons/math3/geometry/partitioning/BSPTree.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer$1">
-      <SourceLine classname="org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer$1" start="223" end="223" sourcefile="KMeansPlusPlusClusterer.java" sourcepath="org/apache/commons/math3/ml/clustering/KMeansPlusPlusClusterer.java"/>
-    </Class>
-    <Method classname="org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer$1" start="223" end="223" startBytecode="0" endBytecode="25" sourcefile="KMeansPlusPlusClusterer.java" sourcepath="org/apache/commons/math3/ml/clustering/KMeansPlusPlusClusterer.java"/>
-    </Method>
-    <LocalVariable name="ex" register="0" pc="24" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer$1" start="223" end="223" startBytecode="23" endBytecode="23" sourcefile="KMeansPlusPlusClusterer.java" sourcepath="org/apache/commons/math3/ml/clustering/KMeansPlusPlusClusterer.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.apache.commons.math3.ode.events.FilterType$3">
-      <SourceLine classname="org.apache.commons.math3.ode.events.FilterType$3" start="92" end="92" sourcefile="FilterType.java" sourcepath="org/apache/commons/math3/ode/events/FilterType.java"/>
-    </Class>
-    <Method classname="org.apache.commons.math3.ode.events.FilterType$3" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="org.apache.commons.math3.ode.events.FilterType$3" start="92" end="92" startBytecode="0" endBytecode="39" sourcefile="FilterType.java" sourcepath="org/apache/commons/math3/ode/events/FilterType.java"/>
-    </Method>
-    <LocalVariable name="ex" register="0" pc="24" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.apache.commons.math3.ode.events.FilterType$3" start="92" end="92" startBytecode="23" endBytecode="23" sourcefile="FilterType.java" sourcepath="org/apache/commons/math3/ode/events/FilterType.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.apache.commons.math3.optimization.linear.Relationship$1">
-      <SourceLine classname="org.apache.commons.math3.optimization.linear.Relationship$1" start="58" end="58" sourcefile="Relationship.java" sourcepath="org/apache/commons/math3/optimization/linear/Relationship.java"/>
-    </Class>
-    <Method classname="org.apache.commons.math3.optimization.linear.Relationship$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="org.apache.commons.math3.optimization.linear.Relationship$1" start="58" end="58" startBytecode="0" endBytecode="18" sourcefile="Relationship.java" sourcepath="org/apache/commons/math3/optimization/linear/Relationship.java"/>
-    </Method>
-    <LocalVariable name="ex" register="0" pc="24" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.apache.commons.math3.optimization.linear.Relationship$1" start="58" end="58" startBytecode="23" endBytecode="23" sourcefile="Relationship.java" sourcepath="org/apache/commons/math3/optimization/linear/Relationship.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.apache.commons.math3.random.ValueServer">
-      <SourceLine classname="org.apache.commons.math3.random.ValueServer" start="73" end="454" sourcefile="ValueServer.java" sourcepath="org/apache/commons/math3/random/ValueServer.java"/>
-    </Class>
-    <Method classname="org.apache.commons.math3.random.ValueServer" name="resetReplayFile" signature="()V" isStatic="false">
-      <SourceLine classname="org.apache.commons.math3.random.ValueServer" start="291" end="300" startBytecode="0" endBytecode="23" sourcefile="ValueServer.java" sourcepath="org/apache/commons/math3/random/ValueServer.java"/>
-    </Method>
-    <LocalVariable name="ex" register="1" pc="23" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.apache.commons.math3.random.ValueServer" start="295" end="295" startBytecode="22" endBytecode="22" sourcefile="ValueServer.java" sourcepath="org/apache/commons/math3/random/ValueServer.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.apache.commons.math3.stat.descriptive.DescriptiveStatistics">
-      <SourceLine classname="org.apache.commons.math3.stat.descriptive.DescriptiveStatistics" start="77" end="762" sourcefile="DescriptiveStatistics.java" sourcepath="org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java"/>
-    </Class>
-    <Method classname="org.apache.commons.math3.stat.descriptive.DescriptiveStatistics" name="removeMostRecentValue" signature="()V" isStatic="false">
-      <SourceLine classname="org.apache.commons.math3.stat.descriptive.DescriptiveStatistics" start="183" end="187" startBytecode="0" endBytecode="13" sourcefile="DescriptiveStatistics.java" sourcepath="org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java"/>
-    </Method>
-    <LocalVariable name="ex" register="1" pc="12" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.apache.commons.math3.stat.descriptive.DescriptiveStatistics" start="184" end="184" startBytecode="11" endBytecode="11" sourcefile="DescriptiveStatistics.java" sourcepath="org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.apache.commons.math3.stat.ranking.NaturalRanking$1">
-      <SourceLine classname="org.apache.commons.math3.stat.ranking.NaturalRanking$1" start="202" end="342" sourcefile="NaturalRanking.java" sourcepath="org/apache/commons/math3/stat/ranking/NaturalRanking.java"/>
-    </Class>
-    <Method classname="org.apache.commons.math3.stat.ranking.NaturalRanking$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="org.apache.commons.math3.stat.ranking.NaturalRanking$1" start="342" end="202" startBytecode="0" endBytecode="78" sourcefile="NaturalRanking.java" sourcepath="org/apache/commons/math3/stat/ranking/NaturalRanking.java"/>
-    </Method>
-    <LocalVariable name="ex" register="0" pc="24" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.apache.commons.math3.stat.ranking.NaturalRanking$1" start="342" end="342" startBytecode="23" endBytecode="23" sourcefile="NaturalRanking.java" sourcepath="org/apache/commons/math3/stat/ranking/NaturalRanking.java"/>
-    <SourceLine classname="org.apache.commons.math3.stat.ranking.NaturalRanking$1" start="202" end="202" startBytecode="107" endBytecode="107" sourcefile="NaturalRanking.java" sourcepath="org/apache/commons/math3/stat/ranking/NaturalRanking.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.apache.commons.math3.transform.FastFourierTransformer$1">
-      <SourceLine classname="org.apache.commons.math3.transform.FastFourierTransformer$1" start="171" end="171" sourcefile="FastFourierTransformer.java" sourcepath="org/apache/commons/math3/transform/FastFourierTransformer.java"/>
-    </Class>
-    <Method classname="org.apache.commons.math3.transform.FastFourierTransformer$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="org.apache.commons.math3.transform.FastFourierTransformer$1" start="171" end="171" startBytecode="0" endBytecode="18" sourcefile="FastFourierTransformer.java" sourcepath="org/apache/commons/math3/transform/FastFourierTransformer.java"/>
-    </Method>
-    <LocalVariable name="ex" register="0" pc="24" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.apache.commons.math3.transform.FastFourierTransformer$1" start="171" end="171" startBytecode="23" endBytecode="23" sourcefile="FastFourierTransformer.java" sourcepath="org/apache/commons/math3/transform/FastFourierTransformer.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.apache.commons.math3.util.ResizableDoubleArray$1">
-      <SourceLine classname="org.apache.commons.math3.util.ResizableDoubleArray$1" start="809" end="809" sourcefile="ResizableDoubleArray.java" sourcepath="org/apache/commons/math3/util/ResizableDoubleArray.java"/>
-    </Class>
-    <Method classname="org.apache.commons.math3.util.ResizableDoubleArray$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="org.apache.commons.math3.util.ResizableDoubleArray$1" start="809" end="809" startBytecode="0" endBytecode="18" sourcefile="ResizableDoubleArray.java" sourcepath="org/apache/commons/math3/util/ResizableDoubleArray.java"/>
-    </Method>
-    <LocalVariable name="ex" register="0" pc="24" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.apache.commons.math3.util.ResizableDoubleArray$1" start="809" end="809" startBytecode="23" endBytecode="23" sourcefile="ResizableDoubleArray.java" sourcepath="org/apache/commons/math3/util/ResizableDoubleArray.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.generators.core.BenchmarkGenerator$1">
-      <SourceLine classname="org.openjdk.jmh.generators.core.BenchmarkGenerator$1" start="625" end="625" sourcefile="BenchmarkGenerator.java" sourcepath="org/openjdk/jmh/generators/core/BenchmarkGenerator.java"/>
-    </Class>
-    <Method classname="org.openjdk.jmh.generators.core.BenchmarkGenerator$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.generators.core.BenchmarkGenerator$1" start="625" end="625" startBytecode="0" endBytecode="32" sourcefile="BenchmarkGenerator.java" sourcepath="org/openjdk/jmh/generators/core/BenchmarkGenerator.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.openjdk.jmh.generators.core.BenchmarkGenerator$1" start="625" end="625" startBytecode="23" endBytecode="23" sourcefile="BenchmarkGenerator.java" sourcepath="org/openjdk/jmh/generators/core/BenchmarkGenerator.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.profile.GCProfiler">
-      <SourceLine classname="org.openjdk.jmh.profile.GCProfiler" start="50" end="226" sourcefile="GCProfiler.java" sourcepath="org/openjdk/jmh/profile/GCProfiler.java"/>
-    </Class>
-    <Method classname="org.openjdk.jmh.profile.GCProfiler" name="uninstallHooks" signature="()V" isStatic="false">
-      <SourceLine classname="org.openjdk.jmh.profile.GCProfiler" start="217" end="226" startBytecode="0" endBytecode="25" sourcefile="GCProfiler.java" sourcepath="org/openjdk/jmh/profile/GCProfiler.java"/>
-    </Method>
-    <LocalVariable name="?" register="3" pc="57" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.openjdk.jmh.profile.GCProfiler" start="222" end="222" startBytecode="57" endBytecode="57" sourcefile="GCProfiler.java" sourcepath="org/openjdk/jmh/profile/GCProfiler.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.results.Result$1">
-      <SourceLine classname="org.openjdk.jmh.results.Result$1" start="106" end="106" sourcefile="Result.java" sourcepath="org/openjdk/jmh/results/Result.java"/>
-    </Class>
-    <Method classname="org.openjdk.jmh.results.Result$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.results.Result$1" start="106" end="106" startBytecode="0" endBytecode="25" sourcefile="Result.java" sourcepath="org/openjdk/jmh/results/Result.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.openjdk.jmh.results.Result$1" start="106" end="106" startBytecode="23" endBytecode="23" sourcefile="Result.java" sourcepath="org/openjdk/jmh/results/Result.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.results.format.ResultFormatFactory$2">
-      <SourceLine classname="org.openjdk.jmh.results.format.ResultFormatFactory$2" start="69" end="69" sourcefile="ResultFormatFactory.java" sourcepath="org/openjdk/jmh/results/format/ResultFormatFactory.java"/>
-    </Class>
-    <Method classname="org.openjdk.jmh.results.format.ResultFormatFactory$2" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.results.format.ResultFormatFactory$2" start="69" end="69" startBytecode="0" endBytecode="39" sourcefile="ResultFormatFactory.java" sourcepath="org/openjdk/jmh/results/format/ResultFormatFactory.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.openjdk.jmh.results.format.ResultFormatFactory$2" start="69" end="69" startBytecode="23" endBytecode="23" sourcefile="ResultFormatFactory.java" sourcepath="org/openjdk/jmh/results/format/ResultFormatFactory.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.runner.ActionPlan$1">
-      <SourceLine classname="org.openjdk.jmh.runner.ActionPlan$1" start="61" end="61" sourcefile="ActionPlan.java" sourcepath="org/openjdk/jmh/runner/ActionPlan.java"/>
-    </Class>
-    <Method classname="org.openjdk.jmh.runner.ActionPlan$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.runner.ActionPlan$1" start="61" end="61" startBytecode="0" endBytecode="18" sourcefile="ActionPlan.java" sourcepath="org/openjdk/jmh/runner/ActionPlan.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.openjdk.jmh.runner.ActionPlan$1" start="61" end="61" startBytecode="23" endBytecode="23" sourcefile="ActionPlan.java" sourcepath="org/openjdk/jmh/runner/ActionPlan.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.runner.BaseRunner$2">
-      <SourceLine classname="org.openjdk.jmh.runner.BaseRunner$2" start="136" end="136" sourcefile="BaseRunner.java" sourcepath="org/openjdk/jmh/runner/BaseRunner.java"/>
-    </Class>
-    <Method classname="org.openjdk.jmh.runner.BaseRunner$2" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.runner.BaseRunner$2" start="136" end="136" startBytecode="0" endBytecode="25" sourcefile="BaseRunner.java" sourcepath="org/openjdk/jmh/runner/BaseRunner.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.openjdk.jmh.runner.BaseRunner$2" start="136" end="136" startBytecode="23" endBytecode="23" sourcefile="BaseRunner.java" sourcepath="org/openjdk/jmh/runner/BaseRunner.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.runner.BenchmarkHandler$2">
-      <SourceLine classname="org.openjdk.jmh.runner.BenchmarkHandler$2" start="343" end="343" sourcefile="BenchmarkHandler.java" sourcepath="org/openjdk/jmh/runner/BenchmarkHandler.java"/>
-    </Class>
-    <Method classname="org.openjdk.jmh.runner.BenchmarkHandler$2" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.runner.BenchmarkHandler$2" start="343" end="343" startBytecode="0" endBytecode="11" sourcefile="BenchmarkHandler.java" sourcepath="org/openjdk/jmh/runner/BenchmarkHandler.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.openjdk.jmh.runner.BenchmarkHandler$2" start="343" end="343" startBytecode="23" endBytecode="23" sourcefile="BenchmarkHandler.java" sourcepath="org/openjdk/jmh/runner/BenchmarkHandler.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.runner.ForkedMain">
-      <SourceLine classname="org.openjdk.jmh.runner.ForkedMain" start="40" end="168" sourcefile="ForkedMain.java" sourcepath="org/openjdk/jmh/runner/ForkedMain.java"/>
-    </Class>
-    <Method classname="org.openjdk.jmh.runner.ForkedMain" name="hangup" signature="()V" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.runner.ForkedMain" start="106" end="141" startBytecode="0" endBytecode="56" sourcefile="ForkedMain.java" sourcepath="org/openjdk/jmh/runner/ForkedMain.java"/>
-    </Method>
-    <LocalVariable name="e" register="3" pc="81" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.openjdk.jmh.runner.ForkedMain" start="123" end="123" startBytecode="80" endBytecode="80" sourcefile="ForkedMain.java" sourcepath="org/openjdk/jmh/runner/ForkedMain.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.runner.ForkedMain">
-      <SourceLine classname="org.openjdk.jmh.runner.ForkedMain" start="40" end="168" sourcefile="ForkedMain.java" sourcepath="org/openjdk/jmh/runner/ForkedMain.java"/>
-    </Class>
-    <Method classname="org.openjdk.jmh.runner.ForkedMain" name="hangup" signature="()V" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.runner.ForkedMain" start="106" end="141" startBytecode="0" endBytecode="56" sourcefile="ForkedMain.java" sourcepath="org/openjdk/jmh/runner/ForkedMain.java"/>
-    </Method>
-    <LocalVariable name="msg" register="1" pc="120" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.openjdk.jmh.runner.ForkedMain" start="137" end="137" startBytecode="120" endBytecode="120" sourcefile="ForkedMain.java" sourcepath="org/openjdk/jmh/runner/ForkedMain.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.runner.ForkedMain$ShutdownTimeoutThread">
-      <SourceLine classname="org.openjdk.jmh.runner.ForkedMain$ShutdownTimeoutThread" start="169" end="247" sourcefile="ForkedMain.java" sourcepath="org/openjdk/jmh/runner/ForkedMain.java"/>
-    </Class>
-    <Method classname="org.openjdk.jmh.runner.ForkedMain$ShutdownTimeoutThread" name="run" signature="()V" isStatic="false">
-      <SourceLine classname="org.openjdk.jmh.runner.ForkedMain$ShutdownTimeoutThread" start="180" end="215" startBytecode="0" endBytecode="69" sourcefile="ForkedMain.java" sourcepath="org/openjdk/jmh/runner/ForkedMain.java"/>
-    </Method>
-    <LocalVariable name="e" register="5" pc="19" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.openjdk.jmh.runner.ForkedMain$ShutdownTimeoutThread" start="186" end="186" startBytecode="17" endBytecode="17" sourcefile="ForkedMain.java" sourcepath="org/openjdk/jmh/runner/ForkedMain.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.runner.format.OutputFormatFactory$1">
-      <SourceLine classname="org.openjdk.jmh.runner.format.OutputFormatFactory$1" start="41" end="41" sourcefile="OutputFormatFactory.java" sourcepath="org/openjdk/jmh/runner/format/OutputFormatFactory.java"/>
-    </Class>
-    <Method classname="org.openjdk.jmh.runner.format.OutputFormatFactory$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.runner.format.OutputFormatFactory$1" start="41" end="41" startBytecode="0" endBytecode="25" sourcefile="OutputFormatFactory.java" sourcepath="org/openjdk/jmh/runner/format/OutputFormatFactory.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.openjdk.jmh.runner.format.OutputFormatFactory$1" start="41" end="41" startBytecode="23" endBytecode="23" sourcefile="OutputFormatFactory.java" sourcepath="org/openjdk/jmh/runner/format/OutputFormatFactory.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.runner.link.BinaryLinkServer$1">
-      <SourceLine classname="org.openjdk.jmh.runner.link.BinaryLinkServer$1" start="336" end="364" sourcefile="BinaryLinkServer.java" sourcepath="org/openjdk/jmh/runner/link/BinaryLinkServer.java"/>
-    </Class>
-    <Method classname="org.openjdk.jmh.runner.link.BinaryLinkServer$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="org.openjdk.jmh.runner.link.BinaryLinkServer$1" start="364" end="336" startBytecode="0" endBytecode="29" sourcefile="BinaryLinkServer.java" sourcepath="org/openjdk/jmh/runner/link/BinaryLinkServer.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.openjdk.jmh.runner.link.BinaryLinkServer$1" start="364" end="364" startBytecode="23" endBytecode="23" sourcefile="BinaryLinkServer.java" sourcepath="org/openjdk/jmh/runner/link/BinaryLinkServer.java"/>
-    <SourceLine classname="org.openjdk.jmh.runner.link.BinaryLinkServer$1" start="336" end="336" startBytecode="47" endBytecode="47" sourcefile="BinaryLinkServer.java" sourcepath="org/openjdk/jmh/runner/link/BinaryLinkServer.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.runner.link.BinaryLinkServer$Acceptor">
-      <SourceLine classname="org.openjdk.jmh.runner.link.BinaryLinkServer$Acceptor" start="216" end="256" sourcefile="BinaryLinkServer.java" sourcepath="org/openjdk/jmh/runner/link/BinaryLinkServer.java"/>
-    </Class>
-    <Method classname="org.openjdk.jmh.runner.link.BinaryLinkServer$Acceptor" name="close" signature="()V" isStatic="false">
-      <SourceLine classname="org.openjdk.jmh.runner.link.BinaryLinkServer$Acceptor" start="252" end="256" startBytecode="0" endBytecode="5" sourcefile="BinaryLinkServer.java" sourcepath="org/openjdk/jmh/runner/link/BinaryLinkServer.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="10" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.openjdk.jmh.runner.link.BinaryLinkServer$Acceptor" start="253" end="253" startBytecode="10" endBytecode="10" sourcefile="BinaryLinkServer.java" sourcepath="org/openjdk/jmh/runner/link/BinaryLinkServer.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.runner.link.BinaryLinkServer$Acceptor">
-      <SourceLine classname="org.openjdk.jmh.runner.link.BinaryLinkServer$Acceptor" start="216" end="256" sourcefile="BinaryLinkServer.java" sourcepath="org/openjdk/jmh/runner/link/BinaryLinkServer.java"/>
-    </Class>
-    <Method classname="org.openjdk.jmh.runner.link.BinaryLinkServer$Acceptor" name="run" signature="()V" isStatic="false">
-      <SourceLine classname="org.openjdk.jmh.runner.link.BinaryLinkServer$Acceptor" start="224" end="239" startBytecode="0" endBytecode="46" sourcefile="BinaryLinkServer.java" sourcepath="org/openjdk/jmh/runner/link/BinaryLinkServer.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="66" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.openjdk.jmh.runner.link.BinaryLinkServer$Acceptor" start="232" end="232" startBytecode="66" endBytecode="66" sourcefile="BinaryLinkServer.java" sourcepath="org/openjdk/jmh/runner/link/BinaryLinkServer.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.runner.link.BinaryLinkServer$Handler">
-      <SourceLine classname="org.openjdk.jmh.runner.link.BinaryLinkServer$Handler" start="274" end="396" sourcefile="BinaryLinkServer.java" sourcepath="org/openjdk/jmh/runner/link/BinaryLinkServer.java"/>
-    </Class>
-    <Method classname="org.openjdk.jmh.runner.link.BinaryLinkServer$Handler" name="close" signature="()V" isStatic="false">
-      <SourceLine classname="org.openjdk.jmh.runner.link.BinaryLinkServer$Handler" start="392" end="396" startBytecode="0" endBytecode="5" sourcefile="BinaryLinkServer.java" sourcepath="org/openjdk/jmh/runner/link/BinaryLinkServer.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="10" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.openjdk.jmh.runner.link.BinaryLinkServer$Handler" start="393" end="393" startBytecode="10" endBytecode="10" sourcefile="BinaryLinkServer.java" sourcepath="org/openjdk/jmh/runner/link/BinaryLinkServer.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.openjdk.jmh.runner.link.BinaryLinkServer$Handler">
-      <SourceLine classname="org.openjdk.jmh.runner.link.BinaryLinkServer$Handler" start="274" end="396" sourcefile="BinaryLinkServer.java" sourcepath="org/openjdk/jmh/runner/link/BinaryLinkServer.java"/>
-    </Class>
-    <Method classname="org.openjdk.jmh.runner.link.BinaryLinkServer$Handler" name="run" signature="()V" isStatic="false">
-      <SourceLine classname="org.openjdk.jmh.runner.link.BinaryLinkServer$Handler" start="288" end="328" startBytecode="0" endBytecode="117" sourcefile="BinaryLinkServer.java" sourcepath="org/openjdk/jmh/runner/link/BinaryLinkServer.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="160" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.openjdk.jmh.runner.link.BinaryLinkServer$Handler" start="318" end="318" startBytecode="160" endBytecode="160" sourcefile="BinaryLinkServer.java" sourcepath="org/openjdk/jmh/runner/link/BinaryLinkServer.java"/>
-  </BugInstance>
   <Errors errors="4" missingClasses="16">
     <Error>
       <ErrorMessage>Exception analyzing org.openjdk.jmh.profile.AbstractPerfAsmProfiler using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
       <Exception>java.lang.NullPointerException</Exception>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:111)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:57)</StackTrace>
       <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
@@ -457,8 +83,8 @@
     <Error>
       <ErrorMessage>Exception analyzing com.google.common.util.concurrent.AbstractScheduledService using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
       <Exception>java.lang.NullPointerException</Exception>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:111)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:57)</StackTrace>
       <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
@@ -476,8 +102,8 @@
     <Error>
       <ErrorMessage>Exception analyzing org.apache.commons.math3.stat.descriptive.AbstractStorelessUnivariateStatistic using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
       <Exception>java.lang.NullPointerException</Exception>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:111)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:57)</StackTrace>
       <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
@@ -495,8 +121,8 @@
     <Error>
       <ErrorMessage>Exception analyzing org.apache.commons.math3.optim.BaseMultiStartMultivariateOptimizer using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
       <Exception>java.lang.NullPointerException</Exception>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:111)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:57)</StackTrace>
       <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
@@ -528,7 +154,7 @@
     <MissingClass>org.junit.Assert</MissingClass>
     <MissingClass>org.junit.Assume</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Tue, 21 Aug 2018 01:34:04 +0200" total_classes="4177" referenced_classes="4668" total_bugs="43" total_size="153053" num_packages="140" java_version="9.0.4" vm_version="9.0.4+11" cpu_seconds="202.98" clock_seconds="67.45" peak_mbytes="959.63" alloc_mbytes="4096.00" gc_seconds="1.79" priority_2="4" priority_1="39">
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 01:34:04 +0200" total_classes="4177" referenced_classes="4644" total_bugs="6" total_size="153053" num_packages="140" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="195.49" clock_seconds="82.45" peak_mbytes="1517.39" alloc_mbytes="3641.00" gc_seconds="1.64" priority_2="4" priority_1="2">
     <PackageStats package="com.google.common.annotations" total_bugs="0" total_types="4" total_size="7">
       <ClassStats class="com.google.common.annotations.Beta" sourceFile="Beta.java" interface="true" size="1" bugs="0"/>
       <ClassStats class="com.google.common.annotations.GwtCompatible" sourceFile="GwtCompatible.java" interface="true" size="3" bugs="0"/>
@@ -807,7 +433,7 @@
       <ClassStats class="com.google.common.cache.Weigher" sourceFile="Weigher.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="com.google.common.cache.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.google.common.collect" total_bugs="3" total_types="876" total_size="24713" priority_1="3">
+    <PackageStats package="com.google.common.collect" total_bugs="0" total_types="876" total_size="24713">
       <ClassStats class="com.google.common.collect.AbstractBiMap" sourceFile="AbstractBiMap.java" interface="false" size="95" bugs="0"/>
       <ClassStats class="com.google.common.collect.AbstractBiMap$1" sourceFile="AbstractBiMap.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="com.google.common.collect.AbstractBiMap$EntrySet" sourceFile="AbstractBiMap.java" interface="false" size="36" bugs="0"/>
@@ -935,7 +561,7 @@
       <ClassStats class="com.google.common.collect.ContiguousSet" sourceFile="ContiguousSet.java" interface="false" size="63" bugs="0"/>
       <ClassStats class="com.google.common.collect.Count" sourceFile="Count.java" interface="false" size="27" bugs="0"/>
       <ClassStats class="com.google.common.collect.Cut" sourceFile="Cut.java" interface="false" size="46" bugs="0"/>
-      <ClassStats class="com.google.common.collect.Cut$1" sourceFile="Cut.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="com.google.common.collect.Cut$1" sourceFile="Cut.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="com.google.common.collect.Cut$AboveAll" sourceFile="Cut.java" interface="false" size="38" bugs="0"/>
       <ClassStats class="com.google.common.collect.Cut$AboveValue" sourceFile="Cut.java" interface="false" size="42" bugs="0"/>
       <ClassStats class="com.google.common.collect.Cut$BelowAll" sourceFile="Cut.java" interface="false" size="42" bugs="0"/>
@@ -1473,7 +1099,7 @@
       <ClassStats class="com.google.common.collect.Range$1" sourceFile="Range.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="com.google.common.collect.Range$2" sourceFile="Range.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="com.google.common.collect.Range$3" sourceFile="Range.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="com.google.common.collect.Range$4" sourceFile="Range.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="com.google.common.collect.Range$4" sourceFile="Range.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="com.google.common.collect.RangeMap" sourceFile="RangeMap.java" interface="true" size="13" bugs="0"/>
       <ClassStats class="com.google.common.collect.RangeSet" sourceFile="RangeSet.java" interface="true" size="18" bugs="0"/>
       <ClassStats class="com.google.common.collect.RegularContiguousSet" sourceFile="RegularContiguousSet.java" interface="false" size="78" bugs="0"/>
@@ -1635,7 +1261,7 @@
       <ClassStats class="com.google.common.collect.TreeMultiset$1" sourceFile="TreeMultiset.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="com.google.common.collect.TreeMultiset$2" sourceFile="TreeMultiset.java" interface="false" size="29" bugs="0"/>
       <ClassStats class="com.google.common.collect.TreeMultiset$3" sourceFile="TreeMultiset.java" interface="false" size="30" bugs="0"/>
-      <ClassStats class="com.google.common.collect.TreeMultiset$4" sourceFile="TreeMultiset.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="com.google.common.collect.TreeMultiset$4" sourceFile="TreeMultiset.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="com.google.common.collect.TreeMultiset$Aggregate" sourceFile="TreeMultiset.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="com.google.common.collect.TreeMultiset$Aggregate$1" sourceFile="TreeMultiset.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.google.common.collect.TreeMultiset$Aggregate$2" sourceFile="TreeMultiset.java" interface="false" size="7" bugs="0"/>
@@ -2037,7 +1663,7 @@
       <ClassStats class="com.google.common.reflect.Types$WildcardTypeImpl" sourceFile="Types.java" interface="false" size="31" bugs="0"/>
       <ClassStats class="com.google.common.reflect.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
     </PackageStats>
-    <PackageStats package="com.google.common.util.concurrent" total_bugs="3" total_types="205" total_size="4443" priority_1="3">
+    <PackageStats package="com.google.common.util.concurrent" total_bugs="0" total_types="205" total_size="4443">
       <ClassStats class="com.google.common.util.concurrent.AbstractCheckedFuture" sourceFile="AbstractCheckedFuture.java" interface="false" size="23" bugs="0"/>
       <ClassStats class="com.google.common.util.concurrent.AbstractExecutionThreadService" sourceFile="AbstractExecutionThreadService.java" interface="false" size="50" bugs="0"/>
       <ClassStats class="com.google.common.util.concurrent.AbstractExecutionThreadService$1" sourceFile="AbstractExecutionThreadService.java" interface="false" size="11" bugs="0"/>
@@ -2069,7 +1695,7 @@
       <ClassStats class="com.google.common.util.concurrent.AbstractScheduledService$Scheduler$2" sourceFile="AbstractScheduledService.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="com.google.common.util.concurrent.AbstractService" sourceFile="AbstractService.java" interface="false" size="196" bugs="0"/>
       <ClassStats class="com.google.common.util.concurrent.AbstractService$1" sourceFile="AbstractService.java" interface="false" size="7" bugs="0"/>
-      <ClassStats class="com.google.common.util.concurrent.AbstractService$10" sourceFile="AbstractService.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="com.google.common.util.concurrent.AbstractService$10" sourceFile="AbstractService.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="com.google.common.util.concurrent.AbstractService$2" sourceFile="AbstractService.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="com.google.common.util.concurrent.AbstractService$3" sourceFile="AbstractService.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="com.google.common.util.concurrent.AbstractService$4" sourceFile="AbstractService.java" interface="false" size="8" bugs="0"/>
@@ -2135,7 +1761,7 @@
       <ClassStats class="com.google.common.util.concurrent.Futures$7" sourceFile="Futures.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="com.google.common.util.concurrent.Futures$8" sourceFile="Futures.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="com.google.common.util.concurrent.Futures$ChainingListenableFuture" sourceFile="Futures.java" interface="false" size="42" bugs="0"/>
-      <ClassStats class="com.google.common.util.concurrent.Futures$ChainingListenableFuture$1" sourceFile="Futures.java" interface="false" size="14" bugs="1" priority_1="1"/>
+      <ClassStats class="com.google.common.util.concurrent.Futures$ChainingListenableFuture$1" sourceFile="Futures.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="com.google.common.util.concurrent.Futures$CombinedFuture" sourceFile="Futures.java" interface="false" size="73" bugs="0"/>
       <ClassStats class="com.google.common.util.concurrent.Futures$CombinedFuture$1" sourceFile="Futures.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="com.google.common.util.concurrent.Futures$CombinedFuture$2" sourceFile="Futures.java" interface="false" size="9" bugs="0"/>
@@ -2156,7 +1782,7 @@
       <ClassStats class="com.google.common.util.concurrent.Futures$WrappedCombiner" sourceFile="Futures.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="com.google.common.util.concurrent.JdkFutureAdapters" sourceFile="JdkFutureAdapters.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="com.google.common.util.concurrent.JdkFutureAdapters$ListenableFutureAdapter" sourceFile="JdkFutureAdapters.java" interface="false" size="34" bugs="0"/>
-      <ClassStats class="com.google.common.util.concurrent.JdkFutureAdapters$ListenableFutureAdapter$1" sourceFile="JdkFutureAdapters.java" interface="false" size="12" bugs="1" priority_1="1"/>
+      <ClassStats class="com.google.common.util.concurrent.JdkFutureAdapters$ListenableFutureAdapter$1" sourceFile="JdkFutureAdapters.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="com.google.common.util.concurrent.ListenableFuture" sourceFile="ListenableFuture.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="com.google.common.util.concurrent.ListenableFutureTask" sourceFile="ListenableFutureTask.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="com.google.common.util.concurrent.ListenableScheduledFuture" sourceFile="ListenableScheduledFuture.java" interface="true" size="1" bugs="0"/>
@@ -3245,24 +2871,24 @@
       <ClassStats class="net.bytebuddy.implementation.bind.annotation.This" sourceFile="This.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bind.annotation.This$Binder" sourceFile="This.java" interface="false" size="27" bugs="0"/>
     </PackageStats>
-    <PackageStats package="net.bytebuddy.implementation.bytecode" total_bugs="3" total_types="19" total_size="306" priority_1="3">
+    <PackageStats package="net.bytebuddy.implementation.bytecode" total_bugs="0" total_types="19" total_size="306">
       <ClassStats class="net.bytebuddy.implementation.bytecode.ByteCodeAppender" sourceFile="ByteCodeAppender.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.ByteCodeAppender$Compound" sourceFile="ByteCodeAppender.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.ByteCodeAppender$Simple" sourceFile="ByteCodeAppender.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.ByteCodeAppender$Size" sourceFile="ByteCodeAppender.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.Duplication" sourceFile="Duplication.java" interface="false" size="33" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.Duplication$1" sourceFile="Duplication.java" interface="false" size="5" bugs="0"/>
-      <ClassStats class="net.bytebuddy.implementation.bytecode.Duplication$2" sourceFile="Duplication.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="net.bytebuddy.implementation.bytecode.Duplication$2" sourceFile="Duplication.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.Removal" sourceFile="Removal.java" interface="false" size="33" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.Removal$1" sourceFile="Removal.java" interface="false" size="5" bugs="0"/>
-      <ClassStats class="net.bytebuddy.implementation.bytecode.Removal$2" sourceFile="Removal.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="net.bytebuddy.implementation.bytecode.Removal$2" sourceFile="Removal.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.StackManipulation" sourceFile="StackManipulation.java" interface="true" size="3" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.StackManipulation$Compound" sourceFile="StackManipulation.java" interface="false" size="23" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.StackManipulation$Illegal" sourceFile="StackManipulation.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.StackManipulation$LegalTrivial" sourceFile="StackManipulation.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.StackManipulation$Size" sourceFile="StackManipulation.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.StackSize" sourceFile="StackSize.java" interface="false" size="46" bugs="0"/>
-      <ClassStats class="net.bytebuddy.implementation.bytecode.StackSize$1" sourceFile="StackSize.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="net.bytebuddy.implementation.bytecode.StackSize$1" sourceFile="StackSize.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.Throw" sourceFile="Throw.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.TypeCreation" sourceFile="TypeCreation.java" interface="false" size="22" bugs="0"/>
     </PackageStats>
@@ -3718,7 +3344,7 @@
       <ClassStats class="org.apache.commons.math3.analysis.polynomials.PolynomialsUtils$JacobiKey" sourceFile="PolynomialsUtils.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.analysis.polynomials.PolynomialsUtils$RecurrenceCoefficientsGenerator" sourceFile="PolynomialsUtils.java" interface="true" size="2" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.apache.commons.math3.analysis.solvers" total_bugs="2" total_types="32" total_size="1064" priority_1="2">
+    <PackageStats package="org.apache.commons.math3.analysis.solvers" total_bugs="0" total_types="32" total_size="1064">
       <ClassStats class="org.apache.commons.math3.analysis.solvers.AbstractDifferentiableUnivariateSolver" sourceFile="AbstractDifferentiableUnivariateSolver.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.analysis.solvers.AbstractPolynomialSolver" sourceFile="AbstractPolynomialSolver.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.analysis.solvers.AbstractUnivariateDifferentiableSolver" sourceFile="AbstractUnivariateDifferentiableSolver.java" interface="false" size="17" bugs="0"/>
@@ -3726,13 +3352,13 @@
       <ClassStats class="org.apache.commons.math3.analysis.solvers.AllowedSolution" sourceFile="AllowedSolution.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.analysis.solvers.BaseAbstractUnivariateSolver" sourceFile="BaseAbstractUnivariateSolver.java" interface="false" size="79" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.analysis.solvers.BaseSecantSolver" sourceFile="BaseSecantSolver.java" interface="false" size="79" bugs="0"/>
-      <ClassStats class="org.apache.commons.math3.analysis.solvers.BaseSecantSolver$1" sourceFile="BaseSecantSolver.java" interface="false" size="6" bugs="1" priority_1="1"/>
+      <ClassStats class="org.apache.commons.math3.analysis.solvers.BaseSecantSolver$1" sourceFile="BaseSecantSolver.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.analysis.solvers.BaseSecantSolver$Method" sourceFile="BaseSecantSolver.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.analysis.solvers.BaseUnivariateSolver" sourceFile="BaseUnivariateSolver.java" interface="true" size="9" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.analysis.solvers.BisectionSolver" sourceFile="BisectionSolver.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.analysis.solvers.BracketedUnivariateSolver" sourceFile="BracketedUnivariateSolver.java" interface="true" size="3" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver" sourceFile="BracketingNthOrderBrentSolver.java" interface="false" size="147" bugs="0"/>
-      <ClassStats class="org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver$1" sourceFile="BracketingNthOrderBrentSolver.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver$1" sourceFile="BracketingNthOrderBrentSolver.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.analysis.solvers.BrentSolver" sourceFile="BrentSolver.java" interface="false" size="90" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.analysis.solvers.DifferentiableUnivariateSolver" sourceFile="DifferentiableUnivariateSolver.java" interface="true" size="1" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.analysis.solvers.IllinoisSolver" sourceFile="IllinoisSolver.java" interface="false" size="13" bugs="0"/>
@@ -3762,11 +3388,11 @@
       <ClassStats class="org.apache.commons.math3.complex.Quaternion" sourceFile="Quaternion.java" interface="false" size="121" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.complex.RootsOfUnity" sourceFile="RootsOfUnity.java" interface="false" size="55" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.apache.commons.math3.dfp" total_bugs="1" total_types="10" total_size="2271" priority_1="1">
+    <PackageStats package="org.apache.commons.math3.dfp" total_bugs="0" total_types="10" total_size="2271">
       <ClassStats class="org.apache.commons.math3.dfp.BracketingNthOrderBrentSolverDFP" sourceFile="BracketingNthOrderBrentSolverDFP.java" interface="false" size="144" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.dfp.BracketingNthOrderBrentSolverDFP$1" sourceFile="BracketingNthOrderBrentSolverDFP.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.dfp.Dfp" sourceFile="Dfp.java" interface="false" size="1291" bugs="0"/>
-      <ClassStats class="org.apache.commons.math3.dfp.Dfp$1" sourceFile="Dfp.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="org.apache.commons.math3.dfp.Dfp$1" sourceFile="Dfp.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.dfp.DfpDec" sourceFile="DfpDec.java" interface="false" size="154" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.dfp.DfpDec$1" sourceFile="DfpDec.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.dfp.DfpField" sourceFile="DfpField.java" interface="false" size="245" bugs="0"/>
@@ -3977,7 +3603,7 @@
       <ClassStats class="org.apache.commons.math3.geometry.euclidean.twod.Vector2D" sourceFile="Vector2D.java" interface="false" size="143" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.geometry.euclidean.twod.Vector2DFormat" sourceFile="Vector2DFormat.java" interface="false" size="34" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.apache.commons.math3.geometry.partitioning" total_bugs="1" total_types="29" total_size="757" priority_1="1">
+    <PackageStats package="org.apache.commons.math3.geometry.partitioning" total_bugs="0" total_types="29" total_size="757">
       <ClassStats class="org.apache.commons.math3.geometry.partitioning.AbstractRegion" sourceFile="AbstractRegion.java" interface="false" size="179" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.geometry.partitioning.AbstractRegion$1" sourceFile="AbstractRegion.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.geometry.partitioning.AbstractRegion$2" sourceFile="AbstractRegion.java" interface="false" size="11" bugs="0"/>
@@ -3986,7 +3612,7 @@
       <ClassStats class="org.apache.commons.math3.geometry.partitioning.AbstractRegion$Sides" sourceFile="AbstractRegion.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.geometry.partitioning.AbstractSubHyperplane" sourceFile="AbstractSubHyperplane.java" interface="false" size="40" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.geometry.partitioning.BSPTree" sourceFile="BSPTree.java" interface="false" size="205" bugs="0"/>
-      <ClassStats class="org.apache.commons.math3.geometry.partitioning.BSPTree$1" sourceFile="BSPTree.java" interface="false" size="6" bugs="1" priority_1="1"/>
+      <ClassStats class="org.apache.commons.math3.geometry.partitioning.BSPTree$1" sourceFile="BSPTree.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.geometry.partitioning.BSPTree$LeafMerger" sourceFile="BSPTree.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.geometry.partitioning.BSPTreeVisitor" sourceFile="BSPTreeVisitor.java" interface="true" size="4" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.geometry.partitioning.BSPTreeVisitor$Order" sourceFile="BSPTreeVisitor.java" interface="false" size="19" bugs="0"/>
@@ -4119,7 +3745,7 @@
       <ClassStats class="org.apache.commons.math3.linear.SymmLQ$State" sourceFile="SymmLQ.java" interface="false" size="226" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.linear.TriDiagonalTransformer" sourceFile="TriDiagonalTransformer.java" interface="false" size="103" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.apache.commons.math3.ml.clustering" total_bugs="1" total_types="11" total_size="371" priority_1="1">
+    <PackageStats package="org.apache.commons.math3.ml.clustering" total_bugs="0" total_types="11" total_size="371">
       <ClassStats class="org.apache.commons.math3.ml.clustering.CentroidCluster" sourceFile="CentroidCluster.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.ml.clustering.Cluster" sourceFile="Cluster.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.ml.clustering.Clusterable" sourceFile="Clusterable.java" interface="true" size="2" bugs="0"/>
@@ -4128,7 +3754,7 @@
       <ClassStats class="org.apache.commons.math3.ml.clustering.DBSCANClusterer$PointStatus" sourceFile="DBSCANClusterer.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.ml.clustering.DoublePoint" sourceFile="DoublePoint.java" interface="false" size="23" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer" sourceFile="KMeansPlusPlusClusterer.java" interface="false" size="190" bugs="0"/>
-      <ClassStats class="org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer$1" sourceFile="KMeansPlusPlusClusterer.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer$1" sourceFile="KMeansPlusPlusClusterer.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer$EmptyClusterStrategy" sourceFile="KMeansPlusPlusClusterer.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.ml.clustering.MultiKMeansPlusPlusClusterer" sourceFile="MultiKMeansPlusPlusClusterer.java" interface="false" size="30" bugs="0"/>
     </PackageStats>
@@ -4173,7 +3799,7 @@
       <ClassStats class="org.apache.commons.math3.ode.SecondaryEquations" sourceFile="SecondaryEquations.java" interface="true" size="3" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.ode.UnknownParameterException" sourceFile="UnknownParameterException.java" interface="false" size="9" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.apache.commons.math3.ode.events" total_bugs="1" total_types="16" total_size="368" priority_1="1">
+    <PackageStats package="org.apache.commons.math3.ode.events" total_bugs="0" total_types="16" total_size="368">
       <ClassStats class="org.apache.commons.math3.ode.events.EventFilter" sourceFile="EventFilter.java" interface="false" size="59" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.ode.events.EventHandler" sourceFile="EventHandler.java" interface="true" size="5" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.ode.events.EventHandler$Action" sourceFile="EventHandler.java" interface="false" size="15" bugs="0"/>
@@ -4183,7 +3809,7 @@
       <ClassStats class="org.apache.commons.math3.ode.events.FilterType" sourceFile="FilterType.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.ode.events.FilterType$1" sourceFile="FilterType.java" interface="false" size="45" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.ode.events.FilterType$2" sourceFile="FilterType.java" interface="false" size="45" bugs="0"/>
-      <ClassStats class="org.apache.commons.math3.ode.events.FilterType$3" sourceFile="FilterType.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="org.apache.commons.math3.ode.events.FilterType$3" sourceFile="FilterType.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.ode.events.Transformer" sourceFile="Transformer.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.ode.events.Transformer$1" sourceFile="Transformer.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.ode.events.Transformer$2" sourceFile="Transformer.java" interface="false" size="5" bugs="0"/>
@@ -4429,14 +4055,14 @@
       <ClassStats class="org.apache.commons.math3.optimization.general.NonLinearConjugateGradientOptimizer$LineSearchFunction" sourceFile="NonLinearConjugateGradientOptimizer.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.optimization.general.Preconditioner" sourceFile="Preconditioner.java" interface="true" size="2" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.apache.commons.math3.optimization.linear" total_bugs="1" total_types="10" total_size="473" priority_1="1">
+    <PackageStats package="org.apache.commons.math3.optimization.linear" total_bugs="0" total_types="10" total_size="473">
       <ClassStats class="org.apache.commons.math3.optimization.linear.AbstractLinearOptimizer" sourceFile="AbstractLinearOptimizer.java" interface="false" size="39" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.optimization.linear.LinearConstraint" sourceFile="LinearConstraint.java" interface="false" size="52" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.optimization.linear.LinearObjectiveFunction" sourceFile="LinearObjectiveFunction.java" interface="false" size="37" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.optimization.linear.LinearOptimizer" sourceFile="LinearOptimizer.java" interface="true" size="5" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.optimization.linear.NoFeasibleSolutionException" sourceFile="NoFeasibleSolutionException.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.optimization.linear.Relationship" sourceFile="Relationship.java" interface="false" size="24" bugs="0"/>
-      <ClassStats class="org.apache.commons.math3.optimization.linear.Relationship$1" sourceFile="Relationship.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="org.apache.commons.math3.optimization.linear.Relationship$1" sourceFile="Relationship.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.optimization.linear.SimplexSolver" sourceFile="SimplexSolver.java" interface="false" size="88" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.optimization.linear.SimplexTableau" sourceFile="SimplexTableau.java" interface="false" size="214" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.optimization.linear.UnboundedSolutionException" sourceFile="UnboundedSolutionException.java" interface="false" size="5" bugs="0"/>
@@ -4457,7 +4083,7 @@
       <ClassStats class="org.apache.commons.math3.primes.Primes" sourceFile="Primes.java" interface="false" size="36" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.primes.SmallPrimes" sourceFile="SmallPrimes.java" interface="false" size="68" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.apache.commons.math3.random" total_bugs="1" total_types="32" total_size="1628" priority_1="1">
+    <PackageStats package="org.apache.commons.math3.random" total_bugs="0" total_types="32" total_size="1628">
       <ClassStats class="org.apache.commons.math3.random.AbstractRandomGenerator" sourceFile="AbstractRandomGenerator.java" interface="false" size="62" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.random.AbstractWell" sourceFile="AbstractWell.java" interface="false" size="56" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.random.BitsStreamGenerator" sourceFile="BitsStreamGenerator.java" interface="false" size="73" bugs="0"/>
@@ -4483,7 +4109,7 @@
       <ClassStats class="org.apache.commons.math3.random.UncorrelatedRandomVectorGenerator" sourceFile="UncorrelatedRandomVectorGenerator.java" interface="false" size="24" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.random.UniformRandomGenerator" sourceFile="UniformRandomGenerator.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.random.UnitSphereRandomVectorGenerator" sourceFile="UnitSphereRandomVectorGenerator.java" interface="false" size="22" bugs="0"/>
-      <ClassStats class="org.apache.commons.math3.random.ValueServer" sourceFile="ValueServer.java" interface="false" size="120" bugs="1" priority_1="1"/>
+      <ClassStats class="org.apache.commons.math3.random.ValueServer" sourceFile="ValueServer.java" interface="false" size="120" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.random.Well1024a" sourceFile="Well1024a.java" interface="false" size="33" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.random.Well19937a" sourceFile="Well19937a.java" interface="false" size="35" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.random.Well19937c" sourceFile="Well19937c.java" interface="false" size="37" bugs="0"/>
@@ -4522,12 +4148,12 @@
       <ClassStats class="org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance" sourceFile="StorelessBivariateCovariance.java" interface="false" size="32" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.stat.correlation.StorelessCovariance" sourceFile="StorelessCovariance.java" interface="false" size="44" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.apache.commons.math3.stat.descriptive" total_bugs="1" total_types="16" total_size="1179" priority_1="1">
+    <PackageStats package="org.apache.commons.math3.stat.descriptive" total_bugs="0" total_types="16" total_size="1179">
       <ClassStats class="org.apache.commons.math3.stat.descriptive.AbstractStorelessUnivariateStatistic" sourceFile="AbstractStorelessUnivariateStatistic.java" interface="false" size="37" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.stat.descriptive.AbstractUnivariateStatistic" sourceFile="AbstractUnivariateStatistic.java" interface="false" size="64" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics" sourceFile="AggregateSummaryStatistics.java" interface="false" size="100" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics$AggregatingSummaryStatistics" sourceFile="AggregateSummaryStatistics.java" interface="false" size="22" bugs="0"/>
-      <ClassStats class="org.apache.commons.math3.stat.descriptive.DescriptiveStatistics" sourceFile="DescriptiveStatistics.java" interface="false" size="217" bugs="1" priority_1="1"/>
+      <ClassStats class="org.apache.commons.math3.stat.descriptive.DescriptiveStatistics" sourceFile="DescriptiveStatistics.java" interface="false" size="217" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatistics" sourceFile="MultivariateSummaryStatistics.java" interface="false" size="184" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.stat.descriptive.StatisticalMultivariateSummary" sourceFile="StatisticalMultivariateSummary.java" interface="true" size="12" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.stat.descriptive.StatisticalSummary" sourceFile="StatisticalSummary.java" interface="true" size="8" bugs="0"/>
@@ -4579,10 +4205,10 @@
       <ClassStats class="org.apache.commons.math3.stat.inference.TestUtils" sourceFile="TestUtils.java" interface="false" size="93" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.stat.inference.WilcoxonSignedRankTest" sourceFile="WilcoxonSignedRankTest.java" interface="false" size="71" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.apache.commons.math3.stat.ranking" total_bugs="1" total_types="6" total_size="208" priority_1="1">
+    <PackageStats package="org.apache.commons.math3.stat.ranking" total_bugs="0" total_types="6" total_size="208">
       <ClassStats class="org.apache.commons.math3.stat.ranking.NaNStrategy" sourceFile="NaNStrategy.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.stat.ranking.NaturalRanking" sourceFile="NaturalRanking.java" interface="false" size="150" bugs="0"/>
-      <ClassStats class="org.apache.commons.math3.stat.ranking.NaturalRanking$1" sourceFile="NaturalRanking.java" interface="false" size="6" bugs="1" priority_1="1"/>
+      <ClassStats class="org.apache.commons.math3.stat.ranking.NaturalRanking$1" sourceFile="NaturalRanking.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.stat.ranking.NaturalRanking$IntDoublePair" sourceFile="NaturalRanking.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.stat.ranking.RankingAlgorithm" sourceFile="RankingAlgorithm.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.stat.ranking.TiesStrategy" sourceFile="TiesStrategy.java" interface="false" size="17" bugs="0"/>
@@ -4598,13 +4224,13 @@
       <ClassStats class="org.apache.commons.math3.stat.regression.SimpleRegression" sourceFile="SimpleRegression.java" interface="false" size="237" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.stat.regression.UpdatingMultipleLinearRegression" sourceFile="UpdatingMultipleLinearRegression.java" interface="true" size="8" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.apache.commons.math3.transform" total_bugs="1" total_types="12" total_size="491" priority_1="1">
+    <PackageStats package="org.apache.commons.math3.transform" total_bugs="0" total_types="12" total_size="491">
       <ClassStats class="org.apache.commons.math3.transform.DctNormalization" sourceFile="DctNormalization.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.transform.DftNormalization" sourceFile="DftNormalization.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.transform.DstNormalization" sourceFile="DstNormalization.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.transform.FastCosineTransformer" sourceFile="FastCosineTransformer.java" interface="false" size="50" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.transform.FastFourierTransformer" sourceFile="FastFourierTransformer.java" interface="false" size="186" bugs="0"/>
-      <ClassStats class="org.apache.commons.math3.transform.FastFourierTransformer$1" sourceFile="FastFourierTransformer.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="org.apache.commons.math3.transform.FastFourierTransformer$1" sourceFile="FastFourierTransformer.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.transform.FastFourierTransformer$MultiDimensionalComplexMatrix" sourceFile="FastFourierTransformer.java" interface="false" size="70" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.transform.FastHadamardTransformer" sourceFile="FastHadamardTransformer.java" interface="false" size="48" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.transform.FastSineTransformer" sourceFile="FastSineTransformer.java" interface="false" size="45" bugs="0"/>
@@ -4612,7 +4238,7 @@
       <ClassStats class="org.apache.commons.math3.transform.TransformType" sourceFile="TransformType.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.transform.TransformUtils" sourceFile="TransformUtils.java" interface="false" size="41" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.apache.commons.math3.util" total_bugs="1" total_types="45" total_size="4595" priority_1="1">
+    <PackageStats package="org.apache.commons.math3.util" total_bugs="0" total_types="45" total_size="4595">
       <ClassStats class="org.apache.commons.math3.util.ArithmeticUtils" sourceFile="ArithmeticUtils.java" interface="false" size="351" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.util.BigReal" sourceFile="BigReal.java" interface="false" size="133" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.util.BigRealField" sourceFile="BigRealField.java" interface="false" size="19" bugs="0"/>
@@ -4655,7 +4281,7 @@
       <ClassStats class="org.apache.commons.math3.util.Pair" sourceFile="Pair.java" interface="false" size="31" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.util.Precision" sourceFile="Precision.java" interface="false" size="123" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.util.ResizableDoubleArray" sourceFile="ResizableDoubleArray.java" interface="false" size="286" bugs="0"/>
-      <ClassStats class="org.apache.commons.math3.util.ResizableDoubleArray$1" sourceFile="ResizableDoubleArray.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="org.apache.commons.math3.util.ResizableDoubleArray$1" sourceFile="ResizableDoubleArray.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.util.ResizableDoubleArray$ExpansionMode" sourceFile="ResizableDoubleArray.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.util.TransformerMap" sourceFile="TransformerMap.java" interface="false" size="55" bugs="0"/>
     </PackageStats>
@@ -4685,9 +4311,9 @@
       <ClassStats class="org.openjdk.jmh.annotations.Timeout" sourceFile="Timeout.java" interface="true" size="3" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.annotations.Warmup" sourceFile="Warmup.java" interface="true" size="8" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.openjdk.jmh.generators.core" total_bugs="1" total_types="33" total_size="1989" priority_1="1">
+    <PackageStats package="org.openjdk.jmh.generators.core" total_bugs="0" total_types="33" total_size="1989">
       <ClassStats class="org.openjdk.jmh.generators.core.BenchmarkGenerator" sourceFile="BenchmarkGenerator.java" interface="false" size="620" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.generators.core.BenchmarkGenerator$1" sourceFile="BenchmarkGenerator.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="org.openjdk.jmh.generators.core.BenchmarkGenerator$1" sourceFile="BenchmarkGenerator.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.generators.core.BenchmarkGeneratorSession" sourceFile="BenchmarkGeneratorSession.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.generators.core.BenchmarkGeneratorUtils" sourceFile="BenchmarkGeneratorUtils.java" interface="false" size="155" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.generators.core.BenchmarkInfo" sourceFile="BenchmarkInfo.java" interface="false" size="25" bugs="0"/>
@@ -4758,7 +4384,7 @@
       <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmh_B2" sourceFile="Blackhole_jmh_B2.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.infra.generated.Blackhole_jmh_B3" sourceFile="Blackhole_jmh_B3.java" interface="false" size="259" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.openjdk.jmh.profile" total_bugs="1" total_types="49" total_size="2046" priority_1="1">
+    <PackageStats package="org.openjdk.jmh.profile" total_bugs="0" total_types="49" total_size="2046">
       <ClassStats class="org.openjdk.jmh.profile.AbstractHotspotProfiler" sourceFile="AbstractHotspotProfiler.java" interface="false" size="49" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.profile.AbstractHotspotProfiler$HotspotInternalResult" sourceFile="AbstractHotspotProfiler.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.profile.AbstractPerfAsmProfiler" sourceFile="AbstractPerfAsmProfiler.java" interface="false" size="435" bugs="0"/>
@@ -4777,7 +4403,7 @@
       <ClassStats class="org.openjdk.jmh.profile.CompilerProfiler" sourceFile="CompilerProfiler.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.profile.Defaults" sourceFile="Defaults.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.profile.ExternalProfiler" sourceFile="ExternalProfiler.java" interface="true" size="7" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.profile.GCProfiler" sourceFile="GCProfiler.java" interface="false" size="90" bugs="1" priority_1="1"/>
+      <ClassStats class="org.openjdk.jmh.profile.GCProfiler" sourceFile="GCProfiler.java" interface="false" size="90" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.profile.GCProfiler$1" sourceFile="GCProfiler.java" interface="false" size="27" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.profile.GCProfiler$HotspotAllocationSnapshot" sourceFile="GCProfiler.java" interface="false" size="55" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.profile.HotspotClassloadingProfiler" sourceFile="HotspotClassloadingProfiler.java" interface="false" size="12" bugs="0"/>
@@ -4809,7 +4435,7 @@
       <ClassStats class="org.openjdk.jmh.profile.StackProfiler$StackResultAggregator" sourceFile="StackProfiler.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.profile.WinPerfAsmProfiler" sourceFile="WinPerfAsmProfiler.java" interface="false" size="114" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.openjdk.jmh.results" total_bugs="1" total_types="22" total_size="536" priority_1="1">
+    <PackageStats package="org.openjdk.jmh.results" total_bugs="0" total_types="22" total_size="536">
       <ClassStats class="org.openjdk.jmh.results.AggregationPolicy" sourceFile="AggregationPolicy.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.results.Aggregator" sourceFile="Aggregator.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.results.AggregatorUtils" sourceFile="AggregatorUtils.java" interface="false" size="38" bugs="0"/>
@@ -4822,7 +4448,7 @@
       <ClassStats class="org.openjdk.jmh.results.IterationResultMetaData" sourceFile="IterationResultMetaData.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.results.RawResults" sourceFile="RawResults.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.results.Result" sourceFile="Result.java" interface="false" size="82" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.results.Result$1" sourceFile="Result.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="org.openjdk.jmh.results.Result$1" sourceFile="Result.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.results.ResultRole" sourceFile="ResultRole.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.results.RunResult" sourceFile="RunResult.java" interface="false" size="40" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.results.RunResult$1" sourceFile="RunResult.java" interface="false" size="6" bugs="0"/>
@@ -4833,31 +4459,31 @@
       <ClassStats class="org.openjdk.jmh.results.ThroughputResult" sourceFile="ThroughputResult.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.results.ThroughputResult$ThroughputAggregator" sourceFile="ThroughputResult.java" interface="false" size="14" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.openjdk.jmh.results.format" total_bugs="1" total_types="9" total_size="473" priority_1="1">
+    <PackageStats package="org.openjdk.jmh.results.format" total_bugs="0" total_types="9" total_size="473">
       <ClassStats class="org.openjdk.jmh.results.format.JSONResultFormat" sourceFile="JSONResultFormat.java" interface="false" size="162" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.results.format.LaTeXResultFormat" sourceFile="LaTeXResultFormat.java" interface="false" size="69" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.results.format.ResultFormat" sourceFile="ResultFormat.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.results.format.ResultFormatFactory" sourceFile="ResultFormatFactory.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.results.format.ResultFormatFactory$1" sourceFile="ResultFormatFactory.java" interface="false" size="15" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.results.format.ResultFormatFactory$2" sourceFile="ResultFormatFactory.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="org.openjdk.jmh.results.format.ResultFormatFactory$2" sourceFile="ResultFormatFactory.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.results.format.ResultFormatType" sourceFile="ResultFormatType.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.results.format.TextResultFormat" sourceFile="TextResultFormat.java" interface="false" size="109" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.results.format.XSVResultFormat" sourceFile="XSVResultFormat.java" interface="false" size="82" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.openjdk.jmh.runner" total_bugs="6" total_types="59" total_size="2182" priority_1="6">
+    <PackageStats package="org.openjdk.jmh.runner" total_bugs="0" total_types="59" total_size="2182">
       <ClassStats class="org.openjdk.jmh.runner.AbstractResourceReader" sourceFile="AbstractResourceReader.java" interface="false" size="37" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.Action" sourceFile="Action.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.ActionMode" sourceFile="ActionMode.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.ActionPlan" sourceFile="ActionPlan.java" interface="false" size="26" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.runner.ActionPlan$1" sourceFile="ActionPlan.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="org.openjdk.jmh.runner.ActionPlan$1" sourceFile="ActionPlan.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.ActionType" sourceFile="ActionType.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.BaseRunner" sourceFile="BaseRunner.java" interface="false" size="192" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.BaseRunner$1" sourceFile="BaseRunner.java" interface="false" size="12" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.runner.BaseRunner$2" sourceFile="BaseRunner.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="org.openjdk.jmh.runner.BaseRunner$2" sourceFile="BaseRunner.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.BenchmarkException" sourceFile="BenchmarkException.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.BenchmarkHandler" sourceFile="BenchmarkHandler.java" interface="false" size="155" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.BenchmarkHandler$1" sourceFile="BenchmarkHandler.java" interface="false" size="11" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.runner.BenchmarkHandler$2" sourceFile="BenchmarkHandler.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="org.openjdk.jmh.runner.BenchmarkHandler$2" sourceFile="BenchmarkHandler.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask" sourceFile="BenchmarkHandler.java" interface="false" size="28" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.BenchmarkHandler$ExecutorType" sourceFile="BenchmarkHandler.java" interface="false" size="21" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.BenchmarkHandler$ExecutorType$1" sourceFile="BenchmarkHandler.java" interface="false" size="5" bugs="0"/>
@@ -4879,10 +4505,10 @@
       <ClassStats class="org.openjdk.jmh.runner.BenchmarkListEntry$9" sourceFile="BenchmarkListEntry.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.CompilerHints" sourceFile="CompilerHints.java" interface="false" size="115" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.Defaults" sourceFile="Defaults.java" interface="false" size="35" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.runner.ForkedMain" sourceFile="ForkedMain.java" interface="false" size="59" bugs="2" priority_1="2"/>
+      <ClassStats class="org.openjdk.jmh.runner.ForkedMain" sourceFile="ForkedMain.java" interface="false" size="59" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.ForkedMain$1" sourceFile="ForkedMain.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.ForkedMain$HangupThread" sourceFile="ForkedMain.java" interface="false" size="7" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.runner.ForkedMain$ShutdownTimeoutThread" sourceFile="ForkedMain.java" interface="false" size="56" bugs="1" priority_1="1"/>
+      <ClassStats class="org.openjdk.jmh.runner.ForkedMain$ShutdownTimeoutThread" sourceFile="ForkedMain.java" interface="false" size="56" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.ForkedRunner" sourceFile="ForkedRunner.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.ForkedRunner$1" sourceFile="ForkedRunner.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.ForkedRunner$SavedIOException" sourceFile="ForkedRunner.java" interface="false" size="10" bugs="0"/>
@@ -4905,25 +4531,25 @@
       <ClassStats class="org.openjdk.jmh.runner.WorkloadParams" sourceFile="WorkloadParams.java" interface="false" size="48" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.WorkloadParams$Value" sourceFile="WorkloadParams.java" interface="false" size="22" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.openjdk.jmh.runner.format" total_bugs="1" total_types="7" total_size="165" priority_1="1">
+    <PackageStats package="org.openjdk.jmh.runner.format" total_bugs="0" total_types="7" total_size="165">
       <ClassStats class="org.openjdk.jmh.runner.format.AbstractOutputFormat" sourceFile="AbstractOutputFormat.java" interface="false" size="29" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.format.OutputFormat" sourceFile="OutputFormat.java" interface="true" size="14" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.format.OutputFormatFactory" sourceFile="OutputFormatFactory.java" interface="false" size="8" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.runner.format.OutputFormatFactory$1" sourceFile="OutputFormatFactory.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="org.openjdk.jmh.runner.format.OutputFormatFactory$1" sourceFile="OutputFormatFactory.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.format.SilentFormat" sourceFile="SilentFormat.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.format.TextReportFormat" sourceFile="TextReportFormat.java" interface="false" size="84" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.format.TextReportFormat$1" sourceFile="TextReportFormat.java" interface="false" size="4" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.openjdk.jmh.runner.link" total_bugs="5" total_types="21" total_size="473" priority_1="5">
+    <PackageStats package="org.openjdk.jmh.runner.link" total_bugs="0" total_types="21" total_size="473">
       <ClassStats class="org.openjdk.jmh.runner.link.ActionPlanFrame" sourceFile="ActionPlanFrame.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.link.BinaryLinkClient" sourceFile="BinaryLinkClient.java" interface="false" size="92" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.link.BinaryLinkClient$1" sourceFile="BinaryLinkClient.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.link.BinaryLinkClient$ForwardingPrintStream" sourceFile="BinaryLinkClient.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.link.BinaryLinkClient$ForwardingPrintStream$1" sourceFile="BinaryLinkClient.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.link.BinaryLinkServer" sourceFile="BinaryLinkServer.java" interface="false" size="105" bugs="0"/>
-      <ClassStats class="org.openjdk.jmh.runner.link.BinaryLinkServer$1" sourceFile="BinaryLinkServer.java" interface="false" size="6" bugs="1" priority_1="1"/>
-      <ClassStats class="org.openjdk.jmh.runner.link.BinaryLinkServer$Acceptor" sourceFile="BinaryLinkServer.java" interface="false" size="32" bugs="2" priority_1="2"/>
-      <ClassStats class="org.openjdk.jmh.runner.link.BinaryLinkServer$Handler" sourceFile="BinaryLinkServer.java" interface="false" size="85" bugs="2" priority_1="2"/>
+      <ClassStats class="org.openjdk.jmh.runner.link.BinaryLinkServer$1" sourceFile="BinaryLinkServer.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.openjdk.jmh.runner.link.BinaryLinkServer$Acceptor" sourceFile="BinaryLinkServer.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="org.openjdk.jmh.runner.link.BinaryLinkServer$Handler" sourceFile="BinaryLinkServer.java" interface="false" size="85" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.link.ClassConventions" sourceFile="ClassConventions.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.link.ExceptionFrame" sourceFile="ExceptionFrame.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.openjdk.jmh.runner.link.FinishingFrame" sourceFile="FinishingFrame.java" interface="false" size="4" bugs="0"/>
@@ -4987,54 +4613,51 @@
       <ClassStats class="org.openjdk.jmh.util.Version" sourceFile="Version.java" interface="false" size="36" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="5671" invocations="4177" avgMicrosecondsPerInvocation="1357" maxMicrosecondsPerInvocation="114367" standardDeviationMicrosecondsPerInvocation="5264"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="3936" invocations="26333" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="59901" standardDeviationMicrosecondsPerInvocation="869"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="3728" invocations="28511" avgMicrosecondsPerInvocation="130" maxMicrosecondsPerInvocation="34195" standardDeviationMicrosecondsPerInvocation="575"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="3323" invocations="27350" avgMicrosecondsPerInvocation="121" maxMicrosecondsPerInvocation="77250" standardDeviationMicrosecondsPerInvocation="910"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="3088" invocations="28912" avgMicrosecondsPerInvocation="106" maxMicrosecondsPerInvocation="69146" standardDeviationMicrosecondsPerInvocation="797"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="2779" invocations="28733" avgMicrosecondsPerInvocation="96" maxMicrosecondsPerInvocation="22779" standardDeviationMicrosecondsPerInvocation="321"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="2286" invocations="24743" avgMicrosecondsPerInvocation="92" maxMicrosecondsPerInvocation="70809" standardDeviationMicrosecondsPerInvocation="717"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1807" invocations="30585" avgMicrosecondsPerInvocation="59" maxMicrosecondsPerInvocation="41072" standardDeviationMicrosecondsPerInvocation="364"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1598" invocations="32514" avgMicrosecondsPerInvocation="49" maxMicrosecondsPerInvocation="50960" standardDeviationMicrosecondsPerInvocation="441"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1193" invocations="4668" avgMicrosecondsPerInvocation="255" maxMicrosecondsPerInvocation="19622" standardDeviationMicrosecondsPerInvocation="640"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1117" invocations="4668" avgMicrosecondsPerInvocation="239" maxMicrosecondsPerInvocation="50170" standardDeviationMicrosecondsPerInvocation="1118"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1080" invocations="6251" avgMicrosecondsPerInvocation="172" maxMicrosecondsPerInvocation="29116" standardDeviationMicrosecondsPerInvocation="572"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="878" invocations="28511" avgMicrosecondsPerInvocation="30" maxMicrosecondsPerInvocation="9317" standardDeviationMicrosecondsPerInvocation="153"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="817" invocations="4177" avgMicrosecondsPerInvocation="195" maxMicrosecondsPerInvocation="33457" standardDeviationMicrosecondsPerInvocation="828"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="793" invocations="1247040" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="4320" standardDeviationMicrosecondsPerInvocation="8"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="771" invocations="4177" avgMicrosecondsPerInvocation="184" maxMicrosecondsPerInvocation="16463" standardDeviationMicrosecondsPerInvocation="577"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector" totalMilliseconds="654" invocations="4177" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="45042" standardDeviationMicrosecondsPerInvocation="778"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="642" invocations="4177" avgMicrosecondsPerInvocation="153" maxMicrosecondsPerInvocation="8745" standardDeviationMicrosecondsPerInvocation="392"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="596" invocations="25644" avgMicrosecondsPerInvocation="23" maxMicrosecondsPerInvocation="45440" standardDeviationMicrosecondsPerInvocation="387"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="589" invocations="9471" avgMicrosecondsPerInvocation="62" maxMicrosecondsPerInvocation="23596" standardDeviationMicrosecondsPerInvocation="321"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="500" invocations="30585" avgMicrosecondsPerInvocation="16" maxMicrosecondsPerInvocation="31581" standardDeviationMicrosecondsPerInvocation="189"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="472" invocations="4177" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="8189" standardDeviationMicrosecondsPerInvocation="327"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="472" invocations="4177" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="58493" standardDeviationMicrosecondsPerInvocation="1175"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="467" invocations="26333" avgMicrosecondsPerInvocation="17" maxMicrosecondsPerInvocation="32661" standardDeviationMicrosecondsPerInvocation="206"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="464" invocations="4177" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="29122" standardDeviationMicrosecondsPerInvocation="537"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="461" invocations="10202" avgMicrosecondsPerInvocation="45" maxMicrosecondsPerInvocation="28990" standardDeviationMicrosecondsPerInvocation="324"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="438" invocations="4177" avgMicrosecondsPerInvocation="104" maxMicrosecondsPerInvocation="9764" standardDeviationMicrosecondsPerInvocation="289"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="428" invocations="4177" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="6995" standardDeviationMicrosecondsPerInvocation="235"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="424" invocations="4177" avgMicrosecondsPerInvocation="101" maxMicrosecondsPerInvocation="5742" standardDeviationMicrosecondsPerInvocation="262"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="423" invocations="4177" avgMicrosecondsPerInvocation="101" maxMicrosecondsPerInvocation="6052" standardDeviationMicrosecondsPerInvocation="250"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="420" invocations="4177" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="4636" standardDeviationMicrosecondsPerInvocation="226"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="420" invocations="4177" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="10492" standardDeviationMicrosecondsPerInvocation="334"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="409" invocations="4177" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="6843" standardDeviationMicrosecondsPerInvocation="271"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="400" invocations="4177" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="6954" standardDeviationMicrosecondsPerInvocation="282"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="399" invocations="4177" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="8359" standardDeviationMicrosecondsPerInvocation="282"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="395" invocations="4668" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="3523" standardDeviationMicrosecondsPerInvocation="197"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="393" invocations="4177" avgMicrosecondsPerInvocation="94" maxMicrosecondsPerInvocation="7614" standardDeviationMicrosecondsPerInvocation="285"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="391" invocations="4177" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="7571" standardDeviationMicrosecondsPerInvocation="278"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNonShortCircuit" totalMilliseconds="389" invocations="4177" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="35874" standardDeviationMicrosecondsPerInvocation="605"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="389" invocations="4177" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="4640" standardDeviationMicrosecondsPerInvocation="225"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredStaticMethodReturnDetector" totalMilliseconds="376" invocations="4177" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="44488" standardDeviationMicrosecondsPerInvocation="720"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="368" invocations="4177" avgMicrosecondsPerInvocation="88" maxMicrosecondsPerInvocation="7339" standardDeviationMicrosecondsPerInvocation="276"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="364" invocations="4177" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="8381" standardDeviationMicrosecondsPerInvocation="283"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.LoopInsideBenchmarkDetector" totalMilliseconds="358" invocations="4177" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="29980" standardDeviationMicrosecondsPerInvocation="523"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="356" invocations="4177" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="21665" standardDeviationMicrosecondsPerInvocation="392"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BadSyntaxForRegularExpression" totalMilliseconds="356" invocations="4177" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="5221" standardDeviationMicrosecondsPerInvocation="237"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadForLoop" totalMilliseconds="350" invocations="4177" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="6314" standardDeviationMicrosecondsPerInvocation="223"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDerefsInvolvingNonShortCircuitEvaluation" totalMilliseconds="347" invocations="4177" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="25573" standardDeviationMicrosecondsPerInvocation="452"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="5294" invocations="28511" avgMicrosecondsPerInvocation="185" maxMicrosecondsPerInvocation="63828" standardDeviationMicrosecondsPerInvocation="985"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="5255" invocations="26333" avgMicrosecondsPerInvocation="199" maxMicrosecondsPerInvocation="73503" standardDeviationMicrosecondsPerInvocation="1115"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="5051" invocations="27350" avgMicrosecondsPerInvocation="184" maxMicrosecondsPerInvocation="169528" standardDeviationMicrosecondsPerInvocation="1686"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="4662" invocations="28912" avgMicrosecondsPerInvocation="161" maxMicrosecondsPerInvocation="125843" standardDeviationMicrosecondsPerInvocation="1560"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="4442" invocations="4177" avgMicrosecondsPerInvocation="1063" maxMicrosecondsPerInvocation="529987" standardDeviationMicrosecondsPerInvocation="9328"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="4046" invocations="28733" avgMicrosecondsPerInvocation="140" maxMicrosecondsPerInvocation="60302" standardDeviationMicrosecondsPerInvocation="828"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="3169" invocations="24743" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="60160" standardDeviationMicrosecondsPerInvocation="926"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="2620" invocations="30585" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="29158" standardDeviationMicrosecondsPerInvocation="466"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1609" invocations="32406" avgMicrosecondsPerInvocation="49" maxMicrosecondsPerInvocation="20564" standardDeviationMicrosecondsPerInvocation="304"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="1371" invocations="28511" avgMicrosecondsPerInvocation="48" maxMicrosecondsPerInvocation="27168" standardDeviationMicrosecondsPerInvocation="438"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="1202" invocations="4177" avgMicrosecondsPerInvocation="287" maxMicrosecondsPerInvocation="50379" standardDeviationMicrosecondsPerInvocation="1497"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="1100" invocations="1204530" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="23137" standardDeviationMicrosecondsPerInvocation="42"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="1055" invocations="4177" avgMicrosecondsPerInvocation="252" maxMicrosecondsPerInvocation="64995" standardDeviationMicrosecondsPerInvocation="1517"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="1023" invocations="4177" avgMicrosecondsPerInvocation="245" maxMicrosecondsPerInvocation="43886" standardDeviationMicrosecondsPerInvocation="1162"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1013" invocations="4644" avgMicrosecondsPerInvocation="218" maxMicrosecondsPerInvocation="13994" standardDeviationMicrosecondsPerInvocation="531"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="956" invocations="4644" avgMicrosecondsPerInvocation="205" maxMicrosecondsPerInvocation="55909" standardDeviationMicrosecondsPerInvocation="971"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="956" invocations="6099" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="30612" standardDeviationMicrosecondsPerInvocation="634"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="842" invocations="30585" avgMicrosecondsPerInvocation="27" maxMicrosecondsPerInvocation="66934" standardDeviationMicrosecondsPerInvocation="512"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="772" invocations="8934" avgMicrosecondsPerInvocation="86" maxMicrosecondsPerInvocation="17049" standardDeviationMicrosecondsPerInvocation="242"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="705" invocations="25644" avgMicrosecondsPerInvocation="27" maxMicrosecondsPerInvocation="21000" standardDeviationMicrosecondsPerInvocation="278"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="681" invocations="26333" avgMicrosecondsPerInvocation="25" maxMicrosecondsPerInvocation="13045" standardDeviationMicrosecondsPerInvocation="217"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="652" invocations="4177" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="37045" standardDeviationMicrosecondsPerInvocation="951"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="643" invocations="4177" avgMicrosecondsPerInvocation="154" maxMicrosecondsPerInvocation="62123" standardDeviationMicrosecondsPerInvocation="1132"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="600" invocations="4177" avgMicrosecondsPerInvocation="143" maxMicrosecondsPerInvocation="37854" standardDeviationMicrosecondsPerInvocation="832"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="583" invocations="4177" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="12439" standardDeviationMicrosecondsPerInvocation="503"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="556" invocations="4177" avgMicrosecondsPerInvocation="133" maxMicrosecondsPerInvocation="45435" standardDeviationMicrosecondsPerInvocation="1126"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="554" invocations="4177" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="35663" standardDeviationMicrosecondsPerInvocation="900"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="553" invocations="4177" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="27310" standardDeviationMicrosecondsPerInvocation="768"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="541" invocations="4177" avgMicrosecondsPerInvocation="129" maxMicrosecondsPerInvocation="33080" standardDeviationMicrosecondsPerInvocation="828"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="540" invocations="4177" avgMicrosecondsPerInvocation="129" maxMicrosecondsPerInvocation="22328" standardDeviationMicrosecondsPerInvocation="644"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="539" invocations="4177" avgMicrosecondsPerInvocation="129" maxMicrosecondsPerInvocation="32721" standardDeviationMicrosecondsPerInvocation="832"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="538" invocations="4177" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="24012" standardDeviationMicrosecondsPerInvocation="775"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="525" invocations="4177" avgMicrosecondsPerInvocation="125" maxMicrosecondsPerInvocation="20870" standardDeviationMicrosecondsPerInvocation="541"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="522" invocations="4177" avgMicrosecondsPerInvocation="125" maxMicrosecondsPerInvocation="28417" standardDeviationMicrosecondsPerInvocation="602"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="518" invocations="4177" avgMicrosecondsPerInvocation="124" maxMicrosecondsPerInvocation="10670" standardDeviationMicrosecondsPerInvocation="325"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="509" invocations="4177" avgMicrosecondsPerInvocation="122" maxMicrosecondsPerInvocation="22685" standardDeviationMicrosecondsPerInvocation="650"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="507" invocations="4177" avgMicrosecondsPerInvocation="121" maxMicrosecondsPerInvocation="19901" standardDeviationMicrosecondsPerInvocation="566"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="485" invocations="4177" avgMicrosecondsPerInvocation="116" maxMicrosecondsPerInvocation="33916" standardDeviationMicrosecondsPerInvocation="628"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindFieldSelfAssignment" totalMilliseconds="485" invocations="4177" avgMicrosecondsPerInvocation="116" maxMicrosecondsPerInvocation="38527" standardDeviationMicrosecondsPerInvocation="844"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="470" invocations="4177" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="21425" standardDeviationMicrosecondsPerInvocation="640"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SynchronizationOnSharedBuiltinConstant" totalMilliseconds="467" invocations="4177" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="48749" standardDeviationMicrosecondsPerInvocation="984"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="460" invocations="4177" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="60031" standardDeviationMicrosecondsPerInvocation="1286"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="459" invocations="544411" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="10870" standardDeviationMicrosecondsPerInvocation="26"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IntCast2LongAsInstant" totalMilliseconds="457" invocations="4177" avgMicrosecondsPerInvocation="109" maxMicrosecondsPerInvocation="25137" standardDeviationMicrosecondsPerInvocation="725"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector" totalMilliseconds="454" invocations="4177" avgMicrosecondsPerInvocation="108" maxMicrosecondsPerInvocation="24569" standardDeviationMicrosecondsPerInvocation="645"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

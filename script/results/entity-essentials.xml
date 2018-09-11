@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1534820443000" analysisTimestamp="1534894999068" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534820443000" analysisTimestamp="1536631736675" release="">
   <Project projectName="">
     <Jar>tmp/entity-essentials</Jar>
   </Project>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="ch.qos.logback.classic.db.DBAppender">
-      <SourceLine classname="ch.qos.logback.classic.db.DBAppender" start="43" end="294" sourcefile="DBAppender.java" sourcepath="ch/qos/logback/classic/db/DBAppender.java"/>
-    </Class>
-    <Method classname="ch.qos.logback.classic.db.DBAppender" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="ch.qos.logback.classic.db.DBAppender" start="67" end="79" startBytecode="0" endBytecode="14" sourcefile="DBAppender.java" sourcepath="ch/qos/logback/classic/db/DBAppender.java"/>
-    </Method>
-    <LocalVariable name="ex" register="1" pc="23" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="ch.qos.logback.classic.db.DBAppender" start="75" end="75" startBytecode="22" endBytecode="22" sourcefile="DBAppender.java" sourcepath="ch/qos/logback/classic/db/DBAppender.java"/>
-  </BugInstance>
   <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
     <Class classname="ch.qos.logback.classic.gaffer.ConfigurationDelegate">
       <SourceLine classname="ch.qos.logback.classic.gaffer.ConfigurationDelegate" start="49" end="243" sourcefile="ConfigurationDelegate.groovy" sourcepath="ch/qos/logback/classic/gaffer/ConfigurationDelegate.groovy"/>
@@ -53,237 +43,6 @@
     </Method>
     <LocalVariable name="?" register="1" pc="7" role="LOCAL_VARIABLE_UNKNOWN"/>
     <SourceLine classname="ch.qos.logback.classic.gaffer.PropertyUtil" startBytecode="7" endBytecode="7" sourcefile="PropertyUtil.groovy" sourcepath="ch/qos/logback/classic/gaffer/PropertyUtil.groovy"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="ch.qos.logback.classic.net.SocketNode">
-      <SourceLine classname="ch.qos.logback.classic.net.SocketNode" start="50" end="125" sourcefile="SocketNode.java" sourcepath="ch/qos/logback/classic/net/SocketNode.java"/>
-    </Class>
-    <Method classname="ch.qos.logback.classic.net.SocketNode" name="run" signature="()V" isStatic="false">
-      <SourceLine classname="ch.qos.logback.classic.net.SocketNode" start="70" end="105" startBytecode="0" endBytecode="94" sourcefile="SocketNode.java" sourcepath="ch/qos/logback/classic/net/SocketNode.java"/>
-    </Method>
-    <LocalVariable name="e" register="3" pc="121" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="ch.qos.logback.classic.net.SocketNode" start="92" end="92" startBytecode="120" endBytecode="120" sourcefile="SocketNode.java" sourcepath="ch/qos/logback/classic/net/SocketNode.java"/>
-    <SourceLine classname="ch.qos.logback.classic.net.SocketNode" start="94" end="94" startBytecode="133" endBytecode="133" sourcefile="SocketNode.java" sourcepath="ch/qos/logback/classic/net/SocketNode.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="ch.qos.logback.classic.net.SocketReceiver">
-      <SourceLine classname="ch.qos.logback.classic.net.SocketReceiver" start="44" end="219" sourcefile="SocketReceiver.java" sourcepath="ch/qos/logback/classic/net/SocketReceiver.java"/>
-    </Class>
-    <Method classname="ch.qos.logback.classic.net.SocketReceiver" name="run" signature="()V" isStatic="false">
-      <SourceLine classname="ch.qos.logback.classic.net.SocketReceiver" start="113" end="129" startBytecode="0" endBytecode="43" sourcefile="SocketReceiver.java" sourcepath="ch/qos/logback/classic/net/SocketReceiver.java"/>
-    </Method>
-    <LocalVariable name="lc" register="1" pc="83" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="ch.qos.logback.classic.net.SocketReceiver" start="125" end="125" startBytecode="83" endBytecode="83" sourcefile="SocketReceiver.java" sourcepath="ch/qos/logback/classic/net/SocketReceiver.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="ch.qos.logback.classic.spi.ThrowableProxy">
-      <SourceLine classname="ch.qos.logback.classic.spi.ThrowableProxy" start="31" end="155" sourcefile="ThrowableProxy.java" sourcepath="ch/qos/logback/classic/spi/ThrowableProxy.java"/>
-    </Class>
-    <Method classname="ch.qos.logback.classic.spi.ThrowableProxy" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="ch.qos.logback.classic.spi.ThrowableProxy" start="39" end="48" startBytecode="0" endBytecode="15" sourcefile="ThrowableProxy.java" sourcepath="ch/qos/logback/classic/spi/ThrowableProxy.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="18" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="ch.qos.logback.classic.spi.ThrowableProxy" start="42" end="42" startBytecode="18" endBytecode="18" sourcefile="ThrowableProxy.java" sourcepath="ch/qos/logback/classic/spi/ThrowableProxy.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="ch.qos.logback.core.AsyncAppenderBase$Worker">
-      <SourceLine classname="ch.qos.logback.core.AsyncAppenderBase$Worker" start="280" end="304" sourcefile="AsyncAppenderBase.java" sourcepath="ch/qos/logback/core/AsyncAppenderBase.java"/>
-    </Class>
-    <Method classname="ch.qos.logback.core.AsyncAppenderBase$Worker" name="run" signature="()V" isStatic="false">
-      <SourceLine classname="ch.qos.logback.core.AsyncAppenderBase$Worker" start="283" end="304" startBytecode="0" endBytecode="46" sourcefile="AsyncAppenderBase.java" sourcepath="ch/qos/logback/core/AsyncAppenderBase.java"/>
-    </Method>
-    <LocalVariable name="ie" register="3" pc="37" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="ch.qos.logback.core.AsyncAppenderBase$Worker" start="291" end="291" startBytecode="36" endBytecode="36" sourcefile="AsyncAppenderBase.java" sourcepath="ch/qos/logback/core/AsyncAppenderBase.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="ch.qos.logback.core.db.dialect.DBUtil$1">
-      <SourceLine classname="ch.qos.logback.core.db.dialect.DBUtil$1" start="73" end="73" sourcefile="DBUtil.java" sourcepath="ch/qos/logback/core/db/dialect/DBUtil.java"/>
-    </Class>
-    <Method classname="ch.qos.logback.core.db.dialect.DBUtil$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="ch.qos.logback.core.db.dialect.DBUtil$1" start="73" end="73" startBytecode="0" endBytecode="60" sourcefile="DBUtil.java" sourcepath="ch/qos/logback/core/db/dialect/DBUtil.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="ch.qos.logback.core.db.dialect.DBUtil$1" start="73" end="73" startBytecode="23" endBytecode="23" sourcefile="DBUtil.java" sourcepath="ch/qos/logback/core/db/dialect/DBUtil.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="ch.qos.logback.core.joran.action.ActionUtil$1">
-      <SourceLine classname="ch.qos.logback.core.joran.action.ActionUtil$1" start="43" end="43" sourcefile="ActionUtil.java" sourcepath="ch/qos/logback/core/joran/action/ActionUtil.java"/>
-    </Class>
-    <Method classname="ch.qos.logback.core.joran.action.ActionUtil$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="ch.qos.logback.core.joran.action.ActionUtil$1" start="43" end="43" startBytecode="0" endBytecode="25" sourcefile="ActionUtil.java" sourcepath="ch/qos/logback/core/joran/action/ActionUtil.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="ch.qos.logback.core.joran.action.ActionUtil$1" start="43" end="43" startBytecode="23" endBytecode="23" sourcefile="ActionUtil.java" sourcepath="ch/qos/logback/core/joran/action/ActionUtil.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="ch.qos.logback.core.net.AbstractSocketAppender">
-      <SourceLine classname="ch.qos.logback.core.net.AbstractSocketAppender" start="44" end="401" sourcefile="AbstractSocketAppender.java" sourcepath="ch/qos/logback/core/net/AbstractSocketAppender.java"/>
-    </Class>
-    <Method classname="ch.qos.logback.core.net.AbstractSocketAppender" name="connectSocketAndDispatchEvents" signature="()V" isStatic="false">
-      <SourceLine classname="ch.qos.logback.core.net.AbstractSocketAppender" start="189" end="206" startBytecode="0" endBytecode="96" sourcefile="AbstractSocketAppender.java" sourcepath="ch/qos/logback/core/net/AbstractSocketAppender.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="203" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="ch.qos.logback.core.net.AbstractSocketAppender" start="202" end="202" startBytecode="203" endBytecode="203" sourcefile="AbstractSocketAppender.java" sourcepath="ch/qos/logback/core/net/AbstractSocketAppender.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="ch.qos.logback.core.net.AbstractSocketAppender">
-      <SourceLine classname="ch.qos.logback.core.net.AbstractSocketAppender" start="44" end="401" sourcefile="AbstractSocketAppender.java" sourcepath="ch/qos/logback/core/net/AbstractSocketAppender.java"/>
-    </Class>
-    <Method classname="ch.qos.logback.core.net.AbstractSocketAppender" name="start" signature="()V" isStatic="false">
-      <SourceLine classname="ch.qos.logback.core.net.AbstractSocketAppender" start="111" end="155" startBytecode="0" endBytecode="125" sourcefile="AbstractSocketAppender.java" sourcepath="ch/qos/logback/core/net/AbstractSocketAppender.java"/>
-    </Method>
-    <LocalVariable name="ex" register="2" pc="140" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="ch.qos.logback.core.net.AbstractSocketAppender" start="137" end="137" startBytecode="139" endBytecode="139" sourcefile="AbstractSocketAppender.java" sourcepath="ch/qos/logback/core/net/AbstractSocketAppender.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="ch.qos.logback.core.pattern.parser.TokenStream$1">
-      <SourceLine classname="ch.qos.logback.core.pattern.parser.TokenStream$1" start="84" end="84" sourcefile="TokenStream.java" sourcepath="ch/qos/logback/core/pattern/parser/TokenStream.java"/>
-    </Class>
-    <Method classname="ch.qos.logback.core.pattern.parser.TokenStream$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="ch.qos.logback.core.pattern.parser.TokenStream$1" start="84" end="84" startBytecode="0" endBytecode="39" sourcefile="TokenStream.java" sourcepath="ch/qos/logback/core/pattern/parser/TokenStream.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="ch.qos.logback.core.pattern.parser.TokenStream$1" start="84" end="84" startBytecode="23" endBytecode="23" sourcefile="TokenStream.java" sourcepath="ch/qos/logback/core/pattern/parser/TokenStream.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="ch.qos.logback.core.recovery.ResilientOutputStreamBase">
-      <SourceLine classname="ch.qos.logback.core.recovery.ResilientOutputStreamBase" start="25" end="162" sourcefile="ResilientOutputStreamBase.java" sourcepath="ch/qos/logback/core/recovery/ResilientOutputStreamBase.java"/>
-    </Class>
-    <Method classname="ch.qos.logback.core.recovery.ResilientOutputStreamBase" name="attemptRecovery" signature="()V" isStatic="false">
-      <SourceLine classname="ch.qos.logback.core.recovery.ResilientOutputStreamBase" start="116" end="129" startBytecode="0" endBytecode="44" sourcefile="ResilientOutputStreamBase.java" sourcepath="ch/qos/logback/core/recovery/ResilientOutputStreamBase.java"/>
-    </Method>
-    <LocalVariable name="e" register="1" pc="7" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="ch.qos.logback.core.recovery.ResilientOutputStreamBase" start="117" end="117" startBytecode="7" endBytecode="7" sourcefile="ResilientOutputStreamBase.java" sourcepath="ch/qos/logback/core/recovery/ResilientOutputStreamBase.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="ch.qos.logback.core.rolling.FixedWindowRollingPolicy$1">
-      <SourceLine classname="ch.qos.logback.core.rolling.FixedWindowRollingPolicy$1" start="147" end="147" sourcefile="FixedWindowRollingPolicy.java" sourcepath="ch/qos/logback/core/rolling/FixedWindowRollingPolicy.java"/>
-    </Class>
-    <Method classname="ch.qos.logback.core.rolling.FixedWindowRollingPolicy$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="ch.qos.logback.core.rolling.FixedWindowRollingPolicy$1" start="147" end="147" startBytecode="0" endBytecode="25" sourcefile="FixedWindowRollingPolicy.java" sourcepath="ch/qos/logback/core/rolling/FixedWindowRollingPolicy.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="ch.qos.logback.core.rolling.FixedWindowRollingPolicy$1" start="147" end="147" startBytecode="23" endBytecode="23" sourcefile="FixedWindowRollingPolicy.java" sourcepath="ch/qos/logback/core/rolling/FixedWindowRollingPolicy.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="ch.qos.logback.core.rolling.RollingFileAppender">
-      <SourceLine classname="ch.qos.logback.core.rolling.RollingFileAppender" start="41" end="267" sourcefile="RollingFileAppender.java" sourcepath="ch/qos/logback/core/rolling/RollingFileAppender.java"/>
-    </Class>
-    <Method classname="ch.qos.logback.core.rolling.RollingFileAppender" name="attemptRollover" signature="()V" isStatic="false">
-      <SourceLine classname="ch.qos.logback.core.rolling.RollingFileAppender" start="211" end="217" startBytecode="0" endBytecode="11" sourcefile="RollingFileAppender.java" sourcepath="ch/qos/logback/core/rolling/RollingFileAppender.java"/>
-    </Method>
-    <LocalVariable name="rf" register="1" pc="13" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="ch.qos.logback.core.rolling.RollingFileAppender" start="212" end="212" startBytecode="12" endBytecode="12" sourcefile="RollingFileAppender.java" sourcepath="ch/qos/logback/core/rolling/RollingFileAppender.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="ch.qos.logback.core.rolling.helper.Compressor$1">
-      <SourceLine classname="ch.qos.logback.core.rolling.helper.Compressor$1" start="56" end="56" sourcefile="Compressor.java" sourcepath="ch/qos/logback/core/rolling/helper/Compressor.java"/>
-    </Class>
-    <Method classname="ch.qos.logback.core.rolling.helper.Compressor$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="ch.qos.logback.core.rolling.helper.Compressor$1" start="56" end="56" startBytecode="0" endBytecode="25" sourcefile="Compressor.java" sourcepath="ch/qos/logback/core/rolling/helper/Compressor.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="ch.qos.logback.core.rolling.helper.Compressor$1" start="56" end="56" startBytecode="23" endBytecode="23" sourcefile="Compressor.java" sourcepath="ch/qos/logback/core/rolling/helper/Compressor.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="ch.qos.logback.core.subst.Node$1">
-      <SourceLine classname="ch.qos.logback.core.subst.Node$1" start="53" end="53" sourcefile="Node.java" sourcepath="ch/qos/logback/core/subst/Node.java"/>
-    </Class>
-    <Method classname="ch.qos.logback.core.subst.Node$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="ch.qos.logback.core.subst.Node$1" start="53" end="53" startBytecode="0" endBytecode="18" sourcefile="Node.java" sourcepath="ch/qos/logback/core/subst/Node.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="ch.qos.logback.core.subst.Node$1" start="53" end="53" startBytecode="23" endBytecode="23" sourcefile="Node.java" sourcepath="ch/qos/logback/core/subst/Node.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="ch.qos.logback.core.subst.NodeToStringTransformer$1">
-      <SourceLine classname="ch.qos.logback.core.subst.NodeToStringTransformer$1" start="67" end="67" sourcefile="NodeToStringTransformer.java" sourcepath="ch/qos/logback/core/subst/NodeToStringTransformer.java"/>
-    </Class>
-    <Method classname="ch.qos.logback.core.subst.NodeToStringTransformer$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="ch.qos.logback.core.subst.NodeToStringTransformer$1" start="67" end="67" startBytecode="0" endBytecode="18" sourcefile="NodeToStringTransformer.java" sourcepath="ch/qos/logback/core/subst/NodeToStringTransformer.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="ch.qos.logback.core.subst.NodeToStringTransformer$1" start="67" end="67" startBytecode="23" endBytecode="23" sourcefile="NodeToStringTransformer.java" sourcepath="ch/qos/logback/core/subst/NodeToStringTransformer.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="ch.qos.logback.core.subst.Parser$1">
-      <SourceLine classname="ch.qos.logback.core.subst.Parser$1" start="76" end="76" sourcefile="Parser.java" sourcepath="ch/qos/logback/core/subst/Parser.java"/>
-    </Class>
-    <Method classname="ch.qos.logback.core.subst.Parser$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="ch.qos.logback.core.subst.Parser$1" start="76" end="76" startBytecode="0" endBytecode="25" sourcefile="Parser.java" sourcepath="ch/qos/logback/core/subst/Parser.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="ch.qos.logback.core.subst.Parser$1" start="76" end="76" startBytecode="23" endBytecode="23" sourcefile="Parser.java" sourcepath="ch/qos/logback/core/subst/Parser.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="junit.extensions.ActiveTestSuite">
-      <SourceLine classname="junit.extensions.ActiveTestSuite" start="17" end="69" sourcefile="ActiveTestSuite.java" sourcepath="junit/extensions/ActiveTestSuite.java"/>
-    </Class>
-    <Method classname="junit.extensions.ActiveTestSuite" name="waitUntilFinished" signature="()V" isStatic="false">
-      <SourceLine classname="junit.extensions.ActiveTestSuite" start="57" end="64" startBytecode="0" endBytecode="10" sourcefile="ActiveTestSuite.java" sourcepath="junit/extensions/ActiveTestSuite.java"/>
-    </Method>
-    <LocalVariable name="e" register="1" pc="19" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="junit.extensions.ActiveTestSuite" start="60" end="60" startBytecode="18" endBytecode="18" sourcefile="ActiveTestSuite.java" sourcepath="junit/extensions/ActiveTestSuite.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="mockit.coverage.data.FileCoverageData$2">
-      <SourceLine classname="mockit.coverage.data.FileCoverageData$2" start="87" end="87" sourcefile="FileCoverageData.java" sourcepath="mockit/coverage/data/FileCoverageData.java"/>
-    </Class>
-    <Method classname="mockit.coverage.data.FileCoverageData$2" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="mockit.coverage.data.FileCoverageData$2" start="87" end="87" startBytecode="0" endBytecode="18" sourcefile="FileCoverageData.java" sourcepath="mockit/coverage/data/FileCoverageData.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="mockit.coverage.data.FileCoverageData$2" start="87" end="87" startBytecode="23" endBytecode="23" sourcefile="FileCoverageData.java" sourcepath="mockit/coverage/data/FileCoverageData.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="net.bytebuddy.agent.builder.AgentBuilder$RedefinitionStrategy$ResubmissionStrategy$Enabled$ResubmissionInstallationListener">
-      <SourceLine classname="net.bytebuddy.agent.builder.AgentBuilder$RedefinitionStrategy$ResubmissionStrategy$Enabled$ResubmissionInstallationListener" start="5723" end="5812" sourcefile="AgentBuilder.java" sourcepath="net/bytebuddy/agent/builder/AgentBuilder.java"/>
-    </Class>
-    <Method classname="net.bytebuddy.agent.builder.AgentBuilder$RedefinitionStrategy$ResubmissionStrategy$Enabled$ResubmissionInstallationListener" name="run" signature="()V" isStatic="false">
-      <SourceLine classname="net.bytebuddy.agent.builder.AgentBuilder$RedefinitionStrategy$ResubmissionStrategy$Enabled$ResubmissionInstallationListener" start="5752" end="5812" startBytecode="0" endBytecode="168" sourcefile="AgentBuilder.java" sourcepath="net/bytebuddy/agent/builder/AgentBuilder.java"/>
-    </Method>
-    <LocalVariable name="type" register="7" pc="304" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="net.bytebuddy.agent.builder.AgentBuilder$RedefinitionStrategy$ResubmissionStrategy$Enabled$ResubmissionInstallationListener" start="5786" end="5786" startBytecode="304" endBytecode="304" sourcefile="AgentBuilder.java" sourcepath="net/bytebuddy/agent/builder/AgentBuilder.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="net.bytebuddy.implementation.bytecode.Duplication$4">
-      <SourceLine classname="net.bytebuddy.implementation.bytecode.Duplication$4" start="34" end="34" sourcefile="Duplication.java" sourcepath="net/bytebuddy/implementation/bytecode/Duplication.java"/>
-    </Class>
-    <Method classname="net.bytebuddy.implementation.bytecode.Duplication$4" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="net.bytebuddy.implementation.bytecode.Duplication$4" start="34" end="34" startBytecode="0" endBytecode="25" sourcefile="Duplication.java" sourcepath="net/bytebuddy/implementation/bytecode/Duplication.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="24" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="net.bytebuddy.implementation.bytecode.Duplication$4" start="34" end="34" startBytecode="23" endBytecode="23" sourcefile="Duplication.java" sourcepath="net/bytebuddy/implementation/bytecode/Duplication.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="net.bytebuddy.implementation.bytecode.Removal$2">
-      <SourceLine classname="net.bytebuddy.implementation.bytecode.Removal$2" start="61" end="61" sourcefile="Removal.java" sourcepath="net/bytebuddy/implementation/bytecode/Removal.java"/>
-    </Class>
-    <Method classname="net.bytebuddy.implementation.bytecode.Removal$2" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="net.bytebuddy.implementation.bytecode.Removal$2" start="61" end="61" startBytecode="0" endBytecode="25" sourcefile="Removal.java" sourcepath="net/bytebuddy/implementation/bytecode/Removal.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="24" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="net.bytebuddy.implementation.bytecode.Removal$2" start="61" end="61" startBytecode="23" endBytecode="23" sourcefile="Removal.java" sourcepath="net/bytebuddy/implementation/bytecode/Removal.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="net.bytebuddy.implementation.bytecode.StackSize$1">
-      <SourceLine classname="net.bytebuddy.implementation.bytecode.StackSize$1" start="128" end="128" sourcefile="StackSize.java" sourcepath="net/bytebuddy/implementation/bytecode/StackSize.java"/>
-    </Class>
-    <Method classname="net.bytebuddy.implementation.bytecode.StackSize$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="net.bytebuddy.implementation.bytecode.StackSize$1" start="128" end="128" startBytecode="0" endBytecode="25" sourcefile="StackSize.java" sourcepath="net/bytebuddy/implementation/bytecode/StackSize.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="24" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="net.bytebuddy.implementation.bytecode.StackSize$1" start="128" end="128" startBytecode="23" endBytecode="23" sourcefile="StackSize.java" sourcepath="net/bytebuddy/implementation/bytecode/StackSize.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="net.bytebuddy.utility.visitor.StackAwareMethodVisitor$1">
-      <SourceLine classname="net.bytebuddy.utility.visitor.StackAwareMethodVisitor$1" start="157" end="157" sourcefile="StackAwareMethodVisitor.java" sourcepath="net/bytebuddy/utility/visitor/StackAwareMethodVisitor.java"/>
-    </Class>
-    <Method classname="net.bytebuddy.utility.visitor.StackAwareMethodVisitor$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="net.bytebuddy.utility.visitor.StackAwareMethodVisitor$1" start="157" end="157" startBytecode="0" endBytecode="18" sourcefile="StackAwareMethodVisitor.java" sourcepath="net/bytebuddy/utility/visitor/StackAwareMethodVisitor.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="24" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="net.bytebuddy.utility.visitor.StackAwareMethodVisitor$1" start="157" end="157" startBytecode="23" endBytecode="23" sourcefile="StackAwareMethodVisitor.java" sourcepath="net/bytebuddy/utility/visitor/StackAwareMethodVisitor.java"/>
   </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.jayware.e2.component.impl.Benchmark_ComponentPushPull">
@@ -394,26 +153,6 @@
     <SourceLine classname="org.jayware.e2.component.impl.GeneratedComponentTest" start="424" end="424" startBytecode="2" endBytecode="2" sourcefile="GeneratedComponentTest.java" sourcepath="org/jayware/e2/component/impl/GeneratedComponentTest.java"/>
   </BugInstance>
   <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.jayware.e2.component.impl.generation.analyse.ComponentHierarchyAnalyserImplTest">
-      <SourceLine classname="org.jayware.e2.component.impl.generation.analyse.ComponentHierarchyAnalyserImplTest" start="38" end="68" sourcefile="ComponentHierarchyAnalyserImplTest.java" sourcepath="org/jayware/e2/component/impl/generation/analyse/ComponentHierarchyAnalyserImplTest.java"/>
-    </Class>
-    <Method classname="org.jayware.e2.component.impl.generation.analyse.ComponentHierarchyAnalyserImplTest" name="should_throw_a_MalformedComponentException_if_one_of_the_interfaces_does_not_extend_the_Component_interface" signature="()V" isStatic="false">
-      <SourceLine classname="org.jayware.e2.component.impl.generation.analyse.ComponentHierarchyAnalyserImplTest" start="61" end="68" startBytecode="0" endBytecode="9" sourcefile="ComponentHierarchyAnalyserImplTest.java" sourcepath="org/jayware/e2/component/impl/generation/analyse/ComponentHierarchyAnalyserImplTest.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="20" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.jayware.e2.component.impl.generation.analyse.ComponentHierarchyAnalyserImplTest" start="64" end="64" startBytecode="20" endBytecode="20" sourcefile="ComponentHierarchyAnalyserImplTest.java" sourcepath="org/jayware/e2/component/impl/generation/analyse/ComponentHierarchyAnalyserImplTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.jayware.e2.component.impl.generation.analyse.ComponentPropertyAccessorAnalyserTest">
-      <SourceLine classname="org.jayware.e2.component.impl.generation.analyse.ComponentPropertyAccessorAnalyserTest" start="37" end="106" sourcefile="ComponentPropertyAccessorAnalyserTest.java" sourcepath="org/jayware/e2/component/impl/generation/analyse/ComponentPropertyAccessorAnalyserTest.java"/>
-    </Class>
-    <Method classname="org.jayware.e2.component.impl.generation.analyse.ComponentPropertyAccessorAnalyserTest" name="should_fail_with_a_MalformedComponentException_if_a_invalid_accessor_is_passed" signature="()V" isStatic="false">
-      <SourceLine classname="org.jayware.e2.component.impl.generation.analyse.ComponentPropertyAccessorAnalyserTest" start="96" end="106" startBytecode="0" endBytecode="19" sourcefile="ComponentPropertyAccessorAnalyserTest.java" sourcepath="org/jayware/e2/component/impl/generation/analyse/ComponentPropertyAccessorAnalyserTest.java"/>
-    </Method>
-    <LocalVariable name="?" register="2" pc="36" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.jayware.e2.component.impl.generation.analyse.ComponentPropertyAccessorAnalyserTest" start="103" end="103" startBytecode="36" endBytecode="36" sourcefile="ComponentPropertyAccessorAnalyserTest.java" sourcepath="org/jayware/e2/component/impl/generation/analyse/ComponentPropertyAccessorAnalyserTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
     <Class classname="org.jayware.e2.component.impl.generation.writer.ComponentCopyOtherMethodWriterTest">
       <SourceLine classname="org.jayware.e2.component.impl.generation.writer.ComponentCopyOtherMethodWriterTest" start="38" end="96" sourcefile="ComponentCopyOtherMethodWriterTest.java" sourcepath="org/jayware/e2/component/impl/generation/writer/ComponentCopyOtherMethodWriterTest.java"/>
     </Class>
@@ -432,167 +171,6 @@
     </Method>
     <LocalVariable name="exception" register="1" pc="17" role="LOCAL_VARIABLE_NAMED"/>
     <SourceLine classname="org.jayware.e2.component.impl.generation.writer.ComponentCopyOtherMethodWriterTest" start="73" end="73" startBytecode="16" endBytecode="16" sourcefile="ComponentCopyOtherMethodWriterTest.java" sourcepath="org/jayware/e2/component/impl/generation/writer/ComponentCopyOtherMethodWriterTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.jayware.e2.context.impl.ContextImplTest">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="50" end="478" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Class>
-    <Method classname="org.jayware.e2.context.impl.ContextImplTest" name="testContainsWhenDisposed" signature="()V" isStatic="false">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="416" end="437" startBytecode="0" endBytecode="22" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="27" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="423" end="423" startBytecode="27" endBytecode="27" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="433" end="433" startBytecode="45" endBytecode="45" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.jayware.e2.context.impl.ContextImplTest">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="50" end="478" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Class>
-    <Method classname="org.jayware.e2.context.impl.ContextImplTest" name="testGetOrDefaultWhenDisposed" signature="()V" isStatic="false">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="366" end="377" startBytecode="0" endBytecode="14" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="29" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="373" end="373" startBytecode="29" endBytecode="29" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.jayware.e2.context.impl.ContextImplTest">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="50" end="478" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Class>
-    <Method classname="org.jayware.e2.context.impl.ContextImplTest" name="testGetOrDefaultWithNullKey" signature="()V" isStatic="false">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="354" end="361" startBytecode="0" endBytecode="10" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="19" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="357" end="357" startBytecode="19" endBytecode="19" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.jayware.e2.context.impl.ContextImplTest">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="50" end="478" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Class>
-    <Method classname="org.jayware.e2.context.impl.ContextImplTest" name="testGetWhenDisposed" signature="()V" isStatic="false">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="328" end="339" startBytecode="0" endBytecode="13" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="27" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="335" end="335" startBytecode="27" endBytecode="27" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.jayware.e2.context.impl.ContextImplTest">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="50" end="478" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Class>
-    <Method classname="org.jayware.e2.context.impl.ContextImplTest" name="testGetWithNullKey" signature="()V" isStatic="false">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="316" end="323" startBytecode="0" endBytecode="9" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="17" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="319" end="319" startBytecode="17" endBytecode="17" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.jayware.e2.context.impl.ContextImplTest">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="50" end="478" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Class>
-    <Method classname="org.jayware.e2.context.impl.ContextImplTest" name="testPutIfAbsentValueProviderWithNullKey" signature="()V" isStatic="false">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="215" end="222" startBytecode="0" endBytecode="13" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="28" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="218" end="218" startBytecode="28" endBytecode="28" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.jayware.e2.context.impl.ContextImplTest">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="50" end="478" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Class>
-    <Method classname="org.jayware.e2.context.impl.ContextImplTest" name="testPutIfAbsentValueProviderWithNullProvider" signature="()V" isStatic="false">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="227" end="238" startBytecode="0" endBytecode="14" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Method>
-    <LocalVariable name="?" register="2" pc="27" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="234" end="234" startBytecode="27" endBytecode="27" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.jayware.e2.context.impl.ContextImplTest">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="50" end="478" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Class>
-    <Method classname="org.jayware.e2.context.impl.ContextImplTest" name="testPutIfAbsentWhenDisposed" signature="()V" isStatic="false">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="182" end="193" startBytecode="0" endBytecode="14" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="29" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="189" end="189" startBytecode="29" endBytecode="29" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.jayware.e2.context.impl.ContextImplTest">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="50" end="478" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Class>
-    <Method classname="org.jayware.e2.context.impl.ContextImplTest" name="testPutIfAbsentWithNullKey" signature="()V" isStatic="false">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="170" end="177" startBytecode="0" endBytecode="10" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="19" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="173" end="173" startBytecode="19" endBytecode="19" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.jayware.e2.context.impl.ContextImplTest">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="50" end="478" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Class>
-    <Method classname="org.jayware.e2.context.impl.ContextImplTest" name="testPutIfValueProviderAbsentWhenDisposed" signature="()V" isStatic="false">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="243" end="254" startBytecode="0" endBytecode="16" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="35" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="250" end="250" startBytecode="35" endBytecode="35" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.jayware.e2.context.impl.ContextImplTest">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="50" end="478" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Class>
-    <Method classname="org.jayware.e2.context.impl.ContextImplTest" name="testPutWhenDisposed" signature="()V" isStatic="false">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="123" end="134" startBytecode="0" endBytecode="13" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="28" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="130" end="130" startBytecode="28" endBytecode="28" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.jayware.e2.context.impl.ContextImplTest">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="50" end="478" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Class>
-    <Method classname="org.jayware.e2.context.impl.ContextImplTest" name="testPutWithNullKey" signature="()V" isStatic="false">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="111" end="118" startBytecode="0" endBytecode="10" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="21" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="114" end="114" startBytecode="21" endBytecode="21" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.jayware.e2.context.impl.ContextImplTest">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="50" end="478" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Class>
-    <Method classname="org.jayware.e2.context.impl.ContextImplTest" name="testRemoveWithNullKey" signature="()V" isStatic="false">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="279" end="286" startBytecode="0" endBytecode="8" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="16" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="282" end="282" startBytecode="16" endBytecode="16" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.jayware.e2.context.impl.ContextImplTest">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="50" end="478" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Class>
-    <Method classname="org.jayware.e2.context.impl.ContextImplTest" name="test_that_getService_throws_ServiceUnavailableException_if_their_is_no_service_with_the_passed_type" signature="()V" isStatic="false">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="390" end="397" startBytecode="0" endBytecode="9" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="18" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="393" end="393" startBytecode="18" endBytecode="18" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.jayware.e2.context.impl.ContextImplTest">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="50" end="478" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Class>
-    <Method classname="org.jayware.e2.context.impl.ContextImplTest" name="test_that_put_with_Class_throws_an_IllegalStateException_when_the_context_was_disposed" signature="()V" isStatic="false">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="139" end="150" startBytecode="0" endBytecode="12" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="26" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="146" end="146" startBytecode="26" endBytecode="26" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.jayware.e2.context.impl.ContextImplTest">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="50" end="478" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Class>
-    <Method classname="org.jayware.e2.context.impl.ContextImplTest" name="test_that_remove_throws_an_IllegalStateException_when_the_context_was_disposed" signature="()V" isStatic="false">
-      <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="291" end="302" startBytecode="0" endBytecode="12" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="26" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.jayware.e2.context.impl.ContextImplTest" start="298" end="298" startBytecode="26" endBytecode="26" sourcefile="ContextImplTest.java" sourcepath="org/jayware/e2/context/impl/ContextImplTest.java"/>
   </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.jayware.e2.entity.impl.Benchmark_CreateEntity">
@@ -633,26 +211,6 @@
     <SourceLine classname="org.jayware.e2.event.impl.EventBusIntegrationTest_SynchronousEvents" start="71" end="71" startBytecode="2" endBytecode="2" sourcefile="EventBusIntegrationTest_SynchronousEvents.java" sourcepath="org/jayware/e2/event/impl/EventBusIntegrationTest_SynchronousEvents.java"/>
   </BugInstance>
   <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.jayware.e2.event.impl.EventDispatchTest">
-      <SourceLine classname="org.jayware.e2.event.impl.EventDispatchTest" start="41" end="188" sourcefile="EventDispatchTest.java" sourcepath="org/jayware/e2/event/impl/EventDispatchTest.java"/>
-    </Class>
-    <Method classname="org.jayware.e2.event.impl.EventDispatchTest" name="test_that_passedFilters_Throws_an_EventDispatchException_if_one_of_the_EventFilters_fails_with_an_Exception" signature="()V" isStatic="false">
-      <SourceLine classname="org.jayware.e2.event.impl.EventDispatchTest" start="161" end="176" startBytecode="0" endBytecode="47" sourcefile="EventDispatchTest.java" sourcepath="org/jayware/e2/event/impl/EventDispatchTest.java"/>
-    </Method>
-    <LocalVariable name="e" register="1" pc="50" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.jayware.e2.event.impl.EventDispatchTest" start="171" end="171" startBytecode="50" endBytecode="50" sourcefile="EventDispatchTest.java" sourcepath="org/jayware/e2/event/impl/EventDispatchTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.jayware.e2.event.impl.EventDispatchTest">
-      <SourceLine classname="org.jayware.e2.event.impl.EventDispatchTest" start="41" end="188" sourcefile="EventDispatchTest.java" sourcepath="org/jayware/e2/event/impl/EventDispatchTest.java"/>
-    </Class>
-    <Method classname="org.jayware.e2.event.impl.EventDispatchTest" name="test_that_runEventDispatch_Throws_an_EventDispatchException_if_the_dispatch_failed_with_an_exception" signature="()V" isStatic="false">
-      <SourceLine classname="org.jayware.e2.event.impl.EventDispatchTest" start="92" end="108" startBytecode="0" endBytecode="35" sourcefile="EventDispatchTest.java" sourcepath="org/jayware/e2/event/impl/EventDispatchTest.java"/>
-    </Method>
-    <LocalVariable name="e" register="1" pc="36" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.jayware.e2.event.impl.EventDispatchTest" start="103" end="103" startBytecode="36" endBytecode="36" sourcefile="EventDispatchTest.java" sourcepath="org/jayware/e2/event/impl/EventDispatchTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
     <Class classname="org.jayware.e2.event.impl.QueryIntegrationTest">
       <SourceLine classname="org.jayware.e2.event.impl.QueryIntegrationTest" start="47" end="129" sourcefile="QueryIntegrationTest.java" sourcepath="org/jayware/e2/event/impl/QueryIntegrationTest.java"/>
     </Class>
@@ -673,16 +231,6 @@
     <SourceLine classname="org.jayware.e2.storage.impl.StorageImplIntegrationTest" start="173" end="173" startBytecode="13" endBytecode="13" sourcefile="StorageImplIntegrationTest.java" sourcepath="org/jayware/e2/storage/impl/StorageImplIntegrationTest.java"/>
   </BugInstance>
   <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.jayware.e2.storage.impl.StorageImplTest">
-      <SourceLine classname="org.jayware.e2.storage.impl.StorageImplTest" start="60" end="324" sourcefile="StorageImplTest.java" sourcepath="org/jayware/e2/storage/impl/StorageImplTest.java"/>
-    </Class>
-    <Method classname="org.jayware.e2.storage.impl.StorageImplTest" name="testName" signature="()V" isStatic="false">
-      <SourceLine classname="org.jayware.e2.storage.impl.StorageImplTest" start="302" end="324" startBytecode="0" endBytecode="35" sourcefile="StorageImplTest.java" sourcepath="org/jayware/e2/storage/impl/StorageImplTest.java"/>
-    </Method>
-    <LocalVariable name="?" register="3" pc="67" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.jayware.e2.storage.impl.StorageImplTest" start="323" end="323" startBytecode="67" endBytecode="67" sourcefile="StorageImplTest.java" sourcepath="org/jayware/e2/storage/impl/StorageImplTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
     <Class classname="org.jayware.e2.template.impl.TemplateManagerImplIntegrationTest">
       <SourceLine classname="org.jayware.e2.template.impl.TemplateManagerImplIntegrationTest" start="41" end="72" sourcefile="TemplateManagerImplIntegrationTest.java" sourcepath="org/jayware/e2/template/impl/TemplateManagerImplIntegrationTest.java"/>
     </Class>
@@ -692,72 +240,12 @@
     <LocalVariable name="template" register="2" pc="37" role="LOCAL_VARIABLE_NAMED"/>
     <SourceLine classname="org.jayware.e2.template.impl.TemplateManagerImplIntegrationTest" start="71" end="71" startBytecode="36" endBytecode="36" sourcefile="TemplateManagerImplIntegrationTest.java" sourcepath="org/jayware/e2/template/impl/TemplateManagerImplIntegrationTest.java"/>
   </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.junit.internal.runners.ClassRoadie">
-      <SourceLine classname="org.junit.internal.runners.ClassRoadie" start="26" end="80" sourcefile="ClassRoadie.java" sourcepath="org/junit/internal/runners/ClassRoadie.java"/>
-    </Class>
-    <Method classname="org.junit.internal.runners.ClassRoadie" name="runBefores" signature="()V" isStatic="false">
-      <SourceLine classname="org.junit.internal.runners.ClassRoadie" start="54" end="67" startBytecode="0" endBytecode="40" sourcefile="ClassRoadie.java" sourcepath="org/junit/internal/runners/ClassRoadie.java"/>
-    </Method>
-    <LocalVariable name="e" register="1" pc="60" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.junit.internal.runners.ClassRoadie" start="61" end="61" startBytecode="59" endBytecode="59" sourcefile="ClassRoadie.java" sourcepath="org/junit/internal/runners/ClassRoadie.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.junit.internal.runners.ClassRoadie">
-      <SourceLine classname="org.junit.internal.runners.ClassRoadie" start="26" end="80" sourcefile="ClassRoadie.java" sourcepath="org/junit/internal/runners/ClassRoadie.java"/>
-    </Class>
-    <Method classname="org.junit.internal.runners.ClassRoadie" name="runProtected" signature="()V" isStatic="false">
-      <SourceLine classname="org.junit.internal.runners.ClassRoadie" start="43" end="49" startBytecode="0" endBytecode="16" sourcefile="ClassRoadie.java" sourcepath="org/junit/internal/runners/ClassRoadie.java"/>
-    </Method>
-    <LocalVariable name="e" register="1" pc="16" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.junit.internal.runners.ClassRoadie" start="45" end="45" startBytecode="15" endBytecode="15" sourcefile="ClassRoadie.java" sourcepath="org/junit/internal/runners/ClassRoadie.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.junit.internal.runners.MethodRoadie">
-      <SourceLine classname="org.junit.internal.runners.MethodRoadie" start="32" end="161" sourcefile="MethodRoadie.java" sourcepath="org/junit/internal/runners/MethodRoadie.java"/>
-    </Class>
-    <Method classname="org.junit.internal.runners.MethodRoadie" name="runBefores" signature="()V" isStatic="false">
-      <SourceLine classname="org.junit.internal.runners.MethodRoadie" start="131" end="144" startBytecode="0" endBytecode="41" sourcefile="MethodRoadie.java" sourcepath="org/junit/internal/runners/MethodRoadie.java"/>
-    </Method>
-    <LocalVariable name="e" register="1" pc="63" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.junit.internal.runners.MethodRoadie" start="138" end="138" startBytecode="62" endBytecode="62" sourcefile="MethodRoadie.java" sourcepath="org/junit/internal/runners/MethodRoadie.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.junit.internal.runners.MethodRoadie$1">
-      <SourceLine classname="org.junit.internal.runners.MethodRoadie$1" start="60" end="82" sourcefile="MethodRoadie.java" sourcepath="org/junit/internal/runners/MethodRoadie.java"/>
-    </Class>
-    <Method classname="org.junit.internal.runners.MethodRoadie$1" name="run" signature="()V" isStatic="false">
-      <SourceLine classname="org.junit.internal.runners.MethodRoadie$1" start="61" end="82" startBytecode="0" endBytecode="46" sourcefile="MethodRoadie.java" sourcepath="org/junit/internal/runners/MethodRoadie.java"/>
-    </Method>
-    <LocalVariable name="e" register="4" pc="70" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.junit.internal.runners.MethodRoadie$1" start="77" end="77" startBytecode="68" endBytecode="68" sourcefile="MethodRoadie.java" sourcepath="org/junit/internal/runners/MethodRoadie.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.junit.platform.launcher.listeners.SummaryGeneratingListener$1">
-      <SourceLine classname="org.junit.platform.launcher.listeners.SummaryGeneratingListener$1" start="93" end="93" sourcefile="SummaryGeneratingListener.java" sourcepath="org/junit/platform/launcher/listeners/SummaryGeneratingListener.java"/>
-    </Class>
-    <Method classname="org.junit.platform.launcher.listeners.SummaryGeneratingListener$1" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="org.junit.platform.launcher.listeners.SummaryGeneratingListener$1" start="93" end="93" startBytecode="0" endBytecode="25" sourcefile="SummaryGeneratingListener.java" sourcepath="org/junit/platform/launcher/listeners/SummaryGeneratingListener.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.junit.platform.launcher.listeners.SummaryGeneratingListener$1" start="93" end="93" startBytecode="23" endBytecode="23" sourcefile="SummaryGeneratingListener.java" sourcepath="org/junit/platform/launcher/listeners/SummaryGeneratingListener.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.mockito.internal.util.concurrent.DetachedThreadLocal$3">
-      <SourceLine classname="org.mockito.internal.util.concurrent.DetachedThreadLocal$3" start="19" end="19" sourcefile="DetachedThreadLocal.java" sourcepath="org/mockito/internal/util/concurrent/DetachedThreadLocal.java"/>
-    </Class>
-    <Method classname="org.mockito.internal.util.concurrent.DetachedThreadLocal$3" name="&lt;clinit&gt;" signature="()V" isStatic="true">
-      <SourceLine classname="org.mockito.internal.util.concurrent.DetachedThreadLocal$3" start="19" end="19" startBytecode="0" endBytecode="25" sourcefile="DetachedThreadLocal.java" sourcepath="org/mockito/internal/util/concurrent/DetachedThreadLocal.java"/>
-    </Method>
-    <LocalVariable name="?" register="0" pc="23" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.mockito.internal.util.concurrent.DetachedThreadLocal$3" start="19" end="19" startBytecode="23" endBytecode="23" sourcefile="DetachedThreadLocal.java" sourcepath="org/mockito/internal/util/concurrent/DetachedThreadLocal.java"/>
-  </BugInstance>
   <Errors errors="1" missingClasses="90">
     <Error>
       <ErrorMessage>Exception analyzing sun.tools.attach.WindowsVirtualMachine using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
       <Exception>java.lang.NullPointerException</Exception>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:113)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:59)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:111)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:57)</StackTrace>
       <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
@@ -863,7 +351,7 @@
     <MissingClass>org.testng.internal.ConstructorOrMethod</MissingClass>
     <MissingClass>org.testng.internal.Parameters</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Tue, 21 Aug 2018 05:00:43 +0200" total_classes="6043" referenced_classes="6769" total_bugs="75" total_size="191580" num_packages="356" java_version="9.0.4" vm_version="9.0.4+11" cpu_seconds="259.82" clock_seconds="90.10" peak_mbytes="1187.14" alloc_mbytes="4096.00" gc_seconds="2.97" priority_2="4" priority_1="71">
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 05:00:43 +0200" total_classes="6043" referenced_classes="6735" total_bugs="24" total_size="191580" num_packages="356" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="220.68" clock_seconds="76.02" peak_mbytes="1639.90" alloc_mbytes="3641.00" gc_seconds="2.54" priority_2="4" priority_1="20">
     <PackageStats package="ch.qos.logback.classic" total_bugs="0" total_types="8" total_size="889">
       <ClassStats class="ch.qos.logback.classic.AsyncAppender" sourceFile="AsyncAppender.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.BasicConfigurator" sourceFile="BasicConfigurator.java" interface="false" size="20" bugs="0"/>
@@ -882,8 +370,8 @@
       <ClassStats class="ch.qos.logback.classic.boolex.OnErrorEvaluator" sourceFile="OnErrorEvaluator.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.boolex.OnMarkerEvaluator" sourceFile="OnMarkerEvaluator.java" interface="false" size="18" bugs="0"/>
     </PackageStats>
-    <PackageStats package="ch.qos.logback.classic.db" total_bugs="1" total_types="3" total_size="222" priority_1="1">
-      <ClassStats class="ch.qos.logback.classic.db.DBAppender" sourceFile="DBAppender.java" interface="false" size="166" bugs="1" priority_1="1"/>
+    <PackageStats package="ch.qos.logback.classic.db" total_bugs="0" total_types="3" total_size="222">
+      <ClassStats class="ch.qos.logback.classic.db.DBAppender" sourceFile="DBAppender.java" interface="false" size="166" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.db.DBHelper" sourceFile="DBHelper.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.db.SQLBuilder" sourceFile="SQLBuilder.java" interface="false" size="38" bugs="0"/>
     </PackageStats>
@@ -958,7 +446,7 @@
     <PackageStats package="ch.qos.logback.classic.log4j" total_bugs="0" total_types="1" total_size="83">
       <ClassStats class="ch.qos.logback.classic.log4j.XMLLayout" sourceFile="XMLLayout.java" interface="false" size="83" bugs="0"/>
     </PackageStats>
-    <PackageStats package="ch.qos.logback.classic.net" total_bugs="2" total_types="12" total_size="547" priority_1="2">
+    <PackageStats package="ch.qos.logback.classic.net" total_bugs="0" total_types="12" total_size="547">
       <ClassStats class="ch.qos.logback.classic.net.LoggingEventPreSerializationTransformer" sourceFile="LoggingEventPreSerializationTransformer.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.net.ReceiverBase" sourceFile="ReceiverBase.java" interface="false" size="27" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.net.SMTPAppender" sourceFile="SMTPAppender.java" interface="false" size="61" bugs="0"/>
@@ -968,8 +456,8 @@
       <ClassStats class="ch.qos.logback.classic.net.SimpleSocketServer" sourceFile="SimpleSocketServer.java" interface="false" size="113" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.net.SocketAcceptor" sourceFile="SocketAcceptor.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.net.SocketAppender" sourceFile="SocketAppender.java" interface="false" size="20" bugs="0"/>
-      <ClassStats class="ch.qos.logback.classic.net.SocketNode" sourceFile="SocketNode.java" interface="false" size="54" bugs="1" priority_1="1"/>
-      <ClassStats class="ch.qos.logback.classic.net.SocketReceiver" sourceFile="SocketReceiver.java" interface="false" size="115" bugs="1" priority_1="1"/>
+      <ClassStats class="ch.qos.logback.classic.net.SocketNode" sourceFile="SocketNode.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="ch.qos.logback.classic.net.SocketReceiver" sourceFile="SocketReceiver.java" interface="false" size="115" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.net.SyslogAppender" sourceFile="SyslogAppender.java" interface="false" size="81" bugs="0"/>
     </PackageStats>
     <PackageStats package="ch.qos.logback.classic.net.server" total_bugs="0" total_types="9" total_size="215">
@@ -1040,7 +528,7 @@
       <ClassStats class="ch.qos.logback.classic.sift.SiftingAppender" sourceFile="SiftingAppender.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.sift.SiftingJoranConfigurator" sourceFile="SiftingJoranConfigurator.java" interface="false" size="30" bugs="0"/>
     </PackageStats>
-    <PackageStats package="ch.qos.logback.classic.spi" total_bugs="1" total_types="22" total_size="1021" priority_1="1">
+    <PackageStats package="ch.qos.logback.classic.spi" total_bugs="0" total_types="22" total_size="1021">
       <ClassStats class="ch.qos.logback.classic.spi.CallerData" sourceFile="CallerData.java" interface="false" size="44" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.spi.ClassPackagingData" sourceFile="ClassPackagingData.java" interface="false" size="49" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.spi.Configurator" sourceFile="Configurator.java" interface="true" size="2" bugs="0"/>
@@ -1059,7 +547,7 @@
       <ClassStats class="ch.qos.logback.classic.spi.PlatformInfo" sourceFile="PlatformInfo.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.spi.STEUtil" sourceFile="STEUtil.java" interface="false" size="27" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.spi.StackTraceElementProxy" sourceFile="StackTraceElementProxy.java" interface="false" size="44" bugs="0"/>
-      <ClassStats class="ch.qos.logback.classic.spi.ThrowableProxy" sourceFile="ThrowableProxy.java" interface="false" size="79" bugs="1" priority_1="1"/>
+      <ClassStats class="ch.qos.logback.classic.spi.ThrowableProxy" sourceFile="ThrowableProxy.java" interface="false" size="79" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.spi.ThrowableProxyUtil" sourceFile="ThrowableProxyUtil.java" interface="false" size="104" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.spi.ThrowableProxyVO" sourceFile="ThrowableProxyVO.java" interface="false" size="67" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.spi.TurboFilterList" sourceFile="TurboFilterList.java" interface="false" size="19" bugs="0"/>
@@ -1088,11 +576,11 @@
       <ClassStats class="ch.qos.logback.classic.util.LoggerNameUtil" sourceFile="LoggerNameUtil.java" interface="false" size="26" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.util.StatusViaSLF4JLoggerFactory" sourceFile="StatusViaSLF4JLoggerFactory.java" interface="false" size="20" bugs="0"/>
     </PackageStats>
-    <PackageStats package="ch.qos.logback.core" total_bugs="1" total_types="17" total_size="923" priority_1="1">
+    <PackageStats package="ch.qos.logback.core" total_bugs="0" total_types="17" total_size="923">
       <ClassStats class="ch.qos.logback.core.Appender" sourceFile="Appender.java" interface="true" size="4" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.AppenderBase" sourceFile="AppenderBase.java" interface="false" size="56" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.AsyncAppenderBase" sourceFile="AsyncAppenderBase.java" interface="false" size="129" bugs="0"/>
-      <ClassStats class="ch.qos.logback.core.AsyncAppenderBase$Worker" sourceFile="AsyncAppenderBase.java" interface="false" size="20" bugs="1" priority_1="1"/>
+      <ClassStats class="ch.qos.logback.core.AsyncAppenderBase$Worker" sourceFile="AsyncAppenderBase.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.BasicStatusManager" sourceFile="BasicStatusManager.java" interface="false" size="78" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.ConsoleAppender" sourceFile="ConsoleAppender.java" interface="false" size="40" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.Context" sourceFile="Context.java" interface="true" size="15" bugs="0"/>
@@ -1124,9 +612,9 @@
       <ClassStats class="ch.qos.logback.core.db.DriverManagerConnectionSource" sourceFile="DriverManagerConnectionSource.java" interface="false" size="30" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.db.JNDIConnectionSource" sourceFile="JNDIConnectionSource.java" interface="false" size="40" bugs="0"/>
     </PackageStats>
-    <PackageStats package="ch.qos.logback.core.db.dialect" total_bugs="1" total_types="12" total_size="134" priority_1="1">
+    <PackageStats package="ch.qos.logback.core.db.dialect" total_bugs="0" total_types="12" total_size="134">
       <ClassStats class="ch.qos.logback.core.db.dialect.DBUtil" sourceFile="DBUtil.java" interface="false" size="63" bugs="0"/>
-      <ClassStats class="ch.qos.logback.core.db.dialect.DBUtil$1" sourceFile="DBUtil.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="ch.qos.logback.core.db.dialect.DBUtil$1" sourceFile="DBUtil.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.db.dialect.H2Dialect" sourceFile="H2Dialect.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.db.dialect.HSQLDBDialect" sourceFile="HSQLDBDialect.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.db.dialect.MsSQLDialect" sourceFile="MsSQLDialect.java" interface="false" size="6" bugs="0"/>
@@ -1172,12 +660,12 @@
       <ClassStats class="ch.qos.logback.core.joran.GenericConfigurator" sourceFile="GenericConfigurator.java" interface="false" size="96" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.joran.JoranConfiguratorBase" sourceFile="JoranConfiguratorBase.java" interface="false" size="33" bugs="0"/>
     </PackageStats>
-    <PackageStats package="ch.qos.logback.core.joran.action" total_bugs="1" total_types="26" total_size="842" priority_1="1">
+    <PackageStats package="ch.qos.logback.core.joran.action" total_bugs="0" total_types="26" total_size="842">
       <ClassStats class="ch.qos.logback.core.joran.action.AbstractEventEvaluatorAction" sourceFile="AbstractEventEvaluatorAction.java" interface="false" size="54" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.joran.action.Action" sourceFile="Action.java" interface="false" size="31" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.joran.action.ActionConst" sourceFile="ActionConst.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.joran.action.ActionUtil" sourceFile="ActionUtil.java" interface="false" size="27" bugs="0"/>
-      <ClassStats class="ch.qos.logback.core.joran.action.ActionUtil$1" sourceFile="ActionUtil.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="ch.qos.logback.core.joran.action.ActionUtil$1" sourceFile="ActionUtil.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.joran.action.ActionUtil$Scope" sourceFile="ActionUtil.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.joran.action.AppenderAction" sourceFile="AppenderAction.java" interface="false" size="41" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.joran.action.AppenderRefAction" sourceFile="AppenderRefAction.java" interface="false" size="33" bugs="0"/>
@@ -1266,9 +754,9 @@
     <PackageStats package="ch.qos.logback.core.layout" total_bugs="0" total_types="1" total_size="5">
       <ClassStats class="ch.qos.logback.core.layout.EchoLayout" sourceFile="EchoLayout.java" interface="false" size="5" bugs="0"/>
     </PackageStats>
-    <PackageStats package="ch.qos.logback.core.net" total_bugs="2" total_types="19" total_size="876" priority_1="2">
+    <PackageStats package="ch.qos.logback.core.net" total_bugs="0" total_types="19" total_size="876">
       <ClassStats class="ch.qos.logback.core.net.AbstractSSLSocketAppender" sourceFile="AbstractSSLSocketAppender.java" interface="false" size="25" bugs="0"/>
-      <ClassStats class="ch.qos.logback.core.net.AbstractSocketAppender" sourceFile="AbstractSocketAppender.java" interface="false" size="163" bugs="2" priority_1="2"/>
+      <ClassStats class="ch.qos.logback.core.net.AbstractSocketAppender" sourceFile="AbstractSocketAppender.java" interface="false" size="163" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.net.AbstractSocketAppender$1" sourceFile="AbstractSocketAppender.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.net.AutoFlushingObjectWriter" sourceFile="AutoFlushingObjectWriter.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.net.DefaultSocketConnector" sourceFile="DefaultSocketConnector.java" interface="false" size="43" bugs="0"/>
@@ -1356,7 +844,7 @@
       <ClassStats class="ch.qos.logback.core.pattern.color.WhiteCompositeConverter" sourceFile="WhiteCompositeConverter.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.pattern.color.YellowCompositeConverter" sourceFile="YellowCompositeConverter.java" interface="false" size="5" bugs="0"/>
     </PackageStats>
-    <PackageStats package="ch.qos.logback.core.pattern.parser" total_bugs="1" total_types="11" total_size="595" priority_1="1">
+    <PackageStats package="ch.qos.logback.core.pattern.parser" total_bugs="0" total_types="11" total_size="595">
       <ClassStats class="ch.qos.logback.core.pattern.parser.Compiler" sourceFile="Compiler.java" interface="false" size="66" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.pattern.parser.CompositeNode" sourceFile="CompositeNode.java" interface="false" size="26" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.pattern.parser.FormattingNode" sourceFile="FormattingNode.java" interface="false" size="24" bugs="0"/>
@@ -1366,7 +854,7 @@
       <ClassStats class="ch.qos.logback.core.pattern.parser.SimpleKeywordNode" sourceFile="SimpleKeywordNode.java" interface="false" size="29" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.pattern.parser.Token" sourceFile="Token.java" interface="false" size="72" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.pattern.parser.TokenStream" sourceFile="TokenStream.java" interface="false" size="128" bugs="0"/>
-      <ClassStats class="ch.qos.logback.core.pattern.parser.TokenStream$1" sourceFile="TokenStream.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="ch.qos.logback.core.pattern.parser.TokenStream$1" sourceFile="TokenStream.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.pattern.parser.TokenStream$TokenizerState" sourceFile="TokenStream.java" interface="false" size="13" bugs="0"/>
     </PackageStats>
     <PackageStats package="ch.qos.logback.core.pattern.util" total_bugs="0" total_types="5" total_size="74">
@@ -1384,17 +872,17 @@
       <ClassStats class="ch.qos.logback.core.read.CyclicBufferAppender" sourceFile="CyclicBufferAppender.java" interface="false" size="35" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.read.ListAppender" sourceFile="ListAppender.java" interface="false" size="8" bugs="0"/>
     </PackageStats>
-    <PackageStats package="ch.qos.logback.core.recovery" total_bugs="1" total_types="4" total_size="175" priority_1="1">
+    <PackageStats package="ch.qos.logback.core.recovery" total_bugs="0" total_types="4" total_size="175">
       <ClassStats class="ch.qos.logback.core.recovery.RecoveryCoordinator" sourceFile="RecoveryCoordinator.java" interface="false" size="40" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.recovery.ResilientFileOutputStream" sourceFile="ResilientFileOutputStream.java" interface="false" size="23" bugs="0"/>
-      <ClassStats class="ch.qos.logback.core.recovery.ResilientOutputStreamBase" sourceFile="ResilientOutputStreamBase.java" interface="false" size="96" bugs="1" priority_1="1"/>
+      <ClassStats class="ch.qos.logback.core.recovery.ResilientOutputStreamBase" sourceFile="ResilientOutputStreamBase.java" interface="false" size="96" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.recovery.ResilientSyslogOutputStream" sourceFile="ResilientSyslogOutputStream.java" interface="false" size="16" bugs="0"/>
     </PackageStats>
-    <PackageStats package="ch.qos.logback.core.rolling" total_bugs="2" total_types="16" total_size="674" priority_1="2">
+    <PackageStats package="ch.qos.logback.core.rolling" total_bugs="0" total_types="16" total_size="674">
       <ClassStats class="ch.qos.logback.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy" sourceFile="DefaultTimeBasedFileNamingAndTriggeringPolicy.java" interface="false" size="26" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy" sourceFile="FixedWindowRollingPolicy.java" interface="false" size="89" bugs="0"/>
-      <ClassStats class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy$1" sourceFile="FixedWindowRollingPolicy.java" interface="false" size="4" bugs="1" priority_1="1"/>
-      <ClassStats class="ch.qos.logback.core.rolling.RollingFileAppender" sourceFile="RollingFileAppender.java" interface="false" size="140" bugs="1" priority_1="1"/>
+      <ClassStats class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy$1" sourceFile="FixedWindowRollingPolicy.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="ch.qos.logback.core.rolling.RollingFileAppender" sourceFile="RollingFileAppender.java" interface="false" size="140" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.rolling.RollingPolicy" sourceFile="RollingPolicy.java" interface="true" size="5" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.rolling.RollingPolicyBase" sourceFile="RollingPolicyBase.java" interface="false" size="42" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.rolling.RolloverFailure" sourceFile="RolloverFailure.java" interface="false" size="8" bugs="0"/>
@@ -1408,11 +896,11 @@
       <ClassStats class="ch.qos.logback.core.rolling.TriggeringPolicy" sourceFile="TriggeringPolicy.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.rolling.TriggeringPolicyBase" sourceFile="TriggeringPolicyBase.java" interface="false" size="12" bugs="0"/>
     </PackageStats>
-    <PackageStats package="ch.qos.logback.core.rolling.helper" total_bugs="1" total_types="23" total_size="851" priority_1="1">
+    <PackageStats package="ch.qos.logback.core.rolling.helper" total_bugs="0" total_types="23" total_size="851">
       <ClassStats class="ch.qos.logback.core.rolling.helper.ArchiveRemover" sourceFile="ArchiveRemover.java" interface="true" size="5" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.rolling.helper.CompressionMode" sourceFile="CompressionMode.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.rolling.helper.Compressor" sourceFile="Compressor.java" interface="false" size="122" bugs="0"/>
-      <ClassStats class="ch.qos.logback.core.rolling.helper.Compressor$1" sourceFile="Compressor.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="ch.qos.logback.core.rolling.helper.Compressor$1" sourceFile="Compressor.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.rolling.helper.Compressor$CompressionRunnable" sourceFile="Compressor.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.rolling.helper.DateTokenConverter" sourceFile="DateTokenConverter.java" interface="false" size="45" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.rolling.helper.FileFilterUtil" sourceFile="FileFilterUtil.java" interface="false" size="52" bugs="0"/>
@@ -1484,14 +972,14 @@
       <ClassStats class="ch.qos.logback.core.status.ViewStatusMessagesServletBase" sourceFile="ViewStatusMessagesServletBase.java" interface="false" size="118" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.status.WarnStatus" sourceFile="WarnStatus.java" interface="false" size="7" bugs="0"/>
     </PackageStats>
-    <PackageStats package="ch.qos.logback.core.subst" total_bugs="3" total_types="12" total_size="432" priority_1="3">
+    <PackageStats package="ch.qos.logback.core.subst" total_bugs="0" total_types="12" total_size="432">
       <ClassStats class="ch.qos.logback.core.subst.Node" sourceFile="Node.java" interface="false" size="76" bugs="0"/>
-      <ClassStats class="ch.qos.logback.core.subst.Node$1" sourceFile="Node.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="ch.qos.logback.core.subst.Node$1" sourceFile="Node.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.subst.Node$Type" sourceFile="Node.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.subst.NodeToStringTransformer" sourceFile="NodeToStringTransformer.java" interface="false" size="106" bugs="0"/>
-      <ClassStats class="ch.qos.logback.core.subst.NodeToStringTransformer$1" sourceFile="NodeToStringTransformer.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="ch.qos.logback.core.subst.NodeToStringTransformer$1" sourceFile="NodeToStringTransformer.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.subst.Parser" sourceFile="Parser.java" interface="false" size="85" bugs="0"/>
-      <ClassStats class="ch.qos.logback.core.subst.Parser$1" sourceFile="Parser.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="ch.qos.logback.core.subst.Parser$1" sourceFile="Parser.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.subst.Token" sourceFile="Token.java" interface="false" size="38" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.subst.Token$Type" sourceFile="Token.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="ch.qos.logback.core.subst.Tokenizer" sourceFile="Tokenizer.java" interface="false" size="77" bugs="0"/>
@@ -1557,8 +1045,8 @@
     <PackageStats package="com.sun.tools.attach.spi" total_bugs="0" total_types="1" total_size="38">
       <ClassStats class="com.sun.tools.attach.spi.AttachProvider" sourceFile="AttachProvider.java" interface="false" size="38" bugs="0"/>
     </PackageStats>
-    <PackageStats package="junit.extensions" total_bugs="1" total_types="6" total_size="103" priority_1="1">
-      <ClassStats class="junit.extensions.ActiveTestSuite" sourceFile="ActiveTestSuite.java" interface="false" size="34" bugs="1" priority_1="1"/>
+    <PackageStats package="junit.extensions" total_bugs="0" total_types="6" total_size="103">
+      <ClassStats class="junit.extensions.ActiveTestSuite" sourceFile="ActiveTestSuite.java" interface="false" size="34" bugs="0"/>
       <ClassStats class="junit.extensions.ActiveTestSuite$1" sourceFile="ActiveTestSuite.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="junit.extensions.RepeatedTest" sourceFile="RepeatedTest.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="junit.extensions.TestDecorator" sourceFile="TestDecorator.java" interface="false" size="18" bugs="0"/>
@@ -1628,11 +1116,11 @@
       <ClassStats class="mockit.coverage.TestRun" sourceFile="TestRun.java" interface="false" size="74" bugs="0"/>
       <ClassStats class="mockit.coverage.XmlFile" sourceFile="XmlFile.java" interface="false" size="53" bugs="0"/>
     </PackageStats>
-    <PackageStats package="mockit.coverage.data" total_bugs="1" total_types="5" total_size="221" priority_1="1">
+    <PackageStats package="mockit.coverage.data" total_bugs="0" total_types="5" total_size="221">
       <ClassStats class="mockit.coverage.data.CoverageData" sourceFile="CoverageData.java" interface="false" size="138" bugs="0"/>
       <ClassStats class="mockit.coverage.data.FileCoverageData" sourceFile="FileCoverageData.java" interface="false" size="64" bugs="0"/>
       <ClassStats class="mockit.coverage.data.FileCoverageData$1" sourceFile="FileCoverageData.java" interface="false" size="11" bugs="0"/>
-      <ClassStats class="mockit.coverage.data.FileCoverageData$2" sourceFile="FileCoverageData.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="mockit.coverage.data.FileCoverageData$2" sourceFile="FileCoverageData.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="mockit.coverage.data.PerFileCoverage" sourceFile="PerFileCoverage.java" interface="true" size="4" bugs="0"/>
     </PackageStats>
     <PackageStats package="mockit.coverage.dataItems" total_bugs="0" total_types="4" total_size="189">
@@ -2096,7 +1584,7 @@
       <ClassStats class="net.bytebuddy.agent.VirtualMachine$ForHotSpot" sourceFile="VirtualMachine.java" interface="false" size="46" bugs="0"/>
       <ClassStats class="net.bytebuddy.agent.VirtualMachine$ForHotSpot$OnUnix" sourceFile="VirtualMachine.java" interface="false" size="73" bugs="0"/>
     </PackageStats>
-    <PackageStats package="net.bytebuddy.agent.builder" total_bugs="1" total_types="188" total_size="3818" priority_1="1">
+    <PackageStats package="net.bytebuddy.agent.builder" total_bugs="0" total_types="188" total_size="3818">
       <ClassStats class="net.bytebuddy.agent.builder.AgentBuilder" sourceFile="AgentBuilder.java" interface="true" size="36" bugs="0"/>
       <ClassStats class="net.bytebuddy.agent.builder.AgentBuilder$1" sourceFile="AgentBuilder.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="net.bytebuddy.agent.builder.AgentBuilder$CircularityLock" sourceFile="AgentBuilder.java" interface="true" size="3" bugs="0"/>
@@ -2264,7 +1752,7 @@
       <ClassStats class="net.bytebuddy.agent.builder.AgentBuilder$RedefinitionStrategy$ResubmissionStrategy$Disabled" sourceFile="AgentBuilder.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="net.bytebuddy.agent.builder.AgentBuilder$RedefinitionStrategy$ResubmissionStrategy$Enabled" sourceFile="AgentBuilder.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="net.bytebuddy.agent.builder.AgentBuilder$RedefinitionStrategy$ResubmissionStrategy$Enabled$LookupKey" sourceFile="AgentBuilder.java" interface="false" size="22" bugs="0"/>
-      <ClassStats class="net.bytebuddy.agent.builder.AgentBuilder$RedefinitionStrategy$ResubmissionStrategy$Enabled$ResubmissionInstallationListener" sourceFile="AgentBuilder.java" interface="false" size="71" bugs="1" priority_1="1"/>
+      <ClassStats class="net.bytebuddy.agent.builder.AgentBuilder$RedefinitionStrategy$ResubmissionStrategy$Enabled$ResubmissionInstallationListener" sourceFile="AgentBuilder.java" interface="false" size="71" bugs="0"/>
       <ClassStats class="net.bytebuddy.agent.builder.AgentBuilder$RedefinitionStrategy$ResubmissionStrategy$Enabled$ResubmissionListener" sourceFile="AgentBuilder.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="net.bytebuddy.agent.builder.AgentBuilder$RedefinitionStrategy$ResubmissionStrategy$Enabled$StorageKey" sourceFile="AgentBuilder.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="net.bytebuddy.agent.builder.AgentBuilder$RedefinitionStrategy$ResubmissionStrategy$Installation" sourceFile="AgentBuilder.java" interface="false" size="16" bugs="0"/>
@@ -3648,7 +3136,7 @@
       <ClassStats class="net.bytebuddy.implementation.bind.annotation.This" sourceFile="This.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bind.annotation.This$Binder" sourceFile="This.java" interface="false" size="21" bugs="0"/>
     </PackageStats>
-    <PackageStats package="net.bytebuddy.implementation.bytecode" total_bugs="3" total_types="23" total_size="377" priority_1="3">
+    <PackageStats package="net.bytebuddy.implementation.bytecode" total_bugs="0" total_types="23" total_size="377">
       <ClassStats class="net.bytebuddy.implementation.bytecode.Addition" sourceFile="Addition.java" interface="false" size="26" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.ByteCodeAppender" sourceFile="ByteCodeAppender.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.ByteCodeAppender$Compound" sourceFile="ByteCodeAppender.java" interface="false" size="24" bugs="0"/>
@@ -3658,18 +3146,18 @@
       <ClassStats class="net.bytebuddy.implementation.bytecode.Duplication$1" sourceFile="Duplication.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.Duplication$2" sourceFile="Duplication.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.Duplication$3" sourceFile="Duplication.java" interface="false" size="8" bugs="0"/>
-      <ClassStats class="net.bytebuddy.implementation.bytecode.Duplication$4" sourceFile="Duplication.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="net.bytebuddy.implementation.bytecode.Duplication$4" sourceFile="Duplication.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.Duplication$WithFlip" sourceFile="Duplication.java" interface="false" size="26" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.Removal" sourceFile="Removal.java" interface="false" size="31" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.Removal$1" sourceFile="Removal.java" interface="false" size="5" bugs="0"/>
-      <ClassStats class="net.bytebuddy.implementation.bytecode.Removal$2" sourceFile="Removal.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="net.bytebuddy.implementation.bytecode.Removal$2" sourceFile="Removal.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.StackManipulation" sourceFile="StackManipulation.java" interface="true" size="3" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.StackManipulation$Compound" sourceFile="StackManipulation.java" interface="false" size="31" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.StackManipulation$Illegal" sourceFile="StackManipulation.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.StackManipulation$Size" sourceFile="StackManipulation.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.StackManipulation$Trivial" sourceFile="StackManipulation.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.StackSize" sourceFile="StackSize.java" interface="false" size="50" bugs="0"/>
-      <ClassStats class="net.bytebuddy.implementation.bytecode.StackSize$1" sourceFile="StackSize.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="net.bytebuddy.implementation.bytecode.StackSize$1" sourceFile="StackSize.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.Throw" sourceFile="Throw.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="net.bytebuddy.implementation.bytecode.TypeCreation" sourceFile="TypeCreation.java" interface="false" size="19" bugs="0"/>
     </PackageStats>
@@ -4082,11 +3570,11 @@
       <ClassStats class="net.bytebuddy.utility.privilege.GetSystemPropertyAction" sourceFile="GetSystemPropertyAction.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="net.bytebuddy.utility.privilege.SetAccessibleAction" sourceFile="SetAccessibleAction.java" interface="false" size="14" bugs="0"/>
     </PackageStats>
-    <PackageStats package="net.bytebuddy.utility.visitor" total_bugs="1" total_types="4" total_size="320" priority_1="1">
+    <PackageStats package="net.bytebuddy.utility.visitor" total_bugs="0" total_types="4" total_size="320">
       <ClassStats class="net.bytebuddy.utility.visitor.ExceptionTableSensitiveMethodVisitor" sourceFile="ExceptionTableSensitiveMethodVisitor.java" interface="false" size="118" bugs="0"/>
       <ClassStats class="net.bytebuddy.utility.visitor.LineNumberPrependingMethodVisitor" sourceFile="LineNumberPrependingMethodVisitor.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="net.bytebuddy.utility.visitor.StackAwareMethodVisitor" sourceFile="StackAwareMethodVisitor.java" interface="false" size="181" bugs="0"/>
-      <ClassStats class="net.bytebuddy.utility.visitor.StackAwareMethodVisitor$1" sourceFile="StackAwareMethodVisitor.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="net.bytebuddy.utility.visitor.StackAwareMethodVisitor$1" sourceFile="StackAwareMethodVisitor.java" interface="false" size="4" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.assertj.core.api" total_bugs="0" total_types="190" total_size="9393">
       <ClassStats class="org.assertj.core.api.AbstractArrayAssert" sourceFile="AbstractArrayAssert.java" interface="false" size="4" bugs="0"/>
@@ -5619,7 +5107,7 @@
       <ClassStats class="org.jayware.e2.component.impl.generated.Benchmark_ComponentPushPull_pullFrom_jmhTest" sourceFile="Benchmark_ComponentPushPull_pullFrom_jmhTest.java" interface="false" size="551" bugs="0"/>
       <ClassStats class="org.jayware.e2.component.impl.generated.Benchmark_ComponentPushPull_pushTo_jmhTest" sourceFile="Benchmark_ComponentPushPull_pushTo_jmhTest.java" interface="false" size="551" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.jayware.e2.component.impl.generation.analyse" total_bugs="2" total_types="49" total_size="867" priority_1="2">
+    <PackageStats package="org.jayware.e2.component.impl.generation.analyse" total_bugs="0" total_types="49" total_size="867">
       <ClassStats class="org.jayware.e2.component.impl.generation.analyse.ComponentAnalyserImpl" sourceFile="ComponentAnalyserImpl.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="org.jayware.e2.component.impl.generation.analyse.ComponentAnalyserImplTest" sourceFile="ComponentAnalyserImplTest.java" interface="false" size="35" bugs="0"/>
       <ClassStats class="org.jayware.e2.component.impl.generation.analyse.ComponentAnalyserImplTest$1" sourceFile="ComponentAnalyserImplTest.java" interface="false" size="9" bugs="0"/>
@@ -5647,7 +5135,7 @@
       <ClassStats class="org.jayware.e2.component.impl.generation.analyse.ComponentDescriptorBuilderImplTest$AnotherTestComponent" sourceFile="ComponentDescriptorBuilderImplTest.java" interface="true" size="1" bugs="0"/>
       <ClassStats class="org.jayware.e2.component.impl.generation.analyse.ComponentDescriptorBuilderImplTest$TestComponent" sourceFile="ComponentDescriptorBuilderImplTest.java" interface="true" size="1" bugs="0"/>
       <ClassStats class="org.jayware.e2.component.impl.generation.analyse.ComponentHierarchyAnalyserImpl" sourceFile="ComponentHierarchyAnalyserImpl.java" interface="false" size="18" bugs="0"/>
-      <ClassStats class="org.jayware.e2.component.impl.generation.analyse.ComponentHierarchyAnalyserImplTest" sourceFile="ComponentHierarchyAnalyserImplTest.java" interface="false" size="17" bugs="1" priority_1="1"/>
+      <ClassStats class="org.jayware.e2.component.impl.generation.analyse.ComponentHierarchyAnalyserImplTest" sourceFile="ComponentHierarchyAnalyserImplTest.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="org.jayware.e2.component.impl.generation.analyse.ComponentPropertyAccessorAnalyserImpl" sourceFile="ComponentPropertyAccessorAnalyserImpl.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="org.jayware.e2.component.impl.generation.analyse.ComponentPropertyAccessorAnalyserImpl$1" sourceFile="ComponentPropertyAccessorAnalyserImpl.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.jayware.e2.component.impl.generation.analyse.ComponentPropertyAccessorAnalyserImpl$AbstractAccessorMatcher" sourceFile="ComponentPropertyAccessorAnalyserImpl.java" interface="false" size="18" bugs="0"/>
@@ -5655,7 +5143,7 @@
       <ClassStats class="org.jayware.e2.component.impl.generation.analyse.ComponentPropertyAccessorAnalyserImpl$FluentPrefixedSetterMatcher" sourceFile="ComponentPropertyAccessorAnalyserImpl.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="org.jayware.e2.component.impl.generation.analyse.ComponentPropertyAccessorAnalyserImpl$SimplePrefixedGetterMatcher" sourceFile="ComponentPropertyAccessorAnalyserImpl.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="org.jayware.e2.component.impl.generation.analyse.ComponentPropertyAccessorAnalyserImpl$SimplePrefixedSetterMatcher" sourceFile="ComponentPropertyAccessorAnalyserImpl.java" interface="false" size="20" bugs="0"/>
-      <ClassStats class="org.jayware.e2.component.impl.generation.analyse.ComponentPropertyAccessorAnalyserTest" sourceFile="ComponentPropertyAccessorAnalyserTest.java" interface="false" size="41" bugs="1" priority_1="1"/>
+      <ClassStats class="org.jayware.e2.component.impl.generation.analyse.ComponentPropertyAccessorAnalyserTest" sourceFile="ComponentPropertyAccessorAnalyserTest.java" interface="false" size="41" bugs="0"/>
       <ClassStats class="org.jayware.e2.component.impl.generation.analyse.ComponentPropertyAccessorAnalyserTest$TestComponent" sourceFile="ComponentPropertyAccessorAnalyserTest.java" interface="true" size="5" bugs="0"/>
       <ClassStats class="org.jayware.e2.component.impl.generation.analyse.ComponentPropertyAccessorDescriptorBuilderImpl" sourceFile="ComponentPropertyAccessorDescriptorBuilderImpl.java" interface="false" size="36" bugs="0"/>
       <ClassStats class="org.jayware.e2.component.impl.generation.analyse.ComponentPropertyAccessorDescriptorBuilderImpl$1" sourceFile="ComponentPropertyAccessorDescriptorBuilderImpl.java" interface="false" size="1" bugs="0"/>
@@ -5717,12 +5205,12 @@
       <ClassStats class="org.jayware.e2.context.api.ServiceProvider" sourceFile="ServiceProvider.java" interface="true" size="3" bugs="0"/>
       <ClassStats class="org.jayware.e2.context.api.ServiceUnavailableException" sourceFile="ServiceUnavailableException.java" interface="false" size="7" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.jayware.e2.context.impl" total_bugs="16" total_types="10" total_size="533" priority_1="16">
+    <PackageStats package="org.jayware.e2.context.impl" total_bugs="0" total_types="10" total_size="533">
       <ClassStats class="org.jayware.e2.context.impl.ContextImpl" sourceFile="ContextImpl.java" interface="false" size="64" bugs="0"/>
       <ClassStats class="org.jayware.e2.context.impl.ContextImpl$1" sourceFile="ContextImpl.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.jayware.e2.context.impl.ContextImpl$DefaultContext" sourceFile="ContextImpl.java" interface="false" size="120" bugs="0"/>
       <ClassStats class="org.jayware.e2.context.impl.ContextImpl$DisposedContext" sourceFile="ContextImpl.java" interface="false" size="33" bugs="0"/>
-      <ClassStats class="org.jayware.e2.context.impl.ContextImplTest" sourceFile="ContextImplTest.java" interface="false" size="227" bugs="16" priority_1="16"/>
+      <ClassStats class="org.jayware.e2.context.impl.ContextImplTest" sourceFile="ContextImplTest.java" interface="false" size="227" bugs="0"/>
       <ClassStats class="org.jayware.e2.context.impl.ContextProviderImpl" sourceFile="ContextProviderImpl.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="org.jayware.e2.context.impl.DefaultServiceProviderImpl" sourceFile="DefaultServiceProviderImpl.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="org.jayware.e2.context.impl.DefaultServiceProviderImplTest" sourceFile="DefaultServiceProviderImplTest.java" interface="false" size="44" bugs="0"/>
@@ -5877,7 +5365,7 @@
       <ClassStats class="org.jayware.e2.event.api.SubscriptionBookkeeper" sourceFile="SubscriptionBookkeeper.java" interface="true" size="6" bugs="0"/>
       <ClassStats class="org.jayware.e2.event.api.SubscriptionFactory" sourceFile="SubscriptionFactory.java" interface="true" size="2" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.jayware.e2.event.impl" total_bugs="5" total_types="95" total_size="1956" priority_1="5">
+    <PackageStats package="org.jayware.e2.event.impl" total_bugs="3" total_types="95" total_size="1956" priority_1="3">
       <ClassStats class="org.jayware.e2.event.impl.DefaultFilterImpl" sourceFile="DefaultFilterImpl.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.jayware.e2.event.impl.EventBuilderImpl" sourceFile="EventBuilderImpl.java" interface="false" size="32" bugs="0"/>
       <ClassStats class="org.jayware.e2.event.impl.EventBuilderImplTest" sourceFile="EventBuilderImplTest.java" interface="false" size="40" bugs="0"/>
@@ -5901,7 +5389,7 @@
       <ClassStats class="org.jayware.e2.event.impl.EventBusTest$1" sourceFile="EventBusTest.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="org.jayware.e2.event.impl.EventBusTest$Handler" sourceFile="EventBusTest.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.jayware.e2.event.impl.EventDispatch" sourceFile="EventDispatch.java" interface="false" size="55" bugs="0"/>
-      <ClassStats class="org.jayware.e2.event.impl.EventDispatchTest" sourceFile="EventDispatchTest.java" interface="false" size="70" bugs="2" priority_1="2"/>
+      <ClassStats class="org.jayware.e2.event.impl.EventDispatchTest" sourceFile="EventDispatchTest.java" interface="false" size="70" bugs="0"/>
       <ClassStats class="org.jayware.e2.event.impl.EventDispatchTest$1" sourceFile="EventDispatchTest.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.jayware.e2.event.impl.EventDispatchTest$2" sourceFile="EventDispatchTest.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.jayware.e2.event.impl.EventDispatchTest$3" sourceFile="EventDispatchTest.java" interface="false" size="8" bugs="0"/>
@@ -5981,7 +5469,7 @@
       <ClassStats class="org.jayware.e2.storage.api.Storage" sourceFile="Storage.java" interface="true" size="1" bugs="0"/>
       <ClassStats class="org.jayware.e2.storage.api.StorageException" sourceFile="StorageException.java" interface="false" size="4" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.jayware.e2.storage.impl" total_bugs="2" total_types="26" total_size="570" priority_1="2">
+    <PackageStats package="org.jayware.e2.storage.impl" total_bugs="1" total_types="26" total_size="570" priority_1="1">
       <ClassStats class="org.jayware.e2.storage.impl.ComponentDatabaseImpl" sourceFile="ComponentDatabaseImpl.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="org.jayware.e2.storage.impl.ContextInitializerImpl" sourceFile="ContextInitializerImpl.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="org.jayware.e2.storage.impl.EntityFinderImpl" sourceFile="EntityFinderImpl.java" interface="false" size="30" bugs="0"/>
@@ -5991,7 +5479,7 @@
       <ClassStats class="org.jayware.e2.storage.impl.StorageImplIntegrationTest" sourceFile="StorageImplIntegrationTest.java" interface="false" size="82" bugs="1" priority_1="1"/>
       <ClassStats class="org.jayware.e2.storage.impl.StorageImplIntegrationTest$1" sourceFile="StorageImplIntegrationTest.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.jayware.e2.storage.impl.StorageImplIntegrationTest$2" sourceFile="StorageImplIntegrationTest.java" interface="false" size="8" bugs="0"/>
-      <ClassStats class="org.jayware.e2.storage.impl.StorageImplTest" sourceFile="StorageImplTest.java" interface="false" size="110" bugs="1" priority_1="1"/>
+      <ClassStats class="org.jayware.e2.storage.impl.StorageImplTest" sourceFile="StorageImplTest.java" interface="false" size="110" bugs="0"/>
       <ClassStats class="org.jayware.e2.storage.impl.StorageImplTest$1" sourceFile="StorageImplTest.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.jayware.e2.storage.impl.StorageImplTest$10" sourceFile="StorageImplTest.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.jayware.e2.storage.impl.StorageImplTest$11" sourceFile="StorageImplTest.java" interface="false" size="11" bugs="0"/>
@@ -6172,8 +5660,8 @@
       <ClassStats class="org.junit.internal.requests.FilterRequest" sourceFile="FilterRequest.java" interface="false" size="14" bugs="0"/>
       <ClassStats class="org.junit.internal.requests.SortingRequest" sourceFile="SortingRequest.java" interface="false" size="12" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.junit.internal.runners" total_bugs="4" total_types="18" total_size="569" priority_1="4">
-      <ClassStats class="org.junit.internal.runners.ClassRoadie" sourceFile="ClassRoadie.java" interface="false" size="49" bugs="2" priority_1="2"/>
+    <PackageStats package="org.junit.internal.runners" total_bugs="0" total_types="18" total_size="569">
+      <ClassStats class="org.junit.internal.runners.ClassRoadie" sourceFile="ClassRoadie.java" interface="false" size="49" bugs="0"/>
       <ClassStats class="org.junit.internal.runners.ErrorReportingRunner" sourceFile="ErrorReportingRunner.java" interface="false" size="35" bugs="0"/>
       <ClassStats class="org.junit.internal.runners.FailedBefore" sourceFile="FailedBefore.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.junit.internal.runners.InitializationError" sourceFile="InitializationError.java" interface="false" size="15" bugs="0"/>
@@ -6183,8 +5671,8 @@
       <ClassStats class="org.junit.internal.runners.JUnit4ClassRunner" sourceFile="JUnit4ClassRunner.java" interface="false" size="75" bugs="0"/>
       <ClassStats class="org.junit.internal.runners.JUnit4ClassRunner$1" sourceFile="JUnit4ClassRunner.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.junit.internal.runners.JUnit4ClassRunner$2" sourceFile="JUnit4ClassRunner.java" interface="false" size="8" bugs="0"/>
-      <ClassStats class="org.junit.internal.runners.MethodRoadie" sourceFile="MethodRoadie.java" interface="false" size="83" bugs="1" priority_1="1"/>
-      <ClassStats class="org.junit.internal.runners.MethodRoadie$1" sourceFile="MethodRoadie.java" interface="false" size="20" bugs="1" priority_1="1"/>
+      <ClassStats class="org.junit.internal.runners.MethodRoadie" sourceFile="MethodRoadie.java" interface="false" size="83" bugs="0"/>
+      <ClassStats class="org.junit.internal.runners.MethodRoadie$1" sourceFile="MethodRoadie.java" interface="false" size="20" bugs="0"/>
       <ClassStats class="org.junit.internal.runners.MethodRoadie$1$1" sourceFile="MethodRoadie.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.junit.internal.runners.MethodRoadie$2" sourceFile="MethodRoadie.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.junit.internal.runners.MethodValidator" sourceFile="MethodValidator.java" interface="false" size="50" bugs="0"/>
@@ -6511,12 +5999,12 @@
       <ClassStats class="org.junit.platform.launcher.core.TestExecutionListenerRegistry$1" sourceFile="TestExecutionListenerRegistry.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.junit.platform.launcher.core.TestExecutionListenerRegistry$CompositeTestExecutionListener" sourceFile="TestExecutionListenerRegistry.java" interface="false" size="33" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.junit.platform.launcher.listeners" total_bugs="1" total_types="7" total_size="251" priority_1="1">
+    <PackageStats package="org.junit.platform.launcher.listeners" total_bugs="0" total_types="7" total_size="251">
       <ClassStats class="org.junit.platform.launcher.listeners.LoggingListener" sourceFile="LoggingListener.java" interface="false" size="41" bugs="0"/>
       <ClassStats class="org.junit.platform.launcher.listeners.MutableTestExecutionSummary" sourceFile="MutableTestExecutionSummary.java" interface="false" size="115" bugs="0"/>
       <ClassStats class="org.junit.platform.launcher.listeners.MutableTestExecutionSummary$DefaultFailure" sourceFile="MutableTestExecutionSummary.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="org.junit.platform.launcher.listeners.SummaryGeneratingListener" sourceFile="SummaryGeneratingListener.java" interface="false" size="57" bugs="0"/>
-      <ClassStats class="org.junit.platform.launcher.listeners.SummaryGeneratingListener$1" sourceFile="SummaryGeneratingListener.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="org.junit.platform.launcher.listeners.SummaryGeneratingListener$1" sourceFile="SummaryGeneratingListener.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.junit.platform.launcher.listeners.TestExecutionSummary" sourceFile="TestExecutionSummary.java" interface="true" size="19" bugs="0"/>
       <ClassStats class="org.junit.platform.launcher.listeners.TestExecutionSummary$Failure" sourceFile="TestExecutionSummary.java" interface="true" size="3" bugs="0"/>
     </PackageStats>
@@ -7123,11 +6611,11 @@
       <ClassStats class="org.mockito.internal.util.collections.ListUtil$Filter" sourceFile="ListUtil.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="org.mockito.internal.util.collections.Sets" sourceFile="Sets.java" interface="false" size="13" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.mockito.internal.util.concurrent" total_bugs="1" total_types="16" total_size="291" priority_1="1">
+    <PackageStats package="org.mockito.internal.util.concurrent" total_bugs="0" total_types="16" total_size="291">
       <ClassStats class="org.mockito.internal.util.concurrent.DetachedThreadLocal" sourceFile="DetachedThreadLocal.java" interface="false" size="46" bugs="0"/>
       <ClassStats class="org.mockito.internal.util.concurrent.DetachedThreadLocal$1" sourceFile="DetachedThreadLocal.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.mockito.internal.util.concurrent.DetachedThreadLocal$2" sourceFile="DetachedThreadLocal.java" interface="false" size="7" bugs="0"/>
-      <ClassStats class="org.mockito.internal.util.concurrent.DetachedThreadLocal$3" sourceFile="DetachedThreadLocal.java" interface="false" size="4" bugs="1" priority_1="1"/>
+      <ClassStats class="org.mockito.internal.util.concurrent.DetachedThreadLocal$3" sourceFile="DetachedThreadLocal.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="org.mockito.internal.util.concurrent.DetachedThreadLocal$Cleaner" sourceFile="DetachedThreadLocal.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.mockito.internal.util.concurrent.WeakConcurrentMap" sourceFile="WeakConcurrentMap.java" interface="false" size="56" bugs="0"/>
       <ClassStats class="org.mockito.internal.util.concurrent.WeakConcurrentMap$1" sourceFile="WeakConcurrentMap.java" interface="false" size="1" bugs="0"/>
@@ -7620,52 +7108,53 @@
       <ClassStats class="sun.tools.attach.WindowsVirtualMachine$PipedInputStream" sourceFile="WindowsVirtualMachine.java" interface="false" size="24" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="11905" invocations="6043" avgMicrosecondsPerInvocation="1970" maxMicrosecondsPerInvocation="100105" standardDeviationMicrosecondsPerInvocation="7065"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="4562" invocations="35955" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="75446" standardDeviationMicrosecondsPerInvocation="846"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="4246" invocations="37792" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="68573" standardDeviationMicrosecondsPerInvocation="636"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="4126" invocations="37309" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="114357" standardDeviationMicrosecondsPerInvocation="1263"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="3518" invocations="38681" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="93088" standardDeviationMicrosecondsPerInvocation="916"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="3230" invocations="38363" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="55946" standardDeviationMicrosecondsPerInvocation="506"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="2536" invocations="32776" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="102606" standardDeviationMicrosecondsPerInvocation="826"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="2288" invocations="40635" avgMicrosecondsPerInvocation="56" maxMicrosecondsPerInvocation="60952" standardDeviationMicrosecondsPerInvocation="451"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1931" invocations="9123" avgMicrosecondsPerInvocation="211" maxMicrosecondsPerInvocation="50709" standardDeviationMicrosecondsPerInvocation="1011"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1833" invocations="6769" avgMicrosecondsPerInvocation="270" maxMicrosecondsPerInvocation="41233" standardDeviationMicrosecondsPerInvocation="837"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1606" invocations="41613" avgMicrosecondsPerInvocation="38" maxMicrosecondsPerInvocation="46632" standardDeviationMicrosecondsPerInvocation="285"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1558" invocations="6769" avgMicrosecondsPerInvocation="230" maxMicrosecondsPerInvocation="50023" standardDeviationMicrosecondsPerInvocation="922"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1321" invocations="20663" avgMicrosecondsPerInvocation="63" maxMicrosecondsPerInvocation="5448" standardDeviationMicrosecondsPerInvocation="107"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="1038" invocations="37792" avgMicrosecondsPerInvocation="27" maxMicrosecondsPerInvocation="78472" standardDeviationMicrosecondsPerInvocation="416"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckTypeQualifiers" totalMilliseconds="1037" invocations="6043" avgMicrosecondsPerInvocation="171" maxMicrosecondsPerInvocation="39916" standardDeviationMicrosecondsPerInvocation="719"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="957" invocations="6043" avgMicrosecondsPerInvocation="158" maxMicrosecondsPerInvocation="5722" standardDeviationMicrosecondsPerInvocation="282"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="932" invocations="6043" avgMicrosecondsPerInvocation="154" maxMicrosecondsPerInvocation="62801" standardDeviationMicrosecondsPerInvocation="975"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="928" invocations="6043" avgMicrosecondsPerInvocation="153" maxMicrosecondsPerInvocation="11791" standardDeviationMicrosecondsPerInvocation="382"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="751" invocations="1008937" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="4328" standardDeviationMicrosecondsPerInvocation="7"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="723" invocations="18359" avgMicrosecondsPerInvocation="39" maxMicrosecondsPerInvocation="43842" standardDeviationMicrosecondsPerInvocation="357"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="616" invocations="6043" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="9932" standardDeviationMicrosecondsPerInvocation="342"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="614" invocations="40635" avgMicrosecondsPerInvocation="15" maxMicrosecondsPerInvocation="32695" standardDeviationMicrosecondsPerInvocation="164"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="600" invocations="35955" avgMicrosecondsPerInvocation="16" maxMicrosecondsPerInvocation="40970" standardDeviationMicrosecondsPerInvocation="220"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="593" invocations="6043" avgMicrosecondsPerInvocation="98" maxMicrosecondsPerInvocation="7184" standardDeviationMicrosecondsPerInvocation="246"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="592" invocations="6043" avgMicrosecondsPerInvocation="98" maxMicrosecondsPerInvocation="8381" standardDeviationMicrosecondsPerInvocation="274"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="586" invocations="6769" avgMicrosecondsPerInvocation="86" maxMicrosecondsPerInvocation="48659" standardDeviationMicrosecondsPerInvocation="661"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="567" invocations="34811" avgMicrosecondsPerInvocation="16" maxMicrosecondsPerInvocation="4769" standardDeviationMicrosecondsPerInvocation="77"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="539" invocations="6043" avgMicrosecondsPerInvocation="89" maxMicrosecondsPerInvocation="3843" standardDeviationMicrosecondsPerInvocation="199"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="539" invocations="6043" avgMicrosecondsPerInvocation="89" maxMicrosecondsPerInvocation="11496" standardDeviationMicrosecondsPerInvocation="231"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="532" invocations="6043" avgMicrosecondsPerInvocation="88" maxMicrosecondsPerInvocation="8203" standardDeviationMicrosecondsPerInvocation="214"/>
-      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="531" invocations="787768" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="1347" standardDeviationMicrosecondsPerInvocation="2"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector" totalMilliseconds="530" invocations="6043" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="12543" standardDeviationMicrosecondsPerInvocation="256"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="520" invocations="6043" avgMicrosecondsPerInvocation="86" maxMicrosecondsPerInvocation="2942" standardDeviationMicrosecondsPerInvocation="169"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="517" invocations="6043" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="3855" standardDeviationMicrosecondsPerInvocation="179"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="516" invocations="6769" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="14053" standardDeviationMicrosecondsPerInvocation="248"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="507" invocations="6043" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="34976" standardDeviationMicrosecondsPerInvocation="688"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="489" invocations="6043" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="7136" standardDeviationMicrosecondsPerInvocation="212"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="488" invocations="6043" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="20337" standardDeviationMicrosecondsPerInvocation="325"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="485" invocations="6043" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="3442" standardDeviationMicrosecondsPerInvocation="181"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="479" invocations="6043" avgMicrosecondsPerInvocation="79" maxMicrosecondsPerInvocation="26745" standardDeviationMicrosecondsPerInvocation="403"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="474" invocations="6043" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="4043" standardDeviationMicrosecondsPerInvocation="181"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="468" invocations="6043" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="4623" standardDeviationMicrosecondsPerInvocation="190"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="465" invocations="6043" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="11639" standardDeviationMicrosecondsPerInvocation="455"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="458" invocations="6043" avgMicrosecondsPerInvocation="75" maxMicrosecondsPerInvocation="4321" standardDeviationMicrosecondsPerInvocation="182"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IntCast2LongAsInstant" totalMilliseconds="449" invocations="6043" avgMicrosecondsPerInvocation="74" maxMicrosecondsPerInvocation="60171" standardDeviationMicrosecondsPerInvocation="789"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="429" invocations="6043" avgMicrosecondsPerInvocation="71" maxMicrosecondsPerInvocation="4174" standardDeviationMicrosecondsPerInvocation="171"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="4825" invocations="35955" avgMicrosecondsPerInvocation="134" maxMicrosecondsPerInvocation="347299" standardDeviationMicrosecondsPerInvocation="1973"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="4805" invocations="6043" avgMicrosecondsPerInvocation="795" maxMicrosecondsPerInvocation="65360" standardDeviationMicrosecondsPerInvocation="3889"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="4220" invocations="37792" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="61793" standardDeviationMicrosecondsPerInvocation="537"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="3796" invocations="37309" avgMicrosecondsPerInvocation="101" maxMicrosecondsPerInvocation="96637" standardDeviationMicrosecondsPerInvocation="907"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="3389" invocations="38681" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="56882" standardDeviationMicrosecondsPerInvocation="614"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="3186" invocations="38363" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="64896" standardDeviationMicrosecondsPerInvocation="416"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="2463" invocations="32776" avgMicrosecondsPerInvocation="75" maxMicrosecondsPerInvocation="90053" standardDeviationMicrosecondsPerInvocation="654"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="2297" invocations="40635" avgMicrosecondsPerInvocation="56" maxMicrosecondsPerInvocation="58089" standardDeviationMicrosecondsPerInvocation="418"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1697" invocations="20313" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="5030" standardDeviationMicrosecondsPerInvocation="119"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1390" invocations="6735" avgMicrosecondsPerInvocation="206" maxMicrosecondsPerInvocation="396087" standardDeviationMicrosecondsPerInvocation="4839"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1312" invocations="6735" avgMicrosecondsPerInvocation="194" maxMicrosecondsPerInvocation="84609" standardDeviationMicrosecondsPerInvocation="1125"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1269" invocations="41515" avgMicrosecondsPerInvocation="30" maxMicrosecondsPerInvocation="64746" standardDeviationMicrosecondsPerInvocation="334"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1215" invocations="8939" avgMicrosecondsPerInvocation="135" maxMicrosecondsPerInvocation="58355" standardDeviationMicrosecondsPerInvocation="930"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckTypeQualifiers" totalMilliseconds="1137" invocations="6043" avgMicrosecondsPerInvocation="188" maxMicrosecondsPerInvocation="65930" standardDeviationMicrosecondsPerInvocation="1037"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="950" invocations="37792" avgMicrosecondsPerInvocation="25" maxMicrosecondsPerInvocation="12474" standardDeviationMicrosecondsPerInvocation="117"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="934" invocations="6043" avgMicrosecondsPerInvocation="154" maxMicrosecondsPerInvocation="64671" standardDeviationMicrosecondsPerInvocation="913"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="890" invocations="6043" avgMicrosecondsPerInvocation="147" maxMicrosecondsPerInvocation="7446" standardDeviationMicrosecondsPerInvocation="356"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="878" invocations="6043" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="7672" standardDeviationMicrosecondsPerInvocation="292"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="788" invocations="967530" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="11610" standardDeviationMicrosecondsPerInvocation="14"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="697" invocations="6043" avgMicrosecondsPerInvocation="115" maxMicrosecondsPerInvocation="72543" standardDeviationMicrosecondsPerInvocation="970"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="690" invocations="18267" avgMicrosecondsPerInvocation="37" maxMicrosecondsPerInvocation="78644" standardDeviationMicrosecondsPerInvocation="591"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="623" invocations="6043" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="13632" standardDeviationMicrosecondsPerInvocation="374"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="621" invocations="40635" avgMicrosecondsPerInvocation="15" maxMicrosecondsPerInvocation="32630" standardDeviationMicrosecondsPerInvocation="165"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="596" invocations="35955" avgMicrosecondsPerInvocation="16" maxMicrosecondsPerInvocation="4469" standardDeviationMicrosecondsPerInvocation="55"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="555" invocations="6043" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="14898" standardDeviationMicrosecondsPerInvocation="556"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="552" invocations="6043" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="9570" standardDeviationMicrosecondsPerInvocation="233"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="525" invocations="787666" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="11351" standardDeviationMicrosecondsPerInvocation="13"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="514" invocations="34811" avgMicrosecondsPerInvocation="14" maxMicrosecondsPerInvocation="8442" standardDeviationMicrosecondsPerInvocation="77"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="483" invocations="6043" avgMicrosecondsPerInvocation="79" maxMicrosecondsPerInvocation="5118" standardDeviationMicrosecondsPerInvocation="178"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="483" invocations="6043" avgMicrosecondsPerInvocation="79" maxMicrosecondsPerInvocation="8645" standardDeviationMicrosecondsPerInvocation="212"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="473" invocations="6043" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="48046" standardDeviationMicrosecondsPerInvocation="648"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="472" invocations="6043" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="18553" standardDeviationMicrosecondsPerInvocation="403"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="472" invocations="6043" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="5610" standardDeviationMicrosecondsPerInvocation="186"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="472" invocations="6043" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="7147" standardDeviationMicrosecondsPerInvocation="199"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="464" invocations="6043" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="3253" standardDeviationMicrosecondsPerInvocation="176"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="446" invocations="6043" avgMicrosecondsPerInvocation="73" maxMicrosecondsPerInvocation="34591" standardDeviationMicrosecondsPerInvocation="510"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="437" invocations="6043" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="3727" standardDeviationMicrosecondsPerInvocation="184"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="436" invocations="6043" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="3301" standardDeviationMicrosecondsPerInvocation="168"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="432" invocations="6043" avgMicrosecondsPerInvocation="71" maxMicrosecondsPerInvocation="3920" standardDeviationMicrosecondsPerInvocation="171"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.BenchmarkMethodDetector" totalMilliseconds="418" invocations="6043" avgMicrosecondsPerInvocation="69" maxMicrosecondsPerInvocation="77033" standardDeviationMicrosecondsPerInvocation="1000"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="415" invocations="6043" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="6076" standardDeviationMicrosecondsPerInvocation="152"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="415" invocations="6043" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="4956" standardDeviationMicrosecondsPerInvocation="192"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="406" invocations="6043" avgMicrosecondsPerInvocation="67" maxMicrosecondsPerInvocation="5753" standardDeviationMicrosecondsPerInvocation="175"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="398" invocations="6043" avgMicrosecondsPerInvocation="65" maxMicrosecondsPerInvocation="4916" standardDeviationMicrosecondsPerInvocation="163"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="395" invocations="40635" avgMicrosecondsPerInvocation="9" maxMicrosecondsPerInvocation="8136" standardDeviationMicrosecondsPerInvocation="76"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="378" invocations="6043" avgMicrosecondsPerInvocation="62" maxMicrosecondsPerInvocation="3886" standardDeviationMicrosecondsPerInvocation="159"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BadSyntaxForRegularExpression" totalMilliseconds="374" invocations="6043" avgMicrosecondsPerInvocation="61" maxMicrosecondsPerInvocation="9367" standardDeviationMicrosecondsPerInvocation="194"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
