@@ -28,15 +28,6 @@ public class IgnoredStaticMethodReturnWithPrimitivesDetectorTest {
 				"IgnoredStaticMethodReturnWithPrimitivesExample.class");
 		
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
-		Collection<BugInstance> collection = bugCollection.getCollection();
-		
-		for(BugInstance c : collection) {
-//			System.out.println(c);
-		}
-		
-		
-		System.out.println(collection);
-		
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_STATIC_PRIMITIVE_METHOD_RETURN").build();
 		assertThat(bugCollection, containsExactly(bugTypeMatcher, 4));
