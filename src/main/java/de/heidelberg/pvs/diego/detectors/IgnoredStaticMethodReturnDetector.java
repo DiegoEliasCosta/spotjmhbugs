@@ -80,8 +80,10 @@ public class IgnoredStaticMethodReturnDetector extends AbstractJMHBenchmarkMetho
 		
 		// Any object has the following signature L(.+?);
 		boolean matches = parameters.matches(".*L(.+?);.*");
+		// Arrays of primitives has the signature [J -> array of longs 
+		boolean arrayMatches = parameters.matches(".*\\[.*");
 		
-		return !matches;
+		return !matches && !arrayMatches;
 	}
 
 }

@@ -25,7 +25,7 @@ public class IgnoredStaticMethodReturnDetectorTest {
 				"JMHSample_08_DeadCode.class");
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_STATIC_METHOD_RETURN").build();
+		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_STATIC_PRIMITIVE_METHOD_RETURN").build();
 		assertThat(bugCollection, containsExactly(bugTypeMatcher, 1));
 	}
 	
@@ -36,7 +36,7 @@ public class IgnoredStaticMethodReturnDetectorTest {
 				"JMHSample_09_Blackholes.class");
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_STATIC_METHOD_RETURN").build();
+		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_STATIC_PRIMITIVE_METHOD_RETURN").build();
 		assertThat(bugCollection, containsExactly(bugTypeMatcher, 1));
 	}
 	
@@ -59,7 +59,7 @@ public class IgnoredStaticMethodReturnDetectorTest {
 		
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_STATIC_METHOD_RETURN").build();
+		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_STATIC_PRIMITIVE_METHOD_RETURN").build();
 		assertThat(bugCollection, containsExactly(bugTypeMatcher, 1));
 	}
 

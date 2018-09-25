@@ -59,11 +59,6 @@ public class StateFinalFieldDetector extends AbstractJMHStateClassDetector {
 		super.visitField(obj);
 	}
 
-	private boolean isStaticField(Field obj) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
 	private boolean isPrimitiveOrString(Type type) {
 		return type == Type.FLOAT || type == Type.DOUBLE || type == Type.INT || type == Type.CHAR
 				|| type == Type.BOOLEAN || type.equals(Type.STRING) || type == Type.SHORT || type == Type.BYTE

@@ -124,8 +124,8 @@ by a Blackhole to avoid dead-code optimization.</p>
   </BugPattern>
   
   <BugPattern type="JMH_IGNORED_STATIC_PRIMITIVE_METHOD_RETURN">
-    <ShortDescription>Static method return not used or consumed by a Blackhole.</ShortDescription>
-    <LongDescription>Static method return not used or consumed in {1}</LongDescription>
+    <ShortDescription>Static method with only primitive parameters is having its return ignored in the benchmark.</ShortDescription>
+    <LongDescription>Static method with only primitives not consumed in {1}</LongDescription>
     <Details>
 <![CDATA[
 <p>Each static non-void method call should have its return either used in the benchmark or consumed 
