@@ -41,5 +41,17 @@ public class DeadCodeEliminationExample {
 		return str2;
 	}
 	
+	@Benchmark
+	public void benchmarkWithDeadStore() {
+		StringBuilder str = new StringBuilder(); // +1
+		StringBuilder str2 = new StringBuilder(); // +1
+	}
+	
+	
+	public StringBuilder notBenchmark() {
+		StringBuilder str = new StringBuilder();
+		StringBuilder str2 = new StringBuilder();
+		return str2;
+	}
 	
 }

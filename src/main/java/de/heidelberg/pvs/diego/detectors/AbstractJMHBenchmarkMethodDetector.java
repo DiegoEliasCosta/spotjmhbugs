@@ -6,6 +6,9 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
+import org.apache.bcel.classfile.AnnotationEntry;
+import org.apache.bcel.classfile.Method;
+
 import edu.umd.cs.findbugs.BugReporter;
 import edu.umd.cs.findbugs.ba.ClassContext;
 import edu.umd.cs.findbugs.ba.XClass;
@@ -22,6 +25,8 @@ import edu.umd.cs.findbugs.classfile.analysis.AnnotationValue;
 public abstract class AbstractJMHBenchmarkMethodDetector extends OpcodeStackDetector {
 
 	private static final String JMH_BENCHMARK_ANNOTATION = "org/openjdk/jmh/annotations/Benchmark";
+	private static final String JMH_BENCHMARK_ANNOTATION_2 = "Lorg/openjdk/jmh/annotations/Benchmark;";
+	
 
 	protected final BugReporter bugReporter;
 	protected Set<XMethod> targetBenchmarkMethods = new HashSet<XMethod>();
@@ -37,7 +42,7 @@ public abstract class AbstractJMHBenchmarkMethodDetector extends OpcodeStackDete
 		XClass xClass = classContext.getXClass();
 
 		List<? extends XMethod> methods = xClass.getXMethods();
-
+		
 		for (XMethod method : methods) {
 			
 			// Target methods that are declared with the @Benchmark annotation
@@ -60,6 +65,20 @@ public abstract class AbstractJMHBenchmarkMethodDetector extends OpcodeStackDete
 			String annotationType = annotation.getAnnotationClass().getClassName();
 			
 			if (Objects.equals(annotationType, JMH_BENCHMARK_ANNOTATION)) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	protected boolean isMethodBenchmark(Method method) {
+		AnnotationEntry[] annotationEntries = method.getAnnotationEntries();
+
+		for (AnnotationEntry annotation : annotationEntries) {
+			
+			String annotationType = annotation.getAnnotationType();
+			
+			if (Objects.equals(annotationType, JMH_BENCHMARK_ANNOTATION_2)) {
 				return true;
 			}
 		}

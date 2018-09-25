@@ -25,7 +25,6 @@ import edu.umd.cs.findbugs.ba.Dataflow;
 import edu.umd.cs.findbugs.ba.DataflowAnalysisException;
 import edu.umd.cs.findbugs.ba.LiveLocalStoreAnalysis;
 import edu.umd.cs.findbugs.ba.Location;
-import edu.umd.cs.findbugs.ba.XMethod;
 import edu.umd.cs.findbugs.detect.DeadLocalStoreProperty;
 import edu.umd.cs.findbugs.props.WarningProperty;
 import edu.umd.cs.findbugs.props.WarningPropertySet;
@@ -34,8 +33,6 @@ import edu.umd.cs.findbugs.visitclass.PreorderVisitor;
 /**
  * Detector for dead stores in a JMH benchmark. Heavily based on the
  * FindDeadLocalStores implementation by David Hovemeyer and Bill Pugh.
- * 
- * 
  * 
  * @author diego.costa
  *
@@ -52,7 +49,7 @@ public class DeadStoreBenchmarkDetector extends AbstractJMHBenchmarkMethodDetect
 	public void visitMethod(Method obj) {
 		super.visitMethod(obj);
 
-		if (isJMHBenchmark(obj)) {
+		if (isMethodBenchmark(obj)) {
 			try {
 				analyzeMethod(getClassContext(), getMethod());
 			} catch (DataflowAnalysisException | CFGBuilderException e) {
@@ -61,18 +58,6 @@ public class DeadStoreBenchmarkDetector extends AbstractJMHBenchmarkMethodDetect
 			}
 		}
 
-	}
-
-	private boolean isJMHBenchmark(Method obj) {
-		// TODO: Check a better way of comparing XMethod with Method objects
-		String signature = obj.getSignature();
-		for (XMethod m : super.targetBenchmarkMethods) {
-			if (m.getSignature().equals(signature)) {
-				return true;
-			}
-		}
-
-		return false;
 	}
 
 	/**
@@ -154,10 +139,11 @@ public class DeadStoreBenchmarkDetector extends AbstractJMHBenchmarkMethodDetect
 				if (location.getBasicBlock().isExceptionHandler()) {
 					continue; // Skip Exception clauses
 				}
+				
 				IndexedInstruction ins = (IndexedInstruction) location.getHandle().getInstruction();
 
 				int local = ins.getIndex();
-
+				
 				// Get live stores at this instruction.
 				// Note that the analysis also computes which stores were
 				// killed by a subsequent unconditional store.
