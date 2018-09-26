@@ -1,39 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1534867134000" analysisTimestamp="1536612721924" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534867134000" analysisTimestamp="1537908642610" release="">
   <Project projectName="">
     <Jar>tmp/pgjdbc</Jar>
   </Project>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.apache.commons.math3.complex.Quaternion">
-      <SourceLine classname="org.apache.commons.math3.complex.Quaternion" start="39" end="463" sourcefile="Quaternion.java" sourcepath="org/apache/commons/math3/complex/Quaternion.java"/>
-    </Class>
-    <Method classname="org.apache.commons.math3.complex.Quaternion" name="toString" signature="()Ljava/lang/String;" isStatic="false">
-      <SourceLine classname="org.apache.commons.math3.complex.Quaternion" start="454" end="463" startBytecode="0" endBytecode="32" sourcefile="Quaternion.java" sourcepath="org/apache/commons/math3/complex/Quaternion.java"/>
-    </Method>
-    <LocalVariable name="sp" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.apache.commons.math3.complex.Quaternion" start="454" end="454" startBytecode="2" endBytecode="2" sourcefile="Quaternion.java" sourcepath="org/apache/commons/math3/complex/Quaternion.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.apache.commons.math3.fraction.BigFraction">
-      <SourceLine classname="org.apache.commons.math3.fraction.BigFraction" start="40" end="1139" sourcefile="BigFraction.java" sourcepath="org/apache/commons/math3/fraction/BigFraction.java"/>
-    </Class>
-    <Method classname="org.apache.commons.math3.fraction.BigFraction" name="toString" signature="()Ljava/lang/String;" isStatic="false">
-      <SourceLine classname="org.apache.commons.math3.fraction.BigFraction" start="1126" end="1134" startBytecode="0" endBytecode="34" sourcefile="BigFraction.java" sourcepath="org/apache/commons/math3/fraction/BigFraction.java"/>
-    </Method>
-    <LocalVariable name="str" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.apache.commons.math3.fraction.BigFraction" start="1126" end="1126" startBytecode="1" endBytecode="1" sourcefile="BigFraction.java" sourcepath="org/apache/commons/math3/fraction/BigFraction.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.apache.commons.math3.fraction.Fraction">
-      <SourceLine classname="org.apache.commons.math3.fraction.Fraction" start="37" end="663" sourcefile="Fraction.java" sourcepath="org/apache/commons/math3/fraction/Fraction.java"/>
-    </Class>
-    <Method classname="org.apache.commons.math3.fraction.Fraction" name="toString" signature="()Ljava/lang/String;" isStatic="false">
-      <SourceLine classname="org.apache.commons.math3.fraction.Fraction" start="650" end="658" startBytecode="0" endBytecode="31" sourcefile="Fraction.java" sourcepath="org/apache/commons/math3/fraction/Fraction.java"/>
-    </Method>
-    <LocalVariable name="str" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.apache.commons.math3.fraction.Fraction" start="650" end="650" startBytecode="1" endBytecode="1" sourcefile="Fraction.java" sourcepath="org/apache/commons/math3/fraction/Fraction.java"/>
-  </BugInstance>
   <BugInstance type="JMH_BENCHMARKMODE_SINGLESHOT" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.postgresql.benchmark.connection.FinalizeConnection">
       <SourceLine classname="org.postgresql.benchmark.connection.FinalizeConnection" start="57" end="90" sourcefile="FinalizeConnection.java" sourcepath="org/postgresql/benchmark/connection/FinalizeConnection.java"/>
@@ -590,143 +560,14 @@
       <SourceLine classname="org.postgresql.benchmark.time.TimestampToTime" start="71" end="95" startBytecode="0" endBytecode="275" sourcefile="TimestampToTime.java" sourcepath="org/postgresql/benchmark/time/TimestampToTime.java"/>
     </Method>
   </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.postgresql.replication.LogicalReplicationTest">
-      <SourceLine classname="org.postgresql.replication.LogicalReplicationTest" start="48" end="955" sourcefile="LogicalReplicationTest.java" sourcepath="org/postgresql/replication/LogicalReplicationTest.java"/>
-    </Class>
-    <Method classname="org.postgresql.replication.LogicalReplicationTest" name="testAfterCloseConnectionDBSLotStatusNotActive" signature="()V" isStatic="false">
-      <SourceLine classname="org.postgresql.replication.LogicalReplicationTest" start="293" end="325" startBytecode="0" endBytecode="55" sourcefile="LogicalReplicationTest.java" sourcepath="org/postgresql/replication/LogicalReplicationTest.java"/>
-    </Method>
-    <LocalVariable name="stream" register="3" pc="70" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.postgresql.replication.LogicalReplicationTest" start="306" end="306" startBytecode="69" endBytecode="69" sourcefile="LogicalReplicationTest.java" sourcepath="org/postgresql/replication/LogicalReplicationTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.postgresql.replication.LogicalReplicationTest">
-      <SourceLine classname="org.postgresql.replication.LogicalReplicationTest" start="48" end="955" sourcefile="LogicalReplicationTest.java" sourcepath="org/postgresql/replication/LogicalReplicationTest.java"/>
-    </Class>
-    <Method classname="org.postgresql.replication.LogicalReplicationTest" name="testAfterStartStreamingDBSlotStatusActive" signature="()V" isStatic="false">
-      <SourceLine classname="org.postgresql.replication.LogicalReplicationTest" start="236" end="254" startBytecode="0" endBytecode="29" sourcefile="LogicalReplicationTest.java" sourcepath="org/postgresql/replication/LogicalReplicationTest.java"/>
-    </Method>
-    <LocalVariable name="stream" register="2" pc="56" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.postgresql.replication.LogicalReplicationTest" start="246" end="246" startBytecode="55" endBytecode="55" sourcefile="LogicalReplicationTest.java" sourcepath="org/postgresql/replication/LogicalReplicationTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.postgresql.replication.LogicalReplicationTest">
-      <SourceLine classname="org.postgresql.replication.LogicalReplicationTest" start="48" end="955" sourcefile="LogicalReplicationTest.java" sourcepath="org/postgresql/replication/LogicalReplicationTest.java"/>
-    </Class>
-    <Method classname="org.postgresql.replication.LogicalReplicationTest" name="testAvoidTimeoutDisconnectWithDefaultStatusInterval" signature="()V" isStatic="false">
-      <SourceLine classname="org.postgresql.replication.LogicalReplicationTest" start="574" end="616" startBytecode="0" endBytecode="48" sourcefile="LogicalReplicationTest.java" sourcepath="org/postgresql/replication/LogicalReplicationTest.java"/>
-    </Method>
-    <LocalVariable name="future" register="3" pc="11" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.postgresql.replication.LogicalReplicationTest" start="577" end="577" startBytecode="10" endBytecode="10" sourcefile="LogicalReplicationTest.java" sourcepath="org/postgresql/replication/LogicalReplicationTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.postgresql.replication.LogicalReplicationTest">
-      <SourceLine classname="org.postgresql.replication.LogicalReplicationTest" start="48" end="955" sourcefile="LogicalReplicationTest.java" sourcepath="org/postgresql/replication/LogicalReplicationTest.java"/>
-    </Class>
-    <Method classname="org.postgresql.replication.LogicalReplicationTest" name="testNotAvailableStartNotExistReplicationSlot" signature="()V" isStatic="false">
-      <SourceLine classname="org.postgresql.replication.LogicalReplicationTest" start="88" end="113" startBytecode="0" endBytecode="32" sourcefile="LogicalReplicationTest.java" sourcepath="org/postgresql/replication/LogicalReplicationTest.java"/>
-    </Method>
-    <LocalVariable name="stream" register="3" pc="54" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.postgresql.replication.LogicalReplicationTest" start="100" end="100" startBytecode="53" endBytecode="53" sourcefile="LogicalReplicationTest.java" sourcepath="org/postgresql/replication/LogicalReplicationTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.postgresql.replication.PhysicalReplicationTest">
-      <SourceLine classname="org.postgresql.replication.PhysicalReplicationTest" start="36" end="302" sourcefile="PhysicalReplicationTest.java" sourcepath="org/postgresql/replication/PhysicalReplicationTest.java"/>
-    </Class>
-    <Method classname="org.postgresql.replication.PhysicalReplicationTest" name="restartPhysicalReplicationWithoutRepeatMessage" signature="()V" isStatic="false">
-      <SourceLine classname="org.postgresql.replication.PhysicalReplicationTest" start="209" end="254" startBytecode="0" endBytecode="84" sourcefile="PhysicalReplicationTest.java" sourcepath="org/postgresql/replication/PhysicalReplicationTest.java"/>
-    </Method>
-    <LocalVariable name="streamOneFirstPart" register="5" pc="93" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.postgresql.replication.PhysicalReplicationTest" start="226" end="226" startBytecode="91" endBytecode="91" sourcefile="PhysicalReplicationTest.java" sourcepath="org/postgresql/replication/PhysicalReplicationTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.postgresql.test.jdbc2.CopyBothResponseTest">
-      <SourceLine classname="org.postgresql.test.jdbc2.CopyBothResponseTest" start="42" end="206" sourcefile="CopyBothResponseTest.java" sourcepath="org/postgresql/test/jdbc2/CopyBothResponseTest.java"/>
-    </Class>
-    <Method classname="org.postgresql.test.jdbc2.CopyBothResponseTest" name="testKeedAliveContaintCorrectLSN" signature="()V" isStatic="false">
-      <SourceLine classname="org.postgresql.test.jdbc2.CopyBothResponseTest" start="116" end="134" startBytecode="0" endBytecode="46" sourcefile="CopyBothResponseTest.java" sourcepath="org/postgresql/test/jdbc2/CopyBothResponseTest.java"/>
-    </Method>
-    <LocalVariable name="code" register="5" pc="72" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.postgresql.test.jdbc2.CopyBothResponseTest" start="125" end="125" startBytecode="70" endBytecode="70" sourcefile="CopyBothResponseTest.java" sourcepath="org/postgresql/test/jdbc2/CopyBothResponseTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.postgresql.test.jdbc2.CopyTest">
-      <SourceLine classname="org.postgresql.test.jdbc2.CopyTest" start="42" end="444" sourcefile="CopyTest.java" sourcepath="org/postgresql/test/jdbc2/CopyTest.java"/>
-    </Class>
-    <Method classname="org.postgresql.test.jdbc2.CopyTest" name="testChangeDateStyle" signature="()V" isStatic="false">
-      <SourceLine classname="org.postgresql.test.jdbc2.CopyTest" start="312" end="339" startBytecode="0" endBytecode="81" sourcefile="CopyTest.java" sourcepath="org/postgresql/test/jdbc2/CopyTest.java"/>
-    </Method>
-    <LocalVariable name="count1" register="5" pc="152" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.postgresql.test.jdbc2.CopyTest" start="329" end="329" startBytecode="150" endBytecode="150" sourcefile="CopyTest.java" sourcepath="org/postgresql/test/jdbc2/CopyTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.postgresql.test.jdbc2.CopyTest">
-      <SourceLine classname="org.postgresql.test.jdbc2.CopyTest" start="42" end="444" sourcefile="CopyTest.java" sourcepath="org/postgresql/test/jdbc2/CopyTest.java"/>
-    </Class>
-    <Method classname="org.postgresql.test.jdbc2.CopyTest" name="testChangeDateStyle" signature="()V" isStatic="false">
-      <SourceLine classname="org.postgresql.test.jdbc2.CopyTest" start="312" end="339" startBytecode="0" endBytecode="81" sourcefile="CopyTest.java" sourcepath="org/postgresql/test/jdbc2/CopyTest.java"/>
-    </Method>
-    <LocalVariable name="count2" register="7" pc="161" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.postgresql.test.jdbc2.CopyTest" start="330" end="330" startBytecode="159" endBytecode="159" sourcefile="CopyTest.java" sourcepath="org/postgresql/test/jdbc2/CopyTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.postgresql.test.jdbc2.CopyTest">
-      <SourceLine classname="org.postgresql.test.jdbc2.CopyTest" start="42" end="444" sourcefile="CopyTest.java" sourcepath="org/postgresql/test/jdbc2/CopyTest.java"/>
-    </Class>
-    <Method classname="org.postgresql.test.jdbc2.CopyTest" name="testCopyOutByRow" signature="()V" isStatic="false">
-      <SourceLine classname="org.postgresql.test.jdbc2.CopyTest" start="202" end="218" startBytecode="0" endBytecode="45" sourcefile="CopyTest.java" sourcepath="org/postgresql/test/jdbc2/CopyTest.java"/>
-    </Method>
-    <LocalVariable name="buf" register="4" pc="27" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.postgresql.test.jdbc2.CopyTest" start="207" end="207" startBytecode="25" endBytecode="25" sourcefile="CopyTest.java" sourcepath="org/postgresql/test/jdbc2/CopyTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.postgresql.test.jdbc2.CopyTest">
-      <SourceLine classname="org.postgresql.test.jdbc2.CopyTest" start="42" end="444" sourcefile="CopyTest.java" sourcepath="org/postgresql/test/jdbc2/CopyTest.java"/>
-    </Class>
-    <Method classname="org.postgresql.test.jdbc2.CopyTest" name="testSkipping" signature="()V" isStatic="false">
-      <SourceLine classname="org.postgresql.test.jdbc2.CopyTest" start="174" end="198" startBytecode="0" endBytecode="81" sourcefile="CopyTest.java" sourcepath="org/postgresql/test/jdbc2/CopyTest.java"/>
-    </Method>
-    <LocalVariable name="at" register="2" pc="6" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.postgresql.test.jdbc2.CopyTest" start="175" end="175" startBytecode="5" endBytecode="5" sourcefile="CopyTest.java" sourcepath="org/postgresql/test/jdbc2/CopyTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.postgresql.test.jdbc2.optional.PoolingDataSourceTest">
-      <SourceLine classname="org.postgresql.test.jdbc2.optional.PoolingDataSourceTest" start="27" end="145" sourcefile="PoolingDataSourceTest.java" sourcepath="org/postgresql/test/jdbc2/optional/PoolingDataSourceTest.java"/>
-    </Class>
-    <Method classname="org.postgresql.test.jdbc2.optional.PoolingDataSourceTest" name="testStatementObjectMethods" signature="()V" isStatic="false">
-      <SourceLine classname="org.postgresql.test.jdbc2.optional.PoolingDataSourceTest" start="128" end="145" startBytecode="0" endBytecode="33" sourcefile="PoolingDataSourceTest.java" sourcepath="org/postgresql/test/jdbc2/optional/PoolingDataSourceTest.java"/>
-    </Method>
-    <LocalVariable name="rs" register="2" pc="27" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.postgresql.test.jdbc2.optional.PoolingDataSourceTest" start="131" end="131" startBytecode="26" endBytecode="26" sourcefile="PoolingDataSourceTest.java" sourcepath="org/postgresql/test/jdbc2/optional/PoolingDataSourceTest.java"/>
-  </BugInstance>
-  <Errors errors="3" missingClasses="41">
-    <Error>
-      <ErrorMessage>Exception analyzing org.postgresql.ssl.DbKeyStoreSocketFactory using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
-      <Exception>java.lang.NullPointerException</Exception>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:111)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:57)</StackTrace>
-      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
-      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
-    </Error>
+  <Errors errors="1" missingClasses="41">
     <Error>
       <ErrorMessage>Exception analyzing org.postgresql.benchmark.time.AddPaddingZeros using detector de.heidelberg.pvs.diego.detectors.UnsinkedVariableBenchmarkDetector</ErrorMessage>
       <Exception>java.lang.IllegalStateException: getRegisterOperand called but value not available</Exception>
       <StackTrace>edu.umd.cs.findbugs.visitclass.DismantleBytecode.getRegisterOperand(DismantleBytecode.java:363)</StackTrace>
       <StackTrace>de.heidelberg.pvs.diego.detectors.UnsinkedVariableBenchmarkDetector.analyzeStore(UnsinkedVariableBenchmarkDetector.java:320)</StackTrace>
       <StackTrace>de.heidelberg.pvs.diego.detectors.UnsinkedVariableBenchmarkDetector.analyzeBenchmarkMethodOpCode(UnsinkedVariableBenchmarkDetector.java:191)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.sawOpcode(AbstractJMHBenchmarkMethodDetector.java:80)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.sawOpcode(AbstractJMHBenchmarkMethodDetector.java:99)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.DismantleBytecode.visit(DismantleBytecode.java:882)</StackTrace>
       <StackTrace>de.heidelberg.pvs.diego.detectors.UnsinkedVariableBenchmarkDetector.visit(UnsinkedVariableBenchmarkDetector.java:110)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.visitclass.BetterVisitor.visitCode(BetterVisitor.java:218)</StackTrace>
@@ -737,26 +578,7 @@
       <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
       <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
-    </Error>
-    <Error>
-      <ErrorMessage>Exception analyzing org.apache.commons.math3.stat.descriptive.AbstractStorelessUnivariateStatistic using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
-      <Exception>java.lang.NullPointerException</Exception>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:111)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:57)</StackTrace>
-      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
-      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
+      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:55)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
       <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
@@ -807,7 +629,7 @@
     <MissingClass>waffle.windows.auth.impl.WindowsCredentialsHandleImpl</MissingClass>
     <MissingClass>waffle.windows.auth.impl.WindowsSecurityContextImpl</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Tue, 21 Aug 2018 17:58:54 +0200" total_classes="2078" referenced_classes="2696" total_bugs="83" total_size="141781" num_packages="149" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="168.57" clock_seconds="61.78" peak_mbytes="1543.68" alloc_mbytes="3641.00" gc_seconds="2.26" priority_2="59" priority_1="24">
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 17:58:54 +0200" total_classes="2078" referenced_classes="2696" total_bugs="69" total_size="141781" num_packages="149" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="155.97" clock_seconds="54.17" peak_mbytes="1569.54" alloc_mbytes="3641.00" gc_seconds="1.93" priority_2="59" priority_1="10">
     <PackageStats package="com.ongres.scram.client" total_bugs="0" total_types="10" total_size="259">
       <ClassStats class="com.ongres.scram.client.ScramClient" sourceFile="ScramClient.java" interface="false" size="36" bugs="0"/>
       <ClassStats class="com.ongres.scram.client.ScramClient$1" sourceFile="ScramClient.java" interface="false" size="1" bugs="0"/>
@@ -1134,14 +956,14 @@
       <ClassStats class="org.apache.commons.math3.analysis.solvers.UnivariateSolver" sourceFile="UnivariateSolver.java" interface="true" size="1" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.analysis.solvers.UnivariateSolverUtils" sourceFile="UnivariateSolverUtils.java" interface="false" size="92" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.apache.commons.math3.complex" total_bugs="1" total_types="8" total_size="617" priority_1="1">
+    <PackageStats package="org.apache.commons.math3.complex" total_bugs="0" total_types="8" total_size="617">
       <ClassStats class="org.apache.commons.math3.complex.Complex" sourceFile="Complex.java" interface="false" size="268" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.complex.ComplexField" sourceFile="ComplexField.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.complex.ComplexField$1" sourceFile="ComplexField.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.complex.ComplexField$LazyHolder" sourceFile="ComplexField.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.complex.ComplexFormat" sourceFile="ComplexFormat.java" interface="false" size="134" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.complex.ComplexUtils" sourceFile="ComplexUtils.java" interface="false" size="12" bugs="0"/>
-      <ClassStats class="org.apache.commons.math3.complex.Quaternion" sourceFile="Quaternion.java" interface="false" size="121" bugs="1" priority_1="1"/>
+      <ClassStats class="org.apache.commons.math3.complex.Quaternion" sourceFile="Quaternion.java" interface="false" size="121" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.complex.RootsOfUnity" sourceFile="RootsOfUnity.java" interface="false" size="55" bugs="0"/>
     </PackageStats>
     <PackageStats package="org.apache.commons.math3.dfp" total_bugs="0" total_types="10" total_size="2271">
@@ -1253,14 +1075,14 @@
       <ClassStats class="org.apache.commons.math3.fitting.PolynomialFitter" sourceFile="PolynomialFitter.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.fitting.WeightedObservedPoint" sourceFile="WeightedObservedPoint.java" interface="false" size="17" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.apache.commons.math3.fraction" total_bugs="2" total_types="14" total_size="963" priority_1="2">
+    <PackageStats package="org.apache.commons.math3.fraction" total_bugs="0" total_types="14" total_size="963">
       <ClassStats class="org.apache.commons.math3.fraction.AbstractFormat" sourceFile="AbstractFormat.java" interface="false" size="55" bugs="0"/>
-      <ClassStats class="org.apache.commons.math3.fraction.BigFraction" sourceFile="BigFraction.java" interface="false" size="313" bugs="1" priority_1="1"/>
+      <ClassStats class="org.apache.commons.math3.fraction.BigFraction" sourceFile="BigFraction.java" interface="false" size="313" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.fraction.BigFractionField" sourceFile="BigFractionField.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.fraction.BigFractionField$1" sourceFile="BigFractionField.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.fraction.BigFractionField$LazyHolder" sourceFile="BigFractionField.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.fraction.BigFractionFormat" sourceFile="BigFractionFormat.java" interface="false" size="80" bugs="0"/>
-      <ClassStats class="org.apache.commons.math3.fraction.Fraction" sourceFile="Fraction.java" interface="false" size="229" bugs="1" priority_1="1"/>
+      <ClassStats class="org.apache.commons.math3.fraction.Fraction" sourceFile="Fraction.java" interface="false" size="229" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.fraction.FractionConversionException" sourceFile="FractionConversionException.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.fraction.FractionField" sourceFile="FractionField.java" interface="false" size="19" bugs="0"/>
       <ClassStats class="org.apache.commons.math3.fraction.FractionField$1" sourceFile="FractionField.java" interface="false" size="1" bugs="0"/>
@@ -2764,16 +2586,16 @@
       <ClassStats class="org.postgresql.osgi.PGDataSourceFactory" sourceFile="PGDataSourceFactory.java" interface="false" size="57" bugs="0"/>
       <ClassStats class="org.postgresql.osgi.PGDataSourceFactory$SingleUseProperties" sourceFile="PGDataSourceFactory.java" interface="false" size="11" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.replication" total_bugs="5" total_types="13" total_size="1375" priority_1="5">
+    <PackageStats package="org.postgresql.replication" total_bugs="0" total_types="13" total_size="1375">
       <ClassStats class="org.postgresql.replication.LogSequenceNumber" sourceFile="LogSequenceNumber.java" interface="false" size="45" bugs="0"/>
       <ClassStats class="org.postgresql.replication.LogSequenceNumberTest" sourceFile="LogSequenceNumberTest.java" interface="false" size="52" bugs="0"/>
       <ClassStats class="org.postgresql.replication.LogicalReplicationStatusTest" sourceFile="LogicalReplicationStatusTest.java" interface="false" size="300" bugs="0"/>
-      <ClassStats class="org.postgresql.replication.LogicalReplicationTest" sourceFile="LogicalReplicationTest.java" interface="false" size="520" bugs="4" priority_1="4"/>
+      <ClassStats class="org.postgresql.replication.LogicalReplicationTest" sourceFile="LogicalReplicationTest.java" interface="false" size="520" bugs="0"/>
       <ClassStats class="org.postgresql.replication.LogicalReplicationTest$1" sourceFile="LogicalReplicationTest.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="org.postgresql.replication.PGReplicationConnection" sourceFile="PGReplicationConnection.java" interface="true" size="4" bugs="0"/>
       <ClassStats class="org.postgresql.replication.PGReplicationConnectionImpl" sourceFile="PGReplicationConnectionImpl.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="org.postgresql.replication.PGReplicationStream" sourceFile="PGReplicationStream.java" interface="true" size="11" bugs="0"/>
-      <ClassStats class="org.postgresql.replication.PhysicalReplicationTest" sourceFile="PhysicalReplicationTest.java" interface="false" size="177" bugs="1" priority_1="1"/>
+      <ClassStats class="org.postgresql.replication.PhysicalReplicationTest" sourceFile="PhysicalReplicationTest.java" interface="false" size="177" bugs="0"/>
       <ClassStats class="org.postgresql.replication.ReplicationConnectionTest" sourceFile="ReplicationConnectionTest.java" interface="false" size="56" bugs="0"/>
       <ClassStats class="org.postgresql.replication.ReplicationSlotTest" sourceFile="ReplicationSlotTest.java" interface="false" size="129" bugs="0"/>
       <ClassStats class="org.postgresql.replication.ReplicationTestSuite" sourceFile="ReplicationTestSuite.java" interface="false" size="34" bugs="0"/>
@@ -2901,7 +2723,7 @@
       <ClassStats class="org.postgresql.test.hostchooser.MultiHostTestSuite$DummyTest" sourceFile="MultiHostTestSuite.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.postgresql.test.hostchooser.MultiHostsConnectionTest" sourceFile="MultiHostsConnectionTest.java" interface="false" size="227" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.test.jdbc2" total_bugs="5" total_types="89" total_size="11327" priority_1="5">
+    <PackageStats package="org.postgresql.test.jdbc2" total_bugs="0" total_types="89" total_size="11327">
       <ClassStats class="org.postgresql.test.jdbc2.ANTTest" sourceFile="ANTTest.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.ArrayTest" sourceFile="ArrayTest.java" interface="false" size="412" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.AutoRollbackTestSuite" sourceFile="AutoRollbackTestSuite.java" interface="false" size="206" bugs="0"/>
@@ -2934,9 +2756,9 @@
       <ClassStats class="org.postgresql.test.jdbc2.ConcurrentStatementFetch" sourceFile="ConcurrentStatementFetch.java" interface="false" size="42" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.ConnectTimeoutTest" sourceFile="ConnectTimeoutTest.java" interface="false" size="27" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.ConnectionTest" sourceFile="ConnectionTest.java" interface="false" size="134" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc2.CopyBothResponseTest" sourceFile="CopyBothResponseTest.java" interface="false" size="107" bugs="1" priority_1="1"/>
+      <ClassStats class="org.postgresql.test.jdbc2.CopyBothResponseTest" sourceFile="CopyBothResponseTest.java" interface="false" size="107" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.CopyLargeFileTest" sourceFile="CopyLargeFileTest.java" interface="false" size="53" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc2.CopyTest" sourceFile="CopyTest.java" interface="false" size="252" bugs="4" priority_1="4"/>
+      <ClassStats class="org.postgresql.test.jdbc2.CopyTest" sourceFile="CopyTest.java" interface="false" size="252" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.CopyTest$1" sourceFile="CopyTest.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.CopyTest$Rollback" sourceFile="CopyTest.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.CursorFetchTest" sourceFile="CursorFetchTest.java" interface="false" size="312" bugs="0"/>
@@ -2992,7 +2814,7 @@
       <ClassStats class="org.postgresql.test.jdbc2.UpdateableResultTest" sourceFile="UpdateableResultTest.java" interface="false" size="402" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.UpsertTest" sourceFile="UpsertTest.java" interface="false" size="112" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.postgresql.test.jdbc2.optional" total_bugs="1" total_types="11" total_size="619" priority_1="1">
+    <PackageStats package="org.postgresql.test.jdbc2.optional" total_bugs="0" total_types="11" total_size="619">
       <ClassStats class="org.postgresql.test.jdbc2.optional.BaseDataSourceTest" sourceFile="BaseDataSourceTest.java" interface="false" size="118" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.optional.CaseOptimiserDataSourceTest" sourceFile="CaseOptimiserDataSourceTest.java" interface="false" size="56" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.optional.ConnectionPoolTest" sourceFile="ConnectionPoolTest.java" interface="false" size="274" bugs="0"/>
@@ -3000,7 +2822,7 @@
       <ClassStats class="org.postgresql.test.jdbc2.optional.ConnectionPoolTest$CountClose" sourceFile="ConnectionPoolTest.java" interface="false" size="22" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.optional.ConnectionPoolTest$RemoveClose" sourceFile="ConnectionPoolTest.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.optional.OptionalTestSuite" sourceFile="OptionalTestSuite.java" interface="false" size="3" bugs="0"/>
-      <ClassStats class="org.postgresql.test.jdbc2.optional.PoolingDataSourceTest" sourceFile="PoolingDataSourceTest.java" interface="false" size="71" bugs="1" priority_1="1"/>
+      <ClassStats class="org.postgresql.test.jdbc2.optional.PoolingDataSourceTest" sourceFile="PoolingDataSourceTest.java" interface="false" size="71" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.optional.SimpleDataSourceTest" sourceFile="SimpleDataSourceTest.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.optional.SimpleDataSourceWithSetURLTest" sourceFile="SimpleDataSourceWithSetURLTest.java" interface="false" size="30" bugs="0"/>
       <ClassStats class="org.postgresql.test.jdbc2.optional.SimpleDataSourceWithUrlTest" sourceFile="SimpleDataSourceWithUrlTest.java" interface="false" size="13" bugs="0"/>
@@ -3185,46 +3007,48 @@
       <ClassStats class="org.postgresql.xa.RecoveredXid" sourceFile="RecoveredXid.java" interface="false" size="53" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="7522" invocations="2078" avgMicrosecondsPerInvocation="3620" maxMicrosecondsPerInvocation="488924" standardDeviationMicrosecondsPerInvocation="17622"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="3566" invocations="14708" avgMicrosecondsPerInvocation="242" maxMicrosecondsPerInvocation="51412" standardDeviationMicrosecondsPerInvocation="923"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="3291" invocations="15873" avgMicrosecondsPerInvocation="207" maxMicrosecondsPerInvocation="70238" standardDeviationMicrosecondsPerInvocation="1161"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="3158" invocations="15315" avgMicrosecondsPerInvocation="206" maxMicrosecondsPerInvocation="52964" standardDeviationMicrosecondsPerInvocation="893"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="3113" invocations="14977" avgMicrosecondsPerInvocation="207" maxMicrosecondsPerInvocation="65454" standardDeviationMicrosecondsPerInvocation="1021"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="2497" invocations="15715" avgMicrosecondsPerInvocation="158" maxMicrosecondsPerInvocation="87926" standardDeviationMicrosecondsPerInvocation="912"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="1657" invocations="13099" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="16010" standardDeviationMicrosecondsPerInvocation="401"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1530" invocations="18756" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="54759" standardDeviationMicrosecondsPerInvocation="516"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1401" invocations="16478" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="13748" standardDeviationMicrosecondsPerInvocation="224"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="1281" invocations="2078" avgMicrosecondsPerInvocation="616" maxMicrosecondsPerInvocation="608685" standardDeviationMicrosecondsPerInvocation="13445"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="1253" invocations="4013" avgMicrosecondsPerInvocation="312" maxMicrosecondsPerInvocation="612235" standardDeviationMicrosecondsPerInvocation="9668"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="967" invocations="4301" avgMicrosecondsPerInvocation="224" maxMicrosecondsPerInvocation="40722" standardDeviationMicrosecondsPerInvocation="1025"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="955" invocations="2696" avgMicrosecondsPerInvocation="354" maxMicrosecondsPerInvocation="12230" standardDeviationMicrosecondsPerInvocation="867"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="932" invocations="2696" avgMicrosecondsPerInvocation="346" maxMicrosecondsPerInvocation="17976" standardDeviationMicrosecondsPerInvocation="862"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="876" invocations="15315" avgMicrosecondsPerInvocation="57" maxMicrosecondsPerInvocation="9904" standardDeviationMicrosecondsPerInvocation="231"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="669" invocations="4308" avgMicrosecondsPerInvocation="155" maxMicrosecondsPerInvocation="75480" standardDeviationMicrosecondsPerInvocation="1162"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="661" invocations="2078" avgMicrosecondsPerInvocation="318" maxMicrosecondsPerInvocation="13908" standardDeviationMicrosecondsPerInvocation="779"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="610" invocations="2078" avgMicrosecondsPerInvocation="293" maxMicrosecondsPerInvocation="21545" standardDeviationMicrosecondsPerInvocation="800"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="550" invocations="2078" avgMicrosecondsPerInvocation="264" maxMicrosecondsPerInvocation="11136" standardDeviationMicrosecondsPerInvocation="664"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="491" invocations="16478" avgMicrosecondsPerInvocation="29" maxMicrosecondsPerInvocation="69026" standardDeviationMicrosecondsPerInvocation="606"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="470" invocations="14436" avgMicrosecondsPerInvocation="32" maxMicrosecondsPerInvocation="4216" standardDeviationMicrosecondsPerInvocation="125"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="426" invocations="14708" avgMicrosecondsPerInvocation="28" maxMicrosecondsPerInvocation="2212" standardDeviationMicrosecondsPerInvocation="79"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="421" invocations="2078" avgMicrosecondsPerInvocation="202" maxMicrosecondsPerInvocation="132181" standardDeviationMicrosecondsPerInvocation="2924"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="409" invocations="2078" avgMicrosecondsPerInvocation="196" maxMicrosecondsPerInvocation="53584" standardDeviationMicrosecondsPerInvocation="1272"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="396" invocations="2078" avgMicrosecondsPerInvocation="190" maxMicrosecondsPerInvocation="16667" standardDeviationMicrosecondsPerInvocation="718"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="386" invocations="404771" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="4626" standardDeviationMicrosecondsPerInvocation="14"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="384" invocations="1639" avgMicrosecondsPerInvocation="234" maxMicrosecondsPerInvocation="5820" standardDeviationMicrosecondsPerInvocation="646"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="377" invocations="2078" avgMicrosecondsPerInvocation="181" maxMicrosecondsPerInvocation="9318" standardDeviationMicrosecondsPerInvocation="544"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="368" invocations="2078" avgMicrosecondsPerInvocation="177" maxMicrosecondsPerInvocation="10572" standardDeviationMicrosecondsPerInvocation="467"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="362" invocations="2078" avgMicrosecondsPerInvocation="174" maxMicrosecondsPerInvocation="6231" standardDeviationMicrosecondsPerInvocation="451"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="356" invocations="2078" avgMicrosecondsPerInvocation="171" maxMicrosecondsPerInvocation="8533" standardDeviationMicrosecondsPerInvocation="439"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="354" invocations="2696" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="59711" standardDeviationMicrosecondsPerInvocation="1193"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="343" invocations="2078" avgMicrosecondsPerInvocation="165" maxMicrosecondsPerInvocation="9602" standardDeviationMicrosecondsPerInvocation="474"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="335" invocations="16478" avgMicrosecondsPerInvocation="20" maxMicrosecondsPerInvocation="64476" standardDeviationMicrosecondsPerInvocation="518"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="334" invocations="2078" avgMicrosecondsPerInvocation="160" maxMicrosecondsPerInvocation="9114" standardDeviationMicrosecondsPerInvocation="489"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="333" invocations="2078" avgMicrosecondsPerInvocation="160" maxMicrosecondsPerInvocation="13668" standardDeviationMicrosecondsPerInvocation="512"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="332" invocations="2078" avgMicrosecondsPerInvocation="159" maxMicrosecondsPerInvocation="6095" standardDeviationMicrosecondsPerInvocation="382"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BadSyntaxForRegularExpression" totalMilliseconds="329" invocations="2078" avgMicrosecondsPerInvocation="158" maxMicrosecondsPerInvocation="42009" standardDeviationMicrosecondsPerInvocation="1022"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="326" invocations="2078" avgMicrosecondsPerInvocation="157" maxMicrosecondsPerInvocation="7455" standardDeviationMicrosecondsPerInvocation="398"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="317" invocations="2078" avgMicrosecondsPerInvocation="152" maxMicrosecondsPerInvocation="4678" standardDeviationMicrosecondsPerInvocation="356"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="5348" invocations="2078" avgMicrosecondsPerInvocation="2573" maxMicrosecondsPerInvocation="358734" standardDeviationMicrosecondsPerInvocation="13478"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="3337" invocations="15315" avgMicrosecondsPerInvocation="217" maxMicrosecondsPerInvocation="557211" standardDeviationMicrosecondsPerInvocation="4549"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="3278" invocations="14708" avgMicrosecondsPerInvocation="222" maxMicrosecondsPerInvocation="82087" standardDeviationMicrosecondsPerInvocation="974"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="3129" invocations="14977" avgMicrosecondsPerInvocation="208" maxMicrosecondsPerInvocation="63972" standardDeviationMicrosecondsPerInvocation="1241"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="2971" invocations="15873" avgMicrosecondsPerInvocation="187" maxMicrosecondsPerInvocation="51990" standardDeviationMicrosecondsPerInvocation="922"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="2221" invocations="15715" avgMicrosecondsPerInvocation="141" maxMicrosecondsPerInvocation="22010" standardDeviationMicrosecondsPerInvocation="473"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="1531" invocations="13099" avgMicrosecondsPerInvocation="116" maxMicrosecondsPerInvocation="11655" standardDeviationMicrosecondsPerInvocation="379"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1260" invocations="16478" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="9329" standardDeviationMicrosecondsPerInvocation="167"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1252" invocations="18756" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="26743" standardDeviationMicrosecondsPerInvocation="313"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="869" invocations="4301" avgMicrosecondsPerInvocation="202" maxMicrosecondsPerInvocation="55057" standardDeviationMicrosecondsPerInvocation="1101"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="866" invocations="15315" avgMicrosecondsPerInvocation="56" maxMicrosecondsPerInvocation="49768" standardDeviationMicrosecondsPerInvocation="472"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="788" invocations="2696" avgMicrosecondsPerInvocation="292" maxMicrosecondsPerInvocation="12251" standardDeviationMicrosecondsPerInvocation="699"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="769" invocations="2696" avgMicrosecondsPerInvocation="285" maxMicrosecondsPerInvocation="12715" standardDeviationMicrosecondsPerInvocation="681"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="696" invocations="2078" avgMicrosecondsPerInvocation="335" maxMicrosecondsPerInvocation="53513" standardDeviationMicrosecondsPerInvocation="2001"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="648" invocations="2078" avgMicrosecondsPerInvocation="312" maxMicrosecondsPerInvocation="124078" standardDeviationMicrosecondsPerInvocation="2793"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="603" invocations="2078" avgMicrosecondsPerInvocation="290" maxMicrosecondsPerInvocation="14105" standardDeviationMicrosecondsPerInvocation="753"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="569" invocations="4013" avgMicrosecondsPerInvocation="141" maxMicrosecondsPerInvocation="7756" standardDeviationMicrosecondsPerInvocation="352"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="546" invocations="2078" avgMicrosecondsPerInvocation="263" maxMicrosecondsPerInvocation="20846" standardDeviationMicrosecondsPerInvocation="792"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantPoolGenFactory" totalMilliseconds="533" invocations="2078" avgMicrosecondsPerInvocation="256" maxMicrosecondsPerInvocation="444229" standardDeviationMicrosecondsPerInvocation="9742"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="521" invocations="4308" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="3590" standardDeviationMicrosecondsPerInvocation="152"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="491" invocations="14392" avgMicrosecondsPerInvocation="34" maxMicrosecondsPerInvocation="68216" standardDeviationMicrosecondsPerInvocation="581"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="385" invocations="14708" avgMicrosecondsPerInvocation="26" maxMicrosecondsPerInvocation="4635" standardDeviationMicrosecondsPerInvocation="76"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="383" invocations="2078" avgMicrosecondsPerInvocation="184" maxMicrosecondsPerInvocation="47959" standardDeviationMicrosecondsPerInvocation="1153"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="381" invocations="16478" avgMicrosecondsPerInvocation="23" maxMicrosecondsPerInvocation="30981" standardDeviationMicrosecondsPerInvocation="252"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="370" invocations="404771" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="4401" standardDeviationMicrosecondsPerInvocation="10"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="350" invocations="2078" avgMicrosecondsPerInvocation="168" maxMicrosecondsPerInvocation="14248" standardDeviationMicrosecondsPerInvocation="629"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="343" invocations="2078" avgMicrosecondsPerInvocation="165" maxMicrosecondsPerInvocation="7332" standardDeviationMicrosecondsPerInvocation="410"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="342" invocations="1639" avgMicrosecondsPerInvocation="208" maxMicrosecondsPerInvocation="7142" standardDeviationMicrosecondsPerInvocation="592"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="316" invocations="2078" avgMicrosecondsPerInvocation="152" maxMicrosecondsPerInvocation="4763" standardDeviationMicrosecondsPerInvocation="350"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="315" invocations="2078" avgMicrosecondsPerInvocation="151" maxMicrosecondsPerInvocation="6090" standardDeviationMicrosecondsPerInvocation="355"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="313" invocations="2078" avgMicrosecondsPerInvocation="150" maxMicrosecondsPerInvocation="6784" standardDeviationMicrosecondsPerInvocation="398"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="305" invocations="2078" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="7111" standardDeviationMicrosecondsPerInvocation="414"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="304" invocations="2078" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="10262" standardDeviationMicrosecondsPerInvocation="451"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="301" invocations="2078" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="7937" standardDeviationMicrosecondsPerInvocation="387"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="296" invocations="2078" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="6560" standardDeviationMicrosecondsPerInvocation="379"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="285" invocations="2078" avgMicrosecondsPerInvocation="137" maxMicrosecondsPerInvocation="5124" standardDeviationMicrosecondsPerInvocation="336"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="277" invocations="2078" avgMicrosecondsPerInvocation="133" maxMicrosecondsPerInvocation="4461" standardDeviationMicrosecondsPerInvocation="350"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="276" invocations="2696" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="43331" standardDeviationMicrosecondsPerInvocation="1152"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="274" invocations="2078" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="6356" standardDeviationMicrosecondsPerInvocation="345"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="269" invocations="2078" avgMicrosecondsPerInvocation="129" maxMicrosecondsPerInvocation="4385" standardDeviationMicrosecondsPerInvocation="311"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="267" invocations="2078" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="4667" standardDeviationMicrosecondsPerInvocation="300"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="267" invocations="2078" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="6646" standardDeviationMicrosecondsPerInvocation="352"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

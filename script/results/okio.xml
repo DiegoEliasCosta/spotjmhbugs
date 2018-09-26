@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1534859909000" analysisTimestamp="1536609053017" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534859909000" analysisTimestamp="1537904939764" release="">
   <Project projectName="">
     <Jar>tmp/okio</Jar>
   </Project>
@@ -229,126 +229,6 @@
     </Method>
     <SourceLine classname="com.squareup.okio.benchmarks.SelectBenchmark" start="91" end="91" startBytecode="37" endBytecode="37" sourcefile="SelectBenchmark.java" sourcepath="com/squareup/okio/benchmarks/SelectBenchmark.java"/>
   </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="okio.AsyncTimeout$Watchdog">
-      <SourceLine classname="okio.AsyncTimeout$Watchdog" start="218" end="241" sourcefile="AsyncTimeout.kt" sourcepath="okio/AsyncTimeout.kt"/>
-    </Class>
-    <Method classname="okio.AsyncTimeout$Watchdog" name="run" signature="()V" isStatic="false">
-      <SourceLine classname="okio.AsyncTimeout$Watchdog" start="224" end="224" startBytecode="0" endBytecode="40" sourcefile="AsyncTimeout.kt" sourcepath="okio/AsyncTimeout.kt"/>
-    </Method>
-    <LocalVariable name="?" register="4" pc="40" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="okio.AsyncTimeout$Watchdog" start="227" end="227" startBytecode="40" endBytecode="40" sourcefile="AsyncTimeout.kt" sourcepath="okio/AsyncTimeout.kt"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="okio.AsyncTimeout$Watchdog">
-      <SourceLine classname="okio.AsyncTimeout$Watchdog" start="218" end="241" sourcefile="AsyncTimeout.kt" sourcepath="okio/AsyncTimeout.kt"/>
-    </Class>
-    <Method classname="okio.AsyncTimeout$Watchdog" name="run" signature="()V" isStatic="false">
-      <SourceLine classname="okio.AsyncTimeout$Watchdog" start="224" end="224" startBytecode="0" endBytecode="40" sourcefile="AsyncTimeout.kt" sourcepath="okio/AsyncTimeout.kt"/>
-    </Method>
-    <LocalVariable name="timedOut" register="1" pc="6" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="okio.AsyncTimeout$Watchdog" start="226" end="226" startBytecode="5" endBytecode="5" sourcefile="AsyncTimeout.kt" sourcepath="okio/AsyncTimeout.kt"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="okio.BufferCursorKotlinTest">
-      <SourceLine classname="okio.BufferCursorKotlinTest" start="34" end="127" sourcefile="BufferCursorKotlinTest.kt" sourcepath="okio/BufferCursorKotlinTest.kt"/>
-    </Class>
-    <Method classname="okio.BufferCursorKotlinTest" name="acquireReadOnlyDoesNotCopySharedDataArray" signature="()V" isStatic="false">
-      <SourceLine classname="okio.BufferCursorKotlinTest" start="44" end="54" startBytecode="0" endBytecode="81" sourcefile="BufferCursorKotlinTest.kt" sourcepath="okio/BufferCursorKotlinTest.kt"/>
-    </Method>
-    <LocalVariable name="cursor" register="5" pc="127" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="okio.BufferCursorKotlinTest" start="50" end="50" startBytecode="127" endBytecode="127" sourcefile="BufferCursorKotlinTest.kt" sourcepath="okio/BufferCursorKotlinTest.kt"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="okio.BufferCursorKotlinTest">
-      <SourceLine classname="okio.BufferCursorKotlinTest" start="34" end="127" sourcefile="BufferCursorKotlinTest.kt" sourcepath="okio/BufferCursorKotlinTest.kt"/>
-    </Class>
-    <Method classname="okio.BufferCursorKotlinTest" name="acquireReadWriteCopiesSharedDataArray" signature="()V" isStatic="false">
-      <SourceLine classname="okio.BufferCursorKotlinTest" start="70" end="80" startBytecode="0" endBytecode="81" sourcefile="BufferCursorKotlinTest.kt" sourcepath="okio/BufferCursorKotlinTest.kt"/>
-    </Method>
-    <LocalVariable name="cursor" register="5" pc="127" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="okio.BufferCursorKotlinTest" start="76" end="76" startBytecode="127" endBytecode="127" sourcefile="BufferCursorKotlinTest.kt" sourcepath="okio/BufferCursorKotlinTest.kt"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="okio.BufferCursorKotlinTest">
-      <SourceLine classname="okio.BufferCursorKotlinTest" start="34" end="127" sourcefile="BufferCursorKotlinTest.kt" sourcepath="okio/BufferCursorKotlinTest.kt"/>
-    </Class>
-    <Method classname="okio.BufferCursorKotlinTest" name="acquireReadWriteDoesNotCopyUnsharedDataArray" signature="()V" isStatic="false">
-      <SourceLine classname="okio.BufferCursorKotlinTest" start="57" end="67" startBytecode="0" endBytecode="80" sourcefile="BufferCursorKotlinTest.kt" sourcepath="okio/BufferCursorKotlinTest.kt"/>
-    </Method>
-    <LocalVariable name="cursor" register="5" pc="124" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="okio.BufferCursorKotlinTest" start="63" end="63" startBytecode="124" endBytecode="124" sourcefile="BufferCursorKotlinTest.kt" sourcepath="okio/BufferCursorKotlinTest.kt"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="okio.BufferCursorKotlinTest">
-      <SourceLine classname="okio.BufferCursorKotlinTest" start="34" end="127" sourcefile="BufferCursorKotlinTest.kt" sourcepath="okio/BufferCursorKotlinTest.kt"/>
-    </Class>
-    <Method classname="okio.BufferCursorKotlinTest" name="writeSharedSegments" signature="()V" isStatic="false">
-      <SourceLine classname="okio.BufferCursorKotlinTest" start="83" end="108" startBytecode="0" endBytecode="140" sourcefile="BufferCursorKotlinTest.kt" sourcepath="okio/BufferCursorKotlinTest.kt"/>
-    </Method>
-    <LocalVariable name="cursor" register="7" pc="232" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="okio.BufferCursorKotlinTest" start="97" end="97" startBytecode="232" endBytecode="232" sourcefile="BufferCursorKotlinTest.kt" sourcepath="okio/BufferCursorKotlinTest.kt"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="okio.Pipe$sink$1">
-      <SourceLine classname="okio.Pipe$sink$1" start="46" end="87" sourcefile="Pipe.kt" sourcepath="okio/Pipe.kt"/>
-    </Class>
-    <Method classname="okio.Pipe$sink$1" name="close" signature="()V" isStatic="false">
-      <SourceLine classname="okio.Pipe$sink$1" start="79" end="85" startBytecode="0" endBytecode="57" sourcefile="Pipe.kt" sourcepath="okio/Pipe.kt"/>
-    </Method>
-    <LocalVariable name="?" register="3" pc="100" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="okio.Pipe$sink$1" start="79" end="79" startBytecode="100" endBytecode="100" sourcefile="Pipe.kt" sourcepath="okio/Pipe.kt"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="okio.Pipe$sink$1">
-      <SourceLine classname="okio.Pipe$sink$1" start="46" end="87" sourcefile="Pipe.kt" sourcepath="okio/Pipe.kt"/>
-    </Class>
-    <Method classname="okio.Pipe$sink$1" name="flush" signature="()V" isStatic="false">
-      <SourceLine classname="okio.Pipe$sink$1" start="72" end="76" startBytecode="0" endBytecode="53" sourcefile="Pipe.kt" sourcepath="okio/Pipe.kt"/>
-    </Method>
-    <LocalVariable name="?" register="3" pc="90" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="okio.Pipe$sink$1" start="72" end="72" startBytecode="90" endBytecode="90" sourcefile="Pipe.kt" sourcepath="okio/Pipe.kt"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="okio.Pipe$source$1">
-      <SourceLine classname="okio.Pipe$source$1" start="91" end="116" sourcefile="Pipe.kt" sourcepath="okio/Pipe.kt"/>
-    </Class>
-    <Method classname="okio.Pipe$source$1" name="close" signature="()V" isStatic="false">
-      <SourceLine classname="okio.Pipe$source$1" start="110" end="114" startBytecode="0" endBytecode="33" sourcefile="Pipe.kt" sourcepath="okio/Pipe.kt"/>
-    </Method>
-    <LocalVariable name="?" register="3" pc="49" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="okio.Pipe$source$1" start="110" end="110" startBytecode="49" endBytecode="49" sourcefile="Pipe.kt" sourcepath="okio/Pipe.kt"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="okio.PipeTest">
-      <SourceLine classname="okio.PipeTest" start="33" end="371" sourcefile="PipeTest.java" sourcepath="okio/PipeTest.java"/>
-    </Class>
-    <Method classname="okio.PipeTest" name="largeDataset" signature="()V" isStatic="false">
-      <SourceLine classname="okio.PipeTest" start="60" end="102" startBytecode="0" endBytecode="36" sourcefile="PipeTest.java" sourcepath="okio/PipeTest.java"/>
-    </Method>
-    <LocalVariable name="totalBytes" register="2" pc="15" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="okio.PipeTest" start="61" end="61" startBytecode="14" endBytecode="14" sourcefile="PipeTest.java" sourcepath="okio/PipeTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="okio.SegmentSharingTest">
-      <SourceLine classname="okio.SegmentSharingTest" start="27" end="171" sourcefile="SegmentSharingTest.kt" sourcepath="okio/SegmentSharingTest.kt"/>
-    </Class>
-    <Method classname="okio.SegmentSharingTest" name="cloneSegmentsAreNotRecycled" signature="()V" isStatic="false">
-      <SourceLine classname="okio.SegmentSharingTest" start="91" end="103" startBytecode="0" endBytecode="53" sourcefile="SegmentSharingTest.kt" sourcepath="okio/SegmentSharingTest.kt"/>
-    </Method>
-    <LocalVariable name="?" register="5" pc="78" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="okio.SegmentSharingTest" start="95" end="95" startBytecode="78" endBytecode="78" sourcefile="SegmentSharingTest.kt" sourcepath="okio/SegmentSharingTest.kt"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="okio.SegmentSharingTest">
-      <SourceLine classname="okio.SegmentSharingTest" start="27" end="171" sourcefile="SegmentSharingTest.kt" sourcepath="okio/SegmentSharingTest.kt"/>
-    </Class>
-    <Method classname="okio.SegmentSharingTest" name="snapshotSegmentsAreNotRecycled" signature="()V" isStatic="false">
-      <SourceLine classname="okio.SegmentSharingTest" start="73" end="84" startBytecode="0" endBytecode="62" sourcefile="SegmentSharingTest.kt" sourcepath="okio/SegmentSharingTest.kt"/>
-    </Method>
-    <LocalVariable name="?" register="5" pc="103" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="okio.SegmentSharingTest" start="78" end="78" startBytecode="103" endBytecode="103" sourcefile="SegmentSharingTest.kt" sourcepath="okio/SegmentSharingTest.kt"/>
-  </BugInstance>
   <Errors errors="0" missingClasses="41">
     <MissingClass>junit.framework.TestCase</MissingClass>
     <MissingClass>kotlin.TypeCastException</MissingClass>
@@ -392,7 +272,7 @@
     <MissingClass>org.openjdk.jmh.runner.InfraControl</MissingClass>
     <MissingClass>org.openjdk.jmh.util.SampleBuffer</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Tue, 21 Aug 2018 15:58:29 +0200" total_classes="242" referenced_classes="469" total_bugs="37" total_size="25394" num_packages="6" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="41.29" clock_seconds="12.79" peak_mbytes="951.78" alloc_mbytes="3641.00" gc_seconds="0.26" priority_2="25" priority_1="12">
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 15:58:29 +0200" total_classes="242" referenced_classes="469" total_bugs="25" total_size="25394" num_packages="6" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="45.04" clock_seconds="17.40" peak_mbytes="942.28" alloc_mbytes="3641.00" gc_seconds="0.32" priority_2="25">
     <PackageStats package="com.squareup.okio.benchmarks" total_bugs="25" total_types="10" total_size="265" priority_2="25">
       <ClassStats class="com.squareup.okio.benchmarks.BufferCursorSeekBenchmark" sourceFile="BufferCursorSeekBenchmark.java" interface="false" size="43" bugs="8" priority_2="8"/>
       <ClassStats class="com.squareup.okio.benchmarks.BufferPerformanceBenchmark" sourceFile="BufferPerformanceBenchmark.java" interface="false" size="71" bugs="8" priority_2="8"/>
@@ -453,14 +333,14 @@
       <ClassStats class="com.squareup.okio.benchmarks.generated.SelectBenchmark_jmhType_B3" sourceFile="SelectBenchmark_jmhType_B3.java" interface="false" size="259" bugs="0"/>
       <ClassStats class="com.squareup.okio.benchmarks.generated.SelectBenchmark_select_jmhTest" sourceFile="SelectBenchmark_select_jmhTest.java" interface="false" size="561" bugs="0"/>
     </PackageStats>
-    <PackageStats package="okio" total_bugs="12" total_types="144" total_size="9449" priority_1="12">
+    <PackageStats package="okio" total_bugs="0" total_types="144" total_size="9449">
       <ClassStats class="okio.-DeflaterSinkExtensions" sourceFile="DeflaterSink.kt" interface="false" size="6" bugs="0"/>
       <ClassStats class="okio.-GzipSinkExtensions" sourceFile="GzipSink.kt" interface="false" size="3" bugs="0"/>
       <ClassStats class="okio.-GzipSourceExtensions" sourceFile="GzipSource.kt" interface="false" size="15" bugs="0"/>
       <ClassStats class="okio.-InflaterSourceExtensions" sourceFile="InflaterSource.kt" interface="false" size="6" bugs="0"/>
       <ClassStats class="okio.AsyncTimeout" sourceFile="AsyncTimeout.kt" interface="false" size="55" bugs="0"/>
       <ClassStats class="okio.AsyncTimeout$Companion" sourceFile="AsyncTimeout.kt" interface="false" size="61" bugs="0"/>
-      <ClassStats class="okio.AsyncTimeout$Watchdog" sourceFile="AsyncTimeout.kt" interface="false" size="17" bugs="2" priority_1="2"/>
+      <ClassStats class="okio.AsyncTimeout$Watchdog" sourceFile="AsyncTimeout.kt" interface="false" size="17" bugs="0"/>
       <ClassStats class="okio.AsyncTimeout$sink$1" sourceFile="AsyncTimeout.kt" interface="false" size="56" bugs="0"/>
       <ClassStats class="okio.AsyncTimeout$source$1" sourceFile="AsyncTimeout.kt" interface="false" size="31" bugs="0"/>
       <ClassStats class="okio.AsyncTimeoutTest" sourceFile="AsyncTimeoutTest.java" interface="false" size="199" bugs="0"/>
@@ -477,7 +357,7 @@
       <ClassStats class="okio.Buffer$UnsafeCursor" sourceFile="Buffer.kt" interface="false" size="132" bugs="0"/>
       <ClassStats class="okio.Buffer$inputStream$1" sourceFile="Buffer.kt" interface="false" size="18" bugs="0"/>
       <ClassStats class="okio.Buffer$outputStream$1" sourceFile="Buffer.kt" interface="false" size="16" bugs="0"/>
-      <ClassStats class="okio.BufferCursorKotlinTest" sourceFile="BufferCursorKotlinTest.kt" interface="false" size="71" bugs="4" priority_1="4"/>
+      <ClassStats class="okio.BufferCursorKotlinTest" sourceFile="BufferCursorKotlinTest.kt" interface="false" size="71" bugs="0"/>
       <ClassStats class="okio.BufferCursorKotlinTest$Companion" sourceFile="BufferCursorKotlinTest.kt" interface="false" size="6" bugs="0"/>
       <ClassStats class="okio.BufferCursorTest" sourceFile="BufferCursorTest.java" interface="false" size="337" bugs="0"/>
       <ClassStats class="okio.BufferCursorTest$1" sourceFile="BufferCursorTest.java" interface="false" size="1" bugs="0"/>
@@ -552,10 +432,10 @@
       <ClassStats class="okio.OptionsTest" sourceFile="OptionsTest.kt" interface="false" size="281" bugs="0"/>
       <ClassStats class="okio.OutputStreamSink" sourceFile="Okio.kt" interface="false" size="29" bugs="0"/>
       <ClassStats class="okio.Pipe" sourceFile="Pipe.kt" interface="false" size="23" bugs="0"/>
-      <ClassStats class="okio.Pipe$sink$1" sourceFile="Pipe.kt" interface="false" size="38" bugs="2" priority_1="2"/>
-      <ClassStats class="okio.Pipe$source$1" sourceFile="Pipe.kt" interface="false" size="23" bugs="1" priority_1="1"/>
+      <ClassStats class="okio.Pipe$sink$1" sourceFile="Pipe.kt" interface="false" size="38" bugs="0"/>
+      <ClassStats class="okio.Pipe$source$1" sourceFile="Pipe.kt" interface="false" size="23" bugs="0"/>
       <ClassStats class="okio.PipeKotlinTest" sourceFile="PipeKotlinTest.kt" interface="false" size="13" bugs="0"/>
-      <ClassStats class="okio.PipeTest" sourceFile="PipeTest.java" interface="false" size="174" bugs="1" priority_1="1"/>
+      <ClassStats class="okio.PipeTest" sourceFile="PipeTest.java" interface="false" size="174" bugs="0"/>
       <ClassStats class="okio.PipeTest$1" sourceFile="PipeTest.java" interface="false" size="17" bugs="0"/>
       <ClassStats class="okio.PipeTest$2" sourceFile="PipeTest.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="okio.PipeTest$3" sourceFile="PipeTest.java" interface="false" size="23" bugs="0"/>
@@ -579,7 +459,7 @@
       <ClassStats class="okio.Segment" sourceFile="Segment.kt" interface="false" size="74" bugs="0"/>
       <ClassStats class="okio.Segment$Companion" sourceFile="Segment.kt" interface="false" size="4" bugs="0"/>
       <ClassStats class="okio.SegmentPool" sourceFile="SegmentPool.kt" interface="false" size="29" bugs="0"/>
-      <ClassStats class="okio.SegmentSharingTest" sourceFile="SegmentSharingTest.kt" interface="false" size="119" bugs="2" priority_1="2"/>
+      <ClassStats class="okio.SegmentSharingTest" sourceFile="SegmentSharingTest.kt" interface="false" size="119" bugs="0"/>
       <ClassStats class="okio.SegmentSharingTestKt" sourceFile="SegmentSharingTest.kt" interface="false" size="21" bugs="0"/>
       <ClassStats class="okio.SegmentedByteString" sourceFile="SegmentedByteString.kt" interface="false" size="199" bugs="0"/>
       <ClassStats class="okio.Sink" sourceFile="Sink.kt" interface="true" size="5" bugs="0"/>
@@ -648,48 +528,47 @@
       <ClassStats class="org.gradle.wrapper.WrapperExecutor" sourceFile="WrapperExecutor.java" interface="false" size="71" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="813" invocations="1887" avgMicrosecondsPerInvocation="431" maxMicrosecondsPerInvocation="41436" standardDeviationMicrosecondsPerInvocation="1523"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="741" invocations="1927" avgMicrosecondsPerInvocation="384" maxMicrosecondsPerInvocation="12725" standardDeviationMicrosecondsPerInvocation="1060"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="667" invocations="1952" avgMicrosecondsPerInvocation="341" maxMicrosecondsPerInvocation="12248" standardDeviationMicrosecondsPerInvocation="843"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="658" invocations="2049" avgMicrosecondsPerInvocation="321" maxMicrosecondsPerInvocation="40613" standardDeviationMicrosecondsPerInvocation="1230"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="527" invocations="1991" avgMicrosecondsPerInvocation="265" maxMicrosecondsPerInvocation="31784" standardDeviationMicrosecondsPerInvocation="935"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="422" invocations="1451" avgMicrosecondsPerInvocation="290" maxMicrosecondsPerInvocation="25021" standardDeviationMicrosecondsPerInvocation="988"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="391" invocations="1789" avgMicrosecondsPerInvocation="218" maxMicrosecondsPerInvocation="5211" standardDeviationMicrosecondsPerInvocation="515"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LazyInit" totalMilliseconds="375" invocations="242" avgMicrosecondsPerInvocation="1549" maxMicrosecondsPerInvocation="94015" standardDeviationMicrosecondsPerInvocation="7509"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="354" invocations="2817" avgMicrosecondsPerInvocation="125" maxMicrosecondsPerInvocation="5808" standardDeviationMicrosecondsPerInvocation="279"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="319" invocations="2046" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="8905" standardDeviationMicrosecondsPerInvocation="321"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="317" invocations="469" avgMicrosecondsPerInvocation="677" maxMicrosecondsPerInvocation="24045" standardDeviationMicrosecondsPerInvocation="1635"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="271" invocations="1457" avgMicrosecondsPerInvocation="186" maxMicrosecondsPerInvocation="7925" standardDeviationMicrosecondsPerInvocation="256"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="232" invocations="469" avgMicrosecondsPerInvocation="495" maxMicrosecondsPerInvocation="5974" standardDeviationMicrosecondsPerInvocation="855"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="208" invocations="242" avgMicrosecondsPerInvocation="860" maxMicrosecondsPerInvocation="39105" standardDeviationMicrosecondsPerInvocation="3888"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="165" invocations="1952" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="3194" standardDeviationMicrosecondsPerInvocation="208"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="156" invocations="242" avgMicrosecondsPerInvocation="648" maxMicrosecondsPerInvocation="12446" standardDeviationMicrosecondsPerInvocation="1466"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="154" invocations="242" avgMicrosecondsPerInvocation="637" maxMicrosecondsPerInvocation="9376" standardDeviationMicrosecondsPerInvocation="1192"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="140" invocations="242" avgMicrosecondsPerInvocation="580" maxMicrosecondsPerInvocation="9635" standardDeviationMicrosecondsPerInvocation="1127"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="132" invocations="469" avgMicrosecondsPerInvocation="282" maxMicrosecondsPerInvocation="8078" standardDeviationMicrosecondsPerInvocation="736"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="123" invocations="242" avgMicrosecondsPerInvocation="510" maxMicrosecondsPerInvocation="15429" standardDeviationMicrosecondsPerInvocation="1911"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="121" invocations="1822" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="7523" standardDeviationMicrosecondsPerInvocation="254"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="108" invocations="2046" avgMicrosecondsPerInvocation="53" maxMicrosecondsPerInvocation="28936" standardDeviationMicrosecondsPerInvocation="657"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="107" invocations="469" avgMicrosecondsPerInvocation="228" maxMicrosecondsPerInvocation="4204" standardDeviationMicrosecondsPerInvocation="469"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.BenchmarkMethodDetector" totalMilliseconds="104" invocations="242" avgMicrosecondsPerInvocation="429" maxMicrosecondsPerInvocation="53246" standardDeviationMicrosecondsPerInvocation="3434"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="95" invocations="242" avgMicrosecondsPerInvocation="394" maxMicrosecondsPerInvocation="5877" standardDeviationMicrosecondsPerInvocation="904"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="89" invocations="242" avgMicrosecondsPerInvocation="371" maxMicrosecondsPerInvocation="6995" standardDeviationMicrosecondsPerInvocation="866"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="89" invocations="1887" avgMicrosecondsPerInvocation="47" maxMicrosecondsPerInvocation="2097" standardDeviationMicrosecondsPerInvocation="94"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="86" invocations="837" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="2655" standardDeviationMicrosecondsPerInvocation="151"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="83" invocations="2046" avgMicrosecondsPerInvocation="40" maxMicrosecondsPerInvocation="6763" standardDeviationMicrosecondsPerInvocation="224"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="83" invocations="569" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="13360" standardDeviationMicrosecondsPerInvocation="644"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="79" invocations="1314" avgMicrosecondsPerInvocation="60" maxMicrosecondsPerInvocation="2652" standardDeviationMicrosecondsPerInvocation="155"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="76" invocations="242" avgMicrosecondsPerInvocation="314" maxMicrosecondsPerInvocation="3851" standardDeviationMicrosecondsPerInvocation="598"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="72" invocations="242" avgMicrosecondsPerInvocation="298" maxMicrosecondsPerInvocation="3667" standardDeviationMicrosecondsPerInvocation="507"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="71" invocations="242" avgMicrosecondsPerInvocation="294" maxMicrosecondsPerInvocation="10782" standardDeviationMicrosecondsPerInvocation="860"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="70" invocations="242" avgMicrosecondsPerInvocation="289" maxMicrosecondsPerInvocation="5318" standardDeviationMicrosecondsPerInvocation="616"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="69" invocations="469" avgMicrosecondsPerInvocation="147" maxMicrosecondsPerInvocation="7957" standardDeviationMicrosecondsPerInvocation="425"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="67" invocations="242" avgMicrosecondsPerInvocation="277" maxMicrosecondsPerInvocation="6708" standardDeviationMicrosecondsPerInvocation="638"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="63" invocations="242" avgMicrosecondsPerInvocation="263" maxMicrosecondsPerInvocation="3991" standardDeviationMicrosecondsPerInvocation="518"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="62" invocations="242" avgMicrosecondsPerInvocation="256" maxMicrosecondsPerInvocation="3701" standardDeviationMicrosecondsPerInvocation="469"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="62" invocations="242" avgMicrosecondsPerInvocation="256" maxMicrosecondsPerInvocation="5127" standardDeviationMicrosecondsPerInvocation="572"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="61" invocations="242" avgMicrosecondsPerInvocation="252" maxMicrosecondsPerInvocation="4815" standardDeviationMicrosecondsPerInvocation="478"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector" totalMilliseconds="60" invocations="242" avgMicrosecondsPerInvocation="251" maxMicrosecondsPerInvocation="5172" standardDeviationMicrosecondsPerInvocation="540"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="964" invocations="1952" avgMicrosecondsPerInvocation="494" maxMicrosecondsPerInvocation="34959" standardDeviationMicrosecondsPerInvocation="1692"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="963" invocations="1887" avgMicrosecondsPerInvocation="510" maxMicrosecondsPerInvocation="30857" standardDeviationMicrosecondsPerInvocation="1496"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="887" invocations="2049" avgMicrosecondsPerInvocation="433" maxMicrosecondsPerInvocation="17545" standardDeviationMicrosecondsPerInvocation="1358"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="878" invocations="1927" avgMicrosecondsPerInvocation="455" maxMicrosecondsPerInvocation="13574" standardDeviationMicrosecondsPerInvocation="1301"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="719" invocations="1991" avgMicrosecondsPerInvocation="361" maxMicrosecondsPerInvocation="33799" standardDeviationMicrosecondsPerInvocation="1347"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="653" invocations="242" avgMicrosecondsPerInvocation="2702" maxMicrosecondsPerInvocation="171865" standardDeviationMicrosecondsPerInvocation="15244"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="603" invocations="1789" avgMicrosecondsPerInvocation="337" maxMicrosecondsPerInvocation="19724" standardDeviationMicrosecondsPerInvocation="1105"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LazyInit" totalMilliseconds="535" invocations="242" avgMicrosecondsPerInvocation="2213" maxMicrosecondsPerInvocation="129122" standardDeviationMicrosecondsPerInvocation="11635"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="497" invocations="2817" avgMicrosecondsPerInvocation="176" maxMicrosecondsPerInvocation="29818" standardDeviationMicrosecondsPerInvocation="757"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="473" invocations="2046" avgMicrosecondsPerInvocation="231" maxMicrosecondsPerInvocation="50351" standardDeviationMicrosecondsPerInvocation="1422"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="465" invocations="1451" avgMicrosecondsPerInvocation="320" maxMicrosecondsPerInvocation="19234" standardDeviationMicrosecondsPerInvocation="1013"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="359" invocations="469" avgMicrosecondsPerInvocation="766" maxMicrosecondsPerInvocation="30191" standardDeviationMicrosecondsPerInvocation="1923"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="314" invocations="1457" avgMicrosecondsPerInvocation="215" maxMicrosecondsPerInvocation="6113" standardDeviationMicrosecondsPerInvocation="267"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="297" invocations="469" avgMicrosecondsPerInvocation="635" maxMicrosecondsPerInvocation="8567" standardDeviationMicrosecondsPerInvocation="1146"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="264" invocations="1952" avgMicrosecondsPerInvocation="135" maxMicrosecondsPerInvocation="11217" standardDeviationMicrosecondsPerInvocation="570"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="232" invocations="242" avgMicrosecondsPerInvocation="961" maxMicrosecondsPerInvocation="65221" standardDeviationMicrosecondsPerInvocation="5089"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="222" invocations="242" avgMicrosecondsPerInvocation="917" maxMicrosecondsPerInvocation="23193" standardDeviationMicrosecondsPerInvocation="2462"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="194" invocations="242" avgMicrosecondsPerInvocation="804" maxMicrosecondsPerInvocation="11213" standardDeviationMicrosecondsPerInvocation="1556"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="183" invocations="242" avgMicrosecondsPerInvocation="758" maxMicrosecondsPerInvocation="16980" standardDeviationMicrosecondsPerInvocation="1742"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="182" invocations="1822" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="15621" standardDeviationMicrosecondsPerInvocation="575"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="160" invocations="469" avgMicrosecondsPerInvocation="341" maxMicrosecondsPerInvocation="8846" standardDeviationMicrosecondsPerInvocation="843"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="147" invocations="242" avgMicrosecondsPerInvocation="609" maxMicrosecondsPerInvocation="35939" standardDeviationMicrosecondsPerInvocation="2584"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="144" invocations="2046" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="41628" standardDeviationMicrosecondsPerInvocation="943"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="142" invocations="469" avgMicrosecondsPerInvocation="303" maxMicrosecondsPerInvocation="4643" standardDeviationMicrosecondsPerInvocation="610"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="138" invocations="242" avgMicrosecondsPerInvocation="571" maxMicrosecondsPerInvocation="59990" standardDeviationMicrosecondsPerInvocation="3891"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="122" invocations="837" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="7944" standardDeviationMicrosecondsPerInvocation="394"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="117" invocations="242" avgMicrosecondsPerInvocation="486" maxMicrosecondsPerInvocation="7732" standardDeviationMicrosecondsPerInvocation="1221"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="111" invocations="2046" avgMicrosecondsPerInvocation="54" maxMicrosecondsPerInvocation="9444" standardDeviationMicrosecondsPerInvocation="351"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="106" invocations="1887" avgMicrosecondsPerInvocation="56" maxMicrosecondsPerInvocation="4438" standardDeviationMicrosecondsPerInvocation="161"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SynchronizingOnContentsOfFieldToProtectField" totalMilliseconds="102" invocations="242" avgMicrosecondsPerInvocation="421" maxMicrosecondsPerInvocation="20652" standardDeviationMicrosecondsPerInvocation="1619"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="98" invocations="242" avgMicrosecondsPerInvocation="408" maxMicrosecondsPerInvocation="5730" standardDeviationMicrosecondsPerInvocation="835"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="98" invocations="242" avgMicrosecondsPerInvocation="406" maxMicrosecondsPerInvocation="7811" standardDeviationMicrosecondsPerInvocation="863"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="98" invocations="242" avgMicrosecondsPerInvocation="406" maxMicrosecondsPerInvocation="22098" standardDeviationMicrosecondsPerInvocation="1543"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="95" invocations="242" avgMicrosecondsPerInvocation="395" maxMicrosecondsPerInvocation="13816" standardDeviationMicrosecondsPerInvocation="1286"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredStaticMethodReturnDetector" totalMilliseconds="94" invocations="242" avgMicrosecondsPerInvocation="392" maxMicrosecondsPerInvocation="36870" standardDeviationMicrosecondsPerInvocation="2390"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="93" invocations="242" avgMicrosecondsPerInvocation="387" maxMicrosecondsPerInvocation="11124" standardDeviationMicrosecondsPerInvocation="1099"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="93" invocations="242" avgMicrosecondsPerInvocation="386" maxMicrosecondsPerInvocation="41824" standardDeviationMicrosecondsPerInvocation="2765"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="91" invocations="242" avgMicrosecondsPerInvocation="377" maxMicrosecondsPerInvocation="10098" standardDeviationMicrosecondsPerInvocation="1008"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="91" invocations="242" avgMicrosecondsPerInvocation="376" maxMicrosecondsPerInvocation="11719" standardDeviationMicrosecondsPerInvocation="998"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="88" invocations="569" avgMicrosecondsPerInvocation="155" maxMicrosecondsPerInvocation="15254" standardDeviationMicrosecondsPerInvocation="696"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteRecursiveLoop" totalMilliseconds="88" invocations="242" avgMicrosecondsPerInvocation="364" maxMicrosecondsPerInvocation="20123" standardDeviationMicrosecondsPerInvocation="1407"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

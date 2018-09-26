@@ -1,29 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1534888104000" analysisTimestamp="1536626389123" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534888104000" analysisTimestamp="1537922244749" release="">
   <Project projectName="">
     <Jar>tmp/sulky</Jar>
   </Project>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="ch.qos.logback.classic.gaffer.AppenderDelegate">
-      <SourceLine classname="ch.qos.logback.classic.gaffer.AppenderDelegate" start="29" end="46" sourcefile="AppenderDelegate.groovy" sourcepath="ch/qos/logback/classic/gaffer/AppenderDelegate.groovy"/>
-    </Class>
-    <Method classname="ch.qos.logback.classic.gaffer.AppenderDelegate" name="getLabel" signature="()Ljava/lang/String;" isStatic="false">
-      <SourceLine classname="ch.qos.logback.classic.gaffer.AppenderDelegate" start="38" end="38" startBytecode="0" endBytecode="5" sourcefile="AppenderDelegate.groovy" sourcepath="ch/qos/logback/classic/gaffer/AppenderDelegate.groovy"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="3" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="ch.qos.logback.classic.gaffer.AppenderDelegate" startBytecode="3" endBytecode="3" sourcefile="AppenderDelegate.groovy" sourcepath="ch/qos/logback/classic/gaffer/AppenderDelegate.groovy"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="ch.qos.logback.classic.gaffer.ComponentDelegate">
-      <SourceLine classname="ch.qos.logback.classic.gaffer.ComponentDelegate" start="28" end="150" sourcefile="ComponentDelegate.groovy" sourcepath="ch/qos/logback/classic/gaffer/ComponentDelegate.groovy"/>
-    </Class>
-    <Method classname="ch.qos.logback.classic.gaffer.ComponentDelegate" name="getLabel" signature="()Ljava/lang/String;" isStatic="false">
-      <SourceLine classname="ch.qos.logback.classic.gaffer.ComponentDelegate" start="34" end="34" startBytecode="0" endBytecode="5" sourcefile="ComponentDelegate.groovy" sourcepath="ch/qos/logback/classic/gaffer/ComponentDelegate.groovy"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="3" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="ch.qos.logback.classic.gaffer.ComponentDelegate" startBytecode="3" endBytecode="3" sourcefile="ComponentDelegate.groovy" sourcepath="ch/qos/logback/classic/gaffer/ComponentDelegate.groovy"/>
-  </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="de.huxhorn.sulky.ulid.ULIDBenchmark">
       <SourceLine classname="de.huxhorn.sulky.ulid.ULIDBenchmark" start="51" end="133" sourcefile="ULIDBenchmark.java" sourcepath="de/huxhorn/sulky/ulid/ULIDBenchmark.java"/>
@@ -78,225 +58,7 @@
     </Method>
     <SourceLine classname="de.huxhorn.sulky.ulid.ULIDBenchmark" start="112" end="112" startBytecode="0" endBytecode="0" sourcefile="ULIDBenchmark.java" sourcepath="de/huxhorn/sulky/ulid/ULIDBenchmark.java"/>
   </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="foo.DetectSplitPackagesTask$_findPackages_closure9">
-      <SourceLine classname="foo.DetectSplitPackagesTask$_findPackages_closure9" start="195" end="195" sourcefile="DetectSplitPackagesPlugin.groovy" sourcepath="foo/DetectSplitPackagesPlugin.groovy"/>
-    </Class>
-    <Method classname="foo.DetectSplitPackagesTask$_findPackages_closure9" name="getPackagePath" signature="()Ljava/lang/String;" isStatic="false">
-      <SourceLine classname="foo.DetectSplitPackagesTask$_findPackages_closure9" startBytecode="0" endBytecode="9" sourcefile="DetectSplitPackagesPlugin.groovy" sourcepath="foo/DetectSplitPackagesPlugin.groovy"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="3" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="foo.DetectSplitPackagesTask$_findPackages_closure9" startBytecode="3" endBytecode="3" sourcefile="DetectSplitPackagesPlugin.groovy" sourcepath="foo/DetectSplitPackagesPlugin.groovy"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="foo.PackageHelper$_findCommonPrefix_closure4">
-      <SourceLine classname="foo.PackageHelper$_findCommonPrefix_closure4" start="294" end="298" sourcefile="DetectSplitPackagesPlugin.groovy" sourcepath="foo/DetectSplitPackagesPlugin.groovy"/>
-    </Class>
-    <Method classname="foo.PackageHelper$_findCommonPrefix_closure4" name="getPreviousLevelValue" signature="()Ljava/lang/String;" isStatic="false">
-      <SourceLine classname="foo.PackageHelper$_findCommonPrefix_closure4" startBytecode="0" endBytecode="9" sourcefile="DetectSplitPackagesPlugin.groovy" sourcepath="foo/DetectSplitPackagesPlugin.groovy"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="3" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="foo.PackageHelper$_findCommonPrefix_closure4" startBytecode="3" endBytecode="3" sourcefile="DetectSplitPackagesPlugin.groovy" sourcepath="foo/DetectSplitPackagesPlugin.groovy"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="groovyjarjarantlr.preprocessor.Preprocessor">
-      <SourceLine classname="groovyjarjarantlr.preprocessor.Preprocessor" start="37" end="865" sourcefile="Preprocessor.java" sourcepath="groovyjarjarantlr/preprocessor/Preprocessor.java"/>
-    </Class>
-    <Method classname="groovyjarjarantlr.preprocessor.Preprocessor" name="exceptionGroup" signature="()Ljava/lang/String;" isStatic="false">
-      <SourceLine classname="groovyjarjarantlr.preprocessor.Preprocessor" start="666" end="688" startBytecode="0" endBytecode="33" sourcefile="Preprocessor.java" sourcepath="groovyjarjarantlr/preprocessor/Preprocessor.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="2" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="groovyjarjarantlr.preprocessor.Preprocessor" start="666" end="666" startBytecode="1" endBytecode="1" sourcefile="Preprocessor.java" sourcepath="groovyjarjarantlr/preprocessor/Preprocessor.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="groovyjarjarantlr.preprocessor.Preprocessor">
-      <SourceLine classname="groovyjarjarantlr.preprocessor.Preprocessor" start="37" end="865" sourcefile="Preprocessor.java" sourcepath="groovyjarjarantlr/preprocessor/Preprocessor.java"/>
-    </Class>
-    <Method classname="groovyjarjarantlr.preprocessor.Preprocessor" name="exceptionHandler" signature="()Ljava/lang/String;" isStatic="false">
-      <SourceLine classname="groovyjarjarantlr.preprocessor.Preprocessor" start="753" end="771" startBytecode="0" endBytecode="52" sourcefile="Preprocessor.java" sourcepath="groovyjarjarantlr/preprocessor/Preprocessor.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="2" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="groovyjarjarantlr.preprocessor.Preprocessor" start="753" end="753" startBytecode="1" endBytecode="1" sourcefile="Preprocessor.java" sourcepath="groovyjarjarantlr/preprocessor/Preprocessor.java"/>
-    <SourceLine classname="groovyjarjarantlr.preprocessor.Preprocessor" start="754" end="754" startBytecode="3" endBytecode="3" sourcefile="Preprocessor.java" sourcepath="groovyjarjarantlr/preprocessor/Preprocessor.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="groovyjarjarantlr.preprocessor.Preprocessor">
-      <SourceLine classname="groovyjarjarantlr.preprocessor.Preprocessor" start="37" end="865" sourcefile="Preprocessor.java" sourcepath="groovyjarjarantlr/preprocessor/Preprocessor.java"/>
-    </Class>
-    <Method classname="groovyjarjarantlr.preprocessor.Preprocessor" name="exceptionSpec" signature="()Ljava/lang/String;" isStatic="false">
-      <SourceLine classname="groovyjarjarantlr.preprocessor.Preprocessor" start="694" end="747" startBytecode="0" endBytecode="78" sourcefile="Preprocessor.java" sourcepath="groovyjarjarantlr/preprocessor/Preprocessor.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="2" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="groovyjarjarantlr.preprocessor.Preprocessor" start="694" end="694" startBytecode="1" endBytecode="1" sourcefile="Preprocessor.java" sourcepath="groovyjarjarantlr/preprocessor/Preprocessor.java"/>
-    <SourceLine classname="groovyjarjarantlr.preprocessor.Preprocessor" start="695" end="695" startBytecode="3" endBytecode="3" sourcefile="Preprocessor.java" sourcepath="groovyjarjarantlr/preprocessor/Preprocessor.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="groovyjarjarantlr.preprocessor.Preprocessor">
-      <SourceLine classname="groovyjarjarantlr.preprocessor.Preprocessor" start="37" end="865" sourcefile="Preprocessor.java" sourcepath="groovyjarjarantlr/preprocessor/Preprocessor.java"/>
-    </Class>
-    <Method classname="groovyjarjarantlr.preprocessor.Preprocessor" name="throwsSpec" signature="()Ljava/lang/String;" isStatic="false">
-      <SourceLine classname="groovyjarjarantlr.preprocessor.Preprocessor" start="630" end="660" startBytecode="0" endBytecode="65" sourcefile="Preprocessor.java" sourcepath="groovyjarjarantlr/preprocessor/Preprocessor.java"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="2" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="groovyjarjarantlr.preprocessor.Preprocessor" start="630" end="630" startBytecode="1" endBytecode="1" sourcefile="Preprocessor.java" sourcepath="groovyjarjarantlr/preprocessor/Preprocessor.java"/>
-    <SourceLine classname="groovyjarjarantlr.preprocessor.Preprocessor" start="631" end="631" startBytecode="3" endBytecode="3" sourcefile="Preprocessor.java" sourcepath="groovyjarjarantlr/preprocessor/Preprocessor.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_classNode_closure17">
-      <SourceLine classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_classNode_closure17" start="837" end="879" sourcefile="AstSpecificationCompiler.groovy" sourcepath="org/codehaus/groovy/ast/builder/AstSpecificationCompiler.groovy"/>
-    </Class>
-    <Method classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_classNode_closure17" name="getName" signature="()Ljava/lang/String;" isStatic="false">
-      <SourceLine classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_classNode_closure17" startBytecode="0" endBytecode="9" sourcefile="AstSpecificationCompiler.groovy" sourcepath="org/codehaus/groovy/ast/builder/AstSpecificationCompiler.groovy"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="3" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_classNode_closure17" startBytecode="3" endBytecode="3" sourcefile="AstSpecificationCompiler.groovy" sourcepath="org/codehaus/groovy/ast/builder/AstSpecificationCompiler.groovy"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_enforceConstraints_closure2">
-      <SourceLine classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_enforceConstraints_closure2" start="145" end="150" sourcefile="AstSpecificationCompiler.groovy" sourcepath="org/codehaus/groovy/ast/builder/AstSpecificationCompiler.groovy"/>
-    </Class>
-    <Method classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_enforceConstraints_closure2" name="getMethodName" signature="()Ljava/lang/String;" isStatic="false">
-      <SourceLine classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_enforceConstraints_closure2" startBytecode="0" endBytecode="9" sourcefile="AstSpecificationCompiler.groovy" sourcepath="org/codehaus/groovy/ast/builder/AstSpecificationCompiler.groovy"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="3" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_enforceConstraints_closure2" startBytecode="3" endBytecode="3" sourcefile="AstSpecificationCompiler.groovy" sourcepath="org/codehaus/groovy/ast/builder/AstSpecificationCompiler.groovy"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_fieldNode_closure23">
-      <SourceLine classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_fieldNode_closure23" start="984" end="997" sourcefile="AstSpecificationCompiler.groovy" sourcepath="org/codehaus/groovy/ast/builder/AstSpecificationCompiler.groovy"/>
-    </Class>
-    <Method classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_fieldNode_closure23" name="getName" signature="()Ljava/lang/String;" isStatic="false">
-      <SourceLine classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_fieldNode_closure23" startBytecode="0" endBytecode="9" sourcefile="AstSpecificationCompiler.groovy" sourcepath="org/codehaus/groovy/ast/builder/AstSpecificationCompiler.groovy"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="3" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_fieldNode_closure23" startBytecode="3" endBytecode="3" sourcefile="AstSpecificationCompiler.groovy" sourcepath="org/codehaus/groovy/ast/builder/AstSpecificationCompiler.groovy"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_makeNodeWithClassParameter_closure7">
-      <SourceLine classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_makeNodeWithClassParameter_closure7" start="254" end="255" sourcefile="AstSpecificationCompiler.groovy" sourcepath="org/codehaus/groovy/ast/builder/AstSpecificationCompiler.groovy"/>
-    </Class>
-    <Method classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_makeNodeWithClassParameter_closure7" name="getAlias" signature="()Ljava/lang/String;" isStatic="false">
-      <SourceLine classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_makeNodeWithClassParameter_closure7" startBytecode="0" endBytecode="9" sourcefile="AstSpecificationCompiler.groovy" sourcepath="org/codehaus/groovy/ast/builder/AstSpecificationCompiler.groovy"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="3" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_makeNodeWithClassParameter_closure7" startBytecode="3" endBytecode="3" sourcefile="AstSpecificationCompiler.groovy" sourcepath="org/codehaus/groovy/ast/builder/AstSpecificationCompiler.groovy"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_makeNode_closure3">
-      <SourceLine classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_makeNode_closure3" start="190" end="190" sourcefile="AstSpecificationCompiler.groovy" sourcepath="org/codehaus/groovy/ast/builder/AstSpecificationCompiler.groovy"/>
-    </Class>
-    <Method classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_makeNode_closure3" name="getTypeAlias" signature="()Ljava/lang/String;" isStatic="false">
-      <SourceLine classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_makeNode_closure3" startBytecode="0" endBytecode="9" sourcefile="AstSpecificationCompiler.groovy" sourcepath="org/codehaus/groovy/ast/builder/AstSpecificationCompiler.groovy"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="3" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_makeNode_closure3" startBytecode="3" endBytecode="3" sourcefile="AstSpecificationCompiler.groovy" sourcepath="org/codehaus/groovy/ast/builder/AstSpecificationCompiler.groovy"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_mixin_closure16">
-      <SourceLine classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_mixin_closure16" start="824" end="827" sourcefile="AstSpecificationCompiler.groovy" sourcepath="org/codehaus/groovy/ast/builder/AstSpecificationCompiler.groovy"/>
-    </Class>
-    <Method classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_mixin_closure16" name="getName" signature="()Ljava/lang/String;" isStatic="false">
-      <SourceLine classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_mixin_closure16" startBytecode="0" endBytecode="9" sourcefile="AstSpecificationCompiler.groovy" sourcepath="org/codehaus/groovy/ast/builder/AstSpecificationCompiler.groovy"/>
-    </Method>
-    <LocalVariable name="?" register="1" pc="3" role="LOCAL_VARIABLE_UNKNOWN"/>
-    <SourceLine classname="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_mixin_closure16" startBytecode="3" endBytecode="3" sourcefile="AstSpecificationCompiler.groovy" sourcepath="org/codehaus/groovy/ast/builder/AstSpecificationCompiler.groovy"/>
-  </BugInstance>
-  <Errors errors="5" missingClasses="66">
-    <Error>
-      <ErrorMessage>Exception analyzing net.bytebuddy.description.type.TypeDescription$Generic using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
-      <Exception>java.lang.NullPointerException</Exception>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:111)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:57)</StackTrace>
-      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
-      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
-    </Error>
-    <Error>
-      <ErrorMessage>Exception analyzing net.bytebuddy.description.type.TypeDescription using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
-      <Exception>java.lang.NullPointerException</Exception>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:111)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:57)</StackTrace>
-      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
-      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
-    </Error>
-    <Error>
-      <ErrorMessage>Exception analyzing org.codehaus.groovy.transform.AbstractInterruptibleASTTransformation using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
-      <Exception>java.lang.NullPointerException</Exception>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:111)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:57)</StackTrace>
-      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
-      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
-    </Error>
-    <Error>
-      <ErrorMessage>Exception analyzing ch.qos.logback.core.joran.action.AbstractEventEvaluatorAction using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
-      <Exception>java.lang.NullPointerException</Exception>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:111)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:57)</StackTrace>
-      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
-      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
-    </Error>
-    <Error>
-      <ErrorMessage>Exception analyzing ch.qos.logback.core.boolex.JaninoEventEvaluatorBase using detector de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector</ErrorMessage>
-      <Exception>java.lang.NullPointerException</Exception>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.analyzeMethod(DeadStoreBenchmarkDetector.java:111)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector.visitMethod(DeadStoreBenchmarkDetector.java:57)</StackTrace>
-      <StackTrace>org.apache.bcel.classfile.Method.accept(Method.java:108)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:312)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:403)</StackTrace>
-      <StackTrace>org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:213)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:38)</StackTrace>
-      <StackTrace>de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector.visitClassContext(AbstractJMHBenchmarkMethodDetector.java:50)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:76)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1079)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:280)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:401)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1187)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.launch(LaunchAppropriateUI.java:106)</StackTrace>
-      <StackTrace>edu.umd.cs.findbugs.LaunchAppropriateUI.main(LaunchAppropriateUI.java:198)</StackTrace>
-    </Error>
+  <Errors errors="0" missingClasses="66">
     <MissingClass>com.thoughtworks.xstream.XStream</MissingClass>
     <MissingClass>com.thoughtworks.xstream.io.xml.StaxDriver</MissingClass>
     <MissingClass>groovyjarjarasm.asm.util.Textifiable</MissingClass>
@@ -364,7 +126,7 @@
     <MissingClass>org.openjdk.jmh.runner.options.OptionsBuilder</MissingClass>
     <MissingClass>org.openjdk.jmh.util.SampleBuffer</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Tue, 21 Aug 2018 23:48:24 +0200" total_classes="6805" referenced_classes="7800" total_bugs="20" total_size="260326" num_packages="263" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="321.31" clock_seconds="107.55" peak_mbytes="2566.51" alloc_mbytes="3641.00" gc_seconds="10.70" priority_2="6" priority_1="14">
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 23:48:24 +0200" total_classes="6805" referenced_classes="7800" total_bugs="6" total_size="260326" num_packages="263" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="319.12" clock_seconds="106.93" peak_mbytes="2531.08" alloc_mbytes="3641.00" gc_seconds="11.03" priority_2="6">
     <PackageStats package="" total_bugs="0" total_types="5" total_size="15">
       <ClassStats class="PackagelessJava15" sourceFile="PackagelessJava15.java" interface="false" size="3" bugs="0"/>
       <ClassStats class="PackagelessJava16" sourceFile="PackagelessJava16.java" interface="false" size="3" bugs="0"/>
@@ -409,10 +171,10 @@
       <ClassStats class="ch.qos.logback.classic.filter.LevelFilter" sourceFile="LevelFilter.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.filter.ThresholdFilter" sourceFile="ThresholdFilter.java" interface="false" size="18" bugs="0"/>
     </PackageStats>
-    <PackageStats package="ch.qos.logback.classic.gaffer" total_bugs="2" total_types="13" total_size="625" priority_1="2">
-      <ClassStats class="ch.qos.logback.classic.gaffer.AppenderDelegate" sourceFile="AppenderDelegate.groovy" interface="false" size="25" bugs="1" priority_1="1"/>
+    <PackageStats package="ch.qos.logback.classic.gaffer" total_bugs="0" total_types="13" total_size="625">
+      <ClassStats class="ch.qos.logback.classic.gaffer.AppenderDelegate" sourceFile="AppenderDelegate.groovy" interface="false" size="25" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.gaffer.AppenderDelegate$_closure1" sourceFile="AppenderDelegate.groovy" interface="false" size="12" bugs="0"/>
-      <ClassStats class="ch.qos.logback.classic.gaffer.ComponentDelegate" sourceFile="ComponentDelegate.groovy" interface="false" size="96" bugs="1" priority_1="1"/>
+      <ClassStats class="ch.qos.logback.classic.gaffer.ComponentDelegate" sourceFile="ComponentDelegate.groovy" interface="false" size="96" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.gaffer.ConfigurationContributor" sourceFile="ConfigurationContributor.groovy" interface="true" size="2" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.gaffer.ConfigurationDelegate" sourceFile="ConfigurationDelegate.groovy" interface="false" size="154" bugs="0"/>
       <ClassStats class="ch.qos.logback.classic.gaffer.ConfigurationDelegate$_copyContributions_closure2" sourceFile="ConfigurationDelegate.groovy" interface="false" size="16" bugs="0"/>
@@ -1063,7 +825,7 @@
       <ClassStats class="de.huxhorn.sulky.ulid.generated.ULIDBenchmark_uuidRandomUUIDtoStringAverage_jmhTest" sourceFile="ULIDBenchmark_uuidRandomUUIDtoStringAverage_jmhTest.java" interface="false" size="475" bugs="0"/>
       <ClassStats class="de.huxhorn.sulky.ulid.generated.ULIDBenchmark_uuidRandomUUIDtoStringThroughput_jmhTest" sourceFile="ULIDBenchmark_uuidRandomUUIDtoStringThroughput_jmhTest.java" interface="false" size="475" bugs="0"/>
     </PackageStats>
-    <PackageStats package="foo" total_bugs="2" total_types="18" total_size="405" priority_1="2">
+    <PackageStats package="foo" total_bugs="0" total_types="18" total_size="405">
       <ClassStats class="foo.DetectSplitPackagesPlugin" sourceFile="DetectSplitPackagesPlugin.groovy" interface="false" size="19" bugs="0"/>
       <ClassStats class="foo.DetectSplitPackagesTask" sourceFile="DetectSplitPackagesPlugin.groovy" interface="false" size="65" bugs="0"/>
       <ClassStats class="foo.DetectSplitPackagesTask$_detectSplitPackages_closure1" sourceFile="DetectSplitPackagesPlugin.groovy" interface="false" size="14" bugs="0"/>
@@ -1073,12 +835,12 @@
       <ClassStats class="foo.DetectSplitPackagesTask$_doDetectSplitPackages_closure4$_closure10" sourceFile="DetectSplitPackagesPlugin.groovy" interface="false" size="20" bugs="0"/>
       <ClassStats class="foo.DetectSplitPackagesTask$_findPackages_closure7" sourceFile="DetectSplitPackagesPlugin.groovy" interface="false" size="11" bugs="0"/>
       <ClassStats class="foo.DetectSplitPackagesTask$_findPackages_closure8" sourceFile="DetectSplitPackagesPlugin.groovy" interface="false" size="12" bugs="0"/>
-      <ClassStats class="foo.DetectSplitPackagesTask$_findPackages_closure9" sourceFile="DetectSplitPackagesPlugin.groovy" interface="false" size="18" bugs="1" priority_1="1"/>
+      <ClassStats class="foo.DetectSplitPackagesTask$_findPackages_closure9" sourceFile="DetectSplitPackagesPlugin.groovy" interface="false" size="18" bugs="0"/>
       <ClassStats class="foo.DetectSplitPackagesTask$_mapPackagesByProject_closure6" sourceFile="DetectSplitPackagesPlugin.groovy" interface="false" size="19" bugs="0"/>
       <ClassStats class="foo.DetectSplitPackagesTask$_mapPackagesByProject_closure6$_closure11" sourceFile="DetectSplitPackagesPlugin.groovy" interface="false" size="14" bugs="0"/>
       <ClassStats class="foo.DetectSplitPackagesTask$_producePackageStepsByProject_closure5" sourceFile="DetectSplitPackagesPlugin.groovy" interface="false" size="14" bugs="0"/>
       <ClassStats class="foo.PackageHelper" sourceFile="DetectSplitPackagesPlugin.groovy" interface="false" size="71" bugs="0"/>
-      <ClassStats class="foo.PackageHelper$_findCommonPrefix_closure4" sourceFile="DetectSplitPackagesPlugin.groovy" interface="false" size="19" bugs="1" priority_1="1"/>
+      <ClassStats class="foo.PackageHelper$_findCommonPrefix_closure4" sourceFile="DetectSplitPackagesPlugin.groovy" interface="false" size="19" bugs="0"/>
       <ClassStats class="foo.PackageHelper$_minimumSize_closure2" sourceFile="DetectSplitPackagesPlugin.groovy" interface="false" size="15" bugs="0"/>
       <ClassStats class="foo.PackageHelper$_packageDirsToPackageSteps_closure3" sourceFile="DetectSplitPackagesPlugin.groovy" interface="false" size="14" bugs="0"/>
       <ClassStats class="foo.PackageHelper$_toPackageName_closure1" sourceFile="DetectSplitPackagesPlugin.groovy" interface="false" size="18" bugs="0"/>
@@ -1760,12 +1522,12 @@
       <ClassStats class="groovyjarjarantlr.debug.misc.JTreeASTModel" sourceFile="JTreeASTModel.java" interface="false" size="59" bugs="0"/>
       <ClassStats class="groovyjarjarantlr.debug.misc.JTreeASTPanel" sourceFile="JTreeASTPanel.java" interface="false" size="13" bugs="0"/>
     </PackageStats>
-    <PackageStats package="groovyjarjarantlr.preprocessor" total_bugs="4" total_types="9" total_size="1598" priority_1="4">
+    <PackageStats package="groovyjarjarantlr.preprocessor" total_bugs="0" total_types="9" total_size="1598">
       <ClassStats class="groovyjarjarantlr.preprocessor.Grammar" sourceFile="Grammar.java" interface="false" size="162" bugs="0"/>
       <ClassStats class="groovyjarjarantlr.preprocessor.GrammarFile" sourceFile="GrammarFile.java" interface="false" size="51" bugs="0"/>
       <ClassStats class="groovyjarjarantlr.preprocessor.Hierarchy" sourceFile="Hierarchy.java" interface="false" size="94" bugs="0"/>
       <ClassStats class="groovyjarjarantlr.preprocessor.Option" sourceFile="Option.java" interface="false" size="27" bugs="0"/>
-      <ClassStats class="groovyjarjarantlr.preprocessor.Preprocessor" sourceFile="Preprocessor.java" interface="false" size="368" bugs="4" priority_1="4"/>
+      <ClassStats class="groovyjarjarantlr.preprocessor.Preprocessor" sourceFile="Preprocessor.java" interface="false" size="368" bugs="0"/>
       <ClassStats class="groovyjarjarantlr.preprocessor.PreprocessorLexer" sourceFile="PreprocessorLexer.java" interface="false" size="680" bugs="0"/>
       <ClassStats class="groovyjarjarantlr.preprocessor.PreprocessorTokenTypes" sourceFile="PreprocessorTokenTypes.java" interface="true" size="42" bugs="0"/>
       <ClassStats class="groovyjarjarantlr.preprocessor.Rule" sourceFile="Rule.java" interface="false" size="91" bugs="0"/>
@@ -4270,7 +4032,7 @@
       <ClassStats class="org.codehaus.groovy.ast.Variable" sourceFile="Variable.java" interface="true" size="11" bugs="0"/>
       <ClassStats class="org.codehaus.groovy.ast.VariableScope" sourceFile="VariableScope.java" interface="false" size="94" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.codehaus.groovy.ast.builder" total_bugs="6" total_types="44" total_size="1112" priority_1="6">
+    <PackageStats package="org.codehaus.groovy.ast.builder" total_bugs="0" total_types="44" total_size="1112">
       <ClassStats class="org.codehaus.groovy.ast.builder.AstBuilder" sourceFile="AstBuilder.groovy" interface="false" size="36" bugs="0"/>
       <ClassStats class="org.codehaus.groovy.ast.builder.AstBuilder$_buildFromBlock_closure1" sourceFile="AstBuilder.groovy" interface="false" size="13" bugs="0"/>
       <ClassStats class="org.codehaus.groovy.ast.builder.AstBuilderTransformation" sourceFile="AstBuilderTransformation.java" interface="false" size="54" bugs="0"/>
@@ -4281,28 +4043,28 @@
       <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_array_closure12" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="14" bugs="0"/>
       <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_assertStatement_closure18" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="14" bugs="0"/>
       <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_block_closure9" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="12" bugs="0"/>
-      <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_classNode_closure17" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="46" bugs="1" priority_1="1"/>
+      <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_classNode_closure17" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="46" bugs="0"/>
       <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_classNode_closure17$_closure32" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="14" bugs="0"/>
       <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_classNode_closure17$_closure33" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="14" bugs="0"/>
       <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_classNode_closure17$_closure34" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="15" bugs="0"/>
       <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_classNode_closure17$_closure35" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="15" bugs="0"/>
       <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_constructor_closure28" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="22" bugs="0"/>
       <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_enforceConstraints_closure1" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="12" bugs="0"/>
-      <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_enforceConstraints_closure2" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="20" bugs="1" priority_1="1"/>
+      <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_enforceConstraints_closure2" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="20" bugs="0"/>
       <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_enforceConstraints_closure2$_closure29" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="12" bugs="0"/>
-      <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_fieldNode_closure23" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="32" bugs="1" priority_1="1"/>
+      <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_fieldNode_closure23" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="32" bugs="0"/>
       <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_genericsType_closure13" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="14" bugs="0"/>
       <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_innerClass_closure24" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="20" bugs="0"/>
       <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_makeArrayOfNodes_closure6" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="14" bugs="0"/>
       <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_makeListOfNodes_closure5" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="12" bugs="0"/>
       <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_makeNodeFromList_closure4" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="14" bugs="0"/>
-      <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_makeNodeWithClassParameter_closure7" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="21" bugs="1" priority_1="1"/>
+      <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_makeNodeWithClassParameter_closure7" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="21" bugs="0"/>
       <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_makeNodeWithStringParameter_closure8" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="21" bugs="0"/>
-      <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_makeNode_closure3" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="18" bugs="1" priority_1="1"/>
+      <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_makeNode_closure3" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="18" bugs="0"/>
       <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_mapEntry_closure22" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="14" bugs="0"/>
       <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_member_closure14" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="14" bugs="0"/>
       <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_method_closure20" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="21" bugs="0"/>
-      <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_mixin_closure16" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="18" bugs="1" priority_1="1"/>
+      <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_mixin_closure16" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="18" bugs="0"/>
       <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_parameter_closure10" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="14" bugs="0"/>
       <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_parameter_closure10$_closure30" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="16" bugs="0"/>
       <ClassStats class="org.codehaus.groovy.ast.builder.AstSpecificationCompiler$_parameter_closure11" sourceFile="AstSpecificationCompiler.groovy" interface="false" size="12" bugs="0"/>
@@ -7697,46 +7459,46 @@
       <ClassStats class="spock.util.mop.Use" sourceFile="Use.java" interface="true" size="2" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="9948" invocations="45800" avgMicrosecondsPerInvocation="217" maxMicrosecondsPerInvocation="3347712" standardDeviationMicrosecondsPerInvocation="15661"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="7941" invocations="47901" avgMicrosecondsPerInvocation="165" maxMicrosecondsPerInvocation="3049083" standardDeviationMicrosecondsPerInvocation="13947"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="6699" invocations="44334" avgMicrosecondsPerInvocation="151" maxMicrosecondsPerInvocation="174925" standardDeviationMicrosecondsPerInvocation="1521"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="6544" invocations="42377" avgMicrosecondsPerInvocation="154" maxMicrosecondsPerInvocation="415748" standardDeviationMicrosecondsPerInvocation="2258"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="5714" invocations="50680" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="108533" standardDeviationMicrosecondsPerInvocation="952"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="4992" invocations="6803" avgMicrosecondsPerInvocation="733" maxMicrosecondsPerInvocation="185472" standardDeviationMicrosecondsPerInvocation="4252"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="3221" invocations="36909" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="83365" standardDeviationMicrosecondsPerInvocation="511"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="2873" invocations="47451" avgMicrosecondsPerInvocation="60" maxMicrosecondsPerInvocation="79378" standardDeviationMicrosecondsPerInvocation="398"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1787" invocations="49023" avgMicrosecondsPerInvocation="36" maxMicrosecondsPerInvocation="95815" standardDeviationMicrosecondsPerInvocation="446"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1709" invocations="25766" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="7681" standardDeviationMicrosecondsPerInvocation="111"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1678" invocations="7800" avgMicrosecondsPerInvocation="215" maxMicrosecondsPerInvocation="94100" standardDeviationMicrosecondsPerInvocation="1288"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1595" invocations="7800" avgMicrosecondsPerInvocation="204" maxMicrosecondsPerInvocation="157316" standardDeviationMicrosecondsPerInvocation="2111"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="1577" invocations="7800" avgMicrosecondsPerInvocation="202" maxMicrosecondsPerInvocation="1177890" standardDeviationMicrosecondsPerInvocation="13336"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1542" invocations="10667" avgMicrosecondsPerInvocation="144" maxMicrosecondsPerInvocation="66873" standardDeviationMicrosecondsPerInvocation="1130"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="1321" invocations="43134" avgMicrosecondsPerInvocation="30" maxMicrosecondsPerInvocation="81030" standardDeviationMicrosecondsPerInvocation="402"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="1209" invocations="6803" avgMicrosecondsPerInvocation="177" maxMicrosecondsPerInvocation="106376" standardDeviationMicrosecondsPerInvocation="1493"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="1187" invocations="2067319" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="7400" standardDeviationMicrosecondsPerInvocation="6"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="1168" invocations="6803" avgMicrosecondsPerInvocation="171" maxMicrosecondsPerInvocation="25779" standardDeviationMicrosecondsPerInvocation="760"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="1163" invocations="6803" avgMicrosecondsPerInvocation="171" maxMicrosecondsPerInvocation="60425" standardDeviationMicrosecondsPerInvocation="910"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="1124" invocations="6803" avgMicrosecondsPerInvocation="165" maxMicrosecondsPerInvocation="66422" standardDeviationMicrosecondsPerInvocation="1655"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="1003" invocations="6803" avgMicrosecondsPerInvocation="147" maxMicrosecondsPerInvocation="152902" standardDeviationMicrosecondsPerInvocation="2008"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="841" invocations="20401" avgMicrosecondsPerInvocation="41" maxMicrosecondsPerInvocation="56958" standardDeviationMicrosecondsPerInvocation="657"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="819" invocations="6803" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="64777" standardDeviationMicrosecondsPerInvocation="951"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="801" invocations="42377" avgMicrosecondsPerInvocation="18" maxMicrosecondsPerInvocation="65367" standardDeviationMicrosecondsPerInvocation="323"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="798" invocations="47451" avgMicrosecondsPerInvocation="16" maxMicrosecondsPerInvocation="33632" standardDeviationMicrosecondsPerInvocation="173"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="793" invocations="40487" avgMicrosecondsPerInvocation="19" maxMicrosecondsPerInvocation="12988" standardDeviationMicrosecondsPerInvocation="106"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="699" invocations="4372" avgMicrosecondsPerInvocation="159" maxMicrosecondsPerInvocation="5794" standardDeviationMicrosecondsPerInvocation="332"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="656" invocations="6803" avgMicrosecondsPerInvocation="96" maxMicrosecondsPerInvocation="77293" standardDeviationMicrosecondsPerInvocation="1112"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="654" invocations="6803" avgMicrosecondsPerInvocation="96" maxMicrosecondsPerInvocation="68718" standardDeviationMicrosecondsPerInvocation="1025"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="637" invocations="6803" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="17482" standardDeviationMicrosecondsPerInvocation="397"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="637" invocations="6803" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="13397" standardDeviationMicrosecondsPerInvocation="372"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="626" invocations="6803" avgMicrosecondsPerInvocation="92" maxMicrosecondsPerInvocation="15260" standardDeviationMicrosecondsPerInvocation="385"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="620" invocations="6803" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="19002" standardDeviationMicrosecondsPerInvocation="412"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="619" invocations="6803" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="11900" standardDeviationMicrosecondsPerInvocation="316"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="604" invocations="45968" avgMicrosecondsPerInvocation="13" maxMicrosecondsPerInvocation="88257" standardDeviationMicrosecondsPerInvocation="419"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="596" invocations="6803" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="17113" standardDeviationMicrosecondsPerInvocation="370"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="594" invocations="6803" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="18776" standardDeviationMicrosecondsPerInvocation="404"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SynchronizingOnContentsOfFieldToProtectField" totalMilliseconds="591" invocations="6803" avgMicrosecondsPerInvocation="86" maxMicrosecondsPerInvocation="114141" standardDeviationMicrosecondsPerInvocation="1425"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="584" invocations="6803" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="18985" standardDeviationMicrosecondsPerInvocation="407"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="581" invocations="6803" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="20615" standardDeviationMicrosecondsPerInvocation="448"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="9171" invocations="50680" avgMicrosecondsPerInvocation="180" maxMicrosecondsPerInvocation="3455969" standardDeviationMicrosecondsPerInvocation="15383"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="6827" invocations="45800" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="100477" standardDeviationMicrosecondsPerInvocation="989"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="6806" invocations="44334" avgMicrosecondsPerInvocation="153" maxMicrosecondsPerInvocation="179630" standardDeviationMicrosecondsPerInvocation="1452"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="6328" invocations="42377" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="258260" standardDeviationMicrosecondsPerInvocation="1408"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="5457" invocations="6803" avgMicrosecondsPerInvocation="802" maxMicrosecondsPerInvocation="127943" standardDeviationMicrosecondsPerInvocation="4360"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="4938" invocations="47901" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="109164" standardDeviationMicrosecondsPerInvocation="905"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="4145" invocations="47451" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="3289101" standardDeviationMicrosecondsPerInvocation="15102"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="3027" invocations="36909" avgMicrosecondsPerInvocation="82" maxMicrosecondsPerInvocation="61453" standardDeviationMicrosecondsPerInvocation="408"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="2818" invocations="47451" avgMicrosecondsPerInvocation="59" maxMicrosecondsPerInvocation="10804" standardDeviationMicrosecondsPerInvocation="138"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1775" invocations="25766" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="49921" standardDeviationMicrosecondsPerInvocation="337"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1627" invocations="49023" avgMicrosecondsPerInvocation="33" maxMicrosecondsPerInvocation="7043" standardDeviationMicrosecondsPerInvocation="118"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1582" invocations="7800" avgMicrosecondsPerInvocation="202" maxMicrosecondsPerInvocation="80632" standardDeviationMicrosecondsPerInvocation="1154"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1522" invocations="10667" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="97228" standardDeviationMicrosecondsPerInvocation="1113"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1512" invocations="7800" avgMicrosecondsPerInvocation="193" maxMicrosecondsPerInvocation="171012" standardDeviationMicrosecondsPerInvocation="2241"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="1424" invocations="7800" avgMicrosecondsPerInvocation="182" maxMicrosecondsPerInvocation="1011465" standardDeviationMicrosecondsPerInvocation="11452"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="1276" invocations="43134" avgMicrosecondsPerInvocation="29" maxMicrosecondsPerInvocation="10948" standardDeviationMicrosecondsPerInvocation="128"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="1197" invocations="2067319" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="4691" standardDeviationMicrosecondsPerInvocation="7"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="1150" invocations="6803" avgMicrosecondsPerInvocation="169" maxMicrosecondsPerInvocation="29693" standardDeviationMicrosecondsPerInvocation="772"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="1125" invocations="6803" avgMicrosecondsPerInvocation="165" maxMicrosecondsPerInvocation="70243" standardDeviationMicrosecondsPerInvocation="982"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="1075" invocations="6803" avgMicrosecondsPerInvocation="158" maxMicrosecondsPerInvocation="59984" standardDeviationMicrosecondsPerInvocation="1426"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="1052" invocations="6803" avgMicrosecondsPerInvocation="154" maxMicrosecondsPerInvocation="53921" standardDeviationMicrosecondsPerInvocation="929"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="895" invocations="6803" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="83863" standardDeviationMicrosecondsPerInvocation="1254"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="837" invocations="6803" avgMicrosecondsPerInvocation="123" maxMicrosecondsPerInvocation="102519" standardDeviationMicrosecondsPerInvocation="1364"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="785" invocations="4372" avgMicrosecondsPerInvocation="179" maxMicrosecondsPerInvocation="85303" standardDeviationMicrosecondsPerInvocation="1349"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="748" invocations="20401" avgMicrosecondsPerInvocation="36" maxMicrosecondsPerInvocation="62021" standardDeviationMicrosecondsPerInvocation="453"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="735" invocations="42377" avgMicrosecondsPerInvocation="17" maxMicrosecondsPerInvocation="6717" standardDeviationMicrosecondsPerInvocation="59"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="701" invocations="40480" avgMicrosecondsPerInvocation="17" maxMicrosecondsPerInvocation="4903" standardDeviationMicrosecondsPerInvocation="60"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="658" invocations="6803" avgMicrosecondsPerInvocation="96" maxMicrosecondsPerInvocation="59803" standardDeviationMicrosecondsPerInvocation="780"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="644" invocations="6803" avgMicrosecondsPerInvocation="94" maxMicrosecondsPerInvocation="56257" standardDeviationMicrosecondsPerInvocation="753"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="637" invocations="6803" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="13970" standardDeviationMicrosecondsPerInvocation="389"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="616" invocations="6803" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="55741" standardDeviationMicrosecondsPerInvocation="780"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="608" invocations="6803" avgMicrosecondsPerInvocation="89" maxMicrosecondsPerInvocation="19719" standardDeviationMicrosecondsPerInvocation="388"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.DeadStoreBenchmarkDetector" totalMilliseconds="607" invocations="6803" avgMicrosecondsPerInvocation="89" maxMicrosecondsPerInvocation="180480" standardDeviationMicrosecondsPerInvocation="2201"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadForLoop" totalMilliseconds="601" invocations="6803" avgMicrosecondsPerInvocation="88" maxMicrosecondsPerInvocation="136385" standardDeviationMicrosecondsPerInvocation="1676"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="592" invocations="6803" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="17580" standardDeviationMicrosecondsPerInvocation="386"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="579" invocations="6803" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="63671" standardDeviationMicrosecondsPerInvocation="1092"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="577" invocations="6803" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="15394" standardDeviationMicrosecondsPerInvocation="383"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.IgnoredMethodReturnDetector" totalMilliseconds="575" invocations="6803" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="13639" standardDeviationMicrosecondsPerInvocation="329"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="570" invocations="6803" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="54271" standardDeviationMicrosecondsPerInvocation="720"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="566" invocations="6803" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="42742" standardDeviationMicrosecondsPerInvocation="613"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

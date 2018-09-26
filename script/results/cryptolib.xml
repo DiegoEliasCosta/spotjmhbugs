@@ -1,99 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.1.0" sequence="0" timestamp="1534886562000" analysisTimestamp="1536625130558" release="">
+<BugCollection version="3.1.0" sequence="0" timestamp="1534886562000" analysisTimestamp="1537921002456" release="">
   <Project projectName="">
     <Jar>tmp/cryptolib</Jar>
   </Project>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.api.KeyFileTest">
-      <SourceLine classname="org.cryptomator.cryptolib.api.KeyFileTest" start="19" end="48" sourcefile="KeyFileTest.java" sourcepath="org/cryptomator/cryptolib/api/KeyFileTest.java"/>
-    </Class>
-    <Method classname="org.cryptomator.cryptolib.api.KeyFileTest" name="testParse" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.api.KeyFileTest" start="25" end="32" startBytecode="0" endBytecode="29" sourcefile="KeyFileTest.java" sourcepath="org/cryptomator/cryptolib/api/KeyFileTest.java"/>
-    </Method>
-    <LocalVariable name="serialized" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.cryptomator.cryptolib.api.KeyFileTest" start="25" end="25" startBytecode="2" endBytecode="2" sourcefile="KeyFileTest.java" sourcepath="org/cryptomator/cryptolib/api/KeyFileTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.api.KeyFileTest">
-      <SourceLine classname="org.cryptomator.cryptolib.api.KeyFileTest" start="19" end="48" sourcefile="KeyFileTest.java" sourcepath="org/cryptomator/cryptolib/api/KeyFileTest.java"/>
-    </Class>
-    <Method classname="org.cryptomator.cryptolib.api.KeyFileTest" name="testParseInvalid1" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.api.KeyFileTest" start="36" end="38" startBytecode="0" endBytecode="6" sourcefile="KeyFileTest.java" sourcepath="org/cryptomator/cryptolib/api/KeyFileTest.java"/>
-    </Method>
-    <LocalVariable name="serialized" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.cryptomator.cryptolib.api.KeyFileTest" start="36" end="36" startBytecode="2" endBytecode="2" sourcefile="KeyFileTest.java" sourcepath="org/cryptomator/cryptolib/api/KeyFileTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="24" end="188" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
-    </Class>
-    <Method classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" name="testCreateFromKeyWithCorrectPassphrase" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="46" end="53" startBytecode="0" endBytecode="15" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
-    </Method>
-    <LocalVariable name="testMasterKey" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="46" end="46" startBytecode="2" endBytecode="2" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="24" end="188" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
-    </Class>
-    <Method classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" name="testCreateFromKeyWithMissingVersionMac" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="123" end="153" startBytecode="0" endBytecode="37" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
-    </Method>
-    <LocalVariable name="testMasterKey" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="123" end="123" startBytecode="2" endBytecode="2" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="24" end="188" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
-    </Class>
-    <Method classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" name="testCreateFromKeyWithPepper" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="67" end="74" startBytecode="0" endBytecode="21" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
-    </Method>
-    <LocalVariable name="testMasterKey" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="67" end="67" startBytecode="2" endBytecode="2" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="24" end="188" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
-    </Class>
-    <Method classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" name="testCreateFromKeyWithWrongPassphrase" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="57" end="63" startBytecode="0" endBytecode="13" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
-    </Method>
-    <LocalVariable name="testMasterKey" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="57" end="57" startBytecode="2" endBytecode="2" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="24" end="188" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
-    </Class>
-    <Method classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" name="testCreateFromKeyWithWrongPepper" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="78" end="84" startBytecode="0" endBytecode="19" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
-    </Method>
-    <LocalVariable name="testMasterKey" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="78" end="78" startBytecode="2" endBytecode="2" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="24" end="188" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
-    </Class>
-    <Method classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" name="testCreateFromKeyWithWrongVaultFormat" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="88" end="119" startBytecode="0" endBytecode="37" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
-    </Method>
-    <LocalVariable name="testMasterKey" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="88" end="88" startBytecode="2" endBytecode="2" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="24" end="188" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
-    </Class>
-    <Method classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" name="testCreateFromKeyWithWrongVersionMac" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="157" end="188" startBytecode="0" endBytecode="37" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
-    </Method>
-    <LocalVariable name="testMasterKey" register="1" pc="3" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" start="157" end="157" startBytecode="2" endBytecode="2" sourcefile="CryptorProviderImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/CryptorProviderImplTest.java"/>
-  </BugInstance>
   <BugInstance type="JMH_BENCHMARK_METHOD_FOUND" priority="2" rank="2" abbrev="" category="JMH">
     <Class classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark">
       <SourceLine classname="org.cryptomator.cryptolib.v1.FileContentCryptorImplBenchmark" start="37" end="71" sourcefile="FileContentCryptorImplBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileContentCryptorImplBenchmark.java"/>
@@ -225,26 +135,6 @@
     </Method>
     <SourceLine classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" start="56" end="56" startBytecode="0" endBytecode="0" sourcefile="FileHeaderCryptorBenchmark.java" sourcepath="org/cryptomator/cryptolib/v1/FileHeaderCryptorBenchmark.java"/>
   </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorImplTest">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorImplTest" start="26" end="89" sourcefile="FileHeaderCryptorImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/FileHeaderCryptorImplTest.java"/>
-    </Class>
-    <Method classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorImplTest" name="testEncryption" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorImplTest" start="42" end="57" startBytecode="0" endBytecode="17" sourcefile="FileHeaderCryptorImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/FileHeaderCryptorImplTest.java"/>
-    </Method>
-    <LocalVariable name="expected" register="2" pc="11" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.FileHeaderCryptorImplTest" start="52" end="52" startBytecode="10" endBytecode="10" sourcefile="FileHeaderCryptorImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/FileHeaderCryptorImplTest.java"/>
-  </BugInstance>
-  <BugInstance type="JMH_DEAD_STORE_VARIABLE" priority="1" rank="1" abbrev="" category="JMH">
-    <Class classname="org.cryptomator.cryptolib.v1.FileNameCryptorImplTest">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileNameCryptorImplTest" start="22" end="113" sourcefile="FileNameCryptorImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/FileNameCryptorImplTest.java"/>
-    </Class>
-    <Method classname="org.cryptomator.cryptolib.v1.FileNameCryptorImplTest" name="testDeterministicEncryptionOfFilenames" signature="()V" isStatic="false">
-      <SourceLine classname="org.cryptomator.cryptolib.v1.FileNameCryptorImplTest" start="28" end="50" startBytecode="0" endBytecode="81" sourcefile="FileNameCryptorImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/FileNameCryptorImplTest.java"/>
-    </Method>
-    <LocalVariable name="originalPath3" register="5" pc="120" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="org.cryptomator.cryptolib.v1.FileNameCryptorImplTest" start="44" end="44" startBytecode="118" endBytecode="118" sourcefile="FileNameCryptorImplTest.java" sourcepath="org/cryptomator/cryptolib/v1/FileNameCryptorImplTest.java"/>
-  </BugInstance>
   <Errors errors="0" missingClasses="41">
     <MissingClass>com.google.common.base.Preconditions</MissingClass>
     <MissingClass>com.google.common.io.BaseEncoding</MissingClass>
@@ -288,7 +178,7 @@
     <MissingClass>org.slf4j.Logger</MissingClass>
     <MissingClass>org.slf4j.LoggerFactory</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Tue, 21 Aug 2018 23:22:42 +0200" total_classes="114" referenced_classes="285" total_bugs="26" total_size="7726" num_packages="5" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="17.82" clock_seconds="5.23" peak_mbytes="338.04" alloc_mbytes="3641.00" gc_seconds="0.13" priority_2="15" priority_1="11">
+  <FindBugsSummary timestamp="Tue, 21 Aug 2018 23:22:42 +0200" total_classes="114" referenced_classes="285" total_bugs="15" total_size="7726" num_packages="5" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="17.79" clock_seconds="5.21" peak_mbytes="339.13" alloc_mbytes="3641.00" gc_seconds="0.12" priority_2="15">
     <PackageStats package="org.cryptomator.cryptolib" total_bugs="0" total_types="9" total_size="323">
       <ClassStats class="org.cryptomator.cryptolib.Cryptors" sourceFile="Cryptors.java" interface="false" size="37" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.CryptorsTest" sourceFile="CryptorsTest.java" interface="false" size="86" bugs="0"/>
@@ -300,7 +190,7 @@
       <ClassStats class="org.cryptomator.cryptolib.EncryptingWritableByteChannelTest" sourceFile="EncryptingWritableByteChannelTest.java" interface="false" size="41" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.EncryptingWritableByteChannelTest$1" sourceFile="EncryptingWritableByteChannelTest.java" interface="false" size="9" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.cryptomator.cryptolib.api" total_bugs="2" total_types="17" total_size="152" priority_1="2">
+    <PackageStats package="org.cryptomator.cryptolib.api" total_bugs="0" total_types="17" total_size="152">
       <ClassStats class="org.cryptomator.cryptolib.api.AuthenticationFailedException" sourceFile="AuthenticationFailedException.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.api.CryptoException" sourceFile="CryptoException.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.api.Cryptor" sourceFile="Cryptor.java" interface="true" size="8" bugs="0"/>
@@ -314,7 +204,7 @@
       <ClassStats class="org.cryptomator.cryptolib.api.KeyFile$1" sourceFile="KeyFile.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.api.KeyFile$ByteArrayJsonAdapter" sourceFile="KeyFile.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.api.KeyFile$GenericKeyFile" sourceFile="KeyFile.java" interface="false" size="3" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.api.KeyFileTest" sourceFile="KeyFileTest.java" interface="false" size="27" bugs="2" priority_1="2"/>
+      <ClassStats class="org.cryptomator.cryptolib.api.KeyFileTest" sourceFile="KeyFileTest.java" interface="false" size="27" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.api.KeyFileTest$1" sourceFile="KeyFileTest.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.api.KeyFileTest$KeyFileImpl" sourceFile="KeyFileTest.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.api.UnsupportedVaultFormatException" sourceFile="UnsupportedVaultFormatException.java" interface="false" size="16" bugs="0"/>
@@ -346,14 +236,14 @@
       <ClassStats class="org.cryptomator.cryptolib.common.ScryptTest" sourceFile="ScryptTest.java" interface="false" size="16" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.common.SeekableByteChannelMock" sourceFile="SeekableByteChannelMock.java" interface="false" size="45" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.cryptomator.cryptolib.v1" total_bugs="24" total_types="43" total_size="1166" priority_2="15" priority_1="9">
+    <PackageStats package="org.cryptomator.cryptolib.v1" total_bugs="15" total_types="43" total_size="1166" priority_2="15">
       <ClassStats class="org.cryptomator.cryptolib.v1.BenchmarkTest" sourceFile="BenchmarkTest.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.Constants" sourceFile="Constants.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.CryptorImpl" sourceFile="CryptorImpl.java" interface="false" size="76" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.CryptorImplTest" sourceFile="CryptorImplTest.java" interface="false" size="71" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.CryptorImplTest$DestroyableSecretKey" sourceFile="CryptorImplTest.java" interface="true" size="1" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.CryptorProviderImpl" sourceFile="CryptorProviderImpl.java" interface="false" size="62" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" sourceFile="CryptorProviderImplTest.java" interface="false" size="57" bugs="7" priority_1="7"/>
+      <ClassStats class="org.cryptomator.cryptolib.v1.CryptorProviderImplTest" sourceFile="CryptorProviderImplTest.java" interface="false" size="57" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.CryptorProviderImplTest$1" sourceFile="CryptorProviderImplTest.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.CryptorProviderImplTest$10" sourceFile="CryptorProviderImplTest.java" interface="false" size="7" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.CryptorProviderImplTest$11" sourceFile="CryptorProviderImplTest.java" interface="false" size="7" bugs="0"/>
@@ -377,14 +267,14 @@
       <ClassStats class="org.cryptomator.cryptolib.v1.FileContentEncryptorTest" sourceFile="FileContentEncryptorTest.java" interface="false" size="65" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.FileHeaderCryptorBenchmark" sourceFile="FileHeaderCryptorBenchmark.java" interface="false" size="24" bugs="2" priority_2="2"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.FileHeaderCryptorImpl" sourceFile="FileHeaderCryptorImpl.java" interface="false" size="81" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.FileHeaderCryptorImplTest" sourceFile="FileHeaderCryptorImplTest.java" interface="false" size="39" bugs="1" priority_1="1"/>
+      <ClassStats class="org.cryptomator.cryptolib.v1.FileHeaderCryptorImplTest" sourceFile="FileHeaderCryptorImplTest.java" interface="false" size="39" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.FileHeaderImpl" sourceFile="FileHeaderImpl.java" interface="false" size="35" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.FileHeaderImpl$1" sourceFile="FileHeaderImpl.java" interface="false" size="1" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.FileHeaderImpl$Payload" sourceFile="FileHeaderImpl.java" interface="false" size="38" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.FileHeaderImplTest" sourceFile="FileHeaderImplTest.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.FileNameCryptorImpl" sourceFile="FileNameCryptorImpl.java" interface="false" size="30" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.FileNameCryptorImpl$1" sourceFile="FileNameCryptorImpl.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="org.cryptomator.cryptolib.v1.FileNameCryptorImplTest" sourceFile="FileNameCryptorImplTest.java" interface="false" size="71" bugs="1" priority_1="1"/>
+      <ClassStats class="org.cryptomator.cryptolib.v1.FileNameCryptorImplTest" sourceFile="FileNameCryptorImplTest.java" interface="false" size="71" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.KeyFileImpl" sourceFile="KeyFileImpl.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.SecureRandomMock" sourceFile="SecureRandomMock.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="org.cryptomator.cryptolib.v1.SecureRandomMock$1" sourceFile="SecureRandomMock.java" interface="false" size="6" bugs="0"/>
@@ -414,43 +304,40 @@
       <ClassStats class="org.cryptomator.cryptolib.v1.generated.FileHeaderCryptorBenchmark_jmhType_B3" sourceFile="FileHeaderCryptorBenchmark_jmhType_B3.java" interface="false" size="259" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="336" invocations="1044" avgMicrosecondsPerInvocation="322" maxMicrosecondsPerInvocation="21442" standardDeviationMicrosecondsPerInvocation="1168"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="260" invocations="475" avgMicrosecondsPerInvocation="547" maxMicrosecondsPerInvocation="25211" standardDeviationMicrosecondsPerInvocation="1419"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="249" invocations="563" avgMicrosecondsPerInvocation="443" maxMicrosecondsPerInvocation="10608" standardDeviationMicrosecondsPerInvocation="1000"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="212" invocations="495" avgMicrosecondsPerInvocation="429" maxMicrosecondsPerInvocation="8171" standardDeviationMicrosecondsPerInvocation="945"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="211" invocations="503" avgMicrosecondsPerInvocation="419" maxMicrosecondsPerInvocation="8791" standardDeviationMicrosecondsPerInvocation="866"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="209" invocations="547" avgMicrosecondsPerInvocation="383" maxMicrosecondsPerInvocation="10170" standardDeviationMicrosecondsPerInvocation="798"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="194" invocations="1048" avgMicrosecondsPerInvocation="185" maxMicrosecondsPerInvocation="7261" standardDeviationMicrosecondsPerInvocation="278"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="152" invocations="285" avgMicrosecondsPerInvocation="533" maxMicrosecondsPerInvocation="9065" standardDeviationMicrosecondsPerInvocation="1076"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="148" invocations="463" avgMicrosecondsPerInvocation="320" maxMicrosecondsPerInvocation="32770" standardDeviationMicrosecondsPerInvocation="1590"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="144" invocations="527" avgMicrosecondsPerInvocation="274" maxMicrosecondsPerInvocation="15359" standardDeviationMicrosecondsPerInvocation="764"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="132" invocations="1009" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="1991" standardDeviationMicrosecondsPerInvocation="203"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="130" invocations="285" avgMicrosecondsPerInvocation="459" maxMicrosecondsPerInvocation="8230" standardDeviationMicrosecondsPerInvocation="910"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="90" invocations="114" avgMicrosecondsPerInvocation="791" maxMicrosecondsPerInvocation="34176" standardDeviationMicrosecondsPerInvocation="3891"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="79" invocations="527" avgMicrosecondsPerInvocation="151" maxMicrosecondsPerInvocation="36189" standardDeviationMicrosecondsPerInvocation="1580"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="67" invocations="503" avgMicrosecondsPerInvocation="133" maxMicrosecondsPerInvocation="5742" standardDeviationMicrosecondsPerInvocation="375"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.FixtureWithInvocationScopeDetector" totalMilliseconds="64" invocations="114" avgMicrosecondsPerInvocation="569" maxMicrosecondsPerInvocation="30609" standardDeviationMicrosecondsPerInvocation="3418"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="56" invocations="285" avgMicrosecondsPerInvocation="197" maxMicrosecondsPerInvocation="2850" standardDeviationMicrosecondsPerInvocation="412"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="54" invocations="372" avgMicrosecondsPerInvocation="147" maxMicrosecondsPerInvocation="9396" standardDeviationMicrosecondsPerInvocation="617"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="52" invocations="934" avgMicrosecondsPerInvocation="56" maxMicrosecondsPerInvocation="1626" standardDeviationMicrosecondsPerInvocation="116"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="51" invocations="285" avgMicrosecondsPerInvocation="179" maxMicrosecondsPerInvocation="3557" standardDeviationMicrosecondsPerInvocation="405"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="50" invocations="114" avgMicrosecondsPerInvocation="447" maxMicrosecondsPerInvocation="4851" standardDeviationMicrosecondsPerInvocation="709"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="49" invocations="114" avgMicrosecondsPerInvocation="437" maxMicrosecondsPerInvocation="6037" standardDeviationMicrosecondsPerInvocation="953"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="45" invocations="114" avgMicrosecondsPerInvocation="402" maxMicrosecondsPerInvocation="4060" standardDeviationMicrosecondsPerInvocation="718"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="44" invocations="114" avgMicrosecondsPerInvocation="389" maxMicrosecondsPerInvocation="6133" standardDeviationMicrosecondsPerInvocation="1114"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="44" invocations="456" avgMicrosecondsPerInvocation="96" maxMicrosecondsPerInvocation="5839" standardDeviationMicrosecondsPerInvocation="314"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindFieldSelfAssignment" totalMilliseconds="42" invocations="114" avgMicrosecondsPerInvocation="376" maxMicrosecondsPerInvocation="29229" standardDeviationMicrosecondsPerInvocation="2722"/>
-      <ClassProfile name="de.heidelberg.pvs.diego.detectors.StateFinalFieldDetector" totalMilliseconds="42" invocations="114" avgMicrosecondsPerInvocation="374" maxMicrosecondsPerInvocation="25396" standardDeviationMicrosecondsPerInvocation="2397"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="41" invocations="114" avgMicrosecondsPerInvocation="367" maxMicrosecondsPerInvocation="3130" standardDeviationMicrosecondsPerInvocation="726"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="39" invocations="285" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="2385" standardDeviationMicrosecondsPerInvocation="247"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="38" invocations="285" avgMicrosecondsPerInvocation="135" maxMicrosecondsPerInvocation="8277" standardDeviationMicrosecondsPerInvocation="541"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="37" invocations="285" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="4412" standardDeviationMicrosecondsPerInvocation="343"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="31" invocations="114" avgMicrosecondsPerInvocation="276" maxMicrosecondsPerInvocation="7041" standardDeviationMicrosecondsPerInvocation="757"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="30" invocations="475" avgMicrosecondsPerInvocation="63" maxMicrosecondsPerInvocation="1170" standardDeviationMicrosecondsPerInvocation="116"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="29" invocations="114" avgMicrosecondsPerInvocation="262" maxMicrosecondsPerInvocation="11000" standardDeviationMicrosecondsPerInvocation="1469"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="28" invocations="9839" avgMicrosecondsPerInvocation="2" maxMicrosecondsPerInvocation="1382" standardDeviationMicrosecondsPerInvocation="24"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="27" invocations="285" avgMicrosecondsPerInvocation="96" maxMicrosecondsPerInvocation="1815" standardDeviationMicrosecondsPerInvocation="213"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="27" invocations="527" avgMicrosecondsPerInvocation="51" maxMicrosecondsPerInvocation="3086" standardDeviationMicrosecondsPerInvocation="168"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="284" invocations="1044" avgMicrosecondsPerInvocation="272" maxMicrosecondsPerInvocation="20319" standardDeviationMicrosecondsPerInvocation="757"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="274" invocations="475" avgMicrosecondsPerInvocation="578" maxMicrosecondsPerInvocation="29359" standardDeviationMicrosecondsPerInvocation="1608"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="256" invocations="563" avgMicrosecondsPerInvocation="455" maxMicrosecondsPerInvocation="9600" standardDeviationMicrosecondsPerInvocation="1022"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="221" invocations="495" avgMicrosecondsPerInvocation="448" maxMicrosecondsPerInvocation="9634" standardDeviationMicrosecondsPerInvocation="1063"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="211" invocations="503" avgMicrosecondsPerInvocation="420" maxMicrosecondsPerInvocation="7590" standardDeviationMicrosecondsPerInvocation="860"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="202" invocations="547" avgMicrosecondsPerInvocation="370" maxMicrosecondsPerInvocation="11404" standardDeviationMicrosecondsPerInvocation="789"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="196" invocations="1048" avgMicrosecondsPerInvocation="187" maxMicrosecondsPerInvocation="3130" standardDeviationMicrosecondsPerInvocation="185"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="188" invocations="285" avgMicrosecondsPerInvocation="662" maxMicrosecondsPerInvocation="22111" standardDeviationMicrosecondsPerInvocation="1774"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="160" invocations="285" avgMicrosecondsPerInvocation="562" maxMicrosecondsPerInvocation="18062" standardDeviationMicrosecondsPerInvocation="1449"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector" totalMilliseconds="141" invocations="114" avgMicrosecondsPerInvocation="1240" maxMicrosecondsPerInvocation="38120" standardDeviationMicrosecondsPerInvocation="5414"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="134" invocations="1009" avgMicrosecondsPerInvocation="133" maxMicrosecondsPerInvocation="2401" standardDeviationMicrosecondsPerInvocation="195"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="129" invocations="527" avgMicrosecondsPerInvocation="245" maxMicrosecondsPerInvocation="10524" standardDeviationMicrosecondsPerInvocation="564"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="111" invocations="463" avgMicrosecondsPerInvocation="240" maxMicrosecondsPerInvocation="2800" standardDeviationMicrosecondsPerInvocation="448"/>
+      <ClassProfile name="de.heidelberg.pvs.diego.detectors.FixtureWithInvocationScopeDetector" totalMilliseconds="103" invocations="114" avgMicrosecondsPerInvocation="911" maxMicrosecondsPerInvocation="35466" standardDeviationMicrosecondsPerInvocation="5053"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="75" invocations="527" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="29593" standardDeviationMicrosecondsPerInvocation="1319"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="60" invocations="285" avgMicrosecondsPerInvocation="211" maxMicrosecondsPerInvocation="4592" standardDeviationMicrosecondsPerInvocation="461"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="59" invocations="503" avgMicrosecondsPerInvocation="118" maxMicrosecondsPerInvocation="1876" standardDeviationMicrosecondsPerInvocation="236"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="56" invocations="372" avgMicrosecondsPerInvocation="153" maxMicrosecondsPerInvocation="14898" standardDeviationMicrosecondsPerInvocation="799"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="51" invocations="114" avgMicrosecondsPerInvocation="447" maxMicrosecondsPerInvocation="4470" standardDeviationMicrosecondsPerInvocation="881"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="50" invocations="285" avgMicrosecondsPerInvocation="175" maxMicrosecondsPerInvocation="4322" standardDeviationMicrosecondsPerInvocation="410"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="50" invocations="114" avgMicrosecondsPerInvocation="438" maxMicrosecondsPerInvocation="4863" standardDeviationMicrosecondsPerInvocation="729"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="49" invocations="934" avgMicrosecondsPerInvocation="52" maxMicrosecondsPerInvocation="1480" standardDeviationMicrosecondsPerInvocation="101"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="46" invocations="285" avgMicrosecondsPerInvocation="164" maxMicrosecondsPerInvocation="3927" standardDeviationMicrosecondsPerInvocation="339"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="43" invocations="114" avgMicrosecondsPerInvocation="381" maxMicrosecondsPerInvocation="5537" standardDeviationMicrosecondsPerInvocation="733"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="43" invocations="114" avgMicrosecondsPerInvocation="377" maxMicrosecondsPerInvocation="5049" standardDeviationMicrosecondsPerInvocation="948"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteRecursiveLoop" totalMilliseconds="40" invocations="114" avgMicrosecondsPerInvocation="351" maxMicrosecondsPerInvocation="27767" standardDeviationMicrosecondsPerInvocation="2586"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="39" invocations="285" avgMicrosecondsPerInvocation="138" maxMicrosecondsPerInvocation="5617" standardDeviationMicrosecondsPerInvocation="441"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="39" invocations="456" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="2061" standardDeviationMicrosecondsPerInvocation="189"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="36" invocations="114" avgMicrosecondsPerInvocation="322" maxMicrosecondsPerInvocation="3261" standardDeviationMicrosecondsPerInvocation="635"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="36" invocations="285" avgMicrosecondsPerInvocation="127" maxMicrosecondsPerInvocation="3418" standardDeviationMicrosecondsPerInvocation="300"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="35" invocations="527" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="9633" standardDeviationMicrosecondsPerInvocation="449"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="29" invocations="114" avgMicrosecondsPerInvocation="258" maxMicrosecondsPerInvocation="7413" standardDeviationMicrosecondsPerInvocation="737"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="29" invocations="475" avgMicrosecondsPerInvocation="61" maxMicrosecondsPerInvocation="1054" standardDeviationMicrosecondsPerInvocation="115"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="28" invocations="285" avgMicrosecondsPerInvocation="98" maxMicrosecondsPerInvocation="1824" standardDeviationMicrosecondsPerInvocation="215"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
