@@ -66,7 +66,7 @@ To be described...
 
 * [Diego Costa](https://github.com/DiegoEliasCosta)
 * [Philip Leitner](https://github.com/xLeitix)
-* [Cor-Paul Benzemer](https://github.com/corpaul)
+* [Cor-Paul Bezemer](https://www.ece.ualberta.ca/~bezemer/)
 
 
 
