@@ -1,4 +1,4 @@
-# Performance Tests Checker
+# SpotJMHBugs
 
 A SpotBugs plugin for static analysis on JMH performance tests.
 
