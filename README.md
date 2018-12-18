@@ -58,20 +58,15 @@ This makes it easy for users to add their own detectors alongside the ones that 
   1. To make sure that you have deployed a valid plugin jar, you can run the command `java -jar $SPOTBUGS_HOME/lib/spotbugs.jar -textui -showPlugins`. The performance-checker plugin should be listed in the Available plugins.  
 
 
-## Newly Implemented Rules ##
+## Bad JMH Practices ##
 
 To be described...
 
 ## Authors
 
 * [Diego Costa](https://github.com/DiegoEliasCosta)
-* Philip Leitner
-* Cor-Paul Benzemer
-* Christoph Laaber 
+* [Philip Leitner](https://github.com/xLeitix)
+* [Cor-Paul Benzemer](https://github.com/corpaul)
 
-
-## License
-
-To be described...
 
 
