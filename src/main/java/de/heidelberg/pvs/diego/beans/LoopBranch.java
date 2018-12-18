@@ -1,5 +1,11 @@
 package de.heidelberg.pvs.diego.beans;
 
+/**
+ * Class used to register a loop in the code. 
+ * 
+ * @author diego.costa
+ *
+ */
 public class LoopBranch {
 
 	int start;
