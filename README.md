@@ -68,7 +68,7 @@ Our plugin detects five bad practices related to benchmark creation:
 - Running fixture methods for each benchmark method invocation (INVO)
 - Configuring benchmarks with zero forks (FORK)
 
-For more details on each of the above mentioned bad practices, please refer to our (TSE paper)[https://www.researchgate.net/publication/333825812]
+For more details on each of the above mentioned bad practices, please refer to our [TSE paper](https://www.researchgate.net/publication/333825812)
 
 ## Authors
 
