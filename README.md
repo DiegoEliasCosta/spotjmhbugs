@@ -60,7 +60,15 @@ This makes it easy for users to add their own detectors alongside the ones that 
 
 ## Bad JMH Practices ##
 
-To be described...
+Our plugin detects five bad practices related to benchmark creation:
+
+- Not using returned computation (RETU)
+- Using accumulation to consume values inside a loop (LOOP)
+- Using final primitive for benchmark inputs (FINAL)
+- Running fixture methods for each benchmark method invocation (INVO)
+- Configuring benchmarks with zero forks (FORK)
+
+For more details on each of the above mentioned bad practices, please refer to our (TSE paper)[https://www.researchgate.net/publication/333825812]
 
 ## Authors
 
