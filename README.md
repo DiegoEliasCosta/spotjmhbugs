@@ -34,7 +34,7 @@ mvn package
 
 ## Deployment to SpotBugs
 
-There are multiple ways of using performance-tests-checker in your environment. For a detailed explanation, please refer to the [official FindBugs documentation](http://findbugs.sourceforge.net/AddingDetectors.txt). 
+There are multiple ways of using SpotJMHBugs in your environment. For a detailed explanation, please refer to the [official FindBugs documentation](http://findbugs.sourceforge.net/AddingDetectors.txt). 
 
 ### Adding to Eclipse Plugin ###
 
