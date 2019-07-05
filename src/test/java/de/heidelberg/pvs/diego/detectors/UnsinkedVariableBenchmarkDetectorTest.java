@@ -26,7 +26,7 @@ public class UnsinkedVariableBenchmarkDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_UNSINKED_VARIABLE").build();
-		assertThat(bugCollection, containsExactly(1, bugTypeMatcher));
+		assertThat(bugCollection, containsExactly(2, bugTypeMatcher));
 	}
 	
 	@Test
