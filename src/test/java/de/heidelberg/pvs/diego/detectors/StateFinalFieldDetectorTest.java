@@ -1,6 +1,6 @@
 package de.heidelberg.pvs.diego.detectors;
 
-import static edu.umd.cs.findbugs.test.SpotBugsRule.containsExactly;
+import static edu.umd.cs.findbugs.test.CountMatcher.containsExactly;
 import static org.junit.Assert.assertThat;
 
 import java.nio.file.Path;
@@ -26,13 +26,13 @@ public class StateFinalFieldDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_STATE_FINAL_FIELD").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
+		assertThat(bugCollection, containsExactly(0, bugTypeMatcher));
 		
 		BugInstanceMatcher primitiveBugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_STATE_FINAL_PRIMITIVE").build();
-		assertThat(bugCollection, containsExactly(primitiveBugTypeMatcher , 1));
+		assertThat(bugCollection, containsExactly(1, primitiveBugTypeMatcher ));
 		
 		BugInstanceMatcher staticBugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_STATE_FINAL_STATIC_PRIMITIVE").build();
-		assertThat(bugCollection, containsExactly(staticBugTypeMatcher , 0));
+		assertThat(bugCollection, containsExactly(0, staticBugTypeMatcher));
 	}
 	
 	@Test
@@ -42,7 +42,7 @@ public class StateFinalFieldDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_STATE_FINAL_FIELD").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0)); // No cases
+		assertThat(bugCollection, containsExactly(0, bugTypeMatcher)); // No cases
 	}
 	
 	
@@ -53,10 +53,10 @@ public class StateFinalFieldDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 		
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_STATE_FINAL_FIELD").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
+		assertThat(bugCollection, containsExactly(0, bugTypeMatcher));
 
 		BugInstanceMatcher primitiveBugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_STATE_FINAL_PRIMITIVE").build();
-		assertThat(bugCollection, containsExactly(primitiveBugTypeMatcher, 3));
+		assertThat(bugCollection, containsExactly(3, primitiveBugTypeMatcher));
 	}
 	
 	
@@ -71,13 +71,13 @@ public class StateFinalFieldDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(outerClassPath, innerClassPath);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_STATE_FINAL_FIELD").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
+		assertThat(bugCollection, containsExactly(0, bugTypeMatcher));
 		
 		BugInstanceMatcher primitiveBugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_STATE_FINAL_PRIMITIVE").build();
-		assertThat(bugCollection, containsExactly(primitiveBugTypeMatcher, 1));
+		assertThat(bugCollection, containsExactly(1, primitiveBugTypeMatcher));
 		
 		BugInstanceMatcher staticBugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_STATE_FINAL_STATIC_PRIMITIVE").build();
-		assertThat(bugCollection, containsExactly(staticBugTypeMatcher, 1));
+		assertThat(bugCollection, containsExactly(1, staticBugTypeMatcher));
 	}
 
 }

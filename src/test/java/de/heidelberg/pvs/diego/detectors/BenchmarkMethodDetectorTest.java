@@ -1,6 +1,6 @@
 package de.heidelberg.pvs.diego.detectors;
 
-import static edu.umd.cs.findbugs.test.SpotBugsRule.containsExactly;
+import static edu.umd.cs.findbugs.test.CountMatcher.containsExactly;
 import static org.junit.Assert.assertThat;
 
 import java.nio.file.Path;
@@ -28,7 +28,7 @@ public class BenchmarkMethodDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_BENCHMARK_METHOD_FOUND").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 6));
+		assertThat(bugCollection, containsExactly(6, bugTypeMatcher));
 	}
 	
 	@Test
@@ -39,7 +39,7 @@ public class BenchmarkMethodDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_BENCHMARK_METHOD_FOUND").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 1));
+		assertThat(bugCollection, containsExactly(1, bugTypeMatcher));
 	}
 	
 	@Test
@@ -50,7 +50,7 @@ public class BenchmarkMethodDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_BENCHMARK_METHOD_FOUND").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 2));
+		assertThat(bugCollection, containsExactly(2, bugTypeMatcher));
 	}
 	
 	@Test
@@ -61,7 +61,7 @@ public class BenchmarkMethodDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_BENCHMARK_METHOD_FOUND").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 2));
+		assertThat(bugCollection, containsExactly(2, bugTypeMatcher));
 	}
 	
 	@Test
@@ -72,7 +72,7 @@ public class BenchmarkMethodDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_BENCHMARK_METHOD_FOUND").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 2));
+		assertThat(bugCollection, containsExactly(2, bugTypeMatcher));
 	}
 	
 	
@@ -84,7 +84,7 @@ public class BenchmarkMethodDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_BENCHMARK_METHOD_FOUND").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 3));
+		assertThat(bugCollection, containsExactly(3, bugTypeMatcher));
 	}
 	
 	@Test
@@ -95,7 +95,7 @@ public class BenchmarkMethodDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_BENCHMARK_METHOD_FOUND").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 4));
+		assertThat(bugCollection, containsExactly(4, bugTypeMatcher));
 	}
 	
 	@Test
@@ -106,7 +106,7 @@ public class BenchmarkMethodDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_BENCHMARK_METHOD_FOUND").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 4));
+		assertThat(bugCollection, containsExactly(4, bugTypeMatcher));
 	}
 
 

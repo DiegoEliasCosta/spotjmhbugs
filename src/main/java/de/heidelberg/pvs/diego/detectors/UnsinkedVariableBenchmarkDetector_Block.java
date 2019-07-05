@@ -1,38 +1,13 @@
 package de.heidelberg.pvs.diego.detectors;
 
-import java.util.BitSet;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
-
+import edu.umd.cs.findbugs.BugReporter;
+import edu.umd.cs.findbugs.ba.*;
+import edu.umd.cs.findbugs.ba.BasicBlock.InstructionIterator;
 import org.apache.bcel.classfile.LineNumberTable;
 import org.apache.bcel.classfile.Method;
-import org.apache.bcel.generic.ConstantPoolGen;
-import org.apache.bcel.generic.IINC;
-import org.apache.bcel.generic.INVOKEVIRTUAL;
-import org.apache.bcel.generic.Instruction;
-import org.apache.bcel.generic.InstructionHandle;
-import org.apache.bcel.generic.LoadInstruction;
-import org.apache.bcel.generic.LocalVariableGen;
-import org.apache.bcel.generic.MethodGen;
-import org.apache.bcel.generic.StoreInstruction;
-import org.dom4j.io.STAXEventReader;
+import org.apache.bcel.generic.*;
 
-import edu.umd.cs.findbugs.BugReporter;
-import edu.umd.cs.findbugs.ba.BasicBlock;
-import edu.umd.cs.findbugs.ba.BasicBlock.InstructionIterator;
-import sun.security.provider.NativePRNG.Blocking;
-import edu.umd.cs.findbugs.ba.CFG;
-import edu.umd.cs.findbugs.ba.CFGBuilderException;
-import edu.umd.cs.findbugs.ba.ClassContext;
-import edu.umd.cs.findbugs.ba.DataflowAnalysisException;
-import edu.umd.cs.findbugs.ba.LiveLocalStoreAnalysis;
-import edu.umd.cs.findbugs.ba.LiveLocalStoreDataflow;
-import edu.umd.cs.findbugs.ba.Location;
-import edu.umd.cs.findbugs.ba.XMethod;
+import java.util.*;
 
 public class UnsinkedVariableBenchmarkDetector_Block extends AbstractJMHBenchmarkMethodDetector {
 

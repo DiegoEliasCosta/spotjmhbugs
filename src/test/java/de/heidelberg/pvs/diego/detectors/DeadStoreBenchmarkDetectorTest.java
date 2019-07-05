@@ -1,6 +1,6 @@
 package de.heidelberg.pvs.diego.detectors;
 
-import static edu.umd.cs.findbugs.test.SpotBugsRule.containsExactly;
+import static edu.umd.cs.findbugs.test.CountMatcher.containsExactly;
 import static org.junit.Assert.assertThat;
 
 import java.nio.file.Path;
@@ -35,7 +35,7 @@ public class DeadStoreBenchmarkDetectorTest {
 		
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_DEAD_STORE_VARIABLE").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 2));
+		assertThat(bugCollection, containsExactly(2, bugTypeMatcher));
 	}
 	
 	@Test
@@ -45,6 +45,6 @@ public class DeadStoreBenchmarkDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_DEAD_STORE_VARIABLE").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
+		assertThat(bugCollection, containsExactly(0, bugTypeMatcher));
 	}
 }

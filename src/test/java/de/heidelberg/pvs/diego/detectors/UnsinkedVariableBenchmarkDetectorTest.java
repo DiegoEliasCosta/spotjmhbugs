@@ -1,6 +1,6 @@
 package de.heidelberg.pvs.diego.detectors;
 
-import static edu.umd.cs.findbugs.test.SpotBugsRule.containsExactly;
+import static edu.umd.cs.findbugs.test.CountMatcher.containsExactly;
 import static org.junit.Assert.assertThat;
 
 import java.nio.file.Path;
@@ -26,7 +26,7 @@ public class UnsinkedVariableBenchmarkDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_UNSINKED_VARIABLE").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 1));
+		assertThat(bugCollection, containsExactly(1, bugTypeMatcher));
 	}
 	
 	@Test
@@ -36,7 +36,7 @@ public class UnsinkedVariableBenchmarkDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_UNSINKED_VARIABLE").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 1));
+		assertThat(bugCollection, containsExactly(1, bugTypeMatcher));
 	}
 	
 	@Test
@@ -46,7 +46,7 @@ public class UnsinkedVariableBenchmarkDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_UNSINKED_VARIABLE").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
+		assertThat(bugCollection, containsExactly(0, bugTypeMatcher));
 	}
 	
 	@Test
@@ -56,7 +56,7 @@ public class UnsinkedVariableBenchmarkDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_UNSINKED_VARIABLE").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 1));
+		assertThat(bugCollection, containsExactly(1, bugTypeMatcher));
 	
 	}
 //	@Test
