@@ -34,7 +34,7 @@ mvn package
 
 ## Deployment to SpotBugs
 
-There are multiple ways of using performance-tests-checker in your environment. For a detailed explanation, please refer to the [official FindBugs documentation](http://findbugs.sourceforge.net/AddingDetectors.txt). 
+There are multiple ways of using SpotJMHBugs in your environment. For a detailed explanation, please refer to the [official FindBugs documentation](http://findbugs.sourceforge.net/AddingDetectors.txt). 
 
 ### Adding to Eclipse Plugin ###
 
@@ -60,13 +60,21 @@ This makes it easy for users to add their own detectors alongside the ones that 
 
 ## Bad JMH Practices ##
 
-To be described...
+Our plugin detects five bad practices related to benchmark creation:
+
+- Not using returned computation (RETU)
+- Using accumulation to consume values inside a loop (LOOP)
+- Using final primitive for benchmark inputs (FINAL)
+- Running fixture methods for each benchmark method invocation (INVO)
+- Configuring benchmarks with zero forks (FORK)
+
+For more details on each of the above mentioned bad practices, please refer to our [TSE paper](https://www.researchgate.net/publication/333825812)
 
 ## Authors
 
 * [Diego Costa](https://github.com/DiegoEliasCosta)
 * [Philip Leitner](https://github.com/xLeitix)
-* [Cor-Paul Benzemer](https://github.com/corpaul)
+* [Cor-Paul Bezemer](https://www.ece.ualberta.ca/~bezemer/)
 
 
 
