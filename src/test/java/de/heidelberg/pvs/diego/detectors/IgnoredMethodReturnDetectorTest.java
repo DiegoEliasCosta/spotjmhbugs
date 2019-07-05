@@ -1,6 +1,6 @@
 package de.heidelberg.pvs.diego.detectors;
 
-import static edu.umd.cs.findbugs.test.SpotBugsRule.containsExactly;
+import static edu.umd.cs.findbugs.test.CountMatcher.containsExactly;
 import static org.junit.Assert.assertThat;
 
 import java.nio.file.Path;
@@ -26,7 +26,7 @@ public class IgnoredMethodReturnDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_METHOD_RETURN").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
+		assertThat(bugCollection, containsExactly(0, bugTypeMatcher));
 	}
 	
 
@@ -37,7 +37,7 @@ public class IgnoredMethodReturnDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_METHOD_RETURN").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
+		assertThat(bugCollection, containsExactly(0, bugTypeMatcher));
 	}
 	
 	
@@ -48,7 +48,7 @@ public class IgnoredMethodReturnDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_METHOD_RETURN").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
+		assertThat(bugCollection, containsExactly(0, bugTypeMatcher));
 	}
 	
 	
@@ -60,7 +60,7 @@ public class IgnoredMethodReturnDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_METHOD_RETURN").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
+		assertThat(bugCollection, containsExactly(0, bugTypeMatcher));
 	}
 	
 }

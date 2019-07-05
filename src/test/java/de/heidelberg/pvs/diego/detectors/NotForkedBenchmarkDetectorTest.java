@@ -1,8 +1,9 @@
 package de.heidelberg.pvs.diego.detectors;
 
-import static edu.umd.cs.findbugs.test.SpotBugsRule.containsExactly;
+import static edu.umd.cs.findbugs.test.CountMatcher.containsExactly;
 import static org.junit.Assert.assertThat;
 
+import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -23,10 +24,11 @@ public class NotForkedBenchmarkDetectorTest {
 	public void testOnJMHSample_12() throws Exception {
 		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.jmh".replace('.', '/'),
 				"JMHSample_12_Forking.class");
+
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_NOTFORKED_BENCHMARK").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 3));
+		assertThat(bugCollection, containsExactly(3, bugTypeMatcher));
 	}
 	
 	@Test
@@ -36,7 +38,7 @@ public class NotForkedBenchmarkDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_NOTFORKED_BENCHMARK").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
+		assertThat(bugCollection, containsExactly(0, bugTypeMatcher));
 	}
 	
 	@Test
@@ -46,7 +48,7 @@ public class NotForkedBenchmarkDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_NOTFORKED_BENCHMARK").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 2));
+		assertThat(bugCollection, containsExactly(2, bugTypeMatcher));
 	}
 
 

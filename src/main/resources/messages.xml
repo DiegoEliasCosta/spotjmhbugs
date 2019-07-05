@@ -134,20 +134,6 @@ by a Blackhole to avoid dead-code optimization.</p>
     </Details>
   </BugPattern>
 
-	<BugPattern type="JMH_STATE_FINAL_FIELD">
-		<ShortDescription>JMH State field declared final.</ShortDescription>
-		<LongDescription>State field declared final in {1}</LongDescription>
-		<Details>
-<![CDATA[
-<p>Final fields pose a threat to benchmark measurements
-as it gives the compiler the possibility of applying the
-constant-folding. If JVM realizes the result of the computation is the
-same no matter what, it can cleverly optimize it. In the case of a JMH benchmark, that means
-it can move the computation outside of the internal JMH loop.</p>
-]]>
-		</Details>
-	</BugPattern>
-  
     <BugPattern type="JMH_STATE_FINAL_PRIMITIVE">
     <ShortDescription>JMH State primitive field declared final.</ShortDescription>
     <LongDescription>State field declared final in {1}</LongDescription>

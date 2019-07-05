@@ -1,6 +1,6 @@
 package de.heidelberg.pvs.diego.detectors;
 
-import static edu.umd.cs.findbugs.test.SpotBugsRule.containsExactly;
+import static edu.umd.cs.findbugs.test.CountMatcher.containsExactly;
 import static org.junit.Assert.assertThat;
 
 import java.nio.file.Path;
@@ -30,10 +30,10 @@ public class IgnoredStaticMethodReturnWithPrimitivesDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_STATIC_PRIMITIVE_METHOD_RETURN").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 4));
+		assertThat(bugCollection, containsExactly(4, bugTypeMatcher));
 		
 		BugInstanceMatcher bugTypeMatcher2 = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_STATIC_METHOD_RETURN").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher2, 3));
+		assertThat(bugCollection, containsExactly( 3, bugTypeMatcher2));
 	}
 	
 

@@ -15,8 +15,8 @@
 	<Detector class="de.heidelberg.pvs.diego.detectors.LoopInsideBenchmarkDetector"
 		reports="JMH_LOOP_INSIDE_BENCHMARK" speed="fast" />
     
-  <Detector class="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector"
-    reports="JMH_UNSAFELOOP_INSIDE_BENCHMARK" speed="fast" />
+  	<Detector class="de.heidelberg.pvs.diego.detectors.UnsafeLoopInsideBenchmarkDetector"
+    	reports="JMH_UNSAFELOOP_INSIDE_BENCHMARK" speed="fast" />
 		
 	<Detector class="de.heidelberg.pvs.diego.detectors.NotForkedBenchmarkDetector"
 		reports="JMH_NOTFORKED_BENCHMARK" speed="fast" />
@@ -38,13 +38,12 @@
   reports="JMH_UNSINKED_VARIABLE"/>
     
 
-	<!-- JMH CORRECNESS BUGS -->
+	<!-- JMH CORRECTNESS BUGS -->
 	<BugPattern type="JMH_IGNORED_METHOD_RETURN" category="JMH" />
 	<BugPattern type="JMH_IGNORED_STATIC_METHOD_RETURN" category="JMH" />
 	<BugPattern type="JMH_IGNORED_STATIC_PRIMITIVE_METHOD_RETURN" category="JMH" />
-	<BugPattern type="JMH_STATE_FINAL_FIELD" category="JMH" />
 	<BugPattern type="JMH_STATE_FINAL_PRIMITIVE" category="JMH" />
-  <BugPattern type="JMH_STATE_FINAL_STATIC_PRIMITIVE" category="JMH" />
+  	<BugPattern type="JMH_STATE_FINAL_STATIC_PRIMITIVE" category="JMH" />
 
 	<!-- JMH BEST PRACTICES BUGS -->
 	<BugPattern type="JMH_LOOP_INSIDE_BENCHMARK" category="JMH" />
@@ -55,7 +54,6 @@
 	<BugPattern type="JMH_BENCHMARK_METHOD_FOUND" category="JMH" />
 	<BugPattern type="JMH_DEAD_STORE_VARIABLE" category="JMH" />
 	<BugPattern type="JMH_UNSINKED_VARIABLE" category="JMH" />
-  
 
 
 </FindbugsPlugin>

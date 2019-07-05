@@ -1,6 +1,6 @@
 package de.heidelberg.pvs.diego.detectors;
 
-import static edu.umd.cs.findbugs.test.SpotBugsRule.containsExactly;
+import static edu.umd.cs.findbugs.test.CountMatcher.containsExactly;
 import static org.junit.Assert.assertThat;
 
 import java.nio.file.Path;
@@ -31,7 +31,7 @@ public class FixtureWithInvocationScopeDetectionTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path, normalStateClassPath, laggedStateClassPath);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_FIXTURE_USING_INVOCATION_SCOPE").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 1));
+		assertThat(bugCollection, containsExactly(1, bugTypeMatcher));
 	}
 	
 	@Test
@@ -42,7 +42,7 @@ public class FixtureWithInvocationScopeDetectionTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_FIXTURE_USING_INVOCATION_SCOPE").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
+		assertThat(bugCollection, containsExactly(0, bugTypeMatcher));
 	}
 
 }

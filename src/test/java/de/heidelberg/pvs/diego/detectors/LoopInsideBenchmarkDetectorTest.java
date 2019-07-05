@@ -1,6 +1,6 @@
 package de.heidelberg.pvs.diego.detectors;
 
-import static edu.umd.cs.findbugs.test.SpotBugsRule.containsExactly;
+import static edu.umd.cs.findbugs.test.CountMatcher.containsExactly;
 import static org.junit.Assert.assertThat;
 
 import java.nio.file.Path;
@@ -26,8 +26,7 @@ public class LoopInsideBenchmarkDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_LOOP_INSIDE_BENCHMARK").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 2));
-	}
+		assertThat(bugCollection, containsExactly( 2, bugTypeMatcher));	}
 	
 	@Test
 	public void testOnJMHSample_11() throws Exception {
@@ -36,7 +35,7 @@ public class LoopInsideBenchmarkDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_LOOP_INSIDE_BENCHMARK").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
+		assertThat(bugCollection, containsExactly(0, bugTypeMatcher));
 	}
 	
 	@Test
@@ -46,7 +45,7 @@ public class LoopInsideBenchmarkDetectorTest {
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
 		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_LOOP_INSIDE_BENCHMARK").build();
-		assertThat(bugCollection, containsExactly(bugTypeMatcher, 1));
+		assertThat(bugCollection, containsExactly(1, bugTypeMatcher));
 	}
 
 }
