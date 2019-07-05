@@ -51,7 +51,7 @@ This makes it easy for users to add their own detectors alongside the ones that 
 
 2. Extract the zip/rar SpotBugs and configure the environment variable `SPOTBUGS_HOME` to the extracted directory.
 
-3. Copy the built (see Building instructions above) `performance-tests-checker-XXX.jar` to the `plugin` folder of the SpotBugs.
+3. Copy the built (see Building instructions above) `spotJMHbugs.jar` to the `plugin` folder of the SpotBugs.
 
 4. Execute the `$SPOTBUGS_HOME/lib/spotbugs.jar` with the `-textui` command line to get the list of all possible line commands of SpotBugs.
    
