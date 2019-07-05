@@ -6,12 +6,18 @@ import org.junit.runners.Suite;
 @RunWith(Suite.class)
 
 @Suite.SuiteClasses({
-   IgnoredMethodReturnDetectorTest.class,
-   LoopInsideBenchmarkDetectorTest.class,
-   StateFinalFieldDetectorTest.class,
-   NotForkedBenchmarkDetectorTest.class,
-   FixtureWithInvocationScopeDetectionTest.class,
-   SingleShotBenchmarkDetectorTest.class,
+    BenchmarkMethodDetectorTest.class,
+    DeadStoreBenchmarkDetectorTest.class,
+    FixtureWithInvocationScopeDetectionTest.class,
+    IgnoredMethodReturnDetectorTest.class,
+    IgnoredStaticMethodReturnDetectorTest.class,
+    IgnoredStaticMethodReturnWithPrimitivesDetectorTest.class,
+    LoopInsideBenchmarkDetectorTest.class,
+    NotForkedBenchmarkDetectorTest.class,
+    SingleShotBenchmarkDetectorTest.class,
+    StateFinalFieldDetectorTest.class,
+    UnsafeLoopInsideBenchmarkDetectorTest.class,
+    UnsinkedVariableBenchmarkDetectorTest.class,
 })
 
 public class DetectorsSuiteTest {
