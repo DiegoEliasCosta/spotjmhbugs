@@ -1,5 +1,7 @@
 # SpotJMHBugs
 
+[![Build Status](https://travis-ci.com/DiegoEliasCosta/spotjmhbugs.svg?branch=master)](https://travis-ci.com/DiegoEliasCosta/spotjmhbugs)
+
 A SpotBugs plugin for static analysis on JMH performance tests.
 
 ## Getting Started
