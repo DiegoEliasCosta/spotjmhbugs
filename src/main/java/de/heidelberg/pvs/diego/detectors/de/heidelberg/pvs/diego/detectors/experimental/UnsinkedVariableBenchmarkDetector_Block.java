@@ -22,8 +22,9 @@
  * SOFTWARE.
  */
 
-package de.heidelberg.pvs.diego.detectors;
+package de.heidelberg.pvs.diego.detectors.de.heidelberg.pvs.diego.detectors.experimental;
 
+import de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector;
 import edu.umd.cs.findbugs.BugReporter;
 import edu.umd.cs.findbugs.ba.*;
 import edu.umd.cs.findbugs.ba.BasicBlock.InstructionIterator;

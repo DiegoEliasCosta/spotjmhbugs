@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package de.heidelberg.pvs.diego.detectors;
+package de.heidelberg.pvs.diego.detectors.de.heidelberg.pvs.diego.detectors.experimental;
 
 import java.util.BitSet;
 import java.util.Collection;
@@ -30,6 +30,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+import de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector;
 import org.apache.bcel.classfile.LineNumberTable;
 import org.apache.bcel.classfile.Method;
 import org.apache.bcel.generic.ConstantPoolGen;

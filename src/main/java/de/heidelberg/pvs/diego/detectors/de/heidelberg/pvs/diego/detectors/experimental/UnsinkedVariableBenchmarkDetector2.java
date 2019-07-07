@@ -22,11 +22,12 @@
  * SOFTWARE.
  */
 
-package de.heidelberg.pvs.diego.detectors;
+package de.heidelberg.pvs.diego.detectors.de.heidelberg.pvs.diego.detectors.experimental;
 
 import java.util.BitSet;
 import java.util.Iterator;
 
+import de.heidelberg.pvs.diego.detectors.AbstractJMHBenchmarkMethodDetector;
 import org.apache.bcel.classfile.JavaClass;
 import org.apache.bcel.classfile.Method;
 import org.apache.bcel.generic.IINC;
@@ -94,25 +95,7 @@ public class UnsinkedVariableBenchmarkDetector2 extends AbstractJMHBenchmarkMeth
 			BasicBlock block = location.getBasicBlock();
 			
 			InstructionHandle handle = location.getHandle();
-			System.out.println(handle.getInstruction().getName());
-			System.out.println(block.toString());
-			
-//			if (!isStore(location)) {
-//				continue;
-//			}
-//			
-//			
-//			IndexedInstruction ins = (IndexedInstruction) location.getHandle().getInstruction();
-//			int local = ins.getIndex();
-//
-//			// Get live stores at this instruction.
-//			// Note that the analysis also computes which stores were
-//			// killed by a subsequent unconditional store.
-//			BitSet liveStoreSet = llsaDataflow.getAnalysis().getFactAtLocation(location);
-//
-//			// Is store alive?
-//			boolean storeLive = llsaDataflow.getAnalysis().isStoreAlive(liveStoreSet, local);
-//			
+
 
 		}
 
