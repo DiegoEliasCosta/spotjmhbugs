@@ -111,6 +111,7 @@ by a Blackhole to avoid	dead-code optimization.</p>
 ]]>
 		</Details>
 	</BugPattern>
+	<BugCode abbrev="JMHIGRET">Method return not used or consumed by a Blackhole</BugCode>
   
 <BugPattern type="JMH_IGNORED_STATIC_METHOD_RETURN">
     <ShortDescription>Static method return not used or consumed by a Blackhole.</ShortDescription>
@@ -122,6 +123,7 @@ by a Blackhole to avoid dead-code optimization.</p>
 ]]>
     </Details>
   </BugPattern>
+	<BugCode abbrev="JMHIGSRET">Static method return not used or consumed by a Blackhole</BugCode>
   
   <BugPattern type="JMH_IGNORED_STATIC_PRIMITIVE_METHOD_RETURN">
     <ShortDescription>Static method with only primitive parameters is having its return ignored in the benchmark.</ShortDescription>
@@ -133,6 +135,7 @@ by a Blackhole to avoid dead-code optimization.</p>
 ]]>
     </Details>
   </BugPattern>
+	<BugCode abbrev="JMHIGSPRET">Static method with only primitive parameters is having its return ignored in the benchmark</BugCode>
 
     <BugPattern type="JMH_STATE_FINAL_PRIMITIVE">
     <ShortDescription>JMH State primitive field declared final.</ShortDescription>
@@ -147,6 +150,7 @@ it can move the computation outside of the internal JMH loop.</p>
 ]]>
     </Details>
   </BugPattern>
+	<BugCode abbrev="JMHSFP">JMH State primitive field declared final</BugCode>
   
   <BugPattern type="JMH_STATE_FINAL_STATIC_PRIMITIVE">
     <ShortDescription>JMH State primitive static field declared final.</ShortDescription>
@@ -161,7 +165,7 @@ it can move the computation outside of the internal JMH loop.</p>
 ]]>
     </Details>
   </BugPattern>
-
+	<BugCode abbrev="JMHSFSP">JMH State primitive static field declared final</BugCode>
 
 	<BugPattern type="JMH_LOOP_INSIDE_BENCHMARK">
 		<ShortDescription>Usage of loops in the JMH benchmark function.</ShortDescription>
@@ -174,6 +178,7 @@ The compiler can automagically apply some optimizations to merge the loop iterat
 ]]>
 		</Details>
 	</BugPattern>
+	<BugCode abbrev="JMHLOOP">Usage of loops in the JMH benchmark function</BugCode>
   
   
 <BugPattern type="JMH_UNSAFELOOP_INSIDE_BENCHMARK">
@@ -187,6 +192,7 @@ The compiler can automagically apply some optimizations to merge the loop iterat
 ]]>
     </Details>
   </BugPattern>
+	<BugCode abbrev="JMHULOOP">Suspicious numeric accumulation inside a loop in the JMH benchmark function</BugCode>
 
 
 <BugPattern type="JMH_NOTFORKED_BENCHMARK">
@@ -203,6 +209,7 @@ in a separate process) each test can help to evade this issue.
 ]]>
 		</Details>
 	</BugPattern>
+	<BugCode abbrev="JMHNOFORK">Benchmark configured with zero forks</BugCode>
 	
 	
 	<BugPattern type="JMH_FIXTURE_USING_INVOCATION_SCOPE">
@@ -218,8 +225,8 @@ the impact for your case on ad-hoc basis as well.
 ]]>
 		</Details>
 	</BugPattern>
-	
-	
+	<BugCode abbrev="JMHFIS">Fixture methods configured with Invocation scope</BugCode>
+
 	<BugPattern type="JMH_BENCHMARKMODE_SINGLESHOT">
 		<ShortDescription>Benchmark configured as a SingleShot. </ShortDescription>
 		<LongDescription>Benchmark configured as a SingleShot in {1}.</LongDescription>
@@ -240,6 +247,7 @@ Caveats for this mode include:
 ]]>
 		</Details>
 	</BugPattern>
+	<BugCode abbrev="JMHSINGLE">Benchmark configured as a SingleShot</BugCode>
 	
 	<BugPattern type="JMH_BENCHMARK_METHOD_FOUND">
 		<ShortDescription>JMH Benchmark method found. </ShortDescription>
@@ -251,6 +259,8 @@ Caveats for this mode include:
 ]]>
 		</Details>
 	</BugPattern>
+	<BugCode abbrev="JMHFOUND">JMH Benchmark method found</BugCode>
+
     <BugPattern type="JMH_DEAD_STORE_VARIABLE">
     <ShortDescription>Dead store to local variable in JMH benchmark</ShortDescription>
     <LongDescription>Dead store to {2} in {1}</LongDescription>
@@ -270,6 +280,7 @@ there is no easy way to eliminate these false positives.
 ]]>
     </Details>
   </BugPattern>
+	<BugCode abbrev="JMHDEAD">Dead store to local variable</BugCode>
   
   
     <BugPattern type="JMH_UNSINKED_VARIABLE">
@@ -291,5 +302,6 @@ there is no easy way to eliminate these false positives.
 ]]>
     </Details>
   </BugPattern>
+	<BugCode abbrev="JMHUNSINKED">Unsinked variable inside benchmark method</BugCode>
   
 </MessageCollection>
