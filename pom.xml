@@ -12,7 +12,6 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jmh.version>1.19</jmh.version>
 		<javac.target>8</javac.target>
-		<uberjar.name>spotJMHbugs</uberjar.name>
 		<spotbugs.version>3.1.12</spotbugs.version>
 	</properties>
 
@@ -36,20 +35,14 @@
 			<groupId>com.github.spotbugs</groupId>
 			<artifactId>test-harness</artifactId>
 			<version>${spotbugs.version}</version>
-			<!-- <scope>test</scope> -->
+			<scope>test</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>org.openjdk.jmh</groupId>
 			<artifactId>jmh-core</artifactId>
 			<version>${jmh.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.openjdk.jmh</groupId>
-			<artifactId>jmh-generator-annprocess</artifactId>
-			<version>${jmh.version}</version>
-			<scope>provided</scope>
+			<scope>test</scope>
 		</dependency>
 
 	</dependencies>
@@ -66,39 +59,6 @@
 					<source>${javac.target}</source>
 					<target>${javac.target}</target>
 				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-shade-plugin</artifactId>
-				<version>2.2</version>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>shade</goal>
-						</goals>
-						<configuration>
-							<finalName>${uberjar.name}-${version}</finalName>
-							<transformers>
-								<transformer
-									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>org.openjdk.jmh.Main</mainClass>
-								</transformer>
-							</transformers>
-							<filters>
-								<filter>
-									<!-- Shading signed JARs will fail without this. http://stackoverflow.com/questions/999489/invalid-signature-file-when-attempting-to-run-a-jar -->
-									<artifact>*:*</artifact>
-									<excludes>
-										<exclude>META-INF/*.SF</exclude>
-										<exclude>META-INF/*.DSA</exclude>
-										<exclude>META-INF/*.RSA</exclude>
-									</excludes>
-								</filter>
-							</filters>
-						</configuration>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 		<pluginManagement>
