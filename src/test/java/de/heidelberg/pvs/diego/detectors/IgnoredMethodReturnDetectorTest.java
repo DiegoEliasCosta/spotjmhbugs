@@ -24,67 +24,55 @@
 
 package de.heidelberg.pvs.diego.detectors;
 
-import static edu.umd.cs.findbugs.test.CountMatcher.containsExactly;
-import static org.junit.Assert.assertThat;
+import edu.umd.cs.findbugs.BugCollection;
+import edu.umd.cs.findbugs.test.SpotBugsExtension;
+import edu.umd.cs.findbugs.test.SpotBugsRunner;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import org.junit.Rule;
-import org.junit.Test;
+import static de.heidelberg.pvs.diego.detectors.Util.countBugTypes;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import edu.umd.cs.findbugs.BugCollection;
-import edu.umd.cs.findbugs.test.SpotBugsRule;
-import edu.umd.cs.findbugs.test.matcher.BugInstanceMatcher;
-import edu.umd.cs.findbugs.test.matcher.BugInstanceMatcherBuilder;
-
-public class IgnoredMethodReturnDetectorTest {
-
-	@Rule
-	public SpotBugsRule spotbugs = new SpotBugsRule();
+@ExtendWith({SpotBugsExtension.class})
+class IgnoredMethodReturnDetectorTest {
 
 	@Test
-	public void testIgnoreMethodReturnCheckerWithJMHSample_08() throws Exception {
+	public void testIgnoreMethodReturnCheckerWithJMHSample_08(SpotBugsRunner spotbugs) {
 		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.jmh".replace('.', '/'),
 				"JMHSample_08_DeadCode.class");
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
-
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_METHOD_RETURN").build();
-		assertThat(bugCollection, containsExactly(0, bugTypeMatcher));
+		assertEquals(0, countBugTypes(bugCollection, "JMH_IGNORED_METHOD_RETURN"));
 	}
 	
 
 	@Test
-	public void testIgnoreMethodReturnCheckerWithJMHSample_09() throws Exception {
+	public void testIgnoreMethodReturnCheckerWithJMHSample_09(SpotBugsRunner spotbugs) {
 		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.jmh".replace('.', '/'),
 				"JMHSample_09_Blackholes.class");
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
-
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_METHOD_RETURN").build();
-		assertThat(bugCollection, containsExactly(0, bugTypeMatcher));
+		assertEquals(0, countBugTypes(bugCollection, "JMH_IGNORED_METHOD_RETURN"));
 	}
 	
 	
 	@Test
-	public void testIgnoreMethodReturnCheckerWithJMHSample_10() throws Exception {
+	public void testIgnoreMethodReturnCheckerWithJMHSample_10(SpotBugsRunner spotbugs) {
 		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.jmh".replace('.', '/'),
 				"JMHSample_10_ConstantFold.class");
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
-
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_METHOD_RETURN").build();
-		assertThat(bugCollection, containsExactly(0, bugTypeMatcher));
+		assertEquals(0, countBugTypes(bugCollection, "JMH_IGNORED_METHOD_RETURN"));
 	}
 	
 	
 	@Test
-	public void testIgnoreMethodReturnCheckerWithExample() throws Exception {
+	public void testIgnoreMethodReturnCheckerWithExample(SpotBugsRunner spotbugs) {
 		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.examples".replace('.', '/'),
 				"IgnoreMethodReturnExample.class");
 		
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
-
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_IGNORED_METHOD_RETURN").build();
-		assertThat(bugCollection, containsExactly(0, bugTypeMatcher));
+		assertEquals(0, countBugTypes(bugCollection, "JMH_IGNORED_METHOD_RETURN"));
 	}
 	
 }
