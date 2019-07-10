@@ -24,74 +24,64 @@
 
 package de.heidelberg.pvs.diego.detectors;
 
-import static edu.umd.cs.findbugs.test.CountMatcher.containsExactly;
-import static org.junit.Assert.assertThat;
+import edu.umd.cs.findbugs.BugCollection;
+import edu.umd.cs.findbugs.test.SpotBugsExtension;
+import edu.umd.cs.findbugs.test.SpotBugsRunner;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import org.junit.Rule;
-import org.junit.Test;
+import static de.heidelberg.pvs.diego.detectors.Util.countBugTypes;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import edu.umd.cs.findbugs.BugCollection;
-import edu.umd.cs.findbugs.test.SpotBugsRule;
-import edu.umd.cs.findbugs.test.matcher.BugInstanceMatcher;
-import edu.umd.cs.findbugs.test.matcher.BugInstanceMatcherBuilder;
-
-public class UnsinkedVariableBenchmarkDetectorTest {
-
-	@Rule
-	public SpotBugsRule spotbugs = new SpotBugsRule();
+@ExtendWith({SpotBugsExtension.class})
+class UnsinkedVariableBenchmarkDetectorTest {
 
 	@Test
-	public void testUnsinkedvariableWithDCE() throws Exception {
+	void testUnsinkedvariableWithDCE(SpotBugsRunner spotbugs) {
 		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.examples".replace('.', '/'),
 				"DeadCodeEliminationExample.class");
-		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_UNSINKED_VARIABLE").build();
-		assertThat(bugCollection, containsExactly(2, bugTypeMatcher));
+		BugCollection bugCollection = spotbugs.performAnalysis(path);
+		assertEquals(2, countBugTypes(bugCollection, "JMH_UNSINKED_VARIABLE"));
 	}
 	
 	@Test
-	public void testUnsinkedvariableWithSimplestDCE() throws Exception {
+	void testUnsinkedvariableWithSimplestDCE(SpotBugsRunner spotbugs) {
 		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.examples".replace('.', '/'),
 				"SimplestDeadCodeEliminationExample.class");
-		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_UNSINKED_VARIABLE").build();
-		assertThat(bugCollection, containsExactly(1, bugTypeMatcher));
+		BugCollection bugCollection = spotbugs.performAnalysis(path);
+		assertEquals(1, countBugTypes(bugCollection, "JMH_UNSINKED_VARIABLE"));
 	}
 	
 	@Test
-	public void testUnsinkedvariableWithFalsePositives() throws Exception {
+	void testUnsinkedvariableWithFalsePositives(SpotBugsRunner spotbugs) {
 		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.examples".replace('.', '/'),
 				"UnsinkVariableFalsePositive.class");
-		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_UNSINKED_VARIABLE").build();
-		assertThat(bugCollection, containsExactly(0, bugTypeMatcher));
+		BugCollection bugCollection = spotbugs.performAnalysis(path);
+		assertEquals(0, countBugTypes(bugCollection, "JMH_UNSINKED_VARIABLE"));
 	}
 	
 	@Test
-	public void testUnsinkedvariableWithFalseNegatives() throws Exception {
+	void testUnsinkedvariableWithFalseNegatives(SpotBugsRunner spotbugs) {
 		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.examples".replace('.', '/'),
 				"UnsinkVariableFalseNegativeExamples.class");
-		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_UNSINKED_VARIABLE").build();
-		assertThat(bugCollection, containsExactly(1, bugTypeMatcher));
-	
+		BugCollection bugCollection = spotbugs.performAnalysis(path);
+		assertEquals(1, countBugTypes(bugCollection, "JMH_UNSINKED_VARIABLE"));
 	}
+
 //	@Test
-//	public void testUnsinkedvariableWithFalsePsitiveExamples() throws Exception {
+//	void testUnsinkedvariableWithFalsePsitiveExamples(SpotBugsRunner spotbugs) {
 //		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.examples".replace('.', '/'),
 //				"UnsinkedVariablesFalsePositiveExamples.class");
-//		BugCollection bugCollection = spotbugs.performAnalysis(path);
 //
-//		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_UNSINKED_VARIABLE").build();
-//		assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
+//		BugCollection bugCollection = spotbugs.performAnalysis(path);
+//		assertEquals(0, countBugTypes(bugCollection, "JMH_UNSINKED_VARIABLE"));
 //	}
-	
-	
+
 }

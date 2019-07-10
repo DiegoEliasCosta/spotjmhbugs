@@ -5,7 +5,6 @@ import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import org.junit.Assert;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;

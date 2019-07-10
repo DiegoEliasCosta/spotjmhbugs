@@ -24,114 +24,91 @@
 
 package de.heidelberg.pvs.diego.detectors;
 
-import static edu.umd.cs.findbugs.test.CountMatcher.containsExactly;
-import static org.junit.Assert.assertThat;
+import edu.umd.cs.findbugs.BugCollection;
+import edu.umd.cs.findbugs.test.SpotBugsExtension;
+import edu.umd.cs.findbugs.test.SpotBugsRunner;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import org.junit.Rule;
-import org.junit.Test;
+import static de.heidelberg.pvs.diego.detectors.Util.countBugTypes;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import edu.umd.cs.findbugs.BugCollection;
-import edu.umd.cs.findbugs.test.SpotBugsRule;
-import edu.umd.cs.findbugs.test.matcher.BugInstanceMatcher;
-import edu.umd.cs.findbugs.test.matcher.BugInstanceMatcherBuilder;
+@ExtendWith({SpotBugsExtension.class})
+class BenchmarkMethodDetectorTest {
 
-public class BenchmarkMethodDetectorTest {
-	
-	@Rule
-	public SpotBugsRule spotbugs = new SpotBugsRule();
-
-	
 	@Test
-	public void testBenchmarkMethodDetectorWithJMHSample_02() throws Exception {
+	void testBenchmarkMethodDetectorWithJMHSample_02(SpotBugsRunner spotbugs) {
 		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.jmh".replace('.', '/'),
 				"JMHSample_02_BenchmarkModes.class");
-		
-		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_BENCHMARK_METHOD_FOUND").build();
-		assertThat(bugCollection, containsExactly(6, bugTypeMatcher));
+		BugCollection bugCollection = spotbugs.performAnalysis(path);
+		assertEquals(6, countBugTypes(bugCollection, "JMH_BENCHMARK_METHOD_FOUND"));
 	}
-	
+
 	@Test
-	public void testBenchmarkMethodDetectorWithJMHSample_04() throws Exception {
+	void testBenchmarkMethodDetectorWithJMHSample_04(SpotBugsRunner spotbugs) {
 		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.jmh".replace('.', '/'),
 				"JMHSample_04_DefaultState.class");
-		
-		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_BENCHMARK_METHOD_FOUND").build();
-		assertThat(bugCollection, containsExactly(1, bugTypeMatcher));
+		BugCollection bugCollection = spotbugs.performAnalysis(path);
+		assertEquals(1, countBugTypes(bugCollection, "JMH_BENCHMARK_METHOD_FOUND"));
 	}
-	
+
 	@Test
-	public void testBenchmarkMethodDetectorWithJMHSample_05() throws Exception {
+	void testBenchmarkMethodDetectorWithJMHSample_05(SpotBugsRunner spotbugs) {
 		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.jmh".replace('.', '/'),
 				"JMHSample_05_StateFixtures.class");
-		
-		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_BENCHMARK_METHOD_FOUND").build();
-		assertThat(bugCollection, containsExactly(2, bugTypeMatcher));
+		BugCollection bugCollection = spotbugs.performAnalysis(path);
+		assertEquals(2, countBugTypes(bugCollection, "JMH_BENCHMARK_METHOD_FOUND"));
 	}
-	
+
 	@Test
-	public void testBenchmarkMethodDetectorWithJMHSample_06() throws Exception {
+	void testBenchmarkMethodDetectorWithJMHSample_06(SpotBugsRunner spotbugs) {
 		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.jmh".replace('.', '/'),
 				"JMHSample_06_FixtureLevel.class");
-		
-		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_BENCHMARK_METHOD_FOUND").build();
-		assertThat(bugCollection, containsExactly(2, bugTypeMatcher));
+		BugCollection bugCollection = spotbugs.performAnalysis(path);
+		assertEquals(2, countBugTypes(bugCollection, "JMH_BENCHMARK_METHOD_FOUND"));
 	}
-	
+
 	@Test
-	public void testBenchmarkMethodDetectorWithJMHSample_07() throws Exception {
+	void testBenchmarkMethodDetectorWithJMHSample_07(SpotBugsRunner spotbugs) {
 		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.jmh".replace('.', '/'),
 				"JMHSample_07_FixtureLevelInvocation.class");
-		
-		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_BENCHMARK_METHOD_FOUND").build();
-		assertThat(bugCollection, containsExactly(2, bugTypeMatcher));
+		BugCollection bugCollection = spotbugs.performAnalysis(path);
+		assertEquals(2, countBugTypes(bugCollection, "JMH_BENCHMARK_METHOD_FOUND"));
 	}
-	
-	
+
+
 	@Test
-	public void testBenchmarkMethodDetectorWithJMHSample_08() throws Exception {
+	void testBenchmarkMethodDetectorWithJMHSample_08(SpotBugsRunner spotbugs) {
 		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.jmh".replace('.', '/'),
 				"JMHSample_08_DeadCode.class");
-		
-		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_BENCHMARK_METHOD_FOUND").build();
-		assertThat(bugCollection, containsExactly(3, bugTypeMatcher));
+		BugCollection bugCollection = spotbugs.performAnalysis(path);
+		assertEquals(3, countBugTypes(bugCollection, "JMH_BENCHMARK_METHOD_FOUND"));
 	}
-	
+
 	@Test
-	public void testBenchmarkMethodDetectorWithJMHSample_09() throws Exception {
+	void testBenchmarkMethodDetectorWithJMHSample_09(SpotBugsRunner spotbugs) {
 		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.jmh".replace('.', '/'),
 				"JMHSample_09_Blackholes.class");
-		
-		BugCollection bugCollection = spotbugs.performAnalysis(path);
 
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_BENCHMARK_METHOD_FOUND").build();
-		assertThat(bugCollection, containsExactly(4, bugTypeMatcher));
+		BugCollection bugCollection = spotbugs.performAnalysis(path);
+		assertEquals(4, countBugTypes(bugCollection, "JMH_BENCHMARK_METHOD_FOUND"));
 	}
-	
+
 	@Test
-	public void testBenchmarkMethodDetectorWithJMHSample_10() throws Exception {
+	void testBenchmarkMethodDetectorWithJMHSample_10(SpotBugsRunner spotbugs) {
 		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.jmh".replace('.', '/'),
 				"JMHSample_10_ConstantFold.class");
-		
+
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
-
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_BENCHMARK_METHOD_FOUND").build();
-		assertThat(bugCollection, containsExactly(4, bugTypeMatcher));
+		assertEquals(4, countBugTypes(bugCollection, "JMH_BENCHMARK_METHOD_FOUND"));
 	}
-
-
 }

@@ -24,46 +24,37 @@
 
 package de.heidelberg.pvs.diego.detectors;
 
-import static edu.umd.cs.findbugs.test.CountMatcher.containsExactly;
-import static org.junit.Assert.assertThat;
+import edu.umd.cs.findbugs.BugCollection;
+import edu.umd.cs.findbugs.test.SpotBugsExtension;
+import edu.umd.cs.findbugs.test.SpotBugsRunner;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import org.junit.Rule;
-import org.junit.Test;
+import static de.heidelberg.pvs.diego.detectors.Util.countBugTypes;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import edu.umd.cs.findbugs.BugCollection;
-import edu.umd.cs.findbugs.test.SpotBugsRule;
-import edu.umd.cs.findbugs.test.matcher.BugInstanceMatcher;
-import edu.umd.cs.findbugs.test.matcher.BugInstanceMatcherBuilder;
+@ExtendWith({SpotBugsExtension.class})
+class SingleShotBenchmarkDetectorTest {
 
-public class SingleShotBenchmarkDetectorTest {
-	
-	@Rule
-	public SpotBugsRule spotbugs = new SpotBugsRule();
-
-	
 	@Test
-	public void testSingleShotDetectorWithJMHSample_02() throws Exception {
+	void testSingleShotDetectorWithJMHSample_02(SpotBugsRunner spotbugs) {
 		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.jmh".replace('.', '/'),
 				"JMHSample_02_BenchmarkModes.class");
 		
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
-
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_BENCHMARKMODE_SINGLESHOT").build();
-		assertThat(bugCollection, containsExactly( 2, bugTypeMatcher));
+		assertEquals(2, countBugTypes(bugCollection, "JMH_BENCHMARKMODE_SINGLESHOT"));
 	}
 	
 	@Test
-	public void testSingleShotDetectorWithSingleShotBenchmarkClassExample() throws Exception {
+	void testSingleShotDetectorWithSingleShotBenchmarkClassExample(SpotBugsRunner spotbugs) {
 		Path path = Paths.get("target/test-classes", "de.heidelberg.pvs.diego.examples".replace('.', '/'),
 				"SingleShotBenchmarkClassExample.class");
 		
 		BugCollection bugCollection = spotbugs.performAnalysis(path);
-
-		BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder().bugType("JMH_BENCHMARKMODE_SINGLESHOT").build();
-		assertThat(bugCollection, containsExactly( 1, bugTypeMatcher));
+		assertEquals(1, countBugTypes(bugCollection, "JMH_BENCHMARKMODE_SINGLESHOT"));
 	}
 
 }
